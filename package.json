@@ -1,0 +1,46 @@
+{
+	"name": "brave",
+	"author": "Yard | Digital Agency",
+	"version": "1.0.0",
+	"description": "Starter for Yard | Digital Agency WordPress websites",
+	"main": "cli.js",
+	"engines": {
+		"node": ">=20.19.0"
+	},
+	"type": "module",
+	"scripts": {
+		"watch": "pnpm run watch:themes & pnpm run watch:blocks",
+		"watch:themes": "yard-toolkit watch themes",
+		"watch:blocks": "yard-toolkit watch blocks",
+		"build": "pnpm run build:themes && pnpm run build:blocks",
+		"build:themes": "yard-toolkit build themes",
+		"build:blocks": "yard-toolkit build blocks",
+		"lint:css": "yard-toolkit lint css",
+		"lint:js": "yard-toolkit lint js",
+		"format:css": "yard-toolkit format css",
+		"format:js": "yard-toolkit format js",
+		"format:blade": "yard-toolkit format blade",
+		"start": "pnpm run watch",
+		"prod-all": "pnpm run build",
+		"yard-toolkit": "yard-toolkit"
+	},
+	"devDependencies": {
+		"@yardinternet/eslint-config": "^1.1.5",
+		"@yardinternet/prettier-config": "^1.1.2",
+		"@yardinternet/stylelint-config": "^1.1.2",
+		"@yardinternet/toolkit": "^1.1.10",
+		"@yardinternet/vite-config": "^1.0.7",
+		"tailwindcss": "^4.1.13",
+		"vite": "^7.1.3"
+	},
+	"dependencies": {
+		"@yardinternet/a11y-cookie-yes": "^1.2.10",
+		"@yardinternet/brave-frontend-kit": "^0.4.1",
+		"@yardinternet/gutenberg-components": "^1.3.2",
+		"accordion-js": "^3.4.1",
+		"body-scroll-lock": "^4.0.0-beta.0",
+		"focus-trap": "^7.6.5",
+		"headroom.js": "^0.12.0"
+	},
+	"packageManager": "pnpm@10.17.1"
+}

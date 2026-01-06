@@ -1,0 +1,170 @@
+@utility fontawesome {
+	@apply pointer-events-none font-(--fa-weight) content-(--fa-icon);
+	--fa-icon: '\f00c';
+	--fa-weight: 300;
+	--fa-font-family: 'Font Awesome 6 Pro';
+	font-family: var( --fa-font-family );
+}
+
+@utility content {
+	content: '';
+}
+
+@utility break-word {
+	word-break: break-word;
+}
+
+/* Sets the alignments of elements directly inside the root content, both frontend and editor */
+@utility create-main-content-alignment {
+	/* Content container */
+	> * {
+		@apply mx-auto max-w-(--content-container-width);
+	}
+
+	/* Wide container */
+	> .container,
+	> .alignwide {
+		@apply mx-auto max-w-(--container-width);
+	}
+
+	> .alignfull {
+		@apply max-w-full;
+	}
+}
+
+@utility on-focus-visible {
+	@apply sr-only !absolute !top-2 !left-2 z-50 w-fit !px-[2em] !py-[0.75em] transition-none focus:not-sr-only;
+}
+
+@utility a-linkable-area {
+	&::after {
+		@apply content absolute inset-0;
+	}
+}
+
+@utility dark-background-white-elements {
+	@apply !text-white;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	time,
+	i,
+	li,
+	li::marker,
+	a:not( .wp-block-button__link ),
+	.gfield_required {
+		@apply !text-white;
+
+		@variant hocus {
+			@apply !text-white;
+		}
+	}
+}
+
+@utility normalize-child-margin {
+	> :first-child {
+		@apply mt-0;
+	}
+
+	> :last-child {
+		@apply mb-0;
+	}
+}
+
+@utility make-lead {
+	@apply text-lg leading-(--text-base--line-height);
+}
+
+@utility is-main-content {
+	> p:first-child {
+		@apply make-lead;
+	}
+
+	> h2 {
+		@apply mt-8 md:mt-10;
+	}
+
+	> h3 {
+		@apply mt-6 md:mt-8;
+	}
+}
+
+@utility is-button {
+	@apply border-primary bg-primary inline-block cursor-pointer rounded-theme border px-[1.25em] py-[0.75em] text-left !leading-snug break-words text-white no-underline transition-colors select-none;
+
+	@variant hocus {
+		@apply border-primary-700 bg-primary-700 text-white;
+	}
+
+	&:active {
+		@apply scale-[0.98];
+	}
+}
+
+@utility add-button-icons {
+	&[href^='#'] {
+		&::after {
+			@apply fontawesome ml-3;
+			--fa-icon: '\f063';
+		}
+	}
+
+	&[href^='tel:'] {
+		&::after {
+			@apply fontawesome ml-3;
+			--fa-icon: '\f095';
+		}
+	}
+
+	&[href*='api.whatsapp.com'],
+	&[href*='wa.me'] {
+		&::after {
+			@apply fontawesome ml-3;
+			--fa-icon: '\f232';
+			--fa-font-family: 'Font Awesome 6 Brands';
+		}
+	}
+
+	&[href^='mailto:'] {
+		&::after {
+			@apply fontawesome ml-3;
+			--fa-icon: '\f0e0';
+		}
+	}
+
+	&[target='_blank'] {
+		&::before {
+			@apply fontawesome mr-3;
+			--fa-icon: '\f08e';
+		}
+	}
+}
+
+@utility is-button-small {
+	@apply px-[1em] py-[0.5em] text-sm;
+}
+
+@utility is-button-primary-100 {
+	@apply border-primary-100 bg-primary-100 text-black;
+
+	@variant hocus {
+		@apply border-primary-200 bg-primary-200 text-black;
+	}
+}
+
+@utility is-button-outline {
+	@apply !text-primary !border-primary !bg-transparent;
+
+	@variant hocus {
+		@apply !bg-primary !border-primary !text-white;
+	}
+}
+
+@utility container {
+	@apply mx-auto max-w-(--container-width);
+}

@@ -1,0 +1,8 @@
+@import '@yardinternet/a11y-cookie-yes/dist/a11y-cookie-yes';
+
+[data-cky-tag='video-placeholder'],
+.cky-btn-revisit-wrapper,
+.cky-consent-container,
+.cky-modal {
+	--a11y-cookie-yes-primary-color: var( --color-primary );
+}

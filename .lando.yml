@@ -1,0 +1,9 @@
+name: brave
+
+proxy:
+  appserver_nginx:
+    - brave.lndo.site
+  mailpit:
+    - mail.brave.lndo.site
+  pma:
+    - pma.brave.lndo.site

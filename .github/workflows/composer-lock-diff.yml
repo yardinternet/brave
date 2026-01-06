@@ -1,0 +1,11 @@
+name: Composer Diff
+
+on:
+  pull_request:
+    paths:
+      - 'composer.lock'
+
+jobs:
+  composer-diff:
+    uses: yardinternet/workflows/.github/workflows/composer-lock-diff.yml@main
+    secrets: inherit

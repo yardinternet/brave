@@ -1,0 +1,21 @@
+.wp-block-file {
+	@apply mt-4 mb-6 flex flex-wrap items-center gap-4 md:mb-8;
+
+	/* Full classnames for Gutenberg specificity */
+	.wp-block-file__button {
+		@apply is-button order-first m-0 !px-4 !py-2 text-sm after:pl-3;
+
+		@variant hocus {
+			@apply opacity-100;
+		}
+
+		&::after {
+			@apply fontawesome;
+			--fa-icon: '\f33d';
+		}
+	}
+
+	.wp-block-file__embed {
+		@apply order-last m-0;
+	}
+}

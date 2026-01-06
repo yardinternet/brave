@@ -1,0 +1,133 @@
+/*
+	Instead of importing the 'tailwind.css' base file, we import Tailwind's source files separately.
+	This ensures styles aren’t placed in @layer directives like @layer utility, components, or base.
+	If we don't do this, Tailwind will place our styles in the @layers and Gutenberg will overwrite them.
+*/
+
+/* prettier-ignore */
+@import 'tailwindcss/theme.css' source(none); /* prettier-ignore */
+@import 'tailwindcss/preflight.css' source(none); /* prettier-ignore */
+@import 'tailwindcss/utilities.css' source(none);
+
+/* Files to scan */
+@source './../../**/*.{blade.php,php,js,jsx}';
+@source './../../../app/**/*.php';
+
+/* Theme variables - for creating (new) utility classes */
+@theme {
+	/* Colors */
+	--color-primary: var( --color-primary-500 );
+	--color-primary-100: #dfe4fa;
+	--color-primary-200: #aebbf1;
+	--color-primary-300: #8599e9;
+	--color-primary-400: #5d77e2;
+	--color-primary-500: #3455db;
+	--color-primary-600: #2a44af;
+	--color-primary-700: #1f3383;
+	--color-primary-800: #152258;
+	--color-primary-900: #0a112c;
+
+	--color-gray-400: #8b95a2; /* 3.0:1 contrast on white background */
+
+	/* Media breakpoints */
+	--breakpoint-sm: 600px;
+	--breakpoint-md: 782px;
+	--breakpoint-lg: 960px;
+	--breakpoint-xl: 1150px;
+	--breakpoint-2xl: initial; /* Remove last container breakpoint */
+
+	/* Typography */
+	--font-sans: 'Open Sans', sans-serif;
+	--text-xs: var( --text-step--2 );
+	--text-xs--line-height: 1.75;
+	--text-sm: var( --text-step--1 );
+	--text-sm--line-height: 1.75;
+	--text-base: var( --text-step-0 );
+	--text-base--line-height: 1.75;
+	--text-lg: var( --text-step-1 );
+	--text-lg--line-height: 1.4;
+	--text-xl: var( --text-step-2 );
+	--text-xl--line-height: 1.4;
+	--text-2xl: var( --text-step-3 ); /* H3 */
+	--text-2xl--line-height: 1.25;
+	--text-3xl: var( --text-step-4 );
+	--text-3xl--line-height: 1.25;
+	--text-4xl: var( --text-step-5 ); /* H2 */
+	--text-4xl--line-height: 1.25;
+	--text-5xl: var( --text-step-6 );
+	--text-5xl--line-height: 1.25;
+	--text-6xl: var( --text-step-7 );
+	--text-6xl--line-height: 1.25;
+	--text-7xl: var( --text-step-8 );
+	--text-7xl--line-height: 1.25;
+	--text-8xl: var( --text-step-9 );
+	--text-8xl--line-height: 1.25;
+	--text-9xl: var( --text-step-10 ); /* H1 */
+	--text-9xl--line-height: 1.25;
+
+	/* Shadow */
+	--shadow: 0px 4px 16px rgba( 17, 17, 26, 0.05 ),
+		0px 8px 32px rgba( 17, 17, 26, 0.05 );
+	--shadow-sm: 0px 2px 8px rgba( 17, 17, 26, 0.05 ),
+		0px 4px 16px rgba( 17, 17, 26, 0.05 );
+
+	/* Border-radius */
+	--radius-theme: 5px;
+
+	/* Transitions */
+	--ease-base: cubic-bezier( 0.25, 0.1, 0.25, 1 );
+
+	/* Spacing */
+	--spacing-section: var( --spacing-size-7 );
+}
+
+/* Custom variants */
+@custom-variant hocus {
+	&:hover,
+	&:focus {
+		@slot;
+	}
+}
+
+@custom-variant all-form-text-inputs {
+	input[type='color'],
+	input[type='date'],
+	input[type='datetime-local'],
+	input[type='datetime'],
+	input[type='email'],
+	input[type='month'],
+	input[type='number'],
+	input[type='password'],
+	input[type='search'],
+	input[type='tel'],
+	input[type='text'],
+	input[type='time'],
+	input[type='url'],
+	input[type='week'],
+	textarea,
+	select:not( [multiple] ) {
+		@slot;
+	}
+}
+
+@custom-variant headroom-pinned {
+	html:has( .headroom--pinned ) & {
+		@slot;
+	}
+}
+
+@custom-variant headroom-unpinned {
+	html:has( .headroom--unpinned ) & {
+		@slot;
+	}
+}
+
+/*
+	Custom variants for parent and child themes.
+	Example usage: @apply sage:is-button-primary child:is-button-secondary;
+ */
+@custom-variant sage {
+	body.wp-theme-sage:not( [class*='wp-child-theme-'] ) & {
+		@slot;
+	}
+}

@@ -1,0 +1,53 @@
+.mobile-menu-navigation {
+	> .menu-item {
+		&:last-child {
+			@apply mb-6;
+		}
+
+		a {
+			@apply block py-3 !text-base text-black no-underline;
+		}
+	}
+
+	.menu-item-has-children > a::after {
+		@apply fontawesome inline-flex px-2 transition-all;
+		--fa-icon: '\f107';
+	}
+
+	.current-menu-ancestor,
+	.current_page_item {
+		> a {
+			@apply text-primary underline;
+		}
+	}
+
+	> .menu-item.js-brave-show-sub-menu {
+		> a::after {
+			@apply rotate-180;
+		}
+
+		.sub-menu {
+			@apply block;
+		}
+	}
+
+	.sub-menu {
+		@apply mb-2 hidden list-none px-3;
+
+		.menu-item {
+			&.current-menu-item > a {
+				@apply text-primary underline;
+			}
+
+			a {
+				@apply p-2 !text-sm text-gray-700;
+			}
+		}
+	}
+}
+
+.mobile-menu-top-bar {
+	> .menu-item a {
+		@apply py-1 !text-sm text-gray-700;
+	}
+}

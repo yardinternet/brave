@@ -1,0 +1,1 @@
+# This file is needed because Lando determines the app root based on the first loaded config file

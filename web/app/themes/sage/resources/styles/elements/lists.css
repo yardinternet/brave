@@ -1,0 +1,54 @@
+ul,
+ol {
+	@apply mb-6 pl-8;
+
+	ul,
+	ol {
+		@apply mb-0;
+	}
+}
+
+ul {
+	@apply list-disc;
+
+	li::marker {
+		@apply text-primary;
+	}
+
+	ul {
+		@apply list-[circle];
+
+		ul {
+			@apply list-[square];
+		}
+	}
+}
+
+ol {
+	@apply list-decimal;
+
+	ol {
+		@apply list-[lower-alpha];
+
+		ol {
+			@apply list-[lower-roman];
+		}
+	}
+}
+
+ul.is-style-unstyled,
+ol.is-style-unstyled {
+	@apply list-none p-0;
+
+	li {
+		@apply mb-1;
+
+		a {
+			@apply text-black no-underline;
+
+			@variant hocus {
+				@apply underline;
+			}
+		}
+	}
+}

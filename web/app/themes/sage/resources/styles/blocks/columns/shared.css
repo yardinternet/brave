@@ -1,0 +1,24 @@
+.wp-block-columns {
+	@apply my-section gap-4 lg:gap-6;
+
+	/* Handle margins when columns are placed after each other. */
+	&:has( + .wp-block-columns ) {
+		@apply !mb-4 lg:!mb-6;
+	}
+
+	&:has( + .wp-block-buttons ) {
+		@apply !mb-4 lg:!mb-6 xl:!mb-8;
+	}
+
+	+ .wp-block-columns {
+		@apply !mt-0;
+	}
+}
+
+.wp-block-heading + .wp-block-columns {
+	@apply !mt-4 lg:!mt-6;
+}
+
+.wp-block-column {
+	@apply normalize-child-margin;
+}

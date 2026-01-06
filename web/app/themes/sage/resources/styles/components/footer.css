@@ -1,0 +1,38 @@
+.footer,
+.is-root-container:has( .pattern-footer ) {
+	/* wp-block-columns inside footer */
+
+	.pattern-footer {
+		@apply container mx-auto my-0 gap-y-8 py-10;
+
+		.wp-block-heading {
+			@apply text-2xl md:mb-4 lg:mb-6;
+		}
+	}
+}
+
+.footer-menu {
+	.menu-item {
+		@apply text-sm;
+
+		&::before {
+			@apply mr-3 content-['|'];
+		}
+
+		&:first-child::before {
+			@apply content-none;
+		}
+
+		a {
+			@apply text-black no-underline;
+
+			@variant hocus {
+				@apply underline;
+			}
+		}
+	}
+}
+
+.cky-banner-element + .footer-menu .menu-item:first-child::before {
+	@apply content-['|'];
+}

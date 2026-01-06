@@ -1,0 +1,6 @@
+.wp-block-spacer {
+	/* Remove height handle to force step sizing */
+	.components-resizable-box__handle {
+		display: none;
+	}
+}

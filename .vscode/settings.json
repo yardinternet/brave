@@ -1,0 +1,106 @@
+{
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit"
+	},
+	"css.validate": false,
+
+	"[blade]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[php]": {
+		"editor.defaultFormatter": "junstyle.php-cs-fixer"
+	},
+	"[css][postcss]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.codeActionsOnSave": {
+			"source.fixAll.prettier": "explicit",
+			"source.fixAll.stylelint": "explicit"
+		}
+	},
+	"[javascript][javascriptreact][typescript][typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.codeActionsOnSave": {
+			"source.fixAll.prettier": "explicit"
+		},
+		"editor.formatOnPaste": false
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+
+	"prettier.configPath": ".prettierrc.cjs",
+	"stylelint.validate": [ "css", "postcss" ],
+
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact"
+	],
+	"eslint.workingDirectories": [
+		{
+			"changeProcessCWD": true,
+			"mode": "auto"
+		}
+	],
+
+	"bladeFormatter.format.enabled": false,
+	"blade.format.enable": false,
+	"blade.newLine": false,
+
+	"emmet.includeLanguages": {
+		"blade": "html",
+		"javascript": "html",
+		"typescript": "html"
+	},
+	"emmet.triggerExpansionOnTab": true,
+
+	"intelephense.environment.phpVersion": "8.1",
+	"intelephense.format.enable": false,
+	"intelephense.stubs": [
+		"Core",
+		"ctype",
+		"curl",
+		"date",
+		"dom",
+		"exif",
+		"fileinfo",
+		"filter",
+		"ftp",
+		"gd",
+		"gettext",
+		"hash",
+		"iconv",
+		"intl",
+		"json",
+		"libxml",
+		"mbstring",
+		"mysqli",
+		"openssl",
+		"pcre",
+		"PDO",
+		"Phar",
+		"posix",
+		"pspell",
+		"random",
+		"readline",
+		"Reflection",
+		"session",
+		"SimpleXML",
+		"SPL",
+		"standard",
+		"tokenizer",
+		"wordpress",
+		"xml",
+		"zip",
+		"zlib"
+	],
+	"php-cs-fixer.executablePath": "${workspaceFolder}/vendor/bin/php-cs-fixer",
+	"php-cs-fixer.config": ".php-cs-fixer.php",
+	"php-cs-fixer.pathMode": "intersection",
+
+	"material-icon-theme.files.associations": {
+		"vite-blocks.config.js": "vite"
+	}
+}

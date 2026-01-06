@@ -1,0 +1,168 @@
+.wp-block-yard-timeline {
+	@apply my-section relative;
+
+	--offset-left: 1rem;
+	--offset-top: 0rem;
+	--offset-bottom: 1.5rem;
+	--top-position: calc( var( --item-padding ) + var( --dot-size ) / 2 );
+
+	--item-offset-left: calc( var( --dot-size ) + var( --offset-left ) );
+	--item-padding: 1rem;
+
+	--dot-size: 24px;
+	--dot-font-size: calc( var( --dot-size ) * 0.5 );
+	--dot-position: calc( var( --dot-size ) * -1 - var( --offset-left ) );
+
+	--line-width: 4px;
+	--line-height: calc( 100% + var( --offset-bottom ) + var( --offset-top ) );
+	--line-position: calc(
+		( var( --dot-size ) / 2 ) * -1 - var( --offset-left ) -
+			( var( --line-width ) / 2 )
+	);
+
+	--horizontal-line-width: calc( var( --line-position ) * -1 );
+	--horizontal-line-position: var( --line-position );
+
+	@variant md {
+		--item-padding: 1.25rem;
+	}
+
+	@variant lg {
+		--item-padding: 1.5rem;
+	}
+}
+
+.wp-block-yard-timeline-item {
+	@apply rounded-theme relative mb-(--offset-bottom) ml-(--item-offset-left) bg-white;
+
+	&:last-child .wp-block-yard-timeline-item__line {
+		@apply h-0;
+	}
+}
+
+.wp-block-yard-timeline-item__dot {
+	@apply border-primary text-primary content pointer-events-none absolute top-(--top-position) left-(--dot-position) z-1 flex size-(--dot-size) -translate-y-1/2 items-center justify-center rounded-full border-4 bg-white;
+	font-size: var( --dot-font-size );
+}
+
+.wp-block-yard-timeline-item__line {
+	@apply bg-primary content pointer-events-none absolute top-(--top-position) left-(--line-position) h-(--line-height) w-(--line-width);
+
+	&::before {
+		@apply bg-primary content pointer-events-none absolute top-0 right-(--horizontal-line-position) h-0.5 w-(--horizontal-line-width) -translate-y-1/2;
+	}
+}
+
+.wp-block-yard-timeline-item__content {
+	@apply normalize-child-margin rounded-theme relative bg-inherit p-(--item-padding) shadow;
+
+	> :first-child,
+	.block-editor-block-list__layout > :first-child {
+		&.wp-block-cover {
+			@apply rounded-t-theme -mt-(--item-padding) mb-(--item-padding);
+		}
+	}
+
+	> :last-child,
+	.block-editor-block-list__layout > :last-child {
+		&.wp-block-cover {
+			@apply rounded-b-theme mt-(--item-padding) -mb-(--item-padding);
+		}
+	}
+
+	.wp-block-cover {
+		@apply -ml-(--item-padding) aspect-[2.35/1] !min-h-0 min-w-[calc(100%+var(--item-padding)*2)] rounded-none md:aspect-video;
+
+		.wp-block-cover__inner-container,
+		.wp-block-cover__background {
+			@apply hidden;
+		}
+	}
+}
+
+ol.wp-block-yard-timeline {
+	--dot-size: 32px;
+	counter-reset: timeline;
+
+	.wp-block-yard-timeline-item {
+		counter-increment: timeline;
+	}
+
+	.wp-block-yard-timeline-item__dot::before {
+		@apply pointer-events-none text-inherit;
+		content: counter( timeline );
+	}
+}
+
+/* Example for timeline alternately styling */
+.wp-block-yard-timeline.is-style-alternately {
+	@variant lg {
+		--offset-left: 1.75rem;
+		--offset-top: -5rem;
+
+		--item-width: calc(
+			100% / 2 - ( var( --offset-left ) + ( var( --dot-size ) / 2 ) )
+		);
+		--item-min-height: calc(
+			( var( --item-padding ) * 2 ) + ( var( --offset-top ) * -1 )
+		);
+	}
+
+	.wp-block-yard-timeline-item {
+		@apply lg:w-(--item-width);
+
+		.wp-block-yard-timeline-item__content {
+			@apply lg:min-h-(--item-min-height);
+		}
+
+		&:nth-child( odd ) {
+			@apply lg:mr-auto lg:ml-0;
+
+			.wp-block-yard-timeline-item__dot {
+				@apply lg:right-(--dot-position) lg:left-auto;
+			}
+
+			.wp-block-yard-timeline-item__line {
+				@apply lg:right-(--line-position) lg:left-auto;
+
+				&::before {
+					@apply lg:right-auto lg:left-(--horizontal-line-position);
+				}
+			}
+		}
+
+		&:nth-child( even ) {
+			@apply lg:mr-0 lg:ml-auto;
+		}
+
+		&:not( :first-child ) {
+			@apply lg:mt-(--offset-top);
+		}
+	}
+}
+
+/* Example for timeline with icon in dot */
+.wp-block-yard-timeline:has(
+		.wp-block-yard-timeline-item :first-child.wp-block-yard-icon
+	) {
+	--dot-size: 48px;
+
+	.wp-block-yard-timeline-item {
+		> :first-child.wp-block-yard-icon {
+			@apply absolute top-(--top-position) left-(--dot-position) z-2 flex size-(--dot-size) -translate-y-1/2 items-center justify-center rounded-full text-white;
+			font-size: var( --dot-font-size );
+		}
+	}
+
+	.wp-block-yard-timeline-item__dot {
+		@apply bg-primary border-none;
+	}
+
+	&.is-style-alternately {
+		.wp-block-yard-timeline-item:nth-child( odd ) {
+			:first-child.wp-block-yard-icon {
+				@apply lg:right-(--dot-position) lg:left-auto;
+			}
+		}
+	}
+}

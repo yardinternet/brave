@@ -1,0 +1,155 @@
+:root {
+	@apply scroll-pt-(--combined-bar-height) scroll-smooth;
+}
+
+::selection,
+mark {
+	@apply bg-primary-100 text-black;
+}
+
+body {
+	@apply flex min-h-screen flex-col bg-white text-base font-normal text-black underline-offset-4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	/* Reset margin for Gutenberg editor. */
+	@apply my-0 font-bold;
+
+	/* Break titles on small screen */
+	@apply max-sm:break-word max-sm:hyphens-auto;
+}
+
+h1 {
+	@apply mb-4 text-9xl;
+
+	+ p,
+	+ time + p {
+		@apply make-lead;
+	}
+}
+
+h2 {
+	@apply mb-3 text-4xl;
+}
+
+h3 {
+	@apply mb-3 text-2xl;
+}
+
+h4 {
+	@apply mb-1 text-xl;
+}
+
+h5 {
+	@apply mb-1 text-lg;
+}
+
+h6 {
+	@apply mb-1 text-base;
+}
+
+p {
+	@apply mt-0 mb-6;
+}
+
+a {
+	@apply text-primary-600 underline;
+
+	@variant hocus {
+		@apply text-primary-700;
+	}
+
+	/* Hide links if they are empty. Easy fix for some Gutenberg and a11y issues. */
+	&:not( [class] ):empty {
+		@apply hidden;
+	}
+
+	/* Always break long email addresses */
+	&[href^='mailto:'] {
+		@apply break-word hyphens-auto;
+	}
+}
+
+strong,
+.brave-hooks-strong {
+	@apply font-bold;
+}
+
+em,
+.brave-hooks-em {
+	@apply italic;
+}
+
+button {
+	@apply cursor-pointer;
+}
+
+hr {
+	@apply my-6 border-t;
+}
+
+caption,
+figcaption {
+	@apply my-4 text-center text-sm text-gray-500;
+}
+
+.fa-fw {
+	@apply min-w-5;
+}
+
+/* All focusable elements */
+input[type='radio']:focus + label,
+input[type='checkbox']:focus + label,
+input:focus:not( [type='radio'], [type='checkbox'] ),
+textarea:focus,
+a:focus,
+button:focus,
+select:focus,
+area:focus,
+iframe:focus,
+details:focus {
+	outline-width: 0;
+
+	.js-user-is-tabbing & {
+		animation: focus 0.1s linear both;
+		outline-color: -webkit-focus-ring-color;
+		outline-style: auto;
+	}
+}
+
+@keyframes focus {
+	0% {
+		outline-offset: 16px;
+		outline-style: auto;
+		outline-width: 0px;
+	}
+
+	100% {
+		z-index: 9999;
+		outline-offset: 4px;
+		outline-style: auto;
+		outline-width: 2px;
+	}
+}
+
+/*
+* 1. Immediately jump any animation to the end point
+* 2. Remove transitions & fixed background attachment
+* See: https://web.dev/prefers-reduced-motion/#bonus-forcing-reduced-motion-on-all-websites
+*/
+@variant motion-reduce {
+	*,
+	::before,
+	::after {
+		@apply !scroll-auto !delay-0 !duration-0;
+		animation-delay: -1ms !important;
+		animation-duration: 1ms !important;
+		animation-iteration-count: 1 !important;
+		background-attachment: initial !important;
+	}
+}

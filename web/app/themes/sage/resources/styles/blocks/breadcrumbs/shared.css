@@ -1,0 +1,15 @@
+.breadcrumb .breadcrumb-item {
+	@apply text-sm;
+
+	&::after {
+		@apply mx-2 content-['|'];
+	}
+
+	a {
+		@apply text-black no-underline;
+
+		@variant hocus {
+			@apply underline;
+		}
+	}
+}
