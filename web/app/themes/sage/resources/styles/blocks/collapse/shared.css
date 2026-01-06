@@ -1,0 +1,48 @@
+.wp-block-yard-collapse {
+	@apply my-4 lg:my-6 xl:mb-8;
+}
+
+.wp-block-yard-collapse-item {
+	@apply rounded-theme mb-2 bg-white shadow-sm;
+
+	&:last-child {
+		@apply mb-0;
+	}
+}
+
+.wp-block-yard-collapse-item__header {
+	@apply mb-0 text-base;
+
+	.wp-block-yard-icon-component {
+		@apply mr-2;
+	}
+}
+
+.wp-block-yard-collapse-item__header-button {
+	@apply rounded-theme relative mb-0 p-4 pr-12 font-normal text-black transition-all lg:pr-14 lg:pl-6;
+
+	&::after {
+		@apply fontawesome text-primary rounded-theme absolute top-1/2 right-4 flex size-8 -translate-y-1/2 items-center justify-center bg-transparent text-sm transition-[transform,background-color,rotate] lg:right-6;
+		--fa-icon: '\f078';
+	}
+
+	&:hover,
+	&:active,
+	&[aria-expanded='true'] {
+		@apply bg-primary text-white;
+
+		&::after {
+			@apply bg-white/10 text-inherit;
+		}
+	}
+
+	&[aria-expanded='true'] {
+		&::after {
+			@apply rotate-180;
+		}
+	}
+}
+
+.wp-block-yard-collapse-item__panel-content {
+	@apply normalize-child-margin p-4 pt-2 lg:p-6 lg:pt-4;
+}

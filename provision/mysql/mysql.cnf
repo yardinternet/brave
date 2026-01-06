@@ -1,0 +1,4 @@
+[mysqld]
+
+# Use the old MySQL 5.x authentication method for Lando compatibility
+default_authentication_plugin=mysql_native_password

@@ -1,0 +1,24 @@
+.wp-block-yard-collapse-item {
+	&[data-open='true'] {
+		.wp-block-yard-collapse-item__header,
+		.wp-block-yard-collapse-item__header-input {
+			@apply bg-primary !rounded-b-none text-white;
+		}
+
+		.wp-block-yard-collapse-item__header-toggle-button {
+			@apply !bg-primary !text-white;
+		}
+	}
+}
+
+.wp-block-yard-collapse-item__header {
+	@apply rounded-theme p-4 lg:px-6;
+}
+
+.wp-block-yard-collapse-item__header-input {
+	@apply rounded-none border-none bg-inherit p-0 shadow-none;
+}
+
+.wp-block-yard-collapse-item__header-toggle-button {
+	@apply !text-primary !bg-white;
+}

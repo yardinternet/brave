@@ -1,0 +1,5 @@
+# Hoist these packages to the node_modules root for formatting and linting
+publicHoistPattern:
+    - prettier
+    - stylelint
+    - eslint

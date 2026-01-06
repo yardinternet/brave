@@ -1,0 +1,73 @@
+.nav {
+	> .menu-item {
+		@apply relative h-full;
+
+		&::before {
+			@apply ease-base bg-primary content invisible absolute bottom-0 left-2 h-1 w-[calc(100%_-_1rem)] scale-0 duration-300 xl:left-4 xl:w-[calc(100%_-_2rem)];
+		}
+
+		@variant hocus {
+			&::before {
+				@apply visible scale-100;
+			}
+		}
+
+		a {
+			@apply flex h-full items-center px-2 text-center text-sm leading-snug text-black no-underline xl:px-4 xl:text-base xl:leading-snug;
+
+			@variant hocus {
+				@apply text-primary;
+			}
+		}
+	}
+
+	.current-menu-ancestor,
+	.current-menu-item {
+		&::before {
+			@apply visible scale-100;
+		}
+
+		> a {
+			@apply text-primary;
+		}
+	}
+
+	.menu-item-has-children {
+		> a::after {
+			@apply fontawesome ease-base pt-1 pl-2 transition-all;
+			--fa-icon: '\f107';
+		}
+
+		/* Handles opened and closed state */
+		&.js-show-sub-menu {
+			> a::after {
+				@apply translate-y-1;
+			}
+
+			> .sub-menu {
+				@apply visible translate-y-0 opacity-100 transition;
+			}
+		}
+	}
+
+	.sub-menu {
+		@apply ease-base invisible absolute mb-0 min-w-max -translate-y-3 list-none bg-white pl-0 opacity-0 shadow-md transition-all;
+
+		.menu-item {
+			a {
+				@apply min-w-48 px-6 py-3;
+
+				&::after {
+					@apply fontawesome ease-base ml-auto pl-4 transition-all;
+					--fa-icon: '\f105';
+				}
+
+				@variant hocus {
+					&::after {
+						@apply translate-x-1;
+					}
+				}
+			}
+		}
+	}
+}

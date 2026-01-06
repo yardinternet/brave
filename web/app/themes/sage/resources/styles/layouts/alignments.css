@@ -1,0 +1,39 @@
+/*
+  Create the appropriate CSS for floating images. See:
+  https://github.com/WordPress/gutenberg/issues/33385#issuecomment-893551418
+*/
+.alignleft {
+	@variant sm {
+		@apply float-left !mr-4;
+	}
+}
+
+.is-root-container > .alignleft,
+.main > .alignleft {
+	@variant sm {
+		@apply ml-[calc((100%-var(--content-container-width))*0.5)];
+	}
+}
+
+.alignright {
+	@variant sm {
+		@apply float-right !ml-4;
+	}
+}
+
+.is-root-container > .alignright,
+.main > .alignright {
+	@variant sm {
+		@apply mr-[calc((100%-var(--content-container-width))*0.5)];
+	}
+}
+
+.aligncenter {
+	@apply mx-auto text-center;
+}
+
+/* Fix max-width for layout constrained */
+.is-layout-constrained:not( .alignfull )
+	> :not( .alignleft, .alignright, .alignfull ) {
+	@apply max-w-[min(100%,var(--content-container-max-width))];
+}

@@ -1,0 +1,73 @@
+{
+	"pre-commit": {
+		"enabled": true,
+		"actions": [
+			{
+				"action": "./vendor/bin/php-cs-fixer --config=.php-cs-fixer.php fix {$STAGED_FILES|of-type:php}",
+				"conditions": [
+					{
+						"exec": "\\CaptainHook\\App\\Hook\\Condition\\FileStaged\\OfType",
+						"args": [
+							"php"
+						]
+					}
+				]
+			},
+			{
+				"action": "pnpm run yard-toolkit format js -m custom {$STAGED_FILES|of-type:js}",
+				"conditions": [
+					{
+						"exec": "\\CaptainHook\\App\\Hook\\Condition\\FileStaged\\OfType",
+						"args": [
+							"js"
+						]
+					}
+				]
+			},
+			{
+				"action": "pnpm run yard-toolkit lint js -m custom {$STAGED_FILES|of-type:js}",
+				"conditions": [
+					{
+						"exec": "\\CaptainHook\\App\\Hook\\Condition\\FileStaged\\OfType",
+						"args": [
+							"js"
+						]
+					}
+				]
+			},
+			{
+				"action": "pnpm run yard-toolkit format css -m custom {$STAGED_FILES|of-type:css}",
+				"conditions": [
+					{
+						"exec": "\\CaptainHook\\App\\Hook\\Condition\\FileStaged\\OfType",
+						"args": [
+							"css"
+						]
+					}
+				]
+			},
+			{
+				"action": "pnpm run yard-toolkit lint css -m custom {$STAGED_FILES|of-type:css}",
+				"conditions": [
+					{
+						"exec": "\\CaptainHook\\App\\Hook\\Condition\\FileStaged\\OfType",
+						"args": [
+							"css"
+						]
+					}
+				]
+			},
+			{
+				"action": "pnpm run yard-toolkit format blade -m custom {$STAGED_FILES|in-dir:*.blade.php}",
+				"conditions": [
+					{
+						"exec": "\\CaptainHook\\App\\Hook\\Condition\\FileStaged\\Any",
+						"args": [
+							"*.blade.php"
+						]
+					}
+				]
+			}
+		]
+	}
+}

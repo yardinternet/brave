@@ -1,0 +1,29 @@
+.has-primary-background-color,
+.has-black-background-color {
+	@apply dark-background-white-elements;
+}
+
+/* Block styling which doesn't need their own CSS file */
+.wp-block-cover,
+.wp-block-embed,
+.wp-block-gallery,
+.wp-block-image,
+.wp-block-post-featured-image {
+	@apply mb-6 md:mb-8;
+}
+
+.wp-block-cover,
+.wp-block-image img,
+.wp-block-post-featured-image img,
+.wp-post-image {
+	@apply rounded-theme;
+}
+
+/* Fix conflict between tailwind and wordpress class "size-full" */
+.wp-block-image.size-full {
+	@apply size-auto;
+}
+
+.wp-block-separator {
+	@apply my-8 h-[2px] w-full border-none bg-gray-200;
+}

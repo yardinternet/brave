@@ -1,0 +1,172 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"color": {
+			"customDuotone": false,
+			"customGradient": false,
+			"custom": false,
+			"defaultDuotone": false,
+			"defaultGradients": false,
+			"defaultPalette": false,
+			"duotone": [],
+			"gradients": [],
+			"palette": []
+		},
+		"typography": {
+			"customFontSize": false,
+			"defaultFontSizes": false,
+			"dropCap": false,
+			"fontFamilies": [],
+			"fontSizes": [],
+			"fontStyle": false,
+			"fontWeight": false,
+			"letterSpacing": false,
+			"lineHeight": false,
+			"textDecoration": false,
+			"textTransform": false
+		},
+		"layout": {
+			"contentSize": "var(--content-container-width)",
+			"wideSize": "var(--container-width)"
+		},
+		"shadow": {
+			"defaultPresets": false
+		},
+		"spacing": {
+			"defaultSpacingSizes": false,
+			"customSpacingSize": false,
+			"margin": false,
+			"spacingSizes": [
+				{
+					"size": "var(--spacing-size-1)",
+					"slug": "1",
+					"name": "1"
+				},
+				{
+					"size": "var(--spacing-size-2)",
+					"slug": "2",
+					"name": "2"
+				},
+				{
+					"size": "var(--spacing-size-3)",
+					"slug": "3",
+					"name": "3"
+				},
+				{
+					"size": "var(--spacing-size-4)",
+					"slug": "4",
+					"name": "4"
+				},
+				{
+					"size": "var(--spacing-size-5)",
+					"slug": "5",
+					"name": "5"
+				},
+				{
+					"size": "var(--spacing-size-6)",
+					"slug": "6",
+					"name": "6"
+				},
+				{
+					"size": "var(--spacing-size-7)",
+					"slug": "7",
+					"name": "7"
+				}
+			]
+		},
+		"blocks": {
+			"core/button": {
+				"border": {
+					"radius": false
+				}
+			},
+			"core/columns": {
+				"spacing": {
+					"margin": true
+				}
+			},
+			"core/cover": {
+				"color": {
+					"text": false,
+					"heading": false,
+					"palette": [
+						{
+							"slug": "primary",
+							"color": "var(--color-primary)",
+							"name": "Primair"
+						},
+						{
+							"slug": "white",
+							"color": "var(--color-white)",
+							"name": "Wit"
+						},
+						{
+							"slug": "black",
+							"color": "var(--color-black)",
+							"name": "Zwart"
+						}
+					]
+				}
+			},
+			"core/group": {
+				"spacing": {
+					"margin": true
+				},
+				"color": {
+					"text": false,
+					"heading": false,
+					"button": false,
+					"palette": [
+						{
+							"slug": "primary",
+							"color": "var(--color-primary)",
+							"name": "Primair"
+						},
+						{
+							"slug": "white",
+							"color": "var(--color-white)",
+							"name": "Wit"
+						}
+					]
+				}
+			},
+			"core/media-text": {
+				"color": {
+					"text": false,
+					"heading": false,
+					"button": false,
+					"palette": [
+						{
+							"slug": "white",
+							"color": "var(--color-white)",
+							"name": "Wit"
+						}
+					]
+				}
+			}
+		}
+	},
+	"styles": {
+		"elements": {
+			"button": {
+				"typography": {
+					"fontSize": "",
+					"fontFamily": "",
+					"lineHeight": "",
+					"textDecoration": ""
+				},
+				"color": {
+					"text": "",
+					"background": ""
+				},
+				"border": {
+					"width": ""
+				},
+				"spacing": {
+					"padding": {}
+				}
+			}
+		}
+	}
+}

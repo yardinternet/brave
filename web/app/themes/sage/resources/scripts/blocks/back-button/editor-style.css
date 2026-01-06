@@ -1,0 +1,23 @@
+@reference '@sage/styles/base/config.css';
+
+.wp-block-theme-back-button {
+	@apply flex;
+
+	.editor-page-attributes__parent {
+		@apply absolute top-0 left-auto z-1 hidden max-w-80 bg-white p-4 shadow-lg;
+
+		.components-combobox-control__suggestions-container {
+			@apply !border;
+		}
+
+		ul {
+			@apply mb-0 pl-0;
+		}
+	}
+
+	&.is-selected {
+		.editor-page-attributes__parent {
+			@apply block;
+		}
+	}
+}

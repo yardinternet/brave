@@ -1,0 +1,78 @@
+.wp-block-yard-tabs {
+	@apply bg-primary rounded-theme @container my-4 grid grid-cols-1 gap-0 overflow-hidden shadow sm:bg-white lg:my-6 xl:mb-8;
+
+	@variant sm {
+		--tabs-percentage: 40%;
+		background: linear-gradient(
+			to right,
+			var( --color-primary ) var( --tabs-percentage ),
+			var( --color-white ) var( --tabs-percentage )
+		);
+		grid-template-columns: var( --tabs-percentage ) 1fr;
+	}
+
+	&.alignwide {
+		@variant xl {
+			--tabs-percentage: 30%;
+		}
+	}
+}
+
+.wp-block-yard-tabs-item__heading {
+	@apply bg-primary mb-0 px-5 py-4 text-base font-normal text-white sm:col-start-1 md:px-8 md:py-2 @2xl:px-8 @2xl:py-2 @5xl:px-12;
+
+	&:first-of-type {
+		@apply @2xl:pt-6 @5xl:pt-10;
+	}
+
+	&:last-of-type {
+		@apply @2xl:pb-6 @5xl:pb-10;
+	}
+
+	.wp-block-yard-icon-component {
+		@apply mr-2;
+	}
+}
+
+.wp-block-yard-tabs-item__button {
+	@apply relative flex w-full pl-12 text-left @2xl:py-2;
+
+	&::before {
+		@apply fontawesome rounded-theme absolute top-1/2 left-0 flex size-8 -translate-y-1/2 items-center justify-center bg-white/20 text-white transition-all duration-500;
+		--fa-icon: '\f061';
+	}
+
+	@variant hocus {
+		@apply underline;
+	}
+
+	&.active {
+		@apply font-bold;
+
+		&::before {
+			@apply bg-primary-200 rotate-90 text-white sm:rotate-0;
+		}
+	}
+}
+
+.wp-block-yard-tabs-item__panel {
+	@apply normalize-child-margin hidden bg-white p-4 sm:order-last sm:col-start-2 sm:row-start-1 sm:row-end-[100] @2xl:p-8 @5xl:p-12;
+
+	&.active {
+		@apply block;
+
+		> * {
+			animation: fade 0.7s both;
+		}
+	}
+}
+
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

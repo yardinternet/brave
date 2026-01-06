@@ -1,0 +1,11 @@
+.wp-block-quote {
+	@apply border-primary relative my-6 border-l-4 border-solid pl-6 md:my-8;
+
+	p {
+		@apply static text-lg !leading-[1.75];
+	}
+
+	cite {
+		@apply font-bold not-italic;
+	}
+}

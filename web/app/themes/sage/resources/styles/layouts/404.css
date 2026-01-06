@@ -1,0 +1,5 @@
+.error404 {
+	h1 {
+		@apply mb-6 text-6xl leading-none md:text-[4rem];
+	}
+}

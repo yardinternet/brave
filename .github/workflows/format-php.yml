@@ -1,0 +1,11 @@
+name: Code Style
+
+on:
+  pull_request:
+    paths:
+      - '**.php'
+
+jobs:
+  php-cs-fixer:
+    uses: yardinternet/workflows/.github/workflows/format-php.yml@main
+    secrets: inherit

@@ -1,0 +1,141 @@
+.facetwp {
+	.facetwp-facet {
+		@apply mb-8;
+	}
+
+	.facetwp-input-wrap {
+		@apply w-full;
+	}
+
+	/* Facet: search */
+	.facetwp-type-search {
+		.facetwp-icon {
+			@apply flex items-center justify-center px-4 py-2 not-italic opacity-100;
+
+			&::before {
+				@apply fontawesome size-auto bg-none;
+				--fa-icon: '\f002';
+			}
+		}
+
+		.facetwp-search {
+			@apply w-full;
+		}
+
+		&.is-loading .facetwp-icon::before {
+			@apply fontawesome;
+			--fa-icon: '\f3f4';
+		}
+	}
+
+	/* Facet: checkboxes & radio's */
+	.facetwp-type-checkboxes {
+		@apply flex flex-col items-start;
+	}
+
+	.facetwp-checkbox,
+	.facetwp-radio {
+		@apply flex w-full items-baseline bg-none px-0 text-left;
+
+		&::before {
+			@apply content mr-3 ml-1 inline-flex size-4 min-w-4 border border-gray-500 bg-white bg-cover bg-center bg-no-repeat;
+		}
+
+		@variant hocus {
+			@apply text-primary;
+
+			.facetwp-counter {
+				@apply text-inherit;
+			}
+		}
+
+		&.checked {
+			@apply bg-none;
+
+			&::before {
+				@apply border-primary bg-primary;
+			}
+		}
+	}
+
+	.facetwp-checkbox.checked::before {
+		background-image: url( 'data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27white%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e' );
+	}
+
+	.facetwp-radio {
+		&::before {
+			@apply rounded-full;
+		}
+
+		&.checked::before {
+			background-image: url( 'data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27white%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3ccircle cx=%278%27 cy=%278%27 r=%273%27/%3e%3c/svg%3e' );
+		}
+	}
+
+	.facetwp-overflow {
+		@apply w-full;
+	}
+
+	.facetwp-counter {
+		@apply ml-auto inline-flex text-sm text-gray-500;
+	}
+
+	/* Facet: dropdown */
+	.facetwp-dropdown {
+		@apply w-full;
+	}
+
+	/* Selections */
+	.facetwp-selections ul {
+		@apply m-0 flex flex-wrap gap-2 p-0;
+
+		li {
+			@apply flex gap-2;
+		}
+
+		.facetwp-selection-label {
+			@apply hidden;
+		}
+
+		.facetwp-selection-value {
+			@apply is-button is-button-small is-button-primary-100 m-0 bg-none px-[0.5em] py-[0.25em];
+
+			&::after {
+				@apply fontawesome ml-3 leading-none;
+				--fa-icon: '\f00d';
+			}
+		}
+	}
+
+	.facetwp-result-count-container .facetwp-type-pager {
+		@apply mb-0 text-sm;
+
+		span {
+			@apply text-primary font-bold;
+		}
+	}
+
+	.facetwp-facet-pagination {
+		.facetwp-pager {
+			@apply mt-8 flex flex-wrap justify-center gap-x-2 gap-y-4;
+
+			&:empty {
+				@apply mt-0;
+			}
+		}
+
+		.facetwp-page {
+			@apply rounded-theme relative m-0 flex size-10 items-center justify-center p-2 font-normal text-black no-underline transition-all;
+
+			&:not( .dots, .active ) {
+				@variant hocus {
+					@apply bg-primary text-white;
+				}
+			}
+
+			&.active {
+				@apply bg-primary text-white;
+			}
+		}
+	}
+}

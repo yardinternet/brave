@@ -1,0 +1,11 @@
+.wp-block-embed.is-type-video {
+	@apply relative aspect-video;
+
+	.wp-block-embed__wrapper {
+		@apply absolute block size-full overflow-hidden p-0;
+
+		> div {
+			@apply !h-full;
+		}
+	}
+}

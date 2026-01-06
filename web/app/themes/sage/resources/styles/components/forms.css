@@ -1,0 +1,33 @@
+@variant all-form-text-inputs {
+	@apply rounded-theme border-0 border-b-2 border-gray-400 bg-white p-3 text-[1rem] leading-snug shadow-sm;
+
+	&:focus {
+		@apply border-primary;
+	}
+}
+
+select:not( [multiple] ) {
+	@apply hover:ring-primary rounded-theme cursor-pointer border-none bg-gray-100 shadow-none hover:ring-1;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+	@apply accent-primary cursor-pointer;
+
+	+ label {
+		@apply ml-1 cursor-pointer !text-sm;
+	}
+}
+
+input[type='submit'],
+input[type='button'] {
+	@apply is-button;
+}
+
+input[type='file'] {
+	@apply cursor-pointer text-sm;
+
+	&::file-selector-button {
+		@apply is-button is-button-primary-100 is-button-small mr-3 border-none;
+	}
+}

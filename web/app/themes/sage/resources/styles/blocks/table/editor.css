@@ -1,0 +1,7 @@
+.wp-block-table tbody tr td {
+	@apply !border;
+}
+
+.wp-block-table.is-style-stripes tbody tr td {
+	@apply border-primary-200;
+}

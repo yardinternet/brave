@@ -1,0 +1,52 @@
+version: 2
+updates:
+
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    groups:
+      actions:
+        patterns:
+          - "*"
+    commit-message:
+      prefix: "chore"
+
+  - package-ecosystem: 'npm'
+    directory: '/'
+    registries: "*"
+    schedule:
+        interval: 'weekly'
+    groups:
+      pnpm:
+        patterns:
+          - "*"
+    commit-message:
+      prefix: "chore"
+    versioning-strategy: lockfile-only
+
+  - package-ecosystem: "composer"
+    registries: "*"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      composer:
+        patterns:
+          - "*"
+    commit-message:
+      prefix: "chore"
+    versioning-strategy: lockfile-only
+
+registries:
+  ypackagist:
+    type: composer-repository
+    url: https://packagist.yard.nl/satispress/
+    username: ${{secrets.YPACKAGIST_API_KEY}}
+    password: ${{secrets.YPACKAGIST_PASSWORD}}
+
+  github:
+    type: npm-registry
+    url: https://npm.pkg.github.com
+    token: ${{secrets.YARD_BOT_PAT}}
+

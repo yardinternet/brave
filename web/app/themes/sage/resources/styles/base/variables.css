@@ -1,0 +1,58 @@
+:root {
+	/* @link https://utopia.fyi/type/calculator?c=375,14,1.06,1100,16,1.1,10,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+	--text-step--2: clamp( 0.7787rem, 0.7541rem + 0.1053vw, 0.8264rem );
+	--text-step--1: clamp( 0.8255rem, 0.7822rem + 0.1845vw, 0.9091rem );
+	--text-step-0: clamp( 0.875rem, 0.8103rem + 0.2759vw, 1rem );
+	--text-step-1: clamp( 0.9275rem, 0.8383rem + 0.3807vw, 1.1rem );
+	--text-step-2: clamp( 0.9832rem, 0.8658rem + 0.5006vw, 1.21rem );
+	--text-step-3: clamp( 1.0421rem, 0.8927rem + 0.6375vw, 1.331rem );
+	--text-step-4: clamp( 1.1047rem, 0.9188rem + 0.7932vw, 1.4641rem );
+	--text-step-5: clamp( 1.1709rem, 0.9436rem + 0.9701vw, 1.6105rem );
+	--text-step-6: clamp( 1.2412rem, 0.9669rem + 1.1704vw, 1.7716rem );
+	--text-step-7: clamp( 1.3157rem, 0.9882rem + 1.3971vw, 1.9487rem );
+	--text-step-8: clamp( 1.3946rem, 1.0072rem + 1.6529vw, 2.1436rem );
+	--text-step-9: clamp( 1.4783rem, 1.0233rem + 1.9413vw, 2.3579rem );
+	--text-step-10: clamp( 1.567rem, 1.0359rem + 2.2659vw, 2.5937rem );
+
+	/* Section spacing */
+	--spacing-size-1: clamp( 0.25rem, calc( 0.25rem + 2vw ), 0.5rem );
+	--spacing-size-2: clamp( 0.5rem, calc( 0.5rem + 2vw ), 1rem );
+	--spacing-size-3: clamp( 0.75rem, calc( 0.75rem + 2vw ), 1.5rem );
+	--spacing-size-4: clamp( 1.5rem, calc( 1.5rem + 2vw ), 3rem );
+	--spacing-size-5: clamp( 2rem, calc( 2rem + 2vw ), 4rem );
+	--spacing-size-6: clamp( 2.5rem, calc( 2.5rem + 2vw ), 5rem );
+	--spacing-size-7: clamp( 3rem, calc( 3rem + 2vw ), 6rem );
+
+	/* Navigation */
+	--wp-admin-bar-height: var( --wp-admin--admin-bar--height, 0px );
+	--nav-bar-height: 80px;
+	--top-bar-height: 40px;
+	--combined-bar-height: var( --nav-bar-height ); /* Altered in top-bar.css */
+
+	/* Card padding */
+	--card-padding: 1rem;
+	@variant lg {
+		--card-padding: 1.5rem;
+	}
+	@variant xl {
+		--card-padding: 1.75rem;
+	}
+
+	/* Container size */
+	--container-padding: --spacing( 4 );
+	@variant xl {
+		--container-padding: --spacing( 16 );
+	}
+	--container-max-width: 1296px;
+	--container-width: min(
+		calc( 100% - var( --container-padding ) * 2 ),
+		var( --container-max-width )
+	);
+
+	/* Content container size */
+	--content-container-max-width: 768px;
+	--content-container-width: min(
+		var( --container-width ),
+		var( --content-container-max-width )
+	);
+}

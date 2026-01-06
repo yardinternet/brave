@@ -1,0 +1,25 @@
+/* Styles on body also needs to be on .editor-styles-wrapper */
+.editor-styles-wrapper {
+	@apply !min-h-0 overflow-x-clip bg-white font-sans text-base font-normal text-black underline-offset-4;
+
+	/* Indicate a title in the post content by dimming title wrapper */
+	&:has( h1:not( .editor-post-title ) ) {
+		.edit-post-visual-editor__post-title-wrapper {
+			@apply opacity-50;
+		}
+	}
+
+	/* Align reusable blocks in editor */
+	.block-library-block__reusable-block-container {
+		@apply mx-auto;
+	}
+
+	/* Remove all linkable areas in editor */
+	a::after {
+		@apply !content-none;
+	}
+}
+
+.is-root-container {
+	@apply is-main-content;
+}

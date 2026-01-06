@@ -1,0 +1,10 @@
+/* Class added to the body when the searchbar is open */
+.js-search-bar-is-open {
+	.search-bar {
+		@apply visible translate-y-0 opacity-100;
+	}
+
+	.search-bar-container::after {
+		@apply bg-black/[0.5];
+	}
+}

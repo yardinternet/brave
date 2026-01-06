@@ -1,0 +1,21 @@
+.top-bar {
+	.menu-item > a {
+		@apply text-inherit no-underline;
+
+		@variant hocus {
+			@apply underline;
+		}
+	}
+
+	.current-menu-item > a {
+		@apply text-primary-600 underline;
+	}
+}
+
+:root:has( .has-top-bar ) {
+	@variant lg {
+		--combined-bar-height: calc(
+			var( --nav-bar-height ) + var( --top-bar-height )
+		);
+	}
+}

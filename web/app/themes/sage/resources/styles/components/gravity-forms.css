@@ -1,0 +1,90 @@
+.gform_wrapper.gravity-theme {
+	@variant all-form-text-inputs {
+		@apply px-4 py-3 !text-[1rem];
+	}
+
+	.gform_required_legend {
+		@apply mb-3 text-sm text-gray-500;
+	}
+
+	.gform_drop_area {
+		@apply bg-gray-50;
+	}
+
+	.gform_button_select_files {
+		@apply is-button is-button-primary-100 is-button-small;
+	}
+
+	.field_description_above .gfield_description {
+		@apply pb-2;
+
+		&.gfield_consent_description {
+			@apply mb-2;
+		}
+	}
+
+	.gfield_description {
+		@apply mt-0 text-sm;
+
+		&.ginput_counter,
+		&.gform_fileupload_rules {
+			@apply pb-0;
+		}
+	}
+
+	> .gform_validation_errors {
+		@apply rounded-theme;
+
+		> .gform_submission_error {
+			@apply text-lg font-bold;
+		}
+
+		> ol {
+			@apply mb-0;
+		}
+	}
+
+	.gfield_validation_message {
+		@apply rounded-theme mt-2 px-3 py-2;
+	}
+
+	.gf_progressbar {
+		@apply bg-primary-100;
+
+		.gf_progressbar_percentage {
+			@apply bg-primary;
+		}
+	}
+
+	input[type='button'].gform_previous_button {
+		@apply is-button is-button-outline;
+	}
+
+	button[type='button'].gfield_choice_all_toggle {
+		@apply is-button is-button-small is-button-primary-100;
+	}
+
+	button[type='button'].gform_save_link {
+		@apply is-button is-button-primary-100;
+
+		svg path {
+			@apply fill-black;
+		}
+	}
+
+	.gform_footer .gform_button {
+		@apply mb-0;
+	}
+}
+
+.gform_confirmation_message {
+	@apply normalize-child-margin rounded-theme bg-white p-(--card-padding) shadow;
+}
+
+.gform-recaptcha-disclaimer {
+	@apply text-xs !leading-snug text-gray-500;
+
+	a {
+		@apply text-inherit;
+	}
+}

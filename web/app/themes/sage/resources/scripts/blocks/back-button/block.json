@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "theme/back-button",
+	"title": "Terug knop",
+	"category": "theme",
+	"description": "Deze knop verschijnt automatisch als je een hoofdpagina hebt gekoppeld.",
+	"supports": {
+		"align": [ "wide" ],
+		"multiple": false,
+		"html": false,
+		"reusable": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "wide"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./editor-style.css",
+	"style": "file:./style.css"
+}

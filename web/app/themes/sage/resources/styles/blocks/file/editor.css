@@ -1,0 +1,7 @@
+.wp-block-file__content-wrapper {
+	@apply order-first flex items-center gap-4;
+}
+
+.wp-block-file__button-richtext-wrapper {
+	@apply order-first m-0;
+}

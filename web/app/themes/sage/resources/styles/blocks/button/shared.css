@@ -1,0 +1,41 @@
+.wp-block-button__link {
+	@apply is-button add-button-icons;
+}
+
+.is-style-outlined .wp-block-button__link {
+	@apply is-button-outline add-button-icons;
+}
+
+.is-style-back .wp-block-button__link::before {
+	@apply fontawesome mr-3;
+	--fa-icon: '\f060';
+}
+
+.wp-block-buttons {
+	@apply mb-8;
+}
+
+/* Specificity to overwrite Gutenberg */
+.wp-block-buttons > .wp-block-button {
+	&.wp-block-button__width-25,
+	&.wp-block-button__width-50,
+	&.wp-block-button__width-75 {
+		@apply w-full;
+
+		@variant sm {
+			width: calc( 50% - ( var( --wp--style--block-gap, 0.5em ) * 0.5 ) );
+		}
+	}
+
+	&.wp-block-button__width-25 {
+		@variant md {
+			width: calc( 25% - ( var( --wp--style--block-gap, 0.5em ) * 0.5 ) );
+		}
+	}
+
+	&.wp-block-button__width-75 {
+		@variant md {
+			width: calc( 75% - ( var( --wp--style--block-gap, 0.5em ) * 0.5 ) );
+		}
+	}
+}

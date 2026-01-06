@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+			"name": "Listen for XDebug on Lando",
+			"type": "php",
+			"request": "launch",
+			"pathMappings": {
+				"/app": "${workspaceFolder}"
+			},
+			"port": 9003
+		}
+    ]
+}
