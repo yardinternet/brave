@@ -1,11 +1,33 @@
+:root {
+	--brave-core-quote-block-spacing: --spacing( 6 );
+	--brave-core-quote-spacing: --spacing( 6 );
+	--brave-core-quote-border-color: var( --color-primary );
+	--brave-core-quote-border-width: --spacing( 1 );
+	--brave-core-quote-cite-font-size: var( --text-base );
+	--brave-core-quote-cite-line-height: 1.25;
+	--brave-core-quote-cite-spacing: --spacing( 8 );
+	--brave-core-quote-font-size: var( --text-lg );
+	--brave-core-quote-font-weight: 700;
+	--brave-core-quote-line-height: 1.75;
+	--brave-core-quote-padding-left: --spacing( 6 );
+
+	@variant md {
+		--brave-core-quote-block-spacing: --spacing( 8 );
+	}
+}
+
 .wp-block-quote {
-	@apply border-primary relative my-6 border-l-4 border-solid pl-6 md:my-8;
+	@apply border-l-(length:--brave-core-quote-border-width) border-solid border-(--brave-core-quote-border-color) pl-(--brave-core-quote-padding-left) not-first:mt-(--brave-core-quote-block-spacing) not-last:mb-(--brave-core-quote-block-spacing);
 
 	p {
-		@apply static text-lg !leading-[1.75];
+		@apply mb-0 text-(length:--brave-core-quote-font-size) leading-(--brave-core-quote-line-height) not-last:mb-(--brave-core-quote-spacing);
+	}
+
+	p:has( + cite ) {
+		--brave-core-quote-spacing: var( --brave-core-quote-cite-spacing );
 	}
 
 	cite {
-		@apply font-bold not-italic;
+		@apply text-(length:--brave-core-quote-cite-font-size) leading-(--brave-core-quote-cite-line-height) font-(weight:--brave-core-quote-font-weight) not-italic;
 	}
 }
