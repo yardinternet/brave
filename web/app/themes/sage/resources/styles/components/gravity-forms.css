@@ -12,7 +12,7 @@
 	}
 
 	.gform_button_select_files {
-		@apply is-button is-button-primary-100 is-button-small;
+		@apply is-button is-button-primary-light is-button-small;
 	}
 
 	.field_description_above .gfield_description {
@@ -61,11 +61,11 @@
 	}
 
 	button[type='button'].gfield_choice_all_toggle {
-		@apply is-button is-button-small is-button-primary-100;
+		@apply is-button is-button-small is-button-primary-light;
 	}
 
 	button[type='button'].gform_save_link {
-		@apply is-button is-button-primary-100;
+		@apply is-button is-button-primary-light;
 
 		svg path {
 			@apply fill-black;
