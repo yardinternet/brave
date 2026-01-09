@@ -5,6 +5,7 @@
 	--brave-core-table-cell-padding-x: 1.25em;
 	--brave-core-table-cell-padding-y: 0.75em;
 	--brave-core-table-font-size: var( --text-sm );
+	--brave-core-table-stripes-bg-color: var( --color-primary-100 );
 	--brave-core-table-tfoot-font-weight: 700;
 	--brave-core-table-thead-bg-color: var( --color-primary );
 	--brave-core-table-thead-color: var( --color-white );
@@ -55,6 +56,6 @@
 	@apply border-none;
 
 	tbody tr:nth-child( odd ) {
-		@apply bg-primary/10;
+		@apply bg-(--brave-core-table-stripes-bg-color);
 	}
 }
