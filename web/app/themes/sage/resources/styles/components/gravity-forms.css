@@ -196,7 +196,7 @@
 	}
 
 	button[type='button'].gform_save_link {
-		@apply is-button is-button-primary-100;
+		@apply is-button is-button-primary-light;
 
 		svg path {
 			@apply fill-black;

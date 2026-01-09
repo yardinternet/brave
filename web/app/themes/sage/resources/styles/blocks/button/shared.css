@@ -1,14 +1,22 @@
 .wp-block-button__link {
-	@apply is-button add-button-icons;
+	@apply is-button;
 }
 
 .is-style-outlined .wp-block-button__link {
-	@apply is-button-outline add-button-icons;
+	@apply is-button-outline;
 }
 
 .is-style-back .wp-block-button__link::before {
-	@apply fontawesome mr-3;
+	@apply fontawesome;
 	--fa-icon: '\f060';
+}
+
+.is-style-small .wp-block-button__link {
+	@apply is-button-small;
+}
+
+.is-style-primary-light .wp-block-button__link {
+	@apply is-button-primary-light;
 }
 
 .wp-block-buttons {
