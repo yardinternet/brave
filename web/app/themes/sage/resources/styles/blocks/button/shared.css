@@ -1,3 +1,18 @@
+:root {
+	--brave-core-buttons-block-spacing: --spacing( 6 );
+	--brave-core-buttons-gap-x: --spacing( 5 );
+	--brave-core-buttons-gap-y: --spacing( 5 );
+	--brave-core-button-width: auto;
+
+	@variant md {
+		--brave-core-buttons-block-spacing: --spacing( 8 );
+	}
+}
+
+.wp-block-buttons {
+	@apply gap-x-(--brave-core-buttons-gap-x) gap-y-(--brave-core-buttons-gap-y) not-first:mt-(--brave-core-buttons-block-spacing) not-last:mb-(--brave-core-buttons-block-spacing);
+}
+
 .wp-block-button__link {
 	@apply is-button;
 }
@@ -19,31 +34,36 @@
 	@apply is-button-primary-light;
 }
 
-.wp-block-buttons {
-	@apply mb-8;
-}
+.wp-block-button {
+	@apply w-(--brave-core-button-width)!;
 
-/* Specificity to overwrite Gutenberg */
-.wp-block-buttons > .wp-block-button {
-	&.wp-block-button__width-25,
-	&.wp-block-button__width-50,
-	&.wp-block-button__width-75 {
-		@apply w-full;
+	&:is(
+			.wp-block-button__width-25,
+			.wp-block-button__width-50,
+			.wp-block-button__width-75
+		) {
+		--brave-core-button-width: 100%;
 
 		@variant sm {
-			width: calc( 50% - ( var( --wp--style--block-gap, 0.5em ) * 0.5 ) );
+			--brave-core-button-width: calc(
+				50% - ( var( --brave-core-buttons-gap-x ) * 0.5 )
+			);
 		}
 	}
 
 	&.wp-block-button__width-25 {
 		@variant md {
-			width: calc( 25% - ( var( --wp--style--block-gap, 0.5em ) * 0.5 ) );
+			--brave-core-button-width: calc(
+				25% - ( var( --brave-core-buttons-gap-x ) * 0.5 )
+			);
 		}
 	}
 
 	&.wp-block-button__width-75 {
 		@variant md {
-			width: calc( 75% - ( var( --wp--style--block-gap, 0.5em ) * 0.5 ) );
+			--brave-core-button-width: calc(
+				75% - ( var( --brave-core-buttons-gap-x ) * 0.5 )
+			);
 		}
 	}
 }
