@@ -2,46 +2,40 @@
 
 /* Base */
 @import './base/variables';
+@import './base/base';
 @import './base/base-editor';
 @import './base/utilities';
 
-/* Footer */
+/* Components */
+@import './components/cards';
 @import './components/footer';
+@import './components/forms';
+@import './components/gravity-forms';
 
-.editor-styles-wrapper {
-	/* Base */
-	@import './base/base';
+/* Elements */
+@import './elements/lists';
 
-	/* Components */
-	@import './components/cards';
-	@import './components/forms';
-	@import './components/gravity-forms';
+/* Blocks */
+@import './blocks/breadcrumbs/shared';
+@import './blocks/button/shared';
+@import './blocks/collapse/editor';
+@import './blocks/collapse/shared';
+@import './blocks/columns/shared';
+@import './blocks/file/editor';
+@import './blocks/file/shared';
+@import './blocks/group/shared';
+@import './blocks/iconlist/shared';
+@import './blocks/media-text/shared';
+@import './blocks/quote/shared';
+@import './blocks/social-link/shared';
+@import './blocks/spacer/editor';
+@import './blocks/table/editor';
+@import './blocks/table/shared';
+@import './blocks/tabs/shared';
+@import './blocks/tabs/editor';
+@import './blocks/timeline/shared';
+@import './blocks/timeline/editor';
+@import './blocks/wp/shared';
 
-	/* Elements */
-	@import './elements/lists';
-
-	/* Blocks */
-	@import './blocks/breadcrumbs/shared';
-	@import './blocks/button/shared';
-	@import './blocks/collapse/editor';
-	@import './blocks/collapse/shared';
-	@import './blocks/columns/shared';
-	@import './blocks/file/editor';
-	@import './blocks/file/shared';
-	@import './blocks/group/shared';
-	@import './blocks/iconlist/shared';
-	@import './blocks/media-text/shared';
-	@import './blocks/quote/shared';
-	@import './blocks/social-link/shared';
-	@import './blocks/spacer/editor';
-	@import './blocks/table/editor';
-	@import './blocks/table/shared';
-	@import './blocks/tabs/shared';
-	@import './blocks/tabs/editor';
-	@import './blocks/timeline/shared';
-	@import './blocks/timeline/editor';
-	@import './blocks/wp/shared';
-
-	/* Layouts */
-	@import './layouts/alignments';
-}
+/* Layouts */
+@import './layouts/alignments';
