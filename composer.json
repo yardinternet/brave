@@ -29,17 +29,11 @@
 				"wpackagist-plugin/*",
 				"wpackagist-theme/*"
 			]
-		},
-		{
-			"name": "gravity-forms",
-			"type": "composer",
-			"url": "https://composer.gravity.io"
 		}
 	],
 	"require": {
 		"php": ">=8.2",
 		"composer/installers": "^2.2",
-		"gravity/gravityforms": "^2.9",
 		"log1x/poet": "^2.0",
 		"lukasbesch/bedrock-plugin-disabler": "^1.4",
 		"oscarotero/env": "^2.1",
@@ -85,6 +79,7 @@
 		"yard/php-cs-fixer-rules": "^1.0"
 	},
 	"suggest": {
+		"gravity/gravityforms": "",
 		"deliciousbrains-plugin/wp-migrate-db-pro": "",
 		"plugin/yard-dashboard": "",
 		"wpengine/advanced-custom-fields-pro": "",
