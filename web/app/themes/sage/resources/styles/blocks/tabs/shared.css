@@ -73,7 +73,7 @@
 	}
 
 	@variant md {
-		&:has( [aria-selected='true'] ) {
+		&:has( .active ) {
 			--yard-tabs-button-bg-color: var(
 				--yard-tabs-button-bg-color-selected
 			);
@@ -92,11 +92,11 @@
 	@apply relative flex w-full items-center justify-start gap-(--yard-tabs-button-gap) rounded-(--yard-tabs-radius) bg-(--yard-tabs-button-bg-color) px-(--yard-tabs-button-padding-x) py-(--yard-tabs-button-padding-y) text-(--yard-tabs-button-color) transition-colors duration-300;
 
 	&::before {
-		@apply fontawesome left-(--yard-tabs-button-padding-x) flex size-(--yard-tabs-button-icon-size) items-center justify-center rounded-(--yard-tabs-radius) bg-(--yard-tabs-button-icon-bg-color) text-(--yard-tabs-button-icon-color) transition-all duration-300;
+		@apply fontawesome left-(--yard-tabs-button-padding-x) flex size-(--yard-tabs-button-icon-size) shrink-0 items-center justify-center rounded-(--yard-tabs-radius) bg-(--yard-tabs-button-icon-bg-color) text-(--yard-tabs-button-icon-color) transition-all duration-300;
 		--fa-icon: var( --yard-tabs-button-icon );
 	}
 
-	&[aria-selected='true']::before {
+	&.active::before {
 		@apply rotate-90 md:rotate-0;
 	}
 }
