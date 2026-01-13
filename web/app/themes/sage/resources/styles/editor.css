@@ -4,6 +4,7 @@
 @import './base/variables';
 @import './base/base';
 @import './base/base-editor';
+@import './base/motion';
 @import './base/utilities';
 
 /* Components */
