@@ -1,78 +1,114 @@
-.wp-block-yard-tabs {
-	@apply bg-primary rounded-theme @container my-4 grid grid-cols-1 gap-0 overflow-hidden shadow sm:bg-white lg:my-6 xl:mb-8;
+:root {
+	--yard-tabs-bg-color: var( --color-primary-100 );
+	--yard-tabs-block-spacing: --spacing( 6 );
+	--yard-tabs-radius: var( --radius-theme );
 
-	@variant sm {
-		--tabs-percentage: 40%;
-		background: linear-gradient(
-			to right,
-			var( --color-primary ) var( --tabs-percentage ),
-			var( --color-white ) var( --tabs-percentage )
+	--yard-tabs-list-bg-color: var( --color-primary );
+	--yard-tabs-list-padding-x: 0;
+	--yard-tabs-list-padding-y: var( --yard-tabs-list-padding-x );
+	--yard-tabs-list-width: 40%;
+
+	--yard-tabs-button-bg-color: transparent;
+	--yard-tabs-button-bg-color-selected: var( --color-white );
+	--yard-tabs-button-color: var( --color-white );
+	--yard-tabs-button-color-selected: var( --color-primary );
+	--yard-tabs-button-gap: --spacing( 5 );
+	--yard-tabs-button-icon-bg-color-selected: var( --color-primary );
+	--yard-tabs-button-icon-bg-color: var( --color-primary-400 );
+	--yard-tabs-button-icon-color-selected: var( --color-white );
+	--yard-tabs-button-icon-color: var( --color-white );
+	--yard-tabs-button-icon-size: --spacing( 8 );
+	--yard-tabs-button-icon: '\f061';
+	--yard-tabs-button-padding-x: --spacing( 6 );
+	--yard-tabs-button-padding-y: --spacing( 5 );
+
+	--yard-tabs-panel-padding-x: var( --yard-tabs-button-padding-x );
+	--yard-tabs-panel-padding-y: var( --yard-tabs-panel-padding-x );
+
+	@variant md {
+		--yard-tabs-list-padding-x: --spacing( 4 );
+		--yard-tabs-button-padding-x: --spacing( 3 );
+		--yard-tabs-button-padding-y: --spacing( 3 );
+		--yard-tabs-list-padding-y: calc(
+			var( --yard-tabs-panel-padding-y ) -
+				var( --yard-tabs-button-padding-y )
 		);
-		grid-template-columns: var( --tabs-percentage ) 1fr;
+	}
+
+	@variant md {
+		--yard-tabs-block-spacing: --spacing( 8 );
+		--yard-tabs-panel-padding-x: --spacing( 10 );
+		--yard-tabs-panel-padding-y: var( --yard-tabs-panel-padding-x );
+	}
+}
+
+.wp-block-yard-tabs {
+	@apply @container grid gap-0 overflow-hidden rounded-(--yard-tabs-radius) bg-(--yard-tabs-bg-color) not-first:mt-(--yard-tabs-block-spacing) not-last:mb-(--yard-tabs-block-spacing);
+
+	@variant md {
+		@apply grid-cols-[var(--yard-tabs-list-width)_1fr] bg-linear-to-r from-(--yard-tabs-list-bg-color) from-(length:--yard-tabs-list-width) to-(--yard-tabs-bg-color) to-(length:--yard-tabs-list-width);
 	}
 
 	&.alignwide {
 		@variant xl {
-			--tabs-percentage: 30%;
+			--yard-tabs-list-width: 30%;
+			--yard-tabs-panel-padding-x: --spacing( 12 );
 		}
 	}
 }
 
 .wp-block-yard-tabs-item__heading {
-	@apply bg-primary mb-0 px-5 py-4 text-base font-normal text-white sm:col-start-1 md:px-8 md:py-2 @2xl:px-8 @2xl:py-2 @5xl:px-12;
+	@apply mb-0 bg-(--yard-tabs-list-bg-color) px-(--yard-tabs-list-padding-x) py-(--yard-tabs-list-padding-y) text-base font-normal md:col-start-1;
 
-	&:first-of-type {
-		@apply @2xl:pt-6 @5xl:pt-10;
+	&:not( :first-of-type ) {
+		@apply pt-0;
 	}
 
-	&:last-of-type {
-		@apply @2xl:pb-6 @5xl:pb-10;
+	&:not( :last-of-type ) {
+		@apply pb-0;
 	}
 
 	.wp-block-yard-icon-component {
 		@apply mr-2;
 	}
-}
 
-.wp-block-yard-tabs-item__button {
-	@apply relative flex w-full pl-12 text-left @2xl:py-2;
-
-	&::before {
-		@apply fontawesome rounded-theme absolute top-1/2 left-0 flex size-8 -translate-y-1/2 items-center justify-center bg-white/20 text-white transition-all duration-500;
-		--fa-icon: '\f061';
-	}
-
-	@variant hocus {
-		@apply underline;
-	}
-
-	&.active {
-		@apply font-bold;
-
-		&::before {
-			@apply bg-primary-200 rotate-90 text-white sm:rotate-0;
+	@variant md {
+		&:has( [aria-selected='true'] ) {
+			--yard-tabs-button-bg-color: var(
+				--yard-tabs-button-bg-color-selected
+			);
+			--yard-tabs-button-color: var( --yard-tabs-button-color-selected );
+			--yard-tabs-button-icon-bg-color: var(
+				--yard-tabs-button-icon-bg-color-selected
+			);
+			--yard-tabs-button-icon-color: var(
+				--yard-tabs-button-icon-color-selected
+			);
 		}
 	}
 }
 
-.wp-block-yard-tabs-item__panel {
-	@apply normalize-child-margin hidden bg-white p-4 sm:order-last sm:col-start-2 sm:row-start-1 sm:row-end-[100] @2xl:p-8 @5xl:p-12;
+.wp-block-yard-tabs-item__button {
+	@apply relative flex w-full items-center justify-start gap-(--yard-tabs-button-gap) rounded-(--yard-tabs-radius) bg-(--yard-tabs-button-bg-color) px-(--yard-tabs-button-padding-x) py-(--yard-tabs-button-padding-y) text-(--yard-tabs-button-color) transition-colors duration-250;
 
-	&.active {
+	&::before {
+		@apply fontawesome left-(--yard-tabs-button-padding-x) flex size-(--yard-tabs-button-icon-size) items-center justify-center rounded-(--yard-tabs-radius) bg-(--yard-tabs-button-icon-bg-color) text-(--yard-tabs-button-icon-color) transition-all duration-250;
+		--fa-icon: var( --yard-tabs-button-icon );
+	}
+
+	&[aria-selected='true']::before {
+		@apply rotate-90 md:rotate-0;
+	}
+}
+
+.wp-block-yard-tabs-item__panel {
+	@apply normalize-child-margin hidden bg-(--yard-tabs-bg-color) px-(--yard-tabs-panel-padding-x) py-(--yard-tabs-panel-padding-y) md:order-last md:col-start-2 md:row-start-1 md:row-end-100;
+
+	&[aria-hidden='false'] {
 		@apply block;
 
 		> * {
 			animation: fade 0.7s both;
 		}
-	}
-}
-
-@keyframes fade {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
 	}
 }
