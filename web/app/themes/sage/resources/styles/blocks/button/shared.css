@@ -37,17 +37,21 @@
 .wp-block-button {
 	@apply w-(--brave-core-button-width)!;
 
-	&:is(
-			.wp-block-button__width-25,
-			.wp-block-button__width-50,
-			.wp-block-button__width-75
-		) {
+	&[class*='wp-block-button__width-'] {
 		--brave-core-button-width: 100%;
 
-		@variant sm {
-			--brave-core-button-width: calc(
-				50% - ( var( --brave-core-buttons-gap-x ) * 0.5 )
-			);
+		&:not( .wp-block-button__width-100 ) {
+			@variant sm {
+				@variant max-md {
+					--brave-core-button-width: calc(
+						50% - ( var( --brave-core-buttons-gap-x ) * 0.5 )
+					);
+				}
+			}
+		}
+
+		.wp-block-button__link {
+			@apply justify-between;
 		}
 	}
 
