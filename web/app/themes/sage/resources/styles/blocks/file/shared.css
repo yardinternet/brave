@@ -1,9 +1,13 @@
 .wp-block-file {
-	@apply mt-4 mb-6 flex flex-wrap items-center gap-4 md:mb-8;
+	@apply rounded-theme mt-4 mb-6 flex flex-wrap items-center justify-between gap-4 bg-white p-(--card-padding) shadow md:mb-8 md:flex-nowrap;
+
+	&:has( .wp-block-file__embed ) {
+		@apply flex-wrap;
+	}
 
 	/* Full classnames for Gutenberg specificity */
 	.wp-block-file__button {
-		@apply is-button order-first m-0 !px-4 !py-2 text-sm after:pl-3;
+		@apply is-button m-0 flex gap-3 text-base;
 
 		@variant hocus {
 			@apply opacity-100;
@@ -15,7 +19,15 @@
 		}
 	}
 
+	a:not( .wp-block-file__button ) {
+		@apply grow text-lg no-underline;
+
+		&:hover {
+			@apply underline;
+		}
+	}
+
 	.wp-block-file__embed {
-		@apply order-last m-0;
+		@apply m-0;
 	}
 }
