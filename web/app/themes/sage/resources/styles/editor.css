@@ -18,19 +18,19 @@
 /* Blocks */
 @import './blocks/breadcrumbs/shared';
 @import './blocks/button/shared';
-@import './blocks/collapse/editor';
 @import './blocks/collapse/shared';
+@import './blocks/collapse/editor';
 @import './blocks/columns/shared';
-@import './blocks/file/editor';
 @import './blocks/file/shared';
+@import './blocks/file/editor';
 @import './blocks/group/shared';
 @import './blocks/iconlist/shared';
 @import './blocks/media-text/shared';
 @import './blocks/quote/shared';
 @import './blocks/social-link/shared';
 @import './blocks/spacer/editor';
-@import './blocks/table/editor';
 @import './blocks/table/shared';
+@import './blocks/table/editor';
 @import './blocks/tabs/shared';
 @import './blocks/tabs/editor';
 @import './blocks/timeline/shared';
