@@ -23,6 +23,7 @@
 @import './blocks/columns/shared';
 @import './blocks/file/shared';
 @import './blocks/file/editor';
+@import './blocks/gallery/shared';
 @import './blocks/group/shared';
 @import './blocks/iconlist/shared';
 @import './blocks/media-text/shared';
