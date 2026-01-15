@@ -14,7 +14,7 @@
 		<form class="flex h-full w-full items-center justify-center gap-2" method="get"
 			action="{{ esc_url(home_url('/')) }}">
 			<input id="js-search-bar-input"
-				class="search-bar-input focus:border-b-primary active:border-b-primary !h-14 w-full !rounded-none border-0 border-b-2 border-b-gray-500 bg-white px-3 py-4 !text-[1rem] !shadow-none md:w-[600px] md:!text-lg lg:!text-2xl"
+				class="search-bar-input rounded-none! shadow-none! h-14! md:text-lg! lg:text-2xl! w-full md:w-[600px]"
 				name="s" type="text" placeholder="{{ __('Typ om te zoeken...', 'sage') }}"
 				aria-label="{{ __('Type om te zoeken', 'sage') }}" value="{{ get_search_query() }}" autofocus />
 			<button
