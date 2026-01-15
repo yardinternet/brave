@@ -1,0 +1,23 @@
+.wp-block-gallery {
+	/* Not cropped usually means images like logo's */
+	&:not( .is-cropped ) figure.wp-block-image {
+		@apply mt-auto! items-center;
+
+		/* Overwrite Gutenberg default styles */
+		@variant max-sm {
+			width: calc(
+				25% - var( --wp--style--unstable-gallery-gap, 16px ) / 2
+			) !important;
+		}
+
+		img {
+			@apply max-w-4/5! rounded-none;
+		}
+
+		/* Editor styling */
+		> a,
+		> div {
+			@apply flex items-center justify-center;
+		}
+	}
+}
