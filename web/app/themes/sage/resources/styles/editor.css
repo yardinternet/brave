@@ -9,10 +9,10 @@
 /* Components */
 @import './components/cards';
 @import './components/footer';
-@import './components/forms';
 @import './components/gravity-forms';
 
 /* Elements */
+@import './elements/forms';
 @import './elements/lists';
 
 /* Blocks */

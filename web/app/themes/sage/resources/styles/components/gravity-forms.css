@@ -1,18 +1,40 @@
 .gform_wrapper.gravity-theme {
 	@variant all-form-text-inputs {
-		@apply px-4 py-3 !text-[1rem];
+		@apply p-(--input-padding) text-(--input-font-size)!;
+	}
+
+	/* General */
+	.gform_fields {
+		@apply grid gap-y-6;
+	}
+
+	.gfield_label {
+		@apply text-base leading-snug;
+	}
+
+	.gform-field-label {
+		@apply w-full text-base;
 	}
 
 	.gform_required_legend {
-		@apply mb-3 text-sm text-gray-500;
+		@apply mb-3 text-xs text-gray-500;
 	}
 
-	.gform_drop_area {
-		@apply bg-gray-50;
+	.gsection {
+		@apply border-gray-300!;
 	}
 
-	.gform_button_select_files {
-		@apply is-button is-button-primary-100 is-button-small;
+	.gfield_description {
+		@apply mt-0 text-base;
+
+		&.ginput_counter,
+		&.gform_fileupload_rules {
+			@apply pb-0;
+		}
+
+		p {
+			@apply mb-3;
+		}
 	}
 
 	.field_description_above .gfield_description {
@@ -23,45 +45,154 @@
 		}
 	}
 
-	.gfield_description {
-		@apply mt-0 text-sm;
-
-		&.ginput_counter,
-		&.gform_fileupload_rules {
-			@apply pb-0;
-		}
+	button[type='button'].gfield_choice_all_toggle {
+		@apply is-button is-button-small is-button-primary-100;
 	}
 
-	> .gform_validation_errors {
-		@apply rounded-theme;
+	/* Validation and errors */
+	.gform_validation_errors {
+		@apply rounded-theme mb-10 border-(--form-validation-error-color) py-6 shadow-none;
+		--outline-color: -webkit-focus-ring-color;
+
+		&:focus {
+			@apply outline-(--outline-color);
+		}
 
 		> .gform_submission_error {
-			@apply text-lg font-bold;
+			@apply text-lg font-bold text-(--form-validation-error-color);
 		}
 
 		> ol {
 			@apply mb-0;
+
+			li {
+				@apply mb-1;
+			}
+
+			a {
+				@apply text-sm leading-normal text-(--form-validation-error-color);
+
+				&:focus {
+					@apply outline-(--outline-color);
+				}
+			}
 		}
 	}
 
 	.gfield_validation_message {
-		@apply rounded-theme mt-2 px-3 py-2;
+		@apply mt-2 rounded-(--input-radius) border-(--form-validation-error-color) px-3 py-2 text-sm leading-normal text-(--form-validation-error-color);
 	}
 
+	.gfield_error .gfield_repeater_cell label,
+	.gfield_error label,
+	.gfield_error legend,
+	[aria-invalid='true'] + label,
+	label + [aria-invalid='true'] {
+		@apply text-(--form-validation-error-color);
+	}
+
+	[aria-invalid='true'] {
+		@apply border-0! border-b-(length:--input-border-width)! border-(--form-validation-error-color)!;
+	}
+
+	/* Progress bar */
 	.gf_progressbar {
 		@apply bg-primary-100;
+	}
 
-		.gf_progressbar_percentage {
+	.gf_progressbar_title {
+		@apply text-gray-500;
+	}
+
+	.gf_progressbar_wrapper {
+		@apply mb-6;
+	}
+
+	.gf_progressbar_percentage {
+		@apply flex items-center justify-center;
+
+		span {
+			@apply text-shadow-sm;
+		}
+
+		&.percentbar_blue {
 			@apply bg-primary;
+		}
+	}
+
+	/* Fileupload: single */
+	.gform_fileupload_rules {
+		@apply text-xs text-gray-500;
+	}
+
+	.gfield_fileupload_filesize {
+		@apply p-0 text-xs leading-snug text-gray-500;
+	}
+
+	.gfield_fileupload_percent {
+		@apply hidden;
+	}
+
+	.gform_delete_file {
+		@apply rounded-theme ml-auto flex size-8 items-center justify-center bg-gray-200 transition;
+
+		&:hover {
+			@apply bg-gray-300;
+		}
+	}
+
+	.ginput_preview_list {
+		@apply my-6 divide-y divide-gray-200;
+
+		&:not( :empty ) {
+			@apply border-t border-b border-gray-200;
+		}
+	}
+
+	.ginput_preview {
+		@apply m-0 flex items-center gap-3 px-2 py-1 leading-snug;
+
+		&:empty {
+			@apply hidden;
+		}
+	}
+
+	/* Fileupload: multiple */
+	.gform_fileupload_multifile {
+		.moxie-shim {
+			@apply opacity-0; /* Hide the fake file input */
+		}
+	}
+
+	.gform_drop_area {
+		@apply border-gray-300! bg-gray-50;
+	}
+
+	.gform_button_select_files {
+		@apply is-button is-button-primary-100 is-button-small;
+	}
+
+	/* Footer */
+	.gform-page-footer,
+	.gform_footer {
+		@apply flex flex-col justify-end gap-2 sm:flex-row sm:items-center;
+
+		.gform_button,
+		.gform-theme-button {
+			@apply m-0 w-full text-center! sm:w-auto;
+		}
+
+		.gform_next_button {
+			@apply max-sm:-order-1;
+		}
+
+		.gform_save_link {
+			@apply mr-auto ml-0 flex sm:order-first;
 		}
 	}
 
 	input[type='button'].gform_previous_button {
 		@apply is-button is-button-outline;
-	}
-
-	button[type='button'].gfield_choice_all_toggle {
-		@apply is-button is-button-small is-button-primary-100;
 	}
 
 	button[type='button'].gform_save_link {
@@ -72,8 +203,23 @@
 		}
 	}
 
-	.gform_footer .gform_button {
-		@apply mb-0;
+	/* Save and continue message */
+	.form_saved_message {
+		@apply rounded-theme normalize-child-margin my-6 bg-white p-6 shadow md:my-8 md:p-8;
+
+		.gform-footer {
+			@apply mt-0 border-0 pb-0;
+		}
+
+		.gform_send_resume_link_button {
+			@apply mb-0;
+		}
+
+		.resume_form_link_wrapper {
+			+ p {
+				@apply text-sm;
+			}
+		}
 	}
 }
 

@@ -11,7 +11,6 @@
 @import './components/cookie-yes';
 @import './components/facetwp';
 @import './components/footer';
-@import './components/forms';
 @import './components/gravity-forms';
 @import './components/mobile-menu';
 @import './components/nav';
@@ -19,6 +18,7 @@
 @import './components/top-bar';
 
 /* Elements */
+@import './elements/forms';
 @import './elements/lists';
 
 /* Blocks */

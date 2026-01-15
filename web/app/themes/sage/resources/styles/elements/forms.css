@@ -1,0 +1,45 @@
+:root {
+	--form-validation-error-color: var( --color-red-700 );
+	--input-bg-color: var( --color-white );
+	--input-border-color: var( --color-gray-400 );
+	--input-border-color-focus: var( --color-primary );
+	--input-border-width: 2px;
+	--input-box-shadow: var( --shadow-sm );
+	--input-font-size: 1rem;
+	--input-padding: 0.75rem 1rem;
+	--input-radius: var( --radius-theme );
+}
+
+@variant all-form-text-inputs {
+	@apply rounded-(--input-radius) border-0 border-b-(length:--input-border-width) border-(--input-border-color) bg-(--input-bg-color) p-(--input-padding) leading-snug text-(--input-font-size) shadow-(--input-box-shadow);
+
+	&:focus {
+		@apply border-(--input-border-color-focus);
+	}
+}
+
+select:not( [multiple] ) {
+	@apply hover:ring-primary cursor-pointer rounded-(--input-radius) border-none bg-gray-100 shadow-none hover:ring-1;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+	@apply accent-primary cursor-pointer;
+
+	+ label {
+		@apply ml-1 cursor-pointer !text-sm;
+	}
+}
+
+input[type='submit'],
+input[type='button'] {
+	@apply is-button;
+}
+
+input[type='file'] {
+	@apply cursor-pointer text-sm;
+
+	&::file-selector-button {
+		@apply is-button is-button-primary-100 is-button-small mr-3 border-none;
+	}
+}
