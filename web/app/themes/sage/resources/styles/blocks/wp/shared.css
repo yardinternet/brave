@@ -25,5 +25,5 @@
 }
 
 .wp-block-separator {
-	@apply my-8 h-[2px] w-full border-none bg-gray-200;
+	@apply my-8 h-[2px] w-full border-0 bg-gray-200;
 }
