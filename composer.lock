@@ -12570,12 +12570,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/wp-cli.git",
-                "reference": "28c97a9b172805195d3bce56e486bcc1737e406b"
+                "reference": "234a4e17c8329ddb6ac2d21ac8d2980ab9e139a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/wp-cli/zipball/28c97a9b172805195d3bce56e486bcc1737e406b",
-                "reference": "28c97a9b172805195d3bce56e486bcc1737e406b",
+                "url": "https://api.github.com/repos/wp-cli/wp-cli/zipball/234a4e17c8329ddb6ac2d21ac8d2980ab9e139a6",
+                "reference": "234a4e17c8329ddb6ac2d21ac8d2980ab9e139a6",
                 "shasum": ""
             },
             "require": {
@@ -12633,7 +12633,7 @@
                 "issues": "https://github.com/wp-cli/wp-cli/issues",
                 "source": "https://github.com/wp-cli/wp-cli"
             },
-            "time": "2026-01-07T12:32:11+00:00"
+            "time": "2026-01-15T17:05:38+00:00"
         },
         {
             "name": "wp-cli/wp-cli-bundle",
@@ -12813,15 +12813,15 @@
         },
         {
             "name": "wpackagist-plugin/imagify",
-            "version": "2.2.6",
+            "version": "2.2.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/imagify/",
-                "reference": "tags/2.2.6"
+                "reference": "tags/2.2.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/imagify.2.2.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/imagify.2.2.7.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -13589,16 +13589,16 @@
         },
         {
             "name": "yard/wp-user-roles",
-            "version": "v2.0.2",
+            "version": "v2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yardinternet/wp-user-roles.git",
-                "reference": "79d972a786265acd642d6e11d765261cff3b18dd"
+                "reference": "cae9ec07a50324bfaf29200db8e0eb195869cecc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yardinternet/wp-user-roles/zipball/79d972a786265acd642d6e11d765261cff3b18dd",
-                "reference": "79d972a786265acd642d6e11d765261cff3b18dd",
+                "url": "https://api.github.com/repos/yardinternet/wp-user-roles/zipball/cae9ec07a50324bfaf29200db8e0eb195869cecc",
+                "reference": "cae9ec07a50324bfaf29200db8e0eb195869cecc",
                 "shasum": ""
             },
             "require": {
@@ -13640,7 +13640,7 @@
                 "issues": "https://github.com/yardinternet/wp-user-roles/issues",
                 "source": "https://github.com/yardinternet/wp-user-roles"
             },
-            "time": "2025-03-28T09:05:15+00:00"
+            "time": "2026-01-12T18:53:42+00:00"
         }
     ],
     "packages-dev": [
@@ -14932,16 +14932,16 @@
         },
         {
             "name": "yard/brave-scaffold",
-            "version": "v1.1.0",
+            "version": "v1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yardinternet/brave-scaffold.git",
-                "reference": "cfb5b8f470e21b79414d9b7e90e3cb5cb28050fb"
+                "reference": "fac9ded6a42538e666f186451291e41a4796d085"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yardinternet/brave-scaffold/zipball/cfb5b8f470e21b79414d9b7e90e3cb5cb28050fb",
-                "reference": "cfb5b8f470e21b79414d9b7e90e3cb5cb28050fb",
+                "url": "https://api.github.com/repos/yardinternet/brave-scaffold/zipball/fac9ded6a42538e666f186451291e41a4796d085",
+                "reference": "fac9ded6a42538e666f186451291e41a4796d085",
                 "shasum": ""
             },
             "require": {
@@ -14982,7 +14982,7 @@
                 "issues": "https://github.com/yardinternet/brave-scaffold/issues",
                 "source": "https://github.com/yardinternet/brave-scaffold"
             },
-            "time": "2025-11-19T15:41:39+00:00"
+            "time": "2026-01-15T15:27:56+00:00"
         },
         {
             "name": "yard/lando-brave",
@@ -15070,5 +15070,5 @@
     "platform-overrides": {
         "php": "8.2"
     },
-    "plugin-api-version": "2.9.0"
+    "plugin-api-version": "2.6.0"
 }
