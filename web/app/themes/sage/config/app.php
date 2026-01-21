@@ -182,8 +182,4 @@ return [
 	'aliases' => Facade::defaultAliases()->merge([
 		// 'ExampleClass' => App\Example\ExampleClass::class,
 	])->toArray(),
-
-	'fontawesome' => [
-		'url' => 'https://kit.fontawesome.com/3a0780555e.js',
-	],
 ];
