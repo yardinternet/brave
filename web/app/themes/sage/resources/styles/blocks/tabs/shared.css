@@ -1,6 +1,6 @@
 :root {
 	--tabs-bg-color: var( --color-primary-100 );
-	--tabs-block-spacing: --spacing( 6 );
+	--tabs-block-spacing: 1.5rem;
 	--tabs-radius: var( --radius-theme );
 
 	--tabs-list-bg-color: var( --color-primary );
@@ -12,31 +12,31 @@
 	--tabs-button-bg-color-selected: var( --color-white );
 	--tabs-button-color: var( --color-white );
 	--tabs-button-color-selected: var( --color-primary );
-	--tabs-button-gap: --spacing( 5 );
+	--tabs-button-gap: 1.25rem;
 	--tabs-button-icon-bg-color-selected: var( --color-primary );
 	--tabs-button-icon-bg-color: var( --color-primary-400 );
 	--tabs-button-icon-color-selected: var( --color-white );
 	--tabs-button-icon-color: var( --color-white );
-	--tabs-button-icon-size: --spacing( 8 );
+	--tabs-button-icon-size: 2rem;
 	--tabs-button-icon: '\f061';
-	--tabs-button-padding-x: --spacing( 6 );
-	--tabs-button-padding-y: --spacing( 5 );
+	--tabs-button-padding-x: 1.5rem;
+	--tabs-button-padding-y: 1.25rem;
 
 	--tabs-panel-padding-x: var( --tabs-button-padding-x );
 	--tabs-panel-padding-y: var( --tabs-panel-padding-x );
 
 	@variant md {
-		--tabs-list-padding-x: --spacing( 4 );
-		--tabs-button-padding-x: --spacing( 3 );
-		--tabs-button-padding-y: --spacing( 3 );
+		--tabs-list-padding-x: 1rem;
+		--tabs-button-padding-x: 0.75rem;
+		--tabs-button-padding-y: 0.75rem;
 		--tabs-list-padding-y: calc(
 			var( --tabs-panel-padding-y ) - var( --tabs-button-padding-y )
 		);
 	}
 
 	@variant md {
-		--tabs-block-spacing: --spacing( 8 );
-		--tabs-panel-padding-x: --spacing( 10 );
+		--tabs-block-spacing: 2rem;
+		--tabs-panel-padding-x: 2.5rem;
 		--tabs-panel-padding-y: var( --tabs-panel-padding-x );
 	}
 }
@@ -51,7 +51,7 @@
 	&.alignwide {
 		@variant xl {
 			--tabs-list-width: 30%;
-			--tabs-panel-padding-x: --spacing( 12 );
+			--tabs-panel-padding-x: 3rem;
 		}
 	}
 }
