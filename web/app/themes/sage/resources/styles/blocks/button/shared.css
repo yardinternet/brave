@@ -1,11 +1,11 @@
 :root {
-	--wp-block-buttons-block-spacing: --spacing( 6 );
-	--wp-block-buttons-gap-x: --spacing( 5 );
-	--wp-block-buttons-gap-y: --spacing( 5 );
+	--wp-block-buttons-block-spacing: 1.5rem;
+	--wp-block-buttons-gap-x: 1.25rem;
+	--wp-block-buttons-gap-y: 1.25rem;
 	--wp-block-button-width: auto;
 
 	@variant md {
-		--wp-block-buttons-block-spacing: --spacing( 8 );
+		--wp-block-buttons-block-spacing: 2rem;
 	}
 }
 

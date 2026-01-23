@@ -1,18 +1,18 @@
 :root {
-	--quote-block-spacing: --spacing( 6 );
-	--quote-spacing: --spacing( 6 );
+	--quote-block-spacing: 1.5rem;
+	--quote-spacing: 1.5rem;
 	--quote-border-color: var( --color-primary );
-	--quote-border-width: --spacing( 1 );
+	--quote-border-width: 0.25rem;
 	--quote-cite-font-size: var( --text-base );
 	--quote-cite-line-height: 1.25;
-	--quote-cite-spacing: --spacing( 8 );
+	--quote-cite-spacing: 2rem;
 	--quote-font-size: var( --text-lg );
 	--quote-font-weight: 700;
 	--quote-line-height: 1.75;
-	--quote-padding-left: --spacing( 6 );
+	--quote-padding-left: 1.5rem;
 
 	@variant md {
-		--quote-block-spacing: --spacing( 8 );
+		--quote-block-spacing: 2rem;
 	}
 }
 
