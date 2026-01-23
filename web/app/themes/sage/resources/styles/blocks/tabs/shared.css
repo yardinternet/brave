@@ -2,47 +2,45 @@
 	--tabs-bg-color: var( --color-primary-100 );
 	--tabs-block-spacing: 1.5rem;
 	--tabs-radius: var( --radius-theme );
+	--tabs-layout: 1fr;
 
 	--tabs-list-bg-color: var( --color-primary );
-	--tabs-list-padding-x: 0;
-	--tabs-list-padding-y: var( --tabs-list-padding-x );
+	--tabs-list-padding: 0;
+	--tabs-list-spacing: 0;
 	--tabs-list-width: 40%;
 
-	--tabs-button-bg-color: transparent;
+	--tabs-button-bg-color-hover: var( --color-white );
 	--tabs-button-bg-color-selected: var( --color-white );
-	--tabs-button-color: var( --color-white );
+	--tabs-button-bg-color: transparent;
+	--tabs-button-color-hover: var( --color-primary );
 	--tabs-button-color-selected: var( --color-primary );
+	--tabs-button-color: var( --color-white );
 	--tabs-button-gap: 1.25rem;
+	--tabs-button-icon-bg-color-hover: var( --color-primary-400 );
 	--tabs-button-icon-bg-color-selected: var( --color-primary );
 	--tabs-button-icon-bg-color: var( --color-primary-400 );
+	--tabs-button-icon-color-hover: var( --color-white );
 	--tabs-button-icon-color-selected: var( --color-white );
 	--tabs-button-icon-color: var( --color-white );
 	--tabs-button-icon-size: 2rem;
 	--tabs-button-icon: '\f061';
-	--tabs-button-padding-x: 1.5rem;
-	--tabs-button-padding-y: 1.25rem;
+	--tabs-button-leading: 1.25;
+	--tabs-button-padding: 1.25rem 1.5rem;
 
-	--tabs-panel-padding-x: var( --tabs-button-padding-x );
-	--tabs-panel-padding-y: var( --tabs-panel-padding-x );
-
-	@variant md {
-		--tabs-list-padding-x: 1rem;
-		--tabs-button-padding-x: 0.75rem;
-		--tabs-button-padding-y: 0.75rem;
-		--tabs-list-padding-y: calc(
-			var( --tabs-panel-padding-y ) - var( --tabs-button-padding-y )
-		);
-	}
+	--tabs-panel-padding: 1.5rem;
 
 	@variant md {
+		--tabs-layout: var( --tabs-list-width ) 1fr;
 		--tabs-block-spacing: 2rem;
-		--tabs-panel-padding-x: 2.5rem;
-		--tabs-panel-padding-y: var( --tabs-panel-padding-x );
+		--tabs-button-padding: 0.75rem;
+		--tabs-list-padding: 2rem 1rem;
+		--tabs-list-spacing: 0.5rem;
+		--tabs-panel-padding: 2.5rem;
 	}
 }
 
 .wp-block-yard-tabs {
-	@apply @container grid gap-0 overflow-hidden rounded-(--tabs-radius) bg-(--tabs-bg-color) not-first:mt-(--tabs-block-spacing) not-last:mb-(--tabs-block-spacing);
+	@apply grid gap-0 overflow-hidden rounded-(--tabs-radius) bg-(--tabs-bg-color) not-first:mt-(--tabs-block-spacing) not-last:mb-(--tabs-block-spacing);
 
 	@variant md {
 		@apply grid-cols-[var(--tabs-list-width)_1fr] bg-linear-to-r from-(--tabs-list-bg-color) from-(length:--tabs-list-width) to-(--tabs-bg-color) to-(length:--tabs-list-width);
@@ -57,7 +55,7 @@
 }
 
 .wp-block-yard-tabs-item__heading {
-	@apply mb-0 bg-(--tabs-list-bg-color) px-(--tabs-list-padding-x) py-(--tabs-list-padding-y) text-base font-normal md:col-start-1;
+	@apply mb-0 bg-(--tabs-list-bg-color) p-(--tabs-list-padding) text-base font-normal md:col-start-1;
 
 	&:not( :first-of-type ) {
 		@apply pt-0;
@@ -67,12 +65,16 @@
 		@apply pb-0;
 	}
 
+	& ~ & {
+		@apply mt-(--tabs-list-spacing);
+	}
+
 	.wp-block-yard-icon-component {
 		@apply mr-2;
 	}
 
 	@variant md {
-		&:has( .active ) {
+		&:has( .wp-block-yard-tabs-item__button.active ) {
 			--tabs-button-bg-color: var( --tabs-button-bg-color-selected );
 			--tabs-button-color: var( --tabs-button-color-selected );
 			--tabs-button-icon-bg-color: var(
@@ -80,11 +82,20 @@
 			);
 			--tabs-button-icon-color: var( --tabs-button-icon-color-selected );
 		}
+
+		&:has( .wp-block-yard-tabs-item__button:hover ) {
+			--tabs-button-bg-color: var( --tabs-button-bg-color-hover );
+			--tabs-button-color: var( --tabs-button-color-hover );
+			--tabs-button-icon-bg-color: var(
+				--tabs-button-icon-bg-color-hover
+			);
+			--tabs-button-icon-color: var( --tabs-button-icon-color-hover );
+		}
 	}
 }
 
 .wp-block-yard-tabs-item__button {
-	@apply relative flex w-full items-center justify-start gap-(--tabs-button-gap) rounded-(--tabs-radius) bg-(--tabs-button-bg-color) px-(--tabs-button-padding-x) py-(--tabs-button-padding-y) text-(--tabs-button-color) transition-colors duration-300;
+	@apply relative flex w-full items-center gap-(--tabs-button-gap) rounded-(--tabs-radius) bg-(--tabs-button-bg-color) p-(--tabs-button-padding) text-left leading-(--tabs-button-leading) text-(--tabs-button-color) transition-colors duration-300;
 
 	&::before {
 		@apply fontawesome left-(--tabs-button-padding-x) flex size-(--tabs-button-icon-size) shrink-0 items-center justify-center rounded-(--tabs-radius) bg-(--tabs-button-icon-bg-color) text-(--tabs-button-icon-color) transition-all duration-300;
@@ -97,7 +108,7 @@
 }
 
 .wp-block-yard-tabs-item__panel {
-	@apply normalize-child-margin hidden bg-(--tabs-bg-color) px-(--tabs-panel-padding-x) py-(--tabs-panel-padding-y) md:order-last md:col-start-2 md:row-start-1 md:row-end-100;
+	@apply normalize-child-margin hidden bg-(--tabs-bg-color) p-(--tabs-panel-padding) md:order-last md:col-start-2 md:row-start-1 md:row-end-100;
 
 	&[aria-hidden='false'] {
 		@apply block;
