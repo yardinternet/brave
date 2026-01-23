@@ -5,7 +5,7 @@
 		@apply grid grid-cols-1 gap-0 overflow-hidden;
 
 		@variant md {
-			grid-template-columns: var( --tabs-percentage ) 1fr;
+			grid-template-columns: var( --tabs-list-width ) 1fr;
 		}
 	}
 
@@ -19,7 +19,7 @@
 }
 
 .wp-block-yard-tabs-item__heading-input {
-	@apply !w-full rounded-none border-none bg-transparent p-0 text-(--yard-tabs-button-color) shadow-none;
+	@apply !w-full rounded-none border-none bg-transparent p-0 text-(--tabs-button-color) shadow-none;
 }
 
 .wp-block-yard-tabs-item__panel {
