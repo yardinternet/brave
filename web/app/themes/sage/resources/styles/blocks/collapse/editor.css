@@ -1,30 +1,26 @@
 .wp-block-yard-collapse-item {
 	&[data-open='true'] {
-		--yard-collapse-button-bg-color: var(
-			--yard-collapse-button-bg-color-hover
+		--collapse-button-bg-color: var( --collapse-button-bg-color-hover );
+		--collapse-button-color: var( --collapse-button-color-hover );
+		--collapse-button-icon-bg-color: var(
+			--collapse-button-icon-bg-color-hover
 		);
-		--yard-collapse-button-color: var( --yard-collapse-button-color-hover );
-		--yard-collapse-button-icon-bg-color: var(
-			--yard-collapse-button-icon-bg-color-hover
-		);
-		--yard-collapse-button-icon-color: var(
-			--yard-collapse-button-icon-color-hover
-		);
+		--collapse-button-icon-color: var( --collapse-button-icon-color-hover );
 	}
 }
 
 .wp-block-yard-collapse-item__header {
-	@apply rounded-(--yard-collapse-radius) bg-(--yard-collapse-button-bg-color) px-(--yard-collapse-button-padding-x) py-(--yard-collapse-button-padding-y) leading-(--yard-collapse-button-line-height);
+	@apply rounded-(--collapse-radius) bg-(--collapse-button-bg-color) px-(--collapse-button-padding-x) py-(--collapse-button-padding-y) leading-(--collapse-button-line-height);
 }
 
 .wp-block-yard-collapse-item__header-input {
-	@apply rounded-none border-none bg-inherit p-0 text-(--yard-collapse-button-color) shadow-none;
+	@apply rounded-none border-none bg-inherit p-0 text-(--collapse-button-color) shadow-none;
 }
 
 .wp-block-yard-collapse-item__header-toggle-button {
-	@apply flex aspect-square size-(--yard-collapse-button-icon-size) items-center justify-center rounded-(--yard-collapse-radius)! bg-(--yard-collapse-button-icon-bg-color)! p-0 text-[length:inherit] leading-[inherit] text-(--yard-collapse-button-icon-color)!;
+	@apply flex aspect-square size-(--collapse-button-icon-size) items-center justify-center rounded-(--collapse-radius)! bg-(--collapse-button-icon-bg-color)! p-0 text-[length:inherit] leading-[inherit] text-(--collapse-button-icon-color)!;
 }
 
 .wp-block-yard-collapse .block-editor-block-list__layout {
-	@apply grid gap-(--yard-collapse-spacing);
+	@apply grid gap-(--collapse-spacing);
 }
