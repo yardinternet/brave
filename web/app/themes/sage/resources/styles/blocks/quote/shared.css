@@ -1,33 +1,33 @@
 :root {
-	--brave-core-quote-block-spacing: --spacing( 6 );
-	--brave-core-quote-spacing: --spacing( 6 );
-	--brave-core-quote-border-color: var( --color-primary );
-	--brave-core-quote-border-width: --spacing( 1 );
-	--brave-core-quote-cite-font-size: var( --text-base );
-	--brave-core-quote-cite-line-height: 1.25;
-	--brave-core-quote-cite-spacing: --spacing( 8 );
-	--brave-core-quote-font-size: var( --text-lg );
-	--brave-core-quote-font-weight: 700;
-	--brave-core-quote-line-height: 1.75;
-	--brave-core-quote-padding-left: --spacing( 6 );
+	--quote-block-spacing: --spacing( 6 );
+	--quote-spacing: --spacing( 6 );
+	--quote-border-color: var( --color-primary );
+	--quote-border-width: --spacing( 1 );
+	--quote-cite-font-size: var( --text-base );
+	--quote-cite-line-height: 1.25;
+	--quote-cite-spacing: --spacing( 8 );
+	--quote-font-size: var( --text-lg );
+	--quote-font-weight: 700;
+	--quote-line-height: 1.75;
+	--quote-padding-left: --spacing( 6 );
 
 	@variant md {
-		--brave-core-quote-block-spacing: --spacing( 8 );
+		--quote-block-spacing: --spacing( 8 );
 	}
 }
 
 .wp-block-quote {
-	@apply border-l-(length:--brave-core-quote-border-width) border-solid border-(--brave-core-quote-border-color) pl-(--brave-core-quote-padding-left) not-first:mt-(--brave-core-quote-block-spacing) not-last:mb-(--brave-core-quote-block-spacing);
+	@apply border-l-(length:--quote-border-width) border-solid border-(--quote-border-color) pl-(--quote-padding-left) not-first:mt-(--quote-block-spacing) not-last:mb-(--quote-block-spacing);
 
 	p {
-		@apply mb-0 text-(length:--brave-core-quote-font-size) leading-(--brave-core-quote-line-height) not-last:mb-(--brave-core-quote-spacing);
+		@apply mb-0 text-(length:--quote-font-size) leading-(--quote-line-height) not-last:mb-(--quote-spacing);
 	}
 
 	p:has( + cite ) {
-		--brave-core-quote-spacing: var( --brave-core-quote-cite-spacing );
+		--quote-spacing: var( --quote-cite-spacing );
 	}
 
 	cite {
-		@apply text-(length:--brave-core-quote-cite-font-size) leading-(--brave-core-quote-cite-line-height) font-(weight:--brave-core-quote-font-weight) not-italic;
+		@apply text-(length:--quote-cite-font-size) leading-(--quote-cite-line-height) font-(weight:--quote-font-weight) not-italic;
 	}
 }

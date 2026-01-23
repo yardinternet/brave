@@ -1,64 +1,63 @@
 :root {
-	--yard-tabs-bg-color: var( --color-primary-100 );
-	--yard-tabs-block-spacing: --spacing( 6 );
-	--yard-tabs-radius: var( --radius-theme );
+	--tabs-bg-color: var( --color-primary-100 );
+	--tabs-block-spacing: --spacing( 6 );
+	--tabs-radius: var( --radius-theme );
 
-	--yard-tabs-list-bg-color: var( --color-primary );
-	--yard-tabs-list-padding-x: 0;
-	--yard-tabs-list-padding-y: var( --yard-tabs-list-padding-x );
-	--yard-tabs-list-width: 40%;
+	--tabs-list-bg-color: var( --color-primary );
+	--tabs-list-padding-x: 0;
+	--tabs-list-padding-y: var( --tabs-list-padding-x );
+	--tabs-list-width: 40%;
 
-	--yard-tabs-button-bg-color: transparent;
-	--yard-tabs-button-bg-color-selected: var( --color-white );
-	--yard-tabs-button-color: var( --color-white );
-	--yard-tabs-button-color-selected: var( --color-primary );
-	--yard-tabs-button-gap: --spacing( 5 );
-	--yard-tabs-button-icon-bg-color-selected: var( --color-primary );
-	--yard-tabs-button-icon-bg-color: var( --color-primary-400 );
-	--yard-tabs-button-icon-color-selected: var( --color-white );
-	--yard-tabs-button-icon-color: var( --color-white );
-	--yard-tabs-button-icon-size: --spacing( 8 );
-	--yard-tabs-button-icon: '\f061';
-	--yard-tabs-button-padding-x: --spacing( 6 );
-	--yard-tabs-button-padding-y: --spacing( 5 );
+	--tabs-button-bg-color: transparent;
+	--tabs-button-bg-color-selected: var( --color-white );
+	--tabs-button-color: var( --color-white );
+	--tabs-button-color-selected: var( --color-primary );
+	--tabs-button-gap: --spacing( 5 );
+	--tabs-button-icon-bg-color-selected: var( --color-primary );
+	--tabs-button-icon-bg-color: var( --color-primary-400 );
+	--tabs-button-icon-color-selected: var( --color-white );
+	--tabs-button-icon-color: var( --color-white );
+	--tabs-button-icon-size: --spacing( 8 );
+	--tabs-button-icon: '\f061';
+	--tabs-button-padding-x: --spacing( 6 );
+	--tabs-button-padding-y: --spacing( 5 );
 
-	--yard-tabs-panel-padding-x: var( --yard-tabs-button-padding-x );
-	--yard-tabs-panel-padding-y: var( --yard-tabs-panel-padding-x );
+	--tabs-panel-padding-x: var( --tabs-button-padding-x );
+	--tabs-panel-padding-y: var( --tabs-panel-padding-x );
 
 	@variant md {
-		--yard-tabs-list-padding-x: --spacing( 4 );
-		--yard-tabs-button-padding-x: --spacing( 3 );
-		--yard-tabs-button-padding-y: --spacing( 3 );
-		--yard-tabs-list-padding-y: calc(
-			var( --yard-tabs-panel-padding-y ) -
-				var( --yard-tabs-button-padding-y )
+		--tabs-list-padding-x: --spacing( 4 );
+		--tabs-button-padding-x: --spacing( 3 );
+		--tabs-button-padding-y: --spacing( 3 );
+		--tabs-list-padding-y: calc(
+			var( --tabs-panel-padding-y ) - var( --tabs-button-padding-y )
 		);
 	}
 
 	@variant md {
-		--yard-tabs-block-spacing: --spacing( 8 );
-		--yard-tabs-panel-padding-x: --spacing( 10 );
-		--yard-tabs-panel-padding-y: var( --yard-tabs-panel-padding-x );
+		--tabs-block-spacing: --spacing( 8 );
+		--tabs-panel-padding-x: --spacing( 10 );
+		--tabs-panel-padding-y: var( --tabs-panel-padding-x );
 	}
 }
 
 .wp-block-yard-tabs {
-	@apply @container grid gap-0 overflow-hidden rounded-(--yard-tabs-radius) bg-(--yard-tabs-bg-color) not-first:mt-(--yard-tabs-block-spacing) not-last:mb-(--yard-tabs-block-spacing);
+	@apply @container grid gap-0 overflow-hidden rounded-(--tabs-radius) bg-(--tabs-bg-color) not-first:mt-(--tabs-block-spacing) not-last:mb-(--tabs-block-spacing);
 
 	@variant md {
-		@apply grid-cols-[var(--yard-tabs-list-width)_1fr] bg-linear-to-r from-(--yard-tabs-list-bg-color) from-(length:--yard-tabs-list-width) to-(--yard-tabs-bg-color) to-(length:--yard-tabs-list-width);
+		@apply grid-cols-[var(--tabs-list-width)_1fr] bg-linear-to-r from-(--tabs-list-bg-color) from-(length:--tabs-list-width) to-(--tabs-bg-color) to-(length:--tabs-list-width);
 	}
 
 	&.alignwide {
 		@variant xl {
-			--yard-tabs-list-width: 30%;
-			--yard-tabs-panel-padding-x: --spacing( 12 );
+			--tabs-list-width: 30%;
+			--tabs-panel-padding-x: --spacing( 12 );
 		}
 	}
 }
 
 .wp-block-yard-tabs-item__heading {
-	@apply mb-0 bg-(--yard-tabs-list-bg-color) px-(--yard-tabs-list-padding-x) py-(--yard-tabs-list-padding-y) text-base font-normal md:col-start-1;
+	@apply mb-0 bg-(--tabs-list-bg-color) px-(--tabs-list-padding-x) py-(--tabs-list-padding-y) text-base font-normal md:col-start-1;
 
 	&:not( :first-of-type ) {
 		@apply pt-0;
@@ -74,26 +73,22 @@
 
 	@variant md {
 		&:has( .active ) {
-			--yard-tabs-button-bg-color: var(
-				--yard-tabs-button-bg-color-selected
+			--tabs-button-bg-color: var( --tabs-button-bg-color-selected );
+			--tabs-button-color: var( --tabs-button-color-selected );
+			--tabs-button-icon-bg-color: var(
+				--tabs-button-icon-bg-color-selected
 			);
-			--yard-tabs-button-color: var( --yard-tabs-button-color-selected );
-			--yard-tabs-button-icon-bg-color: var(
-				--yard-tabs-button-icon-bg-color-selected
-			);
-			--yard-tabs-button-icon-color: var(
-				--yard-tabs-button-icon-color-selected
-			);
+			--tabs-button-icon-color: var( --tabs-button-icon-color-selected );
 		}
 	}
 }
 
 .wp-block-yard-tabs-item__button {
-	@apply relative flex w-full items-center justify-start gap-(--yard-tabs-button-gap) rounded-(--yard-tabs-radius) bg-(--yard-tabs-button-bg-color) px-(--yard-tabs-button-padding-x) py-(--yard-tabs-button-padding-y) text-(--yard-tabs-button-color) transition-colors duration-300;
+	@apply relative flex w-full items-center justify-start gap-(--tabs-button-gap) rounded-(--tabs-radius) bg-(--tabs-button-bg-color) px-(--tabs-button-padding-x) py-(--tabs-button-padding-y) text-(--tabs-button-color) transition-colors duration-300;
 
 	&::before {
-		@apply fontawesome left-(--yard-tabs-button-padding-x) flex size-(--yard-tabs-button-icon-size) shrink-0 items-center justify-center rounded-(--yard-tabs-radius) bg-(--yard-tabs-button-icon-bg-color) text-(--yard-tabs-button-icon-color) transition-all duration-300;
-		--fa-icon: var( --yard-tabs-button-icon );
+		@apply fontawesome left-(--tabs-button-padding-x) flex size-(--tabs-button-icon-size) shrink-0 items-center justify-center rounded-(--tabs-radius) bg-(--tabs-button-icon-bg-color) text-(--tabs-button-icon-color) transition-all duration-300;
+		--fa-icon: var( --tabs-button-icon );
 	}
 
 	&.active::before {
@@ -102,7 +97,7 @@
 }
 
 .wp-block-yard-tabs-item__panel {
-	@apply normalize-child-margin hidden bg-(--yard-tabs-bg-color) px-(--yard-tabs-panel-padding-x) py-(--yard-tabs-panel-padding-y) md:order-last md:col-start-2 md:row-start-1 md:row-end-100;
+	@apply normalize-child-margin hidden bg-(--tabs-bg-color) px-(--tabs-panel-padding-x) py-(--tabs-panel-padding-y) md:order-last md:col-start-2 md:row-start-1 md:row-end-100;
 
 	&[aria-hidden='false'] {
 		@apply block;

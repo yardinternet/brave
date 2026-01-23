@@ -1,41 +1,41 @@
 :root {
-	--yard-collapse-block-spacing: --spacing( 6 );
-	--yard-collapse-button-bg-color-hover: var( --color-primary );
-	--yard-collapse-button-bg-color: transparent;
-	--yard-collapse-button-color-hover: var( --color-white );
-	--yard-collapse-button-color: currentColor;
-	--yard-collapse-button-font-size: var( --text-base );
-	--yard-collapse-button-gap: --spacing( 4 );
-	--yard-collapse-button-icon-bg-color-hover: var( --color-white );
-	--yard-collapse-button-icon-bg-color: var( --color-primary );
-	--yard-collapse-button-icon-color-hover: var( --color-primary );
-	--yard-collapse-button-icon-color: var( --color-white );
-	--yard-collapse-button-icon-size: 1lh;
-	--yard-collapse-button-icon: '\f078';
-	--yard-collapse-button-line-height: 2;
-	--yard-collapse-button-padding-x: --spacing( 6 );
-	--yard-collapse-button-padding-y: --spacing( 4 );
-	--yard-collapse-item-bg-color: var( --color-primary-100 );
-	--yard-collapse-panel-padding-x: --spacing( 6 );
-	--yard-collapse-panel-padding-y: --spacing( 5 ) --spacing( 6 );
-	--yard-collapse-radius: var( --radius-theme );
-	--yard-collapse-spacing: --spacing( 3 );
+	--collapse-block-spacing: --spacing( 6 );
+	--collapse-button-bg-color-hover: var( --color-primary );
+	--collapse-button-bg-color: transparent;
+	--collapse-button-color-hover: var( --color-white );
+	--collapse-button-color: currentColor;
+	--collapse-button-font-size: var( --text-base );
+	--collapse-button-gap: --spacing( 4 );
+	--collapse-button-icon-bg-color-hover: var( --color-white );
+	--collapse-button-icon-bg-color: var( --color-primary );
+	--collapse-button-icon-color-hover: var( --color-primary );
+	--collapse-button-icon-color: var( --color-white );
+	--collapse-button-icon-size: 1lh;
+	--collapse-button-icon: '\f078';
+	--collapse-button-line-height: 2;
+	--collapse-button-padding-x: --spacing( 6 );
+	--collapse-button-padding-y: --spacing( 4 );
+	--collapse-item-bg-color: var( --color-primary-100 );
+	--collapse-panel-padding-x: --spacing( 6 );
+	--collapse-panel-padding-y: --spacing( 5 ) --spacing( 6 );
+	--collapse-radius: var( --radius-theme );
+	--collapse-spacing: --spacing( 3 );
 
 	@variant md {
-		--yard-collapse-block-spacing: --spacing( 8 );
+		--collapse-block-spacing: --spacing( 8 );
 	}
 }
 
 .wp-block-yard-collapse {
-	@apply grid gap-(--yard-collapse-spacing) not-first:mt-(--yard-collapse-block-spacing) not-last:mb-(--yard-collapse-block-spacing);
+	@apply grid gap-(--collapse-spacing) not-first:mt-(--collapse-block-spacing) not-last:mb-(--collapse-block-spacing);
 }
 
 .wp-block-yard-collapse-item {
-	@apply rounded-(--yard-collapse-radius) bg-(--yard-collapse-item-bg-color);
+	@apply rounded-(--collapse-radius) bg-(--collapse-item-bg-color);
 }
 
 .wp-block-yard-collapse-item__header {
-	@apply mb-0 text-(length:--yard-collapse-button-font-size) leading-(--yard-collapse-button-line-height);
+	@apply mb-0 text-(length:--collapse-button-font-size) leading-(--collapse-button-line-height);
 
 	.wp-block-yard-icon-component {
 		@apply mr-2;
@@ -43,26 +43,22 @@
 }
 
 .wp-block-yard-collapse-item__header-button {
-	@apply flex items-start justify-between gap-(--yard-collapse-button-gap) rounded-(--yard-collapse-radius) bg-(--yard-collapse-button-bg-color) px-(--yard-collapse-button-padding-x) py-(--yard-collapse-button-padding-y) font-normal text-(--yard-collapse-button-color) transition-all;
+	@apply flex items-start justify-between gap-(--collapse-button-gap) rounded-(--collapse-radius) bg-(--collapse-button-bg-color) px-(--collapse-button-padding-x) py-(--collapse-button-padding-y) font-normal text-(--collapse-button-color) transition-all;
 
 	&::after {
-		@apply fontawesome flex size-(--yard-collapse-button-icon-size) shrink-0 items-center justify-center rounded-(--yard-collapse-radius) bg-(--yard-collapse-button-icon-bg-color) leading-[inherit] text-(--yard-collapse-button-icon-color) transition-all;
-		--fa-icon: var( --yard-collapse-button-icon );
+		@apply fontawesome flex size-(--collapse-button-icon-size) shrink-0 items-center justify-center rounded-(--collapse-radius) bg-(--collapse-button-icon-bg-color) leading-[inherit] text-(--collapse-button-icon-color) transition-all;
+		--fa-icon: var( --collapse-button-icon );
 	}
 
 	&:hover,
 	&:active,
 	&[aria-expanded='true'] {
-		--yard-collapse-button-bg-color: var(
-			--yard-collapse-button-bg-color-hover
+		--collapse-button-bg-color: var( --collapse-button-bg-color-hover );
+		--collapse-button-color: var( --collapse-button-color-hover );
+		--collapse-button-icon-bg-color: var(
+			--collapse-button-icon-bg-color-hover
 		);
-		--yard-collapse-button-color: var( --yard-collapse-button-color-hover );
-		--yard-collapse-button-icon-bg-color: var(
-			--yard-collapse-button-icon-bg-color-hover
-		);
-		--yard-collapse-button-icon-color: var(
-			--yard-collapse-button-icon-color-hover
-		);
+		--collapse-button-icon-color: var( --collapse-button-icon-color-hover );
 	}
 
 	&[aria-expanded='true'] {
@@ -73,5 +69,5 @@
 }
 
 .wp-block-yard-collapse-item__panel-content {
-	@apply normalize-child-margin px-(--yard-collapse-panel-padding-x) py-(--yard-collapse-panel-padding-y);
+	@apply normalize-child-margin px-(--collapse-panel-padding-x) py-(--collapse-panel-padding-y);
 }

@@ -32,7 +32,6 @@
 @import './blocks/social-link/shared';
 @import './blocks/spacer/editor';
 @import './blocks/table/shared';
-@import './blocks/table/editor';
 @import './blocks/tabs/shared';
 @import './blocks/tabs/editor';
 @import './blocks/timeline/shared';
