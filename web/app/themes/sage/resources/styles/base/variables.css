@@ -39,9 +39,9 @@
 	}
 
 	/* Container size */
-	--container-padding: --spacing( 4 );
+	--container-padding: 1rem;
 	@variant xl {
-		--container-padding: --spacing( 16 );
+		--container-padding: 4rem;
 	}
 	--container-max-width: 1296px;
 	--container-width: min(

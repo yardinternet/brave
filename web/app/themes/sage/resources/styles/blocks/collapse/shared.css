@@ -1,11 +1,11 @@
 :root {
-	--collapse-block-spacing: --spacing( 6 );
+	--collapse-block-spacing: 1.5rem;
 	--collapse-button-bg-color-hover: var( --color-primary );
 	--collapse-button-bg-color: transparent;
 	--collapse-button-color-hover: var( --color-white );
 	--collapse-button-color: currentColor;
 	--collapse-button-font-size: var( --text-base );
-	--collapse-button-gap: --spacing( 4 );
+	--collapse-button-gap: 1rem;
 	--collapse-button-icon-bg-color-hover: var( --color-white );
 	--collapse-button-icon-bg-color: var( --color-primary );
 	--collapse-button-icon-color-hover: var( --color-primary );
@@ -13,16 +13,16 @@
 	--collapse-button-icon-size: 1lh;
 	--collapse-button-icon: '\f078';
 	--collapse-button-line-height: 2;
-	--collapse-button-padding-x: --spacing( 6 );
-	--collapse-button-padding-y: --spacing( 4 );
+	--collapse-button-padding-x: 1.5rem;
+	--collapse-button-padding-y: 1rem;
 	--collapse-item-bg-color: var( --color-primary-100 );
-	--collapse-panel-padding-x: --spacing( 6 );
-	--collapse-panel-padding-y: --spacing( 5 ) --spacing( 6 );
+	--collapse-panel-padding-x: 1.5rem;
+	--collapse-panel-padding-y: 1.25rem 1.5rem;
 	--collapse-radius: var( --radius-theme );
-	--collapse-spacing: --spacing( 3 );
+	--collapse-spacing: 0.75rem;
 
 	@variant md {
-		--collapse-block-spacing: --spacing( 8 );
+		--collapse-block-spacing: 2rem;
 	}
 }
 

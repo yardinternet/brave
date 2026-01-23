@@ -1,5 +1,5 @@
 :root {
-	--wp-block-table-block-spacing: --spacing( 6 );
+	--wp-block-table-block-spacing: 1.5rem;
 	--wp-block-table-border-color: var( --color-primary );
 	--wp-block-table-cell-min-width: 100px;
 	--wp-block-table-cell-padding-x: 1.25em;
@@ -13,7 +13,7 @@
 	--wp-block-table-thead-font-weight: 700;
 
 	@variant md {
-		--wp-block-table-block-spacing: --spacing( 8 );
+		--wp-block-table-block-spacing: 2rem;
 	}
 }
 
