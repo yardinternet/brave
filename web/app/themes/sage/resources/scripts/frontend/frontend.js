@@ -3,6 +3,7 @@
  */
 import A11yCookieYes from '@yardinternet/a11y-cookie-yes';
 import {
+	Accordion,
 	A11yFacetWP,
 	A11yMobileMenu,
 	FocusStyle,
@@ -12,7 +13,6 @@ import {
 /**
  * Internal dependencies
  */
-import Accordion from './components/Accordion';
 import Cards from './components/Cards';
 import Dialog from './components/Dialog';
 import Navigation from './components/Navigation';
@@ -25,7 +25,7 @@ window.addEventListener( 'DOMContentLoaded', () => {
 	A11yCookieYes.getInstance();
 	new A11yFacetWP();
 	new A11yMobileMenu();
-	Accordion();
+	new Accordion();
 	Cards();
 	Dialog();
 	new FocusStyle();
