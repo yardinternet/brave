@@ -40,3 +40,4 @@
 
 /* Layouts */
 @import './layouts/alignments';
+@import './layouts/article-aside';
