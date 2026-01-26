@@ -34,6 +34,7 @@
 		"vite": "^7.1.3"
 	},
 	"dependencies": {
+		"@wordpress/icons": "^11.5.0",
 		"@yardinternet/a11y-cookie-yes": "^1.2.10",
 		"@yardinternet/brave-frontend-kit": "^0.4.1",
 		"@yardinternet/gutenberg-components": "^1.3.2",

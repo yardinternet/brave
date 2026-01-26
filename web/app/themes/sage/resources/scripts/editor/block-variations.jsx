@@ -5,6 +5,7 @@ import {
 	registerBlockVariation,
 	unregisterBlockVariation,
 } from '@wordpress/blocks';
+import { columns } from '@wordpress/icons';
 
 /**
  * External dependencies
@@ -62,6 +63,75 @@ window.addEventListener( 'DOMContentLoaded', () => {
 				},
 			],
 		],
+	} );
+
+	// Columns: article aside layout variation
+	registerBlockVariation( 'core/columns', {
+		name: 'wp-block-columns-layout-article-aside',
+		title: 'Layout: artikel met zijbalk',
+		attributes: {
+			align: 'wide',
+			className: 'layout-article-aside',
+			verticalAlignment: 'top',
+		},
+		scope: [ 'block', 'inserter' ],
+		icon: {
+			src: columns,
+			foreground: BlockIconColor.foreground,
+		},
+		isActive: [ 'className' ],
+		innerBlocks: [
+			[
+				'core/column',
+				{
+					width: '66.66%',
+					lock: { move: true, remove: true },
+					className: 'layout-article-aside__article',
+				},
+				[
+					[ 'core/post-title', { level: 1 } ],
+					[ 'core/paragraph', { content: 'Voeg de inhoud toe' } ],
+				],
+			],
+			[
+				'core/column',
+				{
+					width: '33.33%',
+					lock: { move: true, remove: true },
+					className: 'layout-article-aside__aside',
+					layout: { type: 'default' },
+				},
+				[
+					[
+						'core/group',
+						{
+							backgroundColor: 'white',
+							style: {
+								spacing: {
+									margin: {
+										top: '0',
+										bottom: '0',
+									},
+								},
+							},
+						},
+						[
+							[
+								'core/heading',
+								{ level: 2, content: 'Zie ook' },
+							],
+							[
+								'core/paragraph',
+								{ content: 'Voeg de inhoud toe' },
+							],
+						],
+					],
+				],
+			],
+		],
+		supports: {
+			multiple: false,
+		},
 	} );
 
 	unusedVariations.forEach( ( { block, variation } ) => {
