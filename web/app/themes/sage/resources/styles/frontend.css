@@ -41,5 +41,6 @@
 
 /* Layouts */
 @import './layouts/404';
+@import './layouts/article-aside';
 @import './layouts/print';
 @import './layouts/alignments';

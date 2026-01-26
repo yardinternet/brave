@@ -1,0 +1,11 @@
+.layout-article-aside {
+	@apply container grid! grid-cols-3! gap-8! md:gap-10!;
+}
+
+.layout-article-aside__article {
+	@apply normalize-child-margin col-span-3! md:col-span-2!;
+}
+
+.layout-article-aside__aside {
+	@apply normalize-child-margin col-span-3! md:col-span-1!;
+}
