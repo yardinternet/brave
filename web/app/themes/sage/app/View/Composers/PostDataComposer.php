@@ -15,8 +15,8 @@ class PostDataComposer extends Composer
 	 * @var array
 	 */
 	protected static $views = [
-		'partials.content-single',
-		'partials.content-single-*',
+		'single',
+		'single-*',
 	];
 
 	/**
