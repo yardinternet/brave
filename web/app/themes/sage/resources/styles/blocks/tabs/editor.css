@@ -19,7 +19,7 @@
 }
 
 .wp-block-yard-tabs-item__heading-input {
-	@apply !w-full rounded-none border-none bg-transparent p-0 text-(--tabs-button-color) shadow-none;
+	@apply !w-full !resize-none rounded-none border-none bg-transparent p-0 text-(--tabs-button-color) shadow-none;
 }
 
 .wp-block-yard-tabs-item__panel {
