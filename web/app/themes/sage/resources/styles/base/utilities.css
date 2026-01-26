@@ -135,16 +135,19 @@
 	}
 
 	&[href^='tel:']::after {
+		@apply order-first;
 		--fa-icon: '\f095';
 	}
 
 	&[href*='api.whatsapp.com']::after,
 	&[href*='wa.me']::after {
+		@apply order-first;
 		--fa-font-family: 'Font Awesome 6 Brands';
 		--fa-icon: '\f232';
 	}
 
 	&[href^='mailto:']::after {
+		@apply order-first;
 		--fa-icon: '\f0e0';
 	}
 
