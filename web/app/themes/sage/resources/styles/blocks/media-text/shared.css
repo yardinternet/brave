@@ -53,7 +53,9 @@
 			/* Image adjustments on smaller screens */
 			&.is-image-fill-element {
 				.wp-block-media-text__media {
-					@apply aspect-video;
+					&:has( img ) {
+						@apply aspect-video;
+					}
 
 					img {
 						@apply aspect-[inherit] object-cover;
