@@ -9,9 +9,10 @@
 
 <div
 	class="wp-block-yard-query {{ $attributes->align() }} {{ $attributes->className }} @container mb-6 mt-5 md:mb-8 md:mt-7">
-	<div class="@xl:grid-cols-2 @xl:gap-6 @3xl:grid-cols-3 grid grid-cols-1 gap-4">
+	<div class="@xl:grid-cols-2 @xl:gap-6 @4xl:grid-cols-3 grid grid-cols-1 gap-4">
 		@forelse ($postDataCollection as $postData)
-			<x-dynamic-card :card="$postData->postType()" :postData="$postData" :displayDate="$attributes->displayDate()" :displayExcerpt="$attributes->displayExcerpt()" :displayImage="$attributes->displayImage()" :displayLabel="$attributes->displayLabel()" />
+			<x-dynamic-card :card="$postData->postType()" :postData="$postData" :displayDate="$attributes->displayDate()" :displayExcerpt="$attributes->displayExcerpt()" :displayImage="$attributes->displayImage()"
+				:displayLabel="$attributes->displayLabel()" />
 		@empty
 			<x-alert type="warning" class="col-span-12">
 				Geen resultaten gevonden.
