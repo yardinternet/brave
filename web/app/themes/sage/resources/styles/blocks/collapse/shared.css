@@ -1,25 +1,30 @@
 :root {
 	--collapse-block-spacing: 1.5rem;
+	--collapse-radius: var( --radius-theme );
+	--collapse-spacing: 0.75rem;
+
 	--collapse-button-bg-color-hover: var( --color-primary );
 	--collapse-button-bg-color: transparent;
 	--collapse-button-color-hover: var( --color-white );
 	--collapse-button-color: currentColor;
 	--collapse-button-font-size: var( --text-base );
 	--collapse-button-gap: 1rem;
+	--collapse-button-line-height: 2;
+	--collapse-button-padding-x: 1.5rem;
+	--collapse-button-padding-y: 1rem;
+
 	--collapse-button-icon-bg-color-hover: var( --color-white );
 	--collapse-button-icon-bg-color: var( --color-primary );
 	--collapse-button-icon-color-hover: var( --color-primary );
 	--collapse-button-icon-color: var( --color-white );
 	--collapse-button-icon-size: 1lh;
 	--collapse-button-icon: '\f078';
-	--collapse-button-line-height: 2;
-	--collapse-button-padding-x: 1.5rem;
-	--collapse-button-padding-y: 1rem;
+
 	--collapse-item-bg-color: var( --color-primary-100 );
+	--collapse-item-shadow: var( --shadow );
+
 	--collapse-panel-padding-x: 1.5rem;
 	--collapse-panel-padding-y: 1.25rem 1.5rem;
-	--collapse-radius: var( --radius-theme );
-	--collapse-spacing: 0.75rem;
 
 	@variant md {
 		--collapse-block-spacing: 2rem;
@@ -31,7 +36,18 @@
 }
 
 .wp-block-yard-collapse-item {
-	@apply rounded-(--collapse-radius) bg-(--collapse-item-bg-color);
+	@apply rounded-(--collapse-radius) bg-(--collapse-item-bg-color) shadow-(--collapse-item-shadow);
+
+	&:has( .wp-block-yard-collapse-item__header-button:hover ),
+	&:has( .wp-block-yard-collapse-item__header-button:active ),
+	&:has( .wp-block-yard-collapse-item__header-button[aria-expanded='true'] ) {
+		--collapse-button-bg-color: var( --collapse-button-bg-color-hover );
+		--collapse-button-color: var( --collapse-button-color-hover );
+		--collapse-button-icon-bg-color: var(
+			--collapse-button-icon-bg-color-hover
+		);
+		--collapse-button-icon-color: var( --collapse-button-icon-color-hover );
+	}
 }
 
 .wp-block-yard-collapse-item__header {
@@ -50,21 +66,8 @@
 		--fa-icon: var( --collapse-button-icon );
 	}
 
-	&:hover,
-	&:active,
-	&[aria-expanded='true'] {
-		--collapse-button-bg-color: var( --collapse-button-bg-color-hover );
-		--collapse-button-color: var( --collapse-button-color-hover );
-		--collapse-button-icon-bg-color: var(
-			--collapse-button-icon-bg-color-hover
-		);
-		--collapse-button-icon-color: var( --collapse-button-icon-color-hover );
-	}
-
-	&[aria-expanded='true'] {
-		&::after {
-			@apply rotate-180;
-		}
+	&[aria-expanded='true']::after {
+		@apply rotate-180;
 	}
 }
 

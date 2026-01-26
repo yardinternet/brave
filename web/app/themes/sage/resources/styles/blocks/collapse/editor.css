@@ -14,7 +14,7 @@
 }
 
 .wp-block-yard-collapse-item__header-input {
-	@apply rounded-none border-none bg-inherit p-0 text-(--collapse-button-color) shadow-none;
+	@apply resize-none! rounded-none border-none bg-inherit p-0 text-(--collapse-button-color) shadow-none;
 }
 
 .wp-block-yard-collapse-item__header-toggle-button {

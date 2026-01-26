@@ -1,8 +1,8 @@
 :root {
+	--tabs-shadow: var( --shadow );
 	--tabs-bg-color: var( --color-primary-100 );
 	--tabs-block-spacing: 1.5rem;
 	--tabs-radius: var( --radius-theme );
-	--tabs-layout: 1fr;
 
 	--tabs-list-bg-color: var( --color-primary );
 	--tabs-list-padding: 0;
@@ -16,6 +16,9 @@
 	--tabs-button-color-selected: var( --color-primary );
 	--tabs-button-color: var( --color-white );
 	--tabs-button-gap: 1.25rem;
+	--tabs-button-leading: 1.25;
+	--tabs-button-padding: 1.25rem 1.5rem;
+
 	--tabs-button-icon-bg-color-hover: var( --color-primary-400 );
 	--tabs-button-icon-bg-color-selected: var( --color-primary );
 	--tabs-button-icon-bg-color: var( --color-primary-400 );
@@ -24,13 +27,10 @@
 	--tabs-button-icon-color: var( --color-white );
 	--tabs-button-icon-size: 2rem;
 	--tabs-button-icon: '\f061';
-	--tabs-button-leading: 1.25;
-	--tabs-button-padding: 1.25rem 1.5rem;
 
 	--tabs-panel-padding: 1.5rem;
 
 	@variant md {
-		--tabs-layout: var( --tabs-list-width ) 1fr;
 		--tabs-block-spacing: 2rem;
 		--tabs-button-padding: 0.75rem;
 		--tabs-list-padding: 2rem 1rem;
@@ -40,7 +40,7 @@
 }
 
 .wp-block-yard-tabs {
-	@apply grid gap-0 overflow-hidden rounded-(--tabs-radius) bg-(--tabs-bg-color) not-first:mt-(--tabs-block-spacing) not-last:mb-(--tabs-block-spacing);
+	@apply grid gap-0 overflow-hidden rounded-(--tabs-radius) bg-(--tabs-bg-color) shadow-(--tabs-shadow) not-first:mt-(--tabs-block-spacing) not-last:mb-(--tabs-block-spacing);
 
 	@variant md {
 		@apply grid-cols-[var(--tabs-list-width)_1fr] bg-linear-to-r from-(--tabs-list-bg-color) from-(length:--tabs-list-width) to-(--tabs-bg-color) to-(length:--tabs-list-width);
