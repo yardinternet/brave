@@ -1,7 +1,7 @@
 .card:has( .card-link ) {
 	&:focus-within,
 	&:hover {
-		transform: translateY( -4px );
+		@apply -translate-y-1;
 	}
 }
 
