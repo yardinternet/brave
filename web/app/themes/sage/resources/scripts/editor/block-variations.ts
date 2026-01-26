@@ -22,6 +22,7 @@ window.addEventListener( 'DOMContentLoaded', () => {
 	registerBlockVariation( 'core/group', {
 		isDefault: true,
 		isActive: [ 'className' ],
+		title: 'Groep met achtergrond',
 		name: 'group-with-background',
 		attributes: {
 			backgroundColor: 'white',
