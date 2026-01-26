@@ -1,17 +1,24 @@
-<div
-	{{ $attributes->merge([
-	    'class' =>
-	        $cardClass() .
-	        ' group relative m-0 mt-0 flex h-full max-w-full flex-col rounded-theme border-none bg-white p-0 shadow transition-all',
-	]) }}>
+@use(App\View\Components\Card\Enums\Direction)
+
+<div @class([
+	'group relative m-0 flex h-full max-w-full rounded-theme border-none bg-white p-0 shadow transition-all',
+	$cardClass(),
+	'flex-col' => $direction->isColumn(),
+	'flex-row' => $direction->isRow(),
+	'flex-col md:flex-row!' => $direction->isFluid(),
+])>
 
 	@if ($displayImage)
-		<div
-			class="card-image-wrapper bg-primary-100 relative flex aspect-[16/9] min-w-full items-center justify-center rounded-t-theme">
+		<div @class([
+			'card-image-wrapper bg-primary-100  relative flex aspect-[16/9] items-center justify-center',
+			'rounded-t-theme' => $direction->isColumn(),
+			'w-1/3 min-w-1/3 rounded-l-theme' => $direction->isRow(),
+			'md:w-1/3 md:min-w-1/3 rounded-t-theme md:rounded-t-none md:rounded-l-theme' => $direction->isFluid(),
+		])>
 			<x-brave-img-focal-point @class([
 				'card-image aspect-[inherit] size-full object-cover',
 				'card-image-logo !size-8 !object-contain' => $thumbnailIsLogo,
-				'rounded-t-theme' => !$thumbnailIsLogo,
+				'rounded-[inherit]' => !$thumbnailIsLogo,
 			]) :src="$thumbnailUrl ?: get_theme_file_uri('/resources/images/logo-element.svg')" :id="$postID" />
 		</div>
 	@endif
@@ -44,7 +51,7 @@
 		@endif
 
 		@if ($displayLabel && $label)
-			<div class="card-label bg-primary-100 mt-auto w-fit rounded-theme px-2 py-1 text-sm">
+			<div class="card-label bg-primary-100 rounded-theme mt-auto w-fit px-2 py-1 text-sm">
 				{!! $label !!}
 			</div>
 		@endif

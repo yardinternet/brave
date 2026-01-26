@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\View\Components;
 
 use \Yard\Data\Contracts\PostDataInterface;
+use App\View\Components\Card\Enums\Direction;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
@@ -26,6 +27,7 @@ class Card extends Component
 		public ?string $subtitle = null,
 		public ?string $thumbnailUrl = null,
 		public ?string $title = null,
+		public ?Direction $direction = Direction::COLUMN,
 		public int $postID = 0,
 		public string $titleTag = 'h3',
 	) {
@@ -66,7 +68,11 @@ class Card extends Component
 
 	public function cardClass(): string
 	{
-		return 'card' . ($this->postType ? " card-{$this->postType}" : '');
+		$classes = collect([
+			'card', "card-{$this->postType}",
+		]);
+
+		return $classes->implode(' ');
 	}
 
 	public function render(): View
