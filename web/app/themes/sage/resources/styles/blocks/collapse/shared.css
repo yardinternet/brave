@@ -1,17 +1,57 @@
+:root {
+	--collapse-block-spacing: 1.5rem;
+	--collapse-radius: var( --radius-theme );
+	--collapse-spacing: 0.75rem;
+
+	--collapse-button-bg-color-hover: var( --color-primary );
+	--collapse-button-bg-color: transparent;
+	--collapse-button-color-hover: var( --color-white );
+	--collapse-button-color: currentColor;
+	--collapse-button-font-size: var( --text-base );
+	--collapse-button-gap: 1rem;
+	--collapse-button-line-height: 2;
+	--collapse-button-padding-x: 1.5rem;
+	--collapse-button-padding-y: 1rem;
+
+	--collapse-button-icon-bg-color-hover: var( --color-white );
+	--collapse-button-icon-bg-color: var( --color-primary );
+	--collapse-button-icon-color-hover: var( --color-primary );
+	--collapse-button-icon-color: var( --color-white );
+	--collapse-button-icon-size: 1lh;
+	--collapse-button-icon: '\f078';
+
+	--collapse-item-bg-color: var( --color-primary-100 );
+	--collapse-item-shadow: var( --shadow );
+
+	--collapse-panel-padding-x: 1.5rem;
+	--collapse-panel-padding-y: 1.25rem 1.5rem;
+
+	@variant md {
+		--collapse-block-spacing: 2rem;
+	}
+}
+
 .wp-block-yard-collapse {
-	@apply my-4 lg:my-6 xl:mb-8;
+	@apply grid gap-(--collapse-spacing) not-first:mt-(--collapse-block-spacing) not-last:mb-(--collapse-block-spacing);
 }
 
 .wp-block-yard-collapse-item {
-	@apply rounded-theme mb-2 bg-white shadow-sm;
+	@apply rounded-(--collapse-radius) bg-(--collapse-item-bg-color) shadow-(--collapse-item-shadow);
 
-	&:last-child {
-		@apply mb-0;
+	&:has( .wp-block-yard-collapse-item__header-button:hover ),
+	&:has( .wp-block-yard-collapse-item__header-button:active ),
+	&:has( .wp-block-yard-collapse-item__header-button[aria-expanded='true'] ) {
+		--collapse-button-bg-color: var( --collapse-button-bg-color-hover );
+		--collapse-button-color: var( --collapse-button-color-hover );
+		--collapse-button-icon-bg-color: var(
+			--collapse-button-icon-bg-color-hover
+		);
+		--collapse-button-icon-color: var( --collapse-button-icon-color-hover );
 	}
 }
 
 .wp-block-yard-collapse-item__header {
-	@apply mb-0 text-base;
+	@apply mb-0 text-(length:--collapse-button-font-size) leading-(--collapse-button-line-height);
 
 	.wp-block-yard-icon-component {
 		@apply mr-2;
@@ -19,30 +59,18 @@
 }
 
 .wp-block-yard-collapse-item__header-button {
-	@apply rounded-theme relative mb-0 p-4 pr-12 font-normal text-black transition-all lg:pr-14 lg:pl-6;
+	@apply flex items-start justify-between gap-(--collapse-button-gap) rounded-(--collapse-radius) bg-(--collapse-button-bg-color) px-(--collapse-button-padding-x) py-(--collapse-button-padding-y) font-normal text-(--collapse-button-color) transition-all;
 
 	&::after {
-		@apply fontawesome text-primary rounded-theme absolute top-1/2 right-4 flex size-8 -translate-y-1/2 items-center justify-center bg-transparent text-sm transition-[transform,background-color,rotate] lg:right-6;
-		--fa-icon: '\f078';
+		@apply fontawesome flex size-(--collapse-button-icon-size) shrink-0 items-center justify-center rounded-(--collapse-radius) bg-(--collapse-button-icon-bg-color) leading-[inherit] text-(--collapse-button-icon-color) transition-all;
+		--fa-icon: var( --collapse-button-icon );
 	}
 
-	&:hover,
-	&:active,
-	&[aria-expanded='true'] {
-		@apply bg-primary text-white;
-
-		&::after {
-			@apply bg-white/10 text-inherit;
-		}
-	}
-
-	&[aria-expanded='true'] {
-		&::after {
-			@apply rotate-180;
-		}
+	&[aria-expanded='true']::after {
+		@apply rotate-180;
 	}
 }
 
 .wp-block-yard-collapse-item__panel-content {
-	@apply normalize-child-margin p-4 pt-2 lg:p-6 lg:pt-4;
+	@apply normalize-child-margin px-(--collapse-panel-padding-x) py-(--collapse-panel-padding-y);
 }

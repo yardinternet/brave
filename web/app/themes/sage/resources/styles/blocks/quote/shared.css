@@ -1,11 +1,33 @@
+:root {
+	--quote-block-spacing: 1.5rem;
+	--quote-spacing: 1.5rem;
+	--quote-border-color: var( --color-primary );
+	--quote-border-width: 0.25rem;
+	--quote-cite-font-size: var( --text-base );
+	--quote-cite-line-height: 1.25;
+	--quote-cite-spacing: 2rem;
+	--quote-font-size: var( --text-lg );
+	--quote-font-weight: 700;
+	--quote-line-height: 1.75;
+	--quote-padding-left: 1.5rem;
+
+	@variant md {
+		--quote-block-spacing: 2rem;
+	}
+}
+
 .wp-block-quote {
-	@apply border-primary relative my-6 border-l-4 border-solid pl-6 md:my-8;
+	@apply border-l-(length:--quote-border-width) border-solid border-(--quote-border-color) pl-(--quote-padding-left) not-first:mt-(--quote-block-spacing) not-last:mb-(--quote-block-spacing);
 
 	p {
-		@apply static text-lg !leading-[1.75];
+		@apply mb-0 text-(length:--quote-font-size) leading-(--quote-line-height) not-last:mb-(--quote-spacing);
+	}
+
+	p:has( + cite ) {
+		--quote-spacing: var( --quote-cite-spacing );
 	}
 
 	cite {
-		@apply font-bold not-italic;
+		@apply text-(length:--quote-cite-font-size) leading-(--quote-cite-line-height) font-(weight:--quote-font-weight) not-italic;
 	}
 }

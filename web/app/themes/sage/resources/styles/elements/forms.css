@@ -40,6 +40,6 @@ input[type='file'] {
 	@apply cursor-pointer text-sm;
 
 	&::file-selector-button {
-		@apply is-button is-button-primary-100 is-button-small mr-3 border-none;
+		@apply is-button is-button-primary-light is-button-small mr-3 border-none;
 	}
 }

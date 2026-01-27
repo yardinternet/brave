@@ -1,24 +1,26 @@
 .wp-block-yard-collapse-item {
 	&[data-open='true'] {
-		.wp-block-yard-collapse-item__header,
-		.wp-block-yard-collapse-item__header-input {
-			@apply bg-primary !rounded-b-none text-white;
-		}
-
-		.wp-block-yard-collapse-item__header-toggle-button {
-			@apply !bg-primary !text-white;
-		}
+		--collapse-button-bg-color: var( --collapse-button-bg-color-hover );
+		--collapse-button-color: var( --collapse-button-color-hover );
+		--collapse-button-icon-bg-color: var(
+			--collapse-button-icon-bg-color-hover
+		);
+		--collapse-button-icon-color: var( --collapse-button-icon-color-hover );
 	}
 }
 
 .wp-block-yard-collapse-item__header {
-	@apply rounded-theme p-4 lg:px-6;
+	@apply rounded-(--collapse-radius) bg-(--collapse-button-bg-color) px-(--collapse-button-padding-x) py-(--collapse-button-padding-y) leading-(--collapse-button-line-height);
 }
 
 .wp-block-yard-collapse-item__header-input {
-	@apply rounded-none border-none bg-inherit p-0 shadow-none;
+	@apply resize-none! rounded-none border-none bg-inherit p-0 text-(--collapse-button-color) shadow-none;
 }
 
 .wp-block-yard-collapse-item__header-toggle-button {
-	@apply !text-primary !bg-white;
+	@apply flex aspect-square size-(--collapse-button-icon-size) items-center justify-center rounded-(--collapse-radius)! bg-(--collapse-button-icon-bg-color)! p-0 text-[length:inherit] leading-[inherit] text-(--collapse-button-icon-color)!;
+}
+
+.wp-block-yard-collapse .block-editor-block-list__layout {
+	@apply grid gap-(--collapse-spacing);
 }

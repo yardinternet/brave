@@ -1,54 +1,62 @@
-.wp-block-table {
-	@apply mt-4 mb-6 w-full overflow-x-auto md:mb-8;
+:root {
+	--wp-block-table-block-spacing: 1.5rem;
+	--wp-block-table-border-color: var( --color-primary );
+	--wp-block-table-cell-min-width: 100px;
+	--wp-block-table-cell-padding-x: 1.25em;
+	--wp-block-table-cell-padding-y: 0.75em;
+	--wp-block-table-font-size: var( --text-sm );
+	--wp-block-table-radius: var( --radius-theme );
+	--wp-block-table-stripes-bg-color: var( --color-primary-100 );
+	--wp-block-table-tfoot-font-weight: 700;
+	--wp-block-table-thead-bg-color: var( --color-primary );
+	--wp-block-table-thead-color: var( --color-white );
+	--wp-block-table-thead-font-weight: 700;
 
-	table {
-		@apply border-collapse text-sm;
+	@variant md {
+		--wp-block-table-block-spacing: 2rem;
+	}
+}
+
+.wp-block-table {
+	@apply w-full rounded-t-(--wp-block-table-radius) text-left text-(length:--wp-block-table-font-size) not-first:mt-(--wp-block-table-block-spacing) not-first:mb-(--wp-block-table-block-spacing);
+
+	&:not( .has-fixed-layout ) {
+		@apply overflow-x-auto;
+
+		:is( td, th ) {
+			@apply min-w-(--wp-block-table-cell-min-width);
+		}
 	}
 
-	th,
-	td {
-		@apply p-2 md:p-3;
+	table {
+		@apply border-collapse;
 	}
 
 	thead {
-		@apply bg-primary border-none text-white;
-
-		th {
-			@apply min-w-[100px] border-none border-transparent text-left;
-		}
-	}
-
-	tbody {
-		@apply align-top;
-
-		td {
-			@apply border-primary-200 border-0;
-		}
-
-		tr:not( :first-of-type ) td {
-			@apply border-t;
-		}
+		@apply overflow-hidden border-none bg-(--wp-block-table-thead-bg-color) font-(weight:--wp-block-table-thead-font-weight) text-(--wp-block-table-thead-color);
 	}
 
 	tfoot {
-		@apply border-primary border-t;
+		@apply border-none font-bold;
+	}
 
-		td {
-			@apply border-none text-left font-bold;
+	tr {
+		@apply border-t border-(--wp-block-table-border-color);
+
+		:is( tbody, thead ) & {
+			@apply first:border-none;
 		}
+	}
+
+	:is( td, th ) {
+		@apply border-none px-(--wp-block-table-cell-padding-x) py-(--wp-block-table-cell-padding-y) align-top;
 	}
 }
 
 .wp-block-table.is-style-stripes {
 	@apply border-none;
 
-	tbody tr {
-		&:nth-child( odd ) {
-			@apply bg-primary-100;
-		}
-
-		td {
-			@apply border-0;
-		}
+	tbody tr:nth-child( odd ) {
+		@apply bg-(--wp-block-table-stripes-bg-color);
 	}
 }
