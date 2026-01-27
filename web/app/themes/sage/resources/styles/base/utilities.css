@@ -30,6 +30,18 @@
 	> .alignfull {
 		@apply max-w-full;
 	}
+
+	> .alignleft {
+		@variant sm {
+			@apply ml-[calc((100%-var(--content-container-width))*0.5)]!;
+		}
+	}
+
+	> .alignright {
+		@variant sm {
+			@apply mr-[calc((100%-var(--content-container-width))*0.5)]!;
+		}
+	}
 }
 
 @utility on-focus-visible {
@@ -95,7 +107,7 @@
 }
 
 @utility is-button {
-	@apply border-primary bg-primary inline-block cursor-pointer rounded-theme border px-[1.25em] py-[0.75em] text-left !leading-snug break-words text-white no-underline transition-colors select-none;
+	@apply border-primary bg-primary rounded-theme inline-block cursor-pointer border px-[1.25em] py-[0.75em] text-left !leading-snug break-words text-white no-underline transition-colors select-none;
 
 	@variant hocus {
 		@apply border-primary-700 bg-primary-700 text-white;

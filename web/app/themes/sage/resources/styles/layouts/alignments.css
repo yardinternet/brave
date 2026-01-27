@@ -8,23 +8,9 @@
 	}
 }
 
-.is-root-container > .alignleft,
-.main > .alignleft {
-	@variant sm {
-		@apply ml-[calc((100%-var(--content-container-width))*0.5)];
-	}
-}
-
 .alignright {
 	@variant sm {
 		@apply float-right !ml-4;
-	}
-}
-
-.is-root-container > .alignright,
-.main > .alignright {
-	@variant sm {
-		@apply mr-[calc((100%-var(--content-container-width))*0.5)];
 	}
 }
 
