@@ -37,7 +37,7 @@ window.addEventListener( 'DOMContentLoaded', () => {
 	// Group: card
 	registerBlockVariation( 'core/group', {
 		isActive: [ 'className' ],
-		name: 'group-card',
+		name: 'wp-block-group-card',
 		title: 'Kaart',
 		description: 'Een kaart met een koptekst en inleiding.',
 		attributes: {
@@ -65,10 +65,36 @@ window.addEventListener( 'DOMContentLoaded', () => {
 		],
 	} );
 
+	// Group: layout article
+	registerBlockVariation( 'core/group', {
+		name: 'wp-block-group-layout-article',
+		title: 'Layout: artikel',
+		description: 'Een layout met witte achtergrond en vaste breedte.',
+		attributes: {
+			className: 'layout-article',
+			tagName: 'article',
+		},
+		isActive: [ 'className' ],
+		icon: {
+			src: (
+				<svg viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg">
+					<path d="m192 96h128v96c0 35.3 28.7 64 64 64h96v256c0 17.7-14.3 32-32 32h-256c-17.7 0-32-14.3-32-32v-384c0-17.7 14.3-32 32-32zm160 13.3 114.7 114.7h-82.7c-17.7 0-32-14.3-32-32zm-160-45.3c-35.3 0-64 28.7-64 64v384c0 35.3 28.7 64 64 64h256c35.3 0 64-28.7 64-64v-261.5c0-17-6.7-33.3-18.7-45.3l-122.6-122.5c-12-12-28.2-18.7-45.2-18.7zm48 256c-8.8 0-16 7.2-16 16s7.2 16 16 16h160c8.8 0 16-7.2 16-16s-7.2-16-16-16zm0 96c-8.8 0-16 7.2-16 16s7.2 16 16 16h160c8.8 0 16-7.2 16-16s-7.2-16-16-16z" />
+				</svg>
+			),
+			foreground: BlockIconColor.foreground,
+		},
+		scope: [ 'block', 'inserter' ],
+		innerBlocks: [
+			[ 'core/post-title', { level: 1 } ],
+			[ 'core/paragraph', { content: 'Voeg de inhoud toe' } ],
+		],
+	} );
+
 	// Columns: article aside layout variation
 	registerBlockVariation( 'core/columns', {
 		name: 'wp-block-columns-layout-article-aside',
 		title: 'Layout: artikel met zijbalk',
+		description: 'Een layout met een hoofdartikel en een zijbalk.',
 		attributes: {
 			align: 'wide',
 			className: 'layout-article-aside',
