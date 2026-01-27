@@ -6,6 +6,7 @@ import {
 	A11yCards,
 	A11yFacetWP,
 	A11yMobileMenu,
+	Accordion,
 	FocusStyle,
 	Navigation,
 	SearchBar,
@@ -15,7 +16,6 @@ import {
 /**
  * Internal dependencies
  */
-import Accordion from './components/Accordion';
 import Dialog from './components/Dialog';
 
 /**
@@ -26,7 +26,7 @@ window.addEventListener( 'DOMContentLoaded', () => {
 	A11yCookieYes.getInstance();
 	new A11yFacetWP();
 	new A11yMobileMenu();
-	Accordion();
+	new Accordion();
 	Dialog();
 	new FocusStyle();
 	new Navigation();
