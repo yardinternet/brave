@@ -35,7 +35,7 @@
 	},
 	"dependencies": {
 		"@yardinternet/a11y-cookie-yes": "^1.2.10",
-		"@yardinternet/brave-frontend-kit": "^0.4.1",
+		"@yardinternet/brave-frontend-kit": "^0.6.0",
 		"@yardinternet/gutenberg-components": "^1.3.2",
 		"accordion-js": "^3.4.1",
 		"body-scroll-lock": "^4.0.0-beta.0",
