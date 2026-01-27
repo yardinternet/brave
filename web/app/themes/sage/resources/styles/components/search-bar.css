@@ -1,5 +1,5 @@
 /* Class added to the body when the searchbar is open */
-.js-search-bar-is-open {
+.js-brave-search-bar-is-open {
 	.search-bar {
 		@apply visible translate-y-0 opacity-100;
 	}
