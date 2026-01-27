@@ -1,0 +1,15 @@
+:root {
+	--layout-article-width: min(
+		calc( 100% - var( --container-padding ) * 2 ),
+		1000px
+	);
+	--layout-article-padding: 2rem 0rem;
+
+	@variant lg {
+		--layout-article-padding: 5rem 0rem;
+	}
+}
+
+.layout-article {
+	@apply rounded-theme is-main-content create-main-content-alignment my-section max-w-(--layout-article-width)! bg-white p-(--layout-article-padding) shadow;
+}
