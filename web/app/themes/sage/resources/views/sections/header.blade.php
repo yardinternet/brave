@@ -1,4 +1,4 @@
-<header id="js-header"
+<header id="js-brave-header"
 	class="header justify shadow-xs headroom-pinned:translate-y-0 headroom-unpinned:-translate-y-full fixed z-50 w-full bg-white transition-transform duration-500">
 	@include('partials.header.top-bar')
 
