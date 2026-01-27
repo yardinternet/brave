@@ -3,7 +3,7 @@
 }
 
 .layout-article-aside__article {
-	@apply normalize-child-margin col-span-3! md:col-span-2!;
+	@apply normalize-child-margin is-main-content col-span-3! md:col-span-2!;
 }
 
 .layout-article-aside__aside {
