@@ -7,16 +7,12 @@ import {
 	A11yFacetWP,
 	A11yMobileMenu,
 	Accordion,
+	Dialog,
 	FocusStyle,
 	Navigation,
 	SearchBar,
 	WebShareApi,
 } from '@yardinternet/brave-frontend-kit';
-
-/**
- * Internal dependencies
- */
-import Dialog from './components/Dialog';
 
 /**
  * Application entrypoint
@@ -27,7 +23,7 @@ window.addEventListener( 'DOMContentLoaded', () => {
 	new A11yFacetWP();
 	new A11yMobileMenu();
 	new Accordion();
-	Dialog();
+	new Dialog();
 	new FocusStyle();
 	new Navigation();
 	new SearchBar();
