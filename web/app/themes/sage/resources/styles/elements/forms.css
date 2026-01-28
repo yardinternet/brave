@@ -11,7 +11,7 @@
 }
 
 @variant all-form-text-inputs {
-	@apply rounded-(--input-radius) border-0 border-b-(length:--input-border-width) border-(--input-border-color) bg-(--input-bg-color) p-(--input-padding) leading-snug text-(--input-font-size) shadow-(--input-box-shadow);
+	@apply rounded-(--input-radius) border-0 border-b-(length:--input-border-width) border-(--input-border-color) bg-(--input-bg-color) p-(--input-padding) text-(length:--input-font-size) leading-snug shadow-(--input-box-shadow);
 
 	&:focus {
 		@apply border-(--input-border-color-focus);
