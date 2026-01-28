@@ -50,3 +50,8 @@ registries:
     url: https://npm.pkg.github.com
     token: ${{secrets.YARD_BOT_PAT}}
 
+  fontawsome:
+    type: npm-registry
+    url: https://npm.fontawesome.com/
+    token: ${{secrets.FONTAWSOME_TOKEN}}
+

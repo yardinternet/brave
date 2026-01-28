@@ -9,6 +9,9 @@ import {
 	WebShareApi,
 } from '@yardinternet/brave-frontend-kit';
 
+// Font Awsome script
+import '@awesome.me/kit-3a0780555e';
+
 /**
  * Internal dependencies
  */
