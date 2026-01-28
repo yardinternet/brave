@@ -15,8 +15,8 @@ importers:
         specifier: ^1.2.10
         version: 1.2.10
       '@yardinternet/brave-frontend-kit':
-        specifier: ^0.6.0
-        version: 0.6.0
+        specifier: ^0.7.0
+        version: 0.7.0
       '@yardinternet/gutenberg-components':
         specifier: ^1.3.2
         version: 1.3.2
@@ -1920,8 +1920,8 @@ packages:
     resolution: {integrity: sha512-UqagNXJ9RDSfuFla8/oCD96N8BP0K1w7tTwESLkzqvNxVlyObMZjPhb7MYU9yqarceTkJAERojvdlCfwJz5CIw==, tarball: https://npm.pkg.github.com/download/@yardinternet/a11y-cookie-yes/1.2.10/2b078e9d163cd0cc1e48e102fec9b5b7cb3b9885}
     engines: {node: '>=18'}
 
-  '@yardinternet/brave-frontend-kit@0.6.0':
-    resolution: {integrity: sha512-CGfiO/2lqcUhpss7hvaLHeqFCcn9wrG++EGrZY7mZcYDLZtySDxhzrm+ROFv1okekGdlA/XZDJtbROVLkLRKwg==, tarball: https://npm.pkg.github.com/download/@yardinternet/brave-frontend-kit/0.6.0/8218d553aa4b30c582d28cdbf2f94087a7d8be7c}
+  '@yardinternet/brave-frontend-kit@0.7.0':
+    resolution: {integrity: sha512-8SgxOj0mxfMyVEJTYEfZEYtbWTLlVlfqLEmLaBhsUWyGanGryh8DCW7DMqxWUh5JvqyqcS+Jl69/dSM2dqL0Mw==, tarball: https://npm.pkg.github.com/download/@yardinternet/brave-frontend-kit/0.7.0/dd382fad8cb34676f630e95dd19f4629fdcd295d}
 
   '@yardinternet/eslint-config@1.1.6':
     resolution: {integrity: sha512-OuLZTm/2KxsZpTWgkemsliQcFL73/gZ+nNajM7sJP9jgjs8XIcrtUGF4dhHkrnZqZeeNC8oUSewq80L44GmcLg==, tarball: https://npm.pkg.github.com/download/@yardinternet/eslint-config/1.1.6/c48f371a55da2b6c5acde7fd1e5875273ac2952b}
@@ -6347,7 +6347,7 @@ snapshots:
     dependencies:
       focus-trap: 7.8.0
 
-  '@yardinternet/brave-frontend-kit@0.6.0':
+  '@yardinternet/brave-frontend-kit@0.7.0':
     dependencies:
       accordion-js: 3.4.1
       body-scroll-lock: 4.0.0-beta.0

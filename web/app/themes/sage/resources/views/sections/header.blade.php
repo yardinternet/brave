@@ -9,8 +9,6 @@
 
 		@include('partials.header.search-bar')
 
-		@include('partials.header.hamburger')
+		@include('partials.header.mobile-menu')
 	</div>
 </header>
-
-@include('partials.header.mobile-menu')
