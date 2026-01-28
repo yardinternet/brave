@@ -12921,20 +12921,20 @@
         },
         {
             "name": "yard/brave-components",
-            "version": "v1.0.9",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yardinternet/brave-components.git",
-                "reference": "5aa0d3fa821d105ea3a9486b8d05c680ab1daca1"
+                "reference": "8ef7eb4b4cdbdf8541313b7a1f26f8e5577743d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yardinternet/brave-components/zipball/5aa0d3fa821d105ea3a9486b8d05c680ab1daca1",
-                "reference": "5aa0d3fa821d105ea3a9486b8d05c680ab1daca1",
+                "url": "https://api.github.com/repos/yardinternet/brave-components/zipball/8ef7eb4b4cdbdf8541313b7a1f26f8e5577743d0",
+                "reference": "8ef7eb4b4cdbdf8541313b7a1f26f8e5577743d0",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1",
+                "php": ">=8.2",
                 "roots/acorn": "^4.3",
                 "spatie/laravel-package-tools": "^1.16",
                 "yard/wp-hook-registrar": "*"
@@ -12970,7 +12970,7 @@
                 "issues": "https://github.com/yardinternet/brave-components/issues",
                 "source": "https://github.com/yardinternet/brave-components"
             },
-            "time": "2025-10-27T12:48:13+00:00"
+            "time": "2026-01-29T08:34:29+00:00"
         },
         {
             "name": "yard/brave-csp",
@@ -15060,13 +15060,13 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=8.2"
     },
-    "platform-dev": {},
+    "platform-dev": [],
     "platform-overrides": {
         "php": "8.2"
     },
