@@ -1,7 +1,7 @@
-@php
-	$dialogId = 'js-brave-mobile-menu';
-	$label = __('Menu', 'sage');
-@endphp
+@props([
+    'dialogId' => 'js-brave-mobile-menu',
+    'label' => __('Menu', 'sage'),
+])
 
 <x-brave::dialog.trigger :dialogId="$dialogId" class="hamburger group flex h-[46px] flex-col gap-y-2 lg:hidden">
 	<span
