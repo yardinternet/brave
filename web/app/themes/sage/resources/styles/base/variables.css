@@ -29,15 +29,6 @@
 	--top-bar-height: 40px;
 	--combined-bar-height: var( --nav-bar-height ); /* Altered in top-bar.css */
 
-	/* Card padding */
-	--card-padding: 1rem;
-	@variant lg {
-		--card-padding: 1.5rem;
-	}
-	@variant xl {
-		--card-padding: 1.75rem;
-	}
-
 	/* Container size */
 	--container-padding: 1rem;
 	@variant xl {
