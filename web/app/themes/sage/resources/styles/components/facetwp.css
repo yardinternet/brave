@@ -1,3 +1,10 @@
+:root {
+	--filters-sidebar-bg-color: transparent;
+	--filters-sidebar-border-radius: 0;
+	--filters-sidebar-padding: 0;
+	--filters-sidebar-shadow: none;
+}
+
 .facetwp {
 	.facetwp-facet {
 		@apply mb-8;
