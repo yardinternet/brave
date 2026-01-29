@@ -47,11 +47,10 @@ return [
 		],
 
 		// @backend: the 'public' driver above, shouldn't we fix that one and use that?
-		// @backend: what folders have writing permissions on our servers?
 		'google-fonts' => [
 			'driver' => 'local',
-			'root' => get_theme_file_path('public'),
-			'url' => get_theme_file_uri('public'),
+			'root' => get_theme_file_path('storage/framework/cache'),
+			'url' => get_theme_file_uri('storage/framework/cache'),
 			'visibility' => 'public',
 			'throw' => false,
 		],
