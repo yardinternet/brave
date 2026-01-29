@@ -159,7 +159,7 @@
 	@apply text-sm;
 }
 
-@utility is-button-primary-light {
+@utility is-button-subtle {
 	--button-bg-color-hover: var( --color-primary-200 );
 	--button-bg-color: var( --color-primary-100 );
 	--button-border-color-hover: var( --color-primary-200 );
