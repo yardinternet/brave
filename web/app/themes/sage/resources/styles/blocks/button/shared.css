@@ -26,14 +26,6 @@
 	--fa-icon: '\f060';
 }
 
-.is-style-small .wp-block-button__link {
-	@apply is-button-small;
-}
-
-.is-style-primary-light .wp-block-button__link {
-	@apply is-button-primary-light;
-}
-
 .wp-block-button {
 	@apply w-(--wp-block-button-width)!;
 
