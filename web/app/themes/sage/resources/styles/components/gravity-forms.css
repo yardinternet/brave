@@ -46,7 +46,7 @@
 	}
 
 	button[type='button'].gfield_choice_all_toggle {
-		@apply is-button is-button-small is-button-primary-light;
+		@apply is-button is-button-small is-button-subtle;
 	}
 
 	/* Validation and errors */
@@ -169,7 +169,7 @@
 	}
 
 	.gform_button_select_files {
-		@apply is-button is-button-primary-light is-button-small;
+		@apply is-button is-button-subtle is-button-small;
 	}
 
 	/* Footer */
@@ -196,7 +196,7 @@
 	}
 
 	button[type='button'].gform_save_link {
-		@apply is-button is-button-primary-light;
+		@apply is-button is-button-subtle;
 
 		svg path {
 			@apply fill-black;
