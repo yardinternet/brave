@@ -1,6 +1,6 @@
-@php
-	$dialogId = 'js-brave-search-bar';
-@endphp
+@props([
+    'dialogId' => 'js-brave-search-bar',
+])
 
 <x-brave::dialog.trigger :dialogId="$dialogId"
 	class="search-bar-open-btn ease-base lg:hocus:bg-primary-100 ml-auto flex h-[46px] flex-col items-center justify-center gap-y-2 border-0 bg-transparent text-2xl transition-all duration-500 lg:ml-0 lg:min-h-[56px] lg:min-w-[56px] lg:self-center lg:rounded-full lg:p-3"
