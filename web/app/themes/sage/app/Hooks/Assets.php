@@ -65,19 +65,21 @@ class Assets
 	public function registerBlockAssets(): void
 	{
 		wp_enqueue_script('fontawesome', config('app.fontawesome.url'), [], null, true);
-		wp_enqueue_style('theme-font-base', config('theme.font.base.url'), [], null);
 	}
 
 	/**
-	 * Preconnects to Google Fonts if used by the theme.
+	 * Load fonts
 	 */
-	#[Action('wp_head', 1)]
-	public function addResourceHints(): void
+	#[Action('wp_head')]
+	public function registerGoogleFontsFrontend(): void
 	{
-		if (str_contains(config('theme.font.base.url'), 'fonts.googleapis.com')) {
-			echo '<link rel="preconnect" href="https://fonts.googleapis.com">';
-			echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>';
-		}
+		echo app(\Spatie\GoogleFonts\GoogleFonts::class)->load()->toHtml();
+	}
+
+	#[Action('admin_head')]
+	public function registerGoogleFontsAdmin(): void
+	{
+		echo app(\Spatie\GoogleFonts\GoogleFonts::class)->load()->toHtml();
 	}
 
 	/**
