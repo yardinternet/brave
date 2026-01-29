@@ -22,7 +22,7 @@
 			@if (post_password_required())
 				@php(the_content())
 			@else
-				@include('partials.breadcrumbs')
+				<x-breadcrumbs />
 				{{ $slot }}
 			@endif
 		</main>
