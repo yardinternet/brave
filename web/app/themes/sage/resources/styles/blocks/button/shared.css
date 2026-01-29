@@ -1,16 +1,16 @@
 :root {
-	--wp-block-buttons-block-spacing: 1.5rem;
-	--wp-block-buttons-gap-x: 1.25rem;
-	--wp-block-buttons-gap-y: 1.25rem;
+	--button-wrapper-block-spacing: 1.5rem;
+	--button-wrapper-gap-x: 1rem;
+	--button-wrapper-gap-y: 1rem;
 	--wp-block-button-width: auto;
 
 	@variant md {
-		--wp-block-buttons-block-spacing: 2rem;
+		--button-wrapper-block-spacing: 2rem;
 	}
 }
 
 .wp-block-buttons {
-	@apply gap-x-(--wp-block-buttons-gap-x) gap-y-(--wp-block-buttons-gap-y) not-first:mt-(--wp-block-buttons-block-spacing) not-last:mb-(--wp-block-buttons-block-spacing);
+	@apply gap-x-(--button-wrapper-gap-x) gap-y-(--button-wrapper-gap-y) not-first:mt-(--button-wrapper-block-spacing) not-last:mb-(--button-wrapper-block-spacing);
 }
 
 .wp-block-button__link {
@@ -44,7 +44,7 @@
 			@variant sm {
 				@variant max-md {
 					--wp-block-button-width: calc(
-						50% - ( var( --wp-block-buttons-gap-x ) * 0.5 )
+						50% - ( var( --button-wrapper-gap-x ) * 0.5 )
 					);
 				}
 			}
@@ -58,7 +58,15 @@
 	&.wp-block-button__width-25 {
 		@variant md {
 			--wp-block-button-width: calc(
-				25% - ( var( --wp-block-buttons-gap-x ) * 0.5 )
+				25% - ( var( --button-wrapper-gap-x ) * 0.5 )
+			);
+		}
+	}
+
+	&.wp-block-button__width-50 {
+		@variant md {
+			--wp-block-button-width: calc(
+				50% - ( var( --button-wrapper-gap-x ) * 0.5 )
 			);
 		}
 	}
@@ -66,7 +74,7 @@
 	&.wp-block-button__width-75 {
 		@variant md {
 			--wp-block-button-width: calc(
-				75% - ( var( --wp-block-buttons-gap-x ) * 0.5 )
+				75% - ( var( --button-wrapper-gap-x ) * 0.5 )
 			);
 		}
 	}
