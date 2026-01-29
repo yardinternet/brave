@@ -19,7 +19,7 @@
 		@include('sections.header')
 
 		<main id="main" class="main is-main-content create-main-content-alignment mt-(--combined-bar-height) flex-auto">
-			@include('partials.breadcrumbs')
+			<x-breadcrumbs />
 			{{ $slot }}
 		</main>
 
