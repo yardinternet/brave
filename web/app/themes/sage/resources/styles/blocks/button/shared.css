@@ -14,7 +14,7 @@
 }
 
 .wp-block-button__link {
-	@apply is-button;
+	@apply is-button add-button-icons;
 }
 
 .is-style-outlined .wp-block-button__link {
