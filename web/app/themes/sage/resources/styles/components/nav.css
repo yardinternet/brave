@@ -39,7 +39,7 @@
 		}
 
 		/* Handles opened and closed state */
-		&.js-show-sub-menu {
+		&.js-brave-show-sub-menu {
 			> a::after {
 				@apply translate-y-1;
 			}
