@@ -1,7 +1,7 @@
 @use(App\View\Components\Card\Enums\Direction)
 
 <div @class([
-	'group relative m-0 flex h-full max-w-full rounded-theme border-none bg-white p-0 shadow transition-all',
+	'group relative m-0 flex h-full max-w-full rounded-(--card-border-radius) border-none bg-(--card-bg-color) p-0 shadow-(--card-shadow) transition-all',
 	$cardClass(),
 	'flex-col' => $direction->isColumn(),
 	'flex-row' => $direction->isRow(),
@@ -51,7 +51,8 @@
 		@endif
 
 		@if ($displayLabel && $label)
-			<div class="card-label bg-primary-100 rounded-theme mt-auto w-fit px-2 py-1 text-sm">
+			<div
+				class="card-label rounded-(--card-label-border-radius) border-(length:--card-label-border-width) border-(--card-label-border-color) bg-(--card-label-bg-color) p-(--card-label-padding) text-(--card-label-color) font-(--card-label-font-weight) mt-auto w-fit text-sm">
 				{!! $label !!}
 			</div>
 		@endif
