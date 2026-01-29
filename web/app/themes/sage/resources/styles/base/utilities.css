@@ -107,15 +107,13 @@
 }
 
 @utility is-button {
-	@apply add-button-icons add-button-hocus inline-flex cursor-pointer items-center gap-(--button-gap) rounded-(--button-radius) border border-(--button-border-color) bg-(--button-bg-color) px-(--button-padding-x) py-(--button-padding-y) !leading-snug break-words text-(--button-color) no-underline transition-colors select-none;
+	@apply add-button-icons inline-flex cursor-pointer items-center gap-(--button-gap) rounded-(--button-radius) border border-(--button-border-color) bg-(--button-bg-color) px-(--button-padding-x) py-(--button-padding-y) leading-snug! break-words text-(--button-color) no-underline transition-colors select-none;
 	text-align: var( --button-text-align );
 
 	&:active {
 		@apply scale-(--button-scale-active);
 	}
-}
 
-@utility add-button-hocus {
 	@variant hocus {
 		@apply text-(--button-color); /* color is overridden by default a style */
 		--button-bg-color: var( --button-bg-color-hover );
@@ -161,7 +159,6 @@
 }
 
 @utility is-button-primary-light {
-	@apply add-button-hocus;
 	--button-bg-color-hover: var( --color-primary-200 );
 	--button-bg-color: var( --color-primary-100 );
 	--button-border-color-hover: var( --color-primary-200 );
@@ -171,7 +168,6 @@
 }
 
 @utility is-button-outline {
-	@apply add-button-hocus;
 	--button-bg-color-hover: var( --color-primary-700 );
 	--button-bg-color: transparent;
 	--button-border-color-hover: var( --color-primary-700 );
