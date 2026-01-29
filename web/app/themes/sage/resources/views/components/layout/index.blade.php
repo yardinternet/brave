@@ -12,15 +12,19 @@
 	<?php do_action('get_header'); ?>
 
 	<div id="app" class="flex min-h-screen flex-col overflow-x-clip">
-		<a class="is-button on-focus-visible focus:!fixed focus:!left-4 focus:!top-4" href="#main">
+		<a class="is-button on-focus-visible focus:fixed! focus:left-4! focus:top-4!" href="#main">
 			{{ __('Skip to content') }}
 		</a>
 
 		@include('sections.header')
 
 		<main id="main" class="main is-main-content create-main-content-alignment mt-(--combined-bar-height) flex-auto">
-			@include('partials.breadcrumbs')
-			{{ $slot }}
+			@if (post_password_required())
+				@php(the_content())
+			@else
+				@include('partials.breadcrumbs')
+				{{ $slot }}
+			@endif
 		</main>
 
 		@include('sections.footer')
