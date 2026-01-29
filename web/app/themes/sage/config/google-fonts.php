@@ -19,35 +19,8 @@ return [
 	'disk' => 'google-fonts',
 
 	/*
-	 * Prepend all files that are written to the selected disk with this path.
-	 * This allows separating the fonts from other data in the public disk.
-	 */
-	'path' => 'fonts',
-
-	/*
-	 * By default, CSS will be inlined to reduce the amount of round trips
-	 * browsers need to make in order to load the requested font files.
-	 */
-	'inline' => true,
-
-	/*
-	 * When preload is set to true, preload meta tags will be generated
-	 * in the HTML output to instruct the browser to start fetching the
-	 * font files as early as possible, even before the CSS is fully parsed.
-	 */
-	'preload' => false,
-
-	/*
 	 * When something goes wrong fonts are loaded directly from Google.
 	 * With fallback disabled, this package will throw an exception.
 	 */
 	'fallback' => env('WP_ENV') === 'production',
-
-	/*
-	 * This user agent will be used to request the stylesheet from Google Fonts.
-	 * This is the Safari 14 user agent that only targets modern browsers. If
-	 * you want to target older browsers, use different user agent string.
-	 */
-	'user_agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15',
-
 ];
