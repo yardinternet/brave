@@ -98,7 +98,7 @@
 		}
 
 		.facetwp-selection-value {
-			@apply is-button is-button-small is-button-primary-light m-0 bg-none px-[0.5em] py-[0.25em];
+			@apply is-button is-button-small is-button-subtle m-0 bg-none px-[0.5em] py-[0.25em];
 
 			&::after {
 				@apply fontawesome ml-3 leading-none;
