@@ -1,3 +1,24 @@
+:root {
+	--card-bg-color: var( --color-white );
+	--card-border-radius: var( --rounded-theme );
+	--card-label-bg-color: var( --color-primary-100 );
+	--card-label-border-color: var( --card-label-bg-color );
+	--card-label-border-radius: var( --rounded-theme );
+	--card-label-border-width: 1px;
+	--card-label-color: var( --color-black );
+	--card-label-font-size: var( --text-sm );
+	--card-label-font-weight: 400;
+	--card-label-padding: 0.25rem 0.5rem;
+	--card-padding: 1rem;
+	--card-shadow: var( --shadow );
+	@variant lg {
+		--card-padding: 1.5rem;
+	}
+	@variant xl {
+		--card-padding: 1.75rem;
+	}
+}
+
 .card:has( .card-link ) {
 	&:focus-within,
 	&:hover {
