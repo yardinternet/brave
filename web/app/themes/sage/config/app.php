@@ -161,6 +161,7 @@ return [
 		/*
 		 * Package Service Providers...
 		 */
+		Spatie\GoogleFonts\GoogleFontsServiceProvider::class,
 
 		/*
 		 * Application Service Providers...

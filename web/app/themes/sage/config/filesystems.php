@@ -46,6 +46,16 @@ return [
 			'throw' => false,
 		],
 
+		// @backend: the 'public' driver above, shouldn't we fix that one and use that?
+		// @backend: what folders have writing permissions on our servers?
+		'google-fonts' => [
+			'driver' => 'local',
+			'root' => get_theme_file_path('public'),
+			'url' => get_theme_file_uri('public'),
+			'visibility' => 'public',
+			'throw' => false,
+		],
+
 		's3' => [
 			'driver' => 's3',
 			'key' => env('AWS_ACCESS_KEY_ID'),

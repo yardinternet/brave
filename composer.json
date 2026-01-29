@@ -44,6 +44,7 @@
 		"roots/wordpress": "6.8.*",
 		"roots/wp-config": "^1.0",
 		"sentry/sentry-laravel": "^4.13",
+		"spatie/laravel-google-fonts": "^1.4",
 		"spatie/laravel-ignition": "^2.0",
 		"vlucas/phpdotenv": "^5.5",
 		"wp-cli/wp-cli-bundle": "^2.11",
