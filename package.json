@@ -25,15 +25,19 @@
 		"yard-toolkit": "yard-toolkit"
 	},
 	"devDependencies": {
-		"@yardinternet/eslint-config": "^1.1.5",
-		"@yardinternet/prettier-config": "^1.1.2",
+		"@types/wordpress__blocks": "^12.5.18",
+		"@yardinternet/eslint-config": "^1.1.7",
+		"@yardinternet/prettier-config": "^2.0.2",
 		"@yardinternet/stylelint-config": "^1.1.2",
-		"@yardinternet/toolkit": "^1.1.10",
-		"@yardinternet/vite-config": "^1.0.10",
-		"tailwindcss": "^4.1.13",
-		"vite": "^7.1.3"
+		"@yardinternet/toolkit": "^2.0.3",
+		"@yardinternet/vite-config": "^1.0.11",
+		"tailwindcss": "^4.1.18",
+		"vite": "^7.3.1"
 	},
 	"dependencies": {
+		"@wordpress/blocks": "^15.12.0",
+		"@wordpress/dom-ready": "^4.39.0",
+		"@wordpress/hooks": "^4.39.0",
 		"@yardinternet/a11y-cookie-yes": "^1.2.10",
 		"@yardinternet/brave-frontend-kit": "^0.7.0",
 		"@yardinternet/gutenberg-components": "^1.3.2"
