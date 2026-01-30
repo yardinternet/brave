@@ -1,9 +1,9 @@
 :root {
 	--card-bg-color: var( --color-white );
-	--card-border-radius: var( --rounded-theme );
+	--card-radius: var( --rounded-theme );
 	--card-label-bg-color: var( --color-primary-100 );
 	--card-label-border-color: var( --card-label-bg-color );
-	--card-label-border-radius: var( --rounded-theme );
+	--card-label-radius: var( --rounded-theme );
 	--card-label-border-width: 1px;
 	--card-label-color: var( --color-black );
 	--card-label-font-size: var( --text-sm );
