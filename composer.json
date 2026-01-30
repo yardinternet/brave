@@ -75,7 +75,7 @@
 		"captainhook/captainhook": "^5.24",
 		"captainhook/hook-installer": "^1.0",
 		"wpackagist-plugin/query-monitor": "^3.17",
-		"yard/brave-scaffold": "^1.0",
+		"yard/brave-scaffold": "^2.0",
 		"yard/lando-brave": "^1.0",
 		"yard/php-cs-fixer-rules": "^1.0"
 	},
