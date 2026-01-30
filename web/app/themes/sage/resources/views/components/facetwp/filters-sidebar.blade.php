@@ -10,7 +10,7 @@
 	<x-facetwp.mobile-filters :facets="$facets" />
 
 	<div
-		class="bg-(--filters-sidebar-bg-color) rounded-(--filters-sidebar-border-radius) p-(--filters-sidebar-padding) shadow-(--filters-sidebar-shadow) hidden lg:block">
+		class="bg-(--filters-sidebar-bg-color) rounded-(--filters-sidebar-radius) p-(--filters-sidebar-padding) shadow-(--filters-sidebar-shadow) hidden lg:block">
 		<h2 class="sr-only">Filters</h2>
 		<x-facetwp.filters :facets="$facets" />
 		<x-facetwp.reset-button />

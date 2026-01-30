@@ -1,8 +1,12 @@
 :root {
 	--filters-sidebar-bg-color: transparent;
-	--filters-sidebar-border-radius: 0;
+	--filters-sidebar-radius: 0;
 	--filters-sidebar-padding: 0;
 	--filters-sidebar-shadow: none;
+
+	--filters-sidebar-search-icon-bg-color-hover: var( --color-primary-700 );
+	--filters-sidebar-search-icon-bg-color: var( --color-primary );
+	--filters-sidebar-search-icon-color: var( --color-white );
 }
 
 .facetwp {
@@ -17,16 +21,22 @@
 	/* Facet: search */
 	.facetwp-type-search {
 		.facetwp-icon {
-			@apply flex items-center justify-center px-4 py-2 not-italic opacity-100;
+			@apply flex items-center justify-center rounded-r-(--input-radius) bg-(--filters-sidebar-search-icon-bg-color) px-4 py-2 text-(--filters-sidebar-search-icon-color) not-italic opacity-100 transition;
 
 			&::before {
 				@apply fontawesome size-auto bg-none;
 				--fa-icon: '\f002';
 			}
+
+			&:hover {
+				--filters-sidebar-search-icon-bg-color: var(
+					--filters-sidebar-search-icon-bg-color-hover
+				);
+			}
 		}
 
 		.facetwp-search {
-			@apply w-full;
+			@apply w-full overflow-visible!;
 		}
 
 		&.is-loading .facetwp-icon::before {
