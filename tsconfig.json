@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"target": "ES2020",
+		"module": "ESNext",
+		"moduleResolution": "Node",
+		"lib": [ "ES2020", "DOM" ],
+
+		"strict": true,
+
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true
+	},
+	"include": [
+		"web/app/themes/sage/resources/scripts/**/*.ts",
+		"web/app/themes/sage/resources/scripts/**/*.d.ts"
+	],
+	"exclude": [ "node_modules" ]
+}

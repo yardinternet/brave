@@ -28,6 +28,7 @@ window.addEventListener( 'DOMContentLoaded', () => {
 		isDefault: true,
 		isActive: [ 'className' ],
 		name: 'group-with-background',
+		title: 'Groep met achtergrond',
 		attributes: {
 			backgroundColor: 'white',
 		},
