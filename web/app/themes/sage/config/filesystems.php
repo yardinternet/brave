@@ -46,8 +46,7 @@ return [
 			'throw' => false,
 		],
 
-		// @backend: the 'public' driver above, shouldn't we fix that one and use that?
-		'google-fonts' => [
+		'storage-cache' => [
 			'driver' => 'local',
 			'root' => get_theme_file_path('storage/framework/cache'),
 			'url' => get_theme_file_uri('storage/framework/cache'),

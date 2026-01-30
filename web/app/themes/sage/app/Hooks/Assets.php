@@ -70,18 +70,13 @@ class Assets
 	}
 
 	/**
-	 * Load fonts
+	 * Load Google Fonts.
 	 */
+	#[Action('admin_head')]
 	#[Action('wp_head')]
 	public function registerGoogleFontsFrontend(): void
 	{
-		echo app(\Spatie\GoogleFonts\GoogleFonts::class)->load()->toHtml();
-	}
-
-	#[Action('admin_head')]
-	public function registerGoogleFontsAdmin(): void
-	{
-		echo app(\Spatie\GoogleFonts\GoogleFonts::class)->load()->toHtml();
+		echo app(\Spatie\GoogleFonts\GoogleFonts::class)->load(['nonce' => csp_nonce()])->toHtml();
 	}
 
 	/**
