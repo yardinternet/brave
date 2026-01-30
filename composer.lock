@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9459ac82e4260d8c936ad52b673859ce",
+    "content-hash": "533430929826fa8c4adf5462786cd308",
     "packages": [
         {
             "name": "bordoni/phpass",
@@ -15014,20 +15014,20 @@
         },
         {
             "name": "yard/brave-scaffold",
-            "version": "v1.2.1",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yardinternet/brave-scaffold.git",
-                "reference": "fac9ded6a42538e666f186451291e41a4796d085"
+                "reference": "797f8f7fe74a5908118f0487ccab91ccdb31c6af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yardinternet/brave-scaffold/zipball/fac9ded6a42538e666f186451291e41a4796d085",
-                "reference": "fac9ded6a42538e666f186451291e41a4796d085",
+                "url": "https://api.github.com/repos/yardinternet/brave-scaffold/zipball/797f8f7fe74a5908118f0487ccab91ccdb31c6af",
+                "reference": "797f8f7fe74a5908118f0487ccab91ccdb31c6af",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1",
+                "php": ">=8.2",
                 "roots/acorn": "^4.3",
                 "spatie/laravel-package-tools": "^1.16"
             },
@@ -15064,7 +15064,7 @@
                 "issues": "https://github.com/yardinternet/brave-scaffold/issues",
                 "source": "https://github.com/yardinternet/brave-scaffold"
             },
-            "time": "2026-01-15T15:27:56+00:00"
+            "time": "2026-01-30T12:55:05+00:00"
         },
         {
             "name": "yard/lando-brave",
