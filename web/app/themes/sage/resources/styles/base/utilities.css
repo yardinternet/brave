@@ -108,7 +108,6 @@
 
 @utility is-button {
 	@apply inline-flex cursor-pointer items-center gap-(--button-gap) rounded-(--button-radius) border border-(--button-border-color) bg-(--button-bg-color) px-(--button-padding-x) py-(--button-padding-y) leading-snug! break-words text-(--button-color) no-underline transition-colors select-none;
-	text-align: var( --button-text-align );
 
 	&:active {
 		@apply scale-(--button-scale-active);

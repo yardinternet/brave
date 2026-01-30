@@ -1,12 +1,23 @@
 :root {
+	--button-bg-color-hover: var( --color-primary-700 );
+	--button-bg-color: var( --color-primary );
+	--button-border-color-hover: var( --color-primary );
+	--button-border-color: var( --color-primary );
+	--button-color-hover: var( --color-white );
+	--button-color: var( --color-white );
+	--button-gap: 0.75em;
+	--button-padding-x: 1.25em;
+	--button-padding-y: 0.75em;
+	--button-radius: var( --radius-theme );
+	--button-scale-active: 0.98;
+
 	--button-wrapper-block-spacing: 1.5rem;
 	--button-wrapper-gap-x: 1rem;
 	--button-wrapper-gap-y: 1rem;
-	--wp-block-button-width: auto;
-
 	@variant md {
 		--button-wrapper-block-spacing: 2rem;
 	}
+	--block-button-width: auto;
 }
 
 .wp-block-buttons {
@@ -21,21 +32,27 @@
 	@apply is-button-outline;
 }
 
-.is-style-back .wp-block-button__link::before {
-	@apply fontawesome;
-	--fa-icon: '\f060';
+.is-style-back .wp-block-button__link {
+	&::after {
+		@apply content-none;
+	}
+
+	&::before {
+		@apply fontawesome;
+		--fa-icon: '\f060';
+	}
 }
 
 .wp-block-button {
-	@apply w-(--wp-block-button-width)!;
+	@apply w-(--block-button-width)!;
 
 	&[class*='wp-block-button__width-'] {
-		--wp-block-button-width: 100%;
+		--block-button-width: 100%;
 
 		&:not( .wp-block-button__width-100 ) {
 			@variant sm {
 				@variant max-md {
-					--wp-block-button-width: calc(
+					--block-button-width: calc(
 						50% - ( var( --button-wrapper-gap-x ) * 0.5 )
 					);
 				}
@@ -49,7 +66,7 @@
 
 	&.wp-block-button__width-25 {
 		@variant md {
-			--wp-block-button-width: calc(
+			--block-button-width: calc(
 				25% - ( var( --button-wrapper-gap-x ) * 0.5 )
 			);
 		}
@@ -57,7 +74,7 @@
 
 	&.wp-block-button__width-50 {
 		@variant md {
-			--wp-block-button-width: calc(
+			--block-button-width: calc(
 				50% - ( var( --button-wrapper-gap-x ) * 0.5 )
 			);
 		}
@@ -65,7 +82,7 @@
 
 	&.wp-block-button__width-75 {
 		@variant md {
-			--wp-block-button-width: calc(
+			--block-button-width: calc(
 				75% - ( var( --button-wrapper-gap-x ) * 0.5 )
 			);
 		}
