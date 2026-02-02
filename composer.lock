@@ -12841,15 +12841,15 @@
         },
         {
             "name": "wpackagist-plugin/cookie-law-info",
-            "version": "3.3.9.1",
+            "version": "3.4.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/cookie-law-info/",
-                "reference": "tags/3.3.9.1"
+                "reference": "tags/3.4.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cookie-law-info.3.3.9.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/cookie-law-info.3.4.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -15142,13 +15142,13 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=8.2"
     },
-    "platform-dev": [],
+    "platform-dev": {},
     "platform-overrides": {
         "php": "8.2"
     },
