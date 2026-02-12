@@ -3,3 +3,5 @@ publicHoistPattern:
     - prettier
     - stylelint
     - eslint
+    - stylelint-config-recommended
+    - stylelint-config-idiomatic-order
