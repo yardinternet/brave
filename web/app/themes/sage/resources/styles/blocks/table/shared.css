@@ -1,30 +1,30 @@
 :root {
-	--wp-block-table-block-spacing: 1.5rem;
-	--wp-block-table-border-color: var( --color-primary );
-	--wp-block-table-cell-min-width: 100px;
-	--wp-block-table-cell-padding-x: 1.25em;
-	--wp-block-table-cell-padding-y: 0.75em;
-	--wp-block-table-font-size: var( --text-sm );
-	--wp-block-table-radius: var( --radius-theme );
-	--wp-block-table-stripes-bg-color: var( --color-primary-100 );
-	--wp-block-table-tfoot-font-weight: 700;
-	--wp-block-table-thead-bg-color: var( --color-primary );
-	--wp-block-table-thead-color: var( --color-white );
-	--wp-block-table-thead-font-weight: 700;
+	--table-block-spacing: 1.5rem;
+	--table-border-color: var( --color-primary );
+	--table-cell-min-width: 100px;
+	--table-cell-padding-x: 1.25em;
+	--table-cell-padding-y: 0.75em;
+	--table-font-size: var( --text-sm );
+	--table-radius: var( --radius-theme );
+	--table-stripes-bg-color: var( --color-primary-100 );
+	--table-tfoot-font-weight: 700;
+	--table-thead-bg-color: var( --color-primary );
+	--table-thead-color: var( --color-white );
+	--table-thead-font-weight: 700;
 
 	@variant md {
-		--wp-block-table-block-spacing: 2rem;
+		--table-block-spacing: 2rem;
 	}
 }
 
 .wp-block-table {
-	@apply w-full rounded-t-(--wp-block-table-radius) text-left text-(length:--wp-block-table-font-size) not-first:mt-(--wp-block-table-block-spacing) not-first:mb-(--wp-block-table-block-spacing);
+	@apply w-full rounded-t-(--table-radius) text-left text-(length:--table-font-size) not-first:mt-(--table-block-spacing) not-first:mb-(--table-block-spacing);
 
 	&:not( .has-fixed-layout ) {
 		@apply overflow-x-auto;
 
 		:is( td, th ) {
-			@apply min-w-(--wp-block-table-cell-min-width);
+			@apply min-w-(--table-cell-min-width);
 		}
 	}
 
@@ -33,7 +33,7 @@
 	}
 
 	thead {
-		@apply overflow-hidden border-none bg-(--wp-block-table-thead-bg-color) font-(weight:--wp-block-table-thead-font-weight) text-(--wp-block-table-thead-color);
+		@apply overflow-hidden border-none bg-(--table-thead-bg-color) font-(--table-thead-font-weight) text-(--table-thead-color);
 	}
 
 	tfoot {
@@ -41,7 +41,7 @@
 	}
 
 	tr {
-		@apply border-t border-(--wp-block-table-border-color);
+		@apply border-t border-(--table-border-color);
 
 		:is( tbody, thead ) & {
 			@apply first:border-none;
@@ -49,7 +49,7 @@
 	}
 
 	:is( td, th ) {
-		@apply border-none px-(--wp-block-table-cell-padding-x) py-(--wp-block-table-cell-padding-y) align-top;
+		@apply border-none px-(--table-cell-padding-x) py-(--table-cell-padding-y) align-top;
 	}
 }
 
@@ -57,6 +57,6 @@
 	@apply border-none;
 
 	tbody tr:nth-child( odd ) {
-		@apply bg-(--wp-block-table-stripes-bg-color);
+		@apply bg-(--table-stripes-bg-color);
 	}
 }
