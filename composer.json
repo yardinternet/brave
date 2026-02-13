@@ -87,7 +87,7 @@
 		"ypackagist/facetwp": "",
 		"ypackagist/searchwp": "",
 		"ypackagist/wp-seopress-pro": "",
-		"yard/wp-deployer": ""
+		"yard/wp-deployer": "dev"
 	},
 	"autoload": {
 		"psr-4": {
@@ -117,6 +117,11 @@
 		"format": "./vendor/bin/php-cs-fixer fix",
 		"post-autoload-dump": [
 			"Roots\\Acorn\\ComposerScripts::postAutoloadDump"
+		],
+		"private-setup": [
+			"composer repo add satis composer https://satis.yard.nl",
+			"composer repo add satispress composer https://packagist.yard.nl/satispress/",
+			"composer require yard/brave-private-setup --dev"
 		]
 	}
 }
