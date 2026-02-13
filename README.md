@@ -4,53 +4,36 @@
 
 Brave is a template for making WordPress sites. It is primarily a combination of [Bedrock](https://roots.io/bedrock/), [Acorn](https://roots.io/acorn/) and [Sage](https://roots.io/sage/), with a few modifications and additional features.
 
-## Scaffold
+## Packages
 
-This project includes scaffolding commands for commonly used content types to help you get started quickly. The best way to get familiar with this project is by running the following commands and exploring the generated files:
+This project uses a number of PHP packages:
 
-More information: [Brave Scaffold](https://github.com/yardinternet/brave-scaffold)
+- [**plugin/yard-gutenberg**](https://github.com/yardinternet/wp-gutenberg): Custom blocks and additional features for the Gutenberg editor.
+- [**yard/brave-components**](https://github.com/yardinternet/brave-components): Shared Blade components.
+- [**yard/brave-csp**](https://github.com/yardinternet/brave-csp): Content Security Policy management.
+- [**yard/brave-hooks**](https://github.com/yardinternet/brave-hooks): System for registering and managing plugin-specific and conditional WordPress hooks.
+- [**yard/brave-scaffold**](https://github.com/yardinternet/brave-scaffold): Quickly scaffold WordPress content types to help you get started quickly.
+- [**yard/config-expander**](https://github.com/yardinternet/config-expander): Centralized, extensible WordPress site configuration.
+- [**yard/data**](https://github.com/yardinternet/wp-data): Adds powerful WordPress data objects.
+- [**yard/multisite-url-fixer**](https://github.com/yardinternet/multisite-url-fixer): Fixes URL issues in WordPress multisite environments.
+- [**yard/nutshell**](https://github.com/yardinternet/nutshell): Extends Acorns with additional features and helpers.
+- [**yard/query-block**](https://github.com/yardinternet/wp-query-block): Provides an advanced query blocks for Gutenberg.
+- [**yard/webmanifest**](https://github.com/yardinternet/wp-webmanifest): Generates a web app manifest.
+- [**yard/wp-block-registrar**](https://github.com/yardinternet/wp-block-registrar): Register Gutenberg blocks via config.
+- [**yard/wp-database**](https://github.com/yardinternet/wp-database): WordPress Eloquent ORM and database utilities.
+- [**yard/wp-hook-registrar**](https://github.com/yardinternet/wp-hook-registrar): Register hooks using PHP attributes.
+- [**yard/wp-user-roles**](https://github.com/yardinternet/wp-user-roles): Manages custom user roles and capabilities.
 
-### Content types
+This project uses several JavaScript packages:
 
-```shell
-wp acorn scaffold:news
-wp acorn scaffold:person
-wp acorn scaffold:project
-wp acorn scaffold:knowledgebase
-wp acorn scaffold:events
-```
-
-### Child Themes
-
-1. To create a child theme you can run the following command. This will create a child theme directory in `web/app/themes/{slug}` that has Sage as the parent theme.
-
-```shell
- wp acorn scaffold:sage-child {slug}
- ```
-
-2. Add PSR-4 autoloading for your child theme to your (root) `composer.json`:
-
-```diff
- "autoload": {
-   "psr-4": {
-     "App\\": "web/app/themes/sage/app/",
- +   "ChildTheme\\App\\": "web/app/themes/{slug}/app/",
-   }
- },
-
-```
-
-More information: [Sage Child Theme Support](https://github.com/yardinternet/sage-child-theme-support).
-
-## Components
-
-Brave comes with a set of default components. Component views can be published with the following command:
-
-```shell
-wp acorn vendor:publish --provider="Yard\Brave\ComponentsServiceProvider" --tag="views"
-```
-
-More information: [Brave Components](https://github.com/yardinternet/brave-components)
+- [**@yardinternet/a11y-cookie-yes**](https://github.com/yardinternet/a11y-cookie-yes): Accessibility improvements for the CookieYes plugin.
+- [**@yardinternet/brave-frontend-kit**](https://github.com/yardinternet/brave-frontend-kit): Contains frontend UI modules.
+- [**@yardinternet/eslint-config**](https://github.com/yardinternet/toolkit/tree/main/packages/eslint-config): ESLint rules for consistent JS/TS linting.
+- [**@yardinternet/gutenberg-components**](https://github.com/yardinternet/gutenberg-packages/tree/master/packages/components): React components for Gutenberg block development.
+- [**@yardinternet/prettier-config**](https://github.com/yardinternet/toolkit/tree/main/packages/prettier-config): Prettier formatting rules.
+- [**@yardinternet/stylelint-config**](https://github.com/yardinternet/toolkit/tree/main/packages/stylelint-config): Stylelint rules.
+- [**@yardinternet/toolkit**](https://github.com/yardinternet/toolkit/tree/main/packages/toolkit): Utility functions and helpers for frontend development.
+- [**@yardinternet/vite-config**](https://github.com/yardinternet/toolkit/tree/main/packages/vite-config): Vite configuration.
 
 ## Theme development
 
@@ -64,16 +47,7 @@ More information: [Brave Components](https://github.com/yardinternet/brave-compo
 pnpm link <package-path>
 ```
 
-For example: `pnpm link /Users/<user>/Packages/brave-frontend-kit`
-
-Note: if you encounter errors with missing dependencies, add this to `pnpm-workspace.yaml`. For example:
-
-```yaml
-overrides:
-    '@yardinternet/toolkit': link:../../../../Packages/yard-toolkit/packages/toolkit
-
-shamefullyHoist: true # Add this line
-```
+Note: if you encounter errors with missing dependencies, add `shamefullyHoist: true` to `pnpm-workspace.yaml`.
 
 ## About us
 
