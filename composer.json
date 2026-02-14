@@ -34,7 +34,6 @@
 	"require": {
 		"php": ">=8.2",
 		"composer/installers": "^2.2",
-		"log1x/crumb": "^1.1",
 		"log1x/poet": "^2.0",
 		"lukasbesch/bedrock-plugin-disabler": "^1.4",
 		"oscarotero/env": "^2.1",
@@ -58,7 +57,7 @@
 		"wpackagist-plugin/user-switching": "^1.8",
 		"wpackagist-plugin/wordfence": "8.0.*",
 		"wpackagist-plugin/wp-seopress": "^8.1",
-		"yard/brave-components": "^1.0",
+		"yard/brave-components": "dev-feat/breadcrumb",
 		"yard/brave-csp": "^1.0",
 		"yard/brave-hooks": "^2.0",
 		"yard/config-expander": "^1.0",
