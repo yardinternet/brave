@@ -94,7 +94,7 @@
 	}
 
 	/* Breadcrumbs */
-	.wp-block-wpseopress-breadcrumbs {
+	.brave-breadcrumb {
 		@apply !hidden;
 	}
 
