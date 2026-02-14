@@ -22,7 +22,9 @@
 			@if (post_password_required())
 				@php(the_content())
 			@else
-				<x-breadcrumbs />
+				<div class="container">
+					<x-breadcrumb />
+				</div>
 				{{ $slot }}
 			@endif
 		</main>
