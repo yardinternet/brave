@@ -13,8 +13,12 @@ class Breadcrumb extends Component
 {
 	use ParentPage;
 
-	public function __construct()
-	{
+	public function __construct(
+		public string $listClass = '',
+		public string $itemClass = '',
+		public string $linkClass = '',
+		public string $currentItemClass = '',
+	) {
 	}
 
 	public function render(): \Illuminate\View\View|string

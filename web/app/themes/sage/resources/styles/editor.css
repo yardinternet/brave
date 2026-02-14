@@ -17,7 +17,6 @@
 @import './elements/lists';
 
 /* Blocks */
-@import './blocks/breadcrumbs/shared';
 @import './blocks/button/shared';
 @import './blocks/collapse/shared';
 @import './blocks/collapse/editor';
