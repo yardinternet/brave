@@ -34,6 +34,7 @@
 	"require": {
 		"php": ">=8.2",
 		"composer/installers": "^2.2",
+		"log1x/navi": "^3.1",
 		"log1x/poet": "^2.0",
 		"lukasbesch/bedrock-plugin-disabler": "^1.4",
 		"oscarotero/env": "^2.1",
