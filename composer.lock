@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "533430929826fa8c4adf5462786cd308",
+    "content-hash": "c0623442793c13ed297966e524dad9fd",
     "packages": [
         {
             "name": "bordoni/phpass",
@@ -4449,6 +4449,71 @@
                 }
             ],
             "time": "2024-09-21T08:32:55+00:00"
+        },
+        {
+            "name": "log1x/crumb",
+            "version": "v1.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Log1x/crumb.git",
+                "reference": "10faf86060867678514f94be1b4160fc03969cc9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Log1x/crumb/zipball/10faf86060867678514f94be1b4160fc03969cc9",
+                "reference": "10faf86060867678514f94be1b4160fc03969cc9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "package",
+            "extra": {
+                "acorn": {
+                    "aliases": {
+                        "Crumb": "Log1x\\Crumb\\Facades\\Crumb"
+                    },
+                    "providers": [
+                        "Log1x\\Crumb\\CrumbServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Log1x\\Crumb\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brandon Nifong",
+                    "email": "brandon@tendency.me"
+                }
+            ],
+            "description": "A simple WordPress breadcrumb for Sage 10.",
+            "keywords": [
+                "breadcrumb",
+                "roots",
+                "sage",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/log1x/crumb/issues",
+                "source": "https://github.com/Log1x/crumb/tree/v1.1.5"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Log1x",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-11-16T23:55:42+00:00"
         },
         {
             "name": "log1x/poet",
@@ -13002,19 +13067,20 @@
         },
         {
             "name": "yard/brave-components",
-            "version": "v1.1.0",
+            "version": "dev-feat/breadcrumb",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yardinternet/brave-components.git",
-                "reference": "8ef7eb4b4cdbdf8541313b7a1f26f8e5577743d0"
+                "reference": "9744cd0c074df1960a7ef5d33f40ac2deb2c3479"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yardinternet/brave-components/zipball/8ef7eb4b4cdbdf8541313b7a1f26f8e5577743d0",
-                "reference": "8ef7eb4b4cdbdf8541313b7a1f26f8e5577743d0",
+                "url": "https://api.github.com/repos/yardinternet/brave-components/zipball/9744cd0c074df1960a7ef5d33f40ac2deb2c3479",
+                "reference": "9744cd0c074df1960a7ef5d33f40ac2deb2c3479",
                 "shasum": ""
             },
             "require": {
+                "log1x/crumb": "^1.1",
                 "php": ">=8.2",
                 "roots/acorn": "^4.3",
                 "spatie/laravel-package-tools": "^1.16",
@@ -13051,7 +13117,7 @@
                 "issues": "https://github.com/yardinternet/brave-components/issues",
                 "source": "https://github.com/yardinternet/brave-components"
             },
-            "time": "2026-01-29T08:34:29+00:00"
+            "time": "2026-02-14T15:42:46+00:00"
         },
         {
             "name": "yard/brave-csp",
@@ -15141,7 +15207,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": {
+        "yard/brave-components": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
@@ -15151,5 +15219,5 @@
     "platform-overrides": {
         "php": "8.2"
     },
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }
