@@ -22,11 +22,9 @@
 			@if (post_password_required())
 				@php(the_content())
 			@else
-				<div class="container">
-					<x-brave-breadcrumb class="py-3 text-sm" listClass="align-items-center flex list-none flex-wrap pl-0 mb-0"
-						itemClass="not-last:after:content-['|'] after:mx-2 text-gray-500"
-						linkClass="inline-block text-black no-underline hocus:text-primary focus:underline" />
-				</div>
+				<x-brave-breadcrumb class="container py-3 text-sm" listClass="align-items-center flex list-none flex-wrap pl-0 mb-0"
+					itemClass="not-last:after:content-['|'] after:mx-2 text-gray-500"
+					linkClass="inline-block text-black no-underline hocus:text-primary focus:underline" />
 				{{ $slot }}
 			@endif
 		</main>
