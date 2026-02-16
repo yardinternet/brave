@@ -46,4 +46,7 @@
 		var( --container-width ),
 		var( --content-container-max-width )
 	);
+
+	/* Grid settings */
+	--grid-gutter: 2rem;
 }
