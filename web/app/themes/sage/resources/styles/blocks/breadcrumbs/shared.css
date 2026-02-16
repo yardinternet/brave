@@ -1,15 +1,11 @@
-.breadcrumb .breadcrumb-item {
-	@apply text-sm;
-
-	&::after {
-		@apply mx-2 content-['|'];
-	}
-
-	a {
-		@apply text-black no-underline;
-
-		@variant hocus {
-			@apply underline;
-		}
-	}
+:root {
+	--breadcrumbs-font-size: 1rem;
+	--breadcrumbs-home-icon: '\f015';
+	--breadcrumbs-icon-font-size: 0.75em;
+	--breadcrumbs-item-gap-x: var( --breadcrumbs-list-gap-x );
+	--breadcrumbs-leading: 1.25;
+	--breadcrumbs-list-gap-x: 1rem;
+	--breadcrumbs-list-gap-y: 0.5rem;
+	--breadcrumbs-padding-y: 1.5rem;
+	--breadcrumbs-separator-icon: '\f054';
 }
