@@ -188,5 +188,8 @@
  */
 @utility intrinsic-grid {
 	@apply grid gap-(--gap,var(--grid-gutter));
-	grid-template-columns: repeat( var( --mode, auto-fit ), minmax( min( 100%, var( --min, 30ch ) ), 1fr ) );
+	grid-template-columns: repeat(
+		var( --mode, auto-fit ),
+		minmax( min( 100%, var( --min, 30ch ) ), 1fr )
+	);
 }
