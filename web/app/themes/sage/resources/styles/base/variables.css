@@ -60,5 +60,9 @@
 	);
 
 	/* Grid settings */
-	--grid-gutter: 2rem;
+	--grid-gutter: 1rem;
+
+	@variant xl {
+		--grid-gutter: 2rem;
+	}
 }

@@ -10,7 +10,7 @@
 @endphp
 
 <div @class([
-	'wp-block-yard-query mb-6 mt-5 md:mb-8 md:mt-7 max-md:intrinsic-grid md:grid md:gap-(--grid-gutter)',
+	'wp-block-yard-query mb-6 mt-5 md:mb-8 md:mt-7 max-md:auto-grid md:grid md:gap-(--grid-gutter)',
 	$attributes->align(),
 	$attributes->className,
 ])>
