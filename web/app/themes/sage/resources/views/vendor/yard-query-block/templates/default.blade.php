@@ -9,7 +9,7 @@
 
 <div
 	@class([
-		'wp-block-yard-query intrinsic-grid mb-6 mt-5 md:mb-8 md:mt-7',
+		'wp-block-yard-query auto-grid mb-6 mt-5 md:mb-8 md:mt-7',
 		$attributes->align(),
 		$attributes->className,
 ])>

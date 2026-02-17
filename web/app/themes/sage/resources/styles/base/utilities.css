@@ -186,7 +186,7 @@
  * --min: The minimum width of each column.
  * --mode: The grid mode. Use 'auto-fill' to fill the row with empty columns if there is extra space.
  */
-@utility intrinsic-grid {
+@utility auto-grid {
 	@apply grid gap-(--gap,var(--grid-gutter));
 	grid-template-columns: repeat(
 		var( --mode, auto-fit ),
