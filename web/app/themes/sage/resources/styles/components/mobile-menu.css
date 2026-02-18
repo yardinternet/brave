@@ -45,9 +45,3 @@
 		}
 	}
 }
-
-.mobile-menu-top-bar {
-	> .menu-item a {
-		@apply py-1 !text-sm text-gray-700;
-	}
-}

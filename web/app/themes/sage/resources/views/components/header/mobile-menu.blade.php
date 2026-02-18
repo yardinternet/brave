@@ -3,6 +3,15 @@
     'label' => __('Menu', 'sage'),
 ])
 
+@php
+	/**
+	 * @var Navi $primaryNavigation
+	 * @var Navi $topBarNavigation
+	 */
+
+	use Log1x\Navi\Navi;
+@endphp
+
 <x-brave::dialog.trigger :dialogId="$dialogId" class="hamburger group flex h-[46px] flex-col gap-y-2 lg:hidden">
 	<span
 		class="block h-0.5 w-8 rounded-full bg-black transition-all duration-300 ease-in-out group-aria-expanded:w-8 group-aria-expanded:translate-y-3 group-aria-expanded:rotate-45"></span>
@@ -39,16 +48,19 @@
 			        'theme_location' => 'primary_navigation',
 			    ]);
 			}
-
-			if (has_nav_menu('top_bar_navigation')) {
-			    wp_nav_menu([
-			        'container' => '',
-			        'depth' => 1,
-			        'id' => '',
-			        'menu_class' => 'mobile-menu-navigation mobile-menu-top-bar w-full mb-0 list-none px-4',
-			        'theme_location' => 'top_bar_navigation',
-			    ]);
-			}
 		@endphp
+
+		@if($topBarNavigation->isNotEmpty())
+			<ul class="grid gap-2 list-reset px-4 text-sm text-gray-700">
+				@foreach($topBarNavigation->all() as $item)
+					@php($isActive = $item->active || $item->activeParent)
+					<li>
+						<a class="no-underline aria-current-page:underline text-current hover:text-current"
+							href="{{ esc_url($item->url) }}"
+							@if($isActive) aria-current="page" @endif>{{ $item->label }}</a>
+					</li>
+				@endforeach
+			</ul>
+		@endif
 	</div>
 </x-brave-dialog>
