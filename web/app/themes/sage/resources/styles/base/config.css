@@ -131,3 +131,9 @@
 		@slot;
 	}
 }
+
+@custom-variant aria-current-page {
+	&[aria-current='page'] {
+		@slot;
+	}
+}

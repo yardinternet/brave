@@ -18,9 +18,11 @@
 						</li>
 					@endif
 					@foreach($footerNavigation->all() as $item)
+						@php($isActive = $item->active || $item->activeParent)
 						<li class="flex gap-x-3 not-last:after:content-['|']">
-							<a class="text-current no-underline hover:underline hover:text-current"
-								href="{{ esc_url($item->url) }}">{{ $item->label }}</a>
+							<a class="text-current no-underline hover:underline hover:text-current aria-current-page:underline"
+								href="{{ esc_url($item->url) }}"
+								@if($isActive) aria-current="page" @endif>{{ $item->label }}</a>
 						</li>
 					@endforeach
 				</ul>
