@@ -1,7 +1,7 @@
 @php
-	use Log1x\Navi\Navi;
-
-	$topBarNavigation = Navi::make()->build('top_bar_navigation');
+	/**
+	 * @var Log1x\Navi\Navi $topBarNavigation
+	 */
 @endphp
 
 @if ($topBarNavigation->isNotEmpty())

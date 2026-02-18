@@ -1,7 +1,7 @@
 @php
-	use Log1x\Navi\Navi;
-
-	$footerNavigation = Navi::make()->build('footer_navigation');
+	/**
+	 * @var Log1x\Navi\Navi $footerNavigation
+	 */
 @endphp
 
 <footer class="footer">
