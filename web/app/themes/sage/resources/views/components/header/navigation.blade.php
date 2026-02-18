@@ -31,7 +31,7 @@
 
 					@if ($item->children)
 						<ul
-							class="sub-menu ease-base invisible absolute mb-0 min-w-48 -translate-y-3 list-none bg-white pl-0 opacity-0 shadow-md transition-all group-[.js-brave-show-sub-menu]:visible group-[.js-brave-show-sub-menu]:translate-y-0 group-[.js-brave-show-sub-menu]:opacity-100">
+							class="sub-menu ease-base invisible absolute mb-0 min-w-48 -translate-y-3 list-none bg-white pl-0 opacity-0 shadow-md transition-all group-has-aria-expanded:visible group-has-aria-expanded:translate-y-0 group-has-aria-expanded:opacity-100">
 							@foreach ($item->children as $child)
 								<li class="menu-item">
 									<a href="{{ $child->url }}" @class([
