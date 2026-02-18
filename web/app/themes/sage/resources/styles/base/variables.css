@@ -38,8 +38,16 @@
 	/* Navigation */
 	--wp-admin-bar-height: var( --wp-admin--admin-bar--height, 0px );
 	--nav-bar-height: 80px;
-	--top-bar-height: 40px;
-	--combined-bar-height: var( --nav-bar-height ); /* Altered in top-bar.css */
+	--top-bar-height: 0;
+	--combined-bar-height: calc(
+		var( --nav-bar-height ) + var( --top-bar-height )
+	);
+
+	@variant lg {
+		:root:has( .top-bar ) {
+			--top-bar-height: 40px;
+		}
+	}
 
 	/* Container size */
 	--container-padding: 1rem;
