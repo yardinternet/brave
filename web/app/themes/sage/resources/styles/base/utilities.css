@@ -193,3 +193,7 @@
 		minmax( min( 100%, var( --min, 30ch ) ), 1fr )
 	);
 }
+
+@utility list-reset {
+	@apply mb-0 list-none pl-0;
+}
