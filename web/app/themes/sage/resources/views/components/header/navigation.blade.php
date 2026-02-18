@@ -16,7 +16,7 @@
 						'relative flex h-full gap-2 items-center px-2 text-center text-sm leading-snug text-black no-underline xl:px-4 xl:text-base xl:leading-snug hocus:text-primary',
 						'text-primary' => $item->active || $item->activeParent,
 						$item->classes,
-					])>
+					]) @if($item->active) aria-current="page" @endif>
 						{{ $item->label }}
 
 						@if ($item->children)
@@ -37,7 +37,7 @@
 									<a href="{{ $child->url }}" @class([
 										'group/sub-link flex items-center gap-6 justify-between px-6 py-3 text-left leading-snug text-inherit no-underline',
 										'text-primary' => $child->active,
-									])>
+									]) @if($child->active) aria-current="page" @endif>
 										{{ $child->label }}
 										<i class="fa-light fa-angle-right transition-all group-hover/sub-link:translate-x-1"></i>
 									</a>
