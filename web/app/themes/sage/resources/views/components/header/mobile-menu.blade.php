@@ -12,7 +12,7 @@
 	use Log1x\Navi\Navi;
 @endphp
 
-<x-brave::dialog.trigger :dialogId="$dialogId" class="hamburger group flex h-[46px] flex-col gap-y-2 lg:hidden">
+<x-brave::dialog.trigger :dialogId="$dialogId" class="hamburger h-11.5 group flex flex-col gap-y-2 lg:hidden">
 	<span
 		class="block h-0.5 w-8 rounded-full bg-black transition-all duration-300 ease-in-out group-aria-expanded:w-8 group-aria-expanded:translate-y-3 group-aria-expanded:rotate-45"></span>
 	<span
@@ -31,33 +31,43 @@
 	<div class="flex h-full flex-col">
 		<div class="z-1 sticky top-0 flex items-center justify-between gap-2 border-b border-gray-100 bg-white p-4">
 			<h2 class="mb-0 text-base font-normal">{{ $label }}</h2>
-			<x-brave::dialog.trigger :dialogId="$dialogId"
-				class="leading-0 -m-2 flex size-[46px] items-center justify-center text-2xl">
+			<x-brave::dialog.trigger :dialogId="$dialogId" class="leading-0 size-11.5 -m-2 flex items-center justify-center text-2xl">
 				<i class="fa-light fa-xmark" aria-hidden="true"></i>
 				<span class="sr-only">Sluit menu</span>
 			</x-brave::dialog.trigger>
 		</div>
 
-		@php
-			if (has_nav_menu('primary_navigation')) {
-			    wp_nav_menu([
-			        'container' => '',
-			        'depth' => 2,
-			        'id' => '',
-			        'menu_class' => 'mobile-menu-navigation w-full px-4',
-			        'theme_location' => 'primary_navigation',
-			    ]);
-			}
-		@endphp
+		@if ($primaryNavigation->isNotEmpty())
+			<ul class="mobile-menu-navigation list-reset px-4">
+				@foreach ($primaryNavigation->all() as $item)
+					@php
+						$hasChildren = !empty($item->children);
+					@endphp
+					<li @class(['menu-item', 'menu-item-has-children' => $hasChildren])>
+						<a href="{{ esc_url($item->url) }}"
+							@if ($item->active) aria-current="page" @endif>{{ $item->label }}</a>
+						@if ($hasChildren)
+							<ul class="sub-menu list-reset">
+								@foreach ($item->children as $item)
+									<li class="menu-item">
+										<a href="{{ esc_url($item->url) }}"
+											@if ($item->active) aria-current="page" @endif>{{ $item->label }}</a>
+									</li>
+								@endforeach
+							</ul>
+						@endif
+					</li>
+				@endforeach
+			</ul>
+		@endif
 
 		@if ($topBarNavigation->isNotEmpty())
 			<ul class="list-reset grid gap-2 px-4 text-sm text-gray-700">
 				@foreach ($topBarNavigation->all() as $item)
-					@php($isActive = $item->active || $item->activeParent)
 					<li>
 						<a class="aria-current-page:underline text-current no-underline hover:text-current"
 							href="{{ esc_url($item->url) }}"
-							@if ($isActive) aria-current="page" @endif>{{ $item->label }}</a>
+							@if ($item->active) aria-current="page" @endif>{{ $item->label }}</a>
 					</li>
 				@endforeach
 			</ul>
