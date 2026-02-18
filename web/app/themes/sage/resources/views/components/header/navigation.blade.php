@@ -1,10 +1,10 @@
 @php
-	use Log1x\Navi\Navi;
-
-	$menu = Navi::make()->build('primary_navigation');
+	/**
+	 * @var Log1x\Navi\Navi $primaryNavigation
+	 */
 @endphp
 
-@if ($menu->isNotEmpty())
+@if ($primaryNavigation->isNotEmpty())
 	<nav class="nav-primary hidden items-center lg:flex" aria-label="{{ __('Primaire navigatie', 'sage') }}">
 		<ul class="nav flex h-full items-center justify-center">
 			@foreach ($menu->all() as $item)
