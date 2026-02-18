@@ -14,14 +14,26 @@
 	--text-step-9: clamp( 1.4783rem, 1.0233rem + 1.9413vw, 2.3579rem );
 	--text-step-10: clamp( 1.567rem, 1.0359rem + 2.2659vw, 2.5937rem );
 
-	/* Section spacing */
-	--spacing-size-1: clamp( 0.25rem, calc( 0.25rem + 2vw ), 0.5rem );
-	--spacing-size-2: clamp( 0.5rem, calc( 0.5rem + 2vw ), 1rem );
-	--spacing-size-3: clamp( 0.75rem, calc( 0.75rem + 2vw ), 1.5rem );
-	--spacing-size-4: clamp( 1.5rem, calc( 1.5rem + 2vw ), 3rem );
-	--spacing-size-5: clamp( 2rem, calc( 2rem + 2vw ), 4rem );
-	--spacing-size-6: clamp( 2.5rem, calc( 2.5rem + 2vw ), 5rem );
-	--spacing-size-7: clamp( 3rem, calc( 3rem + 2vw ), 6rem );
+	/**
+	 * Spacing settings
+	 * -------------------------------------------------------------------------
+	 * All spacing sizes are fluid between 600px (sm) and 1150px (xl). When
+	 * changing these values update the base clamp function with a tool like
+	 * https://www.marcbacon.com/tools/clamp-calculator to ensure this behaviour
+	 * remains the same.
+	 *
+	 * Also make sure to update the spacing sizes referenced in the theme.json
+	 * file when adding or removing spacing sizes here.
+	 */
+	--spacing-ratio: 1.5;
+
+	--spacing-size-1: clamp( 0.25rem, -0.023rem + 0.727vw, 0.5rem );
+	--spacing-size-2: calc( var( --spacing-size-1 ) * var( --spacing-ratio ) );
+	--spacing-size-3: calc( var( --spacing-size-2 ) * var( --spacing-ratio ) );
+	--spacing-size-4: calc( var( --spacing-size-3 ) * var( --spacing-ratio ) );
+	--spacing-size-5: calc( var( --spacing-size-4 ) * var( --spacing-ratio ) );
+	--spacing-size-6: calc( var( --spacing-size-5 ) * var( --spacing-ratio ) );
+	--spacing-size-7: calc( var( --spacing-size-6 ) * var( --spacing-ratio ) );
 
 	/* Navigation */
 	--wp-admin-bar-height: var( --wp-admin--admin-bar--height, 0px );
