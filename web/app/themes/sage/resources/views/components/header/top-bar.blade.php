@@ -11,11 +11,10 @@
 				aria-label="{{ __('Secundaire navigatie', 'sage') }}">
 				<ul class="flex items-center gap-4 list-reset">
 					@foreach($topBarNavigation->all() as $item)
-						@php($isActive = $item->active || $item->activeParent)
 						<li>
 							<a class="text-current no-underline hover:text-current hover:underline aria-current-page:underline"
 								href="{{ esc_url($item->url) }}"
-								@if($isActive) aria-current="page" @endif>{{ $item->label }}</a>
+								@if($item->active) aria-current="page" @endif>{{ $item->label }}</a>
 						</li>
 					@endforeach
 				</ul>
