@@ -1,5 +1,7 @@
 @php
-	$menu = Navi::build('primary_navigation');
+	use Log1x\Navi\Navi;
+
+	$menu = Navi::make()->build('primary_navigation');
 @endphp
 
 @if ($menu->isNotEmpty())
