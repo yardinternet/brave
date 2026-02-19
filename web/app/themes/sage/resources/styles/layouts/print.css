@@ -196,7 +196,7 @@
 	}
 
 	.wp-block-cover__inner-container {
-		@apply !rounded-theme !absolute inset-x-6 !top-1/2 !flex !w-auto !-translate-y-1/2 !items-center !justify-center;
+		@apply !absolute inset-x-6 !top-1/2 !flex !w-auto !-translate-y-1/2 !items-center !justify-center !rounded-theme;
 
 		&:has( p:empty:only-child ) {
 			@apply !hidden;
@@ -237,7 +237,7 @@
 	}
 
 	.wp-block-media-text__media img {
-		@apply !rounded-theme !static;
+		@apply !static !rounded-theme;
 	}
 
 	/* Core Separator Block */

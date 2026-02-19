@@ -128,7 +128,7 @@
 		@apply mb-0 text-sm;
 
 		span {
-			@apply text-primary font-bold;
+			@apply font-bold text-primary;
 		}
 	}
 
@@ -142,7 +142,7 @@
 		}
 
 		.facetwp-page {
-			@apply rounded-theme relative m-0 flex size-10 items-center justify-center p-2 font-normal text-black no-underline transition-all;
+			@apply relative m-0 flex size-10 items-center justify-center rounded-theme p-2 font-normal text-black no-underline transition-all;
 
 			&:not( .dots, .active ) {
 				@variant hocus {

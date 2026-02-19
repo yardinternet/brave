@@ -3,10 +3,10 @@
 }
 
 .wp-block-social-link {
-	@apply !text-primary !bg-white shadow-lg;
+	@apply !bg-white !text-primary shadow-lg;
 
 	@variant hocus {
-		@apply !bg-primary !transform-none !text-white transition-all;
+		@apply !transform-none !bg-primary !text-white transition-all;
 	}
 }
 

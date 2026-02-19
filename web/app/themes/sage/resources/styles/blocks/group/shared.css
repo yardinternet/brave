@@ -6,7 +6,7 @@
 	}
 
 	&.alignfull {
-		@apply my-section create-main-content-alignment;
+		@apply create-main-content-alignment my-section;
 
 		&:has( + .alignfull ) {
 			@apply mb-0;
@@ -21,7 +21,7 @@
 /* Variant with background */
 .wp-block-group.has-background {
 	&:not( .alignfull ) {
-		@apply rounded-theme my-4 bg-white p-(--card-padding) shadow md:mb-6;
+		@apply my-4 rounded-theme bg-white p-(--card-padding) shadow md:mb-6;
 	}
 
 	&.alignwide {
@@ -62,7 +62,7 @@
 
 	> :first-child {
 		&.wp-block-cover {
-			@apply rounded-t-theme -mt-(--card-padding) mb-(--card-padding);
+			@apply -mt-(--card-padding) mb-(--card-padding) rounded-t-theme;
 		}
 	}
 
@@ -72,7 +72,7 @@
 		}
 
 		&.wp-block-cover {
-			@apply rounded-b-theme mt-(--card-padding) -mb-(--card-padding);
+			@apply mt-(--card-padding) -mb-(--card-padding) rounded-b-theme;
 		}
 	}
 

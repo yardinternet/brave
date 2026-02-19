@@ -45,10 +45,6 @@
 		}
 	],
 
-	"bladeFormatter.format.enabled": false,
-	"blade.format.enable": false,
-	"blade.newLine": false,
-
 	"emmet.includeLanguages": {
 		"blade": "html",
 		"javascript": "html",

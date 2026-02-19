@@ -11,5 +11,5 @@
 }
 
 .layout-article {
-	@apply rounded-theme is-main-content create-main-content-alignment my-section max-w-(--layout-article-width)! bg-white p-(--layout-article-padding) shadow;
+	@apply is-main-content create-main-content-alignment my-section max-w-(--layout-article-width)! rounded-theme bg-white p-(--layout-article-padding) shadow;
 }

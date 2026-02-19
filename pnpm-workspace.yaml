@@ -5,3 +5,4 @@ publicHoistPattern:
     - eslint
     - stylelint-config-recommended
     - stylelint-config-idiomatic-order
+    - '@babel/preset-react'
