@@ -113,7 +113,7 @@
 		}
 
 		&.has-media-on-the-right .wp-block-media-text__media img {
-			@apply max-md:rounded-b-theme max-md:rounded-t-none;
+			@apply max-md:rounded-t-none max-md:rounded-b-theme;
 		}
 	}
 

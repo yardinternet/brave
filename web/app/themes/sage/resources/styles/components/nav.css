@@ -3,7 +3,7 @@
 		@apply relative h-full;
 
 		&::before {
-			@apply ease-base bg-primary content invisible absolute bottom-0 left-2 h-1 w-[calc(100%_-_1rem)] scale-0 duration-300 xl:left-4 xl:w-[calc(100%_-_2rem)];
+			@apply content invisible absolute bottom-0 left-2 h-1 w-[calc(100%_-_1rem)] scale-0 bg-primary duration-300 ease-base xl:left-4 xl:w-[calc(100%_-_2rem)];
 		}
 
 		@variant hocus {
@@ -34,7 +34,7 @@
 
 	.menu-item-has-children {
 		> a::after {
-			@apply fontawesome ease-base pt-1 pl-2 transition-all;
+			@apply fontawesome pt-1 pl-2 transition-all ease-base;
 			--fa-icon: '\f107';
 		}
 
@@ -51,14 +51,14 @@
 	}
 
 	.sub-menu {
-		@apply ease-base invisible absolute mb-0 min-w-max -translate-y-3 list-none bg-white pl-0 opacity-0 shadow-md transition-all;
+		@apply invisible absolute mb-0 min-w-max -translate-y-3 list-none bg-white pl-0 opacity-0 shadow-md transition-all ease-base;
 
 		.menu-item {
 			a {
 				@apply min-w-48 px-6 py-3;
 
 				&::after {
-					@apply fontawesome ease-base ml-auto pl-4 transition-all;
+					@apply fontawesome ml-auto pl-4 transition-all ease-base;
 					--fa-icon: '\f105';
 				}
 

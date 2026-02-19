@@ -1,5 +1,5 @@
 .wp-block-file {
-	@apply rounded-theme mt-4 mb-6 flex flex-wrap items-center justify-between gap-4 bg-white p-(--card-padding) shadow md:mb-8 md:flex-nowrap;
+	@apply mt-4 mb-6 flex flex-wrap items-center justify-between gap-4 rounded-theme bg-white p-(--card-padding) shadow md:mb-8 md:flex-nowrap;
 
 	&:has( .wp-block-file__embed ) {
 		@apply flex-wrap;

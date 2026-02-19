@@ -20,12 +20,12 @@
 }
 
 select:not( [multiple] ) {
-	@apply hover:ring-primary cursor-pointer rounded-(--input-radius) border-none bg-gray-100 shadow-none hover:ring-1;
+	@apply cursor-pointer rounded-(--input-radius) border-none bg-gray-100 shadow-none hover:ring-1 hover:ring-primary;
 }
 
 input[type='checkbox'],
 input[type='radio'] {
-	@apply accent-primary cursor-pointer;
+	@apply cursor-pointer accent-primary;
 
 	+ label {
 		@apply ml-1 cursor-pointer !text-sm;

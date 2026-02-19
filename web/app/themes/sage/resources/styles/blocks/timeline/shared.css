@@ -1,5 +1,5 @@
 .wp-block-yard-timeline {
-	@apply my-section relative;
+	@apply relative my-section;
 
 	--offset-left: 1rem;
 	--offset-top: 0rem;
@@ -33,7 +33,7 @@
 }
 
 .wp-block-yard-timeline-item {
-	@apply rounded-theme relative mb-(--offset-bottom) ml-(--item-offset-left) bg-white;
+	@apply relative mb-(--offset-bottom) ml-(--item-offset-left) rounded-theme bg-white;
 
 	&:last-child .wp-block-yard-timeline-item__line {
 		@apply h-0;
@@ -41,32 +41,32 @@
 }
 
 .wp-block-yard-timeline-item__dot {
-	@apply border-primary text-primary content pointer-events-none absolute top-(--top-position) left-(--dot-position) z-1 flex size-(--dot-size) -translate-y-1/2 items-center justify-center rounded-full border-4 bg-white;
+	@apply content pointer-events-none absolute top-(--top-position) left-(--dot-position) z-1 flex size-(--dot-size) -translate-y-1/2 items-center justify-center rounded-full border-4 border-primary bg-white text-primary;
 	font-size: var( --dot-font-size );
 }
 
 .wp-block-yard-timeline-item__line {
-	@apply bg-primary content pointer-events-none absolute top-(--top-position) left-(--line-position) h-(--line-height) w-(--line-width);
+	@apply content pointer-events-none absolute top-(--top-position) left-(--line-position) h-(--line-height) w-(--line-width) bg-primary;
 
 	&::before {
-		@apply bg-primary content pointer-events-none absolute top-0 right-(--horizontal-line-position) h-0.5 w-(--horizontal-line-width) -translate-y-1/2;
+		@apply content pointer-events-none absolute top-0 right-(--horizontal-line-position) h-0.5 w-(--horizontal-line-width) -translate-y-1/2 bg-primary;
 	}
 }
 
 .wp-block-yard-timeline-item__content {
-	@apply normalize-child-margin rounded-theme relative bg-inherit p-(--item-padding) shadow;
+	@apply normalize-child-margin relative rounded-theme bg-inherit p-(--item-padding) shadow;
 
 	> :first-child,
 	.block-editor-block-list__layout > :first-child {
 		&.wp-block-cover {
-			@apply rounded-t-theme -mt-(--item-padding) mb-(--item-padding);
+			@apply -mt-(--item-padding) mb-(--item-padding) rounded-t-theme;
 		}
 	}
 
 	> :last-child,
 	.block-editor-block-list__layout > :last-child {
 		&.wp-block-cover {
-			@apply rounded-b-theme mt-(--item-padding) -mb-(--item-padding);
+			@apply mt-(--item-padding) -mb-(--item-padding) rounded-b-theme;
 		}
 	}
 
@@ -155,7 +155,7 @@ ol.wp-block-yard-timeline {
 	}
 
 	.wp-block-yard-timeline-item__dot {
-		@apply bg-primary border-none;
+		@apply border-none bg-primary;
 	}
 
 	&.is-style-alternately {
