@@ -140,11 +140,11 @@
 		);
 	}
 
-	&:has( + .alignfull ) {
+	&:has( + .alignfull.has-background ) {
 		@apply mb-0;
 	}
 
-	+ .alignfull {
+	+ .alignfull.has-background {
 		@apply mt-0;
 	}
 

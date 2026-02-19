@@ -84,6 +84,7 @@ window.addEventListener( 'DOMContentLoaded', () => {
 		},
 		scope: [ 'block', 'inserter' ],
 		innerBlocks: [
+			[ 'theme/back-button' ],
 			[ 'core/post-title', { level: 1 } ],
 			[ 'core/paragraph', { content: 'Voeg de inhoud toe' } ],
 		],

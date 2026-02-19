@@ -21,5 +21,10 @@
 }
 
 .is-root-container {
-	@apply is-main-content create-main-content-alignment;
+	@apply is-main-content;
+
+	/* Only target editor, not pattern preview windows */
+	&.wp-block-post-content {
+		@apply create-main-content-alignment;
+	}
 }

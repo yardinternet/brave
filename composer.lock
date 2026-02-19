@@ -5652,16 +5652,16 @@
         },
         {
             "name": "plugin/yard-gutenberg",
-            "version": "v1.4.6",
+            "version": "v1.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yardinternet/plugin-yard-gutenberg.git",
-                "reference": "d1803f0359571550a1c1f0b88c2dea45924c41bf"
+                "reference": "e6f0891eab0371e7b8aaeca9a774c282d3d919e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yardinternet/plugin-yard-gutenberg/zipball/d1803f0359571550a1c1f0b88c2dea45924c41bf",
-                "reference": "d1803f0359571550a1c1f0b88c2dea45924c41bf",
+                "url": "https://api.github.com/repos/yardinternet/plugin-yard-gutenberg/zipball/e6f0891eab0371e7b8aaeca9a774c282d3d919e8",
+                "reference": "e6f0891eab0371e7b8aaeca9a774c282d3d919e8",
                 "shasum": ""
             },
             "require": {
@@ -5692,9 +5692,9 @@
             "description": "A collection of blocks for the WordPress Gutenberg editor.",
             "support": {
                 "issues": "https://github.com/yardinternet/plugin-yard-gutenberg/issues",
-                "source": "https://github.com/yardinternet/plugin-yard-gutenberg/tree/v1.4.6"
+                "source": "https://github.com/yardinternet/plugin-yard-gutenberg/tree/v1.4.7"
             },
-            "time": "2026-02-19T13:36:29+00:00"
+            "time": "2026-02-24T09:02:01+00:00"
         },
         {
             "name": "psr/clock",
@@ -13179,16 +13179,16 @@
         },
         {
             "name": "yard/config-expander",
-            "version": "v1.4.0",
+            "version": "v1.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yardinternet/package-config-expander.git",
-                "reference": "ca96d27b17604d4654bffe78bb632adfdb847e1b"
+                "reference": "9dae7923958014774e9d2f6da2c15e687010ec11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yardinternet/package-config-expander/zipball/ca96d27b17604d4654bffe78bb632adfdb847e1b",
-                "reference": "ca96d27b17604d4654bffe78bb632adfdb847e1b",
+                "url": "https://api.github.com/repos/yardinternet/package-config-expander/zipball/9dae7923958014774e9d2f6da2c15e687010ec11",
+                "reference": "9dae7923958014774e9d2f6da2c15e687010ec11",
                 "shasum": ""
             },
             "require": {
@@ -13224,9 +13224,9 @@
             "description": "Adds necessary security, defaults and settings to this site.",
             "support": {
                 "issues": "https://github.com/yardinternet/package-config-expander/issues",
-                "source": "https://github.com/yardinternet/package-config-expander/tree/v1.4.0"
+                "source": "https://github.com/yardinternet/package-config-expander/tree/v1.4.2"
             },
-            "time": "2025-09-29T07:03:45+00:00"
+            "time": "2026-02-24T10:06:56+00:00"
         },
         {
             "name": "yard/data",
@@ -15173,15 +15173,15 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=8.2"
     },
-    "platform-dev": {},
+    "platform-dev": [],
     "platform-overrides": {
         "php": "8.2"
     },
-    "plugin-api-version": "2.9.0"
+    "plugin-api-version": "2.6.0"
 }
