@@ -90,11 +90,32 @@ return [
 	*/
 
 	'block_pattern' => [
-		// 'sage/hero' => [
-		//     'title' => 'Page Hero',
-		//     'description' => 'Draw attention to the main focus of the page, and highlight key CTAs',
-		//     'categories' => ['all'],
-		// ],
+		'cards-3-with-image' => [
+			'title' => 'Vrije invoer kaarten - 3 stuks - met afbeelding',
+			'categories' => ['yard-cards'],
+		],
+		'cards-3' => [
+			'title' => 'Vrije invoer kaarten - 3 stuks',
+			'categories' => ['yard-cards'],
+		],
+		'cards-2-with-image' => [
+			'title' => 'Vrije invoer kaarten - 2 stuks - met afbeelding',
+			'categories' => ['yard-cards'],
+		],
+		'cards-2' => [
+			'title' => 'Vrije invoer kaarten - 2 stuks',
+			'categories' => ['yard-cards'],
+		],
+		'page-detail' => [
+			'title' => 'Detailpagina',
+			'categories' => ['yard-pages'],
+			'blockTypes' => ['core/post-content'],
+			'postTypes' => ['page'],
+		],
+		'query-pages' => [
+			'title' => 'Berichtenlijst - Pagina\'s',
+			'categories' => ['yard-query'],
+		],
 	],
 
 	/*
@@ -108,9 +129,13 @@ return [
 	*/
 
 	'block_pattern_category' => [
-		'all' => [
-			'label' => 'All Patterns',
-		],
+		'yard-banners' => ['label' => '(Yard) Banners'],
+		'yard-cards' => ['label' => '(Yard) Vrije invoer kaarten'],
+		'yard-content-enrichment' => ['label' => '(Yard) Content-verrijking'],
+		'yard-media-text' => ['label' => '(Yard) Media en tekst'],
+		'yard-page-sections' => ['label' => '(Yard) Pagina-secties'],
+		'yard-pages' => ['label' => '(Yard) Pagina\'s'],
+		'yard-query' => ['label' => '(Yard) Berichtenlijsten'],
 	],
 
 	/*

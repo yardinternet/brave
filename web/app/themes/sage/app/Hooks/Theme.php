@@ -57,4 +57,10 @@ class Theme extends \Yard\Brave\Hooks\Theme
 
 		return array_merge($blocks, $blocksToAdd);
 	}
+
+	#[Filter('yard::gutenberg/enable-patterns')]
+	public function disableYardPatterns(): bool
+	{
+		return false;
+	}
 }

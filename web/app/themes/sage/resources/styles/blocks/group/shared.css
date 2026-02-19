@@ -7,14 +7,6 @@
 
 	&.alignfull {
 		@apply create-main-content-alignment my-section;
-
-		&:has( + .alignfull ) {
-			@apply mb-0;
-		}
-
-		+ .alignfull {
-			@apply mt-0;
-		}
 	}
 }
 
@@ -30,6 +22,14 @@
 
 	&.alignfull {
 		@apply py-section;
+
+		&:has( + .alignfull.has-background ) {
+			@apply mb-0;
+		}
+
+		+ .alignfull.has-background {
+			@apply mt-0;
+		}
 	}
 }
 
