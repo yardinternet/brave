@@ -121,7 +121,9 @@
 		"private-setup": [
 			"composer repo add satis composer https://satis.yard.nl",
 			"composer repo add satispress composer https://packagist.yard.nl/satispress/",
-			"composer require yard/brave-private-setup --dev"
+			"composer require yard/brave-private-setup --dev",
+			"wp acorn setup:dependencies",
+			"wp acorn setup:deployer"
 		]
 	}
 }
