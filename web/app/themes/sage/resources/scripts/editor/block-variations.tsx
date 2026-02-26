@@ -163,9 +163,6 @@ window.addEventListener( 'DOMContentLoaded', () => {
 				],
 			],
 		],
-		supports: {
-			multiple: false,
-		},
 	} );
 
 	unusedVariations.forEach( ( { block, variation } ) => {
