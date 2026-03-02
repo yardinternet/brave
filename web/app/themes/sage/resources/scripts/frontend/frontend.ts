@@ -13,11 +13,6 @@ import {
 	WebShareApi,
 } from '@yardinternet/brave-frontend-kit';
 
-// const testFunction = ( modelID: number ) => {
-// 	const defaultModelID = 23;
-// 	return { type: 'keyboard', modelID: defaultModelID };
-// };
-
 /**
  * Application entrypoint
  */

@@ -19,8 +19,8 @@ importers:
         version: 1.3.2
     devDependencies:
       '@yardinternet/eslint-config':
-        specifier: ^1.2.3
-        version: 1.2.3(@babel/core@7.29.0)(@types/eslint@9.6.1)(@typescript-eslint/parser@6.21.0(eslint@9.39.3(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.3(jiti@1.21.7))(prettier@3.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.4.0(typescript@5.9.3))(typescript@5.9.3)
+        specifier: ^1.2.4
+        version: 1.2.4(@babel/core@7.29.0)(@types/eslint@9.6.1)(@typescript-eslint/parser@6.21.0(eslint@9.39.3(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.3(jiti@1.21.7))(prettier@3.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.4.0(typescript@5.9.3))(typescript@5.9.3)
       '@yardinternet/prettier-config':
         specifier: ^2.0.4
         version: 2.0.4
@@ -28,14 +28,14 @@ importers:
         specifier: ^1.1.3
         version: 1.1.3(typescript@5.9.3)
       '@yardinternet/toolkit':
-        specifier: ^2.0.7
-        version: 2.0.7(@babel/core@7.29.0)(@types/eslint@9.6.1)(@typescript-eslint/parser@6.21.0(eslint@9.39.3(jiti@1.21.7))(typescript@5.9.3))(jiti@1.21.7)(optionator@0.9.4)(postcss@8.5.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3)(vite@7.3.1(@types/node@25.3.1)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))(webpack@5.105.3)
+        specifier: ^2.1.1
+        version: 2.1.1(@babel/core@7.29.0)(@types/eslint@9.6.1)(@typescript-eslint/parser@6.21.0(eslint@9.39.3(jiti@1.21.7))(typescript@5.9.3))(jiti@1.21.7)(optionator@0.9.4)(postcss@8.5.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3)(vite@7.3.1(@types/node@25.3.1)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))(webpack@5.105.3)
       '@yardinternet/ts-config':
-        specifier: ^1.0.6
-        version: 1.0.6(@emotion/is-prop-valid@1.4.0)(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.4.0(typescript@5.9.3))
+        specifier: ^1.0.8
+        version: 1.0.8(@emotion/is-prop-valid@1.4.0)(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.4.0(typescript@5.9.3))
       '@yardinternet/vite-config':
-        specifier: ^1.0.13
-        version: 1.0.13(eslint@9.39.3(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.6)(stylelint@17.4.0(typescript@5.9.3))(typescript@5.9.3)(vite@7.3.1(@types/node@25.3.1)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))(webpack@5.105.3)
+        specifier: ^1.1.1
+        version: 1.1.1(eslint@9.39.3(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.6)(stylelint@17.4.0(typescript@5.9.3))(typescript@5.9.3)(vite@7.3.1(@types/node@25.3.1)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))(webpack@5.105.3)
       tailwindcss:
         specifier: ^4.2.0
         version: 4.2.1
@@ -1902,8 +1902,8 @@ packages:
     resolution: {integrity: sha512-Kp/WSt411ZWYvgXy6uiv5RmhHrz9cAml05AQPrtdAp7eUqvIDbMGPnML25OKbzR3RJ1q4wgENxDTvlGPa9+Mww==}
     engines: {node: '>=20.19'}
 
-  '@tanstack/react-router@1.163.2':
-    resolution: {integrity: sha512-1LosUlpL2mRMWxUZXmkEg5+Br5P5j9TrLngqRgHVbZoFkjnbcj1x9fQN2OVLrBv9Npw97NRsHeJljnAH/c7oSw==}
+  '@tanstack/react-router@1.163.3':
+    resolution: {integrity: sha512-hheBbFVb+PbxtrWp8iy6+TTRTbhx3Pn6hKo8Tv/sWlG89ZMcD1xpQWzx8ukHN9K8YWbh5rdzt4kv6u8X4kB28Q==}
     engines: {node: '>=20.19'}
     peerDependencies:
       react: '>=18.0.0 || >=19.0.0'
@@ -1915,8 +1915,8 @@ packages:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
-  '@tanstack/router-core@1.163.2':
-    resolution: {integrity: sha512-mD0Pav6kcpS317XSJN+wCZaxLLngDhlwgzPNca56dWCp8YKPEvhhj/Zdl+LdRlJQ2VJ5BOy7FbOV1hErc9Nj5Q==}
+  '@tanstack/router-core@1.163.3':
+    resolution: {integrity: sha512-jPptiGq/w3nuPzcMC7RNa79aU+b6OjaDzWJnBcV2UAwL4ThJamRS4h42TdhJE+oF5yH9IEnCOGQdfnbw45LbfA==}
     engines: {node: '>=20.19'}
 
   '@tanstack/store@0.9.1':
@@ -1981,11 +1981,11 @@ packages:
   '@types/semver@7.7.1':
     resolution: {integrity: sha512-FmgJfu+MOcQ370SD0ev7EI8TlCAfKYU+B4m5T3yXc1CiRN94g/SZPtsCkk506aUDtlMnFZvasDwHHUcZUEaYuA==}
 
-  '@types/wordpress__block-editor@15.0.3':
-    resolution: {integrity: sha512-ub0HvoOtz7aPHzCPUocuhmVWwrp14iHP1Bc012fXaCV2R3YYJRa1MfE+G6/aQHaK7O64uGjOaBuXt3vsB/bP8A==}
+  '@types/wordpress__block-editor@15.0.5':
+    resolution: {integrity: sha512-nQNBDiVISlJWelHG+V7ikSaDFHWeKx60IyCQIG2qiePaeqjHuOaWWVJl0H1QWyOMUnmDuro2Y+GNsaNvjufuXA==}
 
-  '@types/wordpress__blocks@15.10.0':
-    resolution: {integrity: sha512-U/Piapa4n2JRAtFzpfSt0YHGQt/f+ZQzcnJbdEM/UDV0cdzLM1uoW/YceJW4f4PS1BzM6f+CMsJtW2WPyGSx8w==}
+  '@types/wordpress__blocks@15.10.2':
+    resolution: {integrity: sha512-d8+XJZ/QszWyCp7k9lbqDoJePl7/SLUueMxzAA9J2buRsvd4KXK5C5Y8BAU8WuLMG2Av1dRhTvr+izfLA9jynA==}
 
   '@types/wordpress__server-side-render@6.15.0':
     resolution: {integrity: sha512-A/5HRnF3REHk/2b4ckqcX1bNtXxEgnE3RRP5FEHv9eoV6J/PoOxXgp0NuOh4FP/wH3gXedp3Fiqkpsr9+Di0tQ==}
@@ -2685,8 +2685,8 @@ packages:
   '@yardinternet/brave-frontend-kit@0.7.3':
     resolution: {integrity: sha512-9Wi/YQkkBdi7DYtwmACQS0EMZRDMK4V0CnC2B5llS1lQ5p/kV/Rk6H5PDDhJgDSKb678fKNHeWqGNNyR83Ma7Q==, tarball: https://npm.pkg.github.com/download/@yardinternet/brave-frontend-kit/0.7.3/a28722f941973d230f995f4c73ccf501d23d0af8}
 
-  '@yardinternet/eslint-config@1.2.3':
-    resolution: {integrity: sha512-VZStbo4xQTpZM/IGm/BaYCO5aGXP9GRpuglDVdP4Vep9USzxnGHCxrAxfDTtqZGHNQopOc1eKnnT/JRVTI6qHw==, tarball: https://npm.pkg.github.com/download/@yardinternet/eslint-config/1.2.3/9e9c41ac580578c9cdb48f6016e5efb63528e0ee}
+  '@yardinternet/eslint-config@1.2.4':
+    resolution: {integrity: sha512-vLrJW7nIWi4hhOQySkpT/ciewPk+kpOJmythJxEO/vvbJKWwl5/3u89Pdz6dWSRvqswYxOkzE35ac29Cyv7jCA==, tarball: https://npm.pkg.github.com/download/@yardinternet/eslint-config/1.2.4/40771f2dc79141bc9bc39b65ab06bd1d7843445d}
 
   '@yardinternet/gutenberg-components@1.3.2':
     resolution: {integrity: sha512-N3C422kMZYhUqCY25FG5HEddug6WWpGFAYUGQ9dRqNx7ffLtgmISE8xaORevvCzd0Fnaxlm1BCWNutxrIsJV6A==, tarball: https://npm.pkg.github.com/download/@yardinternet/gutenberg-components/1.3.2/cdc4a12c71fe087d533d65ac2f974f814b2a3449}
@@ -2700,15 +2700,15 @@ packages:
   '@yardinternet/stylelint-config@1.1.3':
     resolution: {integrity: sha512-P3eUUHLLtWE30nf2Luhu4EoVinxXrGFOBb/UDyHt41A9mlTea67V/F+Zdfig3hWKOz9fXP3J3HetRclcY86u4A==, tarball: https://npm.pkg.github.com/download/@yardinternet/stylelint-config/1.1.3/44bbcf0f26d8a1d6dbc78a0e243a9dce7e45ec12}
 
-  '@yardinternet/toolkit@2.0.7':
-    resolution: {integrity: sha512-rEc9OnyaSB9DNM5fhbsLE2QwbLkx1GC8Q2YlQPWKNTlKaDowbaoNsKidytrvClyoKli3mrCxq6A26psGPC3lxg==, tarball: https://npm.pkg.github.com/download/@yardinternet/toolkit/2.0.7/b0630bebd6eaa8a533fdea576ba56e17af2bbd03}
+  '@yardinternet/toolkit@2.1.1':
+    resolution: {integrity: sha512-tcUv5o/AZim3B3ENpKlrNu7xh1/CeToUlPm284qwzCGcxSCdcN3wB49JuobLH/zzYoeZre7BgFt/BHA2Lg14KQ==, tarball: https://npm.pkg.github.com/download/@yardinternet/toolkit/2.1.1/9f8774426a2def71884e3accafd2f7ed8506d34d}
     hasBin: true
 
-  '@yardinternet/ts-config@1.0.6':
-    resolution: {integrity: sha512-XNHKTVpITeYTU+Ml6nwGqwB4i97fGueM049wRD2DCJ39h1YQDQ+oke6+zmj56E5mz9MexfiegHKYQz2trRxD+g==, tarball: https://npm.pkg.github.com/download/@yardinternet/ts-config/1.0.6/1e4420471669c92f39c187a938e48f56bfda71d6}
+  '@yardinternet/ts-config@1.0.8':
+    resolution: {integrity: sha512-Rg31CDu9sSTspTv8xiEqU+qc4rl7hsFF8uZXVZwncPnkoj8QaTiBT7RMYxRHlbr52jhdvAszDSkUaDnhEqCkuw==, tarball: https://npm.pkg.github.com/download/@yardinternet/ts-config/1.0.8/393471cc84a903e75b032436dcd948b880cd19eb}
 
-  '@yardinternet/vite-config@1.0.13':
-    resolution: {integrity: sha512-bGPD08VTvI7STugJoK2iHy2WF/433b7qVW3OFcdrJRlHlwwz2d7jCNQrWZoRuDzVQKStKZDKa5mE+rUX5g4yCQ==, tarball: https://npm.pkg.github.com/download/@yardinternet/vite-config/1.0.13/03d51afa58321961f43fcf4d0583214d150e744c}
+  '@yardinternet/vite-config@1.1.1':
+    resolution: {integrity: sha512-C+DwublHocv6o8qh3TVRVZ+zwmi6x/pWttUIFTaoggwYKxyV9cBPeQZDqmIXq6HYtaAtTqy49/MoH/VondVZnQ==, tarball: https://npm.pkg.github.com/download/@yardinternet/vite-config/1.1.1/894780201cb7ebd49b3dd6386478905b69ed0bba}
     peerDependencies:
       vite: ^7.1.2
 
@@ -3264,8 +3264,8 @@ packages:
   encoding@0.1.13:
     resolution: {integrity: sha512-ETBauow1T35Y/WZMkio9jiM0Z5xjHHmJ4XmjZOq1l/dXz3lr2sRn87nJy20RupqSh1F2m3HHPSp8ShIPQJrJ3A==}
 
-  enhanced-resolve@5.19.0:
-    resolution: {integrity: sha512-phv3E1Xl4tQOShqSte26C7Fl84EwUdZsyOuSSk9qtAGyyQs2s3jJzComh+Abf4g187lUUAvH+H26omrqia2aGg==}
+  enhanced-resolve@5.20.0:
+    resolution: {integrity: sha512-/ce7+jQ1PQ6rVXwe+jKEg5hW5ciicHwIQUagZkp6IufBoY3YDgdTTY1azVs0qoRgVmvsNB+rbjLJxDAeHHtwsQ==}
     engines: {node: '>=10.13.0'}
 
   env-paths@2.2.1:
@@ -7396,7 +7396,7 @@ snapshots:
   '@tailwindcss/node@4.2.1':
     dependencies:
       '@jridgewell/remapping': 2.3.5
-      enhanced-resolve: 5.19.0
+      enhanced-resolve: 5.20.0
       jiti: 2.6.1
       lightningcss: 1.31.1
       magic-string: 0.30.21
@@ -7478,11 +7478,11 @@ snapshots:
 
   '@tanstack/history@1.161.4': {}
 
-  '@tanstack/react-router@1.163.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@tanstack/react-router@1.163.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@tanstack/history': 1.161.4
       '@tanstack/react-store': 0.9.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@tanstack/router-core': 1.163.2
+      '@tanstack/router-core': 1.163.3
       isbot: 5.1.35
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -7496,7 +7496,7 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       use-sync-external-store: 1.6.0(react@18.3.1)
 
-  '@tanstack/router-core@1.163.2':
+  '@tanstack/router-core@1.163.3':
     dependencies:
       '@tanstack/history': 1.161.4
       '@tanstack/store': 0.9.1
@@ -7575,10 +7575,10 @@ snapshots:
 
   '@types/semver@7.7.1': {}
 
-  '@types/wordpress__block-editor@15.0.3(@emotion/is-prop-valid@1.4.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@types/wordpress__block-editor@15.0.5(@emotion/is-prop-valid@1.4.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@types/react': 18.3.28
-      '@types/wordpress__blocks': 15.10.0(@emotion/is-prop-valid@1.4.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@types/wordpress__blocks': 15.10.2(@emotion/is-prop-valid@1.4.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@wordpress/components': 30.9.0(@emotion/is-prop-valid@1.4.0)(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@wordpress/data': 10.40.0(react@18.3.1)
       '@wordpress/element': 6.40.0
@@ -7591,7 +7591,7 @@ snapshots:
       - react-dom
       - supports-color
 
-  '@types/wordpress__blocks@15.10.0(@emotion/is-prop-valid@1.4.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@types/wordpress__blocks@15.10.2(@emotion/is-prop-valid@1.4.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@types/react': 18.3.28
       '@wordpress/components': 30.9.0(@emotion/is-prop-valid@1.4.0)(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -8876,7 +8876,7 @@ snapshots:
   '@wordpress/route@0.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@tanstack/history': 1.161.4
-      '@tanstack/react-router': 1.163.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@tanstack/react-router': 1.163.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@wordpress/private-apis': 1.40.0
       react: 18.3.1
     transitivePeerDependencies:
@@ -9025,7 +9025,7 @@ snapshots:
     optionalDependencies:
       '@rollup/rollup-linux-arm64-gnu': 4.59.0
 
-  '@yardinternet/eslint-config@1.2.3(@babel/core@7.29.0)(@types/eslint@9.6.1)(@typescript-eslint/parser@6.21.0(eslint@9.39.3(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.3(jiti@1.21.7))(prettier@3.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.4.0(typescript@5.9.3))(typescript@5.9.3)':
+  '@yardinternet/eslint-config@1.2.4(@babel/core@7.29.0)(@types/eslint@9.6.1)(@typescript-eslint/parser@6.21.0(eslint@9.39.3(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.3(jiti@1.21.7))(prettier@3.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.4.0(typescript@5.9.3))(typescript@5.9.3)':
     dependencies:
       '@babel/preset-react': 7.28.5(@babel/core@7.29.0)
       '@eslint/compat': 2.0.2(eslint@9.39.3(jiti@1.21.7))
@@ -9054,7 +9054,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@yardinternet/eslint-config@1.2.3(@babel/core@7.29.0)(@types/eslint@9.6.1)(@typescript-eslint/parser@6.21.0(eslint@9.39.3(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.3(jiti@1.21.7))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.4.0(typescript@5.9.3))(typescript@5.9.3)(wp-prettier@3.0.3)':
+  '@yardinternet/eslint-config@1.2.4(@babel/core@7.29.0)(@types/eslint@9.6.1)(@typescript-eslint/parser@6.21.0(eslint@9.39.3(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.3(jiti@1.21.7))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.4.0(typescript@5.9.3))(typescript@5.9.3)(wp-prettier@3.0.3)':
     dependencies:
       '@babel/preset-react': 7.28.5(@babel/core@7.29.0)
       '@eslint/compat': 2.0.2(eslint@9.39.3(jiti@1.21.7))
@@ -9126,7 +9126,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@yardinternet/toolkit@2.0.7(@babel/core@7.29.0)(@types/eslint@9.6.1)(@typescript-eslint/parser@6.21.0(eslint@9.39.3(jiti@1.21.7))(typescript@5.9.3))(jiti@1.21.7)(optionator@0.9.4)(postcss@8.5.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3)(vite@7.3.1(@types/node@25.3.1)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))(webpack@5.105.3)':
+  '@yardinternet/toolkit@2.1.1(@babel/core@7.29.0)(@types/eslint@9.6.1)(@typescript-eslint/parser@6.21.0(eslint@9.39.3(jiti@1.21.7))(typescript@5.9.3))(jiti@1.21.7)(optionator@0.9.4)(postcss@8.5.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3)(vite@7.3.1(@types/node@25.3.1)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))(webpack@5.105.3)':
     dependencies:
       '@babel/preset-react': 7.28.5(@babel/core@7.29.0)
       '@eslint/compat': 2.0.2(eslint@9.39.3(jiti@1.21.7))
@@ -9152,10 +9152,10 @@ snapshots:
       stylelint-config-idiomatic-order: 10.0.0(stylelint@17.4.0(typescript@5.9.3))
       stylelint-config-recommended: 18.0.0(stylelint@17.4.0(typescript@5.9.3))
     optionalDependencies:
-      '@yardinternet/eslint-config': 1.2.3(@babel/core@7.29.0)(@types/eslint@9.6.1)(@typescript-eslint/parser@6.21.0(eslint@9.39.3(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.3(jiti@1.21.7))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.4.0(typescript@5.9.3))(typescript@5.9.3)(wp-prettier@3.0.3)
+      '@yardinternet/eslint-config': 1.2.4(@babel/core@7.29.0)(@types/eslint@9.6.1)(@typescript-eslint/parser@6.21.0(eslint@9.39.3(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.3(jiti@1.21.7))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.4.0(typescript@5.9.3))(typescript@5.9.3)(wp-prettier@3.0.3)
       '@yardinternet/prettier-config': 2.0.4
       '@yardinternet/stylelint-config': 1.1.3(typescript@5.9.3)
-      '@yardinternet/vite-config': 1.0.13(eslint@9.39.3(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.6)(stylelint@17.4.0(typescript@5.9.3))(typescript@5.9.3)(vite@7.3.1(@types/node@25.3.1)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))(webpack@5.105.3)
+      '@yardinternet/vite-config': 1.1.1(eslint@9.39.3(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.6)(stylelint@17.4.0(typescript@5.9.3))(typescript@5.9.3)(vite@7.3.1(@types/node@25.3.1)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))(webpack@5.105.3)
     transitivePeerDependencies:
       - '@babel/core'
       - '@biomejs/biome'
@@ -9197,10 +9197,10 @@ snapshots:
       - webpack
       - yaml
 
-  '@yardinternet/ts-config@1.0.6(@emotion/is-prop-valid@1.4.0)(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.4.0(typescript@5.9.3))':
+  '@yardinternet/ts-config@1.0.8(@emotion/is-prop-valid@1.4.0)(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.4.0(typescript@5.9.3))':
     dependencies:
-      '@types/wordpress__block-editor': 15.0.3(@emotion/is-prop-valid@1.4.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@types/wordpress__blocks': 15.10.0(@emotion/is-prop-valid@1.4.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@types/wordpress__block-editor': 15.0.5(@emotion/is-prop-valid@1.4.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@types/wordpress__blocks': 15.10.2(@emotion/is-prop-valid@1.4.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/wordpress__server-side-render': 6.15.0
       '@wordpress/components': 32.2.0(@emotion/is-prop-valid@1.4.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@wordpress/data': 10.40.0(react@18.3.1)
@@ -9218,7 +9218,7 @@ snapshots:
       - stylelint
       - supports-color
 
-  '@yardinternet/vite-config@1.0.13(eslint@9.39.3(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.6)(stylelint@17.4.0(typescript@5.9.3))(typescript@5.9.3)(vite@7.3.1(@types/node@25.3.1)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))(webpack@5.105.3)':
+  '@yardinternet/vite-config@1.1.1(eslint@9.39.3(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.6)(stylelint@17.4.0(typescript@5.9.3))(typescript@5.9.3)(vite@7.3.1(@types/node@25.3.1)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))(webpack@5.105.3)':
     dependencies:
       '@roots/vite-plugin': 1.2.3(vite@7.3.1(@types/node@25.3.1)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))(webpack@5.105.3)
       '@tailwindcss/vite': 4.2.1(vite@7.3.1(@types/node@25.3.1)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))
@@ -9840,7 +9840,7 @@ snapshots:
     dependencies:
       iconv-lite: 0.6.3
 
-  enhanced-resolve@5.19.0:
+  enhanced-resolve@5.20.0:
     dependencies:
       graceful-fs: 4.2.11
       tapable: 2.3.0
@@ -12217,7 +12217,7 @@ snapshots:
       acorn-import-phases: 1.0.4(acorn@8.16.0)
       browserslist: 4.28.1
       chrome-trace-event: 1.0.4
-      enhanced-resolve: 5.19.0
+      enhanced-resolve: 5.20.0
       es-module-lexer: 2.0.0
       eslint-scope: 5.1.1
       events: 3.3.0

@@ -25,12 +25,12 @@
 		"yard-toolkit": "yard-toolkit"
 	},
 	"devDependencies": {
-		"@yardinternet/eslint-config": "^1.2.3",
+		"@yardinternet/eslint-config": "^1.2.4",
 		"@yardinternet/prettier-config": "^2.0.4",
 		"@yardinternet/stylelint-config": "^1.1.3",
-		"@yardinternet/toolkit": "^2.0.7",
-		"@yardinternet/ts-config": "^1.0.6",
-		"@yardinternet/vite-config": "^1.0.13",
+		"@yardinternet/toolkit": "^2.1.1",
+		"@yardinternet/ts-config": "^1.0.8",
+		"@yardinternet/vite-config": "^1.1.1",
 		"tailwindcss": "^4.2.0",
 		"vite": "^7.3.1"
 	},

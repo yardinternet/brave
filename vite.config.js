@@ -12,4 +12,7 @@ export default braveConfig( {
 		'resources/styles/frontend.css',
 	],
 	editorStylesPrefixWrap: { entryPoints: [ 'resources/styles/editor.css' ] },
+	checker: {
+		typescript: true,
+	},
 } );
