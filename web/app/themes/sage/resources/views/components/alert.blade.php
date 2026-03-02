@@ -1,5 +1,5 @@
 <div @class([
-	'border-l-4 p-4 flex items-center gap-3',
+	'border-l-4 p-4 flex items-center gap-3 leading-snug',
 	$alertClasses(),
 	$attributes->get('class'),
 ])>
