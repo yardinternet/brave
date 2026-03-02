@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "293ac2f057824045c1d08120a7250084",
+    "content-hash": "98675c2db56bc4158c1fc3f8bb1d6248",
     "packages": [
         {
             "name": "bordoni/phpass",
@@ -4087,6 +4087,65 @@
                 "source": "https://github.com/johnbillion/extended-cpts/tree/5.1.0"
             },
             "time": "2025-06-18T21:18:03+00:00"
+        },
+        {
+            "name": "johnbillion/user-switching",
+            "version": "1.11.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnbillion/user-switching.git",
+                "reference": "a8d853cecfa72075d3c1a610d0193a5c4c0ff002"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnbillion/user-switching/zipball/a8d853cecfa72075d3c1a610d0193a5c4c0ff002",
+                "reference": "a8d853cecfa72075d3c1a610d0193a5c4c0ff002",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0",
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "johnbillion/plugin-infrastructure": "2.8.0",
+                "johnbillion/wp-compat": "1.3.0",
+                "php-stubs/wordpress-stubs": "6.9.0",
+                "phpcompatibility/phpcompatibility-wp": "2.1.8",
+                "phpstan/phpstan": "2.1.33",
+                "phpstan/phpstan-phpunit": "2.0.11",
+                "swissspidy/phpstan-no-private": "1.0.0",
+                "szepeviktor/phpstan-wordpress": "2.0.3",
+                "wp-coding-standards/wpcs": "3.3.0"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "wordpress-install-dir": "vendor/wordpress/wordpress"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "John Blackbourn",
+                    "homepage": "https://johnblackbourn.com/"
+                }
+            ],
+            "description": "Instant switching between user accounts in WordPress and WooCommerce.",
+            "homepage": "https://github.com/johnbillion/user-switching/",
+            "support": {
+                "forum": "https://wordpress.org/support/plugin/user-switching",
+                "issues": "https://github.com/johnbillion/user-switching/issues",
+                "security": "https://github.com/johnbillion/user-switching/security/policy",
+                "source": "https://github.com/johnbillion/user-switching"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/johnbillion",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-02-27T00:14:48+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -12982,24 +13041,6 @@
             "homepage": "https://wordpress.org/plugins/stream/"
         },
         {
-            "name": "wpackagist-plugin/user-switching",
-            "version": "1.11.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/user-switching/",
-                "reference": "tags/1.11.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/user-switching.1.11.1.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/user-switching/"
-        },
-        {
             "name": "wpackagist-plugin/wordfence",
             "version": "8.0.5",
             "source": {
@@ -14267,6 +14308,82 @@
             "time": "2026-02-20T16:13:53+00:00"
         },
         {
+            "name": "johnbillion/query-monitor",
+            "version": "3.20.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnbillion/query-monitor.git",
+                "reference": "40b9ba0d72a4d938a24aa6367b7715e8ae02e8d4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnbillion/query-monitor/zipball/40b9ba0d72a4d938a24aa6367b7715e8ae02e8d4",
+                "reference": "40b9ba0d72a4d938a24aa6367b7715e8ae02e8d4",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0",
+                "php": ">=7.4.0"
+            },
+            "require-dev": {
+                "behat/gherkin": "< 4.13.0",
+                "codeception/module-asserts": "^1.0",
+                "codeception/module-db": "^1.0",
+                "codeception/module-webdriver": "^1.0",
+                "codeception/util-universalframework": "^1.0",
+                "dealerdirect/phpcodesniffer-composer-installer": "0.7.2",
+                "guzzlehttp/guzzle": "^7.0",
+                "johnbillion/plugin-infrastructure": "1.2.1",
+                "johnbillion/wp-compat": "0.3.1",
+                "lucatume/wp-browser": "3.2.3",
+                "phpcompatibility/phpcompatibility-wp": "2.1.5",
+                "phpstan/phpstan": "1.12.11",
+                "phpstan/phpstan-deprecation-rules": "1.2.1",
+                "phpstan/phpstan-phpunit": "1.4.1",
+                "roots/wordpress-core-installer": "1.100.0",
+                "roots/wordpress-full": "*",
+                "squizlabs/php_codesniffer": "3.11.1",
+                "szepeviktor/phpstan-wordpress": "1.3.5",
+                "wp-coding-standards/wpcs": "2.3.0"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "wordpress-install-dir": "vendor/wordpress/wordpress"
+            },
+            "autoload": {
+                "classmap": [
+                    "classes",
+                    "data",
+                    "output"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "John Blackbourn",
+                    "homepage": "https://johnblackbourn.com/"
+                }
+            ],
+            "description": "The Developer Tools panel for WordPress.",
+            "homepage": "https://querymonitor.com/",
+            "support": {
+                "forum": "https://wordpress.org/support/plugin/query-monitor",
+                "issues": "https://github.com/johnbillion/query-monitor/issues",
+                "security": "https://querymonitor.com/security/",
+                "source": "https://github.com/johnbillion/query-monitor"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/johnbillion",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-12-11T22:08:53+00:00"
+        },
+        {
             "name": "react/cache",
             "version": "v1.2.0",
             "source": {
@@ -15029,24 +15146,6 @@
             "time": "2025-08-04T07:05:15+00:00"
         },
         {
-            "name": "wpackagist-plugin/query-monitor",
-            "version": "3.20.2",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/3.20.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.20.2.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/query-monitor/"
-        },
-        {
             "name": "yard/brave-scaffold",
             "version": "v2.0.1",
             "source": {
@@ -15176,15 +15275,15 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=8.2"
     },
-    "platform-dev": [],
+    "platform-dev": {},
     "platform-overrides": {
         "php": "8.2"
     },
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }

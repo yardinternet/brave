@@ -34,6 +34,7 @@
 	"require": {
 		"php": ">=8.2",
 		"composer/installers": "^2.2",
+		"johnbillion/user-switching": "^1.11",
 		"log1x/poet": "^2.0",
 		"lukasbesch/bedrock-plugin-disabler": "^1.4",
 		"oscarotero/env": "^2.1",
@@ -54,7 +55,6 @@
 		"wpackagist-plugin/imagify": "^2.2",
 		"wpackagist-plugin/relay": "^1.3",
 		"wpackagist-plugin/stream": "^4.0",
-		"wpackagist-plugin/user-switching": "^1.8",
 		"wpackagist-plugin/wordfence": "8.0.*",
 		"wpackagist-plugin/wp-seopress": "^8.1",
 		"yard/brave-components": "^1.2",
@@ -74,7 +74,7 @@
 	"require-dev": {
 		"captainhook/captainhook": "^5.24",
 		"captainhook/hook-installer": "^1.0",
-		"wpackagist-plugin/query-monitor": "^3.17",
+		"johnbillion/query-monitor": "^3.20",
 		"yard/brave-scaffold": "^2.0",
 		"yard/lando-brave": "^1.0",
 		"yard/php-cs-fixer-rules": "^1.0"
