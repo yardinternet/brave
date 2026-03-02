@@ -29,5 +29,6 @@
 
 		{!! facetwp_display('template', $template['name']) !!}
 		{!! facetwp_display('facet', 'pagination') !!}
+
 	</div>
 </div>

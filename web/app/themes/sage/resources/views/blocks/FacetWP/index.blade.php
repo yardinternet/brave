@@ -1,5 +1,7 @@
 @if (!$template)
-	<h2>Er is geen template geselecteerd</h2>
+	<x-alert>
+		Er is geen FacetWP template geselecteerd.
+	</x-alert>
 @else
 	@php
 		$customTemplate = str_replace('_', '-', $template['name']);
@@ -10,7 +12,9 @@
 		@if (!empty($customTemplate) && View::exists('blocks.FacetWP.templates.' . $customTemplate))
 			@include('blocks.FacetWP.templates.' . $customTemplate)
 		@else
-			<h2>Template kan niet gevonden worden.</h2>
+			<x-alert>
+				Het geselecteerde FacetWP template <code>{{ $template['name'] }}</code> kan niet gevonden worden.
+			</x-alert>
 		@endif
 	</div>
 @endif

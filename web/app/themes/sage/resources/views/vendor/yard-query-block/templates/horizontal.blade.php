@@ -18,7 +18,7 @@
 		<x-dynamic-card :card="$postData->postType()" :direction="Direction::FLUID" :postData="$postData" :displayDate="$attributes->displayDate()" :displayExcerpt="$attributes->displayExcerpt()"
 			:displayImage="$attributes->displayImage()" :displayLabel="$attributes->displayLabel()" />
 	@empty
-		<x-alert type="warning">
+		<x-alert>
 			Geen resultaten gevonden.
 		</x-alert>
 	@endforelse
