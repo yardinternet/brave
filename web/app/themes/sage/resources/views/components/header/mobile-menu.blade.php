@@ -41,27 +41,34 @@
 			@if ($primaryNavigation->isNotEmpty())
 				<ul class="list-reset mb-6">
 					@foreach ($primaryNavigation->all() as $item)
-						@php
-							$hasChildren = !empty($item->children);
-						@endphp
-
 						{{-- @todo: menu-item-has-children => Now a trigger for MobileMenu. Change it in the Brave Frontend JS to brave-prefix --}}
-						<li @class(['menu-item group', 'menu-item-has-children' => $hasChildren])>
+						<li @class([
+							'menu-item group',
+							'menu-item-has-children' => $item->children,
+						])>
 							<a @class([
 								'block py-3 text-lg text-black no-underline focus:text-inherit',
 								'text-primary font-bold' => $item->active || $item->activeParent,
-								"after:fontawesome after:inline-flex after:px-2 after:transition-all after:content-['\\f107']! group-has-aria-expanded:after:rotate-180" => $hasChildren,
-							]) href="{{ $hasChildren ? '#' : esc_url($item->url) }}"
-								@if ($item->active) aria-current="page" @endif>{{ $item->label }}</a>
-							@if ($hasChildren)
+								$item->classes,
+							]) href="{{ $item->children ? '#' : esc_url($item->url) }}"
+								@if ($item->active) aria-current="page" @endif>
+								{!! $item->label !!}
+								@if ($item->children)
+									<i class="fa-light fa-chevron-down group-has-aria-expanded:rotate-180 px-1 transition-all"></i>
+								@endif
+							</a>
+							@if ($item->children)
 								<ul class="sub-menu list-reset group-has-aria-expanded:block! mb-2 hidden list-none px-3">
 									@foreach ($item->children as $child)
 										<li class="menu-item">
 											<a @class([
 												'block py-2 text-gray-700 no-underline',
 												'text-primary' => $child->active,
+												$child->classes,
 											]) href="{{ esc_url($child->url) }}"
-												@if ($child->active) aria-current="page" @endif>{{ $child->label }}</a>
+												@if ($child->active) aria-current="page" @endif>
+												{!! $child->label !!}
+											</a>
 										</li>
 									@endforeach
 								</ul>
@@ -78,6 +85,7 @@
 							<a @class([
 								'block text-gray-700 no-underline py-2',
 								'text-primary' => $item->active,
+								$item->classes,
 							]) href="{{ esc_url($item->url) }}"
 								@if ($item->active) aria-current="page" @endif>
 								{{ $item->label }}
