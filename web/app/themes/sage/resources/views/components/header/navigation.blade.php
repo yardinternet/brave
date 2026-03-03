@@ -38,6 +38,7 @@
 									<a href="{{ $child->url }}" @class([
 										'group/sub-link flex items-center gap-6 justify-between px-6 py-3 text-left leading-snug text-inherit no-underline',
 										'text-primary' => $child->active,
+										$child->classes,
 									])
 										@if ($child->active) aria-current="page" @endif>
 										{{ $child->label }}
