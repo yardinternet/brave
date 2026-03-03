@@ -2,6 +2,9 @@
 	<h1 class="wp-block-heading alignwide">Zoekresultaten</h1>
 
 	@include('blocks.FacetWP.index', [
+		'attributes' => [
+			'align' => 'wide',
+		],
 		'template' => [
 			'name' => 'search',
 		],
