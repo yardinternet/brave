@@ -3,7 +3,16 @@
     'label' => __('Menu', 'sage'),
 ])
 
-<x-brave::dialog.trigger :dialogId="$dialogId" class="hamburger group flex h-[46px] flex-col gap-y-2 lg:hidden">
+@php
+	/**
+	 * @var Navi $primaryNavigation
+	 * @var Navi $topBarNavigation
+	 */
+
+	use Log1x\Navi\Navi;
+@endphp
+
+<x-brave::dialog.trigger :dialogId="$dialogId" class="hamburger h-11.5 group flex flex-col gap-y-2 lg:hidden">
 	<span
 		class="block h-0.5 w-8 rounded-full bg-black transition-all duration-300 ease-in-out group-aria-expanded:w-8 group-aria-expanded:translate-y-3 group-aria-expanded:rotate-45"></span>
 	<span
@@ -20,35 +29,71 @@
 	'open:translate-x-0 open:opacity-100 open:backdrop:bg-black/50',
 ])>
 	<div class="flex h-full flex-col">
-		<div class="z-1 sticky top-0 flex items-center justify-between gap-2 border-b border-gray-100 bg-white p-4">
+		<div class="z-1 sticky top-0 flex items-center justify-between gap-2 border-b border-gray-100 bg-white px-6 py-4">
 			<h2 class="mb-0 text-base font-normal">{{ $label }}</h2>
-			<x-brave::dialog.trigger :dialogId="$dialogId"
-				class="leading-0 -m-2 flex size-[46px] items-center justify-center text-2xl">
+			<x-brave::dialog.trigger :dialogId="$dialogId" class="leading-0 size-11.5 -m-2 flex items-center justify-center text-2xl">
 				<i class="fa-light fa-xmark" aria-hidden="true"></i>
 				<span class="sr-only">Sluit menu</span>
 			</x-brave::dialog.trigger>
 		</div>
 
-		@php
-			if (has_nav_menu('primary_navigation')) {
-			    wp_nav_menu([
-			        'container' => '',
-			        'depth' => 2,
-			        'id' => '',
-			        'menu_class' => 'mobile-menu-navigation w-full mb-0 list-none px-4',
-			        'theme_location' => 'primary_navigation',
-			    ]);
-			}
+		<div class="px-6 py-8">
+			@if ($primaryNavigation->isNotEmpty())
+				<ul class="list-reset mb-6">
+					@foreach ($primaryNavigation->all() as $item)
+						{{-- @todo: menu-item-has-children => Now a trigger for MobileMenu. Change it in the Brave Frontend JS to brave-prefix --}}
+						<li @class([
+							'menu-item group',
+							'menu-item-has-children' => $item->children,
+						])>
+							<a @class([
+								'block py-3 text-lg text-black no-underline focus:text-inherit',
+								'text-primary font-bold' => $item->active || $item->activeParent,
+								$item->classes,
+							]) href="{{ $item->children ? '#' : esc_url($item->url) }}"
+								@if ($item->active) aria-current="page" @endif>
+								{!! $item->label !!}
+								@if ($item->children)
+									<i class="fa-light fa-chevron-down group-has-aria-expanded:rotate-180 px-1 transition-all"></i>
+								@endif
+							</a>
+							@if ($item->children)
+								<ul class="sub-menu list-reset group-has-aria-expanded:block! mb-2 hidden list-none px-3">
+									@foreach ($item->children as $child)
+										<li class="menu-item">
+											<a @class([
+												'block py-2 text-gray-700 no-underline',
+												'text-primary' => $child->active,
+												$child->classes,
+											]) href="{{ esc_url($child->url) }}"
+												@if ($child->active) aria-current="page" @endif>
+												{!! $child->label !!}
+											</a>
+										</li>
+									@endforeach
+								</ul>
+							@endif
+						</li>
+					@endforeach
+				</ul>
+			@endif
 
-			if (has_nav_menu('top_bar_navigation')) {
-			    wp_nav_menu([
-			        'container' => '',
-			        'depth' => 1,
-			        'id' => '',
-			        'menu_class' => 'mobile-menu-navigation mobile-menu-top-bar w-full mb-0 list-none px-4',
-			        'theme_location' => 'top_bar_navigation',
-			    ]);
-			}
-		@endphp
+			@if ($topBarNavigation->isNotEmpty())
+				<ul class="list-reset grid">
+					@foreach ($topBarNavigation->all() as $item)
+						<li>
+							<a @class([
+								'block text-gray-700 no-underline py-2',
+								'text-primary' => $item->active,
+								$item->classes,
+							]) href="{{ esc_url($item->url) }}"
+								@if ($item->active) aria-current="page" @endif>
+								{{ $item->label }}
+							</a>
+						</li>
+					@endforeach
+				</ul>
+			@endif
+		</div>
 	</div>
 </x-brave-dialog>

@@ -86,6 +86,7 @@ return [
 		'app' => App\View\Composers\App::class,
 		'postDataCollection' => App\View\Composers\PostDataCollectionComposer::class,
 		'postData' => App\View\Composers\PostDataComposer::class,
+		'navi' => App\View\Composers\NaviComposer::class,
 	],
 
 	/*
