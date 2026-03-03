@@ -13,7 +13,6 @@
 @import './components/facetwp';
 @import './components/footer';
 @import './components/gravity-forms';
-@import './components/mobile-menu';
 
 /* Elements */
 @import './elements/forms';

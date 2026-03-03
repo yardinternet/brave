@@ -38,20 +38,32 @@
 		</div>
 
 		@if ($primaryNavigation->isNotEmpty())
-			<ul class="mobile-menu-navigation list-reset px-4">
+			<ul class="mobile-menu-navigation list-reset mb-6 px-4">
 				@foreach ($primaryNavigation->all() as $item)
 					@php
 						$hasChildren = !empty($item->children);
 					@endphp
-					<li @class(['menu-item', 'menu-item-has-children' => $hasChildren])>
-						<a href="{{ esc_url($item->url) }}"
+
+					<li @class([
+						'menu-item group',
+						{{-- menu-item-has-children => Now a trigger for MobileMenu. Reset to brave-menu-item-has-children --}}
+						"menu-item-has-children" => $hasChildren,
+					])>
+						<a @class([
+							'block py-3 text-base text-black no-underline focus:text-inherit',
+							'text-primary font-bold' => $item->active || $item->activeParent,
+							"after:fontawesome after:inline-flex after:px-2 after:transition-all after:content-['\\f107']! group-has-aria-expanded:after:rotate-180" => $hasChildren,
+						]) href="{{ $hasChildren ? '#' : esc_url($item->url) }}"
 							@if ($item->active) aria-current="page" @endif>{{ $item->label }}</a>
 						@if ($hasChildren)
-							<ul class="sub-menu list-reset">
-								@foreach ($item->children as $item)
+							<ul class="sub-menu list-reset mb-2 hidden list-none px-3 group-has-aria-expanded:block!">
+								@foreach ($item->children as $child)
 									<li class="menu-item">
-										<a href="{{ esc_url($item->url) }}"
-											@if ($item->active) aria-current="page" @endif>{{ $item->label }}</a>
+										<a @class([
+											'block py-1 text-sm text-gray-700 no-underline',
+											'text-primary' => $child->active,
+										]) href="{{ esc_url($child->url) }}"
+											@if ($child->active) aria-current="page" @endif>{{ $child->label }}</a>
 									</li>
 								@endforeach
 							</ul>
