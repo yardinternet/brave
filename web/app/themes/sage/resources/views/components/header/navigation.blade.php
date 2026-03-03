@@ -32,7 +32,7 @@
 
 					@if ($item->children)
 						<ul
-							class="sub-menu ease-base group-has-aria-expanded:visible group-has-aria-expanded:translate-y-0 group-has-aria-expanded:opacity-100 invisible absolute min-w-48 -translate-y-3 bg-white opacity-0 shadow-md transition-all">
+							class="sub-menu list-reset ease-base group-has-aria-expanded:visible group-has-aria-expanded:translate-y-0 group-has-aria-expanded:opacity-100 invisible absolute min-w-48 -translate-y-3 bg-white opacity-0 shadow-md transition-all">
 							@foreach ($item->children as $child)
 								<li class="menu-item">
 									<a href="{{ $child->url }}" @class([

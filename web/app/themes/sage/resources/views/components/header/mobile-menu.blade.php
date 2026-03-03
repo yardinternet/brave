@@ -29,7 +29,7 @@
 	'open:transform-[translateX(0)] open:opacity-100 open:backdrop:bg-black/50',
 ])>
 	<div class="flex h-full flex-col">
-		<div class="z-1 sticky top-0 flex items-center justify-between gap-2 border-b border-gray-100 bg-white p-4">
+		<div class="z-1 sticky top-0 flex items-center justify-between gap-2 border-b border-gray-100 bg-white px-6 py-4">
 			<h2 class="mb-0 text-base font-normal">{{ $label }}</h2>
 			<x-brave::dialog.trigger :dialogId="$dialogId" class="leading-0 size-11.5 -m-2 flex items-center justify-center text-2xl">
 				<i class="fa-light fa-xmark" aria-hidden="true"></i>
@@ -37,52 +37,55 @@
 			</x-brave::dialog.trigger>
 		</div>
 
-		@if ($primaryNavigation->isNotEmpty())
-			<ul class="mobile-menu-navigation list-reset mb-6 px-4">
-				@foreach ($primaryNavigation->all() as $item)
-					@php
-						$hasChildren = !empty($item->children);
-					@endphp
+		<div class="px-6 py-8">
+			@if ($primaryNavigation->isNotEmpty())
+				<ul class="list-reset mb-6">
+					@foreach ($primaryNavigation->all() as $item)
+						@php
+							$hasChildren = !empty($item->children);
+						@endphp
 
-					<li @class([
-						'menu-item group',
-						{{-- menu-item-has-children => Now a trigger for MobileMenu. Reset to brave-menu-item-has-children --}}
-						"menu-item-has-children" => $hasChildren,
-					])>
-						<a @class([
-							'block py-3 text-base text-black no-underline focus:text-inherit',
-							'text-primary font-bold' => $item->active || $item->activeParent,
-							"after:fontawesome after:inline-flex after:px-2 after:transition-all after:content-['\\f107']! group-has-aria-expanded:after:rotate-180" => $hasChildren,
-						]) href="{{ $hasChildren ? '#' : esc_url($item->url) }}"
-							@if ($item->active) aria-current="page" @endif>{{ $item->label }}</a>
-						@if ($hasChildren)
-							<ul class="sub-menu list-reset mb-2 hidden list-none px-3 group-has-aria-expanded:block!">
-								@foreach ($item->children as $child)
-									<li class="menu-item">
-										<a @class([
-											'block py-1 text-sm text-gray-700 no-underline',
-											'text-primary' => $child->active,
-										]) href="{{ esc_url($child->url) }}"
-											@if ($child->active) aria-current="page" @endif>{{ $child->label }}</a>
-									</li>
-								@endforeach
-							</ul>
-						@endif
-					</li>
-				@endforeach
-			</ul>
-		@endif
+						{{-- @todo: menu-item-has-children => Now a trigger for MobileMenu. Change it in the Brave Frontend JS to brave-prefix --}}
+						<li @class(['menu-item group', 'menu-item-has-children' => $hasChildren])>
+							<a @class([
+								'block py-3 text-lg text-black no-underline focus:text-inherit',
+								'text-primary font-bold' => $item->active || $item->activeParent,
+								"after:fontawesome after:inline-flex after:px-2 after:transition-all after:content-['\\f107']! group-has-aria-expanded:after:rotate-180" => $hasChildren,
+							]) href="{{ $hasChildren ? '#' : esc_url($item->url) }}"
+								@if ($item->active) aria-current="page" @endif>{{ $item->label }}</a>
+							@if ($hasChildren)
+								<ul class="sub-menu list-reset group-has-aria-expanded:block! mb-2 hidden list-none px-3">
+									@foreach ($item->children as $child)
+										<li class="menu-item">
+											<a @class([
+												'block py-2 text-gray-700 no-underline',
+												'text-primary' => $child->active,
+											]) href="{{ esc_url($child->url) }}"
+												@if ($child->active) aria-current="page" @endif>{{ $child->label }}</a>
+										</li>
+									@endforeach
+								</ul>
+							@endif
+						</li>
+					@endforeach
+				</ul>
+			@endif
 
-		@if ($topBarNavigation->isNotEmpty())
-			<ul class="list-reset grid gap-2 px-4 text-sm text-gray-700">
-				@foreach ($topBarNavigation->all() as $item)
-					<li>
-						<a class="aria-current-page:underline text-current no-underline hover:text-current"
-							href="{{ esc_url($item->url) }}"
-							@if ($item->active) aria-current="page" @endif>{{ $item->label }}</a>
-					</li>
-				@endforeach
-			</ul>
-		@endif
+			@if ($topBarNavigation->isNotEmpty())
+				<ul class="list-reset grid">
+					@foreach ($topBarNavigation->all() as $item)
+						<li>
+							<a @class([
+								'block text-gray-700 no-underline py-2',
+								'text-primary' => $item->active,
+							]) href="{{ esc_url($item->url) }}"
+								@if ($item->active) aria-current="page" @endif>
+								{{ $item->label }}
+							</a>
+						</li>
+					@endforeach
+				</ul>
+			@endif
+		</div>
 	</div>
 </x-brave-dialog>

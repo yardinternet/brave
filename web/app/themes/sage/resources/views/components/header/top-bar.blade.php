@@ -11,9 +11,13 @@
 				<ul class="list-reset flex items-center gap-4">
 					@foreach ($topBarNavigation->all() as $item)
 						<li>
-							<a class="aria-current-page:underline text-current no-underline hover:text-current hover:underline"
-								href="{{ esc_url($item->url) }}"
-								@if ($item->active) aria-current="page" @endif>{{ $item->label }}</a>
+							<a @class([
+								'text-current no-underline hover:text-current hover:underline',
+								'text-primary' => $item->active,
+							]) href="{{ esc_url($item->url) }}"
+								@if ($item->active) aria-current="page" @endif>
+								{{ $item->label }}
+							</a>
 						</li>
 					@endforeach
 				</ul>
