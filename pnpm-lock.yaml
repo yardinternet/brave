@@ -4,6 +4,9 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  '@yardinternet/brave-frontend-kit': link:../../../../Packages/brave-frontend-kit
+
 importers:
 
   .:
@@ -12,11 +15,8 @@ importers:
         specifier: ^1.2.12
         version: 1.2.12
       '@yardinternet/brave-frontend-kit':
-        specifier: ^0.7.3
-        version: 0.7.3
-      '@yardinternet/gutenberg-block-restrictions':
-        specifier: ^1.0.1
-        version: 1.0.1
+        specifier: link:../../../../Packages/brave-frontend-kit
+        version: link:../../../../Packages/brave-frontend-kit
       '@yardinternet/gutenberg-components':
         specifier: ^1.3.3
         version: 1.3.3
@@ -2258,11 +2258,8 @@ packages:
     resolution: {integrity: sha512-xhB3UHhJovKUAf7Ld8RlzMYDmnVacg3Z1C3G3WtvLZC/I2DpGxTdEzBbmA8/CF1j35qZkfW0aX+ZZGI+AXDIzA==, tarball: https://npm.pkg.github.com/download/@yardinternet/a11y-cookie-yes/1.2.12/f248a525d4ba32a5e9545f1dace0f43c6921f711}
     engines: {node: '>=18'}
 
-  '@yardinternet/brave-frontend-kit@0.7.3':
-    resolution: {integrity: sha512-9Wi/YQkkBdi7DYtwmACQS0EMZRDMK4V0CnC2B5llS1lQ5p/kV/Rk6H5PDDhJgDSKb678fKNHeWqGNNyR83Ma7Q==, tarball: https://npm.pkg.github.com/download/@yardinternet/brave-frontend-kit/0.7.3/a28722f941973d230f995f4c73ccf501d23d0af8}
-
-  '@yardinternet/eslint-config@1.2.5':
-    resolution: {integrity: sha512-0ncosRbCJlNjDCvGvJyrfa1va06y//6SydFrAOc/yI5fX8to/nBNFDYFHGvbVHGzy9APIrfJ4tOk3dJQWj2Jlg==, tarball: https://npm.pkg.github.com/download/@yardinternet/eslint-config/1.2.5/9297745e483e49fe7dd1398f8e995fd063229b06}
+  '@yardinternet/eslint-config@1.2.0':
+    resolution: {integrity: sha512-IR1N8/GvJ3NLFHRXfIT/gOutREoTHIC1N65aaNP8yMLmywXXAgLLYBcZ6F3Rj9ZbalO3X3/B3AvyV/5fcHnr3A==, tarball: https://npm.pkg.github.com/download/@yardinternet/eslint-config/1.2.0/dd7e7e1f848fb96b1f9bac1619098be7e2a8e4f3}
 
   '@yardinternet/eslint-config@1.2.6':
     resolution: {integrity: sha512-8b4mUot5zyU5nulbLQ/yEvAKIJ5y/wgTPte/gFAtq8cW+hGEKkWxmSylyMyM+mmpNaHbn1I/IEM29wADCaxZwQ==, tarball: https://npm.pkg.github.com/download/@yardinternet/eslint-config/1.2.6/ba25833202d8c1ca41b353e62fdf7b474da62d9a}
@@ -2310,9 +2307,6 @@ packages:
   abbrev@2.0.0:
     resolution: {integrity: sha512-6/mh1E2u2YgEsCHdY0Yx5oW+61gZU+1vXaoiHHrpKeuRNNgFvS+/jrwHiQhB5apAf5oB7UB7E19ol2R2LKH8hQ==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
-
-  accordion-js@3.4.1:
-    resolution: {integrity: sha512-jPXDsRsulM3rwqgeTtAD9JCFYBD3Fl4MIHcHcj7UvCTwbgn/wD1Gi78gSb11rwTxOhylHMOM5QpoPKn+Ex2TKA==}
 
   acorn-import-phases@1.0.4:
     resolution: {integrity: sha512-wKmbr/DDiIXzEOiWrTTUcDm24kQ2vGfZQvM2fwg2vXqR5uW6aapr7ObPtj1th32b9u90/Pf4AItvdTh42fBmVQ==}
@@ -2513,9 +2507,6 @@ packages:
     resolution: {integrity: sha512-+A7hdXQwIZ21+qWXQPgz+hJKtnjG2iN0Ay2m/E/4zQ5cvdFykTjXXGqae91ZmcKez1x0CSdS80WNObamTwJgFg==}
     engines: {node: '>= 14.0.0'}
     hasBin: true
-
-  body-scroll-lock@4.0.0-beta.0:
-    resolution: {integrity: sha512-a7tP5+0Mw3YlUJcGAKUqIBkYYGlYxk2fnCasq/FUph1hadxlTRjF+gAcZksxANnaMnALjxEddmSi/H3OR8ugcQ==}
 
   brace-expansion@1.1.12:
     resolution: {integrity: sha512-9T9UjW3r0UW5c1Q7GTwllptXwhvYmEzFhzMfZ9H7FQWt+uZePjZPjBP/W1ZEyZ1twGWom5/56TF4lPcqjnDHcg==}
@@ -3329,9 +3320,6 @@ packages:
 
   header-case@2.0.4:
     resolution: {integrity: sha512-H/vuk5TEEVZwrR0lp2zed9OCo1uAILMlx0JEMgC26rzyJJ3N1v6XkwHHXJQdR2doSjcGPM6OKPYoJgf0plJ11Q==}
-
-  headroom.js@0.12.0:
-    resolution: {integrity: sha512-iXnAafUm3FdzfJ91uixLws2hkKI1jC8bAKK/pt7XYr8Ie1jO7xbK48Ycpl9tUPyBgkzuj1p/PhJS0fy4E/5anA==}
 
   hermes-estree@0.25.1:
     resolution: {integrity: sha512-0wUoCcLp+5Ev5pDW2OriHC2MJCbwLwuRx+gAqMTOkGKJJiBCLjtrvy4PWUGn6MIVefecRpzoOZ/UV6iGdOr+Cw==}
@@ -7454,16 +7442,7 @@ snapshots:
     dependencies:
       focus-trap: 7.8.0
 
-  '@yardinternet/brave-frontend-kit@0.7.3':
-    dependencies:
-      accordion-js: 3.4.1
-      body-scroll-lock: 4.0.0-beta.0
-      focus-trap: 7.8.0
-      headroom.js: 0.12.0
-    optionalDependencies:
-      '@rollup/rollup-linux-arm64-gnu': 4.57.1
-
-  '@yardinternet/eslint-config@1.2.5(@babel/core@7.29.0)(@types/eslint@9.6.1)(@typescript-eslint/parser@6.21.0(eslint@9.39.3(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.3(jiti@1.21.7))(prettier@3.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.6.0(typescript@5.9.3))(typescript@5.9.3)':
+  '@yardinternet/eslint-config@1.2.0(@babel/core@7.29.0)(@types/eslint@9.6.1)(@typescript-eslint/parser@6.21.0(eslint@9.39.2(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.2(jiti@1.21.7))(prettier@3.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.3.0(typescript@5.9.3))(typescript@5.9.3)':
     dependencies:
       '@babel/preset-react': 7.28.5(@babel/core@7.29.0)
       '@eslint/compat': 2.0.2(eslint@9.39.3(jiti@1.21.7))
@@ -7740,8 +7719,6 @@ snapshots:
 
   abbrev@2.0.0: {}
 
-  accordion-js@3.4.1: {}
-
   acorn-import-phases@1.0.4(acorn@8.16.0):
     dependencies:
       acorn: 8.16.0
@@ -7967,8 +7944,6 @@ snapshots:
     transitivePeerDependencies:
       - tsx
       - yaml
-
-  body-scroll-lock@4.0.0-beta.0: {}
 
   brace-expansion@1.1.12:
     dependencies:
@@ -9001,8 +8976,6 @@ snapshots:
     dependencies:
       capital-case: 1.0.4
       tslib: 2.8.1
-
-  headroom.js@0.12.0: {}
 
   hermes-estree@0.25.1: {}
 

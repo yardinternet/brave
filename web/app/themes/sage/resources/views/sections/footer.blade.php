@@ -9,22 +9,27 @@
 
 	@if ($cookieLawPluginActive || $footerNavigation->isNotEmpty())
 		<div class="border-t-2 border-gray-100 py-4 text-sm">
-			<nav class="container" aria-label="{{ __('Footer navigatie', 'sage') }}">
-				<ul class="list-reset flex flex-wrap gap-x-3 gap-y-2">
+			<x-brave::nav class="container" aria-label="{{ __('Footer navigatie', 'sage') }}">
+				<x-brave::nav.list class="list-reset flex flex-wrap gap-x-3 gap-y-2">
 					@if ($cookieLawPluginActive)
-						<li class="not-last:after:content-['|'] flex gap-x-3">
-							<button class="cky-banner-element hocus:underline">{{ __('Cookievoorkeuren wijzigen', 'sage') }}</button>
-						</li>
+						<x-brave::nav.item class="not-last:after:content-['|'] flex gap-x-3">
+							<button class="cky-banner-element hover:text-primary focus:underline">
+								{{ __('Cookievoorkeuren wijzigen', 'sage') }}
+							</button>
+						</x-brave::nav.item>
 					@endif
 					@foreach ($footerNavigation->all() as $item)
-						<li class="not-last:after:content-['|'] flex gap-x-3">
-							<a class="aria-current-page:underline text-current no-underline hover:text-current hover:underline"
-								href="{{ esc_url($item->url) }}"
-								@if ($item->active) aria-current="page" @endif>{{ $item->label }}</a>
-						</li>
+						<x-brave::nav.item class="not-last:after:content-['|'] flex gap-x-3">
+							<x-brave::nav.link :item="$item" @class([
+								'text-current no-underline focus:underline',
+								'text-primary' => $item->active,
+							])>
+								{!! $item->label !!}
+							</x-brave::nav.link>
+						</x-brave::nav.item>
 					@endforeach
-				</ul>
-			</nav>
+				</x-brave::nav.list>
+			</x-brave::nav>
 		</div>
 	@endif
 </footer>
