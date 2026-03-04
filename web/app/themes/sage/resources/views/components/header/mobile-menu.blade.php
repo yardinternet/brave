@@ -37,63 +37,58 @@
 			</x-brave::dialog.trigger>
 		</div>
 
-		<div class="px-6 py-8">
+		<x-brave::nav class="px-6 py-8" aria-label="{{ __('Mobiele navigatie', 'sage') }}">
 			@if ($primaryNavigation->isNotEmpty())
-				<ul class="list-reset mb-6">
+				<x-brave::nav.list class="list-reset mb-6">
 					@foreach ($primaryNavigation->all() as $item)
-						{{-- @todo: menu-item-has-children => Now a trigger for MobileMenu. Change it in the Brave Frontend JS to brave-prefix --}}
-						<li @class([
-							'menu-item group',
-							'menu-item-has-children' => $item->children,
-						])>
-							<a @class([
+						<x-brave::nav.item :item="$item" @class(['group'])>
+							<x-brave::nav.link :item="$item" @class([
 								'block py-3 text-lg text-black no-underline focus:text-inherit',
 								'text-primary font-bold' => $item->active || $item->activeParent,
-								$item->classes,
-							]) href="{{ $item->children ? '#' : esc_url($item->url) }}"
-								@if ($item->active) aria-current="page" @endif>
+							])>
 								{!! $item->label !!}
 								@if ($item->children)
 									<i class="fa-light fa-chevron-down group-has-aria-expanded:rotate-180 px-1 transition-all"></i>
 								@endif
-							</a>
+							</x-brave::nav.link>
 							@if ($item->children)
-								<ul class="sub-menu list-reset group-has-aria-expanded:block! mb-2 hidden list-none px-3">
+								<x-brave::nav.dropdown-on-click @class([
+									'list-reset group-has-aria-expanded:block! mb-2 hidden list-none px-3',
+									'group-has-aria-expanded:block',
+								])>
 									@foreach ($item->children as $child)
-										<li class="menu-item">
-											<a @class([
+										<x-brave::nav.item :item="$child">
+											<x-brave::nav.link :item="$child" @class([
 												'block py-2 text-gray-700 no-underline',
 												'text-primary' => $child->active,
 												$child->classes,
-											]) href="{{ esc_url($child->url) }}"
-												@if ($child->active) aria-current="page" @endif>
+											])>
 												{!! $child->label !!}
-											</a>
-										</li>
+											</x-brave::nav.link>
+										</x-brave::nav.item>
 									@endforeach
-								</ul>
+								</x-brave::nav.dropdown-on-click>
 							@endif
-						</li>
+						</x-brave::nav.item>
 					@endforeach
-				</ul>
+				</x-brave::nav.list>
 			@endif
 
 			@if ($topBarNavigation->isNotEmpty())
-				<ul class="list-reset grid">
+				<x-brave::nav.list class="list-reset grid">
 					@foreach ($topBarNavigation->all() as $item)
-						<li>
-							<a @class([
+						<x-brave::nav.item :item="$item">
+							<x-brave::nav.link :item="$item" @class([
 								'block text-gray-700 no-underline py-2',
 								'text-primary' => $item->active,
 								$item->classes,
-							]) href="{{ esc_url($item->url) }}"
-								@if ($item->active) aria-current="page" @endif>
+							])>
 								{{ $item->label }}
-							</a>
-						</li>
+							</x-brave::nav.link>
+						</x-brave::nav.item>
 					@endforeach
-				</ul>
+				</x-brave::nav.list>
 			@endif
-		</div>
+		</x-brave::nav>
 	</div>
 </x-brave-dialog>
