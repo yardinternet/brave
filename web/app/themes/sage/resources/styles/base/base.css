@@ -58,10 +58,10 @@ p {
 }
 
 a {
-	@apply text-primary-600 underline;
+	@apply text-primary underline;
 
 	@variant hocus {
-		@apply text-primary-700;
+		@apply text-primary-600;
 	}
 
 	/* Hide links if they are empty. Easy fix for some Gutenberg and a11y issues. */
