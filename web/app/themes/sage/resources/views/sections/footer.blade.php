@@ -20,10 +20,7 @@
 					@endif
 					@foreach ($footerNavigation->all() as $item)
 						<x-brave::nav.item class="not-last:after:content-['|'] flex gap-x-3">
-							<x-brave::nav.link :item="$item" @class([
-								'text-current no-underline focus:underline',
-								'text-primary' => $item->active,
-							])>
+							<x-brave::nav.link :item="$item" class="text-current no-underline focus:underline" activeClass="text-primary">
 								{!! $item->label !!}
 							</x-brave::nav.link>
 						</x-brave::nav.item>
