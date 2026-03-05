@@ -7,18 +7,13 @@
 				</x-brave::nav.link>
 
 			</x-brave::nav.item>
-			<x-brave::nav.item>
-				<x-brave::nav.link href="/" :active="true" class="text-green-500">
-					Home
-				</x-brave::nav.link>
-			</x-brave::nav.item>
 
-			<x-brave::nav.item class="group" :hasChildren="true">
+			<x-brave::nav.item class="group">
 				<x-brave::nav.link href="#" :hasChildren="true">
-					Dropdown
+					Dropdown on hover
 				</x-brave::nav.link>
 
-				<x-brave::nav.dropdown-on-hover @class(['invisible absolute', 'group-has-aria-expanded:visible'])>
+				<x-brave::nav.dropdown mode="hover" @class(['invisible absolute', 'group-has-aria-expanded:visible'])>
 					<x-brave::nav.item>
 						<x-brave::nav.link href="/contact">
 							Contact
@@ -30,7 +25,7 @@
 							Home
 						</x-brave::nav.link>
 					</x-brave::nav.item>
-				</x-brave::nav.dropdown-on-hover>
+				</x-brave::nav.dropdown>
 
 			</x-brave::nav.item>
 		</x-brave::nav.list>
@@ -50,12 +45,12 @@
 				</x-brave::nav.link>
 			</x-brave::nav.item>
 
-			<x-brave::nav.item class="group" :hasChildren="true">
+			<x-brave::nav.item class="group">
 				<x-brave::nav.link href="#" :hasChildren="true">
-					Dropdown
+					Dropdown on click
 				</x-brave::nav.link>
 
-				<x-brave::nav.dropdown-on-click @class(['invisible absolute', 'group-has-aria-expanded:visible'])>
+				<x-brave::nav.dropdown @class(['invisible absolute', 'group-has-aria-expanded:visible'])>
 					<x-brave::nav.item>
 						<x-brave::nav.link href="/contact">
 							Contact
@@ -67,7 +62,7 @@
 							Home
 						</x-brave::nav.link>
 					</x-brave::nav.item>
-				</x-brave::nav.dropdown-on-click>
+				</x-brave::nav.dropdown>
 
 			</x-brave::nav.item>
 		</x-brave::nav.list>
