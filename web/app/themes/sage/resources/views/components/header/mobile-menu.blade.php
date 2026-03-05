@@ -1,16 +1,16 @@
-@props([
-    'dialogId' => 'js-brave-mobile-menu',
-    'label' => __('Menu', 'sage'),
-])
-
 @php
 	/**
-	 * @var Navi $primaryNavigation
-	 * @var Navi $topBarNavigation
+	 * @var Log1x\Navi\Navi $primaryNavigation
+	 * @var Log1x\Navi\Navi $topBarNavigation
 	 */
 
 	use Log1x\Navi\Navi;
 @endphp
+
+@props([
+    'dialogId' => 'js-brave-mobile-menu',
+    'label' => __('Menu', 'sage'),
+])
 
 <x-brave::dialog.trigger :dialogId="$dialogId" class="hamburger h-11.5 group flex flex-col gap-y-2 lg:hidden">
 	<span
@@ -41,33 +41,28 @@
 			@if ($primaryNavigation->isNotEmpty())
 				<x-brave::nav.list class="list-reset mb-6">
 					@foreach ($primaryNavigation->all() as $item)
-						<x-brave::nav.item :item="$item" @class(['group'])>
-							<x-brave::nav.link :item="$item" @class([
-								'block py-3 text-lg text-black no-underline focus:text-inherit',
-								'text-primary font-bold' => $item->active || $item->activeParent,
-							])>
+						<x-brave::nav.item class="group">
+							<x-brave::nav.link :item="$item" class="block py-3 text-lg text-black no-underline focus:text-inherit"
+								activeClass="text-primary font-bold">
 								{!! $item->label !!}
 								@if ($item->children)
 									<i class="fa-light fa-chevron-down group-has-aria-expanded:rotate-180 px-1 transition-all"></i>
 								@endif
 							</x-brave::nav.link>
 							@if ($item->children)
-								<x-brave::nav.dropdown-on-click @class([
+								<x-brave::nav.dropdown @class([
 									'list-reset group-has-aria-expanded:block! mb-2 hidden list-none px-3',
 									'group-has-aria-expanded:block',
 								])>
 									@foreach ($item->children as $child)
-										<x-brave::nav.item :item="$child">
-											<x-brave::nav.link :item="$child" @class([
-												'block py-2 text-gray-700 no-underline',
-												'text-primary' => $child->active,
-												$child->classes,
-											])>
+										<x-brave::nav.item>
+											<x-brave::nav.link :item="$child" class="block py-2 text-gray-700 no-underline"
+												activeClass="text-primary">
 												{!! $child->label !!}
 											</x-brave::nav.link>
 										</x-brave::nav.item>
 									@endforeach
-								</x-brave::nav.dropdown-on-click>
+								</x-brave::nav.dropdown>
 							@endif
 						</x-brave::nav.item>
 					@endforeach
@@ -77,12 +72,8 @@
 			@if ($topBarNavigation->isNotEmpty())
 				<x-brave::nav.list class="list-reset grid">
 					@foreach ($topBarNavigation->all() as $item)
-						<x-brave::nav.item :item="$item">
-							<x-brave::nav.link :item="$item" @class([
-								'block text-gray-700 no-underline py-2',
-								'text-primary' => $item->active,
-								$item->classes,
-							])>
+						<x-brave::nav.item>
+							<x-brave::nav.link :item="$item" class="block py-2 text-gray-700 no-underline" activeClass="text-primary">
 								{{ $item->label }}
 							</x-brave::nav.link>
 						</x-brave::nav.item>

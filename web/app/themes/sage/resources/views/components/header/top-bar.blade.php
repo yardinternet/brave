@@ -11,10 +11,8 @@
 			<x-brave::nav.list class="list-reset flex items-center gap-4">
 				@foreach ($topBarNavigation->all() as $item)
 					<x-brave::nav.item>
-						<x-brave::nav.link :item="$item" @class([
-							'text-current no-underline hover:text-primary focus:underline',
-							'text-primary' => $item->active,
-						])>
+						<x-brave::nav.link :item="$item" class="hover:text-primary text-current no-underline focus:underline"
+							activeClass="text-primary">
 							{!! $item->label !!}
 						</x-brave::nav.link>
 					</x-brave::nav.item>
