@@ -38,7 +38,7 @@
 		"log1x/poet": "^2.0",
 		"lukasbesch/bedrock-plugin-disabler": "^1.4",
 		"oscarotero/env": "^2.1",
-		"plugin/yard-gutenberg": "^1.4",
+		"plugin/yard-gutenberg": "^1.5",
 		"roots/acorn": "^4.0",
 		"roots/bedrock-autoloader": "^1.0",
 		"roots/bedrock-disallow-indexing": "^2.0",

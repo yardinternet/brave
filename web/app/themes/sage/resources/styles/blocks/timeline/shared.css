@@ -35,9 +35,44 @@
 .wp-block-yard-timeline-item {
 	@apply relative mb-(--offset-bottom) ml-(--item-offset-left) rounded-theme bg-white;
 
-	&:last-child .wp-block-yard-timeline-item__line {
-		@apply h-0;
+	&:last-child {
+		@apply mb-0;
+
+		.wp-block-yard-timeline-item__line {
+			@apply h-0;
+		}
 	}
+}
+
+.wp-block-yard-timeline-item-collapse__details {
+	&[open] .wp-block-yard-timeline-item-collapse__summary::before {
+		@apply rotate-180;
+	}
+}
+
+.wp-block-yard-timeline-item-collapse__summary {
+	@apply relative min-h-8 cursor-pointer list-none pr-10;
+
+	&::-webkit-details-marker {
+		@apply hidden;
+	}
+
+	&::before {
+		@apply fontawesome pointer-events-none absolute top-1/2 right-0 z-1 flex size-8 -translate-y-1/2 items-center justify-center rounded-theme bg-primary text-white transition-all;
+		--fa-icon: '\f078';
+	}
+}
+
+.wp-block-yard-timeline-item-collapse__title {
+	@apply mb-1 text-2xl;
+}
+
+.wp-block-yard-timeline-item-collapse__subtitle {
+	@apply mb-0 text-sm text-gray-500;
+}
+
+.wp-block-yard-timeline-item-collapse__inner-content {
+	@apply normalize-child-margin mt-4;
 }
 
 .wp-block-yard-timeline-item__dot {
@@ -109,11 +144,7 @@ ol.wp-block-yard-timeline {
 	}
 
 	.wp-block-yard-timeline-item {
-		@apply lg:w-(--item-width);
-
-		.wp-block-yard-timeline-item__content {
-			@apply lg:min-h-(--item-min-height);
-		}
+		@apply lg:min-h-(--item-min-height) lg:w-(--item-width);
 
 		&:nth-child( odd ) {
 			@apply lg:mr-auto lg:ml-0;
@@ -147,7 +178,7 @@ ol.wp-block-yard-timeline {
 	) {
 	--dot-size: 48px;
 
-	.wp-block-yard-timeline-item {
+	.wp-block-yard-timeline-item__content {
 		> :first-child.wp-block-yard-icon {
 			@apply absolute top-(--top-position) left-(--dot-position) z-2 flex size-(--dot-size) -translate-y-1/2 items-center justify-center rounded-full text-white;
 			font-size: var( --dot-font-size );
