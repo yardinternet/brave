@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "98675c2db56bc4158c1fc3f8bb1d6248",
+    "content-hash": "c47ff738e579c485d325b87f901ec1da",
     "packages": [
         {
             "name": "bordoni/phpass",
@@ -5711,16 +5711,16 @@
         },
         {
             "name": "plugin/yard-gutenberg",
-            "version": "v1.4.7",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yardinternet/plugin-yard-gutenberg.git",
-                "reference": "e6f0891eab0371e7b8aaeca9a774c282d3d919e8"
+                "reference": "ba98c8b805149953fad20ab4243c113033ed652a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yardinternet/plugin-yard-gutenberg/zipball/e6f0891eab0371e7b8aaeca9a774c282d3d919e8",
-                "reference": "e6f0891eab0371e7b8aaeca9a774c282d3d919e8",
+                "url": "https://api.github.com/repos/yardinternet/plugin-yard-gutenberg/zipball/ba98c8b805149953fad20ab4243c113033ed652a",
+                "reference": "ba98c8b805149953fad20ab4243c113033ed652a",
                 "shasum": ""
             },
             "require": {
@@ -5751,9 +5751,9 @@
             "description": "A collection of blocks for the WordPress Gutenberg editor.",
             "support": {
                 "issues": "https://github.com/yardinternet/plugin-yard-gutenberg/issues",
-                "source": "https://github.com/yardinternet/plugin-yard-gutenberg/tree/v1.4.7"
+                "source": "https://github.com/yardinternet/plugin-yard-gutenberg/tree/v1.5.0"
             },
-            "time": "2026-02-24T09:02:01+00:00"
+            "time": "2026-03-09T14:06:58+00:00"
         },
         {
             "name": "psr/clock",
@@ -15275,15 +15275,15 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=8.2"
     },
-    "platform-dev": {},
+    "platform-dev": [],
     "platform-overrides": {
         "php": "8.2"
     },
-    "plugin-api-version": "2.9.0"
+    "plugin-api-version": "2.6.0"
 }
