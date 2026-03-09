@@ -17,6 +17,7 @@
 	--collapse-button-icon-bg-color: var( --color-primary );
 	--collapse-button-icon-color-hover: var( --color-primary );
 	--collapse-button-icon-color: var( --color-white );
+	--collapse-button-icon-radius: var( --collapse-radius );
 	--collapse-button-icon-size: 1lh;
 	--collapse-button-icon: '\f078';
 
@@ -62,8 +63,7 @@
 	@apply flex items-start justify-between gap-(--collapse-button-gap) rounded-(--collapse-radius) bg-(--collapse-button-bg-color) px-(--collapse-button-padding-x) py-(--collapse-button-padding-y) font-normal text-(--collapse-button-color) transition-all;
 
 	&::after {
-		@apply fontawesome flex size-(--collapse-button-icon-size) shrink-0 items-center justify-center rounded-(--collapse-radius) bg-(--collapse-button-icon-bg-color) leading-[inherit] text-(--collapse-button-icon-color) transition-all;
-		--fa-icon: var( --collapse-button-icon );
+		@apply collapse-icon shrink-0;
 	}
 
 	&[aria-expanded='true']::after {

@@ -193,3 +193,8 @@
 		minmax( min( 100%, var( --min, 30ch ) ), 1fr )
 	);
 }
+
+@utility collapse-icon {
+	@apply fontawesome flex size-(--collapse-button-icon-size) items-center justify-center rounded-(--collapse-button-icon-radius) bg-(--collapse-button-icon-bg-color) leading-[inherit] text-(--collapse-button-icon-color) transition-all;
+	--fa-icon: var( --collapse-button-icon );
+}

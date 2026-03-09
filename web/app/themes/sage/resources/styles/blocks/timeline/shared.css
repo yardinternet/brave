@@ -58,8 +58,7 @@
 	}
 
 	&::before {
-		@apply fontawesome pointer-events-none absolute top-1/2 right-0 z-1 flex size-8 -translate-y-1/2 items-center justify-center rounded-theme bg-primary text-white transition-all;
-		--fa-icon: '\f078';
+		@apply collapse-icon pointer-events-none absolute top-1/2 right-0 z-1 -translate-y-1/2;
 	}
 }
 
