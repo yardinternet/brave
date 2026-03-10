@@ -35,12 +35,10 @@ class App extends Composer
 
 	public function cookieLawPluginActive(): bool
 	{
-		$activePlugins = get_option('active_plugins');
-
-		if (is_multisite()) {
-			$activePlugins = array_merge($activePlugins, array_keys(get_site_option('active_sitewide_plugins')));
+		if (! function_exists('is_plugin_active')) {
+			require_once ABSPATH . 'wp-admin/includes/plugin.php';
 		}
 
-		return in_array('cookie-law-info/cookie-law-info.php', $activePlugins);
+		return is_plugin_active('cookie-law-info/cookie-law-info.php');
 	}
 }
