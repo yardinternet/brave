@@ -16,7 +16,7 @@ importers:
         version: 0.7.3
       '@yardinternet/gutenberg-components':
         specifier: ^1.3.2
-        version: 1.3.2
+        version: 1.3.3
     devDependencies:
       '@yardinternet/eslint-config':
         specifier: ^1.2.0
@@ -29,16 +29,16 @@ importers:
         version: 1.1.3(typescript@5.9.3)
       '@yardinternet/toolkit':
         specifier: ^2.0.4
-        version: 2.1.1(@babel/core@7.29.0)(@types/eslint@9.6.1)(@typescript-eslint/parser@6.21.0(eslint@9.39.3(jiti@1.21.7))(typescript@5.9.3))(jiti@1.21.7)(optionator@0.9.4)(postcss@8.5.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3)(vite@7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))(webpack@5.105.2)
+        version: 2.1.1(@babel/core@7.29.0)(@types/eslint@9.6.1)(@typescript-eslint/parser@6.21.0(eslint@9.39.3(jiti@1.21.7))(typescript@5.9.3))(jiti@1.21.7)(optionator@0.9.4)(postcss@8.5.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3)(vite@7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))(webpack@5.105.2)
       '@yardinternet/vite-config':
         specifier: ^1.0.12
-        version: 1.1.1(eslint@9.39.3(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.8)(stylelint@17.4.0(typescript@5.9.3))(typescript@5.9.3)(vite@7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))(webpack@5.105.2)
+        version: 1.1.1(eslint@9.39.3(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.8)(stylelint@17.4.0(typescript@5.9.3))(typescript@5.9.3)(vite@7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))(webpack@5.105.2)
       tailwindcss:
         specifier: ^4.2.0
         version: 4.2.1
       vite:
         specifier: ^7.3.1
-        version: 7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0)
+        version: 7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0)
 
 packages:
 
@@ -1682,8 +1682,8 @@ packages:
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
 
-  '@types/node@25.3.3':
-    resolution: {integrity: sha512-DpzbrH7wIcBaJibpKo9nnSQL0MTRdnWttGyE5haGwK86xgMOkFLp7vEyfQPGLOJh5wNYiJ3V9PmUMDhV9u8kkQ==}
+  '@types/node@25.4.0':
+    resolution: {integrity: sha512-9wLpoeWuBlcbBpOY3XmzSTG3oscB6xjBEEtn+pYXTfhyXhIxC5FsBer2KTopBlvKEiW9l13po9fq+SJY/5lkhw==}
 
   '@types/parse-json@4.0.2':
     resolution: {integrity: sha512-dISoDXWWQwUquiKsyZ4Ng+HX2KsPL7LyHKHQwgGFEA3IaKac4Obd+h2a/a6waisAoepJlBcx9paWqjA8/HVjCw==}
@@ -2062,11 +2062,11 @@ packages:
   '@yardinternet/eslint-config@1.2.4':
     resolution: {integrity: sha512-vLrJW7nIWi4hhOQySkpT/ciewPk+kpOJmythJxEO/vvbJKWwl5/3u89Pdz6dWSRvqswYxOkzE35ac29Cyv7jCA==, tarball: https://npm.pkg.github.com/download/@yardinternet/eslint-config/1.2.4/40771f2dc79141bc9bc39b65ab06bd1d7843445d}
 
-  '@yardinternet/gutenberg-components@1.3.2':
-    resolution: {integrity: sha512-N3C422kMZYhUqCY25FG5HEddug6WWpGFAYUGQ9dRqNx7ffLtgmISE8xaORevvCzd0Fnaxlm1BCWNutxrIsJV6A==, tarball: https://npm.pkg.github.com/download/@yardinternet/gutenberg-components/1.3.2/cdc4a12c71fe087d533d65ac2f974f814b2a3449}
+  '@yardinternet/gutenberg-components@1.3.3':
+    resolution: {integrity: sha512-H9IqIEf6WhS2FqVVGfxcxCnzfyjRaY66OhdZT9oYQux2Yz3j5gZTTHUpYdpxwH8qcXW4hZ7nSF7G+sv6bWw55g==, tarball: https://npm.pkg.github.com/download/@yardinternet/gutenberg-components/1.3.3/80c318fa3e97c2926398a3e8663aef1b75cf32fa}
 
-  '@yardinternet/gutenberg-hooks@1.0.4':
-    resolution: {integrity: sha512-spMXHqz2tX8NOn8JNTbxYaf27FdjFfbmvYnHiK83SQqlKAXoScCwd4xJNyl5W8Pq76Hg2kB2pfA5HHBiFwr8ZQ==, tarball: https://npm.pkg.github.com/download/@yardinternet/gutenberg-hooks/1.0.4/143057701b17f353da3ccf452631db7ba70f27b2}
+  '@yardinternet/gutenberg-hooks@1.0.5':
+    resolution: {integrity: sha512-3UzgO7g+a80OFs5X87+R/YR8iea1pPPk0Wm++4WTlU7JlsWbJee+TBiOJ2RxwObLmvotHs4iW0WEPDaSbvwAdQ==, tarball: https://npm.pkg.github.com/download/@yardinternet/gutenberg-hooks/1.0.5/c161029148e02d0dd913ad1b2b173e713eec73b1}
 
   '@yardinternet/prettier-config@2.0.4':
     resolution: {integrity: sha512-rtyCCMLh7zx44qphjaEHLYoIvar1TKYRHYJYGrFOAGm1ECv7z1Tq1REi0OwIARWkMcE+gj3+x+9ljPsy6QwVXA==, tarball: https://npm.pkg.github.com/download/@yardinternet/prettier-config/2.0.4/dd7049e6b75050445234a866d3cb3789baac3972}
@@ -4212,8 +4212,8 @@ packages:
     resolution: {integrity: sha512-g9ljZiwki/LfxmQADO3dEY1CbpmXT5Hm2fJ+QaGKwSXUylMybePR7/67YW7jOrrvjEgL1Fmz5kzyAjWVWLlucg==}
     engines: {node: '>=6'}
 
-  terser-webpack-plugin@5.3.17:
-    resolution: {integrity: sha512-YR7PtUp6GMU91BgSJmlaX/rS2lGDbAF7D+Wtq7hRO+MiljNmodYvqslzCFiYVAgW+Qoaaia/QUIP4lGXufjdZw==}
+  terser-webpack-plugin@5.4.0:
+    resolution: {integrity: sha512-Bn5vxm48flOIfkdl5CaD2+1CiUVbonWQ3KQPyP7/EuIl9Gbzq/gQFOzaMFUEgVjB1396tcK0SG8XcNJ/2kDH8g==}
     engines: {node: '>= 10.13.0'}
     peerDependencies:
       '@swc/core': '*'
@@ -6039,10 +6039,10 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.59.0':
     optional: true
 
-  '@roots/vite-plugin@1.2.4(vite@7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))(webpack@5.105.2)':
+  '@roots/vite-plugin@1.2.4(vite@7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))(webpack@5.105.2)':
     dependencies:
       '@wordpress/dependency-extraction-webpack-plugin': 6.40.0(webpack@5.105.2)
-      vite: 7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0)
+      vite: 7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0)
     transitivePeerDependencies:
       - webpack
 
@@ -6128,12 +6128,12 @@ snapshots:
       '@tailwindcss/oxide-win32-arm64-msvc': 4.2.1
       '@tailwindcss/oxide-win32-x64-msvc': 4.2.1
 
-  '@tailwindcss/vite@4.2.1(vite@7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))':
+  '@tailwindcss/vite@4.2.1(vite@7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))':
     dependencies:
       '@tailwindcss/node': 4.2.1
       '@tailwindcss/oxide': 4.2.1
       tailwindcss: 4.2.1
-      vite: 7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0)
+      vite: 7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0)
 
   '@tybys/wasm-util@0.10.1':
     dependencies:
@@ -6177,7 +6177,7 @@ snapshots:
 
   '@types/json5@0.0.29': {}
 
-  '@types/node@25.3.3':
+  '@types/node@25.4.0':
     dependencies:
       undici-types: 7.18.2
 
@@ -6461,7 +6461,7 @@ snapshots:
   '@unrs/resolver-binding-win32-x64-msvc@1.11.1':
     optional: true
 
-  '@vitejs/plugin-react@5.1.4(vite@7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))':
+  '@vitejs/plugin-react@5.1.4(vite@7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))':
     dependencies:
       '@babel/core': 7.29.0
       '@babel/plugin-transform-react-jsx-self': 7.27.1(@babel/core@7.29.0)
@@ -6469,7 +6469,7 @@ snapshots:
       '@rolldown/pluginutils': 1.0.0-rc.3
       '@types/babel__core': 7.20.5
       react-refresh: 0.18.0
-      vite: 7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0)
+      vite: 7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -6755,11 +6755,11 @@ snapshots:
       - typescript
     optional: true
 
-  '@yardinternet/gutenberg-components@1.3.2':
+  '@yardinternet/gutenberg-components@1.3.3':
     dependencies:
-      '@yardinternet/gutenberg-hooks': 1.0.4
+      '@yardinternet/gutenberg-hooks': 1.0.5
 
-  '@yardinternet/gutenberg-hooks@1.0.4': {}
+  '@yardinternet/gutenberg-hooks@1.0.5': {}
 
   '@yardinternet/prettier-config@2.0.4':
     dependencies:
@@ -6797,7 +6797,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@yardinternet/toolkit@2.1.1(@babel/core@7.29.0)(@types/eslint@9.6.1)(@typescript-eslint/parser@6.21.0(eslint@9.39.3(jiti@1.21.7))(typescript@5.9.3))(jiti@1.21.7)(optionator@0.9.4)(postcss@8.5.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3)(vite@7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))(webpack@5.105.2)':
+  '@yardinternet/toolkit@2.1.1(@babel/core@7.29.0)(@types/eslint@9.6.1)(@typescript-eslint/parser@6.21.0(eslint@9.39.3(jiti@1.21.7))(typescript@5.9.3))(jiti@1.21.7)(optionator@0.9.4)(postcss@8.5.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3)(vite@7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))(webpack@5.105.2)':
     dependencies:
       '@babel/preset-react': 7.28.5(@babel/core@7.29.0)
       '@eslint/compat': 2.0.2(eslint@9.39.3(jiti@1.21.7))
@@ -6826,7 +6826,7 @@ snapshots:
       '@yardinternet/eslint-config': 1.2.4(@babel/core@7.29.0)(@types/eslint@9.6.1)(@typescript-eslint/parser@6.21.0(eslint@9.39.3(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.3(jiti@1.21.7))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.4.0(typescript@5.9.3))(typescript@5.9.3)(wp-prettier@3.0.3)
       '@yardinternet/prettier-config': 2.0.4
       '@yardinternet/stylelint-config': 1.1.3(typescript@5.9.3)
-      '@yardinternet/vite-config': 1.1.1(eslint@9.39.3(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.8)(stylelint@17.4.0(typescript@5.9.3))(typescript@5.9.3)(vite@7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))(webpack@5.105.2)
+      '@yardinternet/vite-config': 1.1.1(eslint@9.39.3(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.8)(stylelint@17.4.0(typescript@5.9.3))(typescript@5.9.3)(vite@7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))(webpack@5.105.2)
     transitivePeerDependencies:
       - '@babel/core'
       - '@biomejs/biome'
@@ -6868,17 +6868,17 @@ snapshots:
       - webpack
       - yaml
 
-  '@yardinternet/vite-config@1.1.1(eslint@9.39.3(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.8)(stylelint@17.4.0(typescript@5.9.3))(typescript@5.9.3)(vite@7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))(webpack@5.105.2)':
+  '@yardinternet/vite-config@1.1.1(eslint@9.39.3(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.8)(stylelint@17.4.0(typescript@5.9.3))(typescript@5.9.3)(vite@7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))(webpack@5.105.2)':
     dependencies:
-      '@roots/vite-plugin': 1.2.4(vite@7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))(webpack@5.105.2)
-      '@tailwindcss/vite': 4.2.1(vite@7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))
-      '@vitejs/plugin-react': 5.1.4(vite@7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))
-      '@yardinternet/vite-plugin-gutenberg-blocks': 2.5.0(typescript@5.9.3)(vite@7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))
-      laravel-vite-plugin: 2.1.0(vite@7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))
+      '@roots/vite-plugin': 1.2.4(vite@7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))(webpack@5.105.2)
+      '@tailwindcss/vite': 4.2.1(vite@7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))
+      '@vitejs/plugin-react': 5.1.4(vite@7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))
+      '@yardinternet/vite-plugin-gutenberg-blocks': 2.5.0(typescript@5.9.3)(vite@7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))
+      laravel-vite-plugin: 2.1.0(vite@7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))
       postcss-prefixwrap: 1.57.2(postcss@8.5.8)
-      vite: 7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0)
-      vite-plugin-checker: 0.12.0(eslint@9.39.3(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(stylelint@17.4.0(typescript@5.9.3))(typescript@5.9.3)(vite@7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))
-      vite-plugin-externals: 0.6.2(vite@7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))
+      vite: 7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0)
+      vite-plugin-checker: 0.12.0(eslint@9.39.3(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(stylelint@17.4.0(typescript@5.9.3))(typescript@5.9.3)(vite@7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))
+      vite-plugin-externals: 0.6.2(vite@7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))
     optionalDependencies:
       '@rollup/rollup-linux-x64-gnu': 4.59.0
     transitivePeerDependencies:
@@ -6896,14 +6896,14 @@ snapshots:
       - vue-tsc
       - webpack
 
-  '@yardinternet/vite-plugin-gutenberg-blocks@2.5.0(typescript@5.9.3)(vite@7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))':
+  '@yardinternet/vite-plugin-gutenberg-blocks@2.5.0(typescript@5.9.3)(vite@7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))':
     dependencies:
       chalk: 5.6.2
       esbuild: 0.25.12
       rollup: 4.59.0
       typescript: 5.9.3
-      vite: 7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0)
-      vite-plugin-static-copy: 3.2.0(vite@7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))
+      vite: 7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0)
+      vite-plugin-static-copy: 3.2.0(vite@7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0))
     optionalDependencies:
       sass: 1.97.3
 
@@ -8286,7 +8286,7 @@ snapshots:
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 25.3.3
+      '@types/node': 25.4.0
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
@@ -8363,10 +8363,10 @@ snapshots:
     dependencies:
       language-subtag-registry: 0.3.23
 
-  laravel-vite-plugin@2.1.0(vite@7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0)):
+  laravel-vite-plugin@2.1.0(vite@7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0)):
     dependencies:
       picocolors: 1.1.1
-      vite: 7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0)
+      vite: 7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0)
       vite-plugin-full-reload: 1.2.0
 
   levn@0.4.1:
@@ -9367,7 +9367,7 @@ snapshots:
 
   tapable@2.3.0: {}
 
-  terser-webpack-plugin@5.3.17(webpack@5.105.2):
+  terser-webpack-plugin@5.4.0(webpack@5.105.2):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
@@ -9544,7 +9544,7 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  vite-plugin-checker@0.12.0(eslint@9.39.3(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(stylelint@17.4.0(typescript@5.9.3))(typescript@5.9.3)(vite@7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0)):
+  vite-plugin-checker@0.12.0(eslint@9.39.3(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(stylelint@17.4.0(typescript@5.9.3))(typescript@5.9.3)(vite@7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0)):
     dependencies:
       '@babel/code-frame': 7.29.0
       chokidar: 4.0.3
@@ -9553,7 +9553,7 @@ snapshots:
       picomatch: 4.0.3
       tiny-invariant: 1.3.3
       tinyglobby: 0.2.15
-      vite: 7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0)
+      vite: 7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0)
       vscode-uri: 3.1.0
     optionalDependencies:
       eslint: 9.39.3(jiti@1.21.7)
@@ -9562,28 +9562,28 @@ snapshots:
       stylelint: 17.4.0(typescript@5.9.3)
       typescript: 5.9.3
 
-  vite-plugin-externals@0.6.2(vite@7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0)):
+  vite-plugin-externals@0.6.2(vite@7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0)):
     dependencies:
       acorn: 8.16.0
       es-module-lexer: 0.4.1
       fs-extra: 10.1.0
       magic-string: 0.25.9
-      vite: 7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0)
+      vite: 7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0)
 
   vite-plugin-full-reload@1.2.0:
     dependencies:
       picocolors: 1.1.1
       picomatch: 2.3.1
 
-  vite-plugin-static-copy@3.2.0(vite@7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0)):
+  vite-plugin-static-copy@3.2.0(vite@7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0)):
     dependencies:
       chokidar: 3.6.0
       p-map: 7.0.4
       picocolors: 1.1.1
       tinyglobby: 0.2.15
-      vite: 7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0)
+      vite: 7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0)
 
-  vite@7.3.1(@types/node@25.3.3)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0):
+  vite@7.3.1(@types/node@25.4.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0):
     dependencies:
       esbuild: 0.27.3
       fdir: 6.5.0(picomatch@4.0.3)
@@ -9592,7 +9592,7 @@ snapshots:
       rollup: 4.57.1
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 25.3.3
+      '@types/node': 25.4.0
       fsevents: 2.3.3
       jiti: 1.21.7
       lightningcss: 1.31.1
@@ -9636,7 +9636,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 4.3.3
       tapable: 2.3.0
-      terser-webpack-plugin: 5.3.17(webpack@5.105.2)
+      terser-webpack-plugin: 5.4.0(webpack@5.105.2)
       watchpack: 2.5.1
       webpack-sources: 3.3.4
     transitivePeerDependencies:
