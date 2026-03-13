@@ -11,15 +11,16 @@
 		"preferred-install": "dist",
 		"sort-packages": true,
 		"allow-plugins": {
+			"captainhook/hook-installer": true,
 			"composer/installers": true,
-			"roots/wordpress-core-installer": true,
-			"captainhook/hook-installer": true
+			"dangoodman/composer-for-wordpress": true,
+			"roots/wordpress-core-installer": true
 		},
 		"platform": {
 			"php": "8.2"
 		}
 	},
-	"minimum-stability": "dev",
+	"minimum-stability": "stable",
 	"prefer-stable": true,
 	"repositories": [
 		{
@@ -49,10 +50,9 @@
 		"spatie/laravel-ignition": "^2.0",
 		"vlucas/phpdotenv": "^5.5",
 		"wp-cli/wp-cli-bundle": "^2.11",
+		"wp-media/imagify-plugin": "^2.2",
 		"wpackagist-plugin/cookie-law-info": "^3.2",
-		"wpackagist-plugin/duplicate-post": "^4.5",
 		"wpackagist-plugin/gravity-forms-zero-spam": "^1.4",
-		"wpackagist-plugin/imagify": "^2.2",
 		"wpackagist-plugin/relay": "^1.3",
 		"wpackagist-plugin/stream": "^4.0",
 		"wpackagist-plugin/wordfence": "8.0.*",
@@ -69,7 +69,8 @@
 		"yard/wordfence-mysqli-storage-engine": "^1.0",
 		"yard/wp-block-registrar": "^1.0",
 		"yard/wp-database": "^1.0",
-		"yard/wp-user-roles": "^2.0"
+		"yard/wp-user-roles": "^2.0",
+		"yoast/duplicate-post": "^4.6"
 	},
 	"require-dev": {
 		"captainhook/captainhook": "^5.24",
