@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c47ff738e579c485d325b87f901ec1da",
+    "content-hash": "5164ade1902136a0faa1a36a26f17c66",
     "packages": [
         {
             "name": "bordoni/phpass",
@@ -1653,6 +1653,43 @@
                 }
             ],
             "time": "2025-12-27T19:43:20+00:00"
+        },
+        {
+            "name": "gravitykit/gravity-forms-zero-spam",
+            "version": "v1.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GravityKit/gravity-forms-zero-spam.git",
+                "reference": "335253ea95b51da497edf78b2825be0875d4257a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GravityKit/gravity-forms-zero-spam/zipball/335253ea95b51da497edf78b2825be0875d4257a",
+                "reference": "335253ea95b51da497edf78b2825be0875d4257a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "php-stubs/gravity-forms-stubs": "^2.7.18",
+                "phpcompatibility/phpcompatibility-wp": "^2.1",
+                "phpstan/phpstan": "^1.10",
+                "squizlabs/php_codesniffer": "*",
+                "szepeviktor/phpstan-wordpress": "^1.3",
+                "wp-coding-standards/wpcs": "^3.0"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Enhance Gravity Forms to include effective anti-spam measures.",
+            "support": {
+                "issues": "https://github.com/GravityKit/gravity-forms-zero-spam/issues",
+                "source": "https://github.com/GravityKit/gravity-forms-zero-spam/tree/v1.7.2"
+            },
+            "time": "2026-03-13T16:13:40+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -12967,24 +13004,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/duplicate-post/"
-        },
-        {
-            "name": "wpackagist-plugin/gravity-forms-zero-spam",
-            "version": "1.7.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/gravity-forms-zero-spam/",
-                "reference": "tags/1.7.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gravity-forms-zero-spam.1.7.1.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/gravity-forms-zero-spam/"
         },
         {
             "name": "wpackagist-plugin/imagify",
