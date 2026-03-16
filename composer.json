@@ -24,11 +24,12 @@
 	"prefer-stable": true,
 	"repositories": [
 		{
+			"name": "wp-composer",
 			"type": "composer",
-			"url": "https://wpackagist.org",
+			"url": "https://repo.wp-composer.com",
 			"only": [
-				"wpackagist-plugin/*",
-				"wpackagist-theme/*"
+				"wp-plugin/*",
+				"wp-theme/*"
 			]
 		}
 	],
@@ -52,11 +53,11 @@
 		"vlucas/phpdotenv": "^5.5",
 		"wp-cli/wp-cli-bundle": "^2.11",
 		"wp-media/imagify-plugin": "^2.2",
-		"wpackagist-plugin/cookie-law-info": "^3.2",
-		"wpackagist-plugin/relay": "^1.3",
-		"wpackagist-plugin/stream": "^4.0",
-		"wpackagist-plugin/wordfence": "8.0.*",
-		"wpackagist-plugin/wp-seopress": "^8.1",
+		"wp-plugin/cookie-law-info": "^3.2",
+		"wp-plugin/relay": "^1.3",
+		"wp-plugin/stream": "^4.0",
+		"wp-plugin/wordfence": "8.0.*",
+		"wp-plugin/wp-seopress": "^8.1",
 		"yard/brave-components": "^1.2",
 		"yard/brave-csp": "^1.0",
 		"yard/brave-hooks": "^2.0",
