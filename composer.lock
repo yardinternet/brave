@@ -14569,16 +14569,16 @@
         },
         {
             "name": "johnbillion/query-monitor",
-            "version": "3.20.2",
+            "version": "3.20.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnbillion/query-monitor.git",
-                "reference": "40b9ba0d72a4d938a24aa6367b7715e8ae02e8d4"
+                "reference": "cca3c670477b3e9005d39ca81f1b5275012519ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnbillion/query-monitor/zipball/40b9ba0d72a4d938a24aa6367b7715e8ae02e8d4",
-                "reference": "40b9ba0d72a4d938a24aa6367b7715e8ae02e8d4",
+                "url": "https://api.github.com/repos/johnbillion/query-monitor/zipball/cca3c670477b3e9005d39ca81f1b5275012519ae",
+                "reference": "cca3c670477b3e9005d39ca81f1b5275012519ae",
                 "shasum": ""
             },
             "require": {
@@ -14593,7 +14593,7 @@
                 "codeception/util-universalframework": "^1.0",
                 "dealerdirect/phpcodesniffer-composer-installer": "0.7.2",
                 "guzzlehttp/guzzle": "^7.0",
-                "johnbillion/plugin-infrastructure": "1.2.1",
+                "johnbillion/plugin-infrastructure": "1.2.2",
                 "johnbillion/wp-compat": "0.3.1",
                 "lucatume/wp-browser": "3.2.3",
                 "phpcompatibility/phpcompatibility-wp": "2.1.5",
@@ -14641,7 +14641,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-12-11T22:08:53+00:00"
+            "time": "2026-03-17T12:21:17+00:00"
         },
         {
             "name": "react/cache",
