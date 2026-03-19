@@ -14569,16 +14569,16 @@
         },
         {
             "name": "johnbillion/query-monitor",
-            "version": "3.20.3",
+            "version": "3.20.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnbillion/query-monitor.git",
-                "reference": "cca3c670477b3e9005d39ca81f1b5275012519ae"
+                "reference": "19a230464200294ae0448e5d3487be5537de0622"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnbillion/query-monitor/zipball/cca3c670477b3e9005d39ca81f1b5275012519ae",
-                "reference": "cca3c670477b3e9005d39ca81f1b5275012519ae",
+                "url": "https://api.github.com/repos/johnbillion/query-monitor/zipball/19a230464200294ae0448e5d3487be5537de0622",
+                "reference": "19a230464200294ae0448e5d3487be5537de0622",
                 "shasum": ""
             },
             "require": {
@@ -14641,7 +14641,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-03-17T12:21:17+00:00"
+            "time": "2026-03-19T17:07:45+00:00"
         },
         {
             "name": "react/cache",
