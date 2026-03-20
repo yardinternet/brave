@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1853f3eebb6dbb55f1d27221503f529e",
+    "content-hash": "3612de1acf050d395cf0790cad582cad",
     "packages": [
         {
             "name": "bordoni/phpass",
@@ -7155,16 +7155,16 @@
         },
         {
             "name": "sentry/sentry",
-            "version": "4.21.0",
+            "version": "4.22.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getsentry/sentry-php.git",
-                "reference": "2bf405fc4d38f00073a7d023cf321e59f614d54c"
+                "reference": "ce6ab95a7021f976a27b4628a4072e481c8acf60"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getsentry/sentry-php/zipball/2bf405fc4d38f00073a7d023cf321e59f614d54c",
-                "reference": "2bf405fc4d38f00073a7d023cf321e59f614d54c",
+                "url": "https://api.github.com/repos/getsentry/sentry-php/zipball/ce6ab95a7021f976a27b4628a4072e481c8acf60",
+                "reference": "ce6ab95a7021f976a27b4628a4072e481c8acf60",
                 "shasum": ""
             },
             "require": {
@@ -7230,7 +7230,7 @@
             ],
             "support": {
                 "issues": "https://github.com/getsentry/sentry-php/issues",
-                "source": "https://github.com/getsentry/sentry-php/tree/4.21.0"
+                "source": "https://github.com/getsentry/sentry-php/tree/4.22.0"
             },
             "funding": [
                 {
@@ -7242,7 +7242,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2026-02-24T15:32:51+00:00"
+            "time": "2026-03-16T13:03:46+00:00"
         },
         {
             "name": "sentry/sentry-laravel",
@@ -7475,26 +7475,26 @@
         },
         {
             "name": "spatie/flare-client-php",
-            "version": "1.10.1",
+            "version": "1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/flare-client-php.git",
-                "reference": "bf1716eb98bd689451b071548ae9e70738dce62f"
+                "reference": "fb3ffb946675dba811fbde9122224db2f84daca9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/flare-client-php/zipball/bf1716eb98bd689451b071548ae9e70738dce62f",
-                "reference": "bf1716eb98bd689451b071548ae9e70738dce62f",
+                "url": "https://api.github.com/repos/spatie/flare-client-php/zipball/fb3ffb946675dba811fbde9122224db2f84daca9",
+                "reference": "fb3ffb946675dba811fbde9122224db2f84daca9",
                 "shasum": ""
             },
             "require": {
-                "illuminate/pipeline": "^8.0|^9.0|^10.0|^11.0|^12.0",
+                "illuminate/pipeline": "^8.0|^9.0|^10.0|^11.0|^12.0|^13.0",
                 "php": "^8.0",
                 "spatie/backtrace": "^1.6.1",
-                "symfony/http-foundation": "^5.2|^6.0|^7.0",
-                "symfony/mime": "^5.2|^6.0|^7.0",
-                "symfony/process": "^5.2|^6.0|^7.0",
-                "symfony/var-dumper": "^5.2|^6.0|^7.0"
+                "symfony/http-foundation": "^5.2|^6.0|^7.0|^8.0",
+                "symfony/mime": "^5.2|^6.0|^7.0|^8.0",
+                "symfony/process": "^5.2|^6.0|^7.0|^8.0",
+                "symfony/var-dumper": "^5.2|^6.0|^7.0|^8.0"
             },
             "require-dev": {
                 "dms/phpunit-arraysubset-asserts": "^0.5.0",
@@ -7532,7 +7532,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/flare-client-php/issues",
-                "source": "https://github.com/spatie/flare-client-php/tree/1.10.1"
+                "source": "https://github.com/spatie/flare-client-php/tree/1.11.0"
             },
             "funding": [
                 {
@@ -7540,7 +7540,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-02-14T13:42:06+00:00"
+            "time": "2026-03-17T08:06:16+00:00"
         },
         {
             "name": "spatie/ignition",
@@ -13192,7 +13192,7 @@
             "time": "2025-12-29T12:10:38+00:00"
         },
         {
-            "name": "wpackagist-plugin/cookie-law-info",
+            "name": "wp-plugin/cookie-law-info",
             "version": "3.4.0",
             "source": {
                 "type": "svn",
@@ -13204,13 +13204,26 @@
                 "url": "https://downloads.wordpress.org/plugin/cookie-law-info.3.4.0.zip"
             },
             "require": {
-                "composer/installers": "^1.0 || ^2.0"
+                "composer/installers": "~1.0|~2.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/cookie-law-info/"
+            "notification-url": "https://wp-composer.com/downloads",
+            "authors": [
+                {
+                    "name": "CookieYes"
+                }
+            ],
+            "description": "Easily set up cookie banner or notice in WordPress, and policy pages for compliance with global cookie laws (GDPR, DSGVO, RGPD, CCPA/CPRA, etc).",
+            "homepage": "https://www.cookieyes.com/",
+            "support": {
+                "changelog": "https://wordpress.org/plugins/cookie-law-info/#developers",
+                "issues": "https://wordpress.org/support/plugin/cookie-law-info",
+                "source": "https://plugins.svn.wordpress.org/cookie-law-info"
+            },
+            "time": "2026-01-29T13:15:00+00:00"
         },
         {
-            "name": "wpackagist-plugin/relay",
+            "name": "wp-plugin/relay",
             "version": "1.5.1",
             "source": {
                 "type": "svn",
@@ -13222,13 +13235,26 @@
                 "url": "https://downloads.wordpress.org/plugin/relay.1.5.1.zip"
             },
             "require": {
-                "composer/installers": "^1.0 || ^2.0"
+                "composer/installers": "~1.0|~2.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/relay/"
+            "notification-url": "https://wp-composer.com/downloads",
+            "authors": [
+                {
+                    "name": "Verdant Studio"
+                }
+            ],
+            "description": "A bridge between your WordPress site’s internals and your monitoring tools.",
+            "homepage": "https://www.verdant.studio/plugins/relay",
+            "support": {
+                "changelog": "https://wordpress.org/plugins/relay/#developers",
+                "issues": "https://wordpress.org/support/plugin/relay",
+                "source": "https://plugins.svn.wordpress.org/relay"
+            },
+            "time": "2025-09-18T17:53:00+00:00"
         },
         {
-            "name": "wpackagist-plugin/stream",
+            "name": "wp-plugin/stream",
             "version": "4.1.2",
             "source": {
                 "type": "svn",
@@ -13240,13 +13266,26 @@
                 "url": "https://downloads.wordpress.org/plugin/stream.4.1.2.zip"
             },
             "require": {
-                "composer/installers": "^1.0 || ^2.0"
+                "composer/installers": "~1.0|~2.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/stream/"
+            "notification-url": "https://wp-composer.com/downloads",
+            "authors": [
+                {
+                    "name": "XWP"
+                }
+            ],
+            "description": "With Stream, you’re never left in the dark about changes to your WordPress site.",
+            "homepage": "https://xwp.co/work/stream/",
+            "support": {
+                "changelog": "https://wordpress.org/plugins/stream/#developers",
+                "issues": "https://wordpress.org/support/plugin/stream",
+                "source": "https://plugins.svn.wordpress.org/stream"
+            },
+            "time": "2026-02-24T12:24:00+00:00"
         },
         {
-            "name": "wpackagist-plugin/wordfence",
+            "name": "wp-plugin/wordfence",
             "version": "8.0.5",
             "source": {
                 "type": "svn",
@@ -13258,13 +13297,26 @@
                 "url": "https://downloads.wordpress.org/plugin/wordfence.8.0.5.zip"
             },
             "require": {
-                "composer/installers": "^1.0 || ^2.0"
+                "composer/installers": "~1.0|~2.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wordfence/"
+            "notification-url": "https://wp-composer.com/downloads",
+            "authors": [
+                {
+                    "name": "Mark Maunder"
+                }
+            ],
+            "description": "Firewall, Malware Scanner, Two Factor Auth, and Comprehensive Security Features, powered by our 24-hour team. Make security a priority with Wordfence.",
+            "homepage": "https://www.wordfence.com/",
+            "support": {
+                "changelog": "https://wordpress.org/plugins/wordfence/#developers",
+                "issues": "https://wordpress.org/support/plugin/wordfence",
+                "source": "https://plugins.svn.wordpress.org/wordfence"
+            },
+            "time": "2025-12-20T21:06:00+00:00"
         },
         {
-            "name": "wpackagist-plugin/wp-seopress",
+            "name": "wp-plugin/wp-seopress",
             "version": "8.9.0.2",
             "source": {
                 "type": "svn",
@@ -13276,10 +13328,23 @@
                 "url": "https://downloads.wordpress.org/plugin/wp-seopress.8.9.0.2.zip"
             },
             "require": {
-                "composer/installers": "^1.0 || ^2.0"
+                "composer/installers": "~1.0|~2.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wp-seopress/"
+            "notification-url": "https://wp-composer.com/downloads",
+            "authors": [
+                {
+                    "name": "Benjamin Denis"
+                }
+            ],
+            "description": "SEOPress, a simple, fast and powerful all in one SEO plugin for WordPress. Rank higher in search engines, fully white label. Now with AI.",
+            "homepage": "https://www.seopress.org/",
+            "support": {
+                "changelog": "https://wordpress.org/plugins/wp-seopress/#developers",
+                "issues": "https://wordpress.org/support/plugin/wp-seopress",
+                "source": "https://plugins.svn.wordpress.org/wp-seopress"
+            },
+            "time": "2026-03-04T10:06:00+00:00"
         },
         {
             "name": "yard/brave-components",
