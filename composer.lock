@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1853f3eebb6dbb55f1d27221503f529e",
+    "content-hash": "20861abf599b89df9ad5703ceceddb82",
     "packages": [
         {
             "name": "bordoni/phpass",
@@ -13246,24 +13246,6 @@
             "homepage": "https://wordpress.org/plugins/stream/"
         },
         {
-            "name": "wpackagist-plugin/wordfence",
-            "version": "8.0.5",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wordfence/",
-                "reference": "tags/8.0.5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordfence.8.0.5.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wordfence/"
-        },
-        {
             "name": "wpackagist-plugin/wp-seopress",
             "version": "8.9.0.2",
             "source": {
@@ -13766,43 +13748,6 @@
                 "source": "https://github.com/yardinternet/wp-webmanifest/tree/v1.2.0"
             },
             "time": "2025-01-07T14:24:14+00:00"
-        },
-        {
-            "name": "yard/wordfence-mysqli-storage-engine",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yardinternet/plugin-wordfence-mysqli-storage-engine.git",
-                "reference": "b887fbd3efab097db9dcadf4ee6ae854dd24f76c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yardinternet/plugin-wordfence-mysqli-storage-engine/zipball/b887fbd3efab097db9dcadf4ee6ae854dd24f76c",
-                "reference": "b887fbd3efab097db9dcadf4ee6ae854dd24f76c",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.4"
-            },
-            "type": "wordpress-muplugin",
-            "autoload": {
-                "psr-4": {
-                    "Yard\\Bedrock\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "EUPL-1.2"
-            ],
-            "description": "Fixes WordPress issues with home and site URL on multisite when using Bedrock",
-            "keywords": [
-                "wordpress"
-            ],
-            "support": {
-                "issues": "https://github.com/yardinternet/plugin-wordfence-mysqli-storage-engine/issues",
-                "source": "https://github.com/yardinternet/plugin-wordfence-mysqli-storage-engine"
-            },
-            "time": "2025-12-05T13:14:37+00:00"
         },
         {
             "name": "yard/wp-block-registrar",
