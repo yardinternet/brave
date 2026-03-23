@@ -3,8 +3,9 @@
  */
 import { addFilter } from '@wordpress/hooks';
 
-const blockSets = window?.gutenberg?.blockSets ?? {};
-const innerBlockRestrictions = window?.gutenberg?.innerBlockRestrictions ?? {};
+const blockSets = window?.theme.gutenbergConfig?.blockSets ?? {};
+const innerBlockRestrictions =
+	window?.theme.gutenbergConfig?.innerBlockRestrictions ?? {};
 
 /**
  * Resolve config for a parent block

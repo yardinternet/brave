@@ -88,4 +88,15 @@ class Assets
 	{
 		return true;
 	}
+
+	#[Action('admin_head')]
+	public function addGlobalVariablesToEditorWindowObject(): void
+	{
+		wp_print_inline_script_tag(
+			'window.theme = ' . wp_json_encode([
+				'currentPostType' => get_post_type(),
+				'gutenbergConfig' => config('gutenberg', []),
+			], JSON_UNESCAPED_UNICODE) . ';'
+		);
+	}
 }
