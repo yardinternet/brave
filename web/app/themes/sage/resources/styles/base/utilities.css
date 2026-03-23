@@ -176,6 +176,23 @@
 	--button-color: var( --color-primary );
 }
 
+@utility is-text-input {
+	@apply rounded-(--input-radius) border-0 border-b-(length:--input-border-width) border-(--input-border-color) bg-(--input-bg-color) p-(--input-padding) text-(length:--input-font-size) leading-snug shadow-(--input-box-shadow);
+
+	&:focus {
+		@apply outline-none;
+		--input-border-color: var( --input-border-color-focus );
+	}
+}
+
+@utility is-select {
+	@apply cursor-pointer rounded-(--select-border-radius) border-(length:--select-border-width) border-(--select-border-color) bg-(--select-bg-color) p-(--select-padding) text-(length:--select-font-size) leading-snug shadow-none transition-all;
+
+	&:hover {
+		--select-border-color: var( --select-border-color-hover );
+	}
+}
+
 @utility container {
 	@apply mx-auto max-w-(--container-width);
 }
