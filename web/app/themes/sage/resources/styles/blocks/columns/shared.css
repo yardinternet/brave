@@ -1,5 +1,5 @@
 .wp-block-columns {
-	@apply my-section gap-4 lg:gap-6;
+	@apply my-section gap-(--grid-gutter);
 
 	/* Handle margins when columns are placed after each other. */
 	&:has( + .wp-block-columns ) {
