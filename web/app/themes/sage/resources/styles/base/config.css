@@ -48,11 +48,11 @@
 	--text-lg--line-height: 1.4;
 	--text-xl: var( --text-step-2 );
 	--text-xl--line-height: 1.4;
-	--text-2xl: var( --text-step-3 ); /* H3 */
+	--text-2xl: var( --text-step-3 );
 	--text-2xl--line-height: 1.25;
 	--text-3xl: var( --text-step-4 );
 	--text-3xl--line-height: 1.25;
-	--text-4xl: var( --text-step-5 ); /* H2 */
+	--text-4xl: var( --text-step-5 );
 	--text-4xl--line-height: 1.25;
 	--text-5xl: var( --text-step-6 );
 	--text-5xl--line-height: 1.25;
@@ -62,8 +62,15 @@
 	--text-7xl--line-height: 1.25;
 	--text-8xl: var( --text-step-9 );
 	--text-8xl--line-height: 1.25;
-	--text-9xl: var( --text-step-10 ); /* H1 */
+	--text-9xl: var( --text-step-10 );
 	--text-9xl--line-height: 1.25;
+
+	--text-h1: var( --text-9xl );
+	--text-h2: var( --text-4xl );
+	--text-h3: var( --text-2xl );
+	--text-h4: var( --text-xl );
+	--text-h5: var( --text-lg );
+	--text-h6: var( --text-base );
 
 	/* Shadow */
 	--shadow: 0px 4px 16px rgba( 17, 17, 26, 0.05 ),
