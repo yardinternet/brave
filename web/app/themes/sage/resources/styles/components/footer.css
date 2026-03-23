@@ -6,7 +6,7 @@
 		@apply container mx-auto my-0 gap-y-8 py-10;
 
 		.wp-block-heading {
-			@apply text-2xl md:mb-4 lg:mb-6;
+			@apply text-h3 md:mb-4 lg:mb-6;
 		}
 	}
 }

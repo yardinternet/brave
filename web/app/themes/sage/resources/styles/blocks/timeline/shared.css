@@ -63,7 +63,7 @@
 }
 
 .wp-block-yard-timeline-item-collapse__title {
-	@apply mb-1 text-2xl;
+	@apply mb-1 text-h3;
 }
 
 .wp-block-yard-timeline-item-collapse__subtitle {
