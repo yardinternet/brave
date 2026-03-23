@@ -22,23 +22,25 @@ const unusedVariations = [
 	},
 ];
 
-window.addEventListener( 'DOMContentLoaded', () => {
+const variationRegistry = [
 	// Override core/group to start with a background color
-	registerBlockVariation( 'core/group', {
-		isDefault: true,
-		isActive: [ 'className' ],
-		name: 'group-with-background',
-		attributes: {
-			backgroundColor: 'white',
+	{
+		block: 'core/group',
+		postTypes: 'all',
+		settings: {
+			isDefault: true,
+			isActive: [ 'className' ],
+			name: 'group-with-background',
+			attributes: {
+				backgroundColor: 'white',
+			},
 		},
-	} );
-
-	/**
-	 * Only register these variation on the page post type
-	 */
-	if ( window.theme?.currentPostType === 'page' ) {
-		// Group: card
-		registerBlockVariation( 'core/group', {
+	},
+	// Group: card
+	{
+		block: 'core/group',
+		postTypes: [ 'page' ],
+		settings: {
 			isActive: [ 'className' ],
 			name: 'wp-block-group-card',
 			title: 'Kaart',
@@ -69,10 +71,13 @@ window.addEventListener( 'DOMContentLoaded', () => {
 					},
 				],
 			],
-		} );
-
-		// Group: layout article
-		registerBlockVariation( 'core/group', {
+		},
+	},
+	// Group: layout article
+	{
+		block: 'core/group',
+		postTypes: [ 'page' ],
+		settings: {
 			name: 'wp-block-group-layout-article',
 			title: 'Layout: artikel',
 			description: 'Een layout met witte achtergrond en vaste breedte.',
@@ -98,10 +103,13 @@ window.addEventListener( 'DOMContentLoaded', () => {
 				[ 'core/post-title', { level: 1 } ],
 				[ 'core/paragraph', { content: 'Voeg de inhoud toe' } ],
 			],
-		} );
-
-		// Columns: article aside layout variation
-		registerBlockVariation( 'core/columns', {
+		},
+	},
+	// Columns: article aside layout variation
+	{
+		block: 'core/columns',
+		postTypes: [ 'page' ],
+		settings: {
 			name: 'wp-block-columns-layout-article-aside',
 			title: 'Layout: artikel met zijbalk',
 			description: 'Een layout met een hoofdartikel en een zijbalk.',
@@ -176,10 +184,29 @@ window.addEventListener( 'DOMContentLoaded', () => {
 			supports: {
 				multiple: false,
 			},
+		},
+	},
+];
+
+/**
+ * Register block variations
+ */
+window.addEventListener( 'DOMContentLoaded', () => {
+	const currentPostType = window.theme?.currentPostType ?? null;
+
+	variationRegistry
+		.filter( ( { postTypes } ) =>
+			canRegisterForPostType( postTypes, currentPostType )
+		)
+		.forEach( ( { block, settings } ) => {
+			registerBlockVariation( block, settings );
 		} );
-	}
 
 	unusedVariations.forEach( ( { block, variation } ) => {
 		unregisterBlockVariation( block, variation );
 	} );
 } );
+
+const canRegisterForPostType = ( postTypes, currentPostType ) =>
+	postTypes === 'all' ||
+	( Array.isArray( postTypes ) && postTypes.includes( currentPostType ) );
