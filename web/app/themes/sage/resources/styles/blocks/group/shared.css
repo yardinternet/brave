@@ -34,7 +34,7 @@
 }
 
 .wp-block-group-is-layout-grid {
-	@apply @container my-4 gap-4 max-md:grid-cols-2! max-sm:grid-cols-1! lg:my-6 lg:gap-6 xl:mb-8;
+	@apply max-md:auto-grid! @container my-4 gap-(--grid-gutter) lg:my-6 xl:mb-8;
 
 	.wp-block-group.is-variation-card {
 		@apply m-0;
