@@ -63,4 +63,34 @@ class Theme extends \Yard\Brave\Hooks\Theme
 	{
 		return false;
 	}
+
+	/**
+	 * Restrict blocks for specific post types.
+	 */
+	#[Filter('allowed_block_types_all')]
+	public function restrictBlocksForPostTypes(bool|array $allowedBlockTypes, \WP_Block_Editor_Context $editorContext): bool|array
+	{
+		$postType = $editorContext?->post?->post_type;
+
+		if (! $postType) {
+			return $allowedBlockTypes;
+		}
+
+		$restriction = config("gutenberg.postTypeBlockRestrictions.{$postType}", []);
+
+		if (empty($restriction)) {
+			return $allowedBlockTypes;
+		}
+
+		$baseBlocks = config("gutenberg.blockSets.{$restriction['blockSet']}", []);
+		$add = $restriction['add'] ?? [];
+		$remove = $restriction['remove'] ?? [];
+
+		$finalAllowedBlocks = array_values(array_unique(array_diff(
+			array_merge($baseBlocks, $add),
+			$remove
+		)));
+
+		return ! empty($finalAllowedBlocks) ? $finalAllowedBlocks : $allowedBlockTypes;
+	}
 }
