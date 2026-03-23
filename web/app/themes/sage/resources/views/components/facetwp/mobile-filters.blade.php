@@ -4,8 +4,8 @@
     'label' => __('Filters', 'sage'),
 ])
 
-<x-brave::dialog.trigger :dialogId="$dialogId" class="is-button z-50 w-full text-center lg:hidden">
-	<i class="fa-light fa-sliders mr-2" aria-hidden="true"></i>
+<x-brave::dialog.trigger :dialogId="$dialogId" class="is-button z-50 w-full justify-center lg:hidden">
+	<i class="fa-light fa-sliders" aria-hidden="true"></i>
 	{{ $label }}
 </x-brave::dialog.trigger>
 
@@ -25,14 +25,14 @@
 			</x-brave::dialog.trigger>
 		</div>
 
-		<div class="p-4">
+		<div class="mb-8 flex flex-col gap-8 p-4">
 			<x-facetwp.filters :facets="$facets" />
 		</div>
 
 		<div class="sticky bottom-4 mt-auto flex gap-2 px-4">
 			<x-facetwp.reset-button />
 
-			<x-brave::dialog.trigger :dialogId="$dialogId" class="is-button w-full text-center">
+			<x-brave::dialog.trigger :dialogId="$dialogId" class="is-button w-full justify-center">
 				{{ __('Bekijk resultaten', 'sage') }}
 			</x-brave::dialog.trigger>
 		</div>
