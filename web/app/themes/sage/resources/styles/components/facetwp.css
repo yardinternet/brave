@@ -11,7 +11,7 @@
 
 .facetwp {
 	.facetwp-facet {
-		@apply mb-8;
+		@apply mb-0;
 	}
 
 	.facetwp-input-wrap {
@@ -118,8 +118,80 @@
 			@apply is-button is-button-small is-button-subtle m-0 bg-none px-[0.5em] py-[0.25em];
 
 			&::after {
-				@apply fontawesome ml-3 leading-none;
+				@apply fontawesome leading-none;
 				--fa-icon: '\f00d';
+			}
+		}
+	}
+
+	/* Facet: fSelect */
+	.facetwp-type-fselect {
+		.fs-wrap {
+			@apply min-w-full;
+
+			.fs-label-wrap {
+				@apply is-select;
+
+				&::before {
+					@apply fontawesome absolute top-1/2 right-4 -translate-y-1/2 text-primary;
+					--fa-icon: '\f078';
+				}
+
+				.fs-label {
+					@apply p-0;
+				}
+
+				.fs-arrow {
+					@apply hidden;
+				}
+			}
+		}
+
+		.fs-dropdown {
+			@apply mt-px rounded-b-theme border-0 bg-white shadow;
+			--fs-option-border-color: var( --color-gray-100 );
+			--fs-option-bg-color-selected: var( --color-gray-50 );
+
+			.fs-search {
+				@apply relative bg-inherit p-4;
+
+				&::after {
+					@apply fontawesome pointer-events-none absolute top-1/2 right-6 -translate-y-1/2;
+					--fa-icon: '\f002';
+				}
+
+				input {
+					@apply is-text-input;
+				}
+			}
+
+			.fs-option {
+				@apply relative border-t border-(--fs-option-border-color) p-4 pr-12;
+
+				@variant hocus {
+					@apply bg-(--fs-option-bg-color-selected);
+				}
+
+				&.selected {
+					@apply bg-(--fs-option-bg-color-selected);
+
+					&::after {
+						@apply fontawesome absolute top-1/2 right-4 -translate-y-1/2 text-green-700;
+						--fa-icon: '\f00c';
+					}
+				}
+			}
+
+			.fs-checkbox {
+				@apply hidden;
+			}
+
+			.fs-option-label {
+				@apply overflow-x-clip text-ellipsis;
+			}
+
+			.fs-no-results {
+				@apply cursor-auto border-t border-(--fs-option-border-color) p-4 text-center text-red-700;
 			}
 		}
 	}

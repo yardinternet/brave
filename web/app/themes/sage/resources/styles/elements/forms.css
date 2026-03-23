@@ -8,19 +8,22 @@
 	--input-font-size: 1rem;
 	--input-padding: 0.75rem 1rem;
 	--input-radius: var( --radius-theme );
+
+	--select-bg-color: var( --color-bg-white );
+	--select-border-width: 1px;
+	--select-border-radius: var( --radius-theme );
+	--select-border-color: var( --color-gray-400 );
+	--select-border-color-hover: var( --color-primary );
+	--select-padding: var( --input-padding );
+	--select-font-size: var( --input-font-size );
 }
 
 @variant all-form-text-inputs {
-	@apply rounded-(--input-radius) border-0 border-b-(length:--input-border-width) border-(--input-border-color) bg-(--input-bg-color) p-(--input-padding) text-(length:--input-font-size) leading-snug shadow-(--input-box-shadow);
-
-	&:focus {
-		@apply outline-none;
-		--input-border-color: var( --input-border-color-focus );
-	}
+	@apply is-text-input;
 }
 
 select:not( [multiple] ) {
-	@apply cursor-pointer rounded-(--input-radius) border-none bg-gray-100 shadow-none hover:ring-1 hover:ring-primary;
+	@apply is-select;
 }
 
 input[type='checkbox'],
