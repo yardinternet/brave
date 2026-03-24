@@ -28,10 +28,3 @@
 		@apply create-main-content-alignment;
 	}
 }
-
-/* Only show selectable blocks in inserter */
-:root {
-	.block-editor-inserter__all-blocks {
-		@apply hidden;
-	}
-}
