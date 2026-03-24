@@ -217,10 +217,10 @@
 }
 
 @utility use-block-spacing {
-	@apply not-first:mbs-(--block-spacing-start) not-last:mbe-(--block-spacing-end);
+	@apply not-first:mt-(--block-spacing-top) not-last:mb-(--block-spacing-bottom);
 
 	/* Breadcrumb and headings control spacing between itself and adjacent blocks */
 	:is( .brave-breadcrumb, .wp-block-heading ) + & {
-		--block-spacing-start: 0 !important;
+		--block-spacing-top: 0 !important;
 	}
 }

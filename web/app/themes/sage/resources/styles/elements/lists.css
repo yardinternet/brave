@@ -5,8 +5,8 @@
 
 .wp-block-list {
 	@apply use-block-spacing list-(--list-type) space-y-(--list-spacing) pl-(--list-indent);
-	--block-spacing-start: 1.5rem;
-	--block-spacing-end: 1.5rem;
+	--block-spacing-top: 1.5rem;
+	--block-spacing-bottom: 1.5rem;
 
 	&:is( ol ) {
 		--list-type: decimal;
@@ -25,8 +25,8 @@
 	}
 
 	:is( ol, ul ) {
-		--block-spacing-start: var( --list-spacing );
-		--block-spacing-end: 0;
+		--block-spacing-top: var( --list-spacing );
+		--block-spacing-bottom: 0;
 
 		ol {
 			--list-type: lower-roman;
