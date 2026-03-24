@@ -1,39 +1,44 @@
 :root {
+	--list-block-spacing-bottom: 1.5rem;
+	--list-block-spacing-top: 1.5rem;
 	--list-indent: 1.5rem;
 	--list-spacing: 0.5rem;
+	--list-type-ol-level-1: decimal;
+	--list-type-ol-level-2: lower-alpha;
+	--list-type-ol-level-3: lower-roman;
+	--list-type-ul-level-1: disc;
+	--list-type-ul-level-2: circle;
+	--list-type-ul-level-3: square;
 }
 
 .wp-block-list {
-	@apply use-block-spacing list-(--list-type) space-y-(--list-spacing) pl-(--list-indent);
-	--block-spacing-top: 1.5rem;
-	--block-spacing-bottom: 1.5rem;
+	@apply mt-(--list-block-spacing-top) mb-(--list-block-spacing-bottom) flex list-(--list-type) flex-col gap-(--list-spacing) pl-(--list-indent);
 
 	&:is( ol ) {
-		--list-type: decimal;
+		--list-type: var( --list-type-ol-level-1 );
 	}
 
 	&:is( ul ) {
-		--list-type: disc;
+		--list-type: var( --list-type-ul-level-1 );
 	}
 
 	ol {
-		--list-type: lower-alpha;
+		--list-type: var( --list-type-ol-level-2 );
 	}
 
 	ul {
-		--list-type: circle;
+		--list-type: var( --list-type-ul-level-2 );
 	}
 
 	:is( ol, ul ) {
-		--block-spacing-top: var( --list-spacing );
-		--block-spacing-bottom: 0;
+		@apply mt-(--list-spacing) mb-0;
 
 		ol {
-			--list-type: lower-roman;
+			--list-type: var( --list-type-ol-level-3 );
 		}
 
 		ul {
-			--list-type: square;
+			--list-type: var( --list-type-ul-level-3 );
 		}
 	}
 
