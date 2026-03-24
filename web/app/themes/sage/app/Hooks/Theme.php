@@ -78,7 +78,13 @@ class Theme extends \Yard\Brave\Hooks\Theme
 
 		$restriction = config("gutenberg.postTypeBlockRestrictions.{$postType}", []);
 
-		if (! is_array($restriction) || [] === $restriction || [] === $restriction['blockSet'] || ! is_string($restriction['blockSet'])) {
+		if (! is_array($restriction) || [] === $restriction) {
+			return $allowedBlockTypes;
+		}
+
+		$blockSet = $restriction['blockSet'] ?? null;
+
+		if (! is_string($blockSet) || '' === trim($blockSet)) {
 			return $allowedBlockTypes;
 		}
 
