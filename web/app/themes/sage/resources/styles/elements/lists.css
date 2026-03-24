@@ -30,7 +30,8 @@
 		--list-type: var( --list-type-ul-level-2 );
 	}
 
-	:is( ol, ul ) {
+	ol,
+	ul {
 		@apply mt-(--list-spacing) mb-0;
 
 		ol {
@@ -46,7 +47,8 @@
 		@apply list-none;
 		--list-indent: 0;
 
-		:is( ol, ul ) {
+		ol,
+		ul {
 			@apply list-none;
 		}
 	}
