@@ -32,7 +32,7 @@
 	}
 
 	.sub-menu {
-		@apply mb-2 hidden list-none px-3;
+		@apply mb-2 hidden px-3;
 
 		.menu-item {
 			&.current-menu-item > a {

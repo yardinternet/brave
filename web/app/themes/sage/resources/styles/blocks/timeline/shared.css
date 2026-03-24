@@ -51,7 +51,7 @@
 }
 
 .wp-block-yard-timeline-item-collapse__summary {
-	@apply relative min-h-8 cursor-pointer list-none pr-10;
+	@apply relative min-h-8 cursor-pointer pr-10;
 
 	&::-webkit-details-marker {
 		@apply hidden;

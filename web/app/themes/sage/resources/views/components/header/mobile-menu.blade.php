@@ -35,7 +35,7 @@
 			        'container' => '',
 			        'depth' => 2,
 			        'id' => '',
-			        'menu_class' => 'mobile-menu-navigation w-full mb-0 list-none px-4',
+			        'menu_class' => 'mobile-menu-navigation w-full px-4',
 			        'theme_location' => 'primary_navigation',
 			    ]);
 			}
@@ -45,7 +45,7 @@
 			        'container' => '',
 			        'depth' => 1,
 			        'id' => '',
-			        'menu_class' => 'mobile-menu-navigation mobile-menu-top-bar w-full mb-0 list-none px-4',
+			        'menu_class' => 'mobile-menu-navigation mobile-menu-top-bar w-full px-4',
 			        'theme_location' => 'top_bar_navigation',
 			    ]);
 			}

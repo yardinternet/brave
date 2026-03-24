@@ -5,7 +5,7 @@
 			    'container' => '',
 			    'depth' => 2,
 			    'id' => '',
-			    'menu_class' => 'nav pl-0 flex align-center justify-center list-none h-full mb-0',
+			    'menu_class' => 'nav flex align-center justify-center h-full',
 			    'theme_location' => 'primary_navigation',
 			]);
 		@endphp

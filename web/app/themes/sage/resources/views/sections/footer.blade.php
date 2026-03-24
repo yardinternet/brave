@@ -14,7 +14,7 @@
 						    'container' => '',
 						    'depth' => 1,
 						    'id' => '',
-						    'menu_class' => 'footer-menu flex flex-wrap items-center list-none h-full m-0 p-0 gap-x-3 gap-y-1',
+						    'menu_class' => 'footer-menu flex flex-wrap items-center h-full gap-x-3 gap-y-1',
 						    'theme_location' => 'footer_navigation',
 						]);
 					@endphp
