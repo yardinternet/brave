@@ -36,4 +36,13 @@
 			--list-type: square;
 		}
 	}
+
+	&.is-style-unstyled {
+		@apply list-none;
+		--list-indent: 0;
+
+		:is( ol, ul ) {
+			@apply list-none;
+		}
+	}
 }
