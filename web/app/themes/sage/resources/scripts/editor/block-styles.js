@@ -4,25 +4,25 @@
 import { registerBlockStyle } from '@wordpress/blocks';
 import domReady from '@wordpress/dom-ready';
 
-const buttonStyles = [
-	{
-		label: 'Outline',
-		name: 'outlined',
-	},
-];
-
-const listStyles = [
-	{
-		label: 'Stijlloos',
-		name: 'unstyled',
-	},
-];
+const blockStyles = {
+	'core/button': [
+		{
+			name: 'outlined',
+			label: 'Outline',
+		},
+	],
+	'core/list': [
+		{
+			name: 'unstyled',
+			label: 'Stijlloos',
+		},
+	],
+};
 
 domReady( () => {
-	// Register block styles
-	buttonStyles.forEach( ( style ) =>
-		registerBlockStyle( 'core/button', style )
-	);
-
-	listStyles.forEach( ( style ) => registerBlockStyle( 'core/list', style ) );
+	Object.entries( blockStyles ).forEach( ( [ block, styles ] ) => {
+		styles.forEach( ( style ) => {
+			registerBlockStyle( block, style );
+		} );
+	} );
 } );
