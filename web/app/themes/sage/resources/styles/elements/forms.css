@@ -6,7 +6,7 @@
 	--input-border-width: 2px;
 	--input-box-shadow: var( --shadow-sm );
 	--input-font-size: 1rem;
-	--input-padding: 0.75rem 1rem;
+	--input-padding: 0.75em 1em;
 	--input-radius: var( --radius-theme );
 
 	--select-bg-color: var( --color-bg-white );
@@ -28,7 +28,7 @@ select:not( [multiple] ) {
 
 input[type='checkbox'],
 input[type='radio'] {
-	@apply cursor-pointer accent-primary;
+	@apply accent-primary cursor-pointer;
 
 	+ label {
 		@apply ml-1 cursor-pointer !text-sm;
