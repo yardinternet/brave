@@ -24,6 +24,16 @@
 	"prefer-stable": true,
 	"repositories": [
 		{
+			"name": "satispress",
+			"type": "composer",
+			"url": "https://packagist.yard.nl/satispress/"
+		},
+		{
+			"name": "satis",
+			"type": "composer",
+			"url": "https://satis.yard.nl"
+		},
+		{
 			"type": "composer",
 			"url": "https://wpackagist.org",
 			"only": [
@@ -77,17 +87,8 @@
 		"johnbillion/query-monitor": "^3.20",
 		"yard/brave-scaffold": "^2.0",
 		"yard/lando-brave": "^1.0",
-		"yard/php-cs-fixer-rules": "^1.0"
-	},
-	"suggest": {
-		"gravity/gravityforms": "",
-		"deliciousbrains-plugin/wp-migrate-db-pro": "",
-		"plugin/yard-dashboard": "",
-		"wpengine/advanced-custom-fields-pro": "",
-		"ypackagist/facetwp": "",
-		"ypackagist/searchwp": "",
-		"ypackagist/wp-seopress-pro": "",
-		"yard/wp-deployer": "dev"
+		"yard/php-cs-fixer-rules": "^1.0",
+		"yard/wp-deployer": "^1.5"
 	},
 	"autoload": {
 		"psr-4": {
@@ -118,12 +119,11 @@
 		"post-autoload-dump": [
 			"Roots\\Acorn\\ComposerScripts::postAutoloadDump"
 		],
-		"private-setup": [
-			"composer repo add satis composer https://satis.yard.nl",
-			"composer repo add satispress composer https://packagist.yard.nl/satispress/",
-			"composer require yard/brave-private-setup --dev",
-			"wp acorn setup:dependencies",
-			"wp acorn setup:deployer"
+		"private-deployer": [
+			"composer require yard/wp-deployer --dev"
+		],
+		"private-packages": [
+			"composer require gravity/gravityforms deliciousbrains-plugin/wp-migrate-db-pro plugin/yard-dashboard wpengine/advanced-custom-fields-pro ypackagist/facetwp ypackagist/searchwp ypackagist/wp-seopress-pro"
 		]
 	}
 }
