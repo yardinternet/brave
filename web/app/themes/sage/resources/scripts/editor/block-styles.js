@@ -11,9 +11,18 @@ const buttonStyles = [
 	},
 ];
 
+const listStyles = [
+	{
+		label: 'Stijlloos',
+		name: 'unstyled',
+	},
+];
+
 domReady( () => {
 	// Register block styles
 	buttonStyles.forEach( ( style ) =>
 		registerBlockStyle( 'core/button', style )
 	);
+
+	listStyles.forEach( ( style ) => registerBlockStyle( 'core/list', style ) );
 } );
