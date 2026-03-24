@@ -8,32 +8,32 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<?php wp_body_open(); ?>
-	<?php do_action('get_header'); ?>
+<?php wp_body_open(); ?>
+<?php do_action('get_header'); ?>
 
-	<div id="app" class="flex min-h-screen flex-col overflow-x-clip">
-		<a class="is-button on-focus-visible focus:fixed! focus:left-4! focus:top-4!" href="#main">
-			{{ __('Skip to content') }}
-		</a>
+<div id="app" class="flex min-h-screen flex-col overflow-x-clip">
+	<a class="is-button on-focus-visible focus:fixed! focus:left-4! focus:top-4!" href="#main">
+		{{ __('Skip to content') }}
+	</a>
 
-		@include('sections.header')
+	@include('sections.header')
 
-		<main id="main" class="main is-main-content create-main-content-alignment mt-(--combined-bar-height) flex-auto">
-			@if (post_password_required())
-				@php(the_content())
-			@else
-				<x-brave-breadcrumb class="container py-3 text-sm" listClass="align-items-center flex list-none flex-wrap pl-0 mb-0"
-					itemClass="not-last:after:content-['|'] after:mx-2 text-gray-500"
-					linkClass="inline-block text-black no-underline hocus:text-primary focus:underline" />
-				{{ $slot }}
-			@endif
-		</main>
+	<main id="main" class="main is-main-content create-main-content-alignment mt-(--combined-bar-height) flex-auto">
+		@if (post_password_required())
+			@php(the_content())
+		@else
+			<x-brave-breadcrumb class="container py-3 text-sm" listClass="align-items-center flex flex-wrap"
+				itemClass="not-last:after:content-['|'] after:mx-2 text-gray-500"
+				linkClass="inline-block text-black no-underline hocus:text-primary focus:underline" />
+			{{ $slot }}
+		@endif
+	</main>
 
-		@include('sections.footer')
-	</div>
+	@include('sections.footer')
+</div>
 
-	<?php do_action('get_footer'); ?>
-	<?php wp_footer(); ?>
+<?php do_action('get_footer'); ?>
+<?php wp_footer(); ?>
 </body>
 
 </html>

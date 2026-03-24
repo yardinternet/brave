@@ -51,7 +51,7 @@
 	}
 
 	.sub-menu {
-		@apply invisible absolute mb-0 min-w-max -translate-y-3 list-none bg-white pl-0 opacity-0 shadow-md transition-all ease-base;
+		@apply invisible absolute mb-0 min-w-max -translate-y-3 bg-white opacity-0 shadow-md transition-all ease-base;
 
 		.menu-item {
 			a {
