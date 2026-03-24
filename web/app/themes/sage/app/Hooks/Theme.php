@@ -78,19 +78,30 @@ class Theme extends \Yard\Brave\Hooks\Theme
 
 		$restriction = config("gutenberg.postTypeBlockRestrictions.{$postType}", []);
 
-		if (empty($restriction)) {
+		if (! is_array($restriction) || [] === $restriction || [] === $restriction['blockSet'] || ! is_string($restriction['blockSet'])) {
 			return $allowedBlockTypes;
 		}
 
 		$baseBlocks = config("gutenberg.blockSets.{$restriction['blockSet']}", []);
-		$add = $restriction['add'] ?? [];
-		$remove = $restriction['remove'] ?? [];
+		$add = isset($restriction['add']) && is_array($restriction['add']) ? $restriction['add'] : [];
+		$remove = isset($restriction['remove']) && is_array($restriction['remove']) ? $restriction['remove'] : [];
 
-		$finalAllowedBlocks = array_values(array_unique(array_diff(
-			array_merge($baseBlocks, $add),
-			$remove
-		)));
+		$finalAllowedBlocks = array_values(array_unique(
+			array_diff([...$baseBlocks, ...$add], $remove)
+		));
 
-		return ! empty($finalAllowedBlocks) ? $finalAllowedBlocks : $allowedBlockTypes;
+		if ([] === $finalAllowedBlocks) {
+			return $allowedBlockTypes;
+		}
+
+		// If previous filters have already restricted blocks via an array, intersect with our allowed set
+		// so we don't re-allow blocks they intentionally disallowed.
+		if (is_array($allowedBlockTypes)) {
+			$intersected = array_values(array_intersect($allowedBlockTypes, $finalAllowedBlocks));
+
+			return [] !== $intersected ? $intersected : $allowedBlockTypes;
+		}
+
+		return $allowedBlockTypes;
 	}
 }

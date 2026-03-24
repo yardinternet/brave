@@ -119,5 +119,4 @@ return [
 			'blockSet' => 'content',
 		],
 	],
-
 ];

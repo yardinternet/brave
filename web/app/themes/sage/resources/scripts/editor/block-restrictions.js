@@ -11,7 +11,7 @@ addFilter(
 	'yard/restrict-inner-blocks',
 	( settings, name ) => {
 		const innerBlockRestrictions =
-			window?.theme.gutenbergConfig?.innerBlockRestrictions ?? {};
+			window?.theme?.gutenbergConfig?.innerBlockRestrictions ?? {};
 
 		const restriction = innerBlockRestrictions?.[ name ];
 
@@ -33,7 +33,7 @@ addFilter(
  * Resolve config for a parent block
  */
 const resolveAllowedBlocks = ( rule = {}, defaultAllowedBlocks = [] ) => {
-	const blockSets = window?.theme.gutenbergConfig?.blockSets ?? {};
+	const blockSets = window?.theme?.gutenbergConfig?.blockSets ?? {};
 	const base = blockSets[ rule.blockSet ] ?? [];
 	const add = rule.add ?? [];
 	const remove = rule.remove ?? [];
