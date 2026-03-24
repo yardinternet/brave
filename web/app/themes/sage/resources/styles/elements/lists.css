@@ -1,54 +1,39 @@
-ul,
-ol {
-	@apply mb-6 pl-8;
-
-	ul,
-	ol {
-		@apply mb-0;
-	}
+:root {
+	--list-block-spacing-end: 1.5rem;
+	--list-block-spacing-start: 1.5rem;
+	--list-indent: 1.5rem;
+	--list-spacing: 0.5rem;
 }
 
-ul {
-	@apply list-disc;
+.wp-block-list {
+	@apply list-(--list-type) space-y-(--list-spacing) pl-(--list-indent) not-first:mt-(--list-block-spacing-start) not-last:mb-(--list-block-spacing-end);
 
-	li::marker {
-		@apply text-primary;
+	&:is( ol ) {
+		--list-type: decimal;
+	}
+
+	&:is( ul ) {
+		--list-type: disc;
+	}
+
+	ol {
+		--list-type: lower-alpha;
 	}
 
 	ul {
-		@apply list-[circle];
-
-		ul {
-			@apply list-[square];
-		}
+		--list-type: circle;
 	}
-}
 
-ol {
-	@apply list-decimal;
-
-	ol {
-		@apply list-[lower-alpha];
+	:is( ol, ul ) {
+		--list-block-spacing-start: var( --list-spacing );
+		--list-block-spacing-end: 0;
 
 		ol {
-			@apply list-[lower-roman];
+			--list-type: lower-roman;
 		}
-	}
-}
 
-ul.is-style-unstyled,
-ol.is-style-unstyled {
-	@apply list-none p-0;
-
-	li {
-		@apply mb-1;
-
-		a {
-			@apply text-black no-underline;
-
-			@variant hocus {
-				@apply underline;
-			}
+		ul {
+			--list-type: square;
 		}
 	}
 }
