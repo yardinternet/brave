@@ -215,12 +215,3 @@
 	@apply fontawesome flex size-(--collapse-button-icon-size) items-center justify-center rounded-(--collapse-button-icon-radius) bg-(--collapse-button-icon-bg-color) leading-[inherit] text-(--collapse-button-icon-color) transition-all;
 	--fa-icon: var( --collapse-button-icon );
 }
-
-@utility use-block-spacing {
-	@apply not-first:mt-(--block-spacing-top) not-last:mb-(--block-spacing-bottom);
-
-	/* Breadcrumb and headings control spacing between itself and adjacent blocks */
-	:is( .brave-breadcrumb, .wp-block-heading ) + & {
-		--block-spacing-top: 0 !important;
-	}
-}
