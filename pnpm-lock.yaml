@@ -14,6 +14,9 @@ importers:
       '@yardinternet/brave-frontend-kit':
         specifier: ^0.7.3
         version: 0.7.3
+      '@yardinternet/gutenberg-block-restrictions':
+        specifier: ^1.0.1
+        version: 1.0.1
       '@yardinternet/gutenberg-components':
         specifier: ^1.3.2
         version: 1.3.3
@@ -2061,6 +2064,9 @@ packages:
 
   '@yardinternet/eslint-config@1.2.4':
     resolution: {integrity: sha512-vLrJW7nIWi4hhOQySkpT/ciewPk+kpOJmythJxEO/vvbJKWwl5/3u89Pdz6dWSRvqswYxOkzE35ac29Cyv7jCA==, tarball: https://npm.pkg.github.com/download/@yardinternet/eslint-config/1.2.4/40771f2dc79141bc9bc39b65ab06bd1d7843445d}
+
+  '@yardinternet/gutenberg-block-restrictions@1.0.1':
+    resolution: {integrity: sha512-adJ8oQk6TaW9Sc0G4g1khWrvBvmLYQWfsGxe+D02z5js0XJYk9BwsTQy9TZ4Ey9DkpF221zUBmmKZQS1voI8fQ==, tarball: https://npm.pkg.github.com/download/@yardinternet/gutenberg-block-restrictions/1.0.1/a3c33876dc60dc201ccf7dac94d50fe13abefebc}
 
   '@yardinternet/gutenberg-components@1.3.3':
     resolution: {integrity: sha512-H9IqIEf6WhS2FqVVGfxcxCnzfyjRaY66OhdZT9oYQux2Yz3j5gZTTHUpYdpxwH8qcXW4hZ7nSF7G+sv6bWw55g==, tarball: https://npm.pkg.github.com/download/@yardinternet/gutenberg-components/1.3.3/80c318fa3e97c2926398a3e8663aef1b75cf32fa}
@@ -6765,6 +6771,8 @@ snapshots:
       - supports-color
       - typescript
     optional: true
+
+  '@yardinternet/gutenberg-block-restrictions@1.0.1': {}
 
   '@yardinternet/gutenberg-components@1.3.3':
     dependencies:
