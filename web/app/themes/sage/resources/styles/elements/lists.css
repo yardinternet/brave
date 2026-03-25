@@ -3,31 +3,25 @@
 	--list-block-spacing-top: 1.5rem;
 	--list-indent: 1.5rem;
 	--list-spacing: 0.5rem;
-	--list-type-ol-level-1: decimal;
-	--list-type-ol-level-2: lower-alpha;
-	--list-type-ol-level-3: lower-roman;
-	--list-type-ul-level-1: disc;
-	--list-type-ul-level-2: circle;
-	--list-type-ul-level-3: square;
 }
 
 .wp-block-list {
 	@apply mt-(--list-block-spacing-top) mb-(--list-block-spacing-bottom) flex list-(--list-type) flex-col gap-(--list-spacing) pl-(--list-indent);
 
 	&:is( ol ) {
-		--list-type: var( --list-type-ol-level-1 );
+		--list-type: decimal;
 	}
 
 	&:is( ul ) {
-		--list-type: var( --list-type-ul-level-1 );
+		--list-type: disc;
 	}
 
 	ol {
-		--list-type: var( --list-type-ol-level-2 );
+		--list-type: lower-alpha;
 	}
 
 	ul {
-		--list-type: var( --list-type-ul-level-2 );
+		--list-type: circle;
 	}
 
 	ol,
@@ -35,11 +29,11 @@
 		@apply mt-(--list-spacing) mb-0;
 
 		ol {
-			--list-type: var( --list-type-ol-level-3 );
+			--list-type: lower-roman;
 		}
 
 		ul {
-			--list-type: var( --list-type-ul-level-3 );
+			--list-type: square;
 		}
 	}
 
