@@ -124,6 +124,9 @@
 		],
 		"private-packages": [
 			"composer require gravity/gravityforms deliciousbrains-plugin/wp-migrate-db-pro plugin/yard-dashboard wpengine/advanced-custom-fields-pro ypackagist/facetwp ypackagist/searchwp ypackagist/wp-seopress-pro"
+		],
+		"gemeente-packages": [
+			"composer require yard/brave-owc"
 		]
 	}
 }
