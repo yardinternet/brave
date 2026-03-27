@@ -88,7 +88,7 @@
 		"yard/brave-scaffold": "^2.0",
 		"yard/lando-brave": "^1.0",
 		"yard/php-cs-fixer-rules": "^1.0",
-		"yard/wp-deployer": "^1.5"
+		"yard/wp-deployer": "dev-feat/migrate-to-localhost"
 	},
 	"autoload": {
 		"psr-4": {
