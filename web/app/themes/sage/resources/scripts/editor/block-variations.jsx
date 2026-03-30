@@ -99,7 +99,7 @@ const variationRegistry = [
 			},
 			scope: [ 'block', 'inserter' ],
 			innerBlocks: [
-				[ 'theme/back-button' ],
+				[ 'theme/back-button', { align: '' } ],
 				[ 'core/post-title', { level: 1 } ],
 				[ 'core/paragraph', { content: 'Voeg de inhoud toe' } ],
 			],
@@ -141,6 +141,7 @@ const variationRegistry = [
 						className: 'layout-article-aside__article',
 					},
 					[
+						[ 'theme/back-button', { align: '' } ],
 						[ 'core/post-title', { level: 1 } ],
 						[ 'core/paragraph', { content: 'Voeg de inhoud toe' } ],
 					],

@@ -90,13 +90,17 @@ class Assets
 	}
 
 	#[Action('admin_head')]
-	public function addGlobalVariablesToEditorWindowObject(): void
+	public function addGlobalsToEditorWindowObject(): void
 	{
+		if (! get_current_screen()?->is_block_editor()) {
+			return;
+		}
+
 		wp_print_inline_script_tag(
-			'window.theme = ' . wp_json_encode([
+			'window.theme = Object.assign({}, window.theme || {}, ' . wp_json_encode([
 				'currentPostType' => get_post_type(),
 				'gutenbergConfig' => config('gutenberg', []),
-			], JSON_UNESCAPED_UNICODE) . ';'
+			], JSON_UNESCAPED_UNICODE) . ');'
 		);
 	}
 }

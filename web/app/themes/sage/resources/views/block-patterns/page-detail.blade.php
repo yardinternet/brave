@@ -1,5 +1,5 @@
 <!-- wp:group {"tagName":"article","className":"layout-article"} -->
-<article class="wp-block-group layout-article"><!-- wp:theme/back-button /-->
+<article class="wp-block-group layout-article"><!-- wp:theme/back-button {"align":""} /-->
 
 <!-- wp:post-title {"level":1} /-->
 
