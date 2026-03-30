@@ -38,7 +38,7 @@ importers:
         version: 1.1.2(eslint@9.39.3(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.8)(stylelint@17.6.0(typescript@5.9.3))(typescript@5.9.3)(vite@7.3.1(@types/node@25.5.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.1))(webpack@5.105.2)
       tailwindcss:
         specifier: ^4.2.0
-        version: 4.2.2
+        version: 4.2.1
       vite:
         specifier: ^7.3.1
         version: 7.3.1(@types/node@25.5.0)(jiti@1.21.7)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.1)
@@ -4216,15 +4216,8 @@ packages:
   tailwindcss@4.2.1:
     resolution: {integrity: sha512-/tBrSQ36vCleJkAOsy9kbNTgaxvGbyOamC30PRePTQe/o1MFwEKHQk4Cn7BNGaPtjp+PuUrByJehM1hgxfq4sw==}
 
-  tailwindcss@4.2.2:
-    resolution: {integrity: sha512-KWBIxs1Xb6NoLdMVqhbhgwZf2PGBpPEiwOqgI4pFIYbNTfBXiKYyWoTsXgBQ9WFg/OlhnvHaY+AEpW7wSmFo2Q==}
-
   tapable@2.3.0:
     resolution: {integrity: sha512-g9ljZiwki/LfxmQADO3dEY1CbpmXT5Hm2fJ+QaGKwSXUylMybePR7/67YW7jOrrvjEgL1Fmz5kzyAjWVWLlucg==}
-    engines: {node: '>=6'}
-
-  tapable@2.3.2:
-    resolution: {integrity: sha512-1MOpMXuhGzGL5TTCZFItxCc0AARf1EZFQkGqMm7ERKj8+Hgr5oLvJOVFcC+lRmR8hCe2S3jC4T5D7Vg/d7/fhA==}
     engines: {node: '>=6'}
 
   terser-webpack-plugin@5.4.0:
@@ -7421,7 +7414,7 @@ snapshots:
   enhanced-resolve@5.20.1:
     dependencies:
       graceful-fs: 4.2.11
-      tapable: 2.3.2
+      tapable: 2.3.0
 
   env-paths@2.2.1: {}
 
@@ -9325,11 +9318,7 @@ snapshots:
 
   tailwindcss@4.2.1: {}
 
-  tailwindcss@4.2.2: {}
-
   tapable@2.3.0: {}
-
-  tapable@2.3.2: {}
 
   terser-webpack-plugin@5.4.0(webpack@5.105.2):
     dependencies:
@@ -9599,7 +9588,7 @@ snapshots:
       mime-types: 2.1.35
       neo-async: 2.6.2
       schema-utils: 4.3.3
-      tapable: 2.3.2
+      tapable: 2.3.0
       terser-webpack-plugin: 5.4.0(webpack@5.105.2)
       watchpack: 2.5.1
       webpack-sources: 3.3.4
