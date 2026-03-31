@@ -13326,16 +13326,16 @@
         },
         {
             "name": "yard/brave-csp",
-            "version": "v1.4.2",
+            "version": "v1.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yardinternet/brave-csp.git",
-                "reference": "df0a714910397bf58c912ed2a2cd366b6aa5d9a2"
+                "reference": "d3679c28c8b02727a8a8a0c43a6708d2bea8cfdb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yardinternet/brave-csp/zipball/df0a714910397bf58c912ed2a2cd366b6aa5d9a2",
-                "reference": "df0a714910397bf58c912ed2a2cd366b6aa5d9a2",
+                "url": "https://api.github.com/repos/yardinternet/brave-csp/zipball/d3679c28c8b02727a8a8a0c43a6708d2bea8cfdb",
+                "reference": "d3679c28c8b02727a8a8a0c43a6708d2bea8cfdb",
                 "shasum": ""
             },
             "require": {
@@ -13358,9 +13358,9 @@
             "description": "Content Security Policy for Brave sites",
             "support": {
                 "issues": "https://github.com/yardinternet/brave-csp/issues",
-                "source": "https://github.com/yardinternet/brave-csp/tree/v1.4.2"
+                "source": "https://github.com/yardinternet/brave-csp/tree/v1.4.3"
             },
-            "time": "2026-03-27T09:05:34+00:00"
+            "time": "2026-03-31T13:29:05+00:00"
         },
         {
             "name": "yard/brave-hooks",
