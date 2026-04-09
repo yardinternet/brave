@@ -71,11 +71,21 @@ class Setup
 			'style',
 		]);
 
+		// Required for the Customizer's Widgets panel. The menu item is hidden via removeWidgetsMenuItem().
+		add_theme_support('widgets');
+
 		/**
 		 * Enable selective refresh for widgets in customizer.
 		 *
 		 * @link https://developer.wordpress.org/reference/functions/add_theme_support/#customize-selective-refresh-widgets
 		 */
 		add_theme_support('customize-selective-refresh-widgets');
+	}
+
+	// Hides the Widgets menu item — widgets support itself is still enabled via themeSupport().
+	#[Action('admin_menu')]
+	public function removeWidgetsMenuItem(): void
+	{
+		remove_submenu_page('themes.php', 'widgets.php');
 	}
 }
