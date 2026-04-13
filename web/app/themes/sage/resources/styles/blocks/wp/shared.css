@@ -13,10 +13,15 @@
 }
 
 .wp-block-cover,
-.wp-block-image img,
-.wp-block-post-featured-image img,
+.wp-block-image,
+.wp-block-post-featured-image,
 .wp-post-image {
-	@apply rounded-theme;
+	&:not( .alignfull ) {
+		&,
+		img {
+			@apply rounded-theme;
+		}
+	}
 }
 
 /* Fix conflict between tailwind and wordpress class "size-full" */
