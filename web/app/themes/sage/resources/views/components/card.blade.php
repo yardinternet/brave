@@ -1,11 +1,10 @@
-@use(App\View\Components\Card\Enums\Direction)
-
 <div @class([
+	$attributes['class'] => isset($attributes['class']),
 	'group relative m-0 flex h-full max-w-full rounded-(--card-radius) border-none bg-(--card-bg-color) p-0 shadow-(--card-shadow) transition-all',
 	$cardClass(),
-	'flex-col' => $direction->isColumn(),
-	'flex-row' => $direction->isRow(),
-	'flex-col md:flex-row!' => $direction->isFluid(),
+	'card-column flex-col' => $direction->isColumn(),
+	'card-row flex-row' => $direction->isRow(),
+	'card-fluid flex-col md:flex-row!' => $direction->isFluid(),
 ])>
 
 	@if ($displayImage)
