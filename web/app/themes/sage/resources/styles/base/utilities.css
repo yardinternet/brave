@@ -55,7 +55,7 @@
 }
 
 @utility dark-background-white-elements {
-	@apply !text-white;
+	@apply text-white!;
 
 	h1,
 	h2,
@@ -66,14 +66,16 @@
 	p,
 	time,
 	i,
-	li,
+	caption,
+	figcaption,
+	li:not( .wp-block-social-link ),
 	li::marker,
-	a:not( .wp-block-button__link ),
+	a:not( .wp-block-button__link, .wp-block-social-link-anchor ),
 	.gfield_required {
-		@apply !text-white;
+		@apply text-white!;
 
 		@variant hocus {
-			@apply !text-white;
+			@apply text-white!;
 		}
 	}
 }
