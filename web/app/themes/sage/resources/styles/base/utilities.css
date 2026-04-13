@@ -208,8 +208,8 @@
 @utility auto-grid {
 	@apply grid gap-(--gap,var(--grid-gutter));
 	grid-template-columns: repeat(
-		var( --mode, auto-fit ),
-		minmax( min( 100%, var( --min, 30ch ) ), 1fr )
+		var( --mode, auto-fill ),
+		minmax( min( 100%, var( --min, 34ch ) ), 1fr )
 	);
 }
 
