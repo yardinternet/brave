@@ -14,7 +14,7 @@
 @source './../../../app/**/*.php';
 
 /* Theme variables - for creating (new) utility classes */
-@theme {
+@theme static {
 	/* Colors */
 	--color-primary: var( --color-primary-500 );
 	--color-primary-100: #dfe4fa;
