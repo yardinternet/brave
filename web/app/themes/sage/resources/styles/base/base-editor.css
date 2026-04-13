@@ -21,7 +21,7 @@
 }
 
 .is-root-container {
-	@apply is-main-content;
+	@apply is-main-content z-1;
 
 	/* Only target editor, not pattern preview windows */
 	&.wp-block-post-content {
