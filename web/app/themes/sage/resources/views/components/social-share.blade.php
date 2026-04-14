@@ -7,6 +7,6 @@
 
 	@foreach ($icons as $type)
 		<x-brave-social-icon :type="$type"
-			class="text-primary-500 hocus:bg-primary-500 bg-primary-100 hocus:text-white rounded-theme flex size-10 items-center justify-center no-underline transition-[transform,visibility] duration-300" />
+			class="text-primary hocus:bg-primary bg-primary-100 hocus:text-white rounded-theme flex size-10 items-center justify-center no-underline transition-[transform,visibility] duration-300" />
 	@endforeach
 </div>

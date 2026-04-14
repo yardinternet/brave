@@ -1,3 +1,10 @@
+@php
+	/**
+	 * @var Log1x\Navi\Navi $primaryNavigation
+	 * @var Log1x\Navi\Navi $topBarNavigation
+	 */
+@endphp
+
 @props([
     'dialogId' => 'js-brave-mobile-menu',
     'label' => __('Menu', 'sage'),
@@ -20,35 +27,54 @@
 	'open:transform-[translateX(0)] open:opacity-100 open:backdrop:bg-black/50',
 ])>
 	<div class="flex h-full flex-col">
-		<div class="z-1 sticky top-0 flex items-center justify-between gap-2 border-b border-gray-100 bg-white p-4">
+		<div class="z-1 sticky top-0 flex items-center justify-between gap-2 border-b border-gray-100 bg-white px-6 py-4">
 			<h2 class="mb-0 text-base font-normal">{{ $label }}</h2>
-			<x-brave::dialog.trigger :dialogId="$dialogId"
-				class="leading-0 -m-2 flex size-[46px] items-center justify-center text-2xl">
+			<x-brave::dialog.trigger :dialogId="$dialogId" class="leading-0 size-11.5 -m-2 flex items-center justify-center text-2xl">
 				<i class="fa-light fa-xmark" aria-hidden="true"></i>
 				<span class="sr-only">Sluit menu</span>
 			</x-brave::dialog.trigger>
 		</div>
 
-		@php
-			if (has_nav_menu('primary_navigation')) {
-			    wp_nav_menu([
-			        'container' => '',
-			        'depth' => 2,
-			        'id' => '',
-			        'menu_class' => 'mobile-menu-navigation w-full px-4',
-			        'theme_location' => 'primary_navigation',
-			    ]);
-			}
+		<x-brave::nav class="px-6 py-8" aria-label="{{ __('Mobiele navigatie', 'sage') }}">
+			@if ($primaryNavigation->isNotEmpty())
+				<x-brave::nav.list class="mb-6">
+					@foreach ($primaryNavigation->all() as $item)
+						<x-brave::nav.item class="group">
+							<x-brave::nav.link :item="$item" class="block py-3 text-lg text-black no-underline focus:text-inherit"
+								activeClass="text-primary font-bold">
+								{!! $item->label !!}
+								@if ($item->children)
+									<i class="fa-light fa-chevron-down group-has-aria-expanded:rotate-180 px-1 transition-all"></i>
+								@endif
+							</x-brave::nav.link>
+							@if ($item->children)
+								<x-brave::nav.dropdown @class(['mb-2 hidden px-3', 'group-has-aria-expanded:block'])>
+									@foreach ($item->children as $child)
+										<x-brave::nav.item>
+											<x-brave::nav.link :item="$child" class="block py-2 text-gray-700 no-underline"
+												activeClass="text-primary">
+												{!! $child->label !!}
+											</x-brave::nav.link>
+										</x-brave::nav.item>
+									@endforeach
+								</x-brave::nav.dropdown>
+							@endif
+						</x-brave::nav.item>
+					@endforeach
+				</x-brave::nav.list>
+			@endif
 
-			if (has_nav_menu('top_bar_navigation')) {
-			    wp_nav_menu([
-			        'container' => '',
-			        'depth' => 1,
-			        'id' => '',
-			        'menu_class' => 'mobile-menu-navigation mobile-menu-top-bar w-full px-4',
-			        'theme_location' => 'top_bar_navigation',
-			    ]);
-			}
-		@endphp
+			@if ($topBarNavigation->isNotEmpty())
+				<x-brave::nav.list class="grid">
+					@foreach ($topBarNavigation->all() as $item)
+						<x-brave::nav.item>
+							<x-brave::nav.link :item="$item" class="block py-2 text-gray-700 no-underline" activeClass="text-primary">
+								{!! $item->label !!}
+							</x-brave::nav.link>
+						</x-brave::nav.item>
+					@endforeach
+				</x-brave::nav.list>
+			@endif
+		</x-brave::nav>
 	</div>
 </x-brave-dialog>

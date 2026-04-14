@@ -1,19 +1,23 @@
-@if (has_nav_menu('top_bar_navigation'))
-	<div class="top-bar h-(--top-bar-height) hidden bg-gray-100 lg:flex">
-		<div class="container h-full">
-			<nav class="flex h-full items-center justify-end text-sm"
-				aria-label="{{ __('Secundaire navigatie', 'sage') }}">
-				@php
-					wp_nav_menu([
-					    'container' => '',
-					    'depth' => 1,
-					    'id' => '',
-					    'menu_class' => 'flex items-center h-full gap-4',
-					    'theme_location' => 'top_bar_navigation',
-					]);
-				@endphp
-			</nav>
-		</div>
+@php
+	/**
+	 * @var Log1x\Navi\Navi $topBarNavigation
+	 */
+@endphp
 
+@if ($topBarNavigation->isNotEmpty())
+	<div class="top-bar h-(--top-bar-height) hidden bg-gray-100 text-sm lg:flex">
+		<x-brave::nav class="container flex h-full items-center justify-end"
+			aria-label="{{ __('Secundaire navigatie', 'sage') }}">
+			<x-brave::nav.list class="flex items-center gap-4">
+				@foreach ($topBarNavigation->all() as $item)
+					<x-brave::nav.item>
+						<x-brave::nav.link :item="$item" class="hover:text-primary text-current no-underline focus:underline"
+							activeClass="text-primary">
+							{!! $item->label !!}
+						</x-brave::nav.link>
+					</x-brave::nav.item>
+				@endforeach
+			</x-brave::nav.list>
+		</x-brave::nav>
 	</div>
 @endif

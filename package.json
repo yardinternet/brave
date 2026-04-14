@@ -25,17 +25,17 @@
 		"yard-toolkit": "yard-toolkit"
 	},
 	"devDependencies": {
-		"@yardinternet/eslint-config": "^1.2.5",
-		"@yardinternet/prettier-config": "^2.0.5",
-		"@yardinternet/stylelint-config": "^1.1.4",
-		"@yardinternet/toolkit": "^2.1.3",
-		"@yardinternet/vite-config": "^1.1.2",
+		"@yardinternet/eslint-config": "^1.2.7",
+		"@yardinternet/prettier-config": "^2.0.6",
+		"@yardinternet/stylelint-config": "^1.1.5",
+		"@yardinternet/toolkit": "^2.1.4",
+		"@yardinternet/vite-config": "^1.2.1",
 		"tailwindcss": "^4.2.0",
 		"vite": "^7.3.1"
 	},
 	"dependencies": {
 		"@yardinternet/a11y-cookie-yes": "^1.2.12",
-		"@yardinternet/brave-frontend-kit": "^0.7.3",
+		"@yardinternet/brave-frontend-kit": "^0.8.0",
 		"@yardinternet/gutenberg-block-restrictions": "^1.0.1",
 		"@yardinternet/gutenberg-components": "^1.3.3"
 	},
