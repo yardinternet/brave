@@ -13334,16 +13334,16 @@
         },
         {
             "name": "yard/brave-components",
-            "version": "v1.3.1",
+            "version": "v1.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yardinternet/brave-components.git",
-                "reference": "4408111c014fb70195e1943780c36fc3bf8408df"
+                "reference": "9d17e45e45e0fa80ab5123bd363a0a3de1f4e1f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yardinternet/brave-components/zipball/4408111c014fb70195e1943780c36fc3bf8408df",
-                "reference": "4408111c014fb70195e1943780c36fc3bf8408df",
+                "url": "https://api.github.com/repos/yardinternet/brave-components/zipball/9d17e45e45e0fa80ab5123bd363a0a3de1f4e1f1",
+                "reference": "9d17e45e45e0fa80ab5123bd363a0a3de1f4e1f1",
                 "shasum": ""
             },
             "require": {
@@ -13383,7 +13383,7 @@
                 "issues": "https://github.com/yardinternet/brave-components/issues",
                 "source": "https://github.com/yardinternet/brave-components"
             },
-            "time": "2026-04-02T13:26:39+00:00"
+            "time": "2026-04-14T09:57:17+00:00"
         },
         {
             "name": "yard/brave-csp",
