@@ -10,7 +10,7 @@
 	@if ($cookieLawPluginActive || $footerNavigation->isNotEmpty())
 		<div class="border-t-2 border-gray-100 py-4 text-sm">
 			<x-brave::nav class="container" aria-label="{{ __('Footer navigatie', 'sage') }}">
-				<x-brave::nav.list class="list-reset flex flex-wrap gap-x-3 gap-y-2">
+				<x-brave::nav.list class="flex flex-wrap gap-x-3 gap-y-2">
 					@if ($cookieLawPluginActive)
 						<x-brave::nav.item class="not-last:after:content-['|'] flex gap-x-3">
 							<button class="cky-banner-element hover:text-primary focus:underline">

@@ -1,6 +1,3 @@
-overrides:
-    '@yardinternet/brave-frontend-kit': link:../../../../Packages/brave-frontend-kit
-
 publicHoistPattern:
     - prettier
     - stylelint

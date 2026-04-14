@@ -39,7 +39,7 @@
 
 		<x-brave::nav class="px-6 py-8" aria-label="{{ __('Mobiele navigatie', 'sage') }}">
 			@if ($primaryNavigation->isNotEmpty())
-				<x-brave::nav.list class="list-reset mb-6">
+				<x-brave::nav.list class="mb-6">
 					@foreach ($primaryNavigation->all() as $item)
 						<x-brave::nav.item class="group">
 							<x-brave::nav.link :item="$item" class="block py-3 text-lg text-black no-underline focus:text-inherit"
@@ -50,10 +50,7 @@
 								@endif
 							</x-brave::nav.link>
 							@if ($item->children)
-								<x-brave::nav.dropdown @class([
-									'list-reset group-has-aria-expanded:block! mb-2 hidden list-none px-3',
-									'group-has-aria-expanded:block',
-								])>
+								<x-brave::nav.dropdown @class(['mb-2 hidden px-3', 'group-has-aria-expanded:block'])>
 									@foreach ($item->children as $child)
 										<x-brave::nav.item>
 											<x-brave::nav.link :item="$child" class="block py-2 text-gray-700 no-underline"
@@ -70,7 +67,7 @@
 			@endif
 
 			@if ($topBarNavigation->isNotEmpty())
-				<x-brave::nav.list class="list-reset grid">
+				<x-brave::nav.list class="grid">
 					@foreach ($topBarNavigation->all() as $item)
 						<x-brave::nav.item>
 							<x-brave::nav.link :item="$item" class="block py-2 text-gray-700 no-underline" activeClass="text-primary">

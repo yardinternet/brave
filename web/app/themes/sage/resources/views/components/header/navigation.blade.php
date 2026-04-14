@@ -6,7 +6,7 @@
 
 @if ($primaryNavigation->isNotEmpty())
 	<x-brave::nav class="hidden items-center lg:flex" aria-label="{{ __('Primaire navigatie', 'sage') }}">
-		<x-brave::nav.list class="nav list-reset flex h-full items-center justify-center gap-x-4 xl:gap-x-8">
+		<x-brave::nav.list class="nav flex h-full items-center justify-center gap-x-4 xl:gap-x-8">
 			@foreach ($primaryNavigation->all() as $item)
 				<x-brave::nav.item class="group relative h-full">
 					<x-brave::nav.link :item="$item"
@@ -31,7 +31,7 @@
 
 					@if ($item->children)
 						<x-brave::nav.dropdown mode="hover" @class([
-							'list-reset ease-base invisible absolute min-w-60 -translate-y-3 bg-white opacity-0 shadow-md transition-all',
+							'ease-base invisible absolute min-w-60 -translate-y-3 bg-white opacity-0 shadow-md transition-all',
 							'group-has-aria-expanded:visible group-has-aria-expanded:translate-y-0 group-has-aria-expanded:opacity-100',
 						])>
 							@foreach ($item->children as $child)
