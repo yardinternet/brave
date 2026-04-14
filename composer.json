@@ -85,6 +85,7 @@
 		"captainhook/captainhook": "^5.24",
 		"captainhook/hook-installer": "^1.0",
 		"johnbillion/query-monitor": "^3.20",
+		"yard/brave-private-setup": "^1.0",
 		"yard/brave-scaffold": "^2.0",
 		"yard/lando-brave": "^1.0",
 		"yard/php-cs-fixer-rules": "^1.0"
@@ -122,7 +123,7 @@
 			"composer require yard/wp-deployer --dev"
 		],
 		"private-packages": [
-			"composer require --no-interaction gravity/gravityforms deliciousbrains-plugin/wp-migrate-db-pro plugin/yard-dashboard wpengine/advanced-custom-fields-pro ypackagist/facetwp ypackagist/searchwp ypackagist/wp-seopress-pro"
+			"composer require --no-interaction gravity/gravityforms deliciousbrains-plugin/wp-migrate-db-pro yard/brave-dashboard wpengine/advanced-custom-fields-pro ypackagist/facetwp ypackagist/searchwp ypackagist/wp-seopress-pro"
 		],
 		"gemeente-packages": [
 			"composer require --no-interaction yard/brave-owc"

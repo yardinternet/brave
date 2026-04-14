@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "abf54c3b79f08ded105d6654c2f71ddd",
+    "content-hash": "64d7b24e107c51cbf5ea35094a8f56df",
     "packages": [
         {
             "name": "bordoni/phpass",
@@ -13803,6 +13803,83 @@
                 }
             ],
             "time": "2026-03-24T13:12:05+00:00"
+        },
+        {
+            "name": "yard/brave-private-setup",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:yardinternet/brave-private-setup.git",
+                "reference": "5ae743f74cac58a8c98964647ca445313b9c85af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://satis.yard.nl/dist/yard/brave-private-setup/yard-brave-private-setup-5ae743f74cac58a8c98964647ca445313b9c85af-zip-e6ab89.zip",
+                "reference": "5ae743f74cac58a8c98964647ca445313b9c85af",
+                "shasum": "b0399b80cb3059cf2912357741b85b602c80d967"
+            },
+            "require": {
+                "php": ">=8.1",
+                "roots/acorn": "^4.3",
+                "spatie/laravel-package-tools": "^1.16"
+            },
+            "require-dev": {
+                "10up/wp_mock": "^0.4.2",
+                "larastan/larastan": "^2.9",
+                "orchestra/testbench": "^8.27",
+                "pestphp/pest": "^2.36",
+                "szepeviktor/phpstan-wordpress": "^1.3",
+                "yard/php-cs-fixer-rules": "^1.0"
+            },
+            "type": "package",
+            "extra": {
+                "acorn": {
+                    "providers": [
+                        "Yard\\Brave\\Private\\Setup\\PrivateSetupServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Yard\\Brave\\Private\\Setup\\": "src/"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "if [ -f ./vendor/laravel/framework/src/Illuminate/Foundation/helpers.php ]; then sed -i -e \"s#function __(#function a__(#\" ./vendor/laravel/framework/src/Illuminate/Foundation/helpers.php; fi",
+                    "if [ -f ./vendor/roots/acorn/src/Illuminate/Foundation/helpers.php ]; then sed -i -e \"s#function __(#function b__(#\" ./vendor/roots/acorn/src/Illuminate/Foundation/helpers.php; fi",
+                    "if [ -f ./vendor/larastan/larastan/stubs/common/Helpers.stub ]; then sed -i -e \"s#function __(#function c__(#\" ./vendor/larastan/larastan/stubs/common/Helpers.stub; fi"
+                ],
+                "all": [
+                    "@test",
+                    "@analyse",
+                    "@format"
+                ],
+                "analyse": [
+                    "vendor/bin/phpstan analyse --debug --memory-limit 1G"
+                ],
+                "format": [
+                    "vendor/bin/php-cs-fixer fix"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test:coverage": [
+                    "XDEBUG_MODE=coverage vendor/bin/pest --coverage"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Setup commands for Brave",
+            "keywords": [
+                "dev"
+            ],
+            "support": {
+                "source": "https://github.com/yardinternet/brave-setup",
+                "issues": "https://github.com/yardinternet/brave-setup/issues"
+            },
+            "time": "2026-02-20T15:26:39+00:00"
         },
         {
             "name": "yard/brave-scaffold",
