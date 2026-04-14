@@ -12,11 +12,14 @@
 	@apply mb-6 md:mb-8;
 }
 
+.wp-post-image:where( :not( .alignfull ) ) {
+	@apply rounded-theme;
+}
+
 .wp-block-cover,
 .wp-block-image,
-.wp-block-post-featured-image,
-.wp-post-image {
-	&:not( .alignfull ) {
+.wp-block-post-featured-image {
+	&:where( :not( .alignfull ) ) {
 		&,
 		img {
 			@apply rounded-theme;
