@@ -3,8 +3,6 @@
 	 * @var Log1x\Navi\Navi $primaryNavigation
 	 * @var Log1x\Navi\Navi $topBarNavigation
 	 */
-
-	use Log1x\Navi\Navi;
 @endphp
 
 @props([
@@ -12,7 +10,7 @@
     'label' => __('Menu', 'sage'),
 ])
 
-<x-brave::dialog.trigger :dialogId="$dialogId" class="hamburger h-11.5 group flex flex-col gap-y-2 lg:hidden">
+<x-brave::dialog.trigger :dialogId="$dialogId" class="hamburger group flex h-[46px] flex-col gap-y-2 lg:hidden">
 	<span
 		class="block h-0.5 w-8 rounded-full bg-black transition-all duration-300 ease-in-out group-aria-expanded:w-8 group-aria-expanded:translate-y-3 group-aria-expanded:rotate-45"></span>
 	<span
@@ -71,7 +69,7 @@
 					@foreach ($topBarNavigation->all() as $item)
 						<x-brave::nav.item>
 							<x-brave::nav.link :item="$item" class="block py-2 text-gray-700 no-underline" activeClass="text-primary">
-								{{ $item->label }}
+								{!! $item->label !!}
 							</x-brave::nav.link>
 						</x-brave::nav.item>
 					@endforeach
