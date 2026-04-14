@@ -13,10 +13,10 @@
 </x-brave::dialog.trigger>
 
 <x-brave-dialog :id="$dialogId" :ariaLabel="__('Zoekbalk', 'sage')" @class([
-	'search-bar transition-discrete h-(--combined-bar-height) px-3 w-full max-w-full -translate-y-full bg-white opacity-0 transition-all duration-500',
+	'search-bar transition-discrete h-(--combined-bar-height) px-3 w-full max-w-full transform-[translateY(-100%)] bg-white opacity-0 transition-all duration-500',
 	'backdrop:transition-discrete backdrop:pointer-events-none backdrop:bg-black/0 backdrop:transition-all backdrop:duration-500',
-	'starting:open:-translate-y-full starting:open:opacity-0 starting:open:backdrop:bg-black/0',
-	'open:translate-y-0 open:opacity-100 open:backdrop:bg-black/50',
+	'starting:open:transform-[translateY(-100%)] starting:open:opacity-0 starting:open:backdrop:bg-black/0',
+	'open:transform-[translateY(0)] open:opacity-100 open:backdrop:bg-black/50',
 ])>
 	<form class="flex h-full w-full items-center justify-center gap-2" method="get" action="{{ esc_url(home_url('/')) }}">
 		<input id="js-brave-search-bar-input"
