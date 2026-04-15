@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5cffc25f83be2b4beb2950e1b0c987eb",
+    "content-hash": "92be7f836ccdd58eeed72dff24c83376",
     "packages": [
         {
             "name": "bordoni/phpass",
@@ -13279,6 +13279,24 @@
             "homepage": "https://wordpress.org/plugins/cookie-law-info/"
         },
         {
+            "name": "wpackagist-plugin/generate-security-txt",
+            "version": "1.0.12",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/generate-security-txt/",
+                "reference": "tags/1.0.12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/generate-security-txt.1.0.12.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/generate-security-txt/"
+        },
+        {
             "name": "wpackagist-plugin/relay",
             "version": "1.5.1",
             "source": {
@@ -13313,6 +13331,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/stream/"
+        },
+        {
+            "name": "wpackagist-plugin/two-factor",
+            "version": "0.16.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/two-factor/",
+                "reference": "tags/0.16.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/two-factor.0.16.0.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/two-factor/"
         },
         {
             "name": "wpackagist-plugin/wp-seopress",

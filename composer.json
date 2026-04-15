@@ -1,129 +1,127 @@
 {
-	"name": "yard/brave",
-	"type": "project",
-	"license": "MIT",
-	"description": "WordPress boilerplate with Bedrock and Sage",
-	"support": {
-		"source": "https://github.com/yardinternet/brave"
-	},
-	"config": {
-		"optimize-autoloader": true,
-		"preferred-install": "dist",
-		"sort-packages": true,
-		"allow-plugins": {
-			"captainhook/hook-installer": true,
-			"composer/installers": true,
-			"dangoodman/composer-for-wordpress": true,
-			"roots/wordpress-core-installer": true
-		},
-		"platform": {
-			"php": "8.2"
-		}
-	},
-	"minimum-stability": "stable",
-	"prefer-stable": true,
-	"repositories": [
-		{
-			"type": "composer",
-			"url": "https://wpackagist.org",
-			"only": [
-				"wpackagist-plugin/*",
-				"wpackagist-theme/*"
-			]
-		}
-	],
-	"require": {
-		"php": ">=8.2",
-		"composer/installers": "^2.2",
-		"gravitykit/gravity-forms-zero-spam": "^1.7",
-		"johnbillion/user-switching": "^1.11",
-		"log1x/navi": "^3.1",
-		"log1x/poet": "^2.0",
-		"lukasbesch/bedrock-plugin-disabler": "^1.4",
-		"oscarotero/env": "^2.1",
-		"plugin/yard-gutenberg": "^1.5",
-		"roots/acorn": "^4.0",
-		"roots/bedrock-autoloader": "^1.0",
-		"roots/bedrock-disallow-indexing": "^2.0",
-		"roots/wordpress": "6.9.*",
-		"roots/wp-config": "^1.0",
-		"sentry/sentry-laravel": "^4.13",
-		"spatie/laravel-google-fonts": "^1.4",
-		"spatie/laravel-ignition": "^2.0",
-		"vlucas/phpdotenv": "^5.5",
-		"wp-cli/wp-cli-bundle": "^2.11",
-		"wp-media/imagify-plugin": "^2.2",
-		"wpackagist-plugin/cookie-law-info": "^3.2",
-		"wpackagist-plugin/relay": "^1.3",
-		"wpackagist-plugin/stream": "^4.0",
-		"wpackagist-plugin/wp-seopress": "^8.1",
-		"yard/brave-components": "^1.2",
-		"yard/brave-csp": "^1.0",
-		"yard/brave-hooks": "^2.0",
-		"yard/config-expander": "^1.0",
-		"yard/data": "^1.0",
-		"yard/multisite-url-fixer": "^1.0",
-		"yard/nutshell": "^2.1",
-		"yard/query-block": "^1.0",
-		"yard/webmanifest": "^1.0",
-		"yard/wp-block-registrar": "^1.0",
-		"yard/wp-database": "^1.0",
-		"yard/wp-user-roles": "^2.0",
-		"yoast/duplicate-post": "^4.6"
-	},
-	"require-dev": {
-		"captainhook/captainhook": "^5.24",
-		"captainhook/hook-installer": "^1.0",
-		"johnbillion/query-monitor": "^3.20",
-		"yard/brave-scaffold": "^2.0",
-		"yard/lando-brave": "^1.0",
-		"yard/php-cs-fixer-rules": "^1.0"
-	},
-	"suggest": {
-		"gravity/gravityforms": "",
-		"deliciousbrains-plugin/wp-migrate-db-pro": "",
-		"plugin/yard-dashboard": "",
-		"wpengine/advanced-custom-fields-pro": "",
-		"ypackagist/facetwp": "",
-		"ypackagist/searchwp": "",
-		"ypackagist/wp-seopress-pro": "",
-		"yard/wp-deployer": "dev"
-	},
-	"autoload": {
-		"psr-4": {
-			"App\\": "web/app/themes/sage/app/"
-		}
-	},
-	"extra": {
-		"acorn": {
-			"providers": [
-				"App\\Providers\\ThemeServiceProvider"
-			]
-		},
-		"installer-paths": {
-			"web/app/mu-plugins/{$name}/": [
-				"type:wordpress-muplugin"
-			],
-			"web/app/plugins/{$name}/": [
-				"type:wordpress-plugin"
-			],
-			"web/app/themes/{$name}/": [
-				"type:wordpress-theme"
-			]
-		},
-		"wordpress-install-dir": "web/wp"
-	},
-	"scripts": {
-		"format": "./vendor/bin/php-cs-fixer fix",
-		"post-autoload-dump": [
-			"Roots\\Acorn\\ComposerScripts::postAutoloadDump"
-		],
-		"private-setup": [
-			"composer repo add satis composer https://satis.yard.nl",
-			"composer repo add satispress composer https://packagist.yard.nl/satispress/",
-			"composer require yard/brave-private-setup --dev",
-			"wp acorn setup:dependencies",
-			"wp acorn setup:deployer"
-		]
-	}
+  "name": "yard/brave",
+  "type": "project",
+  "license": "MIT",
+  "description": "WordPress boilerplate with Bedrock and Sage",
+  "support": {
+    "source": "https://github.com/yardinternet/brave"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "allow-plugins": {
+      "captainhook/hook-installer": true,
+      "composer/installers": true,
+      "dangoodman/composer-for-wordpress": true,
+      "roots/wordpress-core-installer": true
+    },
+    "platform": {
+      "php": "8.2"
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "require": {
+    "php": ">=8.2",
+    "composer/installers": "^2.2",
+    "gravitykit/gravity-forms-zero-spam": "^1.7",
+    "johnbillion/user-switching": "^1.11",
+    "log1x/navi": "^3.1",
+    "log1x/poet": "^2.0",
+    "lukasbesch/bedrock-plugin-disabler": "^1.4",
+    "oscarotero/env": "^2.1",
+    "plugin/yard-gutenberg": "^1.5",
+    "roots/acorn": "^4.0",
+    "roots/bedrock-autoloader": "^1.0",
+    "roots/bedrock-disallow-indexing": "^2.0",
+    "roots/wordpress": "6.9.*",
+    "roots/wp-config": "^1.0",
+    "sentry/sentry-laravel": "^4.13",
+    "spatie/laravel-google-fonts": "^1.4",
+    "spatie/laravel-ignition": "^2.0",
+    "vlucas/phpdotenv": "^5.5",
+    "wp-cli/wp-cli-bundle": "^2.11",
+    "wp-media/imagify-plugin": "^2.2",
+    "wpackagist-plugin/cookie-law-info": "^3.2",
+    "wpackagist-plugin/generate-security-txt": "^1.0",
+    "wpackagist-plugin/relay": "^1.3",
+    "wpackagist-plugin/stream": "^4.0",
+    "wpackagist-plugin/two-factor": "^0.16.0",
+    "wpackagist-plugin/wp-seopress": "^8.1",
+    "yard/brave-components": "^1.2",
+    "yard/brave-csp": "^1.0",
+    "yard/brave-hooks": "^2.0",
+    "yard/config-expander": "^1.0",
+    "yard/data": "^1.0",
+    "yard/multisite-url-fixer": "^1.0",
+    "yard/nutshell": "^2.1",
+    "yard/query-block": "^1.0",
+    "yard/webmanifest": "^1.0",
+    "yard/wp-block-registrar": "^1.0",
+    "yard/wp-database": "^1.0",
+    "yard/wp-user-roles": "^2.0",
+    "yoast/duplicate-post": "^4.6"
+  },
+  "require-dev": {
+    "captainhook/captainhook": "^5.24",
+    "captainhook/hook-installer": "^1.0",
+    "johnbillion/query-monitor": "^3.20",
+    "yard/brave-scaffold": "^2.0",
+    "yard/lando-brave": "^1.0",
+    "yard/php-cs-fixer-rules": "^1.0"
+  },
+  "suggest": {
+    "gravity/gravityforms": "",
+    "deliciousbrains-plugin/wp-migrate-db-pro": "",
+    "plugin/yard-dashboard": "",
+    "wpengine/advanced-custom-fields-pro": "",
+    "ypackagist/facetwp": "",
+    "ypackagist/searchwp": "",
+    "ypackagist/wp-seopress-pro": "",
+    "yard/wp-deployer": "dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "web/app/themes/sage/app/"
+    }
+  },
+  "extra": {
+    "acorn": {
+      "providers": [
+        "App\\Providers\\ThemeServiceProvider"
+      ]
+    },
+    "installer-paths": {
+      "web/app/mu-plugins/{$name}/": [
+        "type:wordpress-muplugin"
+      ],
+      "web/app/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "web/app/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
+    },
+    "wordpress-install-dir": "web/wp"
+  },
+  "scripts": {
+    "format": "./vendor/bin/php-cs-fixer fix",
+    "post-autoload-dump": [
+      "Roots\\Acorn\\ComposerScripts::postAutoloadDump"
+    ],
+    "private-setup": [
+      "composer repo add satis composer https://satis.yard.nl",
+      "composer repo add satispress composer https://packagist.yard.nl/satispress/",
+      "composer require yard/brave-private-setup --dev",
+      "wp acorn setup:dependencies",
+      "wp acorn setup:deployer"
+    ]
+  }
 }
