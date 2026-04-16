@@ -24,16 +24,6 @@
 	"prefer-stable": true,
 	"repositories": [
 		{
-			"name": "satispress",
-			"type": "composer",
-			"url": "https://packagist.yard.nl/satispress/"
-		},
-		{
-			"name": "satis",
-			"type": "composer",
-			"url": "https://satis.yard.nl"
-		},
-		{
 			"type": "composer",
 			"url": "https://wpackagist.org",
 			"only": [
