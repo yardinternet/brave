@@ -33,7 +33,7 @@
 			@endif
 		</x-dynamic-tag>
 
-		@if ($subtitle)
+		@if ($displaySubtitle && $subtitle)
 			<p class="-mt-2 mb-3">{!! $subtitle !!}</p>
 		@endif
 
