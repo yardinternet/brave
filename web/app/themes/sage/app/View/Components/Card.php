@@ -17,6 +17,7 @@ class Card extends Component
 		public ?bool $displayExcerpt = null,
 		public ?bool $displayImage = null,
 		public ?bool $displayLabel = null,
+		public ?bool $displaySubtitle = null,
 		public ?bool $thumbnailIsLogo = null,
 		public ?string $dateString = null,
 		public ?string $dateTime = null,
@@ -63,6 +64,7 @@ class Card extends Component
 		$this->displayExcerpt ??= true;
 		$this->displayImage ??= true;
 		$this->displayLabel ??= true;
+		$this->displaySubtitle ??= true;
 		$this->thumbnailIsLogo ??= ! $this->thumbnailUrl;
 	}
 

@@ -14,7 +14,7 @@
 ])>
 	@forelse ($postDataCollection as $postData)
 		<x-dynamic-card :card="$postData->postType()" :postData="$postData" :displayDate="$attributes->displayDate()" :displayExcerpt="$attributes->displayExcerpt()" :displayImage="$attributes->displayImage()"
-			:displayLabel="$attributes->displayLabel()" />
+			:displayLabel="$attributes->displayLabel()" :displaySubtitle="$attributes->displaySubtitle()" />
 	@empty
 		<x-alert type="warning" class="col-span-full">
 			Geen resultaten gevonden.

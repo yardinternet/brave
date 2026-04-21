@@ -16,7 +16,7 @@
 ])>
 	@forelse ($postDataCollection as $postData)
 		<x-dynamic-card :card="$postData->postType()" :direction="Direction::FLUID" :postData="$postData" :displayDate="$attributes->displayDate()" :displayExcerpt="$attributes->displayExcerpt()"
-			:displayImage="$attributes->displayImage()" :displayLabel="$attributes->displayLabel()" />
+			:displayImage="$attributes->displayImage()" :displayLabel="$attributes->displayLabel()" :displaySubtitle="$attributes->displaySubtitle()" />
 	@empty
 		<x-alert type="warning" class="col-span-full">
 			Geen resultaten gevonden.

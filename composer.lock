@@ -11532,16 +11532,16 @@
         },
         {
             "name": "yard/query-block",
-            "version": "v1.4.1",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yardinternet/wp-query-block.git",
-                "reference": "5685ccd68554317c64dd32bd85c9ad638ceae19e"
+                "reference": "a5fc9bf1eb41250a7f64c77ac583afb094f87332"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yardinternet/wp-query-block/zipball/5685ccd68554317c64dd32bd85c9ad638ceae19e",
-                "reference": "5685ccd68554317c64dd32bd85c9ad638ceae19e",
+                "url": "https://api.github.com/repos/yardinternet/wp-query-block/zipball/a5fc9bf1eb41250a7f64c77ac583afb094f87332",
+                "reference": "a5fc9bf1eb41250a7f64c77ac583afb094f87332",
                 "shasum": ""
             },
             "require": {
@@ -11579,9 +11579,9 @@
             "description": "A query block for the Gutenberg editor.",
             "support": {
                 "issues": "https://github.com/yardinternet/wp-query-block/issues",
-                "source": "https://github.com/yardinternet/wp-query-block/tree/v1.4.1"
+                "source": "https://github.com/yardinternet/wp-query-block/tree/v1.5.0"
             },
-            "time": "2026-04-09T07:43:26+00:00"
+            "time": "2026-04-21T11:52:30+00:00"
         },
         {
             "name": "yard/webmanifest",
@@ -14011,15 +14011,15 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=8.2"
     },
-    "platform-dev": {},
+    "platform-dev": [],
     "platform-overrides": {
         "php": "8.2"
     },
-    "plugin-api-version": "2.9.0"
+    "plugin-api-version": "2.6.0"
 }
