@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "64d7b24e107c51cbf5ea35094a8f56df",
+    "content-hash": "bd5fc180570903f7a5dd5106f7cacbf3",
     "packages": [
         {
             "name": "bordoni/phpass",
@@ -1144,16 +1144,16 @@
         },
         {
             "name": "gravitykit/gravity-forms-zero-spam",
-            "version": "v1.7.5",
+            "version": "v1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GravityKit/gravity-forms-zero-spam.git",
-                "reference": "75f35c02514628ecd4fcc71d8b19f3351d0b0eb8"
+                "reference": "60d854a4a6fba8feb9cf8fa02d5176a09d51324a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GravityKit/gravity-forms-zero-spam/zipball/75f35c02514628ecd4fcc71d8b19f3351d0b0eb8",
-                "reference": "75f35c02514628ecd4fcc71d8b19f3351d0b0eb8",
+                "url": "https://api.github.com/repos/GravityKit/gravity-forms-zero-spam/zipball/60d854a4a6fba8feb9cf8fa02d5176a09d51324a",
+                "reference": "60d854a4a6fba8feb9cf8fa02d5176a09d51324a",
                 "shasum": ""
             },
             "require": {
@@ -1175,9 +1175,9 @@
             "description": "Enhance Gravity Forms to include effective anti-spam measures.",
             "support": {
                 "issues": "https://github.com/GravityKit/gravity-forms-zero-spam/issues",
-                "source": "https://github.com/GravityKit/gravity-forms-zero-spam/tree/v1.7.5"
+                "source": "https://github.com/GravityKit/gravity-forms-zero-spam/tree/v1.8.0"
             },
-            "time": "2026-04-10T01:15:24+00:00"
+            "time": "2026-04-17T00:55:39+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -9433,23 +9433,23 @@
         },
         {
             "name": "voku/portable-ascii",
-            "version": "2.0.3",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/portable-ascii.git",
-                "reference": "b1d923f88091c6bf09699efcd7c8a1b1bfd7351d"
+                "reference": "d870a33f0f79d2b4579740b0620200221ee44aeb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/b1d923f88091c6bf09699efcd7c8a1b1bfd7351d",
-                "reference": "b1d923f88091c6bf09699efcd7c8a1b1bfd7351d",
+                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/d870a33f0f79d2b4579740b0620200221ee44aeb",
+                "reference": "d870a33f0f79d2b4579740b0620200221ee44aeb",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.0.0"
+                "php": ">=7.1.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~6.0 || ~7.0 || ~9.0"
+                "phpunit/phpunit": "~8.5 || ~9.6 || ~10.5 || ~11.5"
             },
             "suggest": {
                 "ext-intl": "Use Intl for transliterator_transliterate() support"
@@ -9479,7 +9479,7 @@
             ],
             "support": {
                 "issues": "https://github.com/voku/portable-ascii/issues",
-                "source": "https://github.com/voku/portable-ascii/tree/2.0.3"
+                "source": "https://github.com/voku/portable-ascii/tree/2.1.0"
             },
             "funding": [
                 {
@@ -9503,7 +9503,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-11-21T01:49:47+00:00"
+            "time": "2026-04-16T23:10:39+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -11080,15 +11080,15 @@
         },
         {
             "name": "wpackagist-plugin/cookie-law-info",
-            "version": "3.4.1",
+            "version": "3.4.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/cookie-law-info/",
-                "reference": "tags/3.4.1"
+                "reference": "tags/3.4.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cookie-law-info.3.4.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/cookie-law-info.3.4.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -11152,16 +11152,16 @@
         },
         {
             "name": "yard/brave-components",
-            "version": "v1.4.0",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yardinternet/brave-components.git",
-                "reference": "592a7ba0432dc763c20026b2d962b8d8ef55c125"
+                "reference": "91a5c2bc3d9ab53653690c4dc5ae8d49a8655515"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yardinternet/brave-components/zipball/592a7ba0432dc763c20026b2d962b8d8ef55c125",
-                "reference": "592a7ba0432dc763c20026b2d962b8d8ef55c125",
+                "url": "https://api.github.com/repos/yardinternet/brave-components/zipball/91a5c2bc3d9ab53653690c4dc5ae8d49a8655515",
+                "reference": "91a5c2bc3d9ab53653690c4dc5ae8d49a8655515",
                 "shasum": ""
             },
             "require": {
@@ -11201,7 +11201,7 @@
                 "issues": "https://github.com/yardinternet/brave-components/issues",
                 "source": "https://github.com/yardinternet/brave-components"
             },
-            "time": "2026-04-14T14:28:15+00:00"
+            "time": "2026-04-20T12:44:39+00:00"
         },
         {
             "name": "yard/brave-csp",
@@ -14011,15 +14011,15 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=8.2"
     },
-    "platform-dev": [],
+    "platform-dev": {},
     "platform-overrides": {
         "php": "8.2"
     },
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }
