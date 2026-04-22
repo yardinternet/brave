@@ -99,9 +99,12 @@ const variationRegistry = [
 			},
 			scope: [ 'block', 'inserter' ],
 			innerBlocks: [
-				[ 'theme/back-button', { align: '' } ],
+				[
+					'theme/back-button',
+					{ align: '', lock: { move: true, remove: true } },
+				],
 				[ 'core/post-title', { level: 1 } ],
-				[ 'core/paragraph', { content: 'Voeg de inhoud toe' } ],
+				[ 'core/paragraph', { placeholder: 'Voeg de inhoud toe' } ],
 			],
 		},
 	},
@@ -141,9 +144,15 @@ const variationRegistry = [
 						className: 'layout-article-aside__article',
 					},
 					[
-						[ 'theme/back-button', { align: '' } ],
+						[
+							'theme/back-button',
+							{ align: '', lock: { move: true, remove: true } },
+						],
 						[ 'core/post-title', { level: 1 } ],
-						[ 'core/paragraph', { content: 'Voeg de inhoud toe' } ],
+						[
+							'core/paragraph',
+							{ placeholder: 'Voeg de inhoud toe' },
+						],
 					],
 				],
 				[
@@ -175,7 +184,7 @@ const variationRegistry = [
 								],
 								[
 									'core/paragraph',
-									{ content: 'Voeg de inhoud toe' },
+									{ placeholder: 'Voeg de inhoud toe' },
 								],
 							],
 						],
