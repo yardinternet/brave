@@ -4,14 +4,12 @@ declare(strict_types=1);
 
 return [
 	'field_groups' => [
-		//Example::class,
+		// Example::class,
 	],
-	'forms' =>
-	[
-		//Example::class
+	'forms' => [
+		// Example::class,
 	],
-	'option_pages' =>
-	[
-		//Example::class
+	'option_pages' => [
+		// Example::class,
 	],
 ];
