@@ -1,10 +1,9 @@
 @props([
-    'class' => '',
     'label' => 'Reset filters',
 ])
 
 <button
-	{{ $attributes->merge(['class' => 'js-brave-facetwp-btn-reset is-button is-button-subtle group flex w-full items-center justify-center gap-2 lg:w-fit']) }}
+	{{ $attributes->class(['js-brave-facetwp-btn-reset is-button is-button-subtle group flex w-full items-center justify-center gap-2 lg:w-fit'])->merge() }}
 	onclick="FWP.reset()">
 	<i class="fa-regular fa-redo-alt group-hover:rotate-320 transition-all duration-300" aria-hidden="true"></i>
 	{{ $label }}
