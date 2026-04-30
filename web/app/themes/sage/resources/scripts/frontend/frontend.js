@@ -8,6 +8,7 @@ import {
 	Accordion,
 	BraveNavigationManager,
 	DialogManager,
+	FacetWPDateRange,
 	FocusStyle,
 	WebShareApi,
 } from '@yardinternet/brave-frontend-kit';
@@ -22,6 +23,7 @@ window.addEventListener( 'DOMContentLoaded', () => {
 	new Accordion();
 	new BraveNavigationManager();
 	new DialogManager();
+	new FacetWPDateRange();
 	new FocusStyle();
 	new WebShareApi();
 } );

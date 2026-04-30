@@ -228,3 +228,16 @@
 		}
 	}
 }
+
+/* Fix positioning date-picker inside a dialog */
+dialog .facetwp-type-date_range {
+	@apply relative;
+
+	> .fdate-wrap {
+		@apply top-full! left-0!;
+
+		&.facetwp-date-max-is-focused {
+			@apply right-0! left-auto!;
+		}
+	}
+}
