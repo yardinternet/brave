@@ -5,6 +5,7 @@
 @import './base/motion';
 @import './base/variables';
 @import './base/utilities';
+@import './base/custom-variants';
 
 /* Components */
 @import './components/accordion';

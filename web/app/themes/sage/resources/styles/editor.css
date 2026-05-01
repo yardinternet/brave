@@ -6,6 +6,7 @@
 @import './base/base-editor';
 @import './base/motion';
 @import './base/utilities';
+@import './base/custom-variants';
 
 /* Components */
 @import './components/cards';
