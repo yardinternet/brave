@@ -19,9 +19,9 @@
 }
 
 .wp-block-yard-tabs-item__heading-input {
-	@apply !w-full !resize-none rounded-none border-none bg-transparent p-0 text-(--tabs-button-color) shadow-none;
+	@apply w-full! resize-none! rounded-none border-none bg-transparent p-0 text-(length:--tabs-button-font-size) leading-(--tabs-button-leading) font-(--tabs-button-font-weight) text-(--tabs-button-color) shadow-none;
 }
 
 .wp-block-yard-tabs-item__panel {
-	@apply col-start-2 row-start-1 row-end-[100];
+	@apply col-start-2 row-start-1 row-end-100;
 }

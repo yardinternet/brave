@@ -15,6 +15,9 @@
 	--tabs-button-color-hover: var( --color-primary );
 	--tabs-button-color-selected: var( --color-primary );
 	--tabs-button-color: var( --color-white );
+	--tabs-button-font-size: var( --text-base );
+	--tabs-button-font-weight-selected: var( --font-weight-normal );
+	--tabs-button-font-weight: var( --font-weight-normal );
 	--tabs-button-gap: 1.25rem;
 	--tabs-button-leading: 1.25;
 	--tabs-button-padding: 1.25rem 1.5rem;
@@ -29,6 +32,7 @@
 	--tabs-button-icon-color-hover: var( --color-white );
 	--tabs-button-icon-color-selected: var( --color-white );
 	--tabs-button-icon-color: var( --color-white );
+	--tabs-button-icon-radius: var( --radius-theme );
 	--tabs-button-icon-size: 2rem;
 	--tabs-button-icon: '\f061';
 
@@ -59,7 +63,7 @@
 }
 
 .wp-block-yard-tabs-item__heading {
-	@apply mb-0 bg-(--tabs-list-bg-color) p-(--tabs-list-padding) text-base font-normal md:col-start-1;
+	@apply mb-0 bg-(--tabs-list-bg-color) p-(--tabs-list-padding) text-(length:--tabs-button-font-size) font-(--tabs-button-font-weight) md:col-start-1;
 
 	&:not( :first-of-type ) {
 		@apply pt-0;
@@ -81,6 +85,9 @@
 		&:has( .wp-block-yard-tabs-item__button.active ) {
 			--tabs-button-bg-color: var( --tabs-button-bg-color-selected );
 			--tabs-button-color: var( --tabs-button-color-selected );
+			--tabs-button-font-weight: var(
+				--tabs-button-font-weight-selected
+			);
 			--tabs-button-icon-bg-color: var(
 				--tabs-button-icon-bg-color-selected
 			);
@@ -108,7 +115,7 @@
 	@apply relative flex w-full items-center gap-(--tabs-button-gap) rounded-(--tabs-radius) bg-(--tabs-button-bg-color) p-(--tabs-button-padding) text-left leading-(--tabs-button-leading) text-(--tabs-button-color) transition-colors duration-300;
 
 	&::before {
-		@apply fontawesome left-(--tabs-button-padding-x) flex size-(--tabs-button-icon-size) shrink-0 items-center justify-center rounded-(--tabs-radius) border-(length:--tabs-button-icon-border-width) border-(--tabs-button-icon-border-color) bg-(--tabs-button-icon-bg-color) text-(--tabs-button-icon-color) transition-all duration-300;
+		@apply fontawesome left-(--tabs-button-padding-x) flex size-(--tabs-button-icon-size) shrink-0 items-center justify-center rounded-(--tabs-button-icon-radius) border-(length:--tabs-button-icon-border-width) border-(--tabs-button-icon-border-color) bg-(--tabs-button-icon-bg-color) leading-none text-(--tabs-button-icon-color) transition-all duration-300;
 		--fa-icon: var( --tabs-button-icon );
 	}
 
