@@ -129,6 +129,10 @@
 		.fs-wrap {
 			@apply min-w-full;
 
+			&.fs-open .fs-label-wrap {
+				@apply rounded-b-none;
+			}
+
 			.fs-label-wrap {
 				@apply is-select;
 
