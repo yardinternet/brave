@@ -8,8 +8,9 @@
 	--collapse-button-color-hover: var( --color-white );
 	--collapse-button-color: currentColor;
 	--collapse-button-font-size: var( --text-base );
+	--collapse-button-font-weight: var( --font-weight-normal );
 	--collapse-button-gap: 1rem;
-	--collapse-button-line-height: 2;
+	--collapse-button-line-height: var( --text-base--line-height );
 	--collapse-button-padding-x: 1.5rem;
 	--collapse-button-padding-y: 1rem;
 
@@ -60,7 +61,7 @@
 }
 
 .wp-block-yard-collapse-item__header-button {
-	@apply flex items-start justify-between gap-(--collapse-button-gap) rounded-(--collapse-radius) bg-(--collapse-button-bg-color) px-(--collapse-button-padding-x) py-(--collapse-button-padding-y) font-normal text-(--collapse-button-color) transition-all;
+	@apply flex items-start justify-between gap-(--collapse-button-gap) rounded-(--collapse-radius) bg-(--collapse-button-bg-color) px-(--collapse-button-padding-x) py-(--collapse-button-padding-y) font-(--collapse-button-font-weight) text-(--collapse-button-color) transition-all;
 
 	&::after {
 		@apply collapse-icon shrink-0;
