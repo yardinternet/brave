@@ -109,7 +109,7 @@
 }
 
 @utility is-button {
-	@apply inline-flex cursor-pointer items-center gap-(--button-gap) rounded-(--button-radius) border border-(--button-border-color) bg-(--button-bg-color) px-(--button-padding-x) py-(--button-padding-y) leading-snug! break-words text-(--button-color) no-underline transition-colors select-none;
+	@apply inline-flex cursor-pointer items-center gap-(--button-gap) rounded-(--button-radius) border-(length:--button-border-width) border-(--button-border-color) bg-(--button-bg-color) px-(--button-padding-x) py-(--button-padding-y) text-(length:--button-font-size) leading-snug! font-(--button-font-weight) wrap-break-word text-(--button-color) no-underline transition-colors select-none;
 
 	&:active {
 		@apply scale-(--button-scale-active);
@@ -117,6 +117,7 @@
 
 	@variant hocus {
 		@apply text-(--button-color); /* color is overridden by default a style */
+		--button-after-color: var( --button-after-color-hover ) !important;
 		--button-bg-color: var( --button-bg-color-hover ) !important;
 		--button-border-color: var( --button-border-color-hover ) !important;
 		--button-color: var( --button-color-hover ) !important;
@@ -126,7 +127,7 @@
 /* Don't add this to is-button. Pseudo selectors break ::file-selector-button in Chrome. */
 @utility add-button-icons {
 	&::after {
-		@apply fontawesome;
+		@apply fontawesome text-(--button-after-color) transition-colors;
 		--fa-icon: '\f061';
 	}
 

@@ -1,10 +1,15 @@
 :root {
+	--button-after-color-hover: inherit;
+	--button-after-color: inherit;
 	--button-bg-color-hover: var( --color-primary-700 );
 	--button-bg-color: var( --color-primary );
 	--button-border-color-hover: var( --color-primary-700 );
 	--button-border-color: var( --color-primary );
+	--button-border-width: 1px;
 	--button-color-hover: var( --color-white );
 	--button-color: var( --color-white );
+	--button-font-size: var( --text-base );
+	--button-font-weight: var( --font-weight-normal );
 	--button-gap: 0.75em;
 	--button-padding-x: 1.25em;
 	--button-padding-y: 0.75em;
