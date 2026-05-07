@@ -4,7 +4,7 @@
     'label' => __('Filters', 'sage'),
 ])
 
-<x-brave::dialog.trigger :dialogId="$dialogId" class="is-button z-50 w-full justify-center lg:hidden">
+<x-brave::dialog.trigger :dialogId="$dialogId" class="is-button w-full justify-center lg:hidden">
 	<i class="fa-light fa-sliders" aria-hidden="true"></i>
 	{{ $label }}
 </x-brave::dialog.trigger>
@@ -29,7 +29,7 @@
 			<x-facetwp.filters :facets="$facets" />
 		</div>
 
-		<div class="z-2 sticky bottom-4 mt-auto flex gap-2 px-4">
+		<div class="z-2 sticky bottom-0 mt-auto flex gap-2 bg-white p-4">
 			<x-facetwp.reset-button />
 
 			<x-brave::dialog.trigger :dialogId="$dialogId" class="is-button w-full justify-center">
