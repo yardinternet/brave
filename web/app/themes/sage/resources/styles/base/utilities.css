@@ -117,9 +117,9 @@
 
 	@variant hocus {
 		@apply text-(--button-color); /* color is overridden by default a style */
-		--button-bg-color: var( --button-bg-color-hover );
-		--button-border-color: var( --button-border-color-hover );
-		--button-color: var( --button-color-hover );
+		--button-bg-color: var( --button-bg-color-hover ) !important;
+		--button-border-color: var( --button-border-color-hover ) !important;
+		--button-color: var( --button-color-hover ) !important;
 	}
 }
 
