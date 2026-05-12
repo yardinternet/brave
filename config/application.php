@@ -119,6 +119,9 @@ Config::define('DISALLOW_FILE_EDIT', true);
 // Disable plugin and theme updates and installation from the admin
 Config::define('DISALLOW_FILE_MODS', true);
 
+// Set sage as default theme
+Config::define('WP_DEFAULT_THEME', 'sage');
+
 // Limit the number of post revisions
 Config::define('WP_POST_REVISIONS', env('WP_POST_REVISIONS', 20) ?: true);
 
