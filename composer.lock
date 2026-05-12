@@ -11504,16 +11504,16 @@
         },
         {
             "name": "yard/config-expander",
-            "version": "v1.4.2",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yardinternet/package-config-expander.git",
-                "reference": "9dae7923958014774e9d2f6da2c15e687010ec11"
+                "reference": "5e22c3c79750e6ed356ca126307779bd6f78a6b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yardinternet/package-config-expander/zipball/9dae7923958014774e9d2f6da2c15e687010ec11",
-                "reference": "9dae7923958014774e9d2f6da2c15e687010ec11",
+                "url": "https://api.github.com/repos/yardinternet/package-config-expander/zipball/5e22c3c79750e6ed356ca126307779bd6f78a6b3",
+                "reference": "5e22c3c79750e6ed356ca126307779bd6f78a6b3",
                 "shasum": ""
             },
             "require": {
@@ -11549,9 +11549,9 @@
             "description": "Adds necessary security, defaults and settings to this site.",
             "support": {
                 "issues": "https://github.com/yardinternet/package-config-expander/issues",
-                "source": "https://github.com/yardinternet/package-config-expander/tree/v1.4.2"
+                "source": "https://github.com/yardinternet/package-config-expander/tree/v1.5.0"
             },
-            "time": "2026-02-24T10:06:56+00:00"
+            "time": "2026-05-08T07:19:55+00:00"
         },
         {
             "name": "yard/data",
