@@ -1,0 +1,3 @@
+[submodule "brave.wiki"]
+	path = brave.wiki
+	url = git@github.com:yardinternet/brave.wiki.git
