@@ -35,6 +35,36 @@
 	--spacing-size-6: calc( var( --spacing-size-5 ) * var( --spacing-ratio ) );
 	--spacing-size-7: calc( var( --spacing-size-6 ) * var( --spacing-ratio ) );
 
+	/* Pagination */
+	--pagination-item-bg-color-hover: var( --color-primary );
+	--pagination-item-color-hover: var( --color-white );
+	--pagination-item-gap-x: 0.5rem;
+	--pagination-item-gap-y: 1rem;
+	--pagination-item-margin: 2rem 0 0 0;
+	--pagination-item-radius: var( --radius-theme );
+	--pagination-item-size: 2.5rem;
+
+	/* Pagination - current */
+	--pagination-current-bg-color: transparent;
+	--pagination-current-color: var( --color-primary );
+	--pagination-current-underline-bg-color: var( --color-primary );
+
+	/* Pagination - prev */
+	--pagination-prev-bg-color: transparent;
+	--pagination-prev-bg-color-hocus: var( --color-primary );
+	--pagination-prev-border-color: var( --color-primary );
+	--pagination-prev-border-color-hocus: var( --color-primary );
+	--pagination-prev-color: var( --color-primary );
+	--pagination-prev-color-hocus: var( --color-white );
+
+	/* Pagination - next */
+	--pagination-next-bg-color: var( --color-primary );
+	--pagination-next-bg-color-hocus: transparent;
+	--pagination-next-border-color: var( --color-primary );
+	--pagination-next-border-color-hocus: var( --color-primary );
+	--pagination-next-color: var( --color-white );
+	--pagination-next-color-hocus: var( --color-primary );
+
 	/* Navigation */
 	--wp-admin-bar-height: var( --wp-admin--admin-bar--height, 0px );
 	--nav-bar-height: 80px;
