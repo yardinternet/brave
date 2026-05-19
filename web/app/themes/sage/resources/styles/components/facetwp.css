@@ -210,7 +210,7 @@
 
 	.facetwp-facet-pagination {
 		.facetwp-pager {
-			@apply mt-8 flex flex-wrap justify-center gap-x-2 gap-y-4;
+			@apply m-(--pagination-item-margin) flex flex-wrap justify-center gap-x-(--pagination-item-gap-x) gap-y-(--pagination-item-gap-y);
 
 			&:empty {
 				@apply mt-0;
@@ -218,16 +218,36 @@
 		}
 
 		.facetwp-page {
-			@apply relative m-0 flex size-10 items-center justify-center rounded-theme p-2 font-normal text-black no-underline transition-all;
+			@apply relative m-0 flex size-(--pagination-item-size) items-center justify-center rounded-(--pagination-item-radius) p-2 font-normal text-black no-underline transition-all;
 
-			&:not( .dots, .active ) {
+			&:not( .prev, .next, .dots, .active ) {
 				@variant hocus {
-					@apply bg-primary text-white;
+					@apply bg-(--pagination-item-bg-color-hover) text-(--pagination-item-color-hover);
 				}
 			}
 
 			&.active {
-				@apply bg-primary text-white;
+				@apply bg-(--pagination-current-bg-color) text-(--pagination-current-color);
+
+				&::after {
+					@apply absolute bottom-0 left-1/2 h-0.5 w-3/4 -translate-x-1/2 bg-(--pagination-current-underline-bg-color) content;
+				}
+			}
+
+			&.prev {
+				@apply border border-(--pagination-prev-border-color) bg-(--pagination-prev-bg-color) text-(--pagination-prev-color);
+
+				@variant hocus {
+					@apply border-(--pagination-prev-border-color-hocus) bg-(--pagination-prev-bg-color-hocus) text-(--pagination-prev-color-hocus);
+				}
+			}
+
+			&.next {
+				@apply border border-(--pagination-next-border-color) bg-(--pagination-next-bg-color) text-(--pagination-next-color);
+
+				@variant hocus {
+					@apply border-(--pagination-next-border-color-hocus) bg-(--pagination-next-bg-color-hocus) text-(--pagination-next-color-hocus);
+				}
 			}
 		}
 	}
