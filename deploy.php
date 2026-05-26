@@ -22,7 +22,9 @@ add('writable_dirs', []);
 
 ////////// For demo brave/gemeente sites only
 after('deploy:vendors', function () {
-	if (get('labels')['site'] ?? '' === 'brave') {
+	$alias = currentHost()->getAlias();
+
+	if ('brave.wpacc01.yard.nl' === $alias) {
 		within('{{release_or_current_path}}', function () {
 			run('{{bin/composer}} private-packages');
 			run('{{bin/composer}} require yard/brave-scaffold --dev');
@@ -32,19 +34,21 @@ after('deploy:vendors', function () {
 		});
 	}
 
-	if (get('labels')['site'] ?? '' === 'gemeente') {
+	if ('gemeente.wpacc01.yard.nl' === $alias) {
 		within('{{release_or_current_path}}', function () {
 			run('{{bin/composer}} gemeente-packages');
 		});
 	}
-})->desc('Scaffold default content types for Brave');
+})->desc('Scaffold brave and gemeente demo sites.');
 //////////
 
 // Hosts.
-host(Host::WPACC01)
+host('brave.wpacc01.yard.nl')
+	->setHostname(Host::WPACC01)
 	->setDeployPath('/data/www/accept-sites/yard/brave')
-	->setLabels(['stage' => Stage::ACCEPT, 'site' => 'brave']);
+	->setLabels(['stage' => Stage::ACCEPT]);
 
-host(Host::WPACC01)
+host('gemeente.wpacc01.yard.nl')
+	->setHostname(Host::WPACC01)
 	->setDeployPath('/data/www/accept-sites/yard/gemeente')
-	->setLabels(['stage' => Stage::ACCEPT, 'site' => 'gemeente']);
+	->setLabels(['stage' => Stage::ACCEPT]);
