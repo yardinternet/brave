@@ -3617,16 +3617,16 @@
         },
         {
             "name": "johnbillion/user-switching",
-            "version": "1.11.2",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnbillion/user-switching.git",
-                "reference": "a8d853cecfa72075d3c1a610d0193a5c4c0ff002"
+                "reference": "9f98a7ea2ff405b96f587a23e1f0698a124f4818"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnbillion/user-switching/zipball/a8d853cecfa72075d3c1a610d0193a5c4c0ff002",
-                "reference": "a8d853cecfa72075d3c1a610d0193a5c4c0ff002",
+                "url": "https://api.github.com/repos/johnbillion/user-switching/zipball/9f98a7ea2ff405b96f587a23e1f0698a124f4818",
+                "reference": "9f98a7ea2ff405b96f587a23e1f0698a124f4818",
                 "shasum": ""
             },
             "require": {
@@ -3634,9 +3634,9 @@
                 "php": ">=7.4"
             },
             "require-dev": {
-                "johnbillion/plugin-infrastructure": "2.8.0",
-                "johnbillion/wp-compat": "1.3.0",
-                "php-stubs/wordpress-stubs": "6.9.0",
+                "johnbillion/plugin-infrastructure": "2.9.3",
+                "johnbillion/wp-compat": "1.5.0",
+                "php-stubs/wordpress-stubs": "7.0.0 as 6.9.4",
                 "phpcompatibility/phpcompatibility-wp": "2.1.8",
                 "phpstan/phpstan": "2.1.33",
                 "phpstan/phpstan-phpunit": "2.0.11",
@@ -3663,7 +3663,7 @@
             "support": {
                 "forum": "https://wordpress.org/support/plugin/user-switching",
                 "issues": "https://github.com/johnbillion/user-switching/issues",
-                "security": "https://github.com/johnbillion/user-switching/security/policy",
+                "security": "https://github.com/johnbillion/user-switching/security",
                 "source": "https://github.com/johnbillion/user-switching"
             },
             "funding": [
@@ -3672,7 +3672,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-02-27T00:14:48+00:00"
+            "time": "2026-05-24T14:24:41+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -11026,15 +11026,15 @@
         },
         {
             "name": "wpackagist-plugin/cookie-law-info",
-            "version": "3.4.2",
+            "version": "3.5.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/cookie-law-info/",
-                "reference": "tags/3.4.2"
+                "reference": "tags/3.5.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cookie-law-info.3.4.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/cookie-law-info.3.5.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
