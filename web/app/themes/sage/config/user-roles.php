@@ -68,7 +68,7 @@ return [
 			],
 			'cap_groups' => [
 				'gravityforms',
-				'wpseo',
+				'seo_redirections',
 				'users',
 			],
 		],
@@ -139,7 +139,7 @@ return [
 			'gravityforms_view_entry_notes',
 			'gravityforms_edit_entry_notes',
 		],
-		'wpseo' => [
+		'seo_redirections' => [
 			'wpseo_bulk_edit',
 			'wpseo_manage_options',
 			'edit_redirection',
