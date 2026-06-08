@@ -32,8 +32,8 @@
 		<div class="z-2 sticky bottom-0 mt-auto flex gap-2 bg-white p-4">
 			<x-facetwp.reset-button />
 
-			<x-brave::dialog.trigger :dialogId="$dialogId" class="is-button w-full justify-center">
-				{{ __('Bekijk resultaten', 'sage') }}
+			<x-brave::dialog.trigger :dialogId="$dialogId" class="is-button w-full justify-center whitespace-nowrap">
+				{!! facetwp_display('facet', 'result_count_button') !!}
 			</x-brave::dialog.trigger>
 		</div>
 	</div>
