@@ -1,3 +1,9 @@
+.wp-block-yard-collapse
+	> .block-editor-inner-blocks
+	> .block-editor-block-list__layout {
+	@apply grid gap-(--collapse-spacing);
+}
+
 .wp-block-yard-collapse-item {
 	&[data-open='true'] {
 		--collapse-button-bg-color: var( --collapse-button-bg-color-hover );
@@ -19,8 +25,4 @@
 
 .wp-block-yard-collapse-item__header-toggle-button {
 	@apply flex aspect-square size-(--collapse-button-icon-size) items-center justify-center rounded-(--collapse-radius)! bg-(--collapse-button-icon-bg-color)! p-0 text-[length:inherit] leading-[inherit] text-(--collapse-button-icon-color)!;
-}
-
-.wp-block-yard-collapse .block-editor-block-list__layout {
-	@apply grid gap-(--collapse-spacing);
 }
