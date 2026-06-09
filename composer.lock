@@ -1181,16 +1181,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.11.0",
+            "version": "7.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "c987f8ce84b8434fa430795eca0f3430663da72b"
+                "reference": "5af96f374e0ab4ebd747b8310888c99d3adb0a8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/c987f8ce84b8434fa430795eca0f3430663da72b",
-                "reference": "c987f8ce84b8434fa430795eca0f3430663da72b",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/5af96f374e0ab4ebd747b8310888c99d3adb0a8c",
+                "reference": "5af96f374e0ab4ebd747b8310888c99d3adb0a8c",
                 "shasum": ""
             },
             "require": {
@@ -1209,7 +1209,7 @@
                 "bamarni/composer-bin-plugin": "^1.8.2",
                 "ext-curl": "*",
                 "guzzle/client-integration-tests": "3.0.2",
-                "guzzlehttp/test-server": "^0.4",
+                "guzzlehttp/test-server": "^0.5",
                 "php-http/message-factory": "^1.1",
                 "phpunit/phpunit": "^8.5.52 || ^9.6.34",
                 "psr/log": "^1.1 || ^2.0 || ^3.0"
@@ -1289,7 +1289,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/7.11.0"
+                "source": "https://github.com/guzzle/guzzle/tree/7.11.1"
             },
             "funding": [
                 {
@@ -1305,7 +1305,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-06-02T12:40:51+00:00"
+            "time": "2026-06-07T22:54:06+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -4932,16 +4932,16 @@
         },
         {
             "name": "plugin/yard-gutenberg",
-            "version": "v1.5.5",
+            "version": "v1.5.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yardinternet/plugin-yard-gutenberg.git",
-                "reference": "d2b43ce7d3501fcf82d6da64331a35b8445ac744"
+                "reference": "af1f3ccd9e20074435e4f382456f6438fe97a382"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yardinternet/plugin-yard-gutenberg/zipball/d2b43ce7d3501fcf82d6da64331a35b8445ac744",
-                "reference": "d2b43ce7d3501fcf82d6da64331a35b8445ac744",
+                "url": "https://api.github.com/repos/yardinternet/plugin-yard-gutenberg/zipball/af1f3ccd9e20074435e4f382456f6438fe97a382",
+                "reference": "af1f3ccd9e20074435e4f382456f6438fe97a382",
                 "shasum": ""
             },
             "require": {
@@ -4971,9 +4971,9 @@
             "description": "A collection of blocks for the WordPress Gutenberg editor.",
             "support": {
                 "issues": "https://github.com/yardinternet/plugin-yard-gutenberg/issues",
-                "source": "https://github.com/yardinternet/plugin-yard-gutenberg/tree/v1.5.5"
+                "source": "https://github.com/yardinternet/plugin-yard-gutenberg/tree/v1.5.6"
             },
-            "time": "2026-03-27T10:37:13+00:00"
+            "time": "2026-06-05T08:00:14+00:00"
         },
         {
             "name": "psr/clock",
@@ -8244,16 +8244,16 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.38.1",
+            "version": "v1.38.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "14c5439eec4ccff081ac14eca2dc57feb2a66d92"
+                "reference": "d3d318bad5e7a1bfbd026009c8bfb8d8f99ae6b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/14c5439eec4ccff081ac14eca2dc57feb2a66d92",
-                "reference": "14c5439eec4ccff081ac14eca2dc57feb2a66d92",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/d3d318bad5e7a1bfbd026009c8bfb8d8f99ae6b6",
+                "reference": "d3d318bad5e7a1bfbd026009c8bfb8d8f99ae6b6",
                 "shasum": ""
             },
             "require": {
@@ -8305,7 +8305,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.38.1"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.38.2"
             },
             "funding": [
                 {
@@ -8325,7 +8325,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-05-26T12:51:13+00:00"
+            "time": "2026-05-27T06:59:30+00:00"
         },
         {
             "name": "symfony/polyfill-php80",
@@ -8413,16 +8413,16 @@
         },
         {
             "name": "symfony/polyfill-php83",
-            "version": "v1.38.1",
+            "version": "v1.38.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php83.git",
-                "reference": "8339098cae28673c15cce00d80734af0453054e2"
+                "reference": "796a26abb75ce49f3a84433cd81bf1009d73d5f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php83/zipball/8339098cae28673c15cce00d80734af0453054e2",
-                "reference": "8339098cae28673c15cce00d80734af0453054e2",
+                "url": "https://api.github.com/repos/symfony/polyfill-php83/zipball/796a26abb75ce49f3a84433cd81bf1009d73d5f8",
+                "reference": "796a26abb75ce49f3a84433cd81bf1009d73d5f8",
                 "shasum": ""
             },
             "require": {
@@ -8469,7 +8469,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php83/tree/v1.38.1"
+                "source": "https://github.com/symfony/polyfill-php83/tree/v1.38.2"
             },
             "funding": [
                 {
@@ -8489,7 +8489,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-05-26T12:51:13+00:00"
+            "time": "2026-05-27T06:51:48+00:00"
         },
         {
             "name": "symfony/process",
@@ -11298,16 +11298,16 @@
         },
         {
             "name": "yard/brave-csp",
-            "version": "v1.4.4",
+            "version": "v1.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yardinternet/brave-csp.git",
-                "reference": "05789c5f3d22d8bfd3c0bc75049fc66cdc69be57"
+                "reference": "42c12b77b614b7163362b1c79c5d28689845aba4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yardinternet/brave-csp/zipball/05789c5f3d22d8bfd3c0bc75049fc66cdc69be57",
-                "reference": "05789c5f3d22d8bfd3c0bc75049fc66cdc69be57",
+                "url": "https://api.github.com/repos/yardinternet/brave-csp/zipball/42c12b77b614b7163362b1c79c5d28689845aba4",
+                "reference": "42c12b77b614b7163362b1c79c5d28689845aba4",
                 "shasum": ""
             },
             "require": {
@@ -11330,9 +11330,9 @@
             "description": "Content Security Policy for Brave sites",
             "support": {
                 "issues": "https://github.com/yardinternet/brave-csp/issues",
-                "source": "https://github.com/yardinternet/brave-csp/tree/v1.4.4"
+                "source": "https://github.com/yardinternet/brave-csp/tree/v1.4.5"
             },
-            "time": "2026-05-15T09:18:44+00:00"
+            "time": "2026-06-05T08:09:03+00:00"
         },
         {
             "name": "yard/brave-hooks",
@@ -11391,16 +11391,16 @@
         },
         {
             "name": "yard/config-expander",
-            "version": "v1.5.0",
+            "version": "v1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yardinternet/package-config-expander.git",
-                "reference": "5e22c3c79750e6ed356ca126307779bd6f78a6b3"
+                "reference": "d68133420d7785c6e07cf49b791962aff92c6d93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yardinternet/package-config-expander/zipball/5e22c3c79750e6ed356ca126307779bd6f78a6b3",
-                "reference": "5e22c3c79750e6ed356ca126307779bd6f78a6b3",
+                "url": "https://api.github.com/repos/yardinternet/package-config-expander/zipball/d68133420d7785c6e07cf49b791962aff92c6d93",
+                "reference": "d68133420d7785c6e07cf49b791962aff92c6d93",
                 "shasum": ""
             },
             "require": {
@@ -11436,9 +11436,9 @@
             "description": "Adds necessary security, defaults and settings to this site.",
             "support": {
                 "issues": "https://github.com/yardinternet/package-config-expander/issues",
-                "source": "https://github.com/yardinternet/package-config-expander/tree/v1.5.0"
+                "source": "https://github.com/yardinternet/package-config-expander/tree/v1.5.1"
             },
-            "time": "2026-05-08T07:19:55+00:00"
+            "time": "2026-06-04T11:11:31+00:00"
         },
         {
             "name": "yard/data",
