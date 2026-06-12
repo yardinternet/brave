@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fb368b86d6f389eac96cb92f49fd8665",
+    "content-hash": "0ba32285087c9c7d99cb505bb44d1b8d",
     "packages": [
         {
             "name": "bordoni/phpass",
@@ -11215,15 +11215,15 @@
         },
         {
             "name": "wp-plugin/gravity-forms-zero-spam",
-            "version": "1.8.0",
+            "version": "1.9.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gravity-forms-zero-spam/",
-                "reference": "tags/1.8.0"
+                "reference": "tags/1.9.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gravity-forms-zero-spam.1.8.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gravity-forms-zero-spam.1.9.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0|~2.0"
@@ -11242,7 +11242,7 @@
                 "issues": "https://wordpress.org/support/plugin/gravity-forms-zero-spam",
                 "source": "https://plugins.svn.wordpress.org/gravity-forms-zero-spam"
             },
-            "time": "2026-04-17T01:00:51+00:00"
+            "time": "2026-06-12T12:15:51+00:00"
         },
         {
             "name": "wp-plugin/relay",
@@ -11308,15 +11308,15 @@
         },
         {
             "name": "wp-plugin/wp-seopress",
-            "version": "8.9.0.2",
+            "version": "9.9.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-seopress/",
-                "reference": "tags/8.9.0.2"
+                "reference": "tags/9.9.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-seopress.8.9.0.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-seopress.9.9.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0|~2.0"
