@@ -4895,16 +4895,16 @@
         },
         {
             "name": "plugin/yard-gutenberg",
-            "version": "v1.5.6",
+            "version": "v1.5.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yardinternet/plugin-yard-gutenberg.git",
-                "reference": "af1f3ccd9e20074435e4f382456f6438fe97a382"
+                "reference": "8269858d6d108883678fb7f7897887714bacc3ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yardinternet/plugin-yard-gutenberg/zipball/af1f3ccd9e20074435e4f382456f6438fe97a382",
-                "reference": "af1f3ccd9e20074435e4f382456f6438fe97a382",
+                "url": "https://api.github.com/repos/yardinternet/plugin-yard-gutenberg/zipball/8269858d6d108883678fb7f7897887714bacc3ca",
+                "reference": "8269858d6d108883678fb7f7897887714bacc3ca",
                 "shasum": ""
             },
             "require": {
@@ -4934,9 +4934,9 @@
             "description": "A collection of blocks for the WordPress Gutenberg editor.",
             "support": {
                 "issues": "https://github.com/yardinternet/plugin-yard-gutenberg/issues",
-                "source": "https://github.com/yardinternet/plugin-yard-gutenberg/tree/v1.5.6"
+                "source": "https://github.com/yardinternet/plugin-yard-gutenberg/tree/v1.5.7"
             },
-            "time": "2026-06-05T08:00:14+00:00"
+            "time": "2026-06-15T11:59:41+00:00"
         },
         {
             "name": "psr/clock",
