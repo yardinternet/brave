@@ -58,6 +58,7 @@ return [
 				'copy_posts',
 				'yard_edit_privacy_policy',
 				'yard_edit_attachments',
+				'edit_emergency_notification',
 			],
 			'post_type_caps' => [
 				'post',
