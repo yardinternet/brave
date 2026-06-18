@@ -28,7 +28,7 @@ web/.htaccess
 # WP-CLI
 wp-cli.local.yml
 
-# Yard Custom
+# Yard custom
 *.cache
 *.dump
 *.sql
@@ -42,5 +42,12 @@ web/app/db.php
 web/app/languages
 web/app/wflogs
 
+# Brave boost generated files
+CLAUDE.md
+.cursor/rules/brave-boost.mdc
+.github/copilot-instructions.md
+.claude/skills/brave-*/
+
 # Husky
 .husky/_
+
