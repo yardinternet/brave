@@ -37,11 +37,18 @@
 			"name": "wp-packages",
 			"type": "composer",
 			"url": "https://repo.wp-packages.org"
+		},
+		{
+			"type": "path",
+			"url": "./packages/wp-cookie-manager"
 		}
 	],
 	"require": {
 		"php": ">=8.2",
+		"bonny/wordpress-simple-history": "^5.29",
 		"composer/installers": "^2.2",
+		"deliciousbrains-plugin/wp-migrate-db-pro": "^2.7",
+		"gravity/gravityforms": "^2.10",
 		"johnbillion/user-switching": "^1.11",
 		"log1x/navi": "^3.1",
 		"log1x/poet": "^2.0",
@@ -56,16 +63,20 @@
 		"sentry/sentry-laravel": "^4.13",
 		"spatie/laravel-google-fonts": "^1.4",
 		"spatie/laravel-ignition": "^2.0",
+		"tdrayson/wp-wireframe": "^1.0",
 		"vlucas/phpdotenv": "^5.5",
 		"wp-media/imagify-plugin": "^2.2",
 		"wp-plugin/cookie-law-info": "^3.2",
+		"wp-plugin/faz-cookie-manager": "^1.22",
 		"wp-plugin/gravity-forms-zero-spam": "^1.8",
 		"wp-plugin/relay": "^1.3",
-		"bonny/wordpress-simple-history": "^5.29",
 		"wp-plugin/wp-seopress": "^9.0",
+		"wpengine/advanced-custom-fields-pro": "^6.8",
 		"yard/brave-acf": "^1.1",
 		"yard/brave-components": "^1.2",
+		"yard/wp-cookie-manager": "*@dev",
 		"yard/brave-csp": "^1.0",
+		"yard/brave-dashboard": "^2.0",
 		"yard/brave-hooks": "^2.0",
 		"yard/config-expander": "^1.0",
 		"yard/data": "^1.0",
@@ -76,8 +87,12 @@
 		"yard/wp-block-registrar": "^1.0",
 		"yard/wp-cli-bundle": "^2.0",
 		"yard/wp-database": "^1.0",
+		"yard/wp-emergency-notification": "^1.3",
 		"yard/wp-user-roles": "^2.0",
-		"yoast/duplicate-post": "^4.6"
+		"yoast/duplicate-post": "^4.6",
+		"ypackagist/facetwp": "^4.5",
+		"ypackagist/searchwp": "^4.5",
+		"ypackagist/wp-seopress-pro": "^9.7"
 	},
 	"require-dev": {
 		"captainhook/captainhook": "^5.24",

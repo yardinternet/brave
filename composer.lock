@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "002c4d06fa9acfc19c68a8345281736b",
+    "content-hash": "f2ef7d2ba750125ed1dbe58264d0508b",
     "packages": [
         {
             "name": "bonny/wordpress-simple-history",
@@ -546,6 +546,94 @@
                 "source": "https://github.com/dangoodman/composer-for-wordpress/tree/2.0.2"
             },
             "time": "2020-11-16T19:32:10+00:00"
+        },
+        {
+            "name": "deliciousbrains-plugin/wp-migrate-db-pro",
+            "version": "2.7.10",
+            "dist": {
+                "type": "zip",
+                "url": "https://satis.yard.nl/dist/deliciousbrains-plugin/wp-migrate-db-pro/deliciousbrains-plugin-wp-migrate-db-pro-2.7.10.zip",
+                "shasum": "952679019547bd87fa5c4f311561f3982028a32b"
+            },
+            "require": {
+                "composer/installers": "~1.0 || ~2.0"
+            },
+            "type": "wordpress-plugin"
+        },
+        {
+            "name": "dflydev/dot-access-data",
+            "version": "v3.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dflydev/dflydev-dot-access-data.git",
+                "reference": "a23a2bf4f31d3518f3ecb38660c95715dfead60f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dflydev/dflydev-dot-access-data/zipball/a23a2bf4f31d3518f3ecb38660c95715dfead60f",
+                "reference": "a23a2bf4f31d3518f3ecb38660c95715dfead60f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^0.12.42",
+                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.3",
+                "scrutinizer/ocular": "1.6.0",
+                "squizlabs/php_codesniffer": "^3.5",
+                "vimeo/psalm": "^4.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dflydev\\DotAccessData\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dragonfly Development Inc.",
+                    "email": "info@dflydev.com",
+                    "homepage": "http://dflydev.com"
+                },
+                {
+                    "name": "Beau Simensen",
+                    "email": "beau@dflydev.com",
+                    "homepage": "http://beausimensen.com"
+                },
+                {
+                    "name": "Carlos Frutos",
+                    "email": "carlos@kiwing.it",
+                    "homepage": "https://github.com/cfrutos"
+                },
+                {
+                    "name": "Colin O'Dell",
+                    "email": "colinodell@gmail.com",
+                    "homepage": "https://www.colinodell.com"
+                }
+            ],
+            "description": "Given a deep data structure, access data by dot notation.",
+            "homepage": "https://github.com/dflydev/dflydev-dot-access-data",
+            "keywords": [
+                "access",
+                "data",
+                "dot",
+                "notation"
+            ],
+            "support": {
+                "issues": "https://github.com/dflydev/dflydev-dot-access-data/issues",
+                "source": "https://github.com/dflydev/dflydev-dot-access-data/tree/v3.0.3"
+            },
+            "time": "2024-07-08T12:26:09+00:00"
         },
         {
             "name": "doctrine/deprecations",
@@ -1238,6 +1326,19 @@
                 }
             ],
             "time": "2025-12-27T19:43:20+00:00"
+        },
+        {
+            "name": "gravity/gravityforms",
+            "version": "2.10.5",
+            "dist": {
+                "type": "zip",
+                "url": "https://satis.yard.nl/dist/gravity/gravityforms/gravity-gravityforms-2.10.5.zip",
+                "shasum": "12fd06fde9a139520690c264b59cefac69ff3b55"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -4095,6 +4196,195 @@
             "time": "2024-11-14T18:34:49+00:00"
         },
         {
+            "name": "league/commonmark",
+            "version": "2.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/commonmark.git",
+                "reference": "59fb075d2101740c337c7216e3f32b36c204218b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/59fb075d2101740c337c7216e3f32b36c204218b",
+                "reference": "59fb075d2101740c337c7216e3f32b36c204218b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "league/config": "^1.1.1",
+                "php": "^7.4 || ^8.0",
+                "psr/event-dispatcher": "^1.0",
+                "symfony/deprecation-contracts": "^2.1 || ^3.0",
+                "symfony/polyfill-php80": "^1.16"
+            },
+            "require-dev": {
+                "cebe/markdown": "^1.0",
+                "commonmark/cmark": "0.31.1",
+                "commonmark/commonmark.js": "0.31.1",
+                "composer/package-versions-deprecated": "^1.8",
+                "embed/embed": "^4.4",
+                "erusev/parsedown": "^1.0",
+                "ext-json": "*",
+                "github/gfm": "0.29.0",
+                "michelf/php-markdown": "^1.4 || ^2.0",
+                "nyholm/psr7": "^1.5",
+                "phpstan/phpstan": "^1.8.2",
+                "phpunit/phpunit": "^9.5.21 || ^10.5.9 || ^11.0.0",
+                "scrutinizer/ocular": "^1.8.1",
+                "symfony/finder": "^5.3 | ^6.0 | ^7.0 || ^8.0",
+                "symfony/process": "^5.4 | ^6.0 | ^7.0 || ^8.0",
+                "symfony/yaml": "^2.3 | ^3.0 | ^4.0 | ^5.0 | ^6.0 | ^7.0 || ^8.0",
+                "unleashedtech/php-coding-standard": "^3.1.1",
+                "vimeo/psalm": "^4.24.0 || ^5.0.0 || ^6.0.0"
+            },
+            "suggest": {
+                "symfony/yaml": "v2.3+ required if using the Front Matter extension"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "2.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\CommonMark\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Colin O'Dell",
+                    "email": "colinodell@gmail.com",
+                    "homepage": "https://www.colinodell.com",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "Highly-extensible PHP Markdown parser which fully supports the CommonMark spec and GitHub-Flavored Markdown (GFM)",
+            "homepage": "https://commonmark.thephpleague.com",
+            "keywords": [
+                "commonmark",
+                "flavored",
+                "gfm",
+                "github",
+                "github-flavored",
+                "markdown",
+                "md",
+                "parser"
+            ],
+            "support": {
+                "docs": "https://commonmark.thephpleague.com/",
+                "forum": "https://github.com/thephpleague/commonmark/discussions",
+                "issues": "https://github.com/thephpleague/commonmark/issues",
+                "rss": "https://github.com/thephpleague/commonmark/releases.atom",
+                "source": "https://github.com/thephpleague/commonmark"
+            },
+            "funding": [
+                {
+                    "url": "https://www.colinodell.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.paypal.me/colinpodell/10.00",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/colinodell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/league/commonmark",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2026-03-19T13:16:38+00:00"
+        },
+        {
+            "name": "league/config",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/config.git",
+                "reference": "754b3604fb2984c71f4af4a9cbe7b57f346ec1f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/config/zipball/754b3604fb2984c71f4af4a9cbe7b57f346ec1f3",
+                "reference": "754b3604fb2984c71f4af4a9cbe7b57f346ec1f3",
+                "shasum": ""
+            },
+            "require": {
+                "dflydev/dot-access-data": "^3.0.1",
+                "nette/schema": "^1.2",
+                "php": "^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.8.2",
+                "phpunit/phpunit": "^9.5.5",
+                "scrutinizer/ocular": "^1.8.1",
+                "unleashedtech/php-coding-standard": "^3.1",
+                "vimeo/psalm": "^4.7.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Config\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Colin O'Dell",
+                    "email": "colinodell@gmail.com",
+                    "homepage": "https://www.colinodell.com",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "Define configuration arrays with strict schemas and access values with dot notation",
+            "homepage": "https://config.thephpleague.com",
+            "keywords": [
+                "array",
+                "config",
+                "configuration",
+                "dot",
+                "dot-access",
+                "nested",
+                "schema"
+            ],
+            "support": {
+                "docs": "https://config.thephpleague.com/",
+                "issues": "https://github.com/thephpleague/config/issues",
+                "rss": "https://github.com/thephpleague/config/releases.atom",
+                "source": "https://github.com/thephpleague/config"
+            },
+            "funding": [
+                {
+                    "url": "https://www.colinodell.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.paypal.me/colinpodell/10.00",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/colinodell",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-12-11T20:36:23+00:00"
+        },
+        {
             "name": "league/flysystem",
             "version": "3.35.0",
             "source": {
@@ -4281,6 +4571,65 @@
                 }
             ],
             "time": "2024-09-21T08:32:55+00:00"
+        },
+        {
+            "name": "log1x/acf-composer",
+            "version": "v3.4.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Log1x/acf-composer.git",
+                "reference": "490d362cc5c06a03ac510b26a9422372a2b5efcb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Log1x/acf-composer/zipball/490d362cc5c06a03ac510b26a9422372a2b5efcb",
+                "reference": "490d362cc5c06a03ac510b26a9422372a2b5efcb",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/prompts": "*",
+                "php": "^8.0",
+                "stoutlogic/acf-builder": "^1.11"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.14",
+                "roots/acorn": "^3.0|^4.0"
+            },
+            "type": "package",
+            "extra": {
+                "acorn": {
+                    "providers": [
+                        "Log1x\\AcfComposer\\Providers\\AcfComposerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Log1x\\AcfComposer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brandon Nifong",
+                    "email": "brandon@tendency.me"
+                }
+            ],
+            "description": "Create fields, blocks, option pages, and widgets using ACF Builder and Sage 10",
+            "support": {
+                "issues": "https://github.com/Log1x/acf-composer/issues",
+                "source": "https://github.com/Log1x/acf-composer/tree/v3.4.6"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Log1x",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-04-21T00:12:02+00:00"
         },
         {
             "name": "log1x/navi",
@@ -4710,6 +5059,164 @@
                 }
             ],
             "time": "2025-01-08T20:10:23+00:00"
+        },
+        {
+            "name": "nette/schema",
+            "version": "v1.3.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nette/schema.git",
+                "reference": "f0ab1a3cda782dbc5da270d28545236aa80c4002"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nette/schema/zipball/f0ab1a3cda782dbc5da270d28545236aa80c4002",
+                "reference": "f0ab1a3cda782dbc5da270d28545236aa80c4002",
+                "shasum": ""
+            },
+            "require": {
+                "nette/utils": "^4.0",
+                "php": "8.1 - 8.5"
+            },
+            "require-dev": {
+                "nette/phpstan-rules": "^1.0",
+                "nette/tester": "^2.6",
+                "phpstan/extension-installer": "^1.4@stable",
+                "phpstan/phpstan": "^2.1.39@stable",
+                "tracy/tracy": "^2.8"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nette\\": "src"
+                },
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0-only",
+                "GPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "https://davidgrudl.com"
+                },
+                {
+                    "name": "Nette Community",
+                    "homepage": "https://nette.org/contributors"
+                }
+            ],
+            "description": "📐 Nette Schema: validating data structures against a given Schema.",
+            "homepage": "https://nette.org",
+            "keywords": [
+                "config",
+                "nette"
+            ],
+            "support": {
+                "issues": "https://github.com/nette/schema/issues",
+                "source": "https://github.com/nette/schema/tree/v1.3.5"
+            },
+            "time": "2026-02-23T03:47:12+00:00"
+        },
+        {
+            "name": "nette/utils",
+            "version": "v4.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nette/utils.git",
+                "reference": "7da6c396d7ebe142bc857c20479d5e70a5e1aac7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nette/utils/zipball/7da6c396d7ebe142bc857c20479d5e70a5e1aac7",
+                "reference": "7da6c396d7ebe142bc857c20479d5e70a5e1aac7",
+                "shasum": ""
+            },
+            "require": {
+                "php": "8.2 - 8.5"
+            },
+            "conflict": {
+                "nette/finder": "<3",
+                "nette/schema": "<1.2.2"
+            },
+            "require-dev": {
+                "jetbrains/phpstorm-attributes": "^1.2",
+                "nette/phpstan-rules": "^1.0",
+                "nette/tester": "^2.5",
+                "phpstan/extension-installer": "^1.4@stable",
+                "phpstan/phpstan": "^2.1@stable",
+                "tracy/tracy": "^2.9"
+            },
+            "suggest": {
+                "ext-gd": "to use Image",
+                "ext-iconv": "to use Strings::webalize(), toAscii(), chr() and reverse()",
+                "ext-intl": "to use Strings::webalize(), toAscii(), normalize() and compare()",
+                "ext-json": "to use Nette\\Utils\\Json",
+                "ext-mbstring": "to use Strings::lower() etc...",
+                "ext-tokenizer": "to use Nette\\Utils\\Reflection::getUseStatements()"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nette\\": "src"
+                },
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0-only",
+                "GPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "https://davidgrudl.com"
+                },
+                {
+                    "name": "Nette Community",
+                    "homepage": "https://nette.org/contributors"
+                }
+            ],
+            "description": "🛠  Nette Utils: lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc.",
+            "homepage": "https://nette.org",
+            "keywords": [
+                "array",
+                "core",
+                "datetime",
+                "images",
+                "json",
+                "nette",
+                "paginator",
+                "password",
+                "slugify",
+                "string",
+                "unicode",
+                "utf-8",
+                "utility",
+                "validation"
+            ],
+            "support": {
+                "issues": "https://github.com/nette/utils/issues",
+                "source": "https://github.com/nette/utils/tree/v4.1.4"
+            },
+            "time": "2026-05-11T20:49:54+00:00"
         },
         {
             "name": "nunomaduro/termwind",
@@ -5683,6 +6190,52 @@
                 "source": "https://github.com/php-fig/simple-cache/tree/3.0.0"
             },
             "time": "2021-10-29T13:26:27+00:00"
+        },
+        {
+            "name": "rakit/validation",
+            "version": "v1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rakit/validation.git",
+                "reference": "ff003a35cdf5030a5f2482299f4c93f344a35b29"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rakit/validation/zipball/ff003a35cdf5030a5f2482299f4c93f344a35b29",
+                "reference": "ff003a35cdf5030a5f2482299f4c93f344a35b29",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.2",
+                "phpunit/phpunit": "^6.5",
+                "squizlabs/php_codesniffer": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Rakit\\Validation\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Muhammad Syifa",
+                    "email": "emsifa@gmail.com"
+                }
+            ],
+            "description": "PHP Laravel like standalone validation library",
+            "support": {
+                "issues": "https://github.com/rakit/validation/issues",
+                "source": "https://github.com/rakit/validation/tree/v1.4.0"
+            },
+            "time": "2020-08-27T05:07:01+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -7360,6 +7913,52 @@
                 }
             ],
             "time": "2025-09-22T14:58:17+00:00"
+        },
+        {
+            "name": "stoutlogic/acf-builder",
+            "version": "v1.12.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/StoutLogic/acf-builder.git",
+                "reference": "e63ab87233ea3675cd519f1dd6b6d4230b3cef97"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/StoutLogic/acf-builder/zipball/e63ab87233ea3675cd519f1dd6b6d4230b3cef97",
+                "reference": "e63ab87233ea3675cd519f1dd6b6d4230b3cef97",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/inflector": "^1.1|^2.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpdocumentor/reflection-docblock": "2.*",
+                "phpunit/phpunit": "4.*",
+                "squizlabs/php_codesniffer": "^2.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "StoutLogic\\AcfBuilder\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Steve Pfisterer",
+                    "email": "steve@stoutlogic.com"
+                }
+            ],
+            "description": "An Advanced Custom Field Configuration Builder",
+            "support": {
+                "issues": "https://github.com/StoutLogic/acf-builder/issues",
+                "source": "https://github.com/StoutLogic/acf-builder/tree/v1.12.0"
+            },
+            "time": "2021-09-17T17:32:44+00:00"
         },
         {
             "name": "symfony/console",
@@ -9475,6 +10074,47 @@
             "time": "2026-03-30T15:36:00+00:00"
         },
         {
+            "name": "tdrayson/wp-wireframe",
+            "version": "v1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tdrayson/wp-wireframe.git",
+                "reference": "b8367e7913f52292127d97b284d5ef9644cd4d7c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tdrayson/wp-wireframe/zipball/b8367e7913f52292127d97b284d5ef9644cd4d7c",
+                "reference": "b8367e7913f52292127d97b284d5ef9644cd4d7c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "rakit/validation": "^1.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Wireframe\\": "src/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "A fast, standardised way to build WordPress settings pages from a PHP array.",
+            "keywords": [
+                "admin",
+                "framework",
+                "react",
+                "settings",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/tdrayson/wp-wireframe/tree/v1.0.6",
+                "issues": "https://github.com/tdrayson/wp-wireframe/issues"
+            },
+            "time": "2026-06-04T11:48:51+00:00"
+        },
+        {
             "name": "thunderer/shortcode",
             "version": "v0.7.6",
             "source": {
@@ -11548,6 +12188,37 @@
             "time": "2026-05-27T12:15:52+00:00"
         },
         {
+            "name": "wp-plugin/faz-cookie-manager",
+            "version": "1.22.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/faz-cookie-manager/",
+                "reference": "tags/1.22.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/faz-cookie-manager.1.22.0.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0|~2.0"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://wp-packages.org/downloads",
+            "authors": [
+                {
+                    "name": "fabiodalez"
+                }
+            ],
+            "description": "Free cookie consent with GDPR, CCPA, ePrivacy, Google Consent Mode v2, IAB TCF v2.3, and built-in Cookie Policy generator. No cloud required.",
+            "homepage": "https://github.com/fabiodalez-dev/faz-cookie-manager",
+            "support": {
+                "changelog": "https://wordpress.org/plugins/faz-cookie-manager/#developers",
+                "issues": "https://wordpress.org/support/plugin/faz-cookie-manager",
+                "source": "https://plugins.svn.wordpress.org/faz-cookie-manager"
+            },
+            "time": "2026-07-03T07:51:06+00:00"
+        },
+        {
             "name": "wp-plugin/gravity-forms-zero-spam",
             "version": "1.9.0",
             "source": {
@@ -11639,6 +12310,23 @@
                 "source": "https://plugins.svn.wordpress.org/wp-seopress"
             },
             "time": "2026-06-02T15:11:51+00:00"
+        },
+        {
+            "name": "wpengine/advanced-custom-fields-pro",
+            "version": "6.8.5",
+            "dist": {
+                "type": "zip",
+                "url": "https://satis.yard.nl/dist/wpengine/advanced-custom-fields-pro/wpengine-advanced-custom-fields-pro-6.8.5.zip",
+                "shasum": "1e99d1105143d4c96bc0c707e7c0873e509c06a0"
+            },
+            "require": {
+                "composer/installers": "~1.0 || ~2.0"
+            },
+            "replace": {
+                "wpackagist-plugin/advanced-custom-fields": "self.version",
+                "wpengine/advanced-custom-fields": "self.version"
+            },
+            "type": "wordpress-plugin"
         },
         {
             "name": "yard/acf-registrar",
@@ -11873,6 +12561,86 @@
                 "source": "https://github.com/yardinternet/brave-csp/tree/v1.4.5"
             },
             "time": "2026-06-05T08:09:03+00:00"
+        },
+        {
+            "name": "yard/brave-dashboard",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:yardinternet/brave-dashboard.git",
+                "reference": "fa47b1cb8250e8ba558f5435e7453d6bebdc8b1f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://satis.yard.nl/dist/yard/brave-dashboard/yard-brave-dashboard-fa47b1cb8250e8ba558f5435e7453d6bebdc8b1f-zip-ef4c7f.zip",
+                "reference": "fa47b1cb8250e8ba558f5435e7453d6bebdc8b1f",
+                "shasum": "bcd57237366bfc34a5e29467c4f9d7670478b66b"
+            },
+            "require": {
+                "league/commonmark": "^2.7",
+                "php": ">=8.2",
+                "roots/acorn": "^4.3",
+                "spatie/laravel-package-tools": "^1.16"
+            },
+            "require-dev": {
+                "10up/wp_mock": "^0.4.2",
+                "larastan/larastan": "^2.9",
+                "orchestra/testbench": "^8.27",
+                "pestphp/pest": "^2.36",
+                "szepeviktor/phpstan-wordpress": "^1.3",
+                "yard/php-cs-fixer-rules": "^1.0"
+            },
+            "type": "package",
+            "extra": {
+                "acorn": {
+                    "providers": [
+                        "Yard\\Dashboard\\DashboardServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Yard\\Dashboard\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Yard\\Dashboard\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "if [ -f ./vendor/laravel/framework/src/Illuminate/Foundation/helpers.php ]; then sed -i -e \"s#function __(#function a__(#\" ./vendor/laravel/framework/src/Illuminate/Foundation/helpers.php; fi",
+                    "if [ -f ./vendor/roots/acorn/src/Illuminate/Foundation/helpers.php ]; then sed -i -e \"s#function __(#function b__(#\" ./vendor/roots/acorn/src/Illuminate/Foundation/helpers.php; fi",
+                    "if [ -f ./vendor/larastan/larastan/stubs/common/Helpers.stub ]; then sed -i -e \"s#function __(#function c__(#\" ./vendor/larastan/larastan/stubs/common/Helpers.stub; fi"
+                ],
+                "all": [
+                    "@test",
+                    "@analyse",
+                    "@format"
+                ],
+                "analyse": [
+                    "vendor/bin/phpstan analyse --debug --memory-limit 1G"
+                ],
+                "format": [
+                    "vendor/bin/php-cs-fixer fix"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test:coverage": [
+                    "XDEBUG_MODE=coverage vendor/bin/pest --coverage"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "This is my package brave-dashboard",
+            "support": {
+                "source": "https://github.com/yardinternet/brave-dashboard",
+                "issues": "https://github.com/yardinternet/brave-dashboard/issues"
+            },
+            "time": "2026-06-30T14:19:31+00:00"
         },
         {
             "name": "yard/brave-hooks",
@@ -12373,6 +13141,82 @@
             "time": "2026-06-11T09:43:03+00:00"
         },
         {
+            "name": "yard/wp-cookie-manager",
+            "version": "dev-feat/vite-asset-build",
+            "dist": {
+                "type": "path",
+                "url": "./packages/wp-cookie-manager",
+                "reference": "69f41b5b0c9c9e5f960b24d9f1eacaf61aebd33f"
+            },
+            "require": {
+                "php": ">=8.2",
+                "roots/acorn": "^4.3",
+                "spatie/laravel-package-tools": "^1.16"
+            },
+            "require-dev": {
+                "10up/wp_mock": "^0.4.2",
+                "larastan/larastan": "^2.9",
+                "orchestra/testbench": "^8.27",
+                "pestphp/pest": "^2.36",
+                "phpstan/extension-installer": "^1.4",
+                "szepeviktor/phpstan-wordpress": "^1.3",
+                "yard/php-cs-fixer-rules": "^1.0"
+            },
+            "type": "package",
+            "extra": {
+                "acorn": {
+                    "providers": [
+                        "Yard\\CookieManager\\CookieManagerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Yard\\CookieManager\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Yard\\CookieManager\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "if [ -f ./vendor/laravel/framework/src/Illuminate/Foundation/helpers.php ]; then sed -i -e \"s#function __(#function a__(#\" ./vendor/laravel/framework/src/Illuminate/Foundation/helpers.php; fi",
+                    "if [ -f ./vendor/roots/acorn/src/Illuminate/Foundation/helpers.php ]; then sed -i -e \"s#function __(#function b__(#\" ./vendor/roots/acorn/src/Illuminate/Foundation/helpers.php; fi",
+                    "if [ -f ./vendor/larastan/larastan/stubs/common/Helpers.stub ]; then sed -i -e \"s#function __(#function c__(#\" ./vendor/larastan/larastan/stubs/common/Helpers.stub; fi"
+                ],
+                "all": [
+                    "@test",
+                    "@analyse",
+                    "@format"
+                ],
+                "analyse": [
+                    "vendor/bin/phpstan analyse --debug --memory-limit 1G"
+                ],
+                "format": [
+                    "vendor/bin/php-cs-fixer fix"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test:coverage": [
+                    "XDEBUG_MODE=coverage vendor/bin/pest --coverage"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Provides a simple way to manage cookies in WordPress.",
+            "support": {
+                "source": "https://github.com/yardinternet/wp-cookie-manager",
+                "issues": "https://github.com/yardinternet/wp-cookie-manager/issues"
+            },
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "yard/wp-database",
             "version": "v1.0.1",
             "source": {
@@ -12425,6 +13269,76 @@
                 "source": "https://github.com/yardinternet/wp-database"
             },
             "time": "2025-04-07T08:03:30+00:00"
+        },
+        {
+            "name": "yard/wp-emergency-notification",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:yardinternet/wp-emergency-notification.git",
+                "reference": "518956aaf67254d0d5ec8860728ea2e6bd2f5d0f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://satis.yard.nl/dist/yard/wp-emergency-notification/yard-wp-emergency-notification-518956aaf67254d0d5ec8860728ea2e6bd2f5d0f-zip-e06ef4.zip",
+                "reference": "518956aaf67254d0d5ec8860728ea2e6bd2f5d0f",
+                "shasum": "dd28f0baebb38ec247c9557d0a0039632a8a27e3"
+            },
+            "require": {
+                "log1x/acf-composer": "^3.4",
+                "php": ">=8.2",
+                "roots/acorn": "^4.3",
+                "spatie/laravel-package-tools": "^1.16"
+            },
+            "require-dev": {
+                "10up/wp_mock": "^0.4.2",
+                "larastan/larastan": "^2.9",
+                "orchestra/testbench": "^8.27",
+                "pestphp/pest": "^2.36",
+                "szepeviktor/phpstan-wordpress": "^1.3",
+                "yard/php-cs-fixer-rules": "^1.0"
+            },
+            "type": "package",
+            "extra": {
+                "acorn": {
+                    "providers": [
+                        "Yard\\Emergency\\NotificationServiceProvider"
+                    ],
+                    "aliases": {
+                        "Emergency": "Yard\\Emergency\\Facades\\Notification"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Yard\\Emergency\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Yard\\Emergency\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "analyse": [
+                    "sed -i -e 's#function __(#function ____(#' ./vendor/php-stubs/wordpress-stubs/wordpress-stubs.php",
+                    "vendor/bin/phpstan analyse --debug --memory-limit 1G"
+                ],
+                "format": [
+                    "vendor/bin/php-cs-fixer fix"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test:coverage": [
+                    "XDEBUG_MODE=coverage vendor/bin/pest --coverage"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "An Acorn package for showing an emergency notification banner",
+            "time": "2026-05-26T11:51:30+00:00"
         },
         {
             "name": "yard/wp-hook-registrar",
@@ -12576,6 +13490,62 @@
                 "source": "https://github.com/Yoast/duplicate-post"
             },
             "time": "2026-03-09T10:26:52+00:00"
+        },
+        {
+            "name": "ypackagist/facetwp",
+            "version": "4.5",
+            "dist": {
+                "type": "zip",
+                "url": "https://packagist.yard.nl/satispress/facetwp/4.5",
+                "shasum": "6b675c95ff362f843abd95984fa46492252a8302"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "FacetWP, LLC",
+                "homepage": "https://facetwp.com/"
+            },
+            "description": "Advanced Filtering for WordPress"
+        },
+        {
+            "name": "ypackagist/searchwp",
+            "version": "4.5.8",
+            "dist": {
+                "type": "zip",
+                "url": "https://packagist.yard.nl/satispress/searchwp/4.5.8",
+                "shasum": "3aca0b459451b5f43f1917e2723d34ec56ae1f79"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "SearchWP",
+                "homepage": "https://searchwp.com/"
+            },
+            "description": "The best WordPress search you can find",
+            "homepage": "https://searchwp.com/"
+        },
+        {
+            "name": "ypackagist/wp-seopress-pro",
+            "version": "9.7.3",
+            "dist": {
+                "type": "zip",
+                "url": "https://packagist.yard.nl/satispress/wp-seopress-pro/9.7.3",
+                "shasum": "e36523b5c15ac8bf9426390c3b26566ae0dbdfe3"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "The SEO Guys at SEOPress",
+                "homepage": "https://www.seopress.org/wordpress-seo-plugins/pro/"
+            },
+            "description": "The PRO version of SEOPress. SEOPress required (free).",
+            "homepage": "https://www.seopress.org/wordpress-seo-plugins/pro/"
         }
     ],
     "packages-dev": [
@@ -14645,7 +15615,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "yard/wp-cookie-manager": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

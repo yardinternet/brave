@@ -15,6 +15,7 @@
 		<a class="is-button on-focus-visible focus:fixed! focus:left-4! focus:top-4!" href="#main">
 			{{ __('Skip to content') }}
 		</a>
+		<x-cookie-manager-banner />
 
 		@include('sections.header')
 
