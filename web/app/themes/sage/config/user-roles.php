@@ -141,6 +141,7 @@ return [
 			'gravityforms_edit_entry_notes',
 		],
 		'seo_redirections' => [
+			'edit_posts',
 			'wpseo_bulk_edit',
 			'wpseo_manage_options',
 			'edit_redirection',
