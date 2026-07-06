@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@yardinternet/a11y-cookie-yes':
-        specifier: ^1.2.12
+        specifier: ^1.3.3
         version: 1.3.3
       '@yardinternet/brave-frontend-kit':
-        specifier: ^0.10.0
-        version: 0.10.0
+        specifier: ^0.13.3
+        version: 0.13.3
       '@yardinternet/gutenberg-block-restrictions':
         specifier: ^1.0.1
         version: 1.0.1
@@ -22,20 +22,20 @@ importers:
         version: 1.3.3
     devDependencies:
       '@yardinternet/eslint-config':
-        specifier: ^1.2.11
-        version: 1.3.0(@babel/core@7.29.7)(@types/eslint@9.6.1)(eslint@9.39.4(jiti@1.21.7))(prettier@3.8.1)(react-dom@18.3.1(react@19.2.7))(react@19.2.7)(stylelint@17.14.0(typescript@5.9.3))(typescript@5.9.3)
+        specifier: ^1.3.0
+        version: 1.3.0(@babel/core@7.29.7)(@types/eslint@9.6.1)(eslint@9.39.4(jiti@1.21.7))(prettier@3.8.1)(react-dom@18.3.1(react@19.2.7))(react@19.2.7)(stylelint@17.13.0(typescript@5.9.3))(typescript@5.9.3)
       '@yardinternet/prettier-config':
-        specifier: ^2.0.11
+        specifier: ^2.1.0
         version: 2.1.0
       '@yardinternet/stylelint-config':
         specifier: ^1.1.8
         version: 1.1.8(typescript@5.9.3)
       '@yardinternet/toolkit':
-        specifier: ^2.1.10
-        version: 2.2.0(@babel/core@7.29.7)(@types/eslint@9.6.1)(@types/node@26.0.1)(@typescript-eslint/parser@8.62.1(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3))(jiti@1.21.7)(optionator@0.9.4)(postcss@8.5.16)(react-dom@18.3.1(react@19.2.7))(react@19.2.7)(rollup@4.62.2)(typescript@5.9.3)(vite@7.3.6(@types/node@26.0.1)(jiti@1.21.7)(lightningcss@1.32.0)(sass@1.101.0)(terser@5.48.0))(webpack@5.106.1(lightningcss@1.32.0)(postcss@8.5.16))
+        specifier: ^2.2.0
+        version: 2.2.0(@babel/core@7.29.7)(@types/eslint@9.6.1)(@types/node@26.0.0)(@typescript-eslint/parser@8.61.1(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3))(jiti@1.21.7)(optionator@0.9.4)(postcss@8.5.15)(react-dom@18.3.1(react@19.2.7))(react@19.2.7)(rollup@4.62.2)(typescript@5.9.3)(vite@7.3.5(@types/node@26.0.0)(jiti@1.21.7)(lightningcss@1.32.0)(sass@1.101.0)(terser@5.48.0))(webpack@5.106.1(lightningcss@1.32.0)(postcss@8.5.15))
       '@yardinternet/vite-config':
-        specifier: ^1.3.4
-        version: 1.4.0(@types/node@26.0.1)(eslint@9.39.4(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.16)(rollup@4.62.2)(stylelint@17.14.0(typescript@5.9.3))(typescript@5.9.3)(vite@7.3.6(@types/node@26.0.1)(jiti@1.21.7)(lightningcss@1.32.0)(sass@1.101.0)(terser@5.48.0))(webpack@5.106.1(lightningcss@1.32.0)(postcss@8.5.16))
+        specifier: ^1.4.0
+        version: 1.4.0(@types/node@26.0.0)(eslint@9.39.4(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.15)(rollup@4.62.2)(stylelint@17.13.0(typescript@5.9.3))(typescript@5.9.3)(vite@7.3.5(@types/node@26.0.0)(jiti@1.21.7)(lightningcss@1.32.0)(sass@1.101.0)(terser@5.48.0))(webpack@5.106.1(lightningcss@1.32.0)(postcss@8.5.15))
       tailwindcss:
         specifier: ^4.3.0
         version: 4.3.2
@@ -1484,11 +1484,11 @@ packages:
       typescript:
         optional: true
 
-  '@typescript-eslint/eslint-plugin@8.62.1':
-    resolution: {integrity: sha512-4EQM77WgVNxj7OkL/5b/D/xZsw00G577+UriYTC7JF5opcF3T2AuoeY7ueLaZgSVjSgCS6yOAJB5bRGLPSJUzA==}
+  '@typescript-eslint/eslint-plugin@8.62.0':
+    resolution: {integrity: sha512-o+mpz7EYiMzXoySXiKmzlabIvTVqUuK5yLrAedRPRDA0IpPFMUV1IXt6OqljIxX/kumN6EjUYp41Hqelh6p/Dw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
-      '@typescript-eslint/parser': ^8.62.1
+      '@typescript-eslint/parser': ^8.62.0
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
       typescript: '>=4.8.4 <6.1.0'
 
@@ -1543,8 +1543,8 @@ packages:
       typescript:
         optional: true
 
-  '@typescript-eslint/type-utils@8.62.1':
-    resolution: {integrity: sha512-aXM5xlqXiTxPibXB93cLAURfT3rlizf7uMXISCXy66Isr/9hISJx3yDsKl0L7lKa51b8JpFuNKby0/O0pEm9jg==}
+  '@typescript-eslint/type-utils@8.62.0':
+    resolution: {integrity: sha512-+g5O3j0w2ldzC86Pv6fvbO/xhAonbJFIdf/MKQ1d30gndlsVzUOE83ldfSE15Qrl9fhFjK6AovHs5Wpp6vx86w==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
@@ -1598,8 +1598,8 @@ packages:
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0
 
-  '@typescript-eslint/utils@8.62.1':
-    resolution: {integrity: sha512-sHtbPfuKNZCG+ih8SyjjucqRntSVmp8XgL5u6o9mAhiSn8ds5o/M/XdM0abweme2Tln3szOstOrZ9OXitvPh0g==}
+  '@typescript-eslint/utils@8.62.0':
+    resolution: {integrity: sha512-82r66fi9zYwZ+mTq3vKgwjbZ1PVk/DJzrXFLpG6RnBbdvH8TEGVHIs9H4d2drhkOzf0syZuD/OZvvlu6GDbP4g==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
@@ -1853,14 +1853,14 @@ packages:
       typescript:
         optional: true
 
-  '@wordpress/prettier-config@4.49.0':
-    resolution: {integrity: sha512-yP4hm2m2Hxv3I7HI5lxbrCmh95Db4QWcGJGLq/fysepbLjTnqnMIHRs5p0/QoRMV/MhwFi8vMkNmmQYJt386ug==}
+  '@wordpress/prettier-config@4.48.1':
+    resolution: {integrity: sha512-7tZfyBAx/ESV8KpwXY/XKghRlSrDPDuyB6XIuuKPjw6cCtPiLnFHFBxNDdyDmwKY0UAWO7834IypSHlPiwffaw==}
     engines: {node: '>=18.12.0', npm: '>=8.19.2'}
     peerDependencies:
       prettier: '>=3'
 
-  '@wordpress/private-apis@1.49.0':
-    resolution: {integrity: sha512-tGmX0XknlknSFB3UpoRQHnXW+4FufotTXYln+aXeHTFGcOuW3jSi8d8VZx7LCjUY1jqA8hCDf1vOHXW3FDcErQ==}
+  '@wordpress/private-apis@1.48.1':
+    resolution: {integrity: sha512-KddQQq+qboNnc4fROsy9bsX4JENRfvBMtuBg5CjOq11hScFyh169ozoHozMEtNGXou4XFykEHCRwzM5MfSHjiA==}
     engines: {node: '>=18.12.0', npm: '>=8.19.2'}
 
   '@wordpress/theme@0.10.0':
@@ -1887,8 +1887,8 @@ packages:
   '@yardinternet/a11y-cookie-yes@1.3.3':
     resolution: {integrity: sha512-CckEQTc/RawklFbgUyLNrdVJ7xjxbgvUsH9XROr0pLMoc6zXDnXYJvAi27d3+h9E9dVyjmWMXBj0+zZuN+tZiw==, tarball: https://npm.pkg.github.com/download/@yardinternet/a11y-cookie-yes/1.3.3/27093c59dd71ee16e7d032757b3da328cd32210a}
 
-  '@yardinternet/brave-frontend-kit@0.10.0':
-    resolution: {integrity: sha512-9Xggonbyt3PJ4PnW7M0o4gIW99fRM10iRZBtY7+gZX9PNh8HYWcSZra5m8PTpFTGgSW4whOqBNXGlPUCwtA42Q==, tarball: https://npm.pkg.github.com/download/@yardinternet/brave-frontend-kit/0.10.0/bda2d6637617db5fcf262c6dfae089bc31229c15}
+  '@yardinternet/brave-frontend-kit@0.13.3':
+    resolution: {integrity: sha512-5El1llSwI66DNHdHprNSRX0L7dr7dJtE4s5PM3WFX2KJzO3FBbW7BCO5FefJUEYCBAl4kTHxLzqbvdv1l8bISQ==, tarball: https://npm.pkg.github.com/download/@yardinternet/brave-frontend-kit/0.13.3/16d5037f5b562e6a8e356a26c08395957563f8fb}
 
   '@yardinternet/eslint-config@1.3.0':
     resolution: {integrity: sha512-9hGcFYAuMTvh0vxBseMYWDlCVycuZXxQohxdg41IL5M8MxU7nF1jyiM5b2k0FB7CDMJyzgDPP3aeScjZQtUBdw==, tarball: https://npm.pkg.github.com/download/@yardinternet/eslint-config/1.3.0/17760c5c1894775720795e27e32a520cff7dc9e8}
@@ -6114,14 +6114,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/eslint-plugin@8.62.1(@typescript-eslint/parser@8.62.1(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3)':
+  '@typescript-eslint/eslint-plugin@8.62.0(@typescript-eslint/parser@8.61.1(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3)':
     dependencies:
       '@eslint-community/regexpp': 4.12.2
-      '@typescript-eslint/parser': 8.62.1(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3)
-      '@typescript-eslint/scope-manager': 8.62.1
-      '@typescript-eslint/type-utils': 8.62.1(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3)
-      '@typescript-eslint/utils': 8.62.1(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3)
-      '@typescript-eslint/visitor-keys': 8.62.1
+      '@typescript-eslint/parser': 8.61.1(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3)
+      '@typescript-eslint/scope-manager': 8.62.0
+      '@typescript-eslint/type-utils': 8.62.0(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3)
+      '@typescript-eslint/utils': 8.62.0(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3)
+      '@typescript-eslint/visitor-keys': 8.62.0
       eslint: 9.39.4(jiti@1.21.7)
       ignore: 7.0.5
       natural-compare: 1.4.0
@@ -6157,8 +6157,17 @@ snapshots:
 
   '@typescript-eslint/project-service@8.62.1(typescript@5.9.3)':
     dependencies:
-      '@typescript-eslint/tsconfig-utils': 8.62.1(typescript@5.9.3)
-      '@typescript-eslint/types': 8.62.1
+      '@typescript-eslint/tsconfig-utils': 8.62.0(typescript@5.9.3)
+      '@typescript-eslint/types': 8.62.0
+      debug: 4.4.3
+      typescript: 5.9.3
+    transitivePeerDependencies:
+      - supports-color
+
+  '@typescript-eslint/project-service@8.62.0(typescript@5.9.3)':
+    dependencies:
+      '@typescript-eslint/tsconfig-utils': 8.62.0(typescript@5.9.3)
+      '@typescript-eslint/types': 8.62.0
       debug: 4.4.3
       typescript: 5.9.3
     transitivePeerDependencies:
@@ -6195,11 +6204,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/type-utils@8.62.1(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3)':
+  '@typescript-eslint/type-utils@8.62.0(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3)':
     dependencies:
-      '@typescript-eslint/types': 8.62.1
-      '@typescript-eslint/typescript-estree': 8.62.1(typescript@5.9.3)
-      '@typescript-eslint/utils': 8.62.1(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3)
+      '@typescript-eslint/types': 8.62.0
+      '@typescript-eslint/typescript-estree': 8.62.0(typescript@5.9.3)
+      '@typescript-eslint/utils': 8.62.0(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3)
       debug: 4.4.3
       eslint: 9.39.4(jiti@1.21.7)
       ts-api-utils: 2.5.0(typescript@5.9.3)
@@ -6286,12 +6295,12 @@ snapshots:
       - supports-color
       - typescript
 
-  '@typescript-eslint/utils@8.62.1(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3)':
+  '@typescript-eslint/utils@8.62.0(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3)':
     dependencies:
       '@eslint-community/eslint-utils': 4.9.1(eslint@9.39.4(jiti@1.21.7))
-      '@typescript-eslint/scope-manager': 8.62.1
-      '@typescript-eslint/types': 8.62.1
-      '@typescript-eslint/typescript-estree': 8.62.1(typescript@5.9.3)
+      '@typescript-eslint/scope-manager': 8.62.0
+      '@typescript-eslint/types': 8.62.0
+      '@typescript-eslint/typescript-estree': 8.62.0(typescript@5.9.3)
       eslint: 9.39.4(jiti@1.21.7)
       typescript: 5.9.3
     transitivePeerDependencies:
@@ -6622,7 +6631,7 @@ snapshots:
       - stylelint
       - supports-color
 
-  '@wordpress/prettier-config@4.49.0(prettier@3.8.1)':
+  '@wordpress/prettier-config@4.48.1(prettier@3.8.1)':
     dependencies:
       prettier: 3.8.1
 
@@ -6653,7 +6662,7 @@ snapshots:
     dependencies:
       focus-trap: 7.8.0
 
-  '@yardinternet/brave-frontend-kit@0.10.0':
+  '@yardinternet/brave-frontend-kit@0.13.3':
     dependencies:
       '@floating-ui/dom': 1.7.6
       accordion-js: 3.4.1
@@ -6661,18 +6670,18 @@ snapshots:
       focus-trap: 7.8.0
       headroom.js: 0.12.0
     optionalDependencies:
-      '@rollup/rollup-linux-arm64-gnu': 4.61.1
+      '@rollup/rollup-linux-arm64-gnu': 4.62.2
 
-  '@yardinternet/eslint-config@1.3.0(@babel/core@7.29.7)(@types/eslint@9.6.1)(eslint@9.39.4(jiti@1.21.7))(prettier@3.8.1)(react-dom@18.3.1(react@19.2.7))(react@19.2.7)(stylelint@17.14.0(typescript@5.9.3))(typescript@5.9.3)':
+  '@yardinternet/eslint-config@1.3.0(@babel/core@7.29.7)(@types/eslint@9.6.1)(eslint@9.39.4(jiti@1.21.7))(prettier@3.8.1)(react-dom@18.3.1(react@19.2.7))(react@19.2.7)(stylelint@17.13.0(typescript@5.9.3))(typescript@5.9.3)':
     dependencies:
       '@babel/eslint-parser': 7.29.7(@babel/core@7.29.7)(eslint@9.39.4(jiti@1.21.7))
       '@babel/preset-react': 7.29.7(@babel/core@7.29.7)
       '@eslint/compat': 2.1.0(eslint@9.39.4(jiti@1.21.7))
       '@eslint/eslintrc': 3.3.5
       '@eslint/js': 9.39.4
-      '@typescript-eslint/eslint-plugin': 8.62.1(@typescript-eslint/parser@8.62.1(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3)
-      '@typescript-eslint/parser': 8.62.1(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3)
-      '@wordpress/eslint-plugin': 24.5.0(@babel/core@7.29.7)(@types/eslint@9.6.1)(eslint@9.39.4(jiti@1.21.7))(prettier@3.8.1)(react-dom@18.3.1(react@19.2.7))(react@19.2.7)(stylelint@17.14.0(typescript@5.9.3))(typescript@5.9.3)
+      '@typescript-eslint/eslint-plugin': 8.62.0(@typescript-eslint/parser@8.61.1(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3)
+      '@typescript-eslint/parser': 8.61.1(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3)
+      '@wordpress/eslint-plugin': 24.5.0(@babel/core@7.29.7)(@types/eslint@9.6.1)(eslint@9.39.4(jiti@1.21.7))(prettier@3.8.1)(react-dom@18.3.1(react@19.2.7))(react@19.2.7)(stylelint@17.13.0(typescript@5.9.3))(typescript@5.9.3)
       eslint-config-prettier: 10.1.8(eslint@9.39.4(jiti@1.21.7))
       eslint-import-resolver-alias: 1.1.2(eslint-plugin-import@2.32.0)
       eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.62.1(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.4(jiti@1.21.7))
@@ -6693,16 +6702,16 @@ snapshots:
       - supports-color
       - typescript
 
-  '@yardinternet/eslint-config@1.3.0(@babel/core@7.29.7)(@types/eslint@9.6.1)(eslint@9.39.4(jiti@1.21.7))(react-dom@18.3.1(react@19.2.7))(react@19.2.7)(stylelint@17.14.0(typescript@5.9.3))(typescript@5.9.3)(wp-prettier@3.0.3)':
+  '@yardinternet/eslint-config@1.3.0(@babel/core@7.29.7)(@types/eslint@9.6.1)(eslint@9.39.4(jiti@1.21.7))(react-dom@18.3.1(react@19.2.7))(react@19.2.7)(stylelint@17.13.0(typescript@5.9.3))(typescript@5.9.3)(wp-prettier@3.0.3)':
     dependencies:
       '@babel/eslint-parser': 7.29.7(@babel/core@7.29.7)(eslint@9.39.4(jiti@1.21.7))
       '@babel/preset-react': 7.29.7(@babel/core@7.29.7)
       '@eslint/compat': 2.1.0(eslint@9.39.4(jiti@1.21.7))
       '@eslint/eslintrc': 3.3.5
       '@eslint/js': 9.39.4
-      '@typescript-eslint/eslint-plugin': 8.62.1(@typescript-eslint/parser@8.62.1(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3)
-      '@typescript-eslint/parser': 8.62.1(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3)
-      '@wordpress/eslint-plugin': 24.5.0(@babel/core@7.29.7)(@types/eslint@9.6.1)(eslint@9.39.4(jiti@1.21.7))(react-dom@18.3.1(react@19.2.7))(react@19.2.7)(stylelint@17.14.0(typescript@5.9.3))(typescript@5.9.3)(wp-prettier@3.0.3)
+      '@typescript-eslint/eslint-plugin': 8.62.0(@typescript-eslint/parser@8.61.1(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3)
+      '@typescript-eslint/parser': 8.61.1(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3)
+      '@wordpress/eslint-plugin': 24.5.0(@babel/core@7.29.7)(@types/eslint@9.6.1)(eslint@9.39.4(jiti@1.21.7))(react-dom@18.3.1(react@19.2.7))(react@19.2.7)(stylelint@17.13.0(typescript@5.9.3))(typescript@5.9.3)(wp-prettier@3.0.3)
       eslint-config-prettier: 10.1.8(eslint@9.39.4(jiti@1.21.7))
       eslint-import-resolver-alias: 1.1.2(eslint-plugin-import@2.32.0)
       eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.62.1(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3))(eslint@9.39.4(jiti@1.21.7))
@@ -6736,7 +6745,7 @@ snapshots:
     dependencies:
       '@shufo/prettier-plugin-blade': 1.16.2
       '@shufo/tailwindcss-class-sorter': 3.0.1
-      '@wordpress/prettier-config': 4.49.0(wp-prettier@3.0.3)
+      '@wordpress/prettier-config': 4.48.1(wp-prettier@3.0.3)
       prettier: wp-prettier@3.0.3
       prettier-plugin-tailwindcss: 0.7.4(wp-prettier@3.0.3)
     transitivePeerDependencies:
@@ -6768,7 +6777,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@yardinternet/toolkit@2.2.0(@babel/core@7.29.7)(@types/eslint@9.6.1)(@types/node@26.0.1)(@typescript-eslint/parser@8.62.1(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3))(jiti@1.21.7)(optionator@0.9.4)(postcss@8.5.16)(react-dom@18.3.1(react@19.2.7))(react@19.2.7)(rollup@4.62.2)(typescript@5.9.3)(vite@7.3.6(@types/node@26.0.1)(jiti@1.21.7)(lightningcss@1.32.0)(sass@1.101.0)(terser@5.48.0))(webpack@5.106.1(lightningcss@1.32.0)(postcss@8.5.16))':
+  '@yardinternet/toolkit@2.2.0(@babel/core@7.29.7)(@types/eslint@9.6.1)(@types/node@26.0.0)(@typescript-eslint/parser@8.61.1(eslint@9.39.4(jiti@1.21.7))(typescript@5.9.3))(jiti@1.21.7)(optionator@0.9.4)(postcss@8.5.15)(react-dom@18.3.1(react@19.2.7))(react@19.2.7)(rollup@4.62.2)(typescript@5.9.3)(vite@7.3.5(@types/node@26.0.0)(jiti@1.21.7)(lightningcss@1.32.0)(sass@1.101.0)(terser@5.48.0))(webpack@5.106.1(lightningcss@1.32.0)(postcss@8.5.15))':
     dependencies:
       '@babel/preset-react': 7.29.7(@babel/core@7.29.7)
       '@eslint/compat': 2.1.0(eslint@9.39.4(jiti@1.21.7))
@@ -6794,10 +6803,10 @@ snapshots:
       stylelint-config-idiomatic-order: 10.0.0(stylelint@17.14.0(typescript@5.9.3))
       stylelint-config-recommended: 18.0.0(stylelint@17.14.0(typescript@5.9.3))
     optionalDependencies:
-      '@yardinternet/eslint-config': 1.3.0(@babel/core@7.29.7)(@types/eslint@9.6.1)(eslint@9.39.4(jiti@1.21.7))(react-dom@18.3.1(react@19.2.7))(react@19.2.7)(stylelint@17.14.0(typescript@5.9.3))(typescript@5.9.3)(wp-prettier@3.0.3)
+      '@yardinternet/eslint-config': 1.3.0(@babel/core@7.29.7)(@types/eslint@9.6.1)(eslint@9.39.4(jiti@1.21.7))(react-dom@18.3.1(react@19.2.7))(react@19.2.7)(stylelint@17.13.0(typescript@5.9.3))(typescript@5.9.3)(wp-prettier@3.0.3)
       '@yardinternet/prettier-config': 2.1.0
       '@yardinternet/stylelint-config': 1.1.8(typescript@5.9.3)
-      '@yardinternet/vite-config': 1.4.0(@types/node@26.0.1)(eslint@9.39.4(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.16)(rollup@4.62.2)(stylelint@17.14.0(typescript@5.9.3))(typescript@5.9.3)(vite@7.3.6(@types/node@26.0.1)(jiti@1.21.7)(lightningcss@1.32.0)(sass@1.101.0)(terser@5.48.0))(webpack@5.106.1(lightningcss@1.32.0)(postcss@8.5.16))
+      '@yardinternet/vite-config': 1.4.0(@types/node@26.0.0)(eslint@9.39.4(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.15)(rollup@4.62.2)(stylelint@17.13.0(typescript@5.9.3))(typescript@5.9.3)(vite@7.3.5(@types/node@26.0.0)(jiti@1.21.7)(lightningcss@1.32.0)(sass@1.101.0)(terser@5.48.0))(webpack@5.106.1(lightningcss@1.32.0)(postcss@8.5.15))
     transitivePeerDependencies:
       - '@babel/core'
       - '@biomejs/biome'
@@ -6841,7 +6850,7 @@ snapshots:
       - webpack
       - yaml
 
-  '@yardinternet/vite-config@1.4.0(@types/node@26.0.1)(eslint@9.39.4(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.16)(rollup@4.62.2)(stylelint@17.14.0(typescript@5.9.3))(typescript@5.9.3)(vite@7.3.6(@types/node@26.0.1)(jiti@1.21.7)(lightningcss@1.32.0)(sass@1.101.0)(terser@5.48.0))(webpack@5.106.1(lightningcss@1.32.0)(postcss@8.5.16))':
+  '@yardinternet/vite-config@1.4.0(@types/node@26.0.0)(eslint@9.39.4(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.15)(rollup@4.62.2)(stylelint@17.13.0(typescript@5.9.3))(typescript@5.9.3)(vite@7.3.5(@types/node@26.0.0)(jiti@1.21.7)(lightningcss@1.32.0)(sass@1.101.0)(terser@5.48.0))(webpack@5.106.1(lightningcss@1.32.0)(postcss@8.5.15))':
     dependencies:
       '@roots/vite-plugin': 1.3.1(vite@7.3.6(@types/node@26.0.1)(jiti@1.21.7)(lightningcss@1.32.0)(sass@1.101.0)(terser@5.48.0))(webpack@5.106.1(lightningcss@1.32.0)(postcss@8.5.16))
       '@tailwindcss/vite': 4.3.2(vite@7.3.6(@types/node@26.0.1)(jiti@1.21.7)(lightningcss@1.32.0)(sass@1.101.0)(terser@5.48.0))
