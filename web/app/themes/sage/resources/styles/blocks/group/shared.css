@@ -2,8 +2,8 @@
 	--group-card-gap: --spacing( 5 );
 	--group-card-image-ratio: 3 / 2;
 	--group-grid-gap: var( --grid-gutter );
-	--group-margin-bottom: 0;
-	--group-margin-top: 0;
+	--group-margin-bottom: var( --spacing-section );
+	--group-margin-top: var( --spacing-section );
 	--group-padding-x: 0;
 	--group-padding-y: 0;
 	--group-radius: 0;
@@ -19,9 +19,9 @@
 	--group-radius: 0;
 }
 
-.wp-block-group:not( :where( .wp-block-columns, .wp-block-group ) * ) {
-	--group-margin-top: var( --spacing-section );
-	--group-margin-bottom: var( --spacing-section );
+.wp-block-group:where( .wp-block-group * ) {
+	--group-margin-top: 0;
+	--group-margin-bottom: 0;
 }
 
 /**
