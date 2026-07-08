@@ -1,112 +1,79 @@
+:root {
+	--group-card-gap: --spacing( 5 );
+	--group-card-image-ratio: 3 / 2;
+	--group-grid-gap: var( --grid-gutter );
+	--group-margin-bottom: 0;
+	--group-margin-top: 0;
+	--group-padding-x: 0;
+	--group-padding-y: 0;
+	--group-radius: 0;
+}
+
+.wp-block-group:where( .has-background ) {
+	--group-padding-x: --spacing( 8 );
+	--group-padding-y: --spacing( 8 );
+	--group-radius: var( --radius-theme );
+}
+
+.wp-block-group:where( .alignfull ) {
+	--group-radius: 0;
+}
+
+.wp-block-group:not( :where( .wp-block-columns, .wp-block-group ) * ) {
+	--group-margin-top: var( --spacing-section );
+	--group-margin-bottom: var( --spacing-section );
+}
+
+/**
+ * Default
+ */
+
 .wp-block-group {
-	@apply normalize-child-margin;
-
-	&.alignwide:not( .wp-block-group-is-layout-grid ) {
-		@apply my-section;
-	}
-
-	&.alignfull {
-		@apply create-main-content-alignment my-section;
-	}
+	@apply normalize-child-margin mt-(--group-margin-top) mb-(--group-margin-bottom) rounded-(--group-radius) px-(--group-padding-x) py-(--group-padding-y);
 }
 
-/* Variant with background */
-.wp-block-group.has-background {
-	&:not( .alignfull ) {
-		@apply my-4 rounded-theme bg-white p-(--card-padding) shadow md:mb-6;
-	}
+/**
+ * Grid block
+ */
 
-	&.alignwide {
-		@apply my-section xl:p-12;
-	}
-
-	&.alignfull {
-		@apply py-section;
-
-		&:has( + .alignfull.has-background ) {
-			@apply mb-0;
-		}
-
-		+ .alignfull.has-background {
-			@apply mt-0;
-		}
-	}
+.wp-block-group:where( .is-layout-grid ) {
+	@apply gap-(--group-grid-gap);
 }
 
-.wp-block-group-is-layout-grid {
-	@apply max-md:auto-grid! @container my-4 gap-(--grid-gutter) lg:my-6 xl:mb-8;
+/**
+ * Card variation
+ */
 
-	.wp-block-group.is-variation-card {
-		@apply m-0;
+.wp-block-group:where( .is-variation-card ) {
+	@apply flex flex-col gap-(--group-card-gap) bg-(--card-bg-color) shadow-(--card-shadow) *:my-0;
+	--group-padding-x: var( --card-padding );
+	--group-padding-y: var( --card-padding );
+	--group-radius: var( --card-radius );
 
-		@container (min-width: 600px) {
-			--card-padding: 1.25rem;
-		}
+	.wp-block-image {
+		@apply order-first -mt-(--group-padding-y) -ml-(--group-padding-x);
+		--image-width: calc( 100% + ( var( --group-padding-x ) * 2 ) );
 
-		@container (min-width: 782px) {
-			--card-padding: 1.5rem;
-		}
-
-		@container (min-width: 960px) {
-			--card-padding: 1.75rem;
-		}
-	}
-
-	.wp-block-media-text {
-		@apply my-0;
-	}
-}
-
-.wp-block-group.is-variation-card {
-	@apply relative flex flex-col p-(--card-padding) transition-all;
-
-	> :first-child {
-		&.wp-block-cover {
-			@apply -mt-(--card-padding) mb-(--card-padding) rounded-t-theme;
+		img {
+			@apply aspect-(--group-card-image-ratio) rounded-b-none object-cover object-center;
 		}
 	}
 
-	> :last-child {
-		&.wp-block-buttons {
-			@apply mt-auto;
-		}
-
-		&.wp-block-cover {
-			@apply mt-(--card-padding) -mb-(--card-padding) rounded-b-theme;
-		}
+	.wp-block-buttons {
+		@apply my-0; /* TODO: buttons block needs custom properties for this */
 	}
 
-	.wp-block-cover {
-		@apply -ml-(--card-padding) aspect-[2.35/1]! min-h-0! min-w-[calc(100%+var(--card-padding)*2)] rounded-none md:aspect-video!;
+	/* Card has a single link inside the heading or a single button (link added to heading with JS) */
+	&:has( .wp-block-heading a ):not( :has( a:not( .wp-block-heading a ) ) ),
+	&:has( .wp-block-button__link[tabindex='-1'] ) {
+		@apply relative;
 
-		.wp-block-cover__inner-container,
-		.wp-block-cover__background {
-			@apply hidden;
-		}
-	}
-
-	.wp-block-heading {
-		a {
-			@apply a-linkable-area text-inherit no-underline;
-
-			&:focus {
-				@apply underline;
-			}
-		}
-	}
-
-	&:has( .wp-block-heading > a[href] ) {
-		&:focus-within,
-		&:hover {
-			@apply -translate-y-1;
+		a:not( .wp-block-button__link ) {
+			@apply a-linkable-area text-current no-underline;
 		}
 
-		a {
-			@apply relative z-1;
-		}
-
-		.wp-block-heading a {
-			@apply static;
+		&:hover .wp-block-heading {
+			@apply underline;
 		}
 	}
 }
