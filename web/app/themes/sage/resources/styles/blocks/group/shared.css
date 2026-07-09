@@ -74,6 +74,21 @@
 			@apply underline;
 		}
 	}
+
+	&:has( .wp-block-heading a ):not( :has( a:not( .wp-block-heading a ) ) ) {
+		&::after {
+			@apply fontawesome self-end;
+			--fa-icon: '\f061';
+		}
+	}
+
+	&:hover {
+		.wp-block-button__link {
+			--button-bg-color: var( --button-bg-color-hover );
+			--button-border-color: var( --button-border-color-hover );
+			--button-color: var( --button-color-hover );
+		}
+	}
 }
 
 /**
