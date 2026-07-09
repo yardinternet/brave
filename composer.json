@@ -14,6 +14,7 @@
 			"captainhook/hook-installer": true,
 			"composer/installers": true,
 			"dangoodman/composer-for-wordpress": true,
+			"inpsyde/wp-translation-downloader": true,
 			"roots/wordpress-core-installer": true
 		},
 		"platform": {
@@ -45,7 +46,10 @@
 	"require": {
 		"php": ">=8.2",
 		"composer/installers": "^2.2",
+		"deliciousbrains-plugin/wp-migrate-db-pro": "^2.7",
+		"gravity/gravityforms": "^2.10",
 		"gravitykit/gravity-forms-zero-spam": "^1.7",
+		"inpsyde/wp-translation-downloader": "^2.6",
 		"johnbillion/user-switching": "^1.11",
 		"log1x/navi": "^3.1",
 		"log1x/poet": "^2.0",
@@ -66,21 +70,26 @@
 		"wpackagist-plugin/relay": "^1.3",
 		"wpackagist-plugin/stream": "^4.0",
 		"wpackagist-plugin/wp-seopress": "^8.1",
+		"wpengine/advanced-custom-fields-pro": "^6.8",
 		"yard/brave-acf": "^1.1",
 		"yard/brave-components": "^1.2",
 		"yard/brave-csp": "^1.0",
+		"yard/brave-dashboard": "^1.3",
 		"yard/brave-hooks": "^2.0",
 		"yard/config-expander": "^1.0",
-		"yard/wp-cli-bundle": "^2.0",
 		"yard/data": "^1.0",
 		"yard/multisite-url-fixer": "^1.0",
 		"yard/nutshell": "^2.1",
 		"yard/query-block": "^1.0",
 		"yard/webmanifest": "^1.0",
 		"yard/wp-block-registrar": "^1.0",
+		"yard/wp-cli-bundle": "^2.0",
 		"yard/wp-database": "^1.0",
 		"yard/wp-user-roles": "^2.0",
-		"yoast/duplicate-post": "^4.6"
+		"yoast/duplicate-post": "^4.6",
+		"ypackagist/facetwp": "^4.4",
+		"ypackagist/searchwp": "^4.5",
+		"ypackagist/wp-seopress-pro": "^9.7"
 	},
 	"require-dev": {
 		"captainhook/captainhook": "^5.24",
@@ -113,7 +122,21 @@
 				"type:wordpress-theme"
 			]
 		},
-		"wordpress-install-dir": "web/wp"
+		"wordpress-install-dir": "web/wp",
+		"wp-translation-downloader": {
+			"languages": [
+				"nl_NL",
+				"de_DE"
+			],
+			"languageRootDir": "web/app/languages",
+			"api": {
+				"names": {
+					"gravity/*": "https://packages.translationspress.com/rocketgenius/%projectName%/packages.json?version",
+					"ypackagist/wp-seopress-pro": "https://packages.translationspress.com/seopress/wp-seopress-pro/packages.json",
+					"wp-media/imagify-plugin": "https://api.wordpress.org/translations/plugins/1.0/?slug=imagify"
+				}
+			}
+		}
 	},
 	"scripts": {
 		"format": "./vendor/bin/php-cs-fixer fix",

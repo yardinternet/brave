@@ -1,0 +1,352 @@
+{
+	"seopress_activated": false,
+	"seopress_titles_option_name": {
+		"seopress_titles_sep": "|",
+		"seopress_titles_home_site_title": "%%sitetitle%%",
+		"seopress_titles_home_site_title_alt": "",
+		"seopress_titles_home_site_desc": "%%tagline%%",
+		"seopress_titles_single_titles": {
+			"post": {
+				"enable": "1",
+				"title": "%%post_title%% %%sep%% %%sitetitle%%",
+				"description": "%%post_excerpt%%",
+				"thumb_gcs": "1"
+			},
+			"page": {
+				"title": "%%post_title%% %%sep%% %%sitetitle%%",
+				"description": "%%post_excerpt%%",
+				"thumb_gcs": "1"
+			},
+			"knowledgebase": {
+				"title": "%%post_title%% %%sep%% %%sitetitle%%",
+				"description": "%%post_excerpt%%",
+				"thumb_gcs": "1"
+			},
+			"news": {
+				"title": "%%post_title%% %%sep%% %%sitetitle%%",
+				"description": "%%post_excerpt%%",
+				"thumb_gcs": "1"
+			},
+			"person": {
+				"title": "%%post_title%% %%sep%% %%sitetitle%%",
+				"description": "%%post_excerpt%%",
+				"thumb_gcs": "1"
+			}
+		},
+		"seopress_titles_archive_titles": {
+			"knowledgebase": {
+				"title": "%%cpt_plural%% %%sep%% %%sitetitle%%",
+				"description": "",
+				"noindex": "1",
+				"nofollow": "1"
+			},
+			"news": {
+				"title": "%%cpt_plural%% %%sep%% %%sitetitle%%",
+				"description": "",
+				"noindex": "1",
+				"nofollow": "1"
+			},
+			"person": {
+				"title": "%%cpt_plural%% %%sep%% %%sitetitle%%",
+				"description": "",
+				"noindex": "1",
+				"nofollow": "1"
+			}
+		},
+		"seopress_titles_archives_author_title": "%%post_author%% %%sep%% %%sitetitle%%",
+		"seopress_titles_archives_author_desc": "",
+		"seopress_titles_archives_author_noindex": "1",
+		"seopress_titles_archives_author_disable": "1",
+		"seopress_titles_archives_date_title": "%%archive_date%% %%sep%% %%sitetitle%%",
+		"seopress_titles_archives_date_desc": "",
+		"seopress_titles_archives_date_noindex": "1",
+		"seopress_titles_archives_date_disable": "1",
+		"seopress_titles_archives_search_title": "%%search_keywords%% %%sep%% %%sitetitle%%",
+		"seopress_titles_archives_search_desc": "",
+		"seopress_titles_archives_search_title_noindex": "1",
+		"seopress_titles_archives_404_title": "404 - Pagina niet gevonden %%sep%% %%sitetitle%%",
+		"seopress_titles_archives_404_desc": "",
+		"seopress_titles_tax_titles": {
+			"category": {
+				"enable": "1",
+				"title": "%%_category_title%% %%sep%% %%sitetitle%%",
+				"description": "%%_category_description%%",
+				"noindex": "1",
+				"nofollow": "1"
+			},
+			"post_tag": {
+				"enable": "1",
+				"title": "%%tag_title%% %%sep%% %%sitetitle%%",
+				"description": "%%tag_description%%",
+				"noindex": "1",
+				"nofollow": "1"
+			},
+			"knowledgebase_type": {
+				"enable": "1",
+				"title": "%%term_title%% %%sep%% %%sitetitle%%",
+				"description": "%%term_description%%",
+				"noindex": "1",
+				"nofollow": "1"
+			},
+			"news_type": {
+				"enable": "1",
+				"title": "%%term_title%% %%sep%% %%sitetitle%%",
+				"description": "%%term_description%%",
+				"noindex": "1",
+				"nofollow": "1"
+			},
+			"person_type": {
+				"enable": "1",
+				"title": "%%term_title%% %%sep%% %%sitetitle%%",
+				"description": "%%term_description%%",
+				"noindex": "1",
+				"nofollow": "1"
+			}
+		},
+		"seopress_titles_paged_rel": "1",
+		"seopress_titles_attachments_noindex": "1"
+	},
+	"seopress_social_option_name": {
+		"seopress_social_knowledge_type": "none",
+		"seopress_social_knowledge_name": "",
+		"seopress_social_knowledge_img": "",
+		"seopress_social_knowledge_desc": "",
+		"seopress_social_knowledge_email": "",
+		"seopress_social_knowledge_phone": "",
+		"seopress_social_knowledge_contact_type": "customer support",
+		"seopress_social_knowledge_contact_option": "None",
+		"seopress_social_knowledge_tax_id": "",
+		"seopress_social_accounts_facebook": "",
+		"seopress_social_accounts_twitter": "",
+		"seopress_social_accounts_pinterest": "",
+		"seopress_social_accounts_instagram": "",
+		"seopress_social_accounts_youtube": "",
+		"seopress_social_accounts_linkedin": "",
+		"seopress_social_accounts_extra": "",
+		"seopress_social_facebook_og": "1",
+		"seopress_social_facebook_img": "",
+		"seopress_social_facebook_img_cpt": { "book": { "url": "" } },
+		"seopress_social_facebook_link_ownership_id": "",
+		"seopress_social_facebook_admin_id": "",
+		"seopress_social_facebook_app_id": "",
+		"seopress_social_twitter_card": "1",
+		"seopress_social_twitter_card_og": "1",
+		"seopress_social_twitter_card_img": "",
+		"seopress_social_twitter_card_img_size": "large",
+		"seopress_social_facebook_img_attachment_id": "",
+		"seopress_social_facebook_img_height": "",
+		"seopress_social_facebook_img_width": "",
+		"seopress_social_knowledge_nl": null
+	},
+	"seopress_google_analytics_option_name": false,
+	"seopress_advanced_option_name": {
+		"seopress_advanced_advanced_attachments": "1",
+		"seopress_advanced_advanced_tax_desc_editor": "1",
+		"seopress_rewrite_search": "",
+		"seopress_advanced_advanced_google": "",
+		"seopress_advanced_advanced_bing": "",
+		"seopress_advanced_advanced_pinterest": "",
+		"seopress_advanced_advanced_yandex": "",
+		"seopress_advanced_advanced_baidu": "",
+		"seopress_advanced_appearance_universal_metabox": "1",
+		"seopress_advanced_appearance_metaboxe_position": "low",
+		"seopress_advanced_appearance_ca_metaboxe": "1",
+		"seopress_advanced_appearance_adminbar": "1",
+		"seopress_advanced_appearance_universal_metabox_disable": ""
+	},
+	"seopress_xml_sitemap_option_name": {
+		"seopress_xml_sitemap_general_enable": "1",
+		"seopress_xml_sitemap_post_types_list": {
+			"page": { "include": "1" },
+			"knowledgebase": { "include": "1" },
+			"news": { "include": "1" },
+			"person": { "include": "1" }
+		},
+		"seopress_xml_sitemap_html_mapping": "",
+		"seopress_xml_sitemap_html_exclude": "",
+		"seopress_xml_sitemap_html_order": "DESC",
+		"seopress_xml_sitemap_html_orderby": "date"
+	},
+	"seopress_pro_option_name": {
+		"seopress_local_business_page": "",
+		"seopress_local_business_type": "LocalBusiness",
+		"seopress_local_business_street_address": "",
+		"seopress_local_business_address_locality": "",
+		"seopress_local_business_address_region": "",
+		"seopress_local_business_postal_code": "",
+		"seopress_local_business_address_country": "",
+		"seopress_local_business_lat": "",
+		"seopress_local_business_lon": "",
+		"seopress_local_business_place_id": "",
+		"seopress_local_business_url": "",
+		"seopress_local_business_phone": "",
+		"seopress_local_business_price_range": "",
+		"seopress_local_business_cuisine": "",
+		"seopress_local_business_menu": "",
+		"seopress_local_business_accepts_reservations": "",
+		"seopress_local_business_opening_hours": [
+			{
+				"am": {
+					"start": { "hours": "00", "mins": "00" },
+					"end": { "hours": "00", "mins": "00" }
+				},
+				"pm": {
+					"start": { "hours": "00", "mins": "00" },
+					"end": { "hours": "00", "mins": "00" }
+				}
+			},
+			{
+				"am": {
+					"start": { "hours": "00", "mins": "00" },
+					"end": { "hours": "00", "mins": "00" }
+				},
+				"pm": {
+					"start": { "hours": "00", "mins": "00" },
+					"end": { "hours": "00", "mins": "00" }
+				}
+			},
+			{
+				"am": {
+					"start": { "hours": "00", "mins": "00" },
+					"end": { "hours": "00", "mins": "00" }
+				},
+				"pm": {
+					"start": { "hours": "00", "mins": "00" },
+					"end": { "hours": "00", "mins": "00" }
+				}
+			},
+			{
+				"am": {
+					"start": { "hours": "00", "mins": "00" },
+					"end": { "hours": "00", "mins": "00" }
+				},
+				"pm": {
+					"start": { "hours": "00", "mins": "00" },
+					"end": { "hours": "00", "mins": "00" }
+				}
+			},
+			{
+				"am": {
+					"start": { "hours": "00", "mins": "00" },
+					"end": { "hours": "00", "mins": "00" }
+				},
+				"pm": {
+					"start": { "hours": "00", "mins": "00" },
+					"end": { "hours": "00", "mins": "00" }
+				}
+			},
+			{
+				"am": {
+					"start": { "hours": "00", "mins": "00" },
+					"end": { "hours": "00", "mins": "00" }
+				},
+				"pm": {
+					"start": { "hours": "00", "mins": "00" },
+					"end": { "hours": "00", "mins": "00" }
+				}
+			},
+			{
+				"am": {
+					"start": { "hours": "00", "mins": "00" },
+					"end": { "hours": "00", "mins": "00" }
+				},
+				"pm": {
+					"start": { "hours": "00", "mins": "00" },
+					"end": { "hours": "00", "mins": "00" }
+				}
+			}
+		],
+		"seopress_local_business_opening_hours_display_format": "24h",
+		"seopress_local_business_opening_hours_separator": ":",
+		"seopress_seo_alerts_recipients": "",
+		"seopress_seo_alerts_slack_webhook_url": "",
+		"seopress_dublin_core_enable": "1",
+		"seopress_rich_snippets_enable": "1",
+		"seopress_rich_snippets_publisher_logo": "",
+		"seopress_rich_snippets_publisher_logo_width": "",
+		"seopress_rich_snippets_publisher_logo_height": "",
+		"seopress_ai_provider": "openai",
+		"seopress_ai_openai_api_key": "",
+		"seopress_ai_openai_model": "gpt-5.2-chat-latest",
+		"seopress_ai_deepseek_api_key": null,
+		"seopress_ai_deepseek_model": "deepseek-chat",
+		"seopress_ai_gemini_api_key": null,
+		"seopress_ai_gemini_model": "gemini-2.5-flash",
+		"seopress_ai_mistral_api_key": null,
+		"seopress_ai_mistral_model": "mistral-small-latest",
+		"seopress_ai_claude_api_key": null,
+		"seopress_ai_claude_model": "claude-sonnet-4-20250514",
+		"seopress_breadcrumbs_separator": "",
+		"seopress_breadcrumbs_cpt": {
+			"category": { "cpt": "none" },
+			"post_tag": { "cpt": "none" },
+			"knowledgebase_type": { "cpt": "none" },
+			"news_type": { "cpt": "none" },
+			"person_type": { "cpt": "none" }
+		},
+		"seopress_breadcrumbs_tax": {
+			"post": { "tax": "none" },
+			"page": { "tax": "none" },
+			"knowledgebase": { "tax": "none" },
+			"news": { "tax": "none" },
+			"person": { "tax": "none" }
+		},
+		"seopress_breadcrumbs_i18n_here": "",
+		"seopress_breadcrumbs_i18n_home": "",
+		"seopress_breadcrumbs_i18n_author": "",
+		"seopress_breadcrumbs_i18n_404": "",
+		"seopress_breadcrumbs_i18n_search": "Zoekresultaten voor:",
+		"seopress_breadcrumbs_i18n_no_results": "Geen resultaten gevonden",
+		"seopress_breadcrumbs_i18n_attachments": "",
+		"seopress_breadcrumbs_i18n_paged": "",
+		"seopress_breadcrumbs_separator_disable": "1",
+		"seopress_ps_url": "https://brave.wpacc01.yard.nl",
+		"seopress_ps_api_key": "",
+		"seopress_gsc_date_range": "- 3 months",
+		"seopress_robots_file": "",
+		"seopress_llms_file": "# {{site_name}}\r\n\r\n> {{site_description}}\r\n> Last updated: {{current_date}}\r\n\r\n## Search\r\n\r\n- Search URL: `{{search_url}}`\r\n\r\n## Recent Content\r\n\r\n{{latest_posts:5}}\r\n\r\n## Complete Sitemap\r\n\r\nFor a comprehensive list of all URLs, see: {{sitemap_url}}\r\n\r\n---\r\n\r\n*This file is dynamically generated and highlights our most important content.*\r\n",
+		"seopress_news_name": "",
+		"seopress_404_cleaning": "1",
+		"seopress_404_redirect_home": "none",
+		"seopress_404_redirect_custom_url": "",
+		"seopress_404_redirect_status_code": "301",
+		"seopress_404_enable_mails_from": "",
+		"seopress_rss_before_html": "",
+		"seopress_rss_after_html": ""
+	},
+	"seopress_pro_mu_option_name": false,
+	"seopress_pro_license_key": false,
+	"seopress_pro_license_status": "valid",
+	"seopress_bot_option_name": {
+		"seopress_bot_scan_settings_post_types": {
+			"post": { "include": "1" },
+			"page": { "include": "1" }
+		},
+		"seopress_bot_scan_settings_404": "1"
+	},
+	"seopress_toggle": {
+		"toggle-titles": "1",
+		"toggle-xml-sitemap": "1",
+		"toggle-social": "1",
+		"toggle-google-analytics": "1",
+		"toggle-instant-indexing": "1",
+		"toggle-advanced": "1",
+		"toggle-dublin-core": "1",
+		"toggle-local-business": "1",
+		"toggle-rich-snippets": "1",
+		"toggle-breadcrumbs": "0",
+		"toggle-robots": "1",
+		"toggle-404": "1",
+		"toggle-bot": "1",
+		"toggle-inspect-url": "1",
+		"toggle-ai": "0"
+	},
+	"seopress_google_analytics_lock_option_name": false,
+	"seopress_tools_option_name": false,
+	"seopress_dashboard_option_name": false,
+	"seopress_instant_indexing_option_name": {
+		"seopress_instant_indexing_bing_api_key": "N2FhMmY2MTgzMzAyNDE0NzgyYzBmYTJiYTMyNjdlMjI=",
+		"seopress_instant_indexing_automate_submission": "1",
+		"seopress_instant_indexing_google_api_key": ""
+	}
+}
