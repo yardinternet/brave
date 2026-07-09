@@ -18,6 +18,11 @@
 
 .wp-block-group:where( .alignfull ) {
 	--group-radius: 0;
+	--group-padding-x: 0;
+
+	&:where( .has-background ) {
+		--group-padding-y: var( --spacing-section );
+	}
 }
 
 .wp-block-group:where( .wp-block-group * ) {
