@@ -8,10 +8,12 @@
 @import './base/utilities';
 @import './base/custom-variants';
 
+/* Vendor */
+@import './vendor/gravity-forms';
+
 /* Components */
 @import './components/cards';
 @import './components/footer';
-@import './components/gravity-forms';
 
 /* Elements */
 @import './elements/forms';
