@@ -44,6 +44,14 @@
 
 .wp-block-group:where( .is-layout-grid ) {
 	@apply gap-(--group-grid-gap);
+
+	@variant max-sm {
+		@apply grid-cols-1!;
+	}
+
+	@variant sm:max-lg {
+		@apply grid-cols-2!;
+	}
 }
 
 /**
@@ -53,17 +61,31 @@
 .wp-block-group:where( .is-variation-card ) {
 	@apply flex flex-col gap-(--group-card-gap) bg-(--card-bg-color) shadow-(--card-shadow) *:my-0;
 	--button-wrapper-block-spacing: 0;
+	--group-card-image-width: calc( 100% + ( var( --group-padding-x ) * 2 ) );
 	--group-padding-x: var( --card-padding );
 	--group-padding-y: var( --card-padding );
 	--group-radius: var( --card-radius );
 
-	.wp-block-image {
-		@apply order-first -mt-(--group-padding-y) -ml-(--group-padding-x);
-		--image-width: calc( 100% + ( var( --group-padding-x ) * 2 ) );
+	.wp-block-image,
+	.wp-block-cover {
+		@apply relative order-first -mt-(--group-padding-y) -ml-(--group-padding-x) aspect-(--group-card-image-ratio) rounded-b-none;
 
 		img {
-			@apply aspect-(--group-card-image-ratio) rounded-b-none object-cover object-center;
+			@apply absolute inset-0 size-full rounded-b-[inherit] object-cover object-center;
 		}
+	}
+
+	.wp-block-image {
+		--image-width: var( --group-card-image-width );
+	}
+
+	.wp-block-cover {
+		@apply h-auto min-h-0 w-(--group-card-image-width) p-0;
+	}
+
+	.wp-block-cover__background,
+	.wp-block-cover__inner-container {
+		@apply hidden;
 	}
 
 	/* Card has a single link inside the heading or a single button (link added to heading with JS) */
@@ -97,10 +119,10 @@
 }
 
 /**
- * Section variation
+ * Section pattern
  */
 
-.wp-block-group:where( .is-variation-section ) {
+.wp-block-group:where( .is-pattern-section ) {
 	@apply grid gap-(--group-section-gap) *:my-0 *:w-full;
 	--button-wrapper-block-spacing: 0;
 }
