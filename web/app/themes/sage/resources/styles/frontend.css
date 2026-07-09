@@ -7,13 +7,15 @@
 @import './base/utilities';
 @import './base/custom-variants';
 
+/* Vendor */
+@import './vendor/cookie-yes';
+@import './vendor/facetwp';
+@import './vendor/gravity-forms';
+
 /* Components */
 @import './components/accordion';
 @import './components/cards';
-@import './components/cookie-yes';
-@import './components/facetwp';
 @import './components/footer';
-@import './components/gravity-forms';
 
 /* Elements */
 @import './elements/forms';
