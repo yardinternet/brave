@@ -10,32 +10,27 @@
 	--group-section-gap: --spacing( 8 );
 }
 
-.wp-block-group:where( .has-background ) {
-	--group-padding-x: --spacing( 8 );
-	--group-padding-y: --spacing( 8 );
-	--group-radius: var( --radius-theme );
-}
-
-.wp-block-group:where( .alignfull ) {
-	--group-radius: 0;
-	--group-padding-x: 0;
-
-	&:where( .has-background ) {
-		--group-padding-y: var( --spacing-section );
-	}
-}
-
-.wp-block-group:where( .wp-block-group * ) {
-	--group-margin-top: 0;
-	--group-margin-bottom: 0;
-}
-
 /**
  * Default
  */
 
 .wp-block-group {
 	@apply normalize-child-margin mt-(--group-margin-top) mb-(--group-margin-bottom) rounded-(--group-radius) px-(--group-padding-x) py-(--group-padding-y);
+
+	&:where( .has-background ) {
+		--group-padding-x: --spacing( 8 );
+		--group-padding-y: --spacing( 8 );
+		--group-radius: var( --radius-theme );
+	}
+
+	&:where( .alignfull ) {
+		--group-radius: 0;
+		--group-padding-x: 0;
+
+		&:where( .has-background ) {
+			--group-padding-y: var( --spacing-section );
+		}
+	}
 }
 
 /**
@@ -59,28 +54,27 @@
  */
 
 .wp-block-group:where( .is-variation-card ) {
-	@apply flex flex-col gap-(--group-card-gap) bg-(--card-bg-color) shadow-(--card-shadow) *:my-0;
+	@apply flex flex-col gap-(--group-card-gap) bg-(--card-bg-color) shadow-(--card-shadow);
 	--button-wrapper-block-spacing: 0;
-	--group-card-image-width: calc( 100% + ( var( --group-padding-x ) * 2 ) );
 	--group-padding-x: var( --card-padding );
 	--group-padding-y: var( --card-padding );
 	--group-radius: var( --card-radius );
 
+	> * {
+		@apply my-0;
+	}
+
 	.wp-block-image,
 	.wp-block-cover {
-		@apply relative order-first -mt-(--group-padding-y) -ml-(--group-padding-x) aspect-(--group-card-image-ratio) rounded-b-none;
+		@apply relative order-first -mx-(--group-padding-x) -mt-(--group-padding-y) aspect-(--group-card-image-ratio) rounded-b-none;
 
 		img {
 			@apply absolute inset-0 size-full rounded-b-[inherit] object-cover object-center;
 		}
 	}
 
-	.wp-block-image {
-		--image-width: var( --group-card-image-width );
-	}
-
 	.wp-block-cover {
-		@apply h-auto min-h-0 w-(--group-card-image-width) p-0;
+		@apply h-auto min-h-0 p-0;
 	}
 
 	.wp-block-cover__background,

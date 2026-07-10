@@ -1,14 +1,6 @@
 .has-primary-background-color,
 .has-black-background-color {
-	--color-text: var( --color-white );
-
-	* {
-		@apply text-text;
-	}
-}
-
-.has-white-background-color {
-	--color-text: var( --color-text );
+	@apply dark-background-white-elements;
 }
 
 /* Block styling which doesn't need their own CSS file */

@@ -54,6 +54,30 @@
 	}
 }
 
+@utility dark-background-white-elements {
+	@apply text-white!;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	time,
+	i,
+	li,
+	li::marker,
+	a:not( .wp-block-button__link ),
+	.gfield_required {
+		@apply text-white!;
+
+		@variant hocus {
+			@apply text-white!;
+		}
+	}
+}
+
 @utility normalize-child-margin {
 	> :first-child {
 		@apply mt-0;
