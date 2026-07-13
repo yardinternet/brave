@@ -28,9 +28,9 @@
 		"@yardinternet/eslint-config": "^1.3.0",
 		"@yardinternet/prettier-config": "^2.1.0",
 		"@yardinternet/stylelint-config": "^1.1.8",
-		"@yardinternet/toolkit": "^3.0.0",
-		"@yardinternet/vite-config": "^2.0.0",
-		"tailwindcss": "^4.3.0",
+		"@yardinternet/toolkit": "^3.0.2",
+		"@yardinternet/vite-config": "^2.0.2",
+		"tailwindcss": "^4.3.2",
 		"vite": "^8.1.3"
 	},
 	"dependencies": {
