@@ -66,11 +66,9 @@
 	p,
 	time,
 	i,
-	caption,
-	figcaption,
-	li:not( .wp-block-social-link ),
+	li,
 	li::marker,
-	a:not( .wp-block-button__link, .wp-block-social-link-anchor ),
+	a:not( .wp-block-button__link ),
 	.gfield_required {
 		@apply text-white!;
 
