@@ -59,6 +59,7 @@ return [
 				'yard_edit_privacy_policy',
 				'yard_edit_attachments',
 				'edit_emergency_notification',
+				'publishpress_future_expire_post',
 			],
 			'post_type_caps' => [
 				'post',
