@@ -1572,16 +1572,16 @@
         },
         {
             "name": "guzzlehttp/uri-template",
-            "version": "v1.0.9",
+            "version": "v1.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/uri-template.git",
-                "reference": "d7580af6d3f8384325d9cd3e99b21c3ed1848176"
+                "reference": "f6c24c21f42b990e9a58912b332d0874df6ba839"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/uri-template/zipball/d7580af6d3f8384325d9cd3e99b21c3ed1848176",
-                "reference": "d7580af6d3f8384325d9cd3e99b21c3ed1848176",
+                "url": "https://api.github.com/repos/guzzle/uri-template/zipball/f6c24c21f42b990e9a58912b332d0874df6ba839",
+                "reference": "f6c24c21f42b990e9a58912b332d0874df6ba839",
                 "shasum": ""
             },
             "require": {
@@ -1638,7 +1638,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/uri-template/issues",
-                "source": "https://github.com/guzzle/uri-template/tree/v1.0.9"
+                "source": "https://github.com/guzzle/uri-template/tree/v1.0.10"
             },
             "funding": [
                 {
@@ -1654,7 +1654,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-07-08T16:19:22+00:00"
+            "time": "2026-07-17T13:53:03+00:00"
         },
         {
             "name": "illuminate/auth",
@@ -5229,16 +5229,16 @@
         },
         {
             "name": "plugin/yard-gutenberg",
-            "version": "v1.6.2",
+            "version": "v1.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yardinternet/plugin-yard-gutenberg.git",
-                "reference": "b33f73728c44a854b291454b20c80a165e1055be"
+                "reference": "d21ce4f111642102fde150664f58280dc64b7e53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yardinternet/plugin-yard-gutenberg/zipball/b33f73728c44a854b291454b20c80a165e1055be",
-                "reference": "b33f73728c44a854b291454b20c80a165e1055be",
+                "url": "https://api.github.com/repos/yardinternet/plugin-yard-gutenberg/zipball/d21ce4f111642102fde150664f58280dc64b7e53",
+                "reference": "d21ce4f111642102fde150664f58280dc64b7e53",
                 "shasum": ""
             },
             "require": {
@@ -5268,9 +5268,9 @@
             "description": "A collection of blocks for the WordPress Gutenberg editor.",
             "support": {
                 "issues": "https://github.com/yardinternet/plugin-yard-gutenberg/issues",
-                "source": "https://github.com/yardinternet/plugin-yard-gutenberg/tree/v1.6.2"
+                "source": "https://github.com/yardinternet/plugin-yard-gutenberg/tree/v1.6.3"
             },
-            "time": "2026-07-09T10:53:08+00:00"
+            "time": "2026-07-14T14:26:27+00:00"
         },
         {
             "name": "psr/clock",
@@ -6178,7 +6178,7 @@
         },
         {
             "name": "roots/wordpress",
-            "version": "7.0.1",
+            "version": "7.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roots/wordpress.git",
@@ -6209,7 +6209,7 @@
             ],
             "support": {
                 "issues": "https://github.com/roots/wordpress/issues",
-                "source": "https://github.com/roots/wordpress/tree/7.0.1"
+                "source": "https://github.com/roots/wordpress/tree/7.0.2"
             },
             "funding": [
                 {
@@ -6288,23 +6288,23 @@
         },
         {
             "name": "roots/wordpress-no-content",
-            "version": "7.0.1",
+            "version": "7.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "7.0.1"
+                "reference": "7.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.w.org/release/wordpress-7.0.1-no-content.zip",
-                "reference": "7.0.1",
-                "shasum": "808ab53004d9c6fe69175855cd7d2317fe9502b3"
+                "url": "https://downloads.w.org/release/wordpress-7.0.2-no-content.zip",
+                "reference": "7.0.2",
+                "shasum": "52d2ca801cbfd75d1f2716d057095323b6ca424a"
             },
             "require": {
                 "php": ">= 7.4"
             },
             "provide": {
-                "wordpress/core-implementation": "7.0.1"
+                "wordpress/core-implementation": "7.0.2"
             },
             "suggest": {
                 "ext-curl": "Performs remote request operations.",
@@ -6355,7 +6355,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2026-07-09T17:26:02+00:00"
+            "time": "2026-07-17T18:39:03+00:00"
         },
         {
             "name": "roots/wp-config",
@@ -6499,16 +6499,16 @@
         },
         {
             "name": "sentry/sentry-laravel",
-            "version": "4.26.0",
+            "version": "4.27.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getsentry/sentry-laravel.git",
-                "reference": "8f2cc669ee99d3cda31a89f0a18197fd2efbd1b6"
+                "reference": "caa0ff39805a2eb8c70c4535a1443d7421c5a5b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getsentry/sentry-laravel/zipball/8f2cc669ee99d3cda31a89f0a18197fd2efbd1b6",
-                "reference": "8f2cc669ee99d3cda31a89f0a18197fd2efbd1b6",
+                "url": "https://api.github.com/repos/getsentry/sentry-laravel/zipball/caa0ff39805a2eb8c70c4535a1443d7421c5a5b8",
+                "reference": "caa0ff39805a2eb8c70c4535a1443d7421c5a5b8",
                 "shasum": ""
             },
             "require": {
@@ -6521,6 +6521,7 @@
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.11",
                 "guzzlehttp/guzzle": "^7.2",
+                "laravel/ai": "^0.1.5",
                 "laravel/folio": "^1.1",
                 "laravel/framework": "^6.0 | ^7.0 | ^8.0 | ^9.0 | ^10.0 | ^11.0 | ^12.0 | ^13.0",
                 "laravel/octane": "^2.15",
@@ -6574,7 +6575,7 @@
             ],
             "support": {
                 "issues": "https://github.com/getsentry/sentry-laravel/issues",
-                "source": "https://github.com/getsentry/sentry-laravel/tree/4.26.0"
+                "source": "https://github.com/getsentry/sentry-laravel/tree/4.27.0"
             },
             "funding": [
                 {
@@ -6586,7 +6587,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2026-06-11T13:22:14+00:00"
+            "time": "2026-07-15T14:47:03+00:00"
         },
         {
             "name": "spatie/backtrace",
@@ -11639,7 +11640,7 @@
                 "issues": "https://wordpress.org/support/plugin/wp-seopress",
                 "source": "https://plugins.svn.wordpress.org/wp-seopress"
             },
-            "time": "2026-07-01T09:45:35+00:00"
+            "time": "2026-07-15T07:51:11+00:00"
         },
         {
             "name": "yard/acf-registrar",
@@ -11786,16 +11787,16 @@
         },
         {
             "name": "yard/brave-components",
-            "version": "v1.6.2",
+            "version": "v1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yardinternet/brave-components.git",
-                "reference": "5c2bd66f946e8310f9ac2354c666cb122657382a"
+                "reference": "5045bb2809d0c4b6426e62e8ab176345f73ed36c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yardinternet/brave-components/zipball/5c2bd66f946e8310f9ac2354c666cb122657382a",
-                "reference": "5c2bd66f946e8310f9ac2354c666cb122657382a",
+                "url": "https://api.github.com/repos/yardinternet/brave-components/zipball/5045bb2809d0c4b6426e62e8ab176345f73ed36c",
+                "reference": "5045bb2809d0c4b6426e62e8ab176345f73ed36c",
                 "shasum": ""
             },
             "require": {
@@ -11835,20 +11836,20 @@
                 "issues": "https://github.com/yardinternet/brave-components/issues",
                 "source": "https://github.com/yardinternet/brave-components"
             },
-            "time": "2026-06-03T12:55:30+00:00"
+            "time": "2026-07-20T12:15:02+00:00"
         },
         {
             "name": "yard/brave-csp",
-            "version": "v1.4.6",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yardinternet/brave-csp.git",
-                "reference": "155528c2f46e3cea7f6943e8a8dd5ae3a8e3b981"
+                "reference": "ca75d883ac5b1f230286b82551bdd599a3f8bfa9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yardinternet/brave-csp/zipball/155528c2f46e3cea7f6943e8a8dd5ae3a8e3b981",
-                "reference": "155528c2f46e3cea7f6943e8a8dd5ae3a8e3b981",
+                "url": "https://api.github.com/repos/yardinternet/brave-csp/zipball/ca75d883ac5b1f230286b82551bdd599a3f8bfa9",
+                "reference": "ca75d883ac5b1f230286b82551bdd599a3f8bfa9",
                 "shasum": ""
             },
             "require": {
@@ -11871,22 +11872,22 @@
             "description": "Content Security Policy for Brave sites",
             "support": {
                 "issues": "https://github.com/yardinternet/brave-csp/issues",
-                "source": "https://github.com/yardinternet/brave-csp/tree/v1.4.6"
+                "source": "https://github.com/yardinternet/brave-csp/tree/v1.5.0"
             },
-            "time": "2026-06-25T13:53:12+00:00"
+            "time": "2026-07-20T11:58:09+00:00"
         },
         {
             "name": "yard/brave-hooks",
-            "version": "v2.7.4",
+            "version": "v2.7.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yardinternet/brave-hooks.git",
-                "reference": "a654303e22f32141ee5d9b84f7e25f3b5f571b03"
+                "reference": "edae08bc5aa4e429a85aec8a6778a70243d597ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yardinternet/brave-hooks/zipball/a654303e22f32141ee5d9b84f7e25f3b5f571b03",
-                "reference": "a654303e22f32141ee5d9b84f7e25f3b5f571b03",
+                "url": "https://api.github.com/repos/yardinternet/brave-hooks/zipball/edae08bc5aa4e429a85aec8a6778a70243d597ba",
+                "reference": "edae08bc5aa4e429a85aec8a6778a70243d597ba",
                 "shasum": ""
             },
             "require": {
@@ -11929,7 +11930,7 @@
                 "issues": "https://github.com/yardinternet/brave-hooks/issues",
                 "source": "https://github.com/yardinternet/brave-hooks"
             },
-            "time": "2026-07-07T09:34:27+00:00"
+            "time": "2026-07-08T18:59:15+00:00"
         },
         {
             "name": "yard/config-expander",
@@ -13195,16 +13196,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v3.95.13",
+            "version": "v3.95.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer.git",
-                "reference": "ea941114a002eb5e5876f190223deec1066c482c"
+                "reference": "3e47e5d50046f87e3244acde2fe655d1a3b72555"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/ea941114a002eb5e5876f190223deec1066c482c",
-                "reference": "ea941114a002eb5e5876f190223deec1066c482c",
+                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/3e47e5d50046f87e3244acde2fe655d1a3b72555",
+                "reference": "3e47e5d50046f87e3244acde2fe655d1a3b72555",
                 "shasum": ""
             },
             "require": {
@@ -13244,7 +13245,7 @@
                 "php-coveralls/php-coveralls": "^2.9.1",
                 "php-cs-fixer/phpunit-constraint-isidenticalstring": "^1.8",
                 "php-cs-fixer/phpunit-constraint-xmlmatchesxsd": "^1.8",
-                "phpunit/phpunit": "^9.6.35 || ^10.5.64 || ^11.5.56",
+                "phpunit/phpunit": "^9.6.35 || ^10.5.64 || ^11.5.56 || ^12.5.31",
                 "symfony/polyfill-php85": "^1.38",
                 "symfony/var-dumper": "^5.4.48 || ^6.4.36 || ^7.4.8 || ^8.1.0",
                 "symfony/yaml": "^5.4.53 || ^6.4.41 || ^7.4.13 || ^8.1.0"
@@ -13288,7 +13289,7 @@
             ],
             "support": {
                 "issues": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/issues",
-                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.95.13"
+                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.95.15"
             },
             "funding": [
                 {
@@ -13296,7 +13297,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-07-10T09:23:21+00:00"
+            "time": "2026-07-15T09:51:47+00:00"
         },
         {
             "name": "johnbillion/query-monitor",
