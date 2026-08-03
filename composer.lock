@@ -11520,15 +11520,15 @@
         },
         {
             "name": "wp-plugin/cookie-law-info",
-            "version": "3.5.3",
+            "version": "3.5.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/cookie-law-info/",
-                "reference": "tags/3.5.3"
+                "reference": "tags/3.5.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cookie-law-info.3.5.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/cookie-law-info.3.5.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0|~2.0"
@@ -11547,7 +11547,7 @@
                 "issues": "https://wordpress.org/support/plugin/cookie-law-info",
                 "source": "https://plugins.svn.wordpress.org/cookie-law-info"
             },
-            "time": "2026-07-13T04:50:38+00:00"
+            "time": "2026-08-03T07:21:23+00:00"
         },
         {
             "name": "wp-plugin/gravity-forms-zero-spam",
