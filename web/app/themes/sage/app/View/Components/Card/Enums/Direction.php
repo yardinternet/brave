@@ -24,4 +24,9 @@ enum Direction: string
 	{
 		return self::FLUID === $this;
 	}
+
+	public function isHorizontal(): bool
+	{
+		return in_array($this, [self::ROW, self::FLUID], true);
+	}
 }
