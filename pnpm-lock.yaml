@@ -13,7 +13,7 @@ importers:
         version: 1.3.3
       '@yardinternet/brave-frontend-kit':
         specifier: ^0.13.3
-        version: 0.13.3
+        version: 0.13.4
       '@yardinternet/gutenberg-block-restrictions':
         specifier: ^1.0.1
         version: 1.0.1
@@ -23,7 +23,7 @@ importers:
     devDependencies:
       '@yardinternet/eslint-config':
         specifier: ^1.3.1
-        version: 1.3.1(@babel/core@7.29.7)(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.66.0(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint-plugin-import@2.32.0)(eslint@10.8.1(jiti@1.21.7))(postcss@8.5.26)(prettier@3.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.14.1(typescript@6.0.3))(typescript@6.0.3)(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))
+        version: 1.3.1(@babel/core@7.29.7)(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.66.0(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint-plugin-import@2.32.0)(eslint@10.8.1(jiti@1.21.7))(postcss@8.5.26)(prettier@3.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.14.1(typescript@6.0.3))(typescript@6.0.3)(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))
       '@yardinternet/prettier-config':
         specifier: ^2.1.0
         version: 2.1.0
@@ -32,16 +32,16 @@ importers:
         version: 1.1.8(typescript@6.0.3)
       '@yardinternet/toolkit':
         specifier: ^3.0.4
-        version: 3.0.5(@types/node@26.2.0)(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.66.0(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint-plugin-import@2.32.0)(jiti@1.21.7)(optionator@0.9.4)(postcss@8.5.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@4.62.4)(typescript@6.0.3)(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))(webpack@5.108.4(postcss@8.5.26))
+        version: 3.0.5(@types/node@26.2.0)(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.66.0(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint-plugin-import@2.32.0)(jiti@1.21.7)(optionator@0.9.4)(postcss@8.5.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@4.62.4)(typescript@6.0.3)(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))(webpack@5.108.4(postcss@8.5.26))
       '@yardinternet/vite-config':
         specifier: ^2.0.4
-        version: 2.0.5(@types/node@26.2.0)(eslint@10.8.1(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.26)(rollup@4.62.4)(stylelint@17.14.1(typescript@6.0.3))(typescript@6.0.3)(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))(webpack@5.108.4(postcss@8.5.26))
+        version: 2.0.5(@types/node@26.2.0)(eslint@10.8.1(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.26)(rollup@4.62.4)(stylelint@17.14.1(typescript@6.0.3))(typescript@6.0.3)(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))(webpack@5.108.4(postcss@8.5.26))
       tailwindcss:
         specifier: ^4.3.2
         version: 4.3.3
       vite:
         specifier: ^8.1.3
-        version: 8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2)
+        version: 8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0)
 
 packages:
 
@@ -890,14 +890,14 @@ packages:
     resolution: {integrity: sha512-+CNAzxglkrpNf/kKywqQfk74QjtceuOE7Qm+AF8miRvPF/wmmK5+OJOgVh3AVTT3RP2mH3+FOaxlE5v72owk0A==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
 
-  '@floating-ui/core@1.7.5':
-    resolution: {integrity: sha512-1Ih4WTWyw0+lKyFMcBHGbb5U5FtuHJuujoyyr5zTaWS5EYMeT6Jb2AuDeftsCsEuchO+mM2ij5+q9crhydzLhQ==}
+  '@floating-ui/core@1.8.0':
+    resolution: {integrity: sha512-0CIZ5itps/8x7BG8dEIhs53BvCUH2PCoogtakwRTut+Arm58sJooJ0AuZhLw2HJYIR5cMLNPBSS728sPho2khQ==}
 
-  '@floating-ui/dom@1.7.6':
-    resolution: {integrity: sha512-9gZSAI5XM36880PPMm//9dfiEngYoC6Am2izES1FF406YFsjvyBMmeJ2g4SAju3xWwtuynNRFL2s9hgxpLI5SQ==}
+  '@floating-ui/dom@1.8.0':
+    resolution: {integrity: sha512-yXSrzeHZBTZadLOlfyhCkJHNeLJnHRnRInwdZ40L7ZiaAtrBwoYlsDrX3v5zB1Utk7CLfzcOVnVVWoXEky7Ceg==}
 
-  '@floating-ui/utils@0.2.11':
-    resolution: {integrity: sha512-RiB/yIh78pcIxl6lLMG0CgBXAZ2Y0eVHqMPYugu+9U0AeT6YBeiJpf7lbdJNIugFP5SIjwNRgo4DhR1Qxi26Gg==}
+  '@floating-ui/utils@0.2.12':
+    resolution: {integrity: sha512-HpCo8tmWzLVad5s2d19EhAz5zqrrQ6s69qd6moPMQvkOuSwDT1YgRfWSVuc4ennqrgv3OHppiOGMQ7oC13yIww==}
 
   '@humanfs/core@0.19.2':
     resolution: {integrity: sha512-UhXNm+CFMWcbChXywFwkmhqjs3PRCmcSa/hfBgLIb7oQ5HNb1wS0icWsGtSAUNgefHeI+eBrA8I1fxmbHsGdvA==}
@@ -996,8 +996,8 @@ packages:
   '@one-ini/wasm@0.1.1':
     resolution: {integrity: sha512-XuySG1E38YScSJoMlqovLru4KTUNSjgVTIjyh7qMX6aNN5HY5Ct5LhRJdxO79JtTzKfzV/bnWpz+zquYrISsvw==}
 
-  '@oxc-project/types@0.143.0':
-    resolution: {integrity: sha512-u6JZdLBTLotrNC9Vd6vPssINdzcCzleKAH6EJKImQb7GtYvX5keN2dxkoK44stCc4tffE6QQRtZTXVSzsLUlWA==}
+  '@oxc-project/types@0.144.0':
+    resolution: {integrity: sha512-nuhZIOLuI6TFQ32I/WnUx+SCPY7SdSKwgnFHydAuoS1+Z4BRcaP+RRJmGzl9lw+0OFF7UmaESf7KQRXaNLHypg==}
 
   '@parcel/watcher-android-arm64@2.6.0':
     resolution: {integrity: sha512-trgpLSCKRC/huFjXX/Smh+0sWe4+YtKfktIToiMl59ghz7z+qkH6kMvNnUbLyRs9N11t8l4svSCs1+5B3rOAhA==}
@@ -1094,92 +1094,92 @@ packages:
     peerDependencies:
       prettier: ^3.0.0
 
-  '@rolldown/binding-android-arm64@1.2.3':
-    resolution: {integrity: sha512-zrJtHDcaZJ1Fp7xf4hNl+7seH9Cn/N5TwLYkhgXREtBwAd/jaqW3uqeHxpDugJLVICWg4eW44kOQEGJ1r6jCGw==}
+  '@rolldown/binding-android-arm64@1.2.4':
+    resolution: {integrity: sha512-jHC2cnyKz5xU2fhECtFl8OZ83cYNt13GZQD+0uMJ/X3o+ijmd56okHhTUwxVSHPx1IRVIJEZ1/1pPzeLCU6XKA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [android]
 
-  '@rolldown/binding-darwin-arm64@1.2.3':
-    resolution: {integrity: sha512-ieIiibVCp0tX7TLu2cafoNPv8wJyYi01ekXpbf8q2j7F4rGAhhXb/eQh7ge9DRBY78GwmRQtvjZDux7EDbA8kA==}
+  '@rolldown/binding-darwin-arm64@1.2.4':
+    resolution: {integrity: sha512-Dc5mPD8F5F/FS8i01syd7FTF6yB2fVthH/TRkjwJkzUK6EpoxHtqvZQP5Zwq80/5z19TWYHIg1KOHboCgVx/aQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [darwin]
 
-  '@rolldown/binding-darwin-x64@1.2.3':
-    resolution: {integrity: sha512-Zh9tCon19eDXJoihx0rqKhMUlMYqzwj3aPsSuHmI4RWZh62dWUL+DJN4C5YQya5TcQBJU/Fe8+rY0jhXTQITqA==}
+  '@rolldown/binding-darwin-x64@1.2.4':
+    resolution: {integrity: sha512-fpDm4oBo6SqLvWUYCmFhdde3U9KH2fRNNMeAnAPAIwxRL345xutL0EtEUcuoxsoazdJGv/MuDBQHlCDrtbvqOg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [darwin]
 
-  '@rolldown/binding-freebsd-x64@1.2.3':
-    resolution: {integrity: sha512-nGbJWewA1wrXXZiQhjAT5rhibGfns5ZNkDVqxsO6zJ3f3YvpoDNNmGMSbbhLuXKjNScaBJVOAboztAWVespQMg==}
+  '@rolldown/binding-freebsd-x64@1.2.4':
+    resolution: {integrity: sha512-rSJoreDE/HoIzoaib6MTp5jQtCTdMHKIvItAKT/ImS6Y6Ww76oUaeMyp4Vc/fAgd/ehji068IxetHXAnqUwN9A==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [freebsd]
 
-  '@rolldown/binding-linux-arm-gnueabihf@1.2.3':
-    resolution: {integrity: sha512-QNniJr5Kml0kDEB98jiDOJjXNroxIIi0IXIbdYzY26Xt1pVbeP62+KnoIZLwirOymX/0jDk/2gI/bNUv7A7OIw==}
+  '@rolldown/binding-linux-arm-gnueabihf@1.2.4':
+    resolution: {integrity: sha512-/jm8OGHgn7oGaJu3i/qZI9spUGcJ+y/lk43ttQ/iO1tOd9NissG6o97bighBCiL+BKRngmcDuR6ikfwYdJmVuQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm]
     os: [linux]
 
-  '@rolldown/binding-linux-arm64-gnu@1.2.3':
-    resolution: {integrity: sha512-TkqEAcmmvH3I/q4114NB4RVt6241Dao48pF45uLcFGrwAaIn0iITgTAKP/dLjbN0R4buJjGb91+UHSoFmpgIWw==}
+  '@rolldown/binding-linux-arm64-gnu@1.2.4':
+    resolution: {integrity: sha512-tIP06BeD9EqvECBrPZ+sqdPlYrT+aYaAiu1wYziVx5elRK/ftm33JxVDy2bXGbr6J0CrtirCkR87/X5a2euEng==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@rolldown/binding-linux-arm64-musl@1.2.3':
-    resolution: {integrity: sha512-NHqjnxpsndf4MPymxteFAWHHfkTL8HjWh1KB7z23ofZ6QO2euONuxDXjat69dKZRALnGypg8k8SsK8vZJoXv1Q==}
+  '@rolldown/binding-linux-arm64-musl@1.2.4':
+    resolution: {integrity: sha512-Ql1Q0EQqVThvn9VAVlwNzsUvbSFtCMGjLpRRi4pk5i7NZZ4n5ISiLMjHYtus4VQ2PvkSw24zyaCVsiS+sXPj1w==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [linux]
     libc: [musl]
 
-  '@rolldown/binding-linux-ppc64-gnu@1.2.3':
-    resolution: {integrity: sha512-6tbrbwfz5GB9DQ4Jwo6hy9v+vR31xZlvzZ6n5Xut6Hhx5PvrA9q/HsK8KMaYQp063iqZGXwNvZtYNLD7EM/x0w==}
+  '@rolldown/binding-linux-ppc64-gnu@1.2.4':
+    resolution: {integrity: sha512-GjbjXD4XXfN19D0LZNbmiCBUoDiRACsYHr0yaIbbn8aFsXjHZifcYqu/W5Er5X2X990WjHXFrxarn5chzItorQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [ppc64]
     os: [linux]
     libc: [glibc]
 
-  '@rolldown/binding-linux-s390x-gnu@1.2.3':
-    resolution: {integrity: sha512-oyuXxXmoZHjXC917IAPFAAv4wWAa0cM9afk8nx1+9/jNNOX1uPf8yDA6p7G0RypOfw/X0PQt5IfoquY1um+zSg==}
+  '@rolldown/binding-linux-s390x-gnu@1.2.4':
+    resolution: {integrity: sha512-p5WR0NOwaRmJ/B1b6IjEFLLivwEsf3PrdBIhRbhTCQisbo2SvHHpG4ELB/+FgQNnB88LTOF86upmJmbvZdQ2lw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [s390x]
     os: [linux]
     libc: [glibc]
 
-  '@rolldown/binding-linux-x64-gnu@1.2.3':
-    resolution: {integrity: sha512-TytMwF2KVGqP2tgd0I1OY0PAv78dZRAYcF5ssDzjM34SUXCED3uXvSd5+lHoC0bTD6eEdFz7LdQNCO1y0oVk9w==}
+  '@rolldown/binding-linux-x64-gnu@1.2.4':
+    resolution: {integrity: sha512-4/GyVjmhR+Tc6HLJvwc1sOhPqAZtySiSMesOZyX6JQ5XBxoTDEMKQzvo07NIK6nTon/SivlZqvhzvuVBNQhObQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@rolldown/binding-linux-x64-musl@1.2.3':
-    resolution: {integrity: sha512-/E9m3qstrJFVPoULV25mVQblSNExY2+kBsYe4sy0Tn0yOOgJ8wZbZt3KnRbF/XeU2Gl1STKUQnDNTqhIE5MD4A==}
+  '@rolldown/binding-linux-x64-musl@1.2.4':
+    resolution: {integrity: sha512-l9eeLsCNvPpmSXUej0etw/J1eqV0Jj1D5G/xG6YTijmE6dkv6E2QezgWbTfQk63v952DPqrjOCoiqxq7Bw0YUQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
     libc: [musl]
 
-  '@rolldown/binding-openharmony-arm64@1.2.3':
-    resolution: {integrity: sha512-Kr0OcsoQI816i6HOl3vFHpd1K0eZyh76zgfj4c1nTyaTsd5r2Mj1lwM4R90y/qaCfmTn9eHy0SKwi98eitRxug==}
+  '@rolldown/binding-openharmony-arm64@1.2.4':
+    resolution: {integrity: sha512-e0F355MSTMm3+UOqtV3L24gFUp2N5m1f8L/7d56deik6va+AXdrt9F8LbzGpeWGWRbZEDq4m8NVnJDeBtf9DZg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [openharmony]
 
-  '@rolldown/binding-win32-arm64-msvc@1.2.3':
-    resolution: {integrity: sha512-hOtMwTqnME+/gJcH/PCZ0wn0zPUjiWOgkHpxbSJpfGKMezHltx1S7/k1SitzVa7Ww2cqrDDaFbZEhcJZO8o+Jw==}
+  '@rolldown/binding-win32-arm64-msvc@1.2.4':
+    resolution: {integrity: sha512-AWLi0uBRYh6QlE7OKhiz+phZC0qwtij2QZmhmOdsLdFn64m7oMpooE9ICE3lhm9xMb4SpDo2WbHcxX1iFLFtqw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [win32]
 
-  '@rolldown/binding-win32-x64-msvc@1.2.3':
-    resolution: {integrity: sha512-ekcqMMkI2PlhYnfzQnB/cEdYUVVJViWvoUyLrbzgDoi3Snfc1mVBwdnc306ufA5ejy8JSPjT2RlW1nQSjW7efg==}
+  '@rolldown/binding-win32-x64-msvc@1.2.4':
+    resolution: {integrity: sha512-UwSDJOg3dqCAejWdxclJjCsh3Qq4vLYMDxmyHqo1btz3stK2VqgwNd3mm5tuIwzSlGIQ/1H9Hr+Zn09mrezNqQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [win32]
@@ -1240,12 +1240,6 @@ packages:
     cpu: [arm]
     os: [linux]
     libc: [musl]
-
-  '@rollup/rollup-linux-arm64-gnu@4.62.2':
-    resolution: {integrity: sha512-wnFJkogWvN4jm/hQRF2UBaeUmk20j5+DmHvoyWii2b8HJDyvz1MF2OU/6ynXt2KR63rbZLWkFpoytpdc/yBuSA==}
-    cpu: [arm64]
-    os: [linux]
-    libc: [glibc]
 
   '@rollup/rollup-linux-arm64-gnu@4.62.4':
     resolution: {integrity: sha512-CcnXHWnXg69g+DX5VWL3FHts3qMRN2uVEHX+BZvGLdd07/gXkn3ePjYtO1LDJvxkGKVHMclKBRa1QUTH+6toYQ==}
@@ -2124,8 +2118,8 @@ packages:
   '@yardinternet/a11y-cookie-yes@1.3.3':
     resolution: {integrity: sha512-CckEQTc/RawklFbgUyLNrdVJ7xjxbgvUsH9XROr0pLMoc6zXDnXYJvAi27d3+h9E9dVyjmWMXBj0+zZuN+tZiw==, tarball: https://npm.pkg.github.com/download/@yardinternet/a11y-cookie-yes/1.3.3/27093c59dd71ee16e7d032757b3da328cd32210a}
 
-  '@yardinternet/brave-frontend-kit@0.13.3':
-    resolution: {integrity: sha512-5El1llSwI66DNHdHprNSRX0L7dr7dJtE4s5PM3WFX2KJzO3FBbW7BCO5FefJUEYCBAl4kTHxLzqbvdv1l8bISQ==, tarball: https://npm.pkg.github.com/download/@yardinternet/brave-frontend-kit/0.13.3/16d5037f5b562e6a8e356a26c08395957563f8fb}
+  '@yardinternet/brave-frontend-kit@0.13.4':
+    resolution: {integrity: sha512-MJQtkrTbzQtXwJLggqLdlK1h6pqNzd6ijbOs7WC3yiSI17EMrQS0PLyPwL6u8djO7fkegk9ySWsc1lntdshsqg==, tarball: https://npm.pkg.github.com/download/@yardinternet/brave-frontend-kit/0.13.4/0ba96908692f7d41aa03395664d4a9a012628e96}
 
   '@yardinternet/eslint-config@1.3.1':
     resolution: {integrity: sha512-2DyvQMDcw597NQm5tNKYT7oz3FOdOkKrmso3a/PPMpT++5bVXIRUlpdV0+bQZMTyKwCWUKuHsg5b1GHf9rYYRg==, tarball: https://npm.pkg.github.com/download/@yardinternet/eslint-config/1.3.1/f8a85664e731168cee4713f44a9761b18c8060bb}
@@ -2710,8 +2704,8 @@ packages:
   es-module-lexer@0.4.1:
     resolution: {integrity: sha512-ooYciCUtfw6/d2w56UVeqHPcoCFAiJdz5XOkYpv/Txl1HMUozpXjz/2RIQgqwKdXNDPSF1W7mJCFse3G+HDyAA==}
 
-  es-module-lexer@2.3.1:
-    resolution: {integrity: sha512-shc1dbU90Yl/xq1QrC7QRtfcwURZuVRfPhZbDoldJ1cn1gzDvBaBWlv0eFolj5+0znnPJz5TXLxsN77X/12KTA==}
+  es-module-lexer@2.3.2:
+    resolution: {integrity: sha512-poHGpORABojJJucnV9KbOavETW8lBVnphkW77ER5/BQ5Fz7oXSoCNek7IH3vR5nRjdsEz926ibFYX8KtLQmdyw==}
 
   es-object-atoms@1.1.2:
     resolution: {integrity: sha512-HWcBoN6NileqtSydK2FqHbS/LoDd2pqrnQHLyJzBj4kOp/ky2MWMN694xOfkK8/SnUsW2DH7EfyVlydKCsm1Zw==}
@@ -4272,8 +4266,8 @@ packages:
     resolution: {integrity: sha512-g6QUff04oZpHs0eG5p83rFLhHeV00ug/Yf9nZM6fLeUrPguBTkTQOdpAWWspMh55TZfVQDPaN3NQJfbVRAxdIw==}
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
 
-  rolldown@1.2.3:
-    resolution: {integrity: sha512-rn9wpmxplLf7NLNyCk9FyWh3FM43DbY8jOzCdEPzH7uflhTftRbCEpqi6Ly2osgoU8OwObtmavMbWLaWy4LX7A==}
+  rolldown@1.2.4:
+    resolution: {integrity: sha512-rSr7irW0K7QRWzjdJXqZowkcRdDtjRduh43rBltnVKd0VFq839l1lJoDvGJb6gl7+4rTTCrPWu+YfujUL8Ug7w==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
 
@@ -4557,8 +4551,8 @@ packages:
     resolution: {integrity: sha512-uxc/zpqFg6x7C8vOE7lh6Lbda8eEL9zmVm/PLeTPBRhh1xCgdWaQ+J1CUieGpIfm2HdtsUpRv+HshiasBMcc6A==}
     engines: {node: '>=6'}
 
-  terser@5.49.2:
-    resolution: {integrity: sha512-rGbJiKeQ4WDe3EXlDAIaQcwftVfv2Q8o1awFNfvXolJYKkb1AuZY1RTOmqx4LJXZENbWZA7eIsYGHuEzHsi1nQ==}
+  terser@5.50.0:
+    resolution: {integrity: sha512-CN9BVxWhgS/hRxtUMjtC2uRWSTcSfQFHMDWma6sKKfIivCD91sM+FOPfvwoaRMqCSrUpe1nv3jDamd9eEQ4y+w==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -4777,8 +4771,8 @@ packages:
     peerDependencies:
       vite: ^6.0.0 || ^7.0.0 || ^8.0.0
 
-  vite@8.2.0:
-    resolution: {integrity: sha512-pn+CFpM0lwDeKwmOq1ZaBK/9sjorZcgqxki6MbY/jPEVd9vichIlmlD4HmQ5wdP5EgqQCFRaACBxMC7uEGc6lQ==}
+  vite@8.2.1:
+    resolution: {integrity: sha512-EU/eS7BH3XROHh2YnBefjM6DBKA6ZeMZEYQbj7NLWg5wHYlhB8B/Mayd5XsgWq+NFYccDOTemRpdETWR6Ka/lw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -5871,16 +5865,16 @@ snapshots:
       '@eslint/core': 1.2.1
       levn: 0.4.1
 
-  '@floating-ui/core@1.7.5':
+  '@floating-ui/core@1.8.0':
     dependencies:
-      '@floating-ui/utils': 0.2.11
+      '@floating-ui/utils': 0.2.12
 
-  '@floating-ui/dom@1.7.6':
+  '@floating-ui/dom@1.8.0':
     dependencies:
-      '@floating-ui/core': 1.7.5
-      '@floating-ui/utils': 0.2.11
+      '@floating-ui/core': 1.8.0
+      '@floating-ui/utils': 0.2.12
 
-  '@floating-ui/utils@0.2.11': {}
+  '@floating-ui/utils@0.2.12': {}
 
   '@humanfs/core@0.19.2':
     dependencies:
@@ -6002,7 +5996,7 @@ snapshots:
 
   '@one-ini/wasm@0.1.1': {}
 
-  '@oxc-project/types@0.143.0': {}
+  '@oxc-project/types@0.144.0': {}
 
   '@parcel/watcher-android-arm64@2.6.0':
     optional: true
@@ -6072,46 +6066,46 @@ snapshots:
       php-parser: 3.5.0
       prettier: 3.8.1
 
-  '@rolldown/binding-android-arm64@1.2.3':
+  '@rolldown/binding-android-arm64@1.2.4':
     optional: true
 
-  '@rolldown/binding-darwin-arm64@1.2.3':
+  '@rolldown/binding-darwin-arm64@1.2.4':
     optional: true
 
-  '@rolldown/binding-darwin-x64@1.2.3':
+  '@rolldown/binding-darwin-x64@1.2.4':
     optional: true
 
-  '@rolldown/binding-freebsd-x64@1.2.3':
+  '@rolldown/binding-freebsd-x64@1.2.4':
     optional: true
 
-  '@rolldown/binding-linux-arm-gnueabihf@1.2.3':
+  '@rolldown/binding-linux-arm-gnueabihf@1.2.4':
     optional: true
 
-  '@rolldown/binding-linux-arm64-gnu@1.2.3':
+  '@rolldown/binding-linux-arm64-gnu@1.2.4':
     optional: true
 
-  '@rolldown/binding-linux-arm64-musl@1.2.3':
+  '@rolldown/binding-linux-arm64-musl@1.2.4':
     optional: true
 
-  '@rolldown/binding-linux-ppc64-gnu@1.2.3':
+  '@rolldown/binding-linux-ppc64-gnu@1.2.4':
     optional: true
 
-  '@rolldown/binding-linux-s390x-gnu@1.2.3':
+  '@rolldown/binding-linux-s390x-gnu@1.2.4':
     optional: true
 
-  '@rolldown/binding-linux-x64-gnu@1.2.3':
+  '@rolldown/binding-linux-x64-gnu@1.2.4':
     optional: true
 
-  '@rolldown/binding-linux-x64-musl@1.2.3':
+  '@rolldown/binding-linux-x64-musl@1.2.4':
     optional: true
 
-  '@rolldown/binding-openharmony-arm64@1.2.3':
+  '@rolldown/binding-openharmony-arm64@1.2.4':
     optional: true
 
-  '@rolldown/binding-win32-arm64-msvc@1.2.3':
+  '@rolldown/binding-win32-arm64-msvc@1.2.4':
     optional: true
 
-  '@rolldown/binding-win32-x64-msvc@1.2.3':
+  '@rolldown/binding-win32-x64-msvc@1.2.4':
     optional: true
 
   '@rolldown/pluginutils@1.0.0-rc.3': {}
@@ -6148,9 +6142,6 @@ snapshots:
     optional: true
 
   '@rollup/rollup-linux-arm-musleabihf@4.62.4':
-    optional: true
-
-  '@rollup/rollup-linux-arm64-gnu@4.62.2':
     optional: true
 
   '@rollup/rollup-linux-arm64-gnu@4.62.4':
@@ -6204,10 +6195,10 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.62.4':
     optional: true
 
-  '@roots/vite-plugin@2.2.0(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))(webpack@5.108.4(postcss@8.5.26))':
+  '@roots/vite-plugin@2.2.0(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))(webpack@5.108.4(postcss@8.5.26))':
     dependencies:
       '@wordpress/dependency-extraction-webpack-plugin': 6.52.0(webpack@5.108.4(postcss@8.5.26))
-      vite: 8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2)
+      vite: 8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0)
     transitivePeerDependencies:
       - webpack
 
@@ -6332,12 +6323,12 @@ snapshots:
       '@tailwindcss/oxide-win32-arm64-msvc': 4.3.3
       '@tailwindcss/oxide-win32-x64-msvc': 4.3.3
 
-  '@tailwindcss/vite@4.3.3(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))':
+  '@tailwindcss/vite@4.3.3(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))':
     dependencies:
       '@tailwindcss/node': 4.3.3
       '@tailwindcss/oxide': 4.3.3
       tailwindcss: 4.3.3
-      vite: 8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2)
+      vite: 8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0)
 
   '@tannin/compile@1.1.0':
     dependencies:
@@ -6661,7 +6652,7 @@ snapshots:
   '@unrs/resolver-binding-win32-x64-msvc@1.12.2':
     optional: true
 
-  '@vitejs/plugin-react@5.2.0(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))':
+  '@vitejs/plugin-react@5.2.0(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))':
     dependencies:
       '@babel/core': 7.29.7
       '@babel/plugin-transform-react-jsx-self': 7.29.7(@babel/core@7.29.7)
@@ -6669,7 +6660,7 @@ snapshots:
       '@rolldown/pluginutils': 1.0.0-rc.3
       '@types/babel__core': 7.20.5
       react-refresh: 0.18.0
-      vite: 8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2)
+      vite: 8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -6913,7 +6904,7 @@ snapshots:
 
   '@wordpress/escape-html@3.52.0': {}
 
-  '@wordpress/eslint-plugin@25.7.0(@babel/core@7.29.7)(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.66.0(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(postcss@8.5.26)(prettier@3.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.14.1(typescript@6.0.3))(typescript@6.0.3)(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))':
+  '@wordpress/eslint-plugin@25.7.0(@babel/core@7.29.7)(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.66.0(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(postcss@8.5.26)(prettier@3.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.14.1(typescript@6.0.3))(typescript@6.0.3)(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))':
     dependencies:
       '@babel/core': 7.29.7
       '@babel/eslint-parser': 7.29.7(@babel/core@7.29.7)(eslint@10.8.1(jiti@1.21.7))
@@ -6921,7 +6912,7 @@ snapshots:
       '@eslint/compat': 2.1.0(eslint@10.8.1(jiti@1.21.7))
       '@wordpress/babel-preset-default': 8.51.0
       '@wordpress/prettier-config': 4.52.0(prettier@3.8.1)
-      '@wordpress/theme': 1.0.0(@types/react@18.3.31)(postcss@8.5.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.14.1(typescript@6.0.3))(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))
+      '@wordpress/theme': 1.0.0(@types/react@18.3.31)(postcss@8.5.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.14.1(typescript@6.0.3))(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))
       cosmiconfig: 7.1.0
       eslint: 10.8.1(jiti@1.21.7)
       eslint-config-prettier: 10.1.8(eslint@10.8.1(jiti@1.21.7))
@@ -6956,7 +6947,7 @@ snapshots:
       - supports-color
       - vite
 
-  '@wordpress/eslint-plugin@25.7.0(@babel/core@7.29.7)(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.66.0(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(postcss@8.5.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.14.1(typescript@6.0.3))(typescript@6.0.3)(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))(wp-prettier@3.0.3)':
+  '@wordpress/eslint-plugin@25.7.0(@babel/core@7.29.7)(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.66.0(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(postcss@8.5.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.14.1(typescript@6.0.3))(typescript@6.0.3)(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))(wp-prettier@3.0.3)':
     dependencies:
       '@babel/core': 7.29.7
       '@babel/eslint-parser': 7.29.7(@babel/core@7.29.7)(eslint@10.8.1(jiti@1.21.7))
@@ -6964,7 +6955,7 @@ snapshots:
       '@eslint/compat': 2.1.0(eslint@10.8.1(jiti@1.21.7))
       '@wordpress/babel-preset-default': 8.51.0
       '@wordpress/prettier-config': 4.52.0(wp-prettier@3.0.3)
-      '@wordpress/theme': 1.0.0(@types/react@18.3.31)(postcss@8.5.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.14.1(typescript@6.0.3))(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))
+      '@wordpress/theme': 1.0.0(@types/react@18.3.31)(postcss@8.5.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.14.1(typescript@6.0.3))(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))
       cosmiconfig: 7.1.0
       eslint: 10.8.1(jiti@1.21.7)
       eslint-config-prettier: 10.1.8(eslint@10.8.1(jiti@1.21.7))
@@ -7000,7 +6991,7 @@ snapshots:
       - vite
     optional: true
 
-  '@wordpress/eslint-plugin@25.8.0(@babel/core@7.29.7)(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.66.0(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(postcss@8.5.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.14.1(typescript@6.0.3))(typescript@6.0.3)(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))(wp-prettier@3.0.3)':
+  '@wordpress/eslint-plugin@25.8.0(@babel/core@7.29.7)(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.66.0(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(postcss@8.5.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.14.1(typescript@6.0.3))(typescript@6.0.3)(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))(wp-prettier@3.0.3)':
     dependencies:
       '@babel/core': 7.29.7
       '@babel/eslint-parser': 7.29.7(@babel/core@7.29.7)(eslint@10.8.1(jiti@1.21.7))
@@ -7008,7 +6999,7 @@ snapshots:
       '@eslint/compat': 2.1.0(eslint@10.8.1(jiti@1.21.7))
       '@wordpress/babel-preset-default': 8.52.0
       '@wordpress/prettier-config': 4.52.0(wp-prettier@3.0.3)
-      '@wordpress/theme': 1.1.0(@types/react@18.3.31)(postcss@8.5.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.14.1(typescript@6.0.3))(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))
+      '@wordpress/theme': 1.1.0(@types/react@18.3.31)(postcss@8.5.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.14.1(typescript@6.0.3))(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))
       cosmiconfig: 7.1.0
       eslint: 10.8.1(jiti@1.21.7)
       eslint-config-prettier: 10.1.8(eslint@10.8.1(jiti@1.21.7))
@@ -7106,7 +7097,7 @@ snapshots:
 
   '@wordpress/style-runtime@0.8.0': {}
 
-  '@wordpress/theme@1.0.0(@types/react@18.3.31)(postcss@8.5.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.14.1(typescript@6.0.3))(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))':
+  '@wordpress/theme@1.0.0(@types/react@18.3.31)(postcss@8.5.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.14.1(typescript@6.0.3))(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))':
     dependencies:
       '@wordpress/compose': 8.4.0(@types/react@18.3.31)(react@18.3.1)
       '@wordpress/deprecated': 4.51.0
@@ -7121,9 +7112,9 @@ snapshots:
       '@types/react': 18.3.31
       postcss: 8.5.26
       stylelint: 17.14.1(typescript@6.0.3)
-      vite: 8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2)
+      vite: 8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0)
 
-  '@wordpress/theme@1.1.0(@types/react@18.3.31)(postcss@8.5.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.14.1(typescript@6.0.3))(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))':
+  '@wordpress/theme@1.1.0(@types/react@18.3.31)(postcss@8.5.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.14.1(typescript@6.0.3))(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))':
     dependencies:
       '@wordpress/compose': 8.5.0(@types/react@18.3.31)(react@18.3.1)
       '@wordpress/deprecated': 4.52.0
@@ -7138,7 +7129,7 @@ snapshots:
       '@types/react': 18.3.31
       postcss: 8.5.26
       stylelint: 17.14.1(typescript@6.0.3)
-      vite: 8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2)
+      vite: 8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0)
 
   '@wordpress/undo-manager@1.51.0':
     dependencies:
@@ -7160,19 +7151,19 @@ snapshots:
     dependencies:
       focus-trap: 7.8.0
 
-  '@yardinternet/brave-frontend-kit@0.13.3':
+  '@yardinternet/brave-frontend-kit@0.13.4':
     dependencies:
-      '@floating-ui/dom': 1.7.6
+      '@floating-ui/dom': 1.8.0
       accordion-js: 3.4.1
       body-scroll-lock: 4.0.0-beta.0
       focus-trap: 7.8.0
       headroom.js: 0.12.0
     optionalDependencies:
-      '@rollup/rollup-linux-arm64-gnu': 4.62.2
+      '@rollup/rollup-linux-arm64-gnu': 4.62.4
 
-  '@yardinternet/eslint-config@1.3.1(@babel/core@7.29.7)(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.66.0(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint-plugin-import@2.32.0)(eslint@10.8.1(jiti@1.21.7))(postcss@8.5.26)(prettier@3.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.14.1(typescript@6.0.3))(typescript@6.0.3)(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))':
+  '@yardinternet/eslint-config@1.3.1(@babel/core@7.29.7)(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.66.0(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint-plugin-import@2.32.0)(eslint@10.8.1(jiti@1.21.7))(postcss@8.5.26)(prettier@3.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.14.1(typescript@6.0.3))(typescript@6.0.3)(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))':
     dependencies:
-      '@wordpress/eslint-plugin': 25.7.0(@babel/core@7.29.7)(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.66.0(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(postcss@8.5.26)(prettier@3.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.14.1(typescript@6.0.3))(typescript@6.0.3)(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))
+      '@wordpress/eslint-plugin': 25.7.0(@babel/core@7.29.7)(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.66.0(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(postcss@8.5.26)(prettier@3.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.14.1(typescript@6.0.3))(typescript@6.0.3)(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))
       eslint-import-resolver-alias: 1.1.2(eslint-plugin-import@2.32.0)
       globals: 17.7.0
       typescript-eslint: 8.64.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3)
@@ -7197,9 +7188,9 @@ snapshots:
       - typescript
       - vite
 
-  '@yardinternet/eslint-config@1.3.1(@babel/core@7.29.7)(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.66.0(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint-plugin-import@2.32.0)(eslint@10.8.1(jiti@1.21.7))(postcss@8.5.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.14.1(typescript@6.0.3))(typescript@6.0.3)(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))(wp-prettier@3.0.3)':
+  '@yardinternet/eslint-config@1.3.1(@babel/core@7.29.7)(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.66.0(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint-plugin-import@2.32.0)(eslint@10.8.1(jiti@1.21.7))(postcss@8.5.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.14.1(typescript@6.0.3))(typescript@6.0.3)(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))(wp-prettier@3.0.3)':
     dependencies:
-      '@wordpress/eslint-plugin': 25.7.0(@babel/core@7.29.7)(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.66.0(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(postcss@8.5.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.14.1(typescript@6.0.3))(typescript@6.0.3)(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))(wp-prettier@3.0.3)
+      '@wordpress/eslint-plugin': 25.7.0(@babel/core@7.29.7)(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.66.0(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(postcss@8.5.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.14.1(typescript@6.0.3))(typescript@6.0.3)(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))(wp-prettier@3.0.3)
       eslint-import-resolver-alias: 1.1.2(eslint-plugin-import@2.32.0)
       globals: 17.7.0
       typescript-eslint: 8.64.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3)
@@ -7271,12 +7262,12 @@ snapshots:
       - supports-color
       - typescript
 
-  '@yardinternet/toolkit@3.0.5(@types/node@26.2.0)(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.66.0(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint-plugin-import@2.32.0)(jiti@1.21.7)(optionator@0.9.4)(postcss@8.5.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@4.62.4)(typescript@6.0.3)(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))(webpack@5.108.4(postcss@8.5.26))':
+  '@yardinternet/toolkit@3.0.5(@types/node@26.2.0)(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.66.0(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint-plugin-import@2.32.0)(jiti@1.21.7)(optionator@0.9.4)(postcss@8.5.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@4.62.4)(typescript@6.0.3)(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))(webpack@5.108.4(postcss@8.5.26))':
     dependencies:
       '@babel/core': 7.29.7
       '@shufo/prettier-plugin-blade': 1.16.2
       '@shufo/tailwindcss-class-sorter': 3.0.1
-      '@wordpress/eslint-plugin': 25.8.0(@babel/core@7.29.7)(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.66.0(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(postcss@8.5.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.14.1(typescript@6.0.3))(typescript@6.0.3)(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))(wp-prettier@3.0.3)
+      '@wordpress/eslint-plugin': 25.8.0(@babel/core@7.29.7)(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.66.0(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(postcss@8.5.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.14.1(typescript@6.0.3))(typescript@6.0.3)(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))(wp-prettier@3.0.3)
       '@wordpress/prettier-config': 4.52.0(wp-prettier@3.0.3)
       '@yardinternet/shared-utils': 1.0.1
       chalk: 5.6.2
@@ -7292,10 +7283,10 @@ snapshots:
       stylelint-config-recommended: 18.0.0(stylelint@17.14.1(typescript@6.0.3))
       typescript-eslint: 8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3)
     optionalDependencies:
-      '@yardinternet/eslint-config': 1.3.1(@babel/core@7.29.7)(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.66.0(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint-plugin-import@2.32.0)(eslint@10.8.1(jiti@1.21.7))(postcss@8.5.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.14.1(typescript@6.0.3))(typescript@6.0.3)(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))(wp-prettier@3.0.3)
+      '@yardinternet/eslint-config': 1.3.1(@babel/core@7.29.7)(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.66.0(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.66.0(eslint@10.8.1(jiti@1.21.7))(typescript@6.0.3))(eslint-plugin-import@2.32.0)(eslint@10.8.1(jiti@1.21.7))(postcss@8.5.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.14.1(typescript@6.0.3))(typescript@6.0.3)(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))(wp-prettier@3.0.3)
       '@yardinternet/prettier-config': 2.1.0
       '@yardinternet/stylelint-config': 1.1.8(typescript@6.0.3)
-      '@yardinternet/vite-config': 2.0.5(@types/node@26.2.0)(eslint@10.8.1(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.26)(rollup@4.62.4)(stylelint@17.14.1(typescript@6.0.3))(typescript@6.0.3)(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))(webpack@5.108.4(postcss@8.5.26))
+      '@yardinternet/vite-config': 2.0.5(@types/node@26.2.0)(eslint@10.8.1(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.26)(rollup@4.62.4)(stylelint@17.14.1(typescript@6.0.3))(typescript@6.0.3)(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))(webpack@5.108.4(postcss@8.5.26))
     transitivePeerDependencies:
       - '@biomejs/biome'
       - '@ianvs/prettier-plugin-sort-imports'
@@ -7342,20 +7333,20 @@ snapshots:
       - webpack
       - yaml
 
-  '@yardinternet/vite-config@2.0.5(@types/node@26.2.0)(eslint@10.8.1(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.26)(rollup@4.62.4)(stylelint@17.14.1(typescript@6.0.3))(typescript@6.0.3)(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))(webpack@5.108.4(postcss@8.5.26))':
+  '@yardinternet/vite-config@2.0.5(@types/node@26.2.0)(eslint@10.8.1(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.26)(rollup@4.62.4)(stylelint@17.14.1(typescript@6.0.3))(typescript@6.0.3)(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))(webpack@5.108.4(postcss@8.5.26))':
     dependencies:
-      '@roots/vite-plugin': 2.2.0(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))(webpack@5.108.4(postcss@8.5.26))
-      '@tailwindcss/vite': 4.3.3(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))
-      '@vitejs/plugin-react': 5.2.0(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))
+      '@roots/vite-plugin': 2.2.0(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))(webpack@5.108.4(postcss@8.5.26))
+      '@tailwindcss/vite': 4.3.3(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))
+      '@vitejs/plugin-react': 5.2.0(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))
       '@yardinternet/shared-utils': 1.0.1
-      '@yardinternet/vite-plugin-gutenberg-blocks': 2.7.1(typescript@6.0.3)(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))
+      '@yardinternet/vite-plugin-gutenberg-blocks': 2.7.1(typescript@6.0.3)(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))
       chalk: 5.6.2
-      laravel-vite-plugin: 3.1.3(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))
+      laravel-vite-plugin: 3.1.3(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))
       postcss-prefixwrap: 1.58.0(postcss@8.5.26)
-      vite: 8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2)
-      vite-plugin-checker: 0.12.0(eslint@10.8.1(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(stylelint@17.14.1(typescript@6.0.3))(typescript@6.0.3)(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))
-      vite-plugin-dts: 4.5.4(@types/node@26.2.0)(rollup@4.62.4)(typescript@6.0.3)(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))
-      vite-plugin-externals: 0.6.2(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))
+      vite: 8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0)
+      vite-plugin-checker: 0.12.0(eslint@10.8.1(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(stylelint@17.14.1(typescript@6.0.3))(typescript@6.0.3)(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))
+      vite-plugin-dts: 4.5.4(@types/node@26.2.0)(rollup@4.62.4)(typescript@6.0.3)(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))
+      vite-plugin-externals: 0.6.2(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))
     optionalDependencies:
       '@rollup/rollup-linux-x64-gnu': 4.62.4
     transitivePeerDependencies:
@@ -7376,14 +7367,14 @@ snapshots:
       - vue-tsc
       - webpack
 
-  '@yardinternet/vite-plugin-gutenberg-blocks@2.7.1(typescript@6.0.3)(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))':
+  '@yardinternet/vite-plugin-gutenberg-blocks@2.7.1(typescript@6.0.3)(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))':
     dependencies:
       chalk: 5.6.2
       esbuild: 0.28.2
       rollup: 4.62.4
       typescript: 6.0.3
-      vite: 8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2)
-      vite-plugin-static-copy: 4.1.1(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2))
+      vite: 8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0)
+      vite-plugin-static-copy: 4.1.1(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0))
     optionalDependencies:
       sass: 1.102.0
 
@@ -8042,7 +8033,7 @@ snapshots:
 
   es-module-lexer@0.4.1: {}
 
-  es-module-lexer@2.3.1: {}
+  es-module-lexer@2.3.2: {}
 
   es-object-atoms@1.1.2:
     dependencies:
@@ -8903,11 +8894,11 @@ snapshots:
     dependencies:
       language-subtag-registry: 0.3.23
 
-  laravel-vite-plugin@3.1.3(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2)):
+  laravel-vite-plugin@3.1.3(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0)):
     dependencies:
       picocolors: 1.1.1
       tinyglobby: 0.2.17
-      vite: 8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2)
+      vite: 8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0)
       vite-plugin-full-reload: 1.2.0
 
   levn@0.4.1:
@@ -9105,7 +9096,7 @@ snapshots:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
       schema-utils: 4.3.3
-      terser: 5.49.2
+      terser: 5.50.0
       webpack: 5.108.4(postcss@8.5.26)
     optionalDependencies:
       postcss: 8.5.26
@@ -9518,25 +9509,25 @@ snapshots:
 
   reusify@1.1.0: {}
 
-  rolldown@1.2.3:
+  rolldown@1.2.4:
     dependencies:
-      '@oxc-project/types': 0.143.0
+      '@oxc-project/types': 0.144.0
       '@rolldown/pluginutils': 1.0.1
     optionalDependencies:
-      '@rolldown/binding-android-arm64': 1.2.3
-      '@rolldown/binding-darwin-arm64': 1.2.3
-      '@rolldown/binding-darwin-x64': 1.2.3
-      '@rolldown/binding-freebsd-x64': 1.2.3
-      '@rolldown/binding-linux-arm-gnueabihf': 1.2.3
-      '@rolldown/binding-linux-arm64-gnu': 1.2.3
-      '@rolldown/binding-linux-arm64-musl': 1.2.3
-      '@rolldown/binding-linux-ppc64-gnu': 1.2.3
-      '@rolldown/binding-linux-s390x-gnu': 1.2.3
-      '@rolldown/binding-linux-x64-gnu': 1.2.3
-      '@rolldown/binding-linux-x64-musl': 1.2.3
-      '@rolldown/binding-openharmony-arm64': 1.2.3
-      '@rolldown/binding-win32-arm64-msvc': 1.2.3
-      '@rolldown/binding-win32-x64-msvc': 1.2.3
+      '@rolldown/binding-android-arm64': 1.2.4
+      '@rolldown/binding-darwin-arm64': 1.2.4
+      '@rolldown/binding-darwin-x64': 1.2.4
+      '@rolldown/binding-freebsd-x64': 1.2.4
+      '@rolldown/binding-linux-arm-gnueabihf': 1.2.4
+      '@rolldown/binding-linux-arm64-gnu': 1.2.4
+      '@rolldown/binding-linux-arm64-musl': 1.2.4
+      '@rolldown/binding-linux-ppc64-gnu': 1.2.4
+      '@rolldown/binding-linux-s390x-gnu': 1.2.4
+      '@rolldown/binding-linux-x64-gnu': 1.2.4
+      '@rolldown/binding-linux-x64-musl': 1.2.4
+      '@rolldown/binding-openharmony-arm64': 1.2.4
+      '@rolldown/binding-win32-arm64-msvc': 1.2.4
+      '@rolldown/binding-win32-x64-msvc': 1.2.4
 
   rollup@4.62.4:
     dependencies:
@@ -10006,7 +9997,7 @@ snapshots:
 
   tapable@2.3.3: {}
 
-  terser@5.49.2:
+  terser@5.50.0:
     dependencies:
       '@jridgewell/source-map': 0.3.11
       acorn: 8.18.0
@@ -10201,7 +10192,7 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  vite-plugin-checker@0.12.0(eslint@10.8.1(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(stylelint@17.14.1(typescript@6.0.3))(typescript@6.0.3)(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2)):
+  vite-plugin-checker@0.12.0(eslint@10.8.1(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(stylelint@17.14.1(typescript@6.0.3))(typescript@6.0.3)(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0)):
     dependencies:
       '@babel/code-frame': 7.29.7
       chokidar: 4.0.3
@@ -10210,7 +10201,7 @@ snapshots:
       picomatch: 4.0.5
       tiny-invariant: 1.3.3
       tinyglobby: 0.2.17
-      vite: 8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2)
+      vite: 8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0)
       vscode-uri: 3.1.0
     optionalDependencies:
       eslint: 10.8.1(jiti@1.21.7)
@@ -10219,7 +10210,7 @@ snapshots:
       stylelint: 17.14.1(typescript@6.0.3)
       typescript: 6.0.3
 
-  vite-plugin-dts@4.5.4(@types/node@26.2.0)(rollup@4.62.4)(typescript@6.0.3)(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2)):
+  vite-plugin-dts@4.5.4(@types/node@26.2.0)(rollup@4.62.4)(typescript@6.0.3)(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0)):
     dependencies:
       '@microsoft/api-extractor': 7.58.12(@types/node@26.2.0)
       '@rollup/pluginutils': 5.4.0(rollup@4.62.4)
@@ -10232,46 +10223,46 @@ snapshots:
       magic-string: 0.30.21
       typescript: 6.0.3
     optionalDependencies:
-      vite: 8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2)
+      vite: 8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0)
     transitivePeerDependencies:
       - '@types/node'
       - rollup
       - supports-color
 
-  vite-plugin-externals@0.6.2(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2)):
+  vite-plugin-externals@0.6.2(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0)):
     dependencies:
       acorn: 8.18.0
       es-module-lexer: 0.4.1
       fs-extra: 10.1.0
       magic-string: 0.25.9
-      vite: 8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2)
+      vite: 8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0)
 
   vite-plugin-full-reload@1.2.0:
     dependencies:
       picocolors: 1.1.1
       picomatch: 2.3.2
 
-  vite-plugin-static-copy@4.1.1(vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2)):
+  vite-plugin-static-copy@4.1.1(vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0)):
     dependencies:
       chokidar: 3.6.0
       p-map: 7.0.6
       picocolors: 1.1.1
       tinyglobby: 0.2.17
-      vite: 8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2)
+      vite: 8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0)
 
-  vite@8.2.0(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.49.2):
+  vite@8.2.1(@types/node@26.2.0)(jiti@1.21.7)(sass@1.102.0)(terser@5.50.0):
     dependencies:
       lightningcss: 1.33.0
       picomatch: 4.0.5
       postcss: 8.5.26
-      rolldown: 1.2.3
+      rolldown: 1.2.4
       tinyglobby: 0.2.17
     optionalDependencies:
       '@types/node': 26.2.0
       fsevents: 2.3.3
       jiti: 1.21.7
       sass: 1.102.0
-      terser: 5.49.2
+      terser: 5.50.0
 
   vscode-oniguruma@1.7.0: {}
 
@@ -10297,7 +10288,7 @@ snapshots:
       browserslist: 4.28.8
       chrome-trace-event: 1.0.4
       enhanced-resolve: 5.24.5
-      es-module-lexer: 2.3.1
+      es-module-lexer: 2.3.2
       eslint-scope: 5.1.1
       events: 3.3.0
       graceful-fs: 4.2.11
