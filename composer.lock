@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f50b12ae73141465cbe6d0581643a9f1",
+    "content-hash": "34fb456f3fb68de9d9292d39e98e63d3",
     "packages": [
         {
             "name": "bonny/wordpress-simple-history",
@@ -3974,6 +3974,72 @@
                 }
             ],
             "time": "2026-07-09T00:22:22+00:00"
+        },
+        {
+            "name": "johnbillion/wp-crontrol",
+            "version": "1.21.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnbillion/wp-crontrol.git",
+                "reference": "3c75f84f9cf182f4167e93da7e24f883ba302461"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnbillion/wp-crontrol/zipball/3c75f84f9cf182f4167e93da7e24f883ba302461",
+                "reference": "3c75f84f9cf182f4167e93da7e24f883ba302461",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0",
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "johnbillion/plugin-infrastructure": "2.9.5",
+                "johnbillion/wp-compat": "1.4.0",
+                "php-stubs/wordpress-stubs": "7.0.0 as 6.9.4",
+                "phpcompatibility/phpcompatibility-wp": "2.1.8",
+                "phpstan/phpstan": "2.1.33",
+                "szepeviktor/phpstan-wordpress": "2.0.3",
+                "wp-coding-standards/wpcs": "3.4.1"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "wordpress-install-dir": "vendor/wordpress/wordpress"
+            },
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "John Blackbourn",
+                    "homepage": "https://johnblackbourn.com/"
+                },
+                {
+                    "name": "Edward Dale",
+                    "homepage": "http://scompt.com/"
+                }
+            ],
+            "description": "Take control of the cron events on your WordPress website or WooCommerce store",
+            "homepage": "https://wp-crontrol.com",
+            "support": {
+                "forum": "https://wordpress.org/support/plugin/wp-crontrol",
+                "issues": "https://github.com/johnbillion/wp-crontrol/issues",
+                "security": "https://wp-crontrol.com/security/",
+                "source": "https://github.com/johnbillion/wp-crontrol"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/johnbillion",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-07-31T15:46:13+00:00"
         },
         {
             "name": "laravel/prompts",
