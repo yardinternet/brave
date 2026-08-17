@@ -44,6 +44,7 @@
 		"bonny/wordpress-simple-history": "^5.29",
 		"composer/installers": "^2.2",
 		"johnbillion/user-switching": "^1.11",
+		"johnbillion/wp-crontrol": "^1.21",
 		"log1x/navi": "^3.1",
 		"log1x/poet": "^2.0",
 		"lukasbesch/bedrock-plugin-disabler": "^1.4",
