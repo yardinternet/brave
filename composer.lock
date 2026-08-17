@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "bonny/wordpress-simple-history",
-            "version": "5.29.0",
+            "version": "5.30.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bonny/WordPress-Simple-History.git",
-                "reference": "37c894c1c76b876e456e7bf8c9d52ca613358ac4"
+                "reference": "3fd95d7f274077192faee5b4bf659b66fba1255b"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/simple-history.zip",
-                "reference": "37c894c1c76b876e456e7bf8c9d52ca613358ac4"
+                "reference": "3fd95d7f274077192faee5b4bf659b66fba1255b"
             },
             "require": {
                 "jfcherng/php-diff": "^6.16",
@@ -101,7 +101,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-06-02T11:53:18+00:00"
+            "time": "2026-08-05T12:20:52+00:00"
         },
         {
             "name": "bordoni/phpass",
@@ -5229,16 +5229,16 @@
         },
         {
             "name": "plugin/yard-gutenberg",
-            "version": "v1.6.3",
+            "version": "v1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yardinternet/plugin-yard-gutenberg.git",
-                "reference": "d21ce4f111642102fde150664f58280dc64b7e53"
+                "reference": "a9bad1fa923d6d348f08c5a9af0cd15a41d60669"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yardinternet/plugin-yard-gutenberg/zipball/d21ce4f111642102fde150664f58280dc64b7e53",
-                "reference": "d21ce4f111642102fde150664f58280dc64b7e53",
+                "url": "https://api.github.com/repos/yardinternet/plugin-yard-gutenberg/zipball/a9bad1fa923d6d348f08c5a9af0cd15a41d60669",
+                "reference": "a9bad1fa923d6d348f08c5a9af0cd15a41d60669",
                 "shasum": ""
             },
             "require": {
@@ -5268,9 +5268,9 @@
             "description": "A collection of blocks for the WordPress Gutenberg editor.",
             "support": {
                 "issues": "https://github.com/yardinternet/plugin-yard-gutenberg/issues",
-                "source": "https://github.com/yardinternet/plugin-yard-gutenberg/tree/v1.6.3"
+                "source": "https://github.com/yardinternet/plugin-yard-gutenberg/tree/v1.7.0"
             },
-            "time": "2026-07-14T14:26:27+00:00"
+            "time": "2026-08-04T09:36:36+00:00"
         },
         {
             "name": "psr/clock",
@@ -6178,7 +6178,7 @@
         },
         {
             "name": "roots/wordpress",
-            "version": "7.0.3",
+            "version": "7.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roots/wordpress.git",
@@ -6209,7 +6209,7 @@
             ],
             "support": {
                 "issues": "https://github.com/roots/wordpress/issues",
-                "source": "https://github.com/roots/wordpress/tree/7.0.3"
+                "source": "https://github.com/roots/wordpress/tree/7.0.4"
             },
             "funding": [
                 {
@@ -6288,23 +6288,23 @@
         },
         {
             "name": "roots/wordpress-no-content",
-            "version": "7.0.3",
+            "version": "7.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "7.0.3"
+                "reference": "7.0.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.w.org/release/wordpress-7.0.3-no-content.zip",
-                "reference": "7.0.3",
-                "shasum": "01b2b8fb953b747de9ac8176b6d05aae1cc410b6"
+                "url": "https://downloads.w.org/release/wordpress-7.0.4-no-content.zip",
+                "reference": "7.0.4",
+                "shasum": "c43ba63174abfef77d00fbc6041db0d801869e09"
             },
             "require": {
                 "php": ">= 7.4"
             },
             "provide": {
-                "wordpress/core-implementation": "7.0.3"
+                "wordpress/core-implementation": "7.0.4"
             },
             "suggest": {
                 "ext-curl": "Performs remote request operations.",
@@ -6355,7 +6355,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2026-08-06T21:41:49+00:00"
+            "time": "2026-08-12T14:47:33+00:00"
         },
         {
             "name": "roots/wp-config",
@@ -11551,15 +11551,15 @@
         },
         {
             "name": "wp-plugin/gravity-forms-zero-spam",
-            "version": "1.10.1",
+            "version": "1.10.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gravity-forms-zero-spam/",
-                "reference": "tags/1.10.1"
+                "reference": "tags/1.10.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gravity-forms-zero-spam.1.10.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/gravity-forms-zero-spam.1.10.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0|~2.0"
@@ -11578,7 +11578,7 @@
                 "issues": "https://wordpress.org/support/plugin/gravity-forms-zero-spam",
                 "source": "https://plugins.svn.wordpress.org/gravity-forms-zero-spam"
             },
-            "time": "2026-08-07T00:35:53+00:00"
+            "time": "2026-08-14T00:21:15+00:00"
         },
         {
             "name": "wp-plugin/relay",
@@ -11706,21 +11706,21 @@
         },
         {
             "name": "yard/brave-acf",
-            "version": "v1.1.0",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "git@github.com:yardinternet/brave-acf.git",
-                "reference": "2ba0fd9c9e10ba120ed8824061c3062ca5dbb1a7"
+                "reference": "2b2da4c231f591db0bfc983e801071f5c49dca83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://satis.yard.nl/dist/yard/brave-acf/yard-brave-acf-2ba0fd9c9e10ba120ed8824061c3062ca5dbb1a7-zip-fa161d.zip",
-                "reference": "2ba0fd9c9e10ba120ed8824061c3062ca5dbb1a7",
-                "shasum": "68ceb2329d26b4d42760705dbace4e039a09d702"
+                "url": "https://satis.yard.nl/dist/yard/brave-acf/yard-brave-acf-2b2da4c231f591db0bfc983e801071f5c49dca83-zip-d95ca9.zip",
+                "reference": "2b2da4c231f591db0bfc983e801071f5c49dca83",
+                "shasum": "508acb33864de82c006aefb633bd72d966ae54bc"
             },
             "require": {
                 "php": ">=8.2",
-                "roots/acorn": "^4.3",
+                "roots/acorn": "^4.3|^5.0",
                 "spatie/laravel-package-tools": "^1.16",
                 "yard/acf-registrar": "^2.0"
             },
@@ -11783,20 +11783,20 @@
                 "source": "https://github.com/yardinternet/brave-acf",
                 "issues": "https://github.com/yardinternet/brave-acf/issues"
             },
-            "time": "2026-04-14T09:02:05+00:00"
+            "time": "2026-06-17T09:34:30+00:00"
         },
         {
             "name": "yard/brave-components",
-            "version": "v1.7.3",
+            "version": "v1.7.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yardinternet/brave-components.git",
-                "reference": "159b43f748ce1b1925117f2ed74425a948342616"
+                "reference": "abea1a973c9719ab5648de07ef21215fe1255b8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yardinternet/brave-components/zipball/159b43f748ce1b1925117f2ed74425a948342616",
-                "reference": "159b43f748ce1b1925117f2ed74425a948342616",
+                "url": "https://api.github.com/repos/yardinternet/brave-components/zipball/abea1a973c9719ab5648de07ef21215fe1255b8f",
+                "reference": "abea1a973c9719ab5648de07ef21215fe1255b8f",
                 "shasum": ""
             },
             "require": {
@@ -11836,20 +11836,20 @@
                 "issues": "https://github.com/yardinternet/brave-components/issues",
                 "source": "https://github.com/yardinternet/brave-components"
             },
-            "time": "2026-07-31T08:56:35+00:00"
+            "time": "2026-08-06T15:12:33+00:00"
         },
         {
             "name": "yard/brave-csp",
-            "version": "v1.5.1",
+            "version": "v1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yardinternet/brave-csp.git",
-                "reference": "b685211315604a2092bf2feccf3a2ce79a9f85c8"
+                "reference": "1e4dc86c2c74c4fed860c4aa0796772d7034d0b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yardinternet/brave-csp/zipball/b685211315604a2092bf2feccf3a2ce79a9f85c8",
-                "reference": "b685211315604a2092bf2feccf3a2ce79a9f85c8",
+                "url": "https://api.github.com/repos/yardinternet/brave-csp/zipball/1e4dc86c2c74c4fed860c4aa0796772d7034d0b5",
+                "reference": "1e4dc86c2c74c4fed860c4aa0796772d7034d0b5",
                 "shasum": ""
             },
             "require": {
@@ -11872,9 +11872,9 @@
             "description": "Content Security Policy for Brave sites",
             "support": {
                 "issues": "https://github.com/yardinternet/brave-csp/issues",
-                "source": "https://github.com/yardinternet/brave-csp/tree/v1.5.1"
+                "source": "https://github.com/yardinternet/brave-csp/tree/v1.5.2"
             },
-            "time": "2026-07-27T12:53:28+00:00"
+            "time": "2026-08-04T12:58:57+00:00"
         },
         {
             "name": "yard/brave-hooks",
