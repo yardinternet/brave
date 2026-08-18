@@ -50,7 +50,7 @@
 
 @utility a-linkable-area {
 	&::after {
-		@apply content absolute inset-0;
+		@apply content absolute inset-0 z-1;
 	}
 }
 
