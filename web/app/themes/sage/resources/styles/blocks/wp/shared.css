@@ -3,6 +3,13 @@
 	@apply dark-background-white-elements;
 }
 
+.has-background:not(
+		.has-black-background-color,
+		.has-primary-background-color
+	) {
+	@apply text-text!;
+}
+
 /* Block styling which doesn't need their own CSS file */
 .wp-block-cover,
 .wp-block-embed,

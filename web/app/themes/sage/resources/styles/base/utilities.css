@@ -70,10 +70,10 @@
 	li::marker,
 	a:not( .wp-block-button__link ),
 	.gfield_required {
-		@apply text-white!;
+		@apply text-inherit!;
 
 		@variant hocus {
-			@apply text-white!;
+			@apply text-inherit!;
 		}
 	}
 }
