@@ -1,13 +1,13 @@
 .has-primary-background-color,
 .has-black-background-color {
-	@apply dark-background-white-elements;
-}
+	@apply text-white;
 
-.has-background:not(
-		.has-black-background-color,
-		.has-primary-background-color
-	) {
-	@apply text-text!;
+	.has-background:not(
+			.has-black-background-color,
+			.has-primary-background-color
+		) {
+		@apply text-text!;
+	}
 }
 
 /* Block styling which doesn't need their own CSS file */
