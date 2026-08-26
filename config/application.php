@@ -32,8 +32,8 @@ $webroot_dir = $root_dir . '/web';
  */
 if (file_exists($root_dir . '/.env')) {
 	$env_files = file_exists($root_dir . '/.env.local')
-		? ['.env', '.env.local']
-		: ['.env'];
+		? ['.customenv', '.env', '.env.local']
+		: ['.customenv', '.env'];
 
 	$dotenv = Dotenv\Dotenv::createImmutable($root_dir, $env_files, false);
 
