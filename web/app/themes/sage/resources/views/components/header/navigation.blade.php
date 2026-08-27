@@ -30,23 +30,11 @@
 					</x-brave::nav.link>
 
 					@if ($item->children)
-						<x-brave::nav.dropdown mode="hover" @class([
-							'ease-base invisible absolute min-w-60 -translate-y-3 bg-white opacity-0 shadow-md transition-all',
-							'group-has-aria-expanded:visible group-has-aria-expanded:translate-y-0 group-has-aria-expanded:opacity-100',
-						])>
-							@foreach ($item->children as $child)
-								<x-brave::nav.item>
-									<x-brave::nav.link :item="$child"
-										class="group/sub-menu-link flex items-center justify-between gap-6 px-6 py-3 text-left leading-snug text-inherit no-underline"
-										activeClass="text-primary">
-
-										{!! $child->label !!}
-
-										<i class="fa-light fa-angle-right transition-all group-hover/sub-menu-link:translate-x-1"></i>
-									</x-brave::nav.link>
-								</x-brave::nav.item>
-							@endforeach
-						</x-brave::nav.dropdown>
+						@if (count($item->children) > 7)
+							<x-header.mega-dropdown :item="$item" />
+						@else
+							<x-header.dropdown :item="$item" />
+						@endif
 					@endif
 				</x-brave::nav.item>
 			@endforeach
