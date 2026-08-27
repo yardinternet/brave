@@ -59,3 +59,9 @@
 		@slot;
 	}
 }
+
+@custom-variant is-light-on-dark {
+	@container style( --is-light-on-dark: true ) {
+		@slot;
+	}
+}

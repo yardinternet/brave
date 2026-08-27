@@ -4,11 +4,11 @@
 
 ::selection,
 mark {
-	@apply bg-primary-100 text-black;
+	@apply bg-primary-100 text-text;
 }
 
 body {
-	@apply flex min-h-screen flex-col bg-white text-base font-normal text-black underline-offset-4;
+	@apply flex min-h-screen flex-col bg-white text-base font-normal text-text underline-offset-4;
 }
 
 h1,
