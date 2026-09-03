@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use App\Blocks\BackButton\BackButton;
+use App\Blocks\Group\Group;
 
 return [
 	/**
@@ -14,6 +15,12 @@ return [
 		'block_type' => 'back-button',
 		'args' => [
 			'render_callback' => (new BackButton())->render(...),
+		],
+	],
+	'group' => [
+		'block_type' => 'group',
+		'args' => [
+			'render_callback' => (new Group())->render(...),
 		],
 	],
 ];

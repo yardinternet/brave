@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "theme/group",
+	"title": "Groep",
+	"category": "theme",
+	"description": "Gebruik dit blok om bepaalde inhoud uit te lichten.",
+	"supports": {
+		"align": [ "wide" ],
+		"html": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "wide"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./editor-style.css",
+	"style": "file:./style.css"
+}
