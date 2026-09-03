@@ -144,6 +144,38 @@
 						}
 					]
 				}
+			},
+			"theme/group": {
+				"color": {
+					"palette": [
+						{
+							"slug": "primary",
+							"color": "var(--color-primary)",
+							"name": "Primair"
+						},
+						{
+							"slug": "white",
+							"color": "var(--color-white)",
+							"name": "Wit"
+						}
+					]
+				}
+			},
+			"theme/section": {
+				"color": {
+					"palette": [
+						{
+							"slug": "primary",
+							"color": "var(--color-primary)",
+							"name": "Primair"
+						},
+						{
+							"slug": "white",
+							"color": "var(--color-white)",
+							"name": "Wit"
+						}
+					]
+				}
 			}
 		}
 	},
