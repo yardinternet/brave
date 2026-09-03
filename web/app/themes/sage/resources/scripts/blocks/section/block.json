@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "theme/section",
+	"title": "Sectie",
+	"category": "theme",
+	"description": "Gebruik dit blok om pagina onderdelen te groeperen en te structureren.",
+	"supports": {
+		"align": [ "full" ],
+		"html": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "full"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./editor-style.css",
+	"style": "file:./style.css"
+}
