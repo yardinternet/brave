@@ -159,6 +159,9 @@
 							"name": "Wit"
 						}
 					]
+				},
+				"spacing": {
+					"margin": true
 				}
 			},
 			"theme/section": {
@@ -175,6 +178,9 @@
 							"name": "Wit"
 						}
 					]
+				},
+				"spacing": {
+					"padding": true
 				}
 			}
 		}
