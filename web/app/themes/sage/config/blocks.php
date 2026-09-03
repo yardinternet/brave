@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use App\Blocks\BackButton\BackButton;
+use App\Blocks\Card\Card;
 use App\Blocks\Group\Group;
 
 return [
@@ -21,6 +22,12 @@ return [
 		'block_type' => 'group',
 		'args' => [
 			'render_callback' => (new Group())->render(...),
+		],
+	],
+	'card' => [
+		'block_type' => 'card',
+		'args' => [
+			'render_callback' => (new Card())->render(...),
 		],
 	],
 ];

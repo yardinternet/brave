@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "theme/card",
+	"title": "Kaart",
+	"category": "theme",
+	"description": "Gebruik dit blok om een kaart te maken met een afbeelding, titel en tekst.",
+	"supports": {
+		"align": [ "wide" ],
+		"html": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "wide"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./editor-style.css",
+	"style": "file:./style.css"
+}
