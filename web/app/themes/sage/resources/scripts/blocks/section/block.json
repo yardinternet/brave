@@ -6,7 +6,14 @@
 	"category": "theme",
 	"description": "Gebruik dit blok om pagina onderdelen te groeperen en te structureren.",
 	"supports": {
+		"anchor": true,
 		"align": [ "full" ],
+		"color": {
+			"background": true,
+			"__experimentalDefaultControls": {
+				"background": true
+			}
+		},
 		"html": false
 	},
 	"attributes": {
