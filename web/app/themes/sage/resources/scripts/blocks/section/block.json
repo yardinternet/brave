@@ -14,7 +14,10 @@
 				"background": true
 			}
 		},
-		"html": false
+		"html": false,
+		"spacing": {
+			"padding": [ "vertical" ]
+		}
 	},
 	"attributes": {
 		"align": {
