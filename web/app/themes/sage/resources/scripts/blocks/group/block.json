@@ -7,13 +7,16 @@
 	"description": "Gebruik dit blok om bepaalde inhoud uit te lichten.",
 	"supports": {
 		"align": [ "wide" ],
-		"html": false,
 		"color": {
-      "background": true,
-      "__experimentalDefaultControls": {
-        "background": true
-      }
-    }
+			"background": true,
+			"__experimentalDefaultControls": {
+				"background": true
+			}
+		},
+		"spacing": {
+			"margin": [ "vertical" ]
+		},
+		"html": false
 	},
 	"attributes": {
 		"align": {
