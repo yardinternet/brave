@@ -180,7 +180,19 @@
 
 		.gform_button,
 		.gform-theme-button {
-			@apply m-0 w-full text-center! sm:w-auto;
+			@apply is-button m-0 w-full text-center! sm:w-auto;
+
+			&.gform-theme-button--secondary {
+        		@apply is-button-outline;
+			}
+
+			&.gform-has-spinner {
+				@apply text-transparent!;
+			}
+
+			.gform-loader {
+				@apply border-l-(--button-color)/15 border-b-(--button-color)/15 border-t-(--button-color) border-r-(--button-color);
+			}
 		}
 
 		.gform_next_button {
@@ -190,10 +202,6 @@
 		.gform_save_link {
 			@apply mr-auto ml-0 flex sm:order-first;
 		}
-	}
-
-	input[type='button'].gform_previous_button {
-		@apply is-button is-button-outline;
 	}
 
 	button[type='button'].gform_save_link {
