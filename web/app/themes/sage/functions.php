@@ -27,5 +27,9 @@ if (! function_exists('\Roots\bootloader')) {
 
 add_action('after_setup_theme', function () {
 	define('ACORN_BASEPATH', __DIR__);
-	\Yard\Nutshell\bootloader()->boot();
+	\Yard\Nutshell\Application::configure()
+		->withProviders([
+			\App\Providers\ThemeServiceProvider::class,
+		])
+		->boot();
 }, 0);
