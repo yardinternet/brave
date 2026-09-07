@@ -1,0 +1,8 @@
+.wp-block-theme-group {
+	.block-editor-block-list__layout {
+		> :last-child,
+		> :has( + .block-list-appender ) {
+			@apply mb-0;
+		}
+	}
+}

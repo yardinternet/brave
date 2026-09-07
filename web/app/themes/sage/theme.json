@@ -159,9 +159,6 @@
 							"name": "Wit"
 						}
 					]
-				},
-				"spacing": {
-					"margin": true
 				}
 			},
 			"theme/section": {
