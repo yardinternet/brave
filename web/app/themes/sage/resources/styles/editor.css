@@ -41,6 +41,8 @@
 @import './blocks/wp/shared';
 @import './blocks/theme/group/shared';
 @import './blocks/theme/group/editor';
+@import './blocks/theme/section/shared';
+@import './blocks/theme/section/editor';
 
 /* Layouts */
 @import './layouts/alignments';
