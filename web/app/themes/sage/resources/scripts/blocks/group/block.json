@@ -13,9 +13,6 @@
 				"background": true
 			}
 		},
-		"spacing": {
-			"margin": [ "vertical" ]
-		},
 		"html": false
 	},
 	"attributes": {
