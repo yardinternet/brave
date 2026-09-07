@@ -9,7 +9,9 @@ import { InnerBlocks, useBlockProps } from '@wordpress/block-editor';
 import './editor-style.css';
 
 const Edit = () => {
-	const blockProps = useBlockProps();
+	const blockProps = useBlockProps({
+		className: 'alignfull',
+	});
 
 	return (
 		<div { ...blockProps }>

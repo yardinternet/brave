@@ -7,7 +7,6 @@
 	"description": "Gebruik dit blok om pagina onderdelen te groeperen en te structureren.",
 	"supports": {
 		"anchor": true,
-		"align": [ "full" ],
 		"color": {
 			"background": true,
 			"__experimentalDefaultControls": {
@@ -17,12 +16,6 @@
 		"html": false,
 		"spacing": {
 			"padding": [ "vertical" ]
-		}
-	},
-	"attributes": {
-		"align": {
-			"type": "string",
-			"default": "full"
 		}
 	},
 	"editorScript": "file:./index.js",
