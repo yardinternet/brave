@@ -38,6 +38,7 @@
 @import './blocks/timeline/shared';
 @import './blocks/wp/shared';
 @import './blocks/theme/group/shared';
+@import './blocks/theme/section/shared';
 
 /* Layouts */
 @import './layouts/404';
