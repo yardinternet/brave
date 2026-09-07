@@ -1,6 +1,7 @@
 /**
  * WordPress dependencies
  */
+import { __ } from '@wordpress/i18n';
 import { InnerBlocks, useBlockProps } from '@wordpress/block-editor';
 
 /**
@@ -8,14 +9,25 @@ import { InnerBlocks, useBlockProps } from '@wordpress/block-editor';
  */
 import './editor-style.css';
 
+const TEMPLATE = [
+	[
+		'core/heading',
+		{
+			content: __( 'Titel van de sectie', 'sage' ),
+			level: 2,
+		},
+	],
+	[ 'core/paragraph' ],
+];
+
 const Edit = () => {
-	const blockProps = useBlockProps({
+	const blockProps = useBlockProps( {
 		className: 'alignfull',
-	});
+	} );
 
 	return (
 		<div { ...blockProps }>
-			<InnerBlocks />
+			<InnerBlocks template={ TEMPLATE } />
 		</div>
 	);
 };
