@@ -14,7 +14,7 @@ const TEMPLATE = [
 		'core/heading',
 		{
 			content: __( 'Titel van de kaart', 'sage' ),
-			level: '3',
+			level: 3,
 		},
 	],
 	[
