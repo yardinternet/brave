@@ -1,7 +1,0 @@
-:root {
-	--theme-section-padding-y: var( --spacing-size-7 );
-}
-
-.wp-block-theme-section {
-	@apply create-main-content-alignment normalize-child-margin py-(--theme-section-padding-y);
-}
