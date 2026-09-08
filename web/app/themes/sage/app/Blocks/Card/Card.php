@@ -6,12 +6,18 @@ namespace App\Blocks\Card;
 
 class Card
 {
-	public function render(array $attributes, string $content = ''): string
+	public function render(array $attributes, string $content = '')
 	{
-		if ('' === trim($content)) {
+		$view = 'blocks.theme.card';
+
+		if (! view()->exists($view) || '' === trim($content)) {
 			return '';
 		}
 
-		return sprintf('<div %s>%s</div>', get_block_wrapper_attributes(), $content);
+		return view($view, [
+			'attributes' => $attributes,
+			'blockWrapperAttributes' => get_block_wrapper_attributes(),
+			'content' => $content,
+		]);
 	}
 }
