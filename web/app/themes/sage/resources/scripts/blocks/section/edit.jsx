@@ -13,11 +13,17 @@ const TEMPLATE = [
 	[
 		'core/heading',
 		{
+			align: 'wide',
 			content: __( 'Titel van de sectie', 'sage' ),
 			level: 2,
 		},
 	],
-	[ 'core/paragraph' ],
+	[
+		'core/paragraph',
+		{
+			align: 'wide',
+		},
+	],
 ];
 
 const Edit = () => {
