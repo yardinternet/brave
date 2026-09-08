@@ -49,10 +49,18 @@ const Edit = ( props ) => {
 
 	return (
 		<>
-			<div {...blockProps}>
+			<div { ...blockProps }>
 				<div>
-					<InnerBlocks template={TEMPLATE} />
+					<InnerBlocks template={ TEMPLATE } />
 				</div>
+				{ !! imageId && (
+					<Image
+						id={ imageId }
+						focalPoint={ focalPoint }
+						size="large"
+						canEditImage={ false }
+					/>
+				) }
 			</div>
 			<InspectorControls>
 				<PanelBody title={ __( 'Afbeelding', 'sage' ) }>
