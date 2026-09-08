@@ -3,12 +3,13 @@
 @reference '@sage/styles/base/utilities';
 
 :root {
+	--theme-card-buttons-spacing: var( --card-padding );
 	--theme-card-content-spacing: calc( var( --card-padding ) * 0.5 );
 	--theme-card-image-width: calc( 100% + var( --card-padding ) * 2 );
 }
 
 .wp-block-theme-card {
-	@apply overflow-clip grid gap-(--card-padding) rounded-(--card-radius) bg-(--card-bg-color) p-(--card-padding) shadow-(--card-shadow);
+	@apply grid gap-(--card-padding) overflow-clip rounded-(--card-radius) bg-(--card-bg-color) p-(--card-padding) shadow-(--card-shadow);
 	--button-wrapper-block-spacing: 0;
 
 	> div {
@@ -17,5 +18,9 @@
 
 	> img {
 		@apply order-first -mx-(--card-padding) -mt-(--card-padding) aspect-(--card-image-ratio) w-(--theme-card-image-width) max-w-(--theme-card-image-width) object-cover;
+	}
+
+	:has( + .wp-block-buttons ) {
+		--theme-card-content-spacing: var( --theme-card-buttons-spacing );
 	}
 }
