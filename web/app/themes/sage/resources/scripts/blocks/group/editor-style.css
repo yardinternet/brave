@@ -1,1 +1,3 @@
-@reference '@sage/styles/base/config.css';
+@reference '@sage/styles/base/config';
+@reference '@sage/styles/base/custom-variants';
+@reference '@sage/styles/base/utilities';
