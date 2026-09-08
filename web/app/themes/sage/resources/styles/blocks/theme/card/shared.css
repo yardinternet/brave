@@ -10,6 +10,6 @@
 	}
 
 	> img {
-		@apply order-first w-(--theme-card-image-width) max-w-(--theme-card-image-width) -mt-(--card-padding) -mx-(--card-padding);
+		@apply order-first aspect-(--card-image-ratio) object-cover w-(--theme-card-image-width) max-w-(--theme-card-image-width) -mt-(--card-padding) -mx-(--card-padding);
 	}
 }
