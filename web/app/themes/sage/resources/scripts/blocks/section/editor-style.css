@@ -1,1 +1,13 @@
-@reference '@sage/styles/base/config.css';
+@reference '@sage/styles/base/config';
+@reference '@sage/styles/base/custom-variants';
+@reference '@sage/styles/base/utilities';
+
+.wp-block-theme-section {
+	.block-editor-inner-blocks {
+		@apply max-w-none;
+	}
+
+	.block-editor-block-list__layout {
+		@apply create-main-content-alignment;
+	}
+}
