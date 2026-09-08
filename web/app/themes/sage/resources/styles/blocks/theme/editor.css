@@ -1,0 +1,8 @@
+:where(.wp-block-theme-card, .wp-block-theme-group, .wp-block-theme-section) {
+	.block-editor-block-list__layout {
+		> :last-child,
+		> :has( + .block-list-appender ) {
+			@apply mb-0;
+		}
+	}
+}
