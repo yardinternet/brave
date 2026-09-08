@@ -1,0 +1,3 @@
+.wp-block-theme-card {
+	@apply normalize-child-margin p-(--card-padding) shadow-(--card-shadow) rounded-(--card-radius) bg-(--card-background);
+}
