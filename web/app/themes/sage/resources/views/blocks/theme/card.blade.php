@@ -1,0 +1,3 @@
+<article {!! $blockWrapperAttributes !!}>
+	{!! $content !!}
+</article>
