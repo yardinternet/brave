@@ -2,7 +2,10 @@
  * WordPress dependencies
  */
 import { __ } from '@wordpress/i18n';
-import { InnerBlocks, useBlockProps } from '@wordpress/block-editor';
+import {
+	useBlockProps,
+	useInnerBlocksProps,
+} from '@wordpress/block-editor';
 
 /**
  * Internal dependencies
@@ -27,15 +30,16 @@ const TEMPLATE = [
 ];
 
 const Edit = () => {
-	const blockProps = useBlockProps( {
-		className: 'alignfull',
-	} );
-
-	return (
-		<div { ...blockProps }>
-			<InnerBlocks template={ TEMPLATE } />
-		</div>
+	const innerBlocksProps = useInnerBlocksProps(
+		useBlockProps( {
+			className: 'alignfull',
+		} ),
+		{
+			template: TEMPLATE,
+		}
 	);
+
+	return <div { ...innerBlocksProps } />;
 };
 
 export default Edit;
