@@ -2,7 +2,13 @@
  * WordPress dependencies
  */
 import { __ } from '@wordpress/i18n';
-import { InnerBlocks, useBlockProps } from '@wordpress/block-editor';
+import {
+	InnerBlocks,
+	InspectorControls,
+	useBlockProps,
+} from '@wordpress/block-editor';
+import { Image } from '@yardinternet/gutenberg-components';
+import { PanelBody, PanelRow } from '@wordpress/components';
 
 /**
  * Internal dependencies
@@ -20,18 +26,54 @@ const TEMPLATE = [
 	[
 		'core/paragraph',
 		{
-			content: __( 'Korte tekst van ongeveer 3 regels. Cupidatat amet nostrud non elit amet cupidatat elit sit proident anim duis.', 'sage' ),
+			content: __(
+				'Korte tekst van ongeveer 3 regels. Cupidatat amet nostrud non elit amet cupidatat elit sit proident anim duis.',
+				'sage'
+			),
 		},
 	],
 ];
 
-const Edit = () => {
+const Edit = ( props ) => {
+	const { attributes, setAttributes } = props;
+	const { imageId, focalPoint } = attributes;
 	const blockProps = useBlockProps();
 
+	function handleImageSelect( image ) {
+		setAttributes( { imageId: image.id } );
+	}
+
+	function handleFocalPointChange( value ) {
+		setAttributes( { focalPoint: value } );
+	}
+
 	return (
-		<div { ...blockProps }>
-			<InnerBlocks template={ TEMPLATE } />
-		</div>
+		<>
+			<div {...blockProps}>
+				<div>
+					<InnerBlocks template={TEMPLATE} />
+				</div>
+			</div>
+			<InspectorControls>
+				<PanelBody title={ __( 'Afbeelding', 'sage' ) }>
+					<PanelRow>
+						<Image
+							id={ imageId }
+							className="my-image"
+							size="full"
+							onSelect={ handleImageSelect }
+							focalPoint={ focalPoint }
+							onChangeFocalPoint={ handleFocalPointChange }
+							labels={ {
+								title: 'Selecteer je afbeelding',
+								instructions:
+									'Upload een afbeelding of kies er één uit de mediabibliotheek.',
+							} }
+						/>
+					</PanelRow>
+				</PanelBody>
+			</InspectorControls>
+		</>
 	);
 };
 

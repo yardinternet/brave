@@ -8,7 +8,12 @@
 	"supports": {
 		"html": false
 	},
-	"attributes": {},
+	"attributes": {
+		"imageId": {
+			"type": "number",
+			"default": 0
+		}
+	},
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./editor-style.css",
 	"style": "file:./style.css"
