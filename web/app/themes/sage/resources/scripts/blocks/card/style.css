@@ -23,4 +23,21 @@
 	:has( + .wp-block-buttons ) {
 		--theme-card-content-spacing: var( --theme-card-buttons-spacing );
 	}
+
+	&:has(.wp-block-heading a) {
+		@apply relative;
+
+		> div::after {
+			@apply fontawesome block text-right;
+			--fa-icon: '\f061';
+		}
+
+		.wp-block-heading a {
+			@apply a-linkable-area no-underline text-current;
+		}
+
+		a:not(.wp-block-heading *) {
+			@apply relative z-1;
+		}
+	}
 }
