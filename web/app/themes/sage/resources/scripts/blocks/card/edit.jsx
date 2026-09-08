@@ -3,11 +3,12 @@
  */
 import { __ } from '@wordpress/i18n';
 import {
+	BlockControls,
 	InnerBlocks,
 	InspectorControls,
 	useBlockProps,
 } from '@wordpress/block-editor';
-import { Image } from '@yardinternet/gutenberg-components';
+import { Image, MediaToolbar } from '@yardinternet/gutenberg-components';
 import { PanelBody, PanelRow } from '@wordpress/components';
 
 /**
@@ -43,12 +44,24 @@ const Edit = ( props ) => {
 		setAttributes( { imageId: image.id } );
 	}
 
+	function handleImageRemove() {
+		setAttributes( { imageId: 0 } );
+	}
+
 	function handleFocalPointChange( value ) {
 		setAttributes( { focalPoint: value } );
 	}
 
 	return (
 		<>
+			<BlockControls>
+				<MediaToolbar
+					isOptional
+					id={ imageId }
+					onSelect={ handleImageSelect }
+					onRemove={ handleImageRemove }
+				/>
+			</BlockControls>
 			<div { ...blockProps }>
 				<div>
 					<InnerBlocks template={ TEMPLATE } />
