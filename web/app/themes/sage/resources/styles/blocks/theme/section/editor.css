@@ -1,5 +1,11 @@
 .wp-block-theme-section {
+	.block-editor-inner-blocks {
+		@apply max-w-none;
+	}
+
 	.block-editor-block-list__layout {
+		@apply create-main-content-alignment;
+
 		> :last-child,
 		> :has( + .block-list-appender ) {
 			@apply mb-0;
