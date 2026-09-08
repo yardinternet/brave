@@ -12,10 +12,10 @@ class Section
 			return '';
 		}
 
-		$attributes = get_block_wrapper_attributes(array_merge($attributes, [
+		$blockWrapperAttributes = get_block_wrapper_attributes([
 			'class' => 'alignfull',
-		]));
+		]);
 
-		return sprintf('<div %s>%s</div>', $attributes, $content);
+		return sprintf('<div %s>%s</div>', $blockWrapperAttributes, $content);
 	}
 }
