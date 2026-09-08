@@ -1,7 +1,10 @@
 /**
  * WordPress dependencies
  */
-import { InnerBlocks, useBlockProps } from '@wordpress/block-editor';
+import {
+	useBlockProps,
+	useInnerBlocksProps,
+} from '@wordpress/block-editor';
 
 /**
  * Internal dependencies
@@ -9,13 +12,9 @@ import { InnerBlocks, useBlockProps } from '@wordpress/block-editor';
 import './editor-style.css';
 
 const Edit = () => {
-	const blockProps = useBlockProps();
+	const innerBlocksProps = useInnerBlocksProps( useBlockProps() );
 
-	return (
-		<div { ...blockProps }>
-			<InnerBlocks />
-		</div>
-	);
+	return <div { ...innerBlocksProps } />;
 };
 
 export default Edit;
