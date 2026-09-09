@@ -148,6 +148,13 @@
 		}
 	},
 	"styles": {
+		"blocks": {
+			"core/group": {
+				"spacing": {
+					"blockGap": "var(--grid-gutter)"
+				}
+			}
+		},
 		"elements": {
 			"button": {
 				"typography": {
