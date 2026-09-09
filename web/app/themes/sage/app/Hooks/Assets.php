@@ -40,7 +40,7 @@ class Assets
 
 		echo Vite::withEntryPoints([
 			'web/app/themes/'. get_stylesheet() . '/resources/scripts/editor/editor.js',
-			'web/app/themes/'. get_stylesheet() . '/resources/styles/editor.css',
+			'web/app/themes/'. get_stylesheet() . '/resources/styles/base/config.css',
 		])->toHtml();
 	}
 
