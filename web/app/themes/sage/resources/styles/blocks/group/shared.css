@@ -1,38 +1,3 @@
-.wp-block-group {
-	@apply normalize-child-margin;
-
-	&.alignwide:not( .wp-block-group-is-layout-grid ) {
-		@apply my-section;
-	}
-
-	&.alignfull {
-		@apply create-main-content-alignment my-section;
-	}
-}
-
-/* Variant with background */
-.wp-block-group.has-background {
-	&:not( .alignfull ) {
-		@apply my-4 rounded-theme bg-white p-(--card-padding) shadow md:mb-6;
-	}
-
-	&.alignwide {
-		@apply my-section xl:p-12;
-	}
-
-	&.alignfull {
-		@apply py-section;
-
-		&:has( + .alignfull.has-background ) {
-			@apply mb-0;
-		}
-
-		+ .alignfull.has-background {
-			@apply mt-0;
-		}
-	}
-}
-
 .wp-block-group-is-layout-grid {
 	@apply max-md:auto-grid! @container my-4 gap-(--grid-gutter) lg:my-6 xl:mb-8;
 
@@ -54,59 +19,5 @@
 
 	.wp-block-media-text {
 		@apply my-0;
-	}
-}
-
-.wp-block-group.is-variation-card {
-	@apply relative flex flex-col p-(--card-padding) transition-all;
-
-	> :first-child {
-		&.wp-block-cover {
-			@apply -mt-(--card-padding) mb-(--card-padding) rounded-t-theme;
-		}
-	}
-
-	> :last-child {
-		&.wp-block-buttons {
-			@apply mt-auto;
-		}
-
-		&.wp-block-cover {
-			@apply mt-(--card-padding) -mb-(--card-padding) rounded-b-theme;
-		}
-	}
-
-	.wp-block-cover {
-		@apply -ml-(--card-padding) aspect-[2.35/1]! min-h-0! min-w-[calc(100%+var(--card-padding)*2)] rounded-none md:aspect-video!;
-
-		.wp-block-cover__inner-container,
-		.wp-block-cover__background {
-			@apply hidden;
-		}
-	}
-
-	.wp-block-heading {
-		a {
-			@apply a-linkable-area text-inherit no-underline;
-
-			&:focus {
-				@apply underline;
-			}
-		}
-	}
-
-	&:has( .wp-block-heading > a[href] ) {
-		&:focus-within,
-		&:hover {
-			@apply -translate-y-1;
-		}
-
-		a {
-			@apply relative z-1;
-		}
-
-		.wp-block-heading a {
-			@apply static;
-		}
 	}
 }
