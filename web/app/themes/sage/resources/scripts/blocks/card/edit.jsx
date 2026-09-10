@@ -8,8 +8,9 @@ import {
 	InspectorControls,
 	useBlockProps,
 } from '@wordpress/block-editor';
-import { Image, MediaToolbar } from '@yardinternet/gutenberg-components';
+import { getBlockDefaultClassName } from '@wordpress/blocks';
 import { PanelBody, PanelRow } from '@wordpress/components';
+import { Image, MediaToolbar } from '@yardinternet/gutenberg-components';
 
 /**
  * Internal dependencies
@@ -39,6 +40,7 @@ const Edit = ( props ) => {
 	const { attributes, setAttributes } = props;
 	const { imageId, focalPoint } = attributes;
 	const blockProps = useBlockProps();
+	const blockDefaultClassName = getBlockDefaultClassName(blockProps?.['data-type'] || '');
 
 	function handleImageSelect( image ) {
 		setAttributes( { imageId: image.id } );
@@ -63,11 +65,12 @@ const Edit = ( props ) => {
 				/>
 			</BlockControls>
 			<div { ...blockProps }>
-				<div>
+				<div className={ `${ blockDefaultClassName }__body` }>
 					<InnerBlocks template={ TEMPLATE } />
 				</div>
 				{ !! imageId && (
 					<Image
+						className={ `${ blockDefaultClassName }__image` }
 						id={ imageId }
 						focalPoint={ focalPoint }
 						size="large"
