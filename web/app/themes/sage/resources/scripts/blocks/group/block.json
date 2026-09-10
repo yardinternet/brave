@@ -21,6 +21,40 @@
 			"default": "wide"
 		}
 	},
+	"styles": [
+		{
+			"name": "default",
+			"label": "Standaard",
+			"isDefault": true
+		},
+		{
+			"name": "alert",
+			"label": "Melding"
+		}
+	],
+	"variations": [
+		{
+			"name": "group-default",
+			"title": "Groep",
+			"isActive": [ "backgroundColor" ],
+			"isDefault": true,
+			"attributes": {
+				"backgroundColor": "primary-100"
+			},
+			"innerBlocks": [ [ "core/paragraph" ] ]
+		},
+		{
+			"name": "group-alert",
+			"title": "Melding",
+			"isActive": [ "backgroundColor", "className" ],
+			"attributes": {
+				"align": "none",
+				"backgroundColor": "primary-100",
+				"className": "is-style-alert"
+			},
+			"innerBlocks": [ [ "core/paragraph" ] ]
+		}
+	],
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./editor-style.css",
 	"style": "file:./style.css"
