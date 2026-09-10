@@ -3,9 +3,13 @@
 @reference '@sage/styles/base/utilities';
 
 :root {
-	--theme-group-spacing: var( --spacing-size-4 );
+	--theme-group-alert-border-color: var( --color-primary );
+	--theme-group-alert-border-width: --spacing( 3 );
+	--theme-group-alert-gap-x: var( --card-padding );
+	--theme-group-alert-icon-scale: 1.5;
 	--theme-group-padding: var( --card-padding );
 	--theme-group-radius: var( --card-radius );
+	--theme-group-spacing: var( --spacing-size-4 );
 }
 
 .wp-block-theme-group {
@@ -13,5 +17,18 @@
 
 	&.has-background {
 		@apply rounded-(--theme-group-radius) p-(--theme-group-padding);
+	}
+
+	&.is-style-alert {
+		@apply grid grid-cols-[auto_1fr] gap-x-(--theme-group-alert-gap-x) border-l-(--theme-group-alert-border-color) border-l-(length:--theme-group-alert-border-width);
+
+		&::before {
+			@apply fontawesome self-start col-[1/2] scale-(--theme-group-alert-icon-scale);
+			--fa-icon: '\f06a';
+		}
+
+		* {
+			@apply col-[2/3];
+		}
 	}
 }
