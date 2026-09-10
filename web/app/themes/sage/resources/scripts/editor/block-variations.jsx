@@ -20,6 +20,10 @@ const unusedVariations = [
 		block: 'core/group',
 		variation: 'group-row',
 	},
+	{
+		block: 'core/group',
+		variation: 'group-grid',
+	},
 ];
 
 const variationRegistry = [
