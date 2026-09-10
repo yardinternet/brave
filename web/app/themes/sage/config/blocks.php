@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use App\Blocks\Article\Article;
 use App\Blocks\BackButton\BackButton;
 use App\Blocks\Card\Card;
 use App\Blocks\Group\Group;
@@ -13,6 +14,12 @@ return [
 	 *
 	 * @see https://developer.wordpress.org/reference/functions/register_block_type/
 	 */
+	'article' => [
+		'block_type' => 'article',
+		'args' => [
+			'render_callback' => (new Article())->render(...),
+		],
+	],
 	'back-button' => [
 		'block_type' => 'back-button',
 		'args' => [
