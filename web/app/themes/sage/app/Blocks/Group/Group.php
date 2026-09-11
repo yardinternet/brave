@@ -4,14 +4,9 @@ declare(strict_types=1);
 
 namespace App\Blocks\Group;
 
-class Group
-{
-	public function render(array $attributes, string $content = ''): string
-	{
-		if ('' === trim($content)) {
-			return '';
-		}
+use App\Blocks\Block;
 
-		return sprintf('<div %s>%s</div>', get_block_wrapper_attributes(), $content);
-	}
+class Group extends Block
+{
+	public static string $name = 'theme/group';
 }
