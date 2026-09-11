@@ -4,18 +4,11 @@ declare(strict_types=1);
 
 namespace App\Blocks\Section;
 
-class Section
+use App\Blocks\Block;
+
+class Section extends Block
 {
-	public function render(array $attributes, string $content = ''): string
-	{
-		if ('' === trim($content)) {
-			return '';
-		}
+	protected array $classes = ['alignfull'];
 
-		$blockWrapperAttributes = get_block_wrapper_attributes([
-			'class' => 'alignfull',
-		]);
-
-		return sprintf('<div %s>%s</div>', $blockWrapperAttributes, $content);
-	}
+	public static string $name = 'theme/section';
 }
