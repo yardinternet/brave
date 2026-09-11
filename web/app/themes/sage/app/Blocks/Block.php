@@ -17,7 +17,7 @@ abstract class Block
 	{
 		$view = static::getViewPath();
 
-		if (! view()->exists($view) || $this->isEmpty($content)) {
+		if (! view()->exists($view) || ! $this->shouldRender($attributes, $content, $block)) {
 			return '';
 		}
 
@@ -39,6 +39,11 @@ abstract class Block
 		$classes = $this->getClassList($attributes, $block);
 
 		return get_block_wrapper_attributes('' === $classes ? [] : ['class' => $classes]);
+	}
+
+	protected function shouldRender(array $attributes, string $content, \WP_Block $block): bool
+	{
+		return ! $this->isEmpty($content);
 	}
 
 	protected function isEmpty(string $content): bool
