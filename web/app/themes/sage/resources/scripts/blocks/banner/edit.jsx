@@ -61,7 +61,7 @@ const Edit = ( props ) => {
 
 	const innerBlocksProps = useInnerBlocksProps(
 		{
-			className: `${ blockDefaultClassName }__inner`,
+			className: `${ blockDefaultClassName }__content`,
 		},
 		{ template: TEMPLATE }
 	);
@@ -77,7 +77,20 @@ const Edit = ( props ) => {
 				/>
 			</BlockControls>
 			<div { ...blockProps }>
-				<div { ...innerBlocksProps } />
+				<div className={ `${ blockDefaultClassName }__inner` }>
+					<div { ...innerBlocksProps } />
+					{ !! imageId && (
+						<div className={ `${ blockDefaultClassName }__media` }>
+							<Image
+								className={ `${ blockDefaultClassName }__image` }
+								id={ imageId }
+								focalPoint={ focalPoint }
+								size="large"
+								canEditImage={ false }
+							/>
+						</div>
+					) }
+				</div>
 			</div>
 			<InspectorControls>
 				<PanelBody title={ __( 'Afbeelding', 'sage' ) }>
