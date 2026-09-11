@@ -2,7 +2,15 @@
  * WordPress dependencies
  */
 import { __ } from '@wordpress/i18n';
-import { useBlockProps, useInnerBlocksProps } from '@wordpress/block-editor';
+import {
+	BlockControls,
+	InspectorControls,
+	useBlockProps,
+	useInnerBlocksProps,
+} from '@wordpress/block-editor';
+import { getBlockDefaultClassName } from '@wordpress/blocks';
+import { PanelBody, PanelRow } from '@wordpress/components';
+import { Image, MediaToolbar } from '@yardinternet/gutenberg-components';
 
 /**
  * Internal dependencies
@@ -31,14 +39,67 @@ const TEMPLATE = [
 	],
 ];
 
-const Edit = () => {
+const Edit = ( props ) => {
+	const { attributes, setAttributes } = props;
+	const { imageId, focalPoint } = attributes;
 	const blockProps = useBlockProps();
+	const blockDefaultClassName = getBlockDefaultClassName(
+		blockProps?.[ 'data-type' ] || ''
+	);
 
-	const innerBlocksProps = useInnerBlocksProps( blockProps, {
-		template: TEMPLATE,
-	} );
+	function handleImageSelect( image ) {
+		setAttributes( { imageId: image.id } );
+	}
 
-	return <div { ...innerBlocksProps } />;
+	function handleImageRemove() {
+		setAttributes( { imageId: 0 } );
+	}
+
+	function handleFocalPointChange( value ) {
+		setAttributes( { focalPoint: value } );
+	}
+
+	const innerBlocksProps = useInnerBlocksProps(
+		{
+			className: `${ blockDefaultClassName }__inner`,
+		},
+		{ template: TEMPLATE }
+	);
+
+	return (
+		<>
+			<BlockControls>
+				<MediaToolbar
+					isOptional
+					id={ imageId }
+					onSelect={ handleImageSelect }
+					onRemove={ handleImageRemove }
+				/>
+			</BlockControls>
+			<div { ...blockProps }>
+				<div { ...innerBlocksProps } />
+			</div>
+			<InspectorControls>
+				<PanelBody title={ __( 'Afbeelding', 'sage' ) }>
+					<PanelRow>
+						<Image
+							id={ imageId }
+							className="my-image"
+							size="full"
+							onSelect={ handleImageSelect }
+							focalPoint={ focalPoint }
+							onChangeFocalPoint={ handleFocalPointChange }
+							labels={ {
+								title: 'Selecteer je afbeelding',
+								instructions:
+									'Upload een afbeelding of kies er één uit de mediabibliotheek.',
+							} }
+						/>
+					</PanelRow>
+				</PanelBody>
+			</InspectorControls>
+		</>
+	);
 };
 
 export default Edit;
