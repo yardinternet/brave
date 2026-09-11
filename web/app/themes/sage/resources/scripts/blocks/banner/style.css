@@ -1,0 +1,17 @@
+@reference '@sage/styles/base/config';
+@reference '@sage/styles/base/custom-variants';
+@reference '@sage/styles/base/utilities';
+
+:root {
+	--theme-banner-bg-color: var( --color-primary );
+	--theme-banner-color: var( --color-white );
+	--theme-banner-padding-y: var( --spacing-size-7 );
+}
+
+.wp-block-theme-banner {
+	@apply py-(--theme-banner-padding-y) bg-(--theme-banner-bg-color) text-(--theme-banner-color) ;
+}
+
+.wp-block-theme-banner__inner {
+	@apply normalize-child-margin container;
+}

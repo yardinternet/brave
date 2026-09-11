@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use App\Blocks\Article\Article;
 use App\Blocks\BackButton\BackButton;
+use App\Blocks\Banner\Banner;
 use App\Blocks\Card\Card;
 use App\Blocks\Group\Group;
 use App\Blocks\Section\Section;
@@ -24,6 +25,12 @@ return [
 		'block_type' => 'back-button',
 		'args' => [
 			'render_callback' => (new BackButton())->render(...),
+		],
+	],
+	'banner' => [
+		'block_type' => 'banner',
+		'args' => [
+			'render_callback' => (new Banner())->render(...),
 		],
 	],
 	'group' => [
