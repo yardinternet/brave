@@ -7,12 +7,21 @@
 	"description": "Een banner met een afbeelding, titel en tekst.",
 	"supports": {
 		"align": [ "full" ],
-		"html": false
+		"html": false,
+		"multiple": false
 	},
 	"attributes": {
 		"align": {
 			"type": "string",
 			"default": "full"
+		},
+		"focalPoint": {
+			"type": "object",
+			"default": { "x": 0.5, "y": 0.5 }
+		},
+		"imageId": {
+			"type": "number",
+			"default": 0
 		}
 	},
 	"editorScript": "file:./index.js",

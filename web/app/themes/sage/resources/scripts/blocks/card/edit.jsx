@@ -40,7 +40,9 @@ const Edit = ( props ) => {
 	const { attributes, setAttributes } = props;
 	const { imageId, focalPoint } = attributes;
 	const blockProps = useBlockProps();
-	const blockDefaultClassName = getBlockDefaultClassName(blockProps?.['data-type'] || '');
+	const blockDefaultClassName = getBlockDefaultClassName(
+		blockProps?.[ 'data-type' ] || ''
+	);
 
 	function handleImageSelect( image ) {
 		setAttributes( { imageId: image.id } );
