@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "theme/article",
+	"title": "Layout: artikel",
+	"category": "theme",
+	"description": "Een layout met een witte achtergrond en een vaste breedte.",
+	"supports": {
+		"align": [ "wide" ],
+		"html": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "wide"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./editor-style.css",
+	"style": "file:./style.css"
+}

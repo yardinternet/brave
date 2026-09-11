@@ -1,0 +1,51 @@
+@reference '@sage/styles/base/config';
+@reference '@sage/styles/base/custom-variants';
+@reference '@sage/styles/base/utilities';
+
+:root {
+	--theme-card-buttons-spacing: var( --card-padding );
+	--theme-card-content-spacing: calc( var( --card-padding ) * 0.5 );
+	--theme-card-image-width: calc( 100% + var( --card-padding ) * 2 );
+}
+
+.wp-block-theme-card {
+	@apply flex flex-col gap-(--card-padding) overflow-clip rounded-(--card-radius) bg-(--card-bg-color) p-(--card-padding) shadow-(--card-shadow);
+	--button-wrapper-block-spacing: 0;
+}
+
+.wp-block-theme-card__body {
+	@apply normalize-child-margin grow flex flex-col space-y-(--theme-card-content-spacing)!;
+
+	.wp-block-buttons {
+		@apply mt-auto!;
+	}
+
+	:has( + .wp-block-buttons ) {
+		--theme-card-content-spacing: var( --theme-card-buttons-spacing );
+	}
+
+	&:has(.wp-block-heading a) {
+		@apply relative;
+
+		&::after {
+			@apply fontawesome block mt-auto text-right;
+			--fa-icon: '\f061';
+		}
+
+		.wp-block-heading a {
+			@apply a-linkable-area no-underline text-current;
+
+			&:hover {
+				@apply underline;
+			}
+		}
+
+		a:not(.wp-block-heading *) {
+			@apply relative z-1;
+		}
+	}
+}
+
+.wp-block-theme-card__image {
+	@apply order-first -mx-(--card-padding) -mt-(--card-padding) aspect-(--card-image-ratio) w-(--theme-card-image-width) max-w-(--theme-card-image-width) object-cover;
+}
