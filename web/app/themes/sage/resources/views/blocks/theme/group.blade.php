@@ -7,6 +7,6 @@
 	 */
 @endphp
 
-<article {!! $blockWrapperAttributes !!}>
+<div {!! $blockWrapperAttributes !!}>
 	{!! $content !!}
-</article>
+</div>
