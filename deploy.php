@@ -7,6 +7,7 @@ namespace Deployer;
 use Yard\Deployer\Host;
 use Yard\Deployer\Loader;
 use Yard\Deployer\Stage;
+use function Yard\Deployer\sshHost;
 use function Yard\Deployer\wp;
 
 require_once __DIR__ . '/vendor/sourcebroker/deployer-loader/autoload.php';
@@ -52,3 +53,5 @@ host('gemeente.wpacc01.yard.nl')
 	->setHostname(Host::WPACC01)
 	->setDeployPath('/data/www/accept-sites/yard/gemeente')
 	->setLabels(['stage' => Stage::ACCEPT]);
+
+sshHost(Host::SHOCK_STAGING);
