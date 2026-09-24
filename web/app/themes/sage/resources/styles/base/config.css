@@ -29,6 +29,8 @@
 
 	--color-gray-400: #8b95a2; /* 3.0:1 contrast on white background */
 
+	--color-text: var( --color-black );
+
 	/* Media breakpoints */
 	--breakpoint-sm: 600px;
 	--breakpoint-md: 782px;

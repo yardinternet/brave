@@ -1,6 +1,15 @@
 .has-primary-background-color,
 .has-black-background-color {
 	@apply dark-background-white-elements;
+	--is-light-on-dark: true;
+
+	.has-background:not(
+			.has-black-background-color,
+			.has-primary-background-color
+		) {
+		@apply text-text!;
+		--is-light-on-dark: false;
+	}
 }
 
 /* Block styling which doesn't need their own CSS file */
@@ -29,7 +38,7 @@
 
 /* Fix conflict between tailwind and wordpress class "size-full" */
 .wp-block-image.size-full {
-	@apply size-auto;
+	@apply h-(--image-height,auto) w-(--image-width,auto);
 }
 
 .wp-block-separator {
