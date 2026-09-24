@@ -11,5 +11,4 @@ export default braveConfig( {
 		'resources/styles/editor.css',
 		'resources/styles/frontend.css',
 	],
-	editorStylesPrefixWrap: { entryPoints: [ 'resources/styles/editor.css' ] },
 } );

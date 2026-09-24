@@ -9,7 +9,7 @@
 
 	@if ($displayImage)
 		<div @class([
-			'card-image-wrapper bg-primary-100  relative flex aspect-[16/9] items-center justify-center',
+			'card-image-wrapper bg-primary-100  relative flex aspect-(--card-image-ratio) items-center justify-center',
 			'rounded-t-theme' => $direction->isColumn(),
 			'w-1/3 min-w-1/3 rounded-l-theme' => $direction->isRow(),
 			'md:w-1/3 md:min-w-1/3 rounded-t-theme md:rounded-t-none md:rounded-l-theme' => $direction->isFluid(),

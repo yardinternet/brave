@@ -144,6 +144,43 @@
 						}
 					]
 				}
+			},
+			"theme/group": {
+				"color": {
+					"palette": [
+						{
+							"slug": "primary",
+							"color": "var(--color-primary)",
+							"name": "Primair"
+						},
+						{
+							"slug": "primary-100",
+							"color": "var(--color-primary-100)",
+							"name": "Primair (100)"
+						},
+						{
+							"slug": "white",
+							"color": "var(--color-white)",
+							"name": "Wit"
+						}
+					]
+				}
+			},
+			"theme/section": {
+				"color": {
+					"palette": [
+						{
+							"slug": "primary",
+							"color": "var(--color-primary)",
+							"name": "Primair"
+						},
+						{
+							"slug": "white",
+							"color": "var(--color-white)",
+							"name": "Wit"
+						}
+					]
+				}
 			}
 		}
 	},
