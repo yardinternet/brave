@@ -64,6 +64,7 @@
 		"wp-plugin/gravity-forms-zero-spam": "^1.8",
 		"wp-plugin/relay": "^1.3",
 		"wp-plugin/wp-seopress": "^9.0",
+		"wp-plugin/yard-warden": "^1.0",
 		"yard/brave-acf": "^2.0",
 		"yard/brave-components": "^2.0",
 		"yard/brave-csp": "^1.0",

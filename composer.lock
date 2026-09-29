@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ab2ba04e2530112acb281b3de7c25a30",
+    "content-hash": "a53292b8b4e77f313b5eb673d610b67f",
     "packages": [
         {
             "name": "bonny/wordpress-simple-history",
@@ -12368,6 +12368,36 @@
             "time": "2026-07-29T09:46:22+00:00"
         },
         {
+            "name": "wp-plugin/yard-warden",
+            "version": "1.0.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/yard-warden/",
+                "reference": "tags/1.0.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/yard-warden.1.0.5.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0|~2.0"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://wp-packages.org/downloads",
+            "authors": [
+                {
+                    "name": "Yard | Digital Agency"
+                }
+            ],
+            "description": "Enhanced password and login security for WordPress.",
+            "support": {
+                "changelog": "https://wordpress.org/plugins/yard-warden/#developers",
+                "issues": "https://wordpress.org/support/plugin/yard-warden",
+                "source": "https://plugins.svn.wordpress.org/yard-warden"
+            },
+            "time": "2026-08-21T13:56:17+00:00"
+        },
+        {
             "name": "yard/acf-registrar",
             "version": "v2.0.0",
             "source": {
@@ -12663,16 +12693,16 @@
         },
         {
             "name": "yard/data",
-            "version": "v2.1.0",
+            "version": "v2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yardinternet/wp-data.git",
-                "reference": "9dca59050fc3cec8882f8f373d1ca47d5767e864"
+                "reference": "321f2c54803020627ca8c8b0f644e112df74ff81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yardinternet/wp-data/zipball/9dca59050fc3cec8882f8f373d1ca47d5767e864",
-                "reference": "9dca59050fc3cec8882f8f373d1ca47d5767e864",
+                "url": "https://api.github.com/repos/yardinternet/wp-data/zipball/321f2c54803020627ca8c8b0f644e112df74ff81",
+                "reference": "321f2c54803020627ca8c8b0f644e112df74ff81",
                 "shasum": ""
             },
             "require": {
@@ -12713,7 +12743,7 @@
                 "issues": "https://github.com/yardinternet/yard-data/issues",
                 "source": "https://github.com/yardinternet/yard-data"
             },
-            "time": "2026-09-17T13:47:17+00:00"
+            "time": "2026-09-22T05:26:19+00:00"
         },
         {
             "name": "yard/logger",
