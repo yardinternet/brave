@@ -11,5 +11,6 @@ export default braveConfig( {
 		'resources/styles/base/config.css',
 		'resources/styles/editor.css',
 		'resources/styles/frontend.css',
+		'resources/styles/admin.css',
 	],
 } );
