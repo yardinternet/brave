@@ -8,7 +8,8 @@
 	"supports": {
 		"align": [ "full" ],
 		"html": false,
-		"multiple": false
+		"multiple": false,
+		"reusable": false
 	},
 	"attributes": {
 		"align": {

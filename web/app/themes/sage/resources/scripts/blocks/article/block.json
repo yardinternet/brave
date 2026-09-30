@@ -7,7 +7,9 @@
 	"description": "Een layout met een witte achtergrond en een vaste breedte.",
 	"supports": {
 		"align": [ "wide" ],
-		"html": false
+		"html": false,
+		"multiple": false,
+		"reusable": false
 	},
 	"attributes": {
 		"align": {
