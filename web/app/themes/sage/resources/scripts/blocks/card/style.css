@@ -11,6 +11,10 @@
 .wp-block-theme-card {
 	@apply flex flex-col gap-(--card-padding) overflow-clip rounded-(--card-radius) bg-(--card-bg-color) p-(--card-padding) shadow-(--card-shadow);
 	--button-wrapper-block-spacing: 0;
+
+	&:has(.wp-block-heading a) {
+		@apply relative;
+	}
 }
 
 .wp-block-theme-card__body {
@@ -25,8 +29,6 @@
 	}
 
 	&:has(.wp-block-heading a) {
-		@apply relative;
-
 		&::after {
 			@apply fontawesome block mt-auto text-right;
 			--fa-icon: '\f061';
