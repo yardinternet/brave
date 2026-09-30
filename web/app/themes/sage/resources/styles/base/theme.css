@@ -1,0 +1,79 @@
+@theme static {
+	/* Colors */
+	--color-primary: var( --color-primary-500 );
+	--color-primary-100: #dfe4fa;
+	--color-primary-200: #aebbf1;
+	--color-primary-300: #8599e9;
+	--color-primary-400: #5d77e2;
+	--color-primary-500: #3455db;
+	--color-primary-600: #2a44af;
+	--color-primary-700: #1f3383;
+	--color-primary-800: #152258;
+	--color-primary-900: #0a112c;
+
+	--color-gray-400: #8b95a2; /* 3.0:1 contrast on white background */
+
+	/* Media breakpoints */
+	--breakpoint-sm: 600px;
+	--breakpoint-md: 782px;
+	--breakpoint-lg: 960px;
+	--breakpoint-xl: 1150px;
+	--breakpoint-2xl: initial; /* Remove last container breakpoint */
+
+	/* Typography */
+	--font-sans: 'Open Sans', sans-serif;
+	--text-xs: var( --text-step--2 );
+	--text-xs--line-height: 1.75;
+	--text-sm: var( --text-step--1 );
+	--text-sm--line-height: 1.75;
+	--text-base: var( --text-step-0 );
+	--text-base--line-height: 1.75;
+	--text-lg: var( --text-step-1 );
+	--text-lg--line-height: 1.4;
+	--text-xl: var( --text-step-2 );
+	--text-xl--line-height: 1.4;
+	--text-2xl: var( --text-step-3 );
+	--text-2xl--line-height: 1.25;
+	--text-3xl: var( --text-step-4 );
+	--text-3xl--line-height: 1.25;
+	--text-4xl: var( --text-step-5 );
+	--text-4xl--line-height: 1.25;
+	--text-5xl: var( --text-step-6 );
+	--text-5xl--line-height: 1.25;
+	--text-6xl: var( --text-step-7 );
+	--text-6xl--line-height: 1.25;
+	--text-7xl: var( --text-step-8 );
+	--text-7xl--line-height: 1.25;
+	--text-8xl: var( --text-step-9 );
+	--text-8xl--line-height: 1.25;
+	--text-9xl: var( --text-step-10 );
+	--text-9xl--line-height: 1.25;
+
+	--text-h1: var( --text-9xl );
+	--text-h1--line-height: var( --text-9xl--line-height );
+	--text-h2: var( --text-4xl );
+	--text-h2--line-height: var( --text-4xl--line-height );
+	--text-h3: var( --text-2xl );
+	--text-h3--line-height: var( --text-2xl--line-height );
+	--text-h4: var( --text-xl );
+	--text-h4--line-height: var( --text-xl--line-height );
+	--text-h5: var( --text-lg );
+	--text-h5--line-height: var( --text-lg--line-height );
+	--text-h6: var( --text-base );
+	--text-h6--line-height: var( --text-base--line-height );
+
+	/* Shadow */
+	--shadow: 0px 4px 16px rgba( 17, 17, 26, 0.05 ),
+		0px 8px 32px rgba( 17, 17, 26, 0.05 );
+	--shadow-sm: 0px 2px 8px rgba( 17, 17, 26, 0.05 ),
+		0px 4px 16px rgba( 17, 17, 26, 0.05 );
+
+	/* Border-radius */
+	--radius-theme: 5px;
+
+	/* Transitions */
+	--ease-base: cubic-bezier( 0.25, 0.1, 0.25, 1 );
+
+	/* Spacing */
+	--spacing-section: var( --spacing-size-7 );
+}

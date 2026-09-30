@@ -105,11 +105,6 @@ return [
 	 * Restrict available inner blocks per parent block
 	 */
 	'innerBlockRestrictions' => [
-		'core/group' => [
-			'add' => [
-				'theme/card',
-			],
-		],
 		'core/media-text' => [
 			'blockSet' => 'minimalContent',
 		],
