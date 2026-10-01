@@ -1,8 +1,7 @@
-<!-- wp:group {"align":"full","layout":{"type":"default"}} -->
-<div class="wp-block-group alignfull"><!-- wp:heading {"align":"wide"} -->
-<h2 class="wp-block-heading alignwide">Gerelateerde pagina's</h2>
+<!-- wp:theme/section -->
+<!-- wp:heading {"placeholder":"Koptekst h2","align":"wide"} -->
+<h2 class="wp-block-heading alignwide">Bekijk ook</h2>
 <!-- /wp:heading -->
 
-<!-- wp:yard/query {"postTypes":[{"label":"Pagina's","value":"page"}],"stickyPost":{},"postParent":{}} /-->
-</div>
-<!-- /wp:group -->
+<!-- wp:yard/query {"postTypes":[{"label":"Pages","value":"page"}],"stickyPost":{},"postParent":{},"connectionPosts":{},"displayImage":false} /-->
+<!-- /wp:theme/section -->

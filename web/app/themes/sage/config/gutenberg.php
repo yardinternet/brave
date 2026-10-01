@@ -105,6 +105,14 @@ return [
 	 * Restrict available inner blocks per parent block
 	 */
 	'innerBlockRestrictions' => [
+		'core/group' => [
+			'when' => [
+				[
+					'className' => 'pattern-grid-cards',
+					'add' => ['theme/card'],
+				],
+			],
+		],
 		'core/media-text' => [
 			'blockSet' => 'minimalContent',
 		],
