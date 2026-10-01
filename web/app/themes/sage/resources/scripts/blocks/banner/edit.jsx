@@ -44,7 +44,9 @@ const TEMPLATE = [
 const Edit = ( props ) => {
 	const { attributes, setAttributes } = props;
 	const { imageId, focalPoint } = attributes;
-	const blockProps = useBlockProps();
+	const blockProps = useBlockProps( {
+		className: 'alignfull',
+	} );
 	const blockClassName = getBlockDefaultClassName(
 		blockProps?.[ 'data-type' ] || ''
 	);
