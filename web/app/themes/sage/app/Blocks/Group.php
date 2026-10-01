@@ -2,9 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Blocks\Group;
-
-use App\Blocks\Block;
+namespace App\Blocks;
 
 class Group extends Block
 {
