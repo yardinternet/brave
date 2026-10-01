@@ -3,9 +3,9 @@
 @reference '@sage/styles/base/utilities';
 
 :root {
-	--theme-group-alert-border-color: var( --color-primary );
-	--theme-group-alert-border-width: --spacing( 3 );
-	--theme-group-alert-icon-scale: 1.5;
+	--group-alert-border-color: var( --color-primary );
+	--group-alert-border-width: --spacing( 3 );
+	--group-alert-icon-scale: 1.5;
 }
 
 .wp-block-theme-group {
@@ -16,10 +16,10 @@
 	}
 
 	&.is-style-alert {
-		@apply flex gap-x-(--card-padding) border-l-(length:--theme-group-alert-border-width) border-l-(--color-primary);
+		@apply flex gap-x-(--card-padding) border-l-(length:--group-alert-border-width) border-l-(--color-primary);
 
 		&::before {
-			@apply fontawesome scale-(--theme-group-alert-icon-scale) self-start;
+			@apply fontawesome scale-(--group-alert-icon-scale) self-start;
 			--fa-icon: '\f06a';
 		}
 	}
