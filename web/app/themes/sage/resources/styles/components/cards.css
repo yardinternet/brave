@@ -7,7 +7,9 @@
 
 .card-large {
 	.card-body {
-		@apply xl:p-7;
+		@variant xl {
+			--card-padding: 2rem;
+		}
 	}
 
 	.card-title {
