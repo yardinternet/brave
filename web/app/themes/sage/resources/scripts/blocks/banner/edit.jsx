@@ -5,11 +5,13 @@ import { __ } from '@wordpress/i18n';
 import {
 	BlockControls,
 	InspectorControls,
+	MediaUpload,
+	MediaUploadCheck,
 	useBlockProps,
 	useInnerBlocksProps,
 } from '@wordpress/block-editor';
 import { getBlockDefaultClassName } from '@wordpress/blocks';
-import { PanelBody, PanelRow } from '@wordpress/components';
+import { Button, PanelBody } from '@wordpress/components';
 import { Image, MediaToolbar } from '@yardinternet/gutenberg-components';
 
 /**
@@ -47,17 +49,17 @@ const Edit = ( props ) => {
 		blockProps?.[ 'data-type' ] || ''
 	);
 
-	function handleImageSelect( image ) {
+	const handleImageSelect = ( image ) => {
 		setAttributes( { imageId: image.id } );
-	}
+	};
 
-	function handleImageRemove() {
+	const handleImageRemove = () => {
 		setAttributes( { imageId: 0 } );
-	}
+	};
 
-	function handleFocalPointChange( value ) {
+	const handleFocalPointChange = ( value ) => {
 		setAttributes( { focalPoint: value } );
-	}
+	};
 
 	const innerBlocksProps = useInnerBlocksProps(
 		{
@@ -85,6 +87,7 @@ const Edit = ( props ) => {
 								className={ `${ blockClassName }__image` }
 								id={ imageId }
 								focalPoint={ focalPoint }
+								onChangeFocalPoint={ handleFocalPointChange }
 								size="large"
 								canEditImage={ false }
 							/>
@@ -94,21 +97,28 @@ const Edit = ( props ) => {
 			</div>
 			<InspectorControls>
 				<PanelBody title={ __( 'Afbeelding', 'sage' ) }>
-					<PanelRow>
-						<Image
-							id={ imageId }
-							className="my-image"
-							size="full"
+					<MediaUploadCheck>
+						<MediaUpload
 							onSelect={ handleImageSelect }
-							focalPoint={ focalPoint }
-							onChangeFocalPoint={ handleFocalPointChange }
-							labels={ {
-								title: 'Selecteer je afbeelding',
-								instructions:
-									'Upload een afbeelding of kies er één uit de mediabibliotheek.',
-							} }
+							allowedTypes={ [ 'image' ] }
+							value={ imageId }
+							render={ ( { open } ) => (
+								<Button
+									onClick={ open }
+									variant={ imageId ? 'secondary' : 'primary' }
+								>
+									{ imageId
+										? __( 'Media vervangen', 'sage' )
+										: __( 'Media toevoegen', 'sage' ) }
+								</Button>
+							) }
 						/>
-					</PanelRow>
+					</MediaUploadCheck>
+					{ !! imageId && (
+						<Button onClick={ handleImageRemove } isDestructive>
+							{ __( 'Verwijderen', 'sage' ) }
+						</Button>
+					) }
 				</PanelBody>
 			</InspectorControls>
 		</>
