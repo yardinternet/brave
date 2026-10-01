@@ -12,6 +12,8 @@ import {
 } from '@wordpress/block-editor';
 import { getBlockDefaultClassName } from '@wordpress/blocks';
 import { Button, PanelBody } from '@wordpress/components';
+import { dispatch } from '@wordpress/data';
+import { store as editorStore } from '@wordpress/editor';
 import { Image, MediaToolbar } from '@yardinternet/gutenberg-components';
 
 /**
@@ -53,10 +55,12 @@ const Edit = ( props ) => {
 
 	const handleImageSelect = ( image ) => {
 		setAttributes( { imageId: image.id } );
+		dispatch( editorStore ).editPost( { featured_media: image.id } );
 	};
 
 	const handleImageRemove = () => {
 		setAttributes( { imageId: 0 } );
+		dispatch( editorStore ).editPost( { featured_media: 0 } );
 	};
 
 	const handleFocalPointChange = ( value ) => {
