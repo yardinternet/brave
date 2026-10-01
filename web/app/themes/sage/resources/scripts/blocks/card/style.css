@@ -3,7 +3,7 @@
 @reference '@sage/styles/base/utilities';
 
 :root {
-	--theme-card-content-spacing: calc( var( --card-padding ) * 0.5 );
+	--card-content-spacing: calc( var( --card-padding ) * 0.5 );
 }
 
 .wp-block-theme-card {
@@ -20,7 +20,7 @@
 }
 
 .wp-block-theme-card__body {
-	@apply normalize-child-margin flex grow flex-col space-y-(--theme-card-content-spacing)!;
+	@apply normalize-child-margin flex grow flex-col space-y-(--card-content-spacing)!;
 
 	&:has( .wp-block-heading a[href] ) {
 		&::after {
@@ -54,7 +54,7 @@
 	}
 
 	*:has( + .wp-block-buttons ) {
-		--theme-card-content-spacing: var( --card-padding );
+		--card-content-spacing: var( --card-padding );
 	}
 }
 
