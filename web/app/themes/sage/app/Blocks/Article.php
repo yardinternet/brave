@@ -2,9 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Blocks\Article;
-
-use App\Blocks\Block;
+namespace App\Blocks;
 
 class Article extends Block
 {
