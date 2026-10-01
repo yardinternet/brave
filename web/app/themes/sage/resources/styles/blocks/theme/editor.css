@@ -1,0 +1,6 @@
+:where(.wp-block-theme-group, .wp-block-theme-section) {
+	> :last-child,
+	> :has( + .block-list-appender ) {
+		@apply mb-0;
+	}
+}

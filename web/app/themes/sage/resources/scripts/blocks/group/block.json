@@ -1,0 +1,61 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "theme/group",
+	"title": "Groep",
+	"category": "theme",
+	"description": "Gebruik dit blok om bepaalde inhoud uit te lichten.",
+	"supports": {
+		"align": [ "wide" ],
+		"color": {
+			"background": true,
+			"__experimentalDefaultControls": {
+				"background": true
+			}
+		},
+		"html": false
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "wide"
+		}
+	},
+	"styles": [
+		{
+			"name": "default",
+			"label": "Standaard",
+			"isDefault": true
+		},
+		{
+			"name": "alert",
+			"label": "Melding"
+		}
+	],
+	"variations": [
+		{
+			"name": "group-default",
+			"title": "Groep",
+			"isActive": [ "backgroundColor" ],
+			"isDefault": true,
+			"attributes": {
+				"backgroundColor": "primary-100"
+			},
+			"innerBlocks": [ [ "core/paragraph" ] ]
+		},
+		{
+			"name": "group-alert",
+			"title": "Melding",
+			"isActive": [ "backgroundColor", "className" ],
+			"attributes": {
+				"align": "none",
+				"backgroundColor": "primary-100",
+				"className": "is-style-alert"
+			},
+			"innerBlocks": [ [ "core/paragraph" ] ]
+		}
+	],
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./editor-style.css",
+	"style": "file:./style.css"
+}

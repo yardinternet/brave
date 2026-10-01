@@ -90,16 +90,8 @@ return [
 	*/
 
 	'block_pattern' => [
-		'cards-3-with-image' => [
-			'title' => 'Vrije invoer kaarten - 3 stuks - met afbeelding',
-			'categories' => ['yard-cards'],
-		],
 		'cards-3' => [
 			'title' => 'Vrije invoer kaarten - 3 stuks',
-			'categories' => ['yard-cards'],
-		],
-		'cards-2-with-image' => [
-			'title' => 'Vrije invoer kaarten - 2 stuks - met afbeelding',
 			'categories' => ['yard-cards'],
 		],
 		'cards-2' => [
