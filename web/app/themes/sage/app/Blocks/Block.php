@@ -23,7 +23,7 @@ abstract class Block
 
 		return view($view, [
 			'attributes' => $attributes,
-			'blockDefaultClassname' => static::getBlockDefaultClassname(),
+			'blockClassName' => static::getBlockClassName(),
 			'blockWrapperAttributes' => $this->getBlockWrapperAttributes($attributes, $block),
 			'content' => $content,
 		]);
@@ -56,7 +56,7 @@ abstract class Block
 		return 'blocks.' . str_replace('/', '.', static::$name);
 	}
 
-	protected static function getBlockDefaultClassname(): string
+	protected static function getBlockClassName(): string
 	{
 		return wp_get_block_default_classname(static::$name);
 	}

@@ -1,7 +1,7 @@
 @php
 	/**
 	 * @var array $attributes
-	 * @var string $blockDefaultClassname
+	 * @var string $blockClassName
 	 * @var string $blockWrapperAttributes
 	 * @var string $content
 	 */
