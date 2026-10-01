@@ -42,7 +42,7 @@ const Edit = ( props ) => {
 	const { attributes, setAttributes } = props;
 	const { imageId, focalPoint } = attributes;
 	const blockProps = useBlockProps();
-	const blockDefaultClassName = getBlockDefaultClassName(
+	const blockClassName = getBlockDefaultClassName(
 		blockProps?.[ 'data-type' ] || ''
 	);
 
@@ -69,12 +69,12 @@ const Edit = ( props ) => {
 				/>
 			</BlockControls>
 			<div { ...blockProps }>
-				<div className={ `${ blockDefaultClassName }__body` }>
+				<div className={ `${ blockClassName }__body` }>
 					<InnerBlocks template={ TEMPLATE } />
 				</div>
 				{ !! imageId && (
 					<Image
-						className={ `${ blockDefaultClassName }__image` }
+						className={ `${ blockClassName }__image` }
 						id={ imageId }
 						focalPoint={ focalPoint }
 						onChangeFocalPoint={ handleFocalPointChange }
