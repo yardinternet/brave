@@ -32,7 +32,7 @@ const TEMPLATE = [
 		'core/paragraph',
 		{
 			content: __(
-				'Korte tekst van ongeveer 3 regels. Cupidatat amet nostrud non elit amet cupidatat elit sit proident anim duis.',
+				'Korte tekst van maximaal 7 regels. Lorem ipsum cupidatat amet nostrud non elit amet cupidatat elit sit proident anim duis.',
 				'sage'
 			),
 		},
@@ -77,7 +77,7 @@ const Edit = ( props ) => {
 				/>
 			</BlockControls>
 			<div { ...blockProps }>
-				<div className={ `${ blockClassName }__inner` }>
+				<div className={ `${ blockClassName }__container` }>
 					<div { ...innerBlocksProps } />
 					{ !! imageId && (
 						<div className={ `${ blockClassName }__media` }>
