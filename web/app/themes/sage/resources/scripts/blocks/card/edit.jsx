@@ -23,15 +23,15 @@ const TEMPLATE = [
 	[
 		'core/heading',
 		{
-			content: __( 'Titel van de kaart', 'sage' ),
+			placeholder: __( 'Koptekst h3', 'sage' ),
 			level: 3,
 		},
 	],
 	[
 		'core/paragraph',
 		{
-			content: __(
-				'Korte tekst van ongeveer 3 regels. Cupidatat amet nostrud non elit amet cupidatat elit sit proident anim duis.',
+			placeholder: __(
+				'Korte inleiding van maximaal 5 regels. Plaats een link achter de koptekst voor een volledig klikbare kaart.',
 				'sage'
 			),
 		},
@@ -93,7 +93,9 @@ const Edit = ( props ) => {
 							render={ ( { open } ) => (
 								<Button
 									onClick={ open }
-									variant={ imageId ? 'secondary' : 'primary' }
+									variant={
+										imageId ? 'secondary' : 'primary'
+									}
 								>
 									{ imageId
 										? __( 'Media vervangen', 'sage' )
