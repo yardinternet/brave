@@ -31,5 +31,5 @@
 <h2 class="wp-block-heading alignwide">Bekijk ook</h2>
 <!-- /wp:heading -->
 
-<!-- wp:yard/query {"postTypes":[{"label":"Pages","value":"page"}],"displayImage":false} /-->
+<!-- wp:yard/query {"postTypes":[{"label":"Pagina's","value":"page"}],"displayImage":false} /-->
 <!-- /wp:theme/section -->
