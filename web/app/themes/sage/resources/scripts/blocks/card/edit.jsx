@@ -6,10 +6,12 @@ import {
 	BlockControls,
 	InnerBlocks,
 	InspectorControls,
+	MediaUpload,
+	MediaUploadCheck,
 	useBlockProps,
 } from '@wordpress/block-editor';
 import { getBlockDefaultClassName } from '@wordpress/blocks';
-import { PanelBody, PanelRow } from '@wordpress/components';
+import { Button, PanelBody } from '@wordpress/components';
 import { Image, MediaToolbar } from '@yardinternet/gutenberg-components';
 
 /**
@@ -21,15 +23,15 @@ const TEMPLATE = [
 	[
 		'core/heading',
 		{
-			content: __( 'Titel van de kaart', 'sage' ),
+			placeholder: __( 'Koptekst h3', 'sage' ),
 			level: 3,
 		},
 	],
 	[
 		'core/paragraph',
 		{
-			content: __(
-				'Korte tekst van ongeveer 3 regels. Cupidatat amet nostrud non elit amet cupidatat elit sit proident anim duis.',
+			placeholder: __(
+				'Korte inleiding van maximaal 5 regels. Plaats een link achter de koptekst voor een volledig klikbare kaart.',
 				'sage'
 			),
 		},
@@ -40,21 +42,21 @@ const Edit = ( props ) => {
 	const { attributes, setAttributes } = props;
 	const { imageId, focalPoint } = attributes;
 	const blockProps = useBlockProps();
-	const blockDefaultClassName = getBlockDefaultClassName(
+	const blockClassName = getBlockDefaultClassName(
 		blockProps?.[ 'data-type' ] || ''
 	);
 
-	function handleImageSelect( image ) {
+	const handleImageSelect = ( image ) => {
 		setAttributes( { imageId: image.id } );
-	}
+	};
 
-	function handleImageRemove() {
+	const handleImageRemove = () => {
 		setAttributes( { imageId: 0 } );
-	}
+	};
 
-	function handleFocalPointChange( value ) {
+	const handleFocalPointChange = ( value ) => {
 		setAttributes( { focalPoint: value } );
-	}
+	};
 
 	return (
 		<>
@@ -67,14 +69,15 @@ const Edit = ( props ) => {
 				/>
 			</BlockControls>
 			<div { ...blockProps }>
-				<div className={ `${ blockDefaultClassName }__body` }>
+				<div className={ `${ blockClassName }__body` }>
 					<InnerBlocks template={ TEMPLATE } />
 				</div>
 				{ !! imageId && (
 					<Image
-						className={ `${ blockDefaultClassName }__image` }
+						className={ `${ blockClassName }__image` }
 						id={ imageId }
 						focalPoint={ focalPoint }
+						onChangeFocalPoint={ handleFocalPointChange }
 						size="large"
 						canEditImage={ false }
 					/>
@@ -82,21 +85,30 @@ const Edit = ( props ) => {
 			</div>
 			<InspectorControls>
 				<PanelBody title={ __( 'Afbeelding', 'sage' ) }>
-					<PanelRow>
-						<Image
-							id={ imageId }
-							className="my-image"
-							size="full"
+					<MediaUploadCheck>
+						<MediaUpload
 							onSelect={ handleImageSelect }
-							focalPoint={ focalPoint }
-							onChangeFocalPoint={ handleFocalPointChange }
-							labels={ {
-								title: 'Selecteer je afbeelding',
-								instructions:
-									'Upload een afbeelding of kies er één uit de mediabibliotheek.',
-							} }
+							allowedTypes={ [ 'image' ] }
+							value={ imageId }
+							render={ ( { open } ) => (
+								<Button
+									onClick={ open }
+									variant={
+										imageId ? 'secondary' : 'primary'
+									}
+								>
+									{ imageId
+										? __( 'Media vervangen', 'sage' )
+										: __( 'Media toevoegen', 'sage' ) }
+								</Button>
+							) }
 						/>
-					</PanelRow>
+					</MediaUploadCheck>
+					{ !! imageId && (
+						<Button onClick={ handleImageRemove } isDestructive>
+							{ __( 'Verwijderen', 'sage' ) }
+						</Button>
+					) }
 				</PanelBody>
 			</InspectorControls>
 		</>

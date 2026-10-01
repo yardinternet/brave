@@ -2,10 +2,7 @@
  * WordPress dependencies
  */
 import { __ } from '@wordpress/i18n';
-import {
-	useBlockProps,
-	useInnerBlocksProps,
-} from '@wordpress/block-editor';
+import { useBlockProps, useInnerBlocksProps } from '@wordpress/block-editor';
 
 /**
  * Internal dependencies
@@ -17,7 +14,7 @@ const TEMPLATE = [
 		'core/heading',
 		{
 			align: 'wide',
-			content: __( 'Titel van de sectie', 'sage' ),
+			placeholder: __( 'Koptekst h2', 'sage' ),
 			level: 2,
 		},
 	],

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-use App\Blocks\Article\Article;
-use App\Blocks\BackButton\BackButton;
-use App\Blocks\Banner\Banner;
-use App\Blocks\Card\Card;
-use App\Blocks\Group\Group;
-use App\Blocks\Section\Section;
+use App\Blocks\Article;
+use App\Blocks\BackButton;
+use App\Blocks\Banner;
+use App\Blocks\Card;
+use App\Blocks\Group;
+use App\Blocks\Section;
 
 return [
 	/**

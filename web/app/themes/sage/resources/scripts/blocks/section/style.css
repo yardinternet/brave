@@ -2,10 +2,18 @@
 @reference '@sage/styles/base/custom-variants';
 @reference '@sage/styles/base/utilities';
 
-:root {
-	--theme-section-padding-y: var( --spacing-size-7 );
-}
-
 .wp-block-theme-section {
-	@apply create-main-content-alignment normalize-child-margin py-(--theme-section-padding-y);
+	@apply create-main-content-alignment normalize-child-margin my-section;
+
+	&.has-background {
+		@apply py-section;
+
+		&:has( + .wp-block-theme-section.has-background ) {
+			@apply mb-0;
+		}
+
+		+ .wp-block-theme-section.has-background {
+			@apply mt-0;
+		}
+	}
 }
