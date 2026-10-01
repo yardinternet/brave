@@ -43,7 +43,7 @@ const Edit = ( props ) => {
 	const { attributes, setAttributes } = props;
 	const { imageId, focalPoint } = attributes;
 	const blockProps = useBlockProps();
-	const blockDefaultClassName = getBlockDefaultClassName(
+	const blockClassName = getBlockDefaultClassName(
 		blockProps?.[ 'data-type' ] || ''
 	);
 
@@ -61,7 +61,7 @@ const Edit = ( props ) => {
 
 	const innerBlocksProps = useInnerBlocksProps(
 		{
-			className: `${ blockDefaultClassName }__content`,
+			className: `${ blockClassName }__content`,
 		},
 		{ template: TEMPLATE }
 	);
@@ -77,12 +77,12 @@ const Edit = ( props ) => {
 				/>
 			</BlockControls>
 			<div { ...blockProps }>
-				<div className={ `${ blockDefaultClassName }__inner` }>
+				<div className={ `${ blockClassName }__inner` }>
 					<div { ...innerBlocksProps } />
 					{ !! imageId && (
-						<div className={ `${ blockDefaultClassName }__media` }>
+						<div className={ `${ blockClassName }__media` }>
 							<Image
-								className={ `${ blockDefaultClassName }__image` }
+								className={ `${ blockClassName }__image` }
 								id={ imageId }
 								focalPoint={ focalPoint }
 								size="large"
