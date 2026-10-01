@@ -7,12 +7,11 @@
 	--theme-banner-color: var( --color-white );
 	--theme-banner-content-padding: var( --spacing-size-6 ) 0;
 	--theme-banner-image-ratio: 2 / 1;
+	--theme-banner-image-width: 100%;
 
 	@variant md {
 		--theme-banner-image-ratio: auto;
-	}
-
-	@variant lg {
+		--theme-banner-image-width: 50vw;
 		--theme-banner-content-padding: var( --spacing-size-7 )
 			var( --spacing-size-7 ) var( --spacing-size-7 ) 0;
 	}
@@ -35,5 +34,5 @@
 }
 
 .wp-block-theme-banner__image {
-	@apply aspect-(--theme-banner-image-ratio) w-full max-w-none object-cover md:absolute md:top-0 md:bottom-0 md:left-0 md:aspect-auto md:!h-full md:min-h-0 md:w-[50vw];
+	@apply aspect-(--theme-banner-image-ratio) w-(--theme-banner-image-width) max-w-none object-cover md:absolute md:top-0 md:bottom-0 md:left-0 md:h-full! md:min-h-0;
 }
