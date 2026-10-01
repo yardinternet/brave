@@ -4,7 +4,7 @@
 
 :root {
 	--group-alert-border-color: var( --color-primary );
-	--group-alert-border-width: --spacing( 3 );
+	--group-alert-border-width: 10px;
 	--group-alert-icon-scale: 1.5;
 }
 
