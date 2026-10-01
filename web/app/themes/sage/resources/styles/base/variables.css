@@ -103,4 +103,27 @@
 	@variant xl {
 		--grid-gutter: 2rem;
 	}
+
+	/* Card */
+	--card-bg-color: var( --color-white );
+	--card-image-ratio: 16 / 9;
+	--card-label-bg-color: var( --color-primary-100 );
+	--card-label-border-color: var( --card-label-bg-color );
+	--card-label-border-width: 1px;
+	--card-label-color: var( --color-black );
+	--card-label-font-size: var( --text-sm );
+	--card-label-font-weight: 400;
+	--card-label-padding: 0.25rem 0.5rem;
+	--card-label-radius: var( --radius-theme );
+	--card-padding: 1rem;
+	--card-radius: var( --radius-theme );
+	--card-shadow: var( --shadow );
+	--card-translate-hover: 0.25rem;
+
+	@variant lg {
+		--card-padding: 1.5rem;
+	}
+	@variant xl {
+		--card-padding: 1.75rem;
+	}
 }
