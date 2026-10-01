@@ -6,16 +6,11 @@
 	"category": "theme",
 	"description": "Een banner met een afbeelding, titel en tekst.",
 	"supports": {
-		"align": [ "full" ],
 		"html": false,
 		"multiple": false,
 		"reusable": false
 	},
 	"attributes": {
-		"align": {
-			"type": "string",
-			"default": "full"
-		},
 		"focalPoint": {
 			"type": "object",
 			"default": { "x": 0.5, "y": 0.5 }
