@@ -3,22 +3,22 @@
 @reference '@sage/styles/base/utilities';
 
 :root {
-	--theme-banner-bg-color: var( --color-primary );
-	--theme-banner-color: var( --color-white );
-	--theme-banner-content-padding: var( --spacing-size-6 ) 0;
-	--theme-banner-image-ratio: 2 / 1;
-	--theme-banner-image-width: 100%;
+	--banner-bg-color: var( --color-primary );
+	--banner-color: var( --color-white );
+	--banner-content-padding: var( --spacing-size-6 ) 0;
+	--banner-image-ratio: 2 / 1;
+	--banner-image-width: 100%;
 
 	@variant md {
-		--theme-banner-image-ratio: auto;
-		--theme-banner-image-width: 50vw;
-		--theme-banner-content-padding: var( --spacing-size-7 )
+		--banner-image-ratio: auto;
+		--banner-image-width: 50vw;
+		--banner-content-padding: var( --spacing-size-7 )
 			var( --spacing-size-7 ) var( --spacing-size-7 ) 0;
 	}
 }
 
 .wp-block-theme-banner {
-	@apply mb-section bg-(--theme-banner-bg-color) text-(--theme-banner-color);
+	@apply mb-section bg-(--banner-bg-color) text-(--banner-color);
 }
 
 .wp-block-theme-banner__container {
@@ -26,7 +26,7 @@
 }
 
 .wp-block-theme-banner__content {
-	@apply normalize-child-margin p-(--theme-banner-content-padding) md:col-span-6;
+	@apply normalize-child-margin p-(--banner-content-padding) md:col-span-6;
 }
 
 .wp-block-theme-banner__media {
@@ -34,5 +34,5 @@
 }
 
 .wp-block-theme-banner__image {
-	@apply aspect-(--theme-banner-image-ratio) w-(--theme-banner-image-width) max-w-none object-cover md:absolute md:top-0 md:bottom-0 md:left-0 md:h-full! md:min-h-0;
+	@apply aspect-(--banner-image-ratio) w-(--banner-image-width) max-w-none object-cover md:absolute md:top-0 md:bottom-0 md:left-0 md:h-full! md:min-h-0;
 }
