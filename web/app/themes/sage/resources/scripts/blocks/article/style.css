@@ -1,3 +1,19 @@
 @reference '@sage/styles/base/config';
 @reference '@sage/styles/base/custom-variants';
 @reference '@sage/styles/base/utilities';
+
+:root {
+	--theme-article-width: min(
+		calc( 100% - var( --container-padding ) * 2 ),
+		1000px
+	);
+	--theme-article-padding: 2rem 0rem;
+
+	@variant lg {
+		--theme-article-padding: 5rem 0rem;
+	}
+}
+
+.wp-block-theme-article {
+	@apply is-main-content create-main-content-alignment mx-auto my-section max-w-(--theme-article-width)! rounded-theme bg-white p-(--theme-article-padding) shadow;
+}

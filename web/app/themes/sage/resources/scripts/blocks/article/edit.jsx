@@ -34,7 +34,7 @@ const TEMPLATE = [
 		'core/paragraph',
 		{
 			content: __(
-				'Korte tekst van ongeveer 3 regels. Cupidatat amet nostrud non elit amet cupidatat elit sit proident anim duis.',
+				'Schrijf een korte introductie in één lopende alinea. Begin direct met de belangrijkste informatie. Gebruik actieve, duidelijke B1-taal en vermijd overbodige woorden, herhaling en vaag taalgebruik.',
 				'sage'
 			),
 		},
@@ -42,11 +42,7 @@ const TEMPLATE = [
 ];
 
 const Edit = () => {
-	const blockProps = useBlockProps( {
-		className: 'layout-article',
-	} );
-
-	const innerBlocksProps = useInnerBlocksProps( blockProps, {
+	const innerBlocksProps = useInnerBlocksProps( useBlockProps(), {
 		template: TEMPLATE,
 	} );
 
