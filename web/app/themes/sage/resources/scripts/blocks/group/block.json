@@ -9,18 +9,14 @@
 		"align": [ "wide" ],
 		"color": {
 			"background": true,
+			"text": false,
 			"__experimentalDefaultControls": {
 				"background": true
 			}
 		},
 		"html": false
 	},
-	"attributes": {
-		"align": {
-			"type": "string",
-			"default": "wide"
-		}
-	},
+	"attributes": {},
 	"styles": [
 		{
 			"name": "default",
@@ -34,7 +30,7 @@
 	],
 	"variations": [
 		{
-			"name": "group-default",
+			"name": "theme/group-default",
 			"title": "Groep",
 			"isActive": [ "backgroundColor" ],
 			"isDefault": true,
@@ -44,11 +40,11 @@
 			"innerBlocks": [ [ "core/paragraph" ] ]
 		},
 		{
-			"name": "group-alert",
-			"title": "Melding",
-			"isActive": [ "backgroundColor", "className" ],
+			"name": "theme/group-alert",
+			"title": "Waarschuwing",
+			"keywords": [ "alert", "melding" ],
+			"isActive": [ "className" ],
 			"attributes": {
-				"align": "none",
 				"backgroundColor": "primary-100",
 				"className": "is-style-alert"
 			},
