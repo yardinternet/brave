@@ -4,7 +4,7 @@
 	"name": "theme/section",
 	"title": "Sectie",
 	"category": "theme",
-	"description": "Gebruik dit blok om pagina onderdelen te groeperen en te structureren.",
+	"description": "Gebruik dit blok om paginaonderdelen te groeperen en te structureren.",
 	"supports": {
 		"anchor": true,
 		"color": {

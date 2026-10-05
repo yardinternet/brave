@@ -2,8 +2,7 @@
 	/**
 	 * @var string $blockClassName
 	 * @var string $content
-	 * @var int $imageId
-	 * @var string $focalPointStyle
+	 * @var string $image
 	 */
 @endphp
 
@@ -11,10 +10,5 @@
 	<div class="{{ $blockClassName }}__body">
 		{!! $content !!}
 	</div>
-	@if ($imageId)
-		{!! wp_get_attachment_image($imageId, 'large', false, [
-		    'class' => "{$blockClassName}__image",
-		    'style' => $focalPointStyle,
-		]) !!}
-	@endif
+	{!! $image !!}
 </article>

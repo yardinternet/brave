@@ -80,17 +80,9 @@ const variationRegistry = [
 					},
 					[
 						[
-							'core/group',
+							'theme/group',
 							{
 								backgroundColor: 'white',
-								style: {
-									spacing: {
-										margin: {
-											top: '0',
-											bottom: '0',
-										},
-									},
-								},
 							},
 							[
 								[

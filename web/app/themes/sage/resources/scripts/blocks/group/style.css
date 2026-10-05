@@ -16,7 +16,7 @@
 	}
 
 	&.is-style-alert {
-		@apply relative border-l-(length:--group-alert-border-width) border-l-(--color-primary) pl-[calc(var(--card-padding)*2+1em)];
+		@apply relative border-l-(length:--group-alert-border-width) border-l-(--group-alert-border-color) pl-[calc(var(--card-padding)*2+1em)];
 
 		&::before {
 			@apply fontawesome absolute top-(--card-padding) left-(--card-padding) scale-(--group-alert-icon-scale);

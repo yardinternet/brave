@@ -4,11 +4,11 @@
 import { __ } from '@wordpress/i18n';
 import {
 	BlockControls,
-	InnerBlocks,
 	InspectorControls,
 	MediaUpload,
 	MediaUploadCheck,
 	useBlockProps,
+	useInnerBlocksProps,
 } from '@wordpress/block-editor';
 import { getBlockDefaultClassName } from '@wordpress/blocks';
 import { Button, PanelBody } from '@wordpress/components';
@@ -58,6 +58,13 @@ const Edit = ( props ) => {
 		setAttributes( { focalPoint: value } );
 	};
 
+	const innerBlocksProps = useInnerBlocksProps(
+		{
+			className: `${ blockClassName }__body`,
+		},
+		{ template: TEMPLATE }
+	);
+
 	return (
 		<>
 			<BlockControls>
@@ -69,9 +76,7 @@ const Edit = ( props ) => {
 				/>
 			</BlockControls>
 			<div { ...blockProps }>
-				<div className={ `${ blockClassName }__body` }>
-					<InnerBlocks template={ TEMPLATE } />
-				</div>
+				<div { ...innerBlocksProps } />
 				{ !! imageId && (
 					<Image
 						className={ `${ blockClassName }__image` }

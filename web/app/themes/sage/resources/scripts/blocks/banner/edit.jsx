@@ -35,7 +35,7 @@ const TEMPLATE = [
 	[
 		'core/paragraph',
 		{
-			content: __(
+			placeholder: __(
 				'Korte tekst van maximaal 7 regels. Lorem ipsum cupidatat amet nostrud non elit amet cupidatat elit sit proident anim duis.',
 				'sage'
 			),

@@ -3,7 +3,7 @@
 <h2 class="wp-block-heading">Bekijk ook</h2>
 <!-- /wp:heading -->
 
-<!-- wp:group {"className":"pattern-grid-cards","layout":{"type":"grid","columnCount":3,"minimumColumnWidth":"300px"}} -->
+<!-- wp:group {"className":"pattern-grid-cards","layout":{"type":"grid","columnCount":2,"minimumColumnWidth":"300px"}} -->
 <div class="wp-block-group pattern-grid-cards"><!-- wp:theme/card -->
 <!-- wp:heading {"level":3,"placeholder":"Koptekst h3"} -->
 <h3 class="wp-block-heading">Koptekst h3</h3>

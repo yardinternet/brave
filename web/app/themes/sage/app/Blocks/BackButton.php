@@ -8,6 +8,11 @@ use Illuminate\Support\Arr;
 
 final class BackButton extends Block
 {
+	/**
+	 * @param array<string, mixed> $attributes
+	 *
+	 * @return array<string, mixed>
+	 */
 	protected function with(array $attributes, \WP_Block $block): array
 	{
 		return [

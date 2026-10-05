@@ -33,7 +33,7 @@ const TEMPLATE = [
 	[
 		'core/paragraph',
 		{
-			content: __(
+			placeholder: __(
 				'Schrijf een korte introductie in één lopende alinea. Begin direct met de belangrijkste informatie. Gebruik actieve, duidelijke B1-taal en vermijd overbodige woorden, herhaling en vaag taalgebruik.',
 				'sage'
 			),

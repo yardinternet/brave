@@ -208,8 +208,8 @@
 		@apply !hidden;
 	}
 
-	/* Core Group Block */
-	.wp-block-group.has-background {
+	/* Theme Group Block */
+	.wp-block-theme-group.has-background {
 		@apply !border;
 	}
 
@@ -218,12 +218,12 @@
 		@apply !hidden;
 	}
 
-	/* Core Grid Block */
-	.wp-block-group-is-layout-grid .wp-block-group {
+	/* Theme Card Block */
+	.wp-block-theme-card {
 		@apply !break-inside-avoid;
 	}
 
-	.wp-block-group-is-layout-grid .wp-block-heading a::after {
+	.wp-block-theme-card .wp-block-heading a::after {
 		@apply !static;
 	}
 

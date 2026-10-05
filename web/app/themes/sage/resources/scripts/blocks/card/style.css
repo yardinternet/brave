@@ -2,11 +2,9 @@
 @reference '@sage/styles/base/custom-variants';
 @reference '@sage/styles/base/utilities';
 
-:root {
-	--card-content-spacing: calc( var( --card-padding ) * 0.5 );
-}
-
 .wp-block-theme-card {
+	--card-content-spacing: calc( var( --card-padding ) * 0.5 );
+
 	@apply flex flex-col gap-(--card-padding) rounded-(--card-radius) bg-(--card-bg-color) p-(--card-padding) shadow-(--card-shadow) transition;
 
 	&:has( .wp-block-heading a[href] ) {
@@ -59,5 +57,5 @@
 }
 
 .wp-block-theme-card__image {
-	@apply order-first -mx-(--card-padding) -mt-(--card-padding) aspect-(--card-image-ratio) w-[calc(100%+var(--card-padding)*2)] max-w-[calc(100%+var(--card-padding)*2)] object-cover;
+	@apply order-first -mx-(--card-padding) -mt-(--card-padding) aspect-(--card-image-ratio) w-[calc(100%+var(--card-padding)*2)] max-w-[calc(100%+var(--card-padding)*2)] rounded-t-(--card-radius) object-cover;
 }
