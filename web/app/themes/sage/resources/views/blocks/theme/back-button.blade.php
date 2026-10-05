@@ -1,10 +1,7 @@
 @php
 	/**
-	 * @var array $attributes
-	 * @var string $blockClassName
-	 * @var string $blockWrapperAttributes
-	 * @var string $content
+	 * @var string $classes
 	 */
 @endphp
 
-<x-brave-back-button :align="isset($attributes['align']) ? 'align' . $attributes['align'] : ''" :class-name="$attributes['className'] ?? ''" />
+<x-brave-back-button :class="$classes" />

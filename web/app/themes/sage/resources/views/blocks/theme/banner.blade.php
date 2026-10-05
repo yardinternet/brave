@@ -1,26 +1,22 @@
 @php
 	/**
-	 * @var array $attributes
 	 * @var string $blockClassName
-	 * @var string $blockWrapperAttributes
 	 * @var string $content
+	 * @var int $imageId
+	 * @var string $focalPointStyle
 	 */
 @endphp
 
-<div {!! $blockWrapperAttributes !!}>
+<div {!! get_block_wrapper_attributes(['class' => 'alignfull']) !!}>
 	<div class="{{ $blockClassName }}__container">
 		<div class="{{ $blockClassName }}__content">
 			{!! $content !!}
 		</div>
-		@if (($attributes['imageId'] ?? 0) > 0)
+		@if ($imageId)
 			<div class="{{ $blockClassName }}__image-container">
-				{!! wp_get_attachment_image($attributes['imageId'], 'large', false, [
-				    'class' => $blockClassName . '__image',
-				    'style' => sprintf(
-				        'object-position: %d%% %d%%;',
-				        min(max((float) ($attributes['focalPoint']['x'] ?? 0.5), 0), 1) * 100,
-				        min(max((float) ($attributes['focalPoint']['y'] ?? 0.5), 0), 1) * 100,
-				    ),
+				{!! wp_get_attachment_image($imageId, 'full', false, [
+				    'class' => "{$blockClassName}__image",
+				    'style' => $focalPointStyle,
 				]) !!}
 			</div>
 		@endif

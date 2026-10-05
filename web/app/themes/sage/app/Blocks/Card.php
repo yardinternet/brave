@@ -4,7 +4,19 @@ declare(strict_types=1);
 
 namespace App\Blocks;
 
-class Card extends Block
+final class Card extends Block
 {
-	public static string $name = 'theme/card';
+	protected function with(array $attributes, \WP_Block $block): array
+	{
+		$focalPoint = $attributes['focalPoint'] ?? [];
+
+		return [
+			'imageId' => (int) ($attributes['imageId'] ?? 0),
+			'focalPointStyle' => sprintf(
+				'object-position: %d%% %d%%;',
+				($focalPoint['x'] ?? 0.5) * 100,
+				($focalPoint['y'] ?? 0.5) * 100,
+			),
+		];
+	}
 }

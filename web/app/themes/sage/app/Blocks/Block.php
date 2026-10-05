@@ -4,68 +4,29 @@ declare(strict_types=1);
 
 namespace App\Blocks;
 
-use Illuminate\Contracts\View\View;
-use Illuminate\Support\Arr;
-
-abstract class Block
+class Block
 {
-	public static string $name;
-
-	protected array $classes = [];
-
-	public function render(array $attributes, string $content, \WP_Block $block): View|string
+	public function __invoke(array $attributes, string $content, \WP_Block $block): string
 	{
-		$view = static::getViewPath();
-
-		if (! view()->exists($view) || ! $this->shouldRender($attributes, $content, $block)) {
+		if (! $this->shouldRender($content)) {
 			return '';
 		}
 
-		return view($view, [
+		return view('blocks.' . str_replace('/', '.', $block->name), [
 			'attributes' => $attributes,
-			'blockClassName' => static::getBlockClassName(),
-			'blockWrapperAttributes' => $this->getBlockWrapperAttributes($attributes, $block),
+			'blockClassName' => wp_get_block_default_classname($block->name),
 			'content' => $content,
-		]);
+			...$this->with($attributes, $block),
+		])->render();
 	}
 
-	protected function getClasses(array $attributes, \WP_Block $block): array
+	protected function with(array $attributes, \WP_Block $block): array
 	{
 		return [];
 	}
 
-	protected function getBlockWrapperAttributes(array $attributes, \WP_Block $block): string
+	protected function shouldRender(string $content): bool
 	{
-		$classes = $this->getClassList($attributes, $block);
-
-		return get_block_wrapper_attributes('' === $classes ? [] : ['class' => $classes]);
-	}
-
-	protected function shouldRender(array $attributes, string $content, \WP_Block $block): bool
-	{
-		return ! $this->isEmpty($content);
-	}
-
-	protected function isEmpty(string $content): bool
-	{
-		return '' === trim($content);
-	}
-
-	protected static function getViewPath(): string
-	{
-		return 'blocks.' . str_replace('/', '.', static::$name);
-	}
-
-	protected static function getBlockClassName(): string
-	{
-		return wp_get_block_default_classname(static::$name);
-	}
-
-	private function getClassList(array $attributes, \WP_Block $block): string
-	{
-		$classNames = Arr::toCssClasses(array_merge($this->classes, $this->getClasses($attributes, $block)));
-		$classes = (array) preg_split('/\s+/', $classNames, -1, PREG_SPLIT_NO_EMPTY);
-
-		return implode(' ', array_unique($classes));
+		return '' !== trim($content);
 	}
 }
