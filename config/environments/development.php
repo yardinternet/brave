@@ -15,9 +15,10 @@ Config::define('WP_DEBUG', env('WP_DEBUG') ?? true);
 Config::define('WP_DEBUG_DISPLAY', env('WP_DEBUG_DISPLAY') ?? true);
 Config::define('WP_DEBUG_LOG', env('WP_DEBUG_LOG') ?? true);
 Config::define('WP_DISABLE_FATAL_ERROR_HANDLER', true);
-Config::define('SCRIPT_DEBUG', true);
+Config::define('SCRIPT_DEBUG', env('SCRIPT_DEBUG') ?? true);
 Config::define('DISALLOW_INDEXING', true);
 Config::define('WP_DEVELOPMENT_MODE', 'theme'); // @see https://make.wordpress.org/core/2023/07/14/configuring-development-mode-in-6-3/
+define('DEV_NON_FATAL_ERROR_LEVELS', E_DEPRECATED | E_USER_DEPRECATED | E_NOTICE | E_USER_NOTICE | E_WARNING | E_USER_WARNING);
 
 ini_set('display_errors', '1');
 
@@ -42,4 +43,4 @@ Ignition::make()
 	->applicationPath(dirname(__DIR__, 2))
 	->setEditor(env('IGNITION_EDITOR') ?? 'phpstorm')
 	->setTheme(env('IGNITION_THEME') ?? 'auto')
-	->register();
+	->register(E_ALL & ~DEV_NON_FATAL_ERROR_LEVELS);
