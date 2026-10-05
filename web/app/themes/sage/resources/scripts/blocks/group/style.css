@@ -16,10 +16,10 @@
 	}
 
 	&.is-style-alert {
-		@apply flex gap-x-(--card-padding) border-l-(length:--group-alert-border-width) border-l-(--color-primary);
+		@apply relative border-l-(length:--group-alert-border-width) border-l-(--color-primary) pl-[calc(var(--card-padding)*2+1em)];
 
 		&::before {
-			@apply fontawesome scale-(--group-alert-icon-scale) self-start;
+			@apply fontawesome absolute top-(--card-padding) left-(--card-padding) scale-(--group-alert-icon-scale);
 			--fa-icon: '\f06a';
 		}
 	}
