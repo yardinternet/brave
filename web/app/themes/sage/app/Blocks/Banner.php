@@ -4,9 +4,19 @@ declare(strict_types=1);
 
 namespace App\Blocks;
 
-class Banner extends Block
+final class Banner extends Block
 {
-	protected array $classes = ['alignfull'];
+	protected function with(array $attributes, \WP_Block $block): array
+	{
+		$focalPoint = $attributes['focalPoint'] ?? [];
 
-	public static string $name = 'theme/banner';
+		return [
+			'imageId' => (int) ($attributes['imageId'] ?? 0),
+			'focalPointStyle' => sprintf(
+				'object-position: %d%% %d%%;',
+				($focalPoint['x'] ?? 0.5) * 100,
+				($focalPoint['y'] ?? 0.5) * 100,
+			),
+		];
+	}
 }

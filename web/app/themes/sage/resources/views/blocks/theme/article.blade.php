@@ -2,11 +2,10 @@
 	/**
 	 * @var array $attributes
 	 * @var string $blockClassName
-	 * @var string $blockWrapperAttributes
 	 * @var string $content
 	 */
 @endphp
 
-<article {!! $blockWrapperAttributes !!}>
+<article {!! get_block_wrapper_attributes() !!}>
 	{!! $content !!}
 </article>

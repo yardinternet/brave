@@ -4,23 +4,23 @@ declare(strict_types=1);
 
 namespace App\Blocks;
 
-class BackButton extends Block
-{
-	public static string $name = 'theme/back-button';
+use Illuminate\Support\Arr;
 
-	protected function shouldRender(array $attributes, string $content, \WP_Block $block): bool
+final class BackButton extends Block
+{
+	protected function with(array $attributes, \WP_Block $block): array
 	{
-		return $this->postHasParent();
+		return [
+			'classes' => Arr::toCssClasses([
+				wp_get_block_default_classname($block->name),
+				'align' . ($attributes['align'] ?? '') => ! empty($attributes['align']),
+				$attributes['className'] ?? '',
+			]),
+		];
 	}
 
-	private function postHasParent(): bool
+	protected function shouldRender(string $content): bool
 	{
-		global $post;
-
-		if (! is_a($post, 'WP_Post')) {
-			return false;
-		}
-
-		return 0 !== wp_get_post_parent_id($post->ID);
+		return (bool) wp_get_post_parent_id();
 	}
 }

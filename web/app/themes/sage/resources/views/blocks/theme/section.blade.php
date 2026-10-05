@@ -2,11 +2,10 @@
 	/**
 	 * @var array $attributes
 	 * @var string $blockClassName
-	 * @var string $blockWrapperAttributes
 	 * @var string $content
 	 */
 @endphp
 
-<section {!! $blockWrapperAttributes !!}>
+<section {!! get_block_wrapper_attributes(['class' => 'alignfull']) !!}>
 	{!! $content !!}
 </section>
