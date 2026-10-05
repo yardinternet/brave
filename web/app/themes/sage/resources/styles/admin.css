@@ -6,5 +6,7 @@
 
 /* prettier-ignore */
 @import 'tailwindcss/theme.css' source(none);
+
+/* Base */
 @import './base/theme';
 @import './base/variables';
