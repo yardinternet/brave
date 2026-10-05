@@ -32,7 +32,6 @@
 		{
 			"name": "theme/group-default",
 			"title": "Groep",
-			"isActive": [ "backgroundColor" ],
 			"isDefault": true,
 			"attributes": {
 				"backgroundColor": "primary-100"
