@@ -40,12 +40,12 @@ class Assets
 
 		echo Vite::withEntryPoints([
 			'web/app/themes/'. get_stylesheet() . '/resources/scripts/editor/editor.js',
-			'web/app/themes/'. get_stylesheet() . '/resources/styles/admin.css',
+			'web/app/themes/'. get_stylesheet() . '/resources/styles/editor-ui.css',
 		])->toHtml();
 	}
 
 	/**
-	 * Also inject the styles into the iframe'd block editor and preview windows.
+	 * Inject editor.css into the block editor canvas iframe.
 	 */
 	#[Filter('block_editor_settings_all')]
 	public function injectEditorStyles($settings)

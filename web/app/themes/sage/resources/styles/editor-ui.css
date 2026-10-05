@@ -1,0 +1,12 @@
+/*
+	Loaded in the block editor outside the canvas iframe, where the color swatches
+	of theme.json presets reference these custom properties. Custom properties
+	only: preflight or utilities would restyle the editor UI itself.
+*/
+
+/* prettier-ignore */
+@import 'tailwindcss/theme.css' source(none);
+
+/* Base */
+@import './base/theme';
+@import './base/variables';
