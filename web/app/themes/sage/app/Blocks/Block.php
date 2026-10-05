@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace App\Blocks;
 
+use Illuminate\Support\Str;
+
 class Block
 {
 	/**
@@ -15,7 +17,9 @@ class Block
 			return '';
 		}
 
-		return view('blocks.' . str_replace('/', '.', $block->name), [
+		$name = Str::after($block->name, '/');
+
+		return view('blocks.' . $name, [
 			'attributes' => $attributes,
 			'blockClassName' => wp_get_block_default_classname($block->name),
 			'content' => $content,
