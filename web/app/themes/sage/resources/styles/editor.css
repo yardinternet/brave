@@ -39,7 +39,6 @@
 @import './blocks/timeline/shared';
 @import './blocks/timeline/editor';
 @import './blocks/wp/shared';
-@import './blocks/theme/editor';
 
 /* Layouts */
 @import './layouts/alignments';

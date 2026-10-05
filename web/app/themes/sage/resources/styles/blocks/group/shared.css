@@ -1,7 +1,11 @@
 .wp-block-group-is-layout-grid {
 	@apply max-md:auto-grid! @container my-4 gap-(--grid-gutter) lg:my-6 xl:mb-8;
 
-	.wp-block-group.is-variation-card {
+	.wp-block-media-text {
+		@apply my-0;
+	}
+
+	.wp-block-theme-card {
 		@apply m-0;
 
 		@container (min-width: 600px) {
@@ -15,9 +19,5 @@
 		@container (min-width: 960px) {
 			--card-padding: 1.75rem;
 		}
-	}
-
-	.wp-block-media-text {
-		@apply my-0;
 	}
 }
