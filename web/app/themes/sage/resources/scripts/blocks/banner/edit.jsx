@@ -88,7 +88,9 @@ const Edit = ( props ) => {
 				<div className={ `${ blockClassName }__container` }>
 					<div { ...innerBlocksProps } />
 					{ !! imageId && (
-						<div className={ `${ blockClassName }__media` }>
+						<div
+							className={ `${ blockClassName }__image-container` }
+						>
 							<Image
 								className={ `${ blockClassName }__image` }
 								id={ imageId }
@@ -111,7 +113,9 @@ const Edit = ( props ) => {
 							render={ ( { open } ) => (
 								<Button
 									onClick={ open }
-									variant={ imageId ? 'secondary' : 'primary' }
+									variant={
+										imageId ? 'secondary' : 'primary'
+									}
 								>
 									{ imageId
 										? __( 'Media vervangen', 'sage' )
