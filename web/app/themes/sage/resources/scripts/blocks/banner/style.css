@@ -29,7 +29,7 @@
 	@apply normalize-child-margin p-(--banner-content-padding) md:col-span-6;
 }
 
-.wp-block-theme-banner__media {
+.wp-block-theme-banner__image-container {
 	@apply max-md:order-first max-md:-mx-(--container-padding) md:relative md:col-span-6;
 }
 

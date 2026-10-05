@@ -13,7 +13,7 @@
 			{!! $content !!}
 		</div>
 		@if (($attributes['imageId'] ?? 0) > 0)
-			<div class="{{ $blockClassName }}__media">
+			<div class="{{ $blockClassName }}__image-container">
 				{!! wp_get_attachment_image($attributes['imageId'], 'large', false, [
 				    'class' => $blockClassName . '__image',
 				    'style' => sprintf(
