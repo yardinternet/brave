@@ -12,7 +12,7 @@ updates:
       commit-message:
           prefix: 'chore'
       cooldown:
-        default-days: 7
+          default-days: 7
 
     - package-ecosystem: 'npm'
       directory: '/'
@@ -28,7 +28,7 @@ updates:
           prefix: 'chore'
       versioning-strategy: lockfile-only
       cooldown:
-        default-days: 7
+          default-days: 7
 
     - package-ecosystem: 'composer'
       registries: '*'
@@ -44,7 +44,7 @@ updates:
           prefix: 'chore'
       versioning-strategy: lockfile-only
       cooldown:
-        default-days: 7
+          default-days: 7
 
 registries:
     ypackagist:
@@ -52,7 +52,11 @@ registries:
         url: https://packagist.yard.nl/satispress/
         username: ${{secrets.YPACKAGIST_API_KEY}}
         password: ${{secrets.YPACKAGIST_PASSWORD}}
-
+    satis:
+        type: composer-repository
+        url: https://satis.yard.nl/
+        username: ${{secrets.SATIS_USERNAME}}
+        password: ${{secrets.SATIS_PASSWORD}}
     github:
         type: npm-registry
         url: https://npm.pkg.github.com
