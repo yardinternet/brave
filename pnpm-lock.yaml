@@ -23,7 +23,7 @@ importers:
     devDependencies:
       '@yardinternet/eslint-config':
         specifier: ^1.3.3
-        version: 1.3.3(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.70.1(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(esbuild@0.28.2)(eslint-plugin-import@2.32.0)(eslint@10.11.0(jiti@1.21.7))(lightningcss@1.33.0)(postcss@8.5.29)(prettier@3.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.15.0(typescript@6.0.3))(typescript@6.0.3)(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))
+        version: 1.3.3(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.70.1(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(esbuild@0.28.2)(eslint-plugin-import@2.32.0)(eslint@10.11.0(jiti@1.21.7))(lightningcss@1.33.0)(postcss@8.5.29)(prettier@3.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.15.0(typescript@6.0.3))(typescript@6.0.3)(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))
       '@yardinternet/prettier-config':
         specifier: ^2.1.1
         version: 2.1.1
@@ -32,16 +32,16 @@ importers:
         version: 1.1.10(typescript@6.0.3)
       '@yardinternet/toolkit':
         specifier: ^3.0.9
-        version: 3.0.9(@microsoft/api-extractor@7.59.0(@types/node@26.6.4))(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.70.1(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(esbuild@0.28.2)(eslint-plugin-import@2.32.0)(jiti@1.21.7)(lightningcss@1.33.0)(optionator@0.9.4)(postcss@8.5.29)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rolldown@1.2.12)(rollup@4.62.5)(typescript@6.0.3)(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(webpack@5.108.4(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29))
+        version: 3.0.9(@microsoft/api-extractor@7.59.0(@types/node@26.6.4))(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.70.1(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(esbuild@0.28.2)(eslint-plugin-import@2.32.0)(jiti@1.21.7)(lightningcss@1.33.0)(optionator@0.9.4)(postcss@8.5.29)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rolldown@1.2.12)(rollup@4.62.5)(typescript@6.0.3)(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(webpack@5.108.4(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29))
       '@yardinternet/vite-config':
         specifier: ^2.0.7
-        version: 2.0.7(@microsoft/api-extractor@7.59.0(@types/node@26.6.4))(esbuild@0.28.2)(eslint@10.11.0(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.29)(rolldown@1.2.12)(rollup@4.62.5)(stylelint@17.15.0(typescript@6.0.3))(typescript@6.0.3)(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(webpack@5.108.4(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29))
+        version: 2.0.7(@microsoft/api-extractor@7.59.0(@types/node@26.6.4))(esbuild@0.28.2)(eslint@10.11.0(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.29)(rolldown@1.2.12)(rollup@4.62.5)(stylelint@17.15.0(typescript@6.0.3))(typescript@6.0.3)(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(webpack@5.108.4(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29))
       tailwindcss:
         specifier: ^4.3.2
         version: 4.3.3
       vite:
-        specifier: ^8.1.3
-        version: 8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)
+        specifier: ^8.3.3
+        version: 8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)
 
 packages:
 
@@ -1032,6 +1032,9 @@ packages:
   '@types/mousetrap@1.6.15':
     resolution: {integrity: sha512-qL0hyIMNPow317QWW/63RvL1x5MVMV+Ru3NaY9f/CuEpCqrmb7WeuK2071ZY5hczOnm38qExWM2i2WtkXLSqFw==}
 
+  '@types/node@26.6.3':
+    resolution: {integrity: sha512-dsqMQQoeTLqu9wynDD00q573mNzso3IdQOAfHRJqLCcmCFPoGo9A1bDpUcv/9tnKpErQWv9uKeGfl37EIS02Yg==}
+
   '@types/node@26.6.4':
     resolution: {integrity: sha512-ldVPDCzj7fsaGZrLB0NuHuTvJcsNasysBAqMolr/cgxrLd1xbqxIr3XJiPnHHJUCxj5sNF1vnRj9aWnrVh5Jcg==}
 
@@ -1493,11 +1496,6 @@ packages:
 
   acorn@8.18.0:
     resolution: {integrity: sha512-lGq+9yr1/GuAWaVYIHRjvvySG5/4VfKIvC8EWxStPdcDh/Ka7FG3twP6v4d5BkravUilhIAsG4Qj83t02LWUPQ==}
-    engines: {node: '>=0.4.0'}
-    hasBin: true
-
-  acorn@8.19.0:
-    resolution: {integrity: sha512-oJlA3XiRm7Cyk6qFD2Jn8ak9B7jSy0qy00ADO3+8dpT0LSjFihQYv4C02LFCSYJV3Q37xYwwRy5m+IpIiUzqWw==}
     engines: {node: '>=0.4.0'}
     hasBin: true
 
@@ -3044,8 +3042,8 @@ packages:
   mz@2.7.0:
     resolution: {integrity: sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==}
 
-  nanoid@3.3.20:
-    resolution: {integrity: sha512-uKdg2G3GNCKQn9byYOpxbGqrT2fGO5KRt5J/8b3pok8rT6qxGWF6hxMyJiEYtAf+FVyYuD9hRaDqX5uPFYJ4ZQ==}
+  nanoid@3.3.19:
+    resolution: {integrity: sha512-Y2tUNy4ouw6tq5oDSKeQYGOyhkUBhNOcGV/02KC+6kd9eDGqdZd++mjMiIDilrBYvjEnCYvVtsuHCuP+okSfug==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
@@ -3978,8 +3976,8 @@ packages:
     peerDependencies:
       vite: ^6.0.0 || ^7.0.0 || ^8.0.0
 
-  vite@8.3.1:
-    resolution: {integrity: sha512-/bvH9E9tmCXRGp2uXY3WbOldqpTwFkbha/8ANaEQ6VkxhH60KyqLwgZq6lG2y+4uT55x9+9eUHMpQ7uGnOCKjA==}
+  vite@8.3.3:
+    resolution: {integrity: sha512-cTAldKPImjg6c+gk48U19POPn3GCBzZwpdsN8ZMEEcbpes+6/wvfqUd0C2y3qYY4wsj8PwgFwrZ/1jBPVttMSg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -4764,10 +4762,10 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.62.5':
     optional: true
 
-  '@roots/vite-plugin@2.2.0(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(webpack@5.108.4(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29))':
+  '@roots/vite-plugin@2.2.0(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(webpack@5.108.4(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29))':
     dependencies:
       '@wordpress/dependency-extraction-webpack-plugin': 6.53.0(webpack@5.108.4(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29))
-      vite: 8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)
+      vite: 8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)
     transitivePeerDependencies:
       - webpack
 
@@ -4897,12 +4895,12 @@ snapshots:
       '@tailwindcss/oxide-win32-arm64-msvc': 4.3.3
       '@tailwindcss/oxide-win32-x64-msvc': 4.3.3
 
-  '@tailwindcss/vite@4.3.3(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))':
+  '@tailwindcss/vite@4.3.3(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))':
     dependencies:
       '@tailwindcss/node': 4.3.3
       '@tailwindcss/oxide': 4.3.3
       tailwindcss: 4.3.3
-      vite: 8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)
+      vite: 8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)
 
   '@tannin/compile@1.1.0':
     dependencies:
@@ -4937,9 +4935,14 @@ snapshots:
 
   '@types/mousetrap@1.6.15': {}
 
+  '@types/node@26.6.3':
+    dependencies:
+      undici-types: 8.9.0
+
   '@types/node@26.6.4':
     dependencies:
       undici-types: 8.9.0
+    optional: true
 
   '@types/parse-json@4.0.2': {}
 
@@ -5118,10 +5121,10 @@ snapshots:
   '@unrs/resolver-binding-win32-x64-msvc@1.12.2':
     optional: true
 
-  '@vitejs/plugin-react@6.1.1(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))':
+  '@vitejs/plugin-react@6.1.1(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))':
     dependencies:
       '@rolldown/pluginutils': 1.0.1
-      vite: 8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)
+      vite: 8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)
 
   '@volar/language-core@2.4.28':
     dependencies:
@@ -5258,12 +5261,12 @@ snapshots:
 
   '@wordpress/escape-html@3.56.0': {}
 
-  '@wordpress/eslint-plugin@26.0.0(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.70.1(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(esbuild@0.28.2)(eslint@10.11.0(jiti@1.21.7))(lightningcss@1.33.0)(postcss@8.5.29)(prettier@3.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.15.0(typescript@6.0.3))(typescript@6.0.3)(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))':
+  '@wordpress/eslint-plugin@26.0.0(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.70.1(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(esbuild@0.28.2)(eslint@10.11.0(jiti@1.21.7))(lightningcss@1.33.0)(postcss@8.5.29)(prettier@3.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.15.0(typescript@6.0.3))(typescript@6.0.3)(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))':
     dependencies:
       '@eslint-community/eslint-plugin-eslint-comments': 4.8.1(eslint@10.11.0(jiti@1.21.7))
       '@eslint/compat': 2.1.1(eslint@10.11.0(jiti@1.21.7))
       '@wordpress/prettier-config': 4.56.0(prettier@3.8.1)
-      '@wordpress/theme': 2.2.0(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.15.0(typescript@6.0.3))(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))
+      '@wordpress/theme': 2.2.0(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.15.0(typescript@6.0.3))(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))
       cosmiconfig: 7.1.0
       eslint: 10.11.0(jiti@1.21.7)
       eslint-config-prettier: 10.1.8(eslint@10.11.0(jiti@1.21.7))
@@ -5300,12 +5303,12 @@ snapshots:
       - supports-color
       - vite
 
-  '@wordpress/eslint-plugin@26.0.0(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.70.1(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(esbuild@0.28.2)(eslint@10.11.0(jiti@1.21.7))(lightningcss@1.33.0)(postcss@8.5.29)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.15.0(typescript@6.0.3))(typescript@6.0.3)(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(wp-prettier@3.9.6)':
+  '@wordpress/eslint-plugin@26.0.0(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.70.1(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(esbuild@0.28.2)(eslint@10.11.0(jiti@1.21.7))(lightningcss@1.33.0)(postcss@8.5.29)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.15.0(typescript@6.0.3))(typescript@6.0.3)(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(wp-prettier@3.9.6)':
     dependencies:
       '@eslint-community/eslint-plugin-eslint-comments': 4.8.1(eslint@10.11.0(jiti@1.21.7))
       '@eslint/compat': 2.1.1(eslint@10.11.0(jiti@1.21.7))
       '@wordpress/prettier-config': 4.56.0(wp-prettier@3.9.6)
-      '@wordpress/theme': 2.2.0(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.15.0(typescript@6.0.3))(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))
+      '@wordpress/theme': 2.2.0(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.15.0(typescript@6.0.3))(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))
       cosmiconfig: 7.1.0
       eslint: 10.11.0(jiti@1.21.7)
       eslint-config-prettier: 10.1.8(eslint@10.11.0(jiti@1.21.7))
@@ -5375,7 +5378,7 @@ snapshots:
 
   '@wordpress/style-runtime@0.12.0': {}
 
-  '@wordpress/theme@2.2.0(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.15.0(typescript@6.0.3))(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))':
+  '@wordpress/theme@2.2.0(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.15.0(typescript@6.0.3))(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))':
     dependencies:
       '@wordpress/compose': 8.9.0(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@wordpress/deprecated': 4.56.0
@@ -5392,7 +5395,7 @@ snapshots:
       lightningcss: 1.33.0
       postcss: 8.5.29
       stylelint: 17.15.0(typescript@6.0.3)
-      vite: 8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)
+      vite: 8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)
     transitivePeerDependencies:
       - '@types/react-dom'
 
@@ -5418,9 +5421,9 @@ snapshots:
     optionalDependencies:
       '@rollup/rollup-linux-arm64-gnu': 4.63.5
 
-  '@yardinternet/eslint-config@1.3.3(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.70.1(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(esbuild@0.28.2)(eslint-plugin-import@2.32.0)(eslint@10.11.0(jiti@1.21.7))(lightningcss@1.33.0)(postcss@8.5.29)(prettier@3.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.15.0(typescript@6.0.3))(typescript@6.0.3)(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))':
+  '@yardinternet/eslint-config@1.3.3(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.70.1(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(esbuild@0.28.2)(eslint-plugin-import@2.32.0)(eslint@10.11.0(jiti@1.21.7))(lightningcss@1.33.0)(postcss@8.5.29)(prettier@3.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.15.0(typescript@6.0.3))(typescript@6.0.3)(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))':
     dependencies:
-      '@wordpress/eslint-plugin': 26.0.0(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.70.1(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(esbuild@0.28.2)(eslint@10.11.0(jiti@1.21.7))(lightningcss@1.33.0)(postcss@8.5.29)(prettier@3.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.15.0(typescript@6.0.3))(typescript@6.0.3)(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))
+      '@wordpress/eslint-plugin': 26.0.0(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.70.1(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(esbuild@0.28.2)(eslint@10.11.0(jiti@1.21.7))(lightningcss@1.33.0)(postcss@8.5.29)(prettier@3.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.15.0(typescript@6.0.3))(typescript@6.0.3)(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))
       eslint-import-resolver-alias: 1.1.2(eslint-plugin-import@2.32.0)
       globals: 17.12.0
       typescript-eslint: 8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3)
@@ -5446,9 +5449,9 @@ snapshots:
       - typescript
       - vite
 
-  '@yardinternet/eslint-config@1.3.3(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.70.1(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(esbuild@0.28.2)(eslint-plugin-import@2.32.0)(eslint@10.11.0(jiti@1.21.7))(lightningcss@1.33.0)(postcss@8.5.29)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.15.0(typescript@6.0.3))(typescript@6.0.3)(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(wp-prettier@3.9.6)':
+  '@yardinternet/eslint-config@1.3.3(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.70.1(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(esbuild@0.28.2)(eslint-plugin-import@2.32.0)(eslint@10.11.0(jiti@1.21.7))(lightningcss@1.33.0)(postcss@8.5.29)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.15.0(typescript@6.0.3))(typescript@6.0.3)(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(wp-prettier@3.9.6)':
     dependencies:
-      '@wordpress/eslint-plugin': 26.0.0(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.70.1(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(esbuild@0.28.2)(eslint@10.11.0(jiti@1.21.7))(lightningcss@1.33.0)(postcss@8.5.29)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.15.0(typescript@6.0.3))(typescript@6.0.3)(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(wp-prettier@3.9.6)
+      '@wordpress/eslint-plugin': 26.0.0(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.70.1(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(esbuild@0.28.2)(eslint@10.11.0(jiti@1.21.7))(lightningcss@1.33.0)(postcss@8.5.29)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.15.0(typescript@6.0.3))(typescript@6.0.3)(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(wp-prettier@3.9.6)
       eslint-import-resolver-alias: 1.1.2(eslint-plugin-import@2.32.0)
       globals: 17.12.0
       typescript-eslint: 8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3)
@@ -5521,11 +5524,11 @@ snapshots:
       - supports-color
       - typescript
 
-  '@yardinternet/toolkit@3.0.9(@microsoft/api-extractor@7.59.0(@types/node@26.6.4))(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.70.1(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(esbuild@0.28.2)(eslint-plugin-import@2.32.0)(jiti@1.21.7)(lightningcss@1.33.0)(optionator@0.9.4)(postcss@8.5.29)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rolldown@1.2.12)(rollup@4.62.5)(typescript@6.0.3)(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(webpack@5.108.4(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29))':
+  '@yardinternet/toolkit@3.0.9(@microsoft/api-extractor@7.59.0(@types/node@26.6.4))(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.70.1(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(esbuild@0.28.2)(eslint-plugin-import@2.32.0)(jiti@1.21.7)(lightningcss@1.33.0)(optionator@0.9.4)(postcss@8.5.29)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rolldown@1.2.12)(rollup@4.62.5)(typescript@6.0.3)(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(webpack@5.108.4(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29))':
     dependencies:
       '@shufo/prettier-plugin-blade': 1.16.2
       '@shufo/tailwindcss-class-sorter': 3.0.1
-      '@wordpress/eslint-plugin': 26.0.0(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.70.1(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(esbuild@0.28.2)(eslint@10.11.0(jiti@1.21.7))(lightningcss@1.33.0)(postcss@8.5.29)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.15.0(typescript@6.0.3))(typescript@6.0.3)(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(wp-prettier@3.9.6)
+      '@wordpress/eslint-plugin': 26.0.0(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.70.1(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(esbuild@0.28.2)(eslint@10.11.0(jiti@1.21.7))(lightningcss@1.33.0)(postcss@8.5.29)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.15.0(typescript@6.0.3))(typescript@6.0.3)(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(wp-prettier@3.9.6)
       '@wordpress/prettier-config': 4.56.0(wp-prettier@3.9.6)
       '@yardinternet/shared-utils': 1.0.1
       eslint: 10.11.0(jiti@1.21.7)
@@ -5540,10 +5543,10 @@ snapshots:
       stylelint-config-recommended: 18.0.0(stylelint@17.15.0(typescript@6.0.3))
       typescript-eslint: 8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3)
     optionalDependencies:
-      '@yardinternet/eslint-config': 1.3.3(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.70.1(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(esbuild@0.28.2)(eslint-plugin-import@2.32.0)(eslint@10.11.0(jiti@1.21.7))(lightningcss@1.33.0)(postcss@8.5.29)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.15.0(typescript@6.0.3))(typescript@6.0.3)(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(wp-prettier@3.9.6)
+      '@yardinternet/eslint-config': 1.3.3(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(@typescript-eslint/eslint-plugin@8.70.1(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(esbuild@0.28.2)(eslint-plugin-import@2.32.0)(eslint@10.11.0(jiti@1.21.7))(lightningcss@1.33.0)(postcss@8.5.29)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(stylelint@17.15.0(typescript@6.0.3))(typescript@6.0.3)(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(wp-prettier@3.9.6)
       '@yardinternet/prettier-config': 2.1.1
       '@yardinternet/stylelint-config': 1.1.10(typescript@6.0.3)
-      '@yardinternet/vite-config': 2.0.7(@microsoft/api-extractor@7.59.0(@types/node@26.6.4))(esbuild@0.28.2)(eslint@10.11.0(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.29)(rolldown@1.2.12)(rollup@4.62.5)(stylelint@17.15.0(typescript@6.0.3))(typescript@6.0.3)(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(webpack@5.108.4(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29))
+      '@yardinternet/vite-config': 2.0.7(@microsoft/api-extractor@7.59.0(@types/node@26.6.4))(esbuild@0.28.2)(eslint@10.11.0(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.29)(rolldown@1.2.12)(rollup@4.62.5)(stylelint@17.15.0(typescript@6.0.3))(typescript@6.0.3)(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(webpack@5.108.4(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29))
     transitivePeerDependencies:
       - '@biomejs/biome'
       - '@ianvs/prettier-plugin-sort-imports'
@@ -5596,19 +5599,19 @@ snapshots:
       - webpack
       - yaml
 
-  '@yardinternet/vite-config@2.0.7(@microsoft/api-extractor@7.59.0(@types/node@26.6.4))(esbuild@0.28.2)(eslint@10.11.0(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.29)(rolldown@1.2.12)(rollup@4.62.5)(stylelint@17.15.0(typescript@6.0.3))(typescript@6.0.3)(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(webpack@5.108.4(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29))':
+  '@yardinternet/vite-config@2.0.7(@microsoft/api-extractor@7.59.0(@types/node@26.6.4))(esbuild@0.28.2)(eslint@10.11.0(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(postcss@8.5.29)(rolldown@1.2.12)(rollup@4.62.5)(stylelint@17.15.0(typescript@6.0.3))(typescript@6.0.3)(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(webpack@5.108.4(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29))':
     dependencies:
-      '@roots/vite-plugin': 2.2.0(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(webpack@5.108.4(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29))
-      '@tailwindcss/vite': 4.3.3(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))
-      '@vitejs/plugin-react': 6.1.1(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))
+      '@roots/vite-plugin': 2.2.0(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(webpack@5.108.4(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29))
+      '@tailwindcss/vite': 4.3.3(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))
+      '@vitejs/plugin-react': 6.1.1(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))
       '@yardinternet/shared-utils': 1.0.1
-      '@yardinternet/vite-plugin-gutenberg-blocks': 2.7.1(typescript@6.0.3)(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))
-      laravel-vite-plugin: 3.2.0(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))
+      '@yardinternet/vite-plugin-gutenberg-blocks': 2.7.1(typescript@6.0.3)(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))
+      laravel-vite-plugin: 3.2.0(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))
       postcss-prefixwrap: 1.58.0(postcss@8.5.29)
-      vite: 8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)
-      vite-plugin-checker: 0.14.5(eslint@10.11.0(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(stylelint@17.15.0(typescript@6.0.3))(typescript@6.0.3)(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))
-      vite-plugin-dts: 5.1.1(@microsoft/api-extractor@7.59.0(@types/node@26.6.4))(esbuild@0.28.2)(rolldown@1.2.12)(rollup@4.62.5)(typescript@6.0.3)(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(webpack@5.108.4(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29))
-      vite-plugin-externals: 0.6.2(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))
+      vite: 8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)
+      vite-plugin-checker: 0.14.5(eslint@10.11.0(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(stylelint@17.15.0(typescript@6.0.3))(typescript@6.0.3)(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))
+      vite-plugin-dts: 5.1.1(@microsoft/api-extractor@7.59.0(@types/node@26.6.4))(esbuild@0.28.2)(rolldown@1.2.12)(rollup@4.62.5)(typescript@6.0.3)(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(webpack@5.108.4(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29))
+      vite-plugin-externals: 0.6.2(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))
     optionalDependencies:
       '@rollup/rollup-linux-x64-gnu': 4.63.5
     transitivePeerDependencies:
@@ -5634,14 +5637,14 @@ snapshots:
       - vue-tsc
       - webpack
 
-  '@yardinternet/vite-plugin-gutenberg-blocks@2.7.1(typescript@6.0.3)(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))':
+  '@yardinternet/vite-plugin-gutenberg-blocks@2.7.1(typescript@6.0.3)(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))':
     dependencies:
       chalk: 5.6.2
       esbuild: 0.28.2
       rollup: 4.62.5
       typescript: 6.0.3
-      vite: 8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)
-      vite-plugin-static-copy: 4.1.1(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))
+      vite: 8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)
+      vite-plugin-static-copy: 4.1.1(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))
     optionalDependencies:
       sass: 1.103.1
 
@@ -5649,17 +5652,15 @@ snapshots:
 
   accordion-js@3.4.1: {}
 
-  acorn-import-phases@1.0.4(acorn@8.19.0):
+  acorn-import-phases@1.0.4(acorn@8.18.0):
     dependencies:
-      acorn: 8.19.0
+      acorn: 8.18.0
 
   acorn-jsx@5.3.2(acorn@8.18.0):
     dependencies:
       acorn: 8.18.0
 
   acorn@8.18.0: {}
-
-  acorn@8.19.0: {}
 
   aigle-core@1.0.0: {}
 
@@ -6352,7 +6353,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.14.0(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(eslint-import-resolver-node@0.3.10)(eslint-import-resolver-typescript@4.4.5(eslint-plugin-import@2.32.0)(eslint@10.11.0(jiti@1.21.7)))(eslint@10.11.0(jiti@1.21.7)):
+  eslint-module-utils@2.14.0(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(eslint-import-resolver-node@0.3.10)(eslint-import-resolver-typescript@4.4.5)(eslint@10.11.0(jiti@1.21.7)):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -6374,7 +6375,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 10.11.0(jiti@1.21.7)
       eslint-import-resolver-node: 0.3.10
-      eslint-module-utils: 2.14.0(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(eslint-import-resolver-node@0.3.10)(eslint-import-resolver-typescript@4.4.5(eslint-plugin-import@2.32.0)(eslint@10.11.0(jiti@1.21.7)))(eslint@10.11.0(jiti@1.21.7))
+      eslint-module-utils: 2.14.0(@typescript-eslint/parser@8.70.1(eslint@10.11.0(jiti@1.21.7))(typescript@6.0.3))(eslint-import-resolver-node@0.3.10)(eslint-import-resolver-typescript@4.4.5)(eslint@10.11.0(jiti@1.21.7))
       hasown: 2.0.4
       is-core-module: 2.17.0
       is-glob: 4.0.3
@@ -7012,7 +7013,7 @@ snapshots:
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 26.6.4
+      '@types/node': 26.6.3
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
@@ -7086,11 +7087,11 @@ snapshots:
     dependencies:
       language-subtag-registry: 0.3.23
 
-  laravel-vite-plugin@3.2.0(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)):
+  laravel-vite-plugin@3.2.0(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)):
     dependencies:
       picocolors: 1.1.1
       tinyglobby: 0.2.17
-      vite: 8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)
+      vite: 8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)
       vite-plugin-full-reload: 1.2.0
 
   levn@0.4.1:
@@ -7313,7 +7314,7 @@ snapshots:
       object-assign: 4.1.1
       thenify-all: 1.6.0
 
-  nanoid@3.3.20: {}
+  nanoid@3.3.19: {}
 
   napi-postinstall@0.3.4: {}
 
@@ -7503,28 +7504,28 @@ snapshots:
 
   possible-typed-array-names@1.1.0: {}
 
-  postcss-import@15.1.0(postcss@8.5.29):
+  postcss-import@15.1.0(postcss@8.5.28):
     dependencies:
-      postcss: 8.5.29
+      postcss: 8.5.28
       postcss-value-parser: 4.2.0
       read-cache: 1.0.2
       resolve: 1.22.12
 
-  postcss-js@4.1.0(postcss@8.5.29):
+  postcss-js@4.1.0(postcss@8.5.28):
     dependencies:
       camelcase-css: 2.0.1
-      postcss: 8.5.29
+      postcss: 8.5.28
 
-  postcss-load-config@6.0.1(jiti@1.21.7)(postcss@8.5.29):
+  postcss-load-config@6.0.1(jiti@1.21.7)(postcss@8.5.28):
     dependencies:
       lilconfig: 3.1.3
     optionalDependencies:
       jiti: 1.21.7
-      postcss: 8.5.29
+      postcss: 8.5.28
 
-  postcss-nested@6.2.0(postcss@8.5.29):
+  postcss-nested@6.2.0(postcss@8.5.28):
     dependencies:
-      postcss: 8.5.29
+      postcss: 8.5.28
       postcss-selector-parser: 6.1.4
 
   postcss-prefixwrap@1.58.0(postcss@8.5.29):
@@ -7545,21 +7546,21 @@ snapshots:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
-  postcss-sorting@8.0.2(postcss@8.5.29):
+  postcss-sorting@8.0.2(postcss@8.5.28):
     dependencies:
-      postcss: 8.5.29
+      postcss: 8.5.28
 
   postcss-value-parser@4.2.0: {}
 
   postcss@8.5.28:
     dependencies:
-      nanoid: 3.3.20
+      nanoid: 3.3.19
       picocolors: 1.1.1
       source-map-js: 1.2.2
 
   postcss@8.5.29:
     dependencies:
-      nanoid: 3.3.20
+      nanoid: 3.3.19
       picocolors: 1.1.1
       source-map-js: 1.2.2
 
@@ -7991,8 +7992,8 @@ snapshots:
 
   stylelint-order@6.0.4(stylelint@17.15.0(typescript@6.0.3)):
     dependencies:
-      postcss: 8.5.29
-      postcss-sorting: 8.0.2(postcss@8.5.29)
+      postcss: 8.5.28
+      postcss-sorting: 8.0.2(postcss@8.5.28)
       stylelint: 17.15.0(typescript@6.0.3)
 
   stylelint@17.15.0(typescript@6.0.3):
@@ -8095,11 +8096,11 @@ snapshots:
       normalize-path: 3.0.0
       object-hash: 3.0.0
       picocolors: 1.1.1
-      postcss: 8.5.29
-      postcss-import: 15.1.0(postcss@8.5.29)
-      postcss-js: 4.1.0(postcss@8.5.29)
-      postcss-load-config: 6.0.1(jiti@1.21.7)(postcss@8.5.29)
-      postcss-nested: 6.2.0(postcss@8.5.29)
+      postcss: 8.5.28
+      postcss-import: 15.1.0(postcss@8.5.28)
+      postcss-js: 4.1.0(postcss@8.5.28)
+      postcss-load-config: 6.0.1(jiti@1.21.7)(postcss@8.5.28)
+      postcss-nested: 6.2.0(postcss@8.5.28)
       postcss-selector-parser: 6.1.4
       resolve: 1.22.12
       sucrase: 3.35.1
@@ -8118,7 +8119,7 @@ snapshots:
   terser@5.51.2:
     dependencies:
       '@jridgewell/source-map': 0.3.11
-      acorn: 8.19.0
+      acorn: 8.18.0
       commander: 2.20.3
       source-map-support: 0.5.21
 
@@ -8227,7 +8228,7 @@ snapshots:
 
   universalify@2.0.1: {}
 
-  unplugin-dts@1.1.1(@microsoft/api-extractor@7.59.0(@types/node@26.6.4))(esbuild@0.28.2)(rolldown@1.2.12)(rollup@4.62.5)(typescript@6.0.3)(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(webpack@5.108.4(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29)):
+  unplugin-dts@1.1.1(@microsoft/api-extractor@7.59.0(@types/node@26.6.4))(esbuild@0.28.2)(rolldown@1.2.12)(rollup@4.62.5)(typescript@6.0.3)(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(webpack@5.108.4(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29)):
     dependencies:
       '@rollup/pluginutils': 5.4.0(rollup@4.62.5)
       '@volar/typescript': 2.4.28
@@ -8244,7 +8245,7 @@ snapshots:
       esbuild: 0.28.2
       rolldown: 1.2.12
       rollup: 4.62.5
-      vite: 8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)
+      vite: 8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)
       webpack: 5.108.4(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29)
     transitivePeerDependencies:
       - supports-color
@@ -8317,7 +8318,7 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  vite-plugin-checker@0.14.5(eslint@10.11.0(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(stylelint@17.15.0(typescript@6.0.3))(typescript@6.0.3)(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)):
+  vite-plugin-checker@0.14.5(eslint@10.11.0(jiti@1.21.7))(meow@14.1.0)(optionator@0.9.4)(stylelint@17.15.0(typescript@6.0.3))(typescript@6.0.3)(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)):
     dependencies:
       '@babel/code-frame': 7.29.7
       chokidar: 5.0.0
@@ -8326,7 +8327,7 @@ snapshots:
       picomatch: 4.0.7
       proper-lockfile: 4.1.2
       tiny-invariant: 1.3.3
-      vite: 8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)
+      vite: 8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)
     optionalDependencies:
       eslint: 10.11.0(jiti@1.21.7)
       meow: 14.1.0
@@ -8334,13 +8335,13 @@ snapshots:
       stylelint: 17.15.0(typescript@6.0.3)
       typescript: 6.0.3
 
-  vite-plugin-dts@5.1.1(@microsoft/api-extractor@7.59.0(@types/node@26.6.4))(esbuild@0.28.2)(rolldown@1.2.12)(rollup@4.62.5)(typescript@6.0.3)(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(webpack@5.108.4(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29)):
+  vite-plugin-dts@5.1.1(@microsoft/api-extractor@7.59.0(@types/node@26.6.4))(esbuild@0.28.2)(rolldown@1.2.12)(rollup@4.62.5)(typescript@6.0.3)(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(webpack@5.108.4(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29)):
     dependencies:
-      unplugin-dts: 1.1.1(@microsoft/api-extractor@7.59.0(@types/node@26.6.4))(esbuild@0.28.2)(rolldown@1.2.12)(rollup@4.62.5)(typescript@6.0.3)(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(webpack@5.108.4(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29))
+      unplugin-dts: 1.1.1(@microsoft/api-extractor@7.59.0(@types/node@26.6.4))(esbuild@0.28.2)(rolldown@1.2.12)(rollup@4.62.5)(typescript@6.0.3)(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2))(webpack@5.108.4(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.29))
     optionalDependencies:
       '@microsoft/api-extractor': 7.59.0(@types/node@26.6.4)
       rollup: 4.62.5
-      vite: 8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)
+      vite: 8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)
     transitivePeerDependencies:
       - '@rspack/core'
       - '@vue/language-core'
@@ -8350,32 +8351,32 @@ snapshots:
       - typescript
       - webpack
 
-  vite-plugin-externals@0.6.2(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)):
+  vite-plugin-externals@0.6.2(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)):
     dependencies:
       acorn: 8.18.0
       es-module-lexer: 0.4.1
       fs-extra: 10.1.0
       magic-string: 0.25.9
-      vite: 8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)
+      vite: 8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)
 
   vite-plugin-full-reload@1.2.0:
     dependencies:
       picocolors: 1.1.1
       picomatch: 2.3.2
 
-  vite-plugin-static-copy@4.1.1(vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)):
+  vite-plugin-static-copy@4.1.1(vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)):
     dependencies:
       chokidar: 3.6.0
       p-map: 7.0.6
       picocolors: 1.1.1
       tinyglobby: 0.2.17
-      vite: 8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)
+      vite: 8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2)
 
-  vite@8.3.1(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2):
+  vite@8.3.3(@types/node@26.6.4)(esbuild@0.28.2)(jiti@1.21.7)(sass@1.103.1)(terser@5.51.2):
     dependencies:
       lightningcss: 1.33.0
       picomatch: 4.0.7
-      postcss: 8.5.29
+      postcss: 8.5.28
       rolldown: 1.2.12
       tinyglobby: 0.2.17
     optionalDependencies:
@@ -8407,8 +8408,8 @@ snapshots:
       '@webassemblyjs/ast': 1.14.1
       '@webassemblyjs/wasm-edit': 1.14.1
       '@webassemblyjs/wasm-parser': 1.14.1
-      acorn: 8.19.0
-      acorn-import-phases: 1.0.4(acorn@8.19.0)
+      acorn: 8.18.0
+      acorn-import-phases: 1.0.4(acorn@8.18.0)
       browserslist: 4.29.3
       chrome-trace-event: 1.0.4
       enhanced-resolve: 5.26.0
