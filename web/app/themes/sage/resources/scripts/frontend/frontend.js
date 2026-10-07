@@ -10,6 +10,7 @@ import {
 	DialogManager,
 	FacetWPDateRange,
 	FocusStyle,
+	Headroom,
 	WebShareApi,
 } from '@yardinternet/brave-frontend-kit';
 
@@ -25,5 +26,6 @@ window.addEventListener( 'DOMContentLoaded', () => {
 	new DialogManager();
 	new FacetWPDateRange();
 	new FocusStyle();
+	new Headroom();
 	new WebShareApi();
 } );
