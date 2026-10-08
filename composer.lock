@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9e8a6ee858f3e1857b62a0e0770b34f0",
+    "content-hash": "d573f911df71035c556c7cdb28a7f47a",
     "packages": [
         {
             "name": "bonny/wordpress-simple-history",
@@ -12587,16 +12587,16 @@
         },
         {
             "name": "yard/brave-hooks",
-            "version": "v3.2.0",
+            "version": "v3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yardinternet/brave-hooks.git",
-                "reference": "8c07c72f94a12e3c814916e0be87be8be4e8297a"
+                "reference": "d56ca3848a710e58ad9e35f5a393b90e7b601ae6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yardinternet/brave-hooks/zipball/8c07c72f94a12e3c814916e0be87be8be4e8297a",
-                "reference": "8c07c72f94a12e3c814916e0be87be8be4e8297a",
+                "url": "https://api.github.com/repos/yardinternet/brave-hooks/zipball/d56ca3848a710e58ad9e35f5a393b90e7b601ae6",
+                "reference": "d56ca3848a710e58ad9e35f5a393b90e7b601ae6",
                 "shasum": ""
             },
             "require": {
@@ -12639,7 +12639,7 @@
                 "issues": "https://github.com/yardinternet/brave-hooks/issues",
                 "source": "https://github.com/yardinternet/brave-hooks"
             },
-            "time": "2026-10-05T07:36:52+00:00"
+            "time": "2026-10-08T11:16:06+00:00"
         },
         {
             "name": "yard/config-expander",
