@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d573f911df71035c556c7cdb28a7f47a",
+    "content-hash": "043d4b9b56284a2fc238370d73e88213",
     "packages": [
         {
             "name": "bonny/wordpress-simple-history",
@@ -6886,16 +6886,16 @@
         },
         {
             "name": "sentry/sentry",
-            "version": "4.33.2",
+            "version": "4.34.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getsentry/sentry-php.git",
-                "reference": "8a0556ccb6cdcdce81f9af4ca8714c22cff2e003"
+                "reference": "3d8f4e56becb10ede64e2ac6f8077f6434715461"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getsentry/sentry-php/zipball/8a0556ccb6cdcdce81f9af4ca8714c22cff2e003",
-                "reference": "8a0556ccb6cdcdce81f9af4ca8714c22cff2e003",
+                "url": "https://api.github.com/repos/getsentry/sentry-php/zipball/3d8f4e56becb10ede64e2ac6f8077f6434715461",
+                "reference": "3d8f4e56becb10ede64e2ac6f8077f6434715461",
                 "shasum": ""
             },
             "require": {
@@ -6924,7 +6924,7 @@
                 "open-telemetry/gen-otlp-protobuf": "^1.2.1",
                 "open-telemetry/sdk": "^1.1",
                 "open-telemetry/sem-conv": "^1.27",
-                "phpstan/phpstan": "^1.3",
+                "phpstan/phpstan": "^2.2",
                 "phpunit/phpunit": "^8.5.52|^9.6.34",
                 "spiral/roadrunner-http": "^3.6",
                 "spiral/roadrunner-worker": "^3.6"
@@ -6967,7 +6967,7 @@
             ],
             "support": {
                 "issues": "https://github.com/getsentry/sentry-php/issues",
-                "source": "https://github.com/getsentry/sentry-php/tree/4.33.2"
+                "source": "https://github.com/getsentry/sentry-php/tree/4.34.0"
             },
             "funding": [
                 {
@@ -6979,7 +6979,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2026-10-07T12:48:05+00:00"
+            "time": "2026-10-08T11:25:58+00:00"
         },
         {
             "name": "sentry/sentry-laravel",
