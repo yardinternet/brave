@@ -87,7 +87,7 @@
 		"johnbillion/query-monitor": "^3.20",
 		"yard/brave-private-setup": "^2.0",
 		"yard/brave-scaffold": "^4.0",
-		"yard/lando-brave": "^1.0",
+		"yard/lando-brave": "^2.0",
 		"yard/php-cs-fixer-rules": "^1.0"
 	},
 	"autoload": {
