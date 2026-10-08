@@ -1,5 +1,8 @@
 name: brave
 
+config:
+  php: '8.5'
+
 proxy:
   appserver_nginx:
     - brave.lndo.site
