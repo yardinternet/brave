@@ -68,7 +68,7 @@
 		"yard/brave-acf": "^2.0",
 		"yard/brave-components": "^2.0",
 		"yard/brave-csp": "^1.0",
-		"yard/brave-hooks": "^3.0",
+		"yard/brave-hooks": "^3.3",
 		"yard/config-expander": "^1.0",
 		"yard/data": "^2.0",
 		"yard/multisite-url-fixer": "^1.0",
