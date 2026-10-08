@@ -40,4 +40,4 @@ Ignition::make()
 	->applicationPath(dirname(__DIR__, 2))
 	->setEditor(env('IGNITION_EDITOR') ?? 'phpstorm')
 	->setTheme(env('IGNITION_THEME') ?? 'auto')
-	->register(E_ALL & ~(E_DEPRECATED | E_USER_DEPRECATED | E_NOTICE | E_USER_NOTICE | E_WARNING | E_USER_WARNING));
+	->register(env('ERROR_ALWAYS_IGNITION') ? null : E_ALL & ~(E_DEPRECATED | E_USER_DEPRECATED | E_NOTICE | E_USER_NOTICE | E_WARNING | E_USER_WARNING));
