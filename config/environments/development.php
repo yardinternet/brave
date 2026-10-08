@@ -19,8 +19,6 @@ Config::define('SCRIPT_DEBUG', env('SCRIPT_DEBUG') ?? true);
 Config::define('DISALLOW_INDEXING', true);
 Config::define('WP_DEVELOPMENT_MODE', 'theme'); // @see https://make.wordpress.org/core/2023/07/14/configuring-development-mode-in-6-3/
 
-ini_set('display_errors', '1');
-
 // Enable plugin and theme updates and installation from the admin
 Config::define('DISALLOW_FILE_MODS', false);
 
