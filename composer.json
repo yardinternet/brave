@@ -13,7 +13,6 @@
 		"allow-plugins": {
 			"captainhook/hook-installer": true,
 			"composer/installers": true,
-			"dangoodman/composer-for-wordpress": true,
 			"roots/wordpress-core-installer": true
 		},
 		"platform": {
@@ -59,7 +58,7 @@
 		"spatie/laravel-google-fonts": "^1.4",
 		"spatie/laravel-ignition": "^2.0",
 		"vlucas/phpdotenv": "^5.5",
-		"wp-media/imagify-plugin": "^2.2",
+		"wp-plugin/imagify": "^2.2",
 		"wp-plugin/cookie-law-info": "^3.2",
 		"wp-plugin/gravity-forms-zero-spam": "^1.8",
 		"wp-plugin/relay": "^1.3",
