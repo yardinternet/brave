@@ -29,9 +29,15 @@ return [
 	 */
 	'allowedCoreBlocks' => [
 		// 'core/search',
+		'core/tabs',
+		'core/tabs-list',
+		'core/tab-panel',
+		'core/tabs-panel',
 	],
 	'excludedCoreBlocks' => [
 		// 'core/post-featured-image',
+		'yard/tabs',
+		'yard/tabs-item',
 	],
 
 	/**
