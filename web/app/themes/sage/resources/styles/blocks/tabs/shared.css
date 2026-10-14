@@ -1,75 +1,76 @@
 :root {
-	/* Tabs */
+	--tabs-bg-color: var( --color-white );
 	--tabs-block-spacing: var( --spacing-size-6 );
 	--tabs-columns: 1fr;
-	--tabs-gap-x: --spacing( 3 );
-	--tabs-gap-y: --spacing( 3 );
+	--tabs-radius: var( --radius-theme );
+	--tabs-shadow: var( --card-shadow );
 
-	/* List */
-	--tabs-list-gap-x: --spacing( 3 );
-	--tabs-list-gap-y: --spacing( 3 );
+	--tabs-list-bg-color: var( --color-primary-50 );
+	--tabs-list-gap-y: --spacing( 1 );
+	--tabs-list-padding-x: --spacing( 3 );
+	--tabs-list-padding-y: --spacing( 3 );
 	--tabs-list-width: 100%;
 
-	/* Tab */
-	--tabs-tab-bg-color-hover: var( --color-white );
-	--tabs-tab-bg-color-selected: var( --color-primary );
-	--tabs-tab-bg-color: var( --color-white );
-	--tabs-tab-border-color-hover: var( --color-primary );
-	--tabs-tab-border-color-selected: var( --color-primary );
-	--tabs-tab-border-color: var( --color-primary-100 );
-	--tabs-tab-border-width: 1px;
-	--tabs-tab-color-hover: var( --color-primary );
-	--tabs-tab-color-selected: var( --color-white );
 	--tabs-tab-color: var( --color-primary );
+	--tabs-tab-font-size: 1rem;
+	--tabs-tab-font-weight-selected: 600;
+	--tabs-tab-font-weight: 400;
 	--tabs-tab-gap-x: --spacing( 3 );
+	--tabs-tab-leading: 1.5;
 	--tabs-tab-padding-x: --spacing( 3 );
-	--tabs-tab-padding-y: --spacing( 2 );
-	--tabs-tab-radius: var( --radius-theme );
-	--tabs-tab-icon: '\f061';
+	--tabs-tab-padding-y: --spacing( 3 );
 
-	/* Panel */
-	--tabs-panel-bg-color: var( --color-white );
-	--tabs-panel-border-color: var( --color-primary-100 );
-	--tabs-panel-border-width: 1px;
+	--tabs-tab-icon-bg-color-hover: var( --color-primary );
+	--tabs-tab-icon-bg-color-selected: var( --color-primary );
+	--tabs-tab-icon-bg-color: var( --color-white );
+	--tabs-tab-icon-color-hover: var( --color-white );
+	--tabs-tab-icon-color-selected: var( --color-white );
+	--tabs-tab-icon-color: var( --color-primary );
+	--tabs-tab-icon-font-size: calc( var( --tabs-tab-icon-size ) * 0.6 );
+	--tabs-tab-icon-glyph: '\f061';
+	--tabs-tab-icon-radius: calc( var( --tabs-radius ) * 0.5 );
+	--tabs-tab-icon-size: --spacing( 6 );
+
 	--tabs-panel-padding-x: --spacing( 6 );
 	--tabs-panel-padding-y: --spacing( 6 );
-	--tabs-panel-radius: var( --radius-theme );
 
 	@variant md {
 		--tabs-columns: auto 1fr;
-		--tabs-list-width: min( calc( 100cqw / 3 ), 22.5rem);
+		--tabs-list-padding-y: calc(
+			var( --tabs-panel-padding-y ) - var( --tabs-tab-padding-y )
+		);
+		--tabs-list-width: min( calc( 100cqw / 3 ), 22.5rem );
 	}
 }
 
 .wp-block-tabs {
-	@apply @container grid grid-cols-(--tabs-columns) gap-x-(--tabs-gap-x) gap-y-(--tabs-gap-y) not-first:mt-(--tabs-block-spacing) not-last:mb-(--tabs-block-spacing);
+	@apply @container grid grid-cols-(--tabs-columns) overflow-clip rounded-(--tabs-radius) bg-(--tabs-bg-color) shadow-(--tabs-shadow) not-first:mt-(--tabs-block-spacing) not-last:mb-(--tabs-block-spacing);
 }
 
 .wp-block-tab-list {
-	@apply flex-col items-stretch gap-x-(--tabs-list-gap-x) gap-y-(--tabs-list-gap-y) w-(--tabs-list-width);
+	@apply w-(--tabs-list-width) flex-col items-stretch gap-y-(--tabs-list-gap-y) bg-(--tabs-list-bg-color) px-(--tabs-list-padding-x) py-(--tabs-list-padding-y);
 
 	button {
-		@apply flex items-center gap-(--tabs-tab-gap-x) w-full rounded-(--tabs-tab-radius) border-(length:--tabs-tab-border-width) border-(--tabs-tab-border-color) bg-(--tabs-tab-bg-color) px-(--tabs-tab-padding-x) py-(--tabs-tab-padding-y) text-(--tabs-tab-color) transition-colors;
+		@apply flex w-full items-start gap-(--tabs-tab-gap-x) px-(--tabs-tab-padding-x) py-(--tabs-tab-padding-y) text-(length:--tabs-tab-font-size) leading-(--tabs-tab-leading) font-(--tabs-tab-font-weight) text-(--tabs-tab-color) transition-colors;
 
 		&[aria-selected='true'] {
-			--tabs-tab-bg-color: var( --tabs-tab-bg-color-selected );
-			--tabs-tab-color: var( --tabs-tab-color-selected );
-			--tabs-tab-border-color: var( --tabs-tab-border-color-selected );
+			--tabs-tab-icon-bg-color: var( --tabs-tab-icon-bg-color-selected );
+			--tabs-tab-icon-color: var( --tabs-tab-icon-color-selected );
+			--tabs-tab-font-weight: var( --tabs-tab-font-weight-selected );
 		}
 
 		&[aria-selected='false']:hover {
-			--tabs-tab-bg-color: var( --tabs-tab-bg-color-hover );
-			--tabs-tab-color: var( --tabs-tab-color-hover );
-			--tabs-tab-border-color: var( --tabs-tab-border-color-hover );
+			--tabs-tab-icon-bg-color: var( --tabs-tab-icon-bg-color-hover );
+			--tabs-tab-icon-color: var( --tabs-tab-icon-color-hover );
 		}
 
 		&::before {
-			@apply fontawesome static w-auto border-0;
-			--fa-icon: var( --tabs-tab-icon );
+			@apply fontawesome static flex size-(--tabs-tab-icon-size) shrink-0 translate-y-[calc((1lh-var(--tabs-tab-icon-size))/2)] items-center justify-center rounded-(--tabs-tab-icon-radius) border-0 bg-(--tabs-tab-icon-bg-color) text-(length:--tabs-tab-icon-font-size) leading-[calc(var(--tabs-tab-font-size)*var(--tabs-tab-leading))]! text-(--tabs-tab-icon-color) transition-colors;
+			--fa-icon: var( --tabs-tab-icon-glyph );
 		}
 	}
 }
 
 .wp-block-tab-panel {
-	@apply normalize-child-margin rounded-(--tabs-panel-radius) bg-(--tabs-panel-bg-color) px-(--tabs-panel-padding-x) py-(--tabs-panel-padding-y) border-(length:--tabs-panel-border-width) border-(--tabs-panel-border-color);
+	@apply normalize-child-margin px-(--tabs-panel-padding-x) py-(--tabs-panel-padding-y);
 }
