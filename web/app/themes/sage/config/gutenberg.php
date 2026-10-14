@@ -16,8 +16,6 @@ return [
 		'iconlist-item',
 		'slide',
 		'slider',
-		'tabs',
-		'tabs-item',
 		'timeline',
 		'timeline-item',
 	],
@@ -36,8 +34,6 @@ return [
 	],
 	'excludedCoreBlocks' => [
 		// 'core/post-featured-image',
-		'yard/tabs',
-		'yard/tabs-item',
 	],
 
 	/**
