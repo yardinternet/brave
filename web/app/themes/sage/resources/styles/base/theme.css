@@ -71,6 +71,7 @@
 		0px 4px 16px rgba( 17, 17, 26, 0.05 );
 
 	/* Border-radius */
+	--radius-theme-sm: 3px;
 	--radius-theme: 5px;
 
 	/* Transitions */
