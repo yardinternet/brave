@@ -29,10 +29,10 @@ return [
 	 */
 	'allowedCoreBlocks' => [
 		// 'core/search',
-		'core/tabs',
-		'core/tabs-list',
+		'core/tab-list',
 		'core/tab-panel',
-		'core/tabs-panel',
+		'core/tab-panels',
+		'core/tabs',
 	],
 	'excludedCoreBlocks' => [
 		// 'core/post-featured-image',
