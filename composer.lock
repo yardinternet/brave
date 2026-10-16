@@ -4343,20 +4343,19 @@
         },
         {
             "name": "johnbillion/wp-crontrol",
-            "version": "1.21.2",
+            "version": "1.22.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/awesomemotive/wp-crontrol.git",
-                "reference": "7c684c29abe6a83601aed75856a5e7127965170c"
+                "reference": "9b105e69b589319358cab3a0e4c67dc9980c6785"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/awesomemotive/wp-crontrol/zipball/7c684c29abe6a83601aed75856a5e7127965170c",
-                "reference": "7c684c29abe6a83601aed75856a5e7127965170c",
+                "url": "https://api.github.com/repos/awesomemotive/wp-crontrol/zipball/9b105e69b589319358cab3a0e4c67dc9980c6785",
+                "reference": "9b105e69b589319358cab3a0e4c67dc9980c6785",
                 "shasum": ""
             },
             "require": {
-                "composer/installers": "^1.0 || ^2.0",
                 "php": ">=7.4"
             },
             "require-dev": {
@@ -4395,17 +4394,11 @@
             "homepage": "https://wp-crontrol.com",
             "support": {
                 "forum": "https://wordpress.org/support/plugin/wp-crontrol",
-                "issues": "https://github.com/johnbillion/wp-crontrol/issues",
+                "issues": "https://github.com/awesomemotive/wp-crontrol/issues",
                 "security": "https://wp-crontrol.com/security/",
-                "source": "https://github.com/johnbillion/wp-crontrol"
+                "source": "https://github.com/awesomemotive/wp-crontrol"
             },
-            "funding": [
-                {
-                    "url": "https://github.com/sponsors/johnbillion",
-                    "type": "github"
-                }
-            ],
-            "time": "2026-08-29T23:09:17+00:00"
+            "time": "2026-10-08T14:13:23+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -12000,15 +11993,15 @@
         },
         {
             "name": "wp-plugin/cookie-law-info",
-            "version": "3.5.6",
+            "version": "3.5.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/cookie-law-info/",
-                "reference": "tags/3.5.6"
+                "reference": "tags/3.5.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cookie-law-info.3.5.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/cookie-law-info.3.5.7.zip"
             },
             "require": {
                 "composer/installers": "~1.0|~2.0"
@@ -12020,14 +12013,14 @@
                     "name": "CookieYes"
                 }
             ],
-            "description": "Cookie banner, cookie consent and cookie notice plugin for GDPR and CCPA. Auto cookie blocking, Consent Mode v2, policy pages and preference center.",
+            "description": "Cookie consent banner for GDPR, CCPA and privacy compliance. Auto cookie blocking, cookie scanner, Consent Mode v2 and consent management.",
             "homepage": "https://www.cookieyes.com/",
             "support": {
                 "changelog": "https://wordpress.org/plugins/cookie-law-info/#developers",
                 "issues": "https://wordpress.org/support/plugin/cookie-law-info",
                 "source": "https://plugins.svn.wordpress.org/cookie-law-info"
             },
-            "time": "2026-09-10T06:41:18+00:00"
+            "time": "2026-10-14T05:56:59+00:00"
         },
         {
             "name": "wp-plugin/gravity-forms-zero-spam",
