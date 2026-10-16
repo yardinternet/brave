@@ -1,59 +1,26 @@
 version: 2
-updates:
-    - package-ecosystem: 'github-actions'
-      directory: '/'
-      schedule:
-          interval: 'weekly'
-          day: 'monday'
-      groups:
-          actions:
-              patterns:
-                  - '*'
-      commit-message:
-          prefix: 'chore'
-      cooldown:
-        default-days: 7
 
+multi-ecosystem-groups:
+    all:
+        schedule:
+            interval: 'weekly'
+            day: 'monday'
+            time: '09:00'
+            timezone: 'Europe/Amsterdam'
+        commit-message:
+            prefix: 'chore'
+
+updates:
     - package-ecosystem: 'npm'
-      directory: '/'
+      multi-ecosystem-group: 'all'
       registries: '*'
-      schedule:
-          interval: 'weekly'
-          day: 'monday'
-      groups:
-          pnpm:
-              patterns:
-                  - '*'
-      commit-message:
-          prefix: 'chore'
+      directory: '/'
+      patterns: ['*']
       versioning-strategy: lockfile-only
-      cooldown:
-        default-days: 7
 
     - package-ecosystem: 'composer'
+      multi-ecosystem-group: 'all'
       registries: '*'
       directory: '/'
-      schedule:
-          interval: 'weekly'
-          day: 'monday'
-      groups:
-          composer:
-              patterns:
-                  - '*'
-      commit-message:
-          prefix: 'chore'
+      patterns: ['*']
       versioning-strategy: lockfile-only
-      cooldown:
-        default-days: 7
-
-registries:
-    ypackagist:
-        type: composer-repository
-        url: https://packagist.yard.nl/satispress/
-        username: ${{secrets.YPACKAGIST_API_KEY}}
-        password: ${{secrets.YPACKAGIST_PASSWORD}}
-
-    github:
-        type: npm-registry
-        url: https://npm.pkg.github.com
-        token: ${{secrets.YARD_BOT_PAT}}
