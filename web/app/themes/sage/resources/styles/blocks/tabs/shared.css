@@ -1,137 +1,68 @@
 :root {
-	--tabs-shadow: var( --shadow );
-	--tabs-bg-color: var( --color-primary-100 );
-	--tabs-block-spacing: 1.5rem;
+	--tabs-bg-color: var( --color-white );
+	--tabs-block-spacing: var( --spacing-size-6 );
+	--tabs-columns: 1fr;
 	--tabs-radius: var( --radius-theme );
+	--tabs-shadow: var( --card-shadow );
 
-	--tabs-list-bg-color: var( --color-primary );
-	--tabs-list-padding: 0;
-	--tabs-list-spacing: 0;
-	--tabs-list-width: 40%;
+	--tab-list-bg-color: var( --color-primary-50 );
+	--tab-list-gap: 0.25rem;
+	--tab-list-padding: 0.75rem;
 
-	--tabs-button-bg-color-hover: var( --color-white );
-	--tabs-button-bg-color-selected: var( --color-white );
-	--tabs-button-bg-color: transparent;
-	--tabs-button-color-hover: var( --color-primary );
-	--tabs-button-color-selected: var( --color-primary );
-	--tabs-button-color: var( --color-white );
-	--tabs-button-font-size: var( --text-base );
-	--tabs-button-font-weight-selected: var( --font-weight-normal );
-	--tabs-button-font-weight: var( --font-weight-normal );
-	--tabs-button-gap: 1.25rem;
-	--tabs-button-leading: 1.25;
-	--tabs-button-padding: 1.25rem 1.5rem;
+	--tab-button-color: var( --color-primary );
+	--tab-button-font-size: var( --text-base );
+	--tab-button-font-weight-selected: 600;
+	--tab-button-font-weight: 400;
+	--tab-button-gap: 0.75rem;
+	--tab-button-leading: 1.5;
+	--tab-button-padding: 0.75rem;
 
-	--tabs-button-icon-bg-color-hover: var( --color-primary-400 );
-	--tabs-button-icon-bg-color-selected: var( --color-primary );
-	--tabs-button-icon-bg-color: var( --color-primary-400 );
-	--tabs-button-icon-border-color-hover: var( --color-primary );
-	--tabs-button-icon-border-color-selected: var( --color-primary );
-	--tabs-button-icon-border-color: var( --color-primary );
-	--tabs-button-icon-border-width: 0px;
-	--tabs-button-icon-color-hover: var( --color-white );
-	--tabs-button-icon-color-selected: var( --color-white );
-	--tabs-button-icon-color: var( --color-white );
-	--tabs-button-icon-radius: var( --radius-theme );
-	--tabs-button-icon-size: 2rem;
-	--tabs-button-icon: '\f061';
+	--tab-button-icon-bg-color-hover: var( --color-primary );
+	--tab-button-icon-bg-color-selected: var( --color-primary );
+	--tab-button-icon-bg-color: var( --color-white );
+	--tab-button-icon-color-hover: var( --color-white );
+	--tab-button-icon-color-selected: var( --color-white );
+	--tab-button-icon-color: var( --color-primary );
+	--tab-button-icon-font-size: 0.9rem;
+	--tab-button-icon-glyph: '\f061';
+	--tab-button-icon-radius: var( --radius-theme-sm );
+	--tab-button-icon-size: 1.5rem;
 
-	--tabs-panel-padding: 1.5rem;
+	--tab-panel-padding: 1.5rem;
 
 	@variant md {
-		--tabs-block-spacing: 2rem;
-		--tabs-button-padding: 0.75rem;
-		--tabs-list-padding: 2rem 1rem;
-		--tabs-list-spacing: 0.5rem;
-		--tabs-panel-padding: 2.5rem;
+		--tabs-columns: min( 33%, 22.5rem ) 1fr;
 	}
 }
 
-.wp-block-yard-tabs {
-	@apply grid gap-0 overflow-hidden rounded-(--tabs-radius) bg-(--tabs-bg-color) shadow-(--tabs-shadow) not-first:mt-(--tabs-block-spacing) not-last:mb-(--tabs-block-spacing);
+.wp-block-tabs {
+	@apply grid grid-cols-(--tabs-columns) overflow-clip rounded-(--tabs-radius) bg-(--tabs-bg-color) shadow-(--tabs-shadow) not-first:mt-(--tabs-block-spacing) not-last:mb-(--tabs-block-spacing);
+}
 
-	@variant md {
-		@apply grid-cols-[var(--tabs-list-width)_1fr] bg-linear-to-r from-(--tabs-list-bg-color) from-(length:--tabs-list-width) to-(--tabs-bg-color) to-(length:--tabs-list-width);
-	}
+.wp-block-tab-list {
+	@apply flex-col items-stretch gap-(--tab-list-gap) bg-(--tab-list-bg-color) p-(--tab-list-padding);
 
-	&.alignwide {
-		@variant xl {
-			--tabs-list-width: 30%;
-			--tabs-panel-padding-x: 3rem;
+	button {
+		@apply flex w-full items-start gap-(--tab-button-gap) p-(--tab-button-padding) text-(length:--tab-button-font-size) leading-(--tab-button-leading) font-(--tab-button-font-weight) text-(--tab-button-color) transition-colors;
+
+		&[aria-selected='true'] {
+			--tab-button-icon-bg-color: var( --tab-button-icon-bg-color-selected );
+			--tab-button-icon-color: var( --tab-button-icon-color-selected );
+			--tab-button-font-weight: var( --tab-button-font-weight-selected );
+		}
+
+		&[aria-selected='false']:hover {
+			--tab-button-icon-bg-color: var( --tab-button-icon-bg-color-hover );
+			--tab-button-icon-color: var( --tab-button-icon-color-hover );
+		}
+
+		&::before {
+			@apply fontawesome static flex size-(--tab-button-icon-size) shrink-0 translate-y-[calc((1lh-var(--tab-button-icon-size))/2)] items-center justify-center rounded-(--tab-button-icon-radius) border-0 bg-(--tab-button-icon-bg-color) text-(length:--tab-button-icon-font-size) leading-[calc(var(--tab-button-font-size)*var(--tab-button-leading))]! text-(--tab-button-icon-color) transition-colors;
+			--fa-icon: var( --tab-button-icon-glyph );
 		}
 	}
 }
 
-.wp-block-yard-tabs-item__heading {
-	@apply mb-0 bg-(--tabs-list-bg-color) p-(--tabs-list-padding) text-(length:--tabs-button-font-size) font-(--tabs-button-font-weight) md:col-start-1;
-
-	&:not( :first-of-type ) {
-		@apply pt-0;
-	}
-
-	&:not( :last-of-type ) {
-		@apply pb-0;
-	}
-
-	& ~ & {
-		@apply mt-(--tabs-list-spacing);
-	}
-
-	.wp-block-yard-icon-component {
-		@apply mr-2;
-	}
-
-	@variant md {
-		&:has( .wp-block-yard-tabs-item__button.active ) {
-			--tabs-button-bg-color: var( --tabs-button-bg-color-selected );
-			--tabs-button-color: var( --tabs-button-color-selected );
-			--tabs-button-font-weight: var(
-				--tabs-button-font-weight-selected
-			);
-			--tabs-button-icon-bg-color: var(
-				--tabs-button-icon-bg-color-selected
-			);
-			--tabs-button-icon-border-color: var(
-				--tabs-button-icon-border-color-selected
-			);
-			--tabs-button-icon-color: var( --tabs-button-icon-color-selected );
-		}
-
-		&:has( .wp-block-yard-tabs-item__button:hover ) {
-			--tabs-button-bg-color: var( --tabs-button-bg-color-hover );
-			--tabs-button-color: var( --tabs-button-color-hover );
-			--tabs-button-icon-bg-color: var(
-				--tabs-button-icon-bg-color-hover
-			);
-			--tabs-button-icon-border-color: var(
-				--tabs-button-icon-border-color-hover
-			);
-			--tabs-button-icon-color: var( --tabs-button-icon-color-hover );
-		}
-	}
-}
-
-.wp-block-yard-tabs-item__button {
-	@apply relative flex w-full items-center gap-(--tabs-button-gap) rounded-(--tabs-radius) bg-(--tabs-button-bg-color) p-(--tabs-button-padding) text-left leading-(--tabs-button-leading) text-(--tabs-button-color) transition-colors duration-300;
-
-	&::before {
-		@apply fontawesome left-(--tabs-button-padding-x) flex size-(--tabs-button-icon-size) shrink-0 items-center justify-center rounded-(--tabs-button-icon-radius) border-(length:--tabs-button-icon-border-width) border-(--tabs-button-icon-border-color) bg-(--tabs-button-icon-bg-color) leading-none text-(--tabs-button-icon-color) transition-all duration-300;
-		--fa-icon: var( --tabs-button-icon );
-	}
-
-	&.active::before {
-		@apply rotate-90 md:rotate-0;
-	}
-}
-
-.wp-block-yard-tabs-item__panel {
-	@apply normalize-child-margin hidden bg-(--tabs-bg-color) p-(--tabs-panel-padding) md:order-last md:col-start-2 md:row-start-1 md:row-end-100;
-
-	&[aria-hidden='false'] {
-		@apply block;
-
-		> * {
-			animation: fade 0.7s both;
-		}
-	}
+.wp-block-tab-panel {
+	@apply normalize-child-margin p-(--tab-panel-padding);
 }

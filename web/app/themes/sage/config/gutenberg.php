@@ -16,8 +16,6 @@ return [
 		'iconlist-item',
 		'slide',
 		'slider',
-		'tabs',
-		'tabs-item',
 		'timeline',
 		'timeline-item',
 	],
@@ -29,6 +27,10 @@ return [
 	 */
 	'allowedCoreBlocks' => [
 		// 'core/search',
+		'core/tab-list',
+		'core/tab-panel',
+		'core/tab-panels',
+		'core/tabs',
 	],
 	'excludedCoreBlocks' => [
 		// 'core/post-featured-image',
