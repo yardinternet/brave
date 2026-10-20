@@ -26,6 +26,6 @@ final class BackButton extends Block
 
 	protected function shouldRender(string $content): bool
 	{
-		return (bool) wp_get_post_parent_id();
+		return wp_get_post_parent_id() || post_type_supports(get_post_type(), 'parent-page');
 	}
 }
