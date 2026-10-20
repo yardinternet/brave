@@ -2,11 +2,12 @@
 	--list-block-spacing-bottom: 1.5rem;
 	--list-block-spacing-top: 1.5rem;
 	--list-indent: 1.5rem;
+	--list-marker-color: var( --color-black );
 	--list-spacing: 0.5rem;
 }
 
 .wp-block-list {
-	@apply mt-(--list-block-spacing-top) mb-(--list-block-spacing-bottom) flex list-(--list-type) flex-col gap-(--list-spacing) pl-(--list-indent);
+	@apply mt-(--list-block-spacing-top) mb-(--list-block-spacing-bottom) flex list-(--list-type) flex-col gap-(--list-spacing) pl-(--list-indent) marker:text-(--list-marker-color);
 
 	&:is( ol ) {
 		--list-type: decimal;
@@ -14,6 +15,7 @@
 
 	&:is( ul ) {
 		--list-type: disc;
+		--list-marker-color: var( --color-primary );
 	}
 
 	ol {
