@@ -8,6 +8,7 @@
 	"supports": {
 		"anchor": true,
 		"color": {
+			"text": false,
 			"background": true,
 			"__experimentalDefaultControls": {
 				"background": true
