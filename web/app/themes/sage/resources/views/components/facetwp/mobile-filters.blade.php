@@ -17,7 +17,7 @@
 ])>
 	<div class="flex flex-col">
 		<div class="z-2 sticky top-0 flex items-center justify-between gap-2 border-b border-gray-100 bg-white p-4">
-			<h2 class="mb-0 text-base font-normal">{{ $label }}</h2>
+			<h2 class="mb-0 is-body-text">{{ $label }}</h2>
 			<x-brave::dialog.trigger :dialogId="$dialogId"
 				class="leading-0 -m-2 flex size-[46px] items-center justify-center text-2xl">
 				<i class="fa-light fa-xmark" aria-hidden="true"></i>

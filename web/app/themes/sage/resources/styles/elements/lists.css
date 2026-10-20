@@ -2,7 +2,7 @@
 	--list-block-spacing-bottom: 1.5rem;
 	--list-block-spacing-top: 1.5rem;
 	--list-indent: 1.5rem;
-	--list-marker-color: var( --color-black );
+	--list-marker-color: var( --body-text-color );
 	--list-spacing: 0.5rem;
 }
 

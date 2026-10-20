@@ -8,7 +8,7 @@ mark {
 }
 
 body {
-	@apply flex min-h-screen flex-col bg-white text-base font-normal text-black underline-offset-4;
+	@apply is-body-text flex min-h-screen flex-col bg-white underline-offset-4;
 }
 
 h1,
@@ -18,7 +18,7 @@ h4,
 h5,
 h6 {
 	/* Reset margin for Gutenberg editor. */
-	@apply my-0 font-bold;
+	@apply is-heading my-0;
 
 	/* Break titles on small screen */
 	@apply max-sm:break-word max-sm:hyphens-auto;

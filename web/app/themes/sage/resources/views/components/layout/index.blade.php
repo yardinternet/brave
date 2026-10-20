@@ -24,7 +24,7 @@
 			@else
 				<x-brave-breadcrumb class="container py-3 text-sm" listClass="items-center flex flex-wrap"
 					itemClass="flex not-last:after:content-['|'] after:mx-2 text-gray-500 [&>span]:block [&>span]:max-w-[200px] [&>span]:overflow-hidden [&>span]:text-ellipsis [&>span]:whitespace-nowrap"
-					linkClass="inline-block text-black no-underline hocus:text-primary hocus:underline" />
+					linkClass="inline-block text-(--body-text-color) no-underline hocus:text-primary hocus:underline" />
 				{{ $slot }}
 			@endif
 		</main>

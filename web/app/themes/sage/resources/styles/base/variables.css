@@ -1,4 +1,12 @@
 :root {
+	/* Typography */
+	--body-text-color: var( --color-black );
+	--body-text-font-family: var( --font-sans );
+	--body-text-font-weight: 400;
+	--heading-color: var( --color-black );
+	--heading-font-family: var( --font-sans );
+	--heading-font-weight: 700;
+
 	/* @link https://utopia.fyi/type/calculator?c=375,14,1.06,1100,16,1.1,10,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 	--text-step--2: clamp( 0.7787rem, 0.7541rem + 0.1053vw, 0.8264rem );
 	--text-step--1: clamp( 0.8255rem, 0.7822rem + 0.1845vw, 0.9091rem );
@@ -113,7 +121,7 @@
 	--card-label-bg-color: var( --color-primary-100 );
 	--card-label-border-color: var( --card-label-bg-color );
 	--card-label-border-width: 1px;
-	--card-label-color: var( --color-black );
+	--card-label-color: var( --body-text-color );
 	--card-label-font-size: var( --text-sm );
 	--card-label-font-weight: 400;
 	--card-label-padding: 0.25rem 0.5rem;
