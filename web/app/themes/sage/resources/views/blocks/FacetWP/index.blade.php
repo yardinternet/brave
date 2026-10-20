@@ -3,7 +3,7 @@
 	$name = isset($template['name']) ? str_replace('_', '-', $template['name']) : null;
 @endphp
 
-<div @class(['facetwp', $align])>
+<div @class(['facetwp', $align, 'facetwp-' . $name])>
 	@if (!function_exists('facetwp_display'))
 		<x-alert type="danger">
 			De plugin FacetWP is niet geïnstalleerd of geactiveerd.
