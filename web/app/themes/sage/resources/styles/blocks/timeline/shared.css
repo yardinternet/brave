@@ -173,8 +173,8 @@ ol.wp-block-yard-timeline {
 
 /* Example for timeline with icon in dot */
 .wp-block-yard-timeline:has(
-		.wp-block-yard-timeline-item :first-child.wp-block-yard-icon
-	) {
+	.wp-block-yard-timeline-item :first-child.wp-block-yard-icon
+) {
 	--dot-size: 48px;
 
 	.wp-block-yard-timeline-item__content {
