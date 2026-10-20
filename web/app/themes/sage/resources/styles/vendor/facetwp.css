@@ -217,20 +217,21 @@
 			}
 		}
 
-		.facetwp-page {
+		.facetwp-page,
+		.facetwp-page-dots {
 			@apply relative m-0 flex size-(--pagination-item-size) items-center justify-center rounded-(--pagination-item-radius) p-2 font-normal text-black no-underline transition-all;
 
-			&:not( .prev, .next, .dots, .active ) {
+			&:not( .prev, .next, .facetwp-page-dots, .active ) {
 				@variant hocus {
 					@apply bg-(--pagination-item-bg-color-hover) text-(--pagination-item-color-hover);
 				}
 			}
 
-			&.active {
+			&.active:not( .prev, .next, .facetwp-page-dots ) {
 				@apply bg-(--pagination-current-bg-color) text-(--pagination-current-color);
 
 				&::after {
-					@apply absolute bottom-0 left-1/2 h-0.5 w-3/4 -translate-x-1/2 bg-(--pagination-current-underline-bg-color) content;
+					@apply content absolute bottom-0 left-1/2 h-0.5 w-3/4 -translate-x-1/2 bg-(--pagination-current-underline-bg-color);
 				}
 			}
 
