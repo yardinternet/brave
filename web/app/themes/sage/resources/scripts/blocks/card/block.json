@@ -8,7 +8,14 @@
 	"ancestor": [ "core/group" ],
 	"supports": {
 		"html": false,
-		"reusable": false
+		"reusable": false,
+		"color": {
+			"text": false,
+			"background": true,
+			"__experimentalDefaultControls": {
+				"background": true
+			}
+		}
 	},
 	"attributes": {
 		"imageId": {
