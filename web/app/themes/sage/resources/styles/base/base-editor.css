@@ -1,6 +1,6 @@
 /* Styles on body also needs to be on .editor-styles-wrapper */
 .editor-styles-wrapper {
-	@apply !min-h-0 overflow-x-clip bg-white font-sans text-base font-normal text-black underline-offset-4;
+	@apply min-h-0! overflow-x-clip bg-white font-sans text-base font-normal text-black underline-offset-4;
 
 	/* Indicate a title in the post content by dimming title wrapper */
 	&:has( h1:not( .editor-post-title ) ) {
@@ -16,7 +16,7 @@
 
 	/* Remove all linkable areas in editor */
 	a::after {
-		@apply !content-none;
+		@apply content-none!;
 	}
 }
 

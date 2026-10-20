@@ -31,7 +31,7 @@ input[type='radio'] {
 	@apply accent-primary cursor-pointer;
 
 	+ label {
-		@apply ml-1 cursor-pointer !text-sm;
+		@apply ml-1 cursor-pointer text-sm!;
 	}
 }
 

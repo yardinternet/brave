@@ -237,7 +237,7 @@
 }
 
 .gform-recaptcha-disclaimer {
-	@apply text-xs !leading-snug text-gray-500;
+	@apply text-xs leading-snug! text-gray-500;
 
 	a {
 		@apply text-inherit;

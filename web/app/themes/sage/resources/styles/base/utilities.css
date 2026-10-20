@@ -45,7 +45,7 @@
 }
 
 @utility on-focus-visible {
-	@apply sr-only !absolute !top-2 !left-2 z-50 w-fit !px-[2em] !py-[0.75em] transition-none focus:not-sr-only;
+	@apply sr-only absolute! top-2! left-2! z-50 w-fit px-[2em]! py-[0.75em]! transition-none focus:not-sr-only;
 }
 
 @utility a-linkable-area {

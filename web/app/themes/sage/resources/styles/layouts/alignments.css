@@ -4,13 +4,13 @@
 */
 .alignleft {
 	@variant sm {
-		@apply float-left !mr-4;
+		@apply float-left mr-4!;
 	}
 }
 
 .alignright {
 	@variant sm {
-		@apply float-right !ml-4;
+		@apply float-right ml-4!;
 	}
 }
 

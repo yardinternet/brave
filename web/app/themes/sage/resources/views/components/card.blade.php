@@ -16,7 +16,7 @@
 		])>
 			<x-brave-img-focal-point @class([
 				'card-image aspect-[inherit] size-full object-cover',
-				'card-image-logo !size-8 !object-contain' => $thumbnailIsLogo,
+				'card-image-logo size-8! object-contain!' => $thumbnailIsLogo,
 				'rounded-[inherit]' => !$thumbnailIsLogo,
 			]) :src="$thumbnailUrl ?: get_theme_file_uri('/resources/images/logo-element.svg')" :id="$postID" />
 		</div>
@@ -25,7 +25,7 @@
 	<div class="card-body normalize-child-margin p-(--card-padding) flex h-full grow flex-col">
 		<x-dynamic-tag :tag="$titleTag" class="card-title mb-2 md:mb-3">
 			@if ($url)
-				<a class="card-link a-linkable-area !text-inherit no-underline focus:underline" href="{{ $url }}">
+				<a class="card-link a-linkable-area text-inherit! no-underline focus:underline" href="{{ $url }}">
 					{!! $title !!}
 				</a>
 			@else
@@ -38,7 +38,7 @@
 		@endif
 
 		@if ($displayDate && $dateTime && $dateString)
-			<time class="card-date -order-1 !mb-2 text-sm leading-none text-gray-500" datetime="{{ $dateTime }}">
+			<time class="card-date -order-1 mb-2! text-sm leading-none text-gray-500" datetime="{{ $dateTime }}">
 				{{ $dateString }}
 			</time>
 		@endif
