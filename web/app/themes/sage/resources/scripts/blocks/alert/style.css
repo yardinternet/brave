@@ -1,0 +1,22 @@
+@reference '@sage/styles/base/config';
+@reference '@sage/styles/base/custom-variants';
+@reference '@sage/styles/base/utilities';
+
+:root {
+	--alert-border-color: var( --color-primary );
+	--alert-border-width: 10px;
+	--alert-icon-scale: 1.5;
+}
+
+.wp-block-theme-alert {
+	@apply normalize-child-margin relative border-l-(length:--alert-border-width) border-l-(--alert-border-color) pl-[calc(var(--card-padding)*2+1em)] not-first:mt-(--spacing-size-4) not-last:mb-(--spacing-size-4);
+
+	&.has-background {
+		@apply rounded-(--card-radius) p-(--card-padding) pl-[calc(var(--card-padding)*2+1em)];
+	}
+
+	&::before {
+		@apply fontawesome absolute top-(--card-padding) left-(--card-padding) scale-(--alert-icon-scale);
+		--fa-icon: '\f06a';
+	}
+}

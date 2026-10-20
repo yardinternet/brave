@@ -2,25 +2,10 @@
 @reference '@sage/styles/base/custom-variants';
 @reference '@sage/styles/base/utilities';
 
-:root {
-	--group-alert-border-color: var( --color-primary );
-	--group-alert-border-width: 10px;
-	--group-alert-icon-scale: 1.5;
-}
-
 .wp-block-theme-group {
 	@apply normalize-child-margin not-first:mt-(--spacing-size-4) not-last:mb-(--spacing-size-4);
 
 	&.has-background {
 		@apply rounded-(--card-radius) p-(--card-padding);
-	}
-
-	&.is-style-alert {
-		@apply relative border-l-(length:--group-alert-border-width) border-l-(--group-alert-border-color) pl-[calc(var(--card-padding)*2+1em)];
-
-		&::before {
-			@apply fontawesome absolute top-(--card-padding) left-(--card-padding) scale-(--group-alert-icon-scale);
-			--fa-icon: '\f06a';
-		}
 	}
 }

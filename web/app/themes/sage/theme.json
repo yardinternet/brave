@@ -145,6 +145,22 @@
 					]
 				}
 			},
+			"theme/alert": {
+				"color": {
+					"palette": [
+						{
+							"slug": "primary-100",
+							"color": "var(--color-primary-100)",
+							"name": "Primair (100)"
+						},
+						{
+							"slug": "white",
+							"color": "var(--color-white)",
+							"name": "Wit"
+						}
+					]
+				}
+			},
 			"theme/group": {
 				"color": {
 					"palette": [

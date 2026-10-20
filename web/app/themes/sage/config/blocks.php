@@ -13,6 +13,12 @@ return [
 	 *
 	 * @see https://developer.wordpress.org/reference/functions/register_block_type/
 	 */
+	'alert' => [
+		'block_type' => 'alert',
+		'args' => [
+			'render_callback' => new Block(),
+		],
+	],
 	'article' => [
 		'block_type' => 'article',
 		'args' => [
