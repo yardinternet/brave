@@ -189,7 +189,17 @@
 }
 
 @utility is-select {
-	@apply cursor-pointer rounded-(--select-border-radius) border-(length:--select-border-width) border-(--select-border-color) bg-(--select-bg-color) p-(--select-padding) text-(length:--select-font-size) leading-snug shadow-none transition-all;
+	@apply cursor-pointer rounded-(--select-radius) border-(length:--select-border-width) border-(--select-border-color) bg-(--select-bg-color) p-(--select-padding) text-(length:--select-font-size) leading-snug shadow-(--select-box-shadow) transition-all;
+	appearance: base-select;
+
+	&::picker-icon {
+		@apply fontawesome text-sm leading-snug! transition-all;
+		--fa-icon: '\f078';
+	}
+
+	&:open::picker-icon {
+		@apply rotate-180;
+	}
 
 	&:hover {
 		--select-border-color: var( --select-border-color-hover );
