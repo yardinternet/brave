@@ -1,21 +1,23 @@
 :root {
 	--form-validation-error-color: var( --color-red-700 );
+
 	--input-bg-color: var( --color-white );
-	--input-border-color: var( --color-gray-400 );
 	--input-border-color-focus: var( --color-primary );
+	--input-border-color: var( --color-gray-400 );
 	--input-border-width: 2px;
 	--input-box-shadow: var( --shadow-sm );
 	--input-font-size: 1rem;
 	--input-padding: 0.75em 1em;
 	--input-radius: var( --radius-theme );
 
-	--select-bg-color: var( --color-bg-white );
-	--select-border-width: 1px;
-	--select-border-radius: var( --radius-theme );
-	--select-border-color: var( --color-gray-400 );
+	--select-bg-color: var( --input-bg-color );
 	--select-border-color-hover: var( --color-primary );
-	--select-padding: var( --input-padding );
+	--select-border-color: var( --input-border-color );
+	--select-border-width: 1px;
+	--select-box-shadow: var( --input-box-shadow );
 	--select-font-size: var( --input-font-size );
+	--select-padding: var( --input-padding );
+	--select-radius: var( --input-radius );
 }
 
 @variant all-form-text-inputs {
