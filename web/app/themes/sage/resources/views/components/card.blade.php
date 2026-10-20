@@ -10,9 +10,9 @@
 	@if ($displayImage)
 		<div @class([
 			'card-image-wrapper bg-primary-100  relative flex aspect-(--card-image-ratio) items-center justify-center',
-			'rounded-t-theme' => $direction->isColumn(),
-			'w-1/3 min-w-1/3 rounded-l-theme' => $direction->isRow(),
-			'md:w-1/3 md:min-w-1/3 rounded-t-theme md:rounded-t-none md:rounded-l-theme' => $direction->isFluid(),
+			'rounded-t-(--card-radius)' => $direction->isColumn(),
+			'w-1/3 min-w-1/3 rounded-l-(--card-radius)' => $direction->isRow(),
+			'md:w-1/3 md:min-w-1/3 rounded-t-(--card-radius) md:rounded-t-none md:rounded-l-(--card-radius)' => $direction->isFluid(),
 		])>
 			<x-brave-img-focal-point @class([
 				'card-image aspect-[inherit] size-full object-cover',
