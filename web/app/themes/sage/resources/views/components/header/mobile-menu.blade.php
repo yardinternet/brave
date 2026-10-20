@@ -25,7 +25,7 @@
 ])>
 	<div class="flex h-full flex-col">
 		<div class="z-1 sticky top-0 flex items-center justify-between gap-2 border-b border-gray-100 bg-white px-6 py-4">
-			<h2 class="mb-0 text-base font-normal">{{ $label }}</h2>
+			<h2 class="mb-0 is-body-text">{{ $label }}</h2>
 			<x-brave::dialog.trigger :dialogId="$dialogId" class="leading-0 size-11.5 -m-2 flex items-center justify-center text-2xl">
 				<i class="fa-light fa-xmark" aria-hidden="true"></i>
 				<span class="sr-only">Sluit menu</span>
@@ -37,7 +37,7 @@
 				<x-brave::nav.list class="mb-6">
 					@foreach ($primaryNavigation->all() as $item)
 						<x-brave::nav.item class="group">
-							<x-brave::nav.link :item="$item" class="block py-3 text-lg text-black no-underline focus:text-inherit"
+							<x-brave::nav.link :item="$item" class="block py-3 text-lg text-(--body-text-color) no-underline focus:text-inherit"
 								activeClass="text-primary font-bold">
 								{!! $item->label !!}
 								@if ($item->children)

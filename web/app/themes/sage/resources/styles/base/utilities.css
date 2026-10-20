@@ -90,6 +90,14 @@
 	}
 }
 
+@utility is-body-text {
+	@apply font-(family-name:--body-text-font-family) text-base font-(--body-text-font-weight) text-(--body-text-color);
+}
+
+@utility is-heading {
+	@apply font-(family-name:--heading-font-family) font-(--heading-font-weight) text-(--heading-color);
+}
+
 @utility make-lead {
 	@apply text-lg leading-(--text-base--line-height);
 }

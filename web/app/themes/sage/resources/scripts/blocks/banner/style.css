@@ -19,6 +19,7 @@
 
 .wp-block-theme-banner {
 	@apply mb-section bg-(--banner-bg-color) text-(--banner-color);
+	--heading-color: var( --banner-color );
 }
 
 .wp-block-theme-banner__container {

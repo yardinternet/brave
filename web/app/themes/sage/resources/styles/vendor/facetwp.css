@@ -219,7 +219,7 @@
 
 		.facetwp-page,
 		.facetwp-page-dots {
-			@apply relative m-0 flex size-(--pagination-item-size) items-center justify-center rounded-(--pagination-item-radius) p-2 font-normal text-black no-underline transition-all;
+			@apply relative m-0 flex size-(--pagination-item-size) items-center justify-center rounded-(--pagination-item-radius) p-2 font-normal text-(--body-text-color) no-underline transition-all;
 
 			&:not( .prev, .next, .facetwp-page-dots, .active ) {
 				@variant hocus {

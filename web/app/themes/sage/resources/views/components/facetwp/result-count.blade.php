@@ -4,7 +4,7 @@
 
 <h2
 	{{ $attributes->merge([
-	    'class' => 'facetwp-result-count-container mb-0 flex lg:min-h-8 items-center font-sans text-base font-normal',
+	    'class' => 'facetwp-result-count-container mb-0 flex lg:min-h-8 items-center is-body-text',
 	    'aria-live' => 'polite',
 	]) }}>
 	{!! facetwp_display('facet', $facetName) !!}

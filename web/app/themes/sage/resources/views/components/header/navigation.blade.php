@@ -10,7 +10,7 @@
 			@foreach ($primaryNavigation->all() as $item)
 				<x-brave::nav.item class="group relative h-full">
 					<x-brave::nav.link :item="$item"
-						class="hocus:text-primary relative flex h-full items-center gap-2 text-center text-sm leading-snug text-black no-underline xl:text-base xl:leading-snug"
+						class="hocus:text-primary relative flex h-full items-center gap-2 text-center text-sm leading-snug text-(--body-text-color) no-underline xl:text-base xl:leading-snug"
 						activeClass="text-primary">
 
 						{!! $item->label !!}
