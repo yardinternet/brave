@@ -17,17 +17,6 @@
 		"html": false
 	},
 	"attributes": {},
-	"styles": [
-		{
-			"name": "default",
-			"label": "Standaard",
-			"isDefault": true
-		},
-		{
-			"name": "alert",
-			"label": "Melding"
-		}
-	],
 	"variations": [
 		{
 			"name": "theme/group-default",
@@ -35,17 +24,6 @@
 			"isDefault": true,
 			"attributes": {
 				"backgroundColor": "primary-100"
-			},
-			"innerBlocks": [ [ "core/paragraph" ] ]
-		},
-		{
-			"name": "theme/group-alert",
-			"title": "Waarschuwing",
-			"keywords": [ "alert", "melding" ],
-			"isActive": [ "className" ],
-			"attributes": {
-				"backgroundColor": "primary-100",
-				"className": "is-style-alert"
 			},
 			"innerBlocks": [ [ "core/paragraph" ] ]
 		}

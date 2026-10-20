@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "theme/alert",
+	"title": "Melding",
+	"category": "theme",
+	"description": "Gebruik dit blok om een melding of waarschuwing te tonen.",
+	"keywords": [ "alert", "melding", "waarschuwing" ],
+	"supports": {
+		"align": [ "wide" ],
+		"color": {
+			"background": true,
+			"text": false,
+			"__experimentalDefaultControls": {
+				"background": true
+			}
+		},
+		"html": false
+	},
+	"attributes": {},
+	"variations": [
+		{
+			"name": "theme/alert-default",
+			"title": "Melding",
+			"isDefault": true,
+			"attributes": {
+				"backgroundColor": "primary-100"
+			},
+			"innerBlocks": [ [ "core/paragraph" ] ]
+		}
+	],
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./editor-style.css",
+	"style": "file:./style.css"
+}
