@@ -1,5 +1,5 @@
 :root {
-	@apply scroll-pt-(--combined-bar-height) scroll-smooth;
+	@apply scroll-pt-[calc(var(--combined-bar-with-admin-bar-height)+1rem)] scroll-smooth;
 }
 
 ::selection,

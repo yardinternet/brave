@@ -72,6 +72,9 @@
 	--combined-bar-height: calc(
 		var( --nav-bar-height ) + var( --top-bar-height )
 	);
+	--combined-bar-with-admin-bar-height: calc(
+		var( --combined-bar-height ) + var( --wp-admin-bar-height )
+	);
 
 	@variant lg {
 		&:has( .top-bar ) {
