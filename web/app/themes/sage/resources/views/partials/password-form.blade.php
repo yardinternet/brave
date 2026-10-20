@@ -1,5 +1,5 @@
 <form action="{{ site_url('wp-login.php?action=postpass', 'login_post') }}" method="post"
-	class="my-20 !max-w-screen-sm bg-white p-4 shadow-lg md:p-6">
+	class="my-20 max-w-screen-sm! bg-white p-4 shadow-lg md:p-6">
 	<h2>Beschermd met wachtwoord</h2>
 	<p>De inhoud van deze pagina is beveiligd met een wachtwoord. Vul het wachtwoord in om de
 		pagina te kunnen bekijken.

@@ -30,7 +30,7 @@
 	/* Force breakpoint one screen later. Place all xs adjustments here. */
 	@variant max-md {
 		&.is-stacked-on-mobile {
-			@apply !grid-cols-1;
+			@apply grid-cols-1!;
 
 			.wp-block-media-text__media {
 				@apply col-start-1 row-start-1;
@@ -150,7 +150,7 @@
 
 	&,
 	.wp-block-media-text__media img {
-		@apply !rounded-none;
+		@apply rounded-none!;
 	}
 
 	.wp-block-media-text__content {
@@ -162,7 +162,7 @@
 	}
 
 	&:not( .has-media-on-the-right ) {
-		@apply md:!grid-cols-[var(--media-grid-column)_1fr];
+		@apply md:grid-cols-[var(--media-grid-column)_1fr]!;
 
 		.wp-block-media-text__content {
 			@apply mr-auto md:pr-0;
@@ -170,7 +170,7 @@
 	}
 
 	&.has-media-on-the-right {
-		@apply md:!grid-cols-[1fr_var(--media-grid-column)];
+		@apply md:grid-cols-[1fr_var(--media-grid-column)]!;
 
 		.wp-block-media-text__content {
 			@apply ml-auto md:pl-0;
