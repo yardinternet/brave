@@ -1,6 +1,6 @@
 @theme static {
 	/* Colors */
-	--color-primary: var(--color-primary-500);
+	--color-primary: var( --color-primary-500 );
 	--color-primary-50: #ebeefb;
 	--color-primary-100: #d6ddf8;
 	--color-primary-200: #aebbf1;
@@ -65,9 +65,11 @@
 	--text-h6--line-height: var( --text-base--line-height );
 
 	/* Shadow */
-	--shadow: 0px 4px 16px rgba( 17, 17, 26, 0.05 ),
+	--shadow:
+		0px 4px 16px rgba( 17, 17, 26, 0.05 ),
 		0px 8px 32px rgba( 17, 17, 26, 0.05 );
-	--shadow-sm: 0px 2px 8px rgba( 17, 17, 26, 0.05 ),
+	--shadow-sm:
+		0px 2px 8px rgba( 17, 17, 26, 0.05 ),
 		0px 4px 16px rgba( 17, 17, 26, 0.05 );
 
 	/* Border-radius */

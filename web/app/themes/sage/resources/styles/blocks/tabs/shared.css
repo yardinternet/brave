@@ -46,7 +46,9 @@
 		@apply flex w-full items-start gap-(--tab-button-gap) p-(--tab-button-padding) text-(length:--tab-button-font-size) leading-(--tab-button-leading) font-(--tab-button-font-weight) text-(--tab-button-color) transition-colors;
 
 		&[aria-selected='true'] {
-			--tab-button-icon-bg-color: var( --tab-button-icon-bg-color-selected );
+			--tab-button-icon-bg-color: var(
+				--tab-button-icon-bg-color-selected
+			);
 			--tab-button-icon-color: var( --tab-button-icon-color-selected );
 			--tab-button-font-weight: var( --tab-button-font-weight-selected );
 		}

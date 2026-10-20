@@ -183,7 +183,7 @@
 			@apply is-button m-0 w-full text-center! sm:w-auto;
 
 			&.gform-theme-button--secondary {
-        		@apply is-button-outline;
+				@apply is-button-outline;
 			}
 
 			&.gform-has-spinner {
@@ -191,7 +191,7 @@
 			}
 
 			.gform-loader {
-				@apply border-l-(--button-color)/15 border-b-(--button-color)/15 border-t-(--button-color) border-r-(--button-color);
+				@apply border-t-(--button-color) border-r-(--button-color) border-b-(--button-color)/15 border-l-(--button-color)/15;
 			}
 		}
 
