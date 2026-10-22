@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0ccdfa49b60f6816f745787d39484127",
+    "content-hash": "316d73a944c9c7e01fc5b65db56d5eb6",
     "packages": [
         {
             "name": "bonny/wordpress-simple-history",
@@ -10289,6 +10289,40 @@
             "time": "2026-06-18T09:13:17+00:00"
         },
         {
+            "name": "verdantstudio/relay",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yardinternet/relay.git",
+                "reference": "d54df2531a52c9c364a932474a412ca42a90d606"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yardinternet/relay/zipball/d54df2531a52c9c364a932474a412ca42a90d606",
+                "reference": "d54df2531a52c9c364a932474a412ca42a90d606",
+                "shasum": ""
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "^3.7",
+                "wp-coding-standards/wpcs": "^3.0"
+            },
+            "default-branch": true,
+            "type": "wordpress-plugin",
+            "scripts": {
+                "phpcs": [
+                    "./vendor/squizlabs/php_codesniffer/bin/phpcs"
+                ],
+                "phpcbf": [
+                    "phpcbf"
+                ]
+            },
+            "description": "A secure bridge between your WordPress site's internals and your monitoring tools",
+            "support": {
+                "source": "https://github.com/yardinternet/relay/tree/main"
+            },
+            "time": "2026-09-28T09:58:11+00:00"
+        },
+        {
             "name": "vinkla/extended-acf",
             "version": "14.6.2",
             "source": {
@@ -12167,37 +12201,6 @@
                 "source": "https://plugins.svn.wordpress.org/imagify"
             },
             "time": "2026-09-07T07:21:16+00:00"
-        },
-        {
-            "name": "wp-plugin/relay",
-            "version": "1.5.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/relay/",
-                "reference": "tags/1.5.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/relay.1.5.1.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0|~2.0"
-            },
-            "type": "wordpress-plugin",
-            "notification-url": "https://wp-packages.org/downloads",
-            "authors": [
-                {
-                    "name": "Verdant Studio"
-                }
-            ],
-            "description": "A bridge between your WordPress site’s internals and your monitoring tools.",
-            "homepage": "https://www.verdant.studio/plugins/relay",
-            "support": {
-                "changelog": "https://wordpress.org/plugins/relay/#developers",
-                "issues": "https://wordpress.org/support/plugin/relay",
-                "source": "https://plugins.svn.wordpress.org/relay"
-            },
-            "time": "2026-03-23T19:23:21+00:00"
         },
         {
             "name": "wp-plugin/wp-seopress",
@@ -15151,7 +15154,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "verdantstudio/relay": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
