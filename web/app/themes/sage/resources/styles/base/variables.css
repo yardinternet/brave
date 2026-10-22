@@ -51,6 +51,9 @@
 	--search-trigger-color-hover: var( --search-trigger-color );
 	--search-trigger-radius: calc( infinity * 1px );
 	--search-trigger-size: 3.5rem;
+	--search-trigger-icon-bg-color: transparent;
+	--search-trigger-icon-border-color: transparent;
+	--search-trigger-icon-size: auto;
 
 	/* Search field */
 	--search-field-border-color: var( --input-border-color );
