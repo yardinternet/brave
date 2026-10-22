@@ -18,18 +18,21 @@
 	'starting:open:transform-[translateY(-100%)] starting:open:opacity-0 starting:open:backdrop:bg-black/0',
 	'open:transform-[translateY(0)] open:opacity-100 open:backdrop:bg-black/50',
 ])>
-	<form class="flex h-full w-full items-center justify-center gap-2" method="get" action="{{ esc_url(home_url('/')) }}">
-		<input id="js-brave-search-bar-input"
-			class="search-bar-input rounded-none! shadow-none! h-14! md:text-lg! lg:text-2xl! w-full md:w-[600px]" name="s"
-			type="text" placeholder="{{ __('Typ om te zoeken...', 'sage') }}"
-			aria-label="{{ __('Type om te zoeken', 'sage') }}" value="{{ get_search_query() }}" autofocus />
-		<button
-			class="search-bar-search-btn ease-base hocus:bg-primary-700 bg-primary min-h-10 min-w-10 rounded-full border-0 text-lg text-white transition-all duration-500 md:size-14 lg:text-2xl"
-			aria-label="{{ __('Zoeken', 'sage') }}" type="submit">
-			<i class="fa-light fa-search" aria-hidden="true"></i>
-		</button>
+	<form class="flex h-full w-full items-center justify-center gap-x-2 sm:gap-x-4" method="get"
+		action="{{ esc_url(home_url('/')) }}">
+		<div class="relative w-full max-w-xl">
+			<input id="js-brave-search-bar-input"
+				class="search-bar-input rounded-none! shadow-none! border-0! border-b-2! border-primary! bg-white! h-14! pr-10! md:py-4! md:pl-3! md:text-lg! w-full"
+				name="s" type="text" placeholder="{{ __('Typ om te zoeken...', 'sage') }}"
+				aria-label="{{ __('Type om te zoeken', 'sage') }}" value="{{ get_search_query() }}" autofocus />
+			<button
+				class="search-bar-search-btn ease-base hocus:text-primary absolute right-0 top-1/2 size-8 min-w-8 -translate-y-1/2 border-0 bg-transparent transition-all duration-500 sm:text-lg xl:text-xl"
+				aria-label="{{ __('Zoeken', 'sage') }}" type="submit">
+				<i class="fa-light fa-search" aria-hidden="true"></i>
+			</button>
+		</div>
 		<x-brave::dialog.trigger :dialogId="$dialogId"
-			class="search-bar-close-btn ease-base hocus:bg-primary-100 min-h-10 min-w-10 rounded-full border-0 bg-transparent text-lg transition-all duration-500 md:size-14 lg:text-2xl"
+			class="search-bar-close-btn ease-base hocus:text-primary size-8 min-w-8 border-0 bg-transparent transition-all duration-500 sm:text-lg xl:text-xl"
 			aria-label="{{ __('Sluit zoekbalk', 'sage') }}">
 			<i class="fa-light fa-times" aria-hidden="true"></i>
 		</x-brave::dialog.trigger>
