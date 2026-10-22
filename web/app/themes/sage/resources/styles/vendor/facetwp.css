@@ -17,7 +17,7 @@
 	/* Facet: search */
 	.facetwp-type-search {
 		.facetwp-icon {
-			@apply search-field-btn flex items-center justify-center rounded-r-(--input-radius) px-4 py-2 not-italic opacity-100 transition;
+			@apply is-search-field-btn flex items-center justify-center rounded-r-(--input-radius) px-4 py-2 not-italic opacity-100 transition;
 
 			&::before {
 				@apply fontawesome size-auto bg-none;
@@ -26,7 +26,7 @@
 		}
 
 		.facetwp-search {
-			@apply search-field-input w-full overflow-visible! pr-7.5;
+			@apply is-search-field-input w-full overflow-visible! pr-7.5;
 		}
 
 		&.is-loading .facetwp-icon::before {
