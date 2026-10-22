@@ -205,7 +205,7 @@
 }
 
 @utility is-search-field-input {
-	@apply is-text-input pr-(--search-field-padding-right) h-(--search-field-height) placeholder:text-(--search-field-placeholder-color);
+	@apply is-text-input h-(--search-field-height) pr-(--search-field-padding-right) placeholder:text-(--search-field-placeholder-color);
 	--input-border-color: var( --search-field-border-color );
 
 	&:focus {
