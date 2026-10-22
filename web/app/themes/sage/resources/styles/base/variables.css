@@ -43,6 +43,15 @@
 	--spacing-size-6: calc( var( --spacing-size-5 ) * var( --spacing-ratio ) );
 	--spacing-size-7: calc( var( --spacing-size-6 ) * var( --spacing-ratio ) );
 
+	/* Search trigger */
+	--search-trigger-bg-color: transparent;
+	--search-trigger-bg-color-hover: var( --color-primary-100 );
+	--search-trigger-border-color: transparent;
+	--search-trigger-color: currentcolor;
+	--search-trigger-color-hover: var( --search-trigger-color );
+	--search-trigger-radius: calc( infinity * 1px );
+	--search-trigger-size: 3.5rem;
+
 	/* Search field */
 	--search-field-border-color: var( --input-border-color );
 	--search-field-border-color-focus: var( --input-border-color-focus );

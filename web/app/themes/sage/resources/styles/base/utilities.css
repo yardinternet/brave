@@ -196,6 +196,10 @@
 	}
 }
 
+@utility search-trigger {
+	@apply hocus:text-(--search-trigger-color-hover) lg:hocus:bg-(--search-trigger-bg-color-hover) text-(--search-trigger-color) lg:min-h-(--search-trigger-size) lg:min-w-(--search-trigger-size) lg:justify-center lg:rounded-(--search-trigger-radius) lg:border lg:border-(--search-trigger-border-color) lg:bg-(--search-trigger-bg-color);
+}
+
 @utility search-field-input {
 	@apply is-text-input h-(--search-field-height) placeholder:text-(--search-field-placeholder-color);
 	--input-border-color: var( --search-field-border-color );
