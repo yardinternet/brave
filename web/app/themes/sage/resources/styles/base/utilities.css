@@ -201,7 +201,7 @@
 }
 
 @utility search-trigger-icon {
-	@apply max-lg:flex max-lg:size-(--search-trigger-icon-size) max-lg:items-center max-lg:justify-center max-lg:rounded-(--search-trigger-radius) max-lg:bg-(--search-trigger-icon-bg-color) max-lg:outline max-lg:-outline-offset-1 max-lg:outline-(--search-trigger-icon-border-color);
+	@apply max-lg:flex max-lg:size-(--search-trigger-icon-size) max-lg:shrink-0 max-lg:items-center max-lg:justify-center max-lg:rounded-(--search-trigger-radius) max-lg:bg-(--search-trigger-icon-bg-color) max-lg:outline max-lg:-outline-offset-1 max-lg:outline-(--search-trigger-icon-border-color);
 }
 
 @utility search-field-input {
