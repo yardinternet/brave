@@ -11,7 +11,7 @@
 ])
 
 <x-brave::dialog.trigger :dialogId="$dialogId" class="hamburger flex min-h-[46px] flex-col gap-y-2 lg:hidden">
-	<span class="size-(--search-trigger-icon-size) flex items-center justify-center">
+	<span class="size-(--search-bar-trigger-icon-size) flex items-center justify-center">
 		<span class="flex w-8 flex-col gap-y-2">
 			<span class="block h-0.5 w-8 rounded-full bg-black transition-all duration-300 ease-in-out"></span>
 			<span class="block h-0.5 w-6 rounded-full bg-black transition-all duration-300 ease-in-out"></span>

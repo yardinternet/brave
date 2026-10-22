@@ -196,25 +196,25 @@
 	}
 }
 
-@utility is-search-trigger {
-	@apply hocus:text-(--search-trigger-color-hover) lg:hocus:bg-(--search-trigger-bg-color-hover) text-(--search-trigger-color) lg:min-h-(--search-trigger-size) lg:min-w-(--search-trigger-size) lg:justify-center lg:rounded-(--search-trigger-radius) lg:border lg:border-(--search-trigger-border-color) lg:bg-(--search-trigger-bg-color);
+@utility is-search-bar-trigger {
+	@apply hocus:text-(--search-bar-trigger-color-hover) lg:hocus:bg-(--search-bar-trigger-bg-color-hover) text-(--search-bar-trigger-color) lg:min-h-(--search-bar-trigger-size) lg:min-w-(--search-bar-trigger-size) lg:justify-center lg:rounded-(--search-bar-trigger-radius) lg:border lg:border-(--search-bar-trigger-border-color) lg:bg-(--search-bar-trigger-bg-color);
 }
 
-@utility is-search-trigger-icon {
-	@apply max-lg:flex max-lg:size-(--search-trigger-icon-size) max-lg:shrink-0 max-lg:items-center max-lg:justify-center max-lg:rounded-(--search-trigger-radius) max-lg:bg-(--search-trigger-icon-bg-color) max-lg:outline max-lg:-outline-offset-1 max-lg:outline-(--search-trigger-icon-border-color);
+@utility is-search-bar-trigger-icon {
+	@apply max-lg:flex max-lg:size-(--search-bar-trigger-icon-size) max-lg:shrink-0 max-lg:items-center max-lg:justify-center max-lg:rounded-(--search-bar-trigger-radius) max-lg:bg-(--search-bar-trigger-icon-bg-color) max-lg:outline max-lg:-outline-offset-1 max-lg:outline-(--search-bar-trigger-icon-border-color);
 }
 
-@utility is-search-field-input {
-	@apply is-text-input h-(--search-field-height) pr-(--search-field-padding-right) placeholder:text-(--search-field-placeholder-color);
-	--input-border-color: var( --search-field-border-color );
+@utility is-search-input {
+	@apply is-text-input h-(--search-input-height) pr-(--search-input-padding-right) placeholder:text-(--search-input-placeholder-color);
+	--input-border-color: var( --search-input-border-color );
 
 	&:focus {
-		--input-border-color: var( --search-field-border-color-focus );
+		--input-border-color: var( --search-input-border-color-focus );
 	}
 }
 
-@utility is-search-field-btn {
-	@apply hocus:bg-(--search-field-button-bg-color-hover) bg-(--search-field-button-bg-color) text-(--search-field-button-color);
+@utility is-search-input-button {
+	@apply hocus:bg-(--search-input-button-bg-color-hover) bg-(--search-input-button-bg-color) text-(--search-input-button-color);
 }
 
 @utility is-select {
