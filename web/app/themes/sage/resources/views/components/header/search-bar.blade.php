@@ -3,7 +3,7 @@
 ])
 
 <x-brave::dialog.trigger :dialogId="$dialogId"
-	class="search-bar-open-btn search-trigger ease-base ml-auto flex h-[46px] flex-col items-center justify-center gap-y-2 text-2xl transition-all duration-500 lg:ml-0 lg:self-center"
+	class="search-bar-open-btn search-trigger ease-base ml-auto flex min-h-[46px] flex-col items-center justify-center gap-y-2 text-2xl transition-all duration-500 lg:ml-0 lg:self-center"
 	aria-label="{{ __('Open zoekbalk om te zoeken', 'sage') }}">
 	<span class="search-trigger-icon lg:contents">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-5 fill-current lg:size-6">
