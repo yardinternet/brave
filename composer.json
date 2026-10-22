@@ -23,6 +23,11 @@
 	"prefer-stable": true,
 	"repositories": [
 		{
+			"name": "relay",
+			"type": "vcs",
+			"url": "git@github.com:yardinternet/relay.git"
+		},
+		{
 			"name": "satispress",
 			"type": "composer",
 			"url": "https://packagist.yard.nl/satispress/"
@@ -57,11 +62,11 @@
 		"sentry/sentry-laravel": "^4.13",
 		"spatie/laravel-google-fonts": "^1.4",
 		"spatie/laravel-ignition": "^2.0",
+		"verdantstudio/relay": "dev-main",
 		"vlucas/phpdotenv": "^5.5",
-		"wp-plugin/imagify": "^2.2",
 		"wp-plugin/cookie-law-info": "^3.2",
 		"wp-plugin/gravity-forms-zero-spam": "^1.8",
-		"wp-plugin/relay": "^1.3",
+		"wp-plugin/imagify": "^2.2",
 		"wp-plugin/wp-seopress": "^10.0",
 		"wp-plugin/yard-warden": "^1.0",
 		"yard/brave-acf": "^2.0",
