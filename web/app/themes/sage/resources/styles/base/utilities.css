@@ -196,6 +196,19 @@
 	}
 }
 
+@utility search-field-input {
+	@apply is-text-input h-(--search-field-height) placeholder:text-(--search-field-placeholder-color);
+	--input-border-color: var( --search-field-border-color );
+
+	&:focus {
+		--input-border-color: var( --search-field-border-color-focus );
+	}
+}
+
+@utility search-field-btn {
+	@apply hocus:bg-(--search-field-button-bg-color-hover) bg-(--search-field-button-bg-color) text-(--search-field-button-color);
+}
+
 @utility is-select {
 	@apply cursor-pointer rounded-(--select-radius) border-(length:--select-border-width) border-(--select-border-color) bg-(--select-bg-color) p-(--select-padding) text-(length:--select-font-size) leading-snug shadow-(--select-box-shadow) transition-all;
 	appearance: base-select;
