@@ -26,7 +26,7 @@
 		}
 
 		.facetwp-search {
-			@apply is-search-field-input w-full overflow-visible! pr-7.5;
+			@apply is-search-field-input w-full overflow-visible!;
 		}
 
 		&.is-loading .facetwp-icon::before {

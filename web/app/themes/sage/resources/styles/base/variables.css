@@ -63,6 +63,7 @@
 	--search-field-button-bg-color-hover: var( --color-primary-700 );
 	--search-field-button-color: var( --color-white );
 	--search-field-height: auto;
+	--search-field-padding-right: 1.875rem;
 	--search-field-placeholder-color: color-mix(
 		in oklab,
 		currentcolor 50%,
