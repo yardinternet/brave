@@ -54,6 +54,7 @@
 	--search-trigger-icon-bg-color: transparent;
 	--search-trigger-icon-border-color: transparent;
 	--search-trigger-icon-size: auto;
+	--search-trigger-label-display: block;
 
 	/* Search field */
 	--search-field-border-color: var( --input-border-color );

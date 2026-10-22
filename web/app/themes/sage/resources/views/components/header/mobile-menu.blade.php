@@ -10,10 +10,12 @@
     'label' => __('Menu', 'sage'),
 ])
 
-<x-brave::dialog.trigger :dialogId="$dialogId" class="hamburger flex h-[46px] flex-col gap-y-2 lg:hidden">
-	<span class="block h-0.5 w-8 rounded-full bg-black transition-all duration-300 ease-in-out"></span>
-	<span class="block h-0.5 w-6 rounded-full bg-black transition-all duration-300 ease-in-out"></span>
-	<span class="block h-0.5 w-4 rounded-full bg-black transition-all duration-300 ease-in-out"></span>
+<x-brave::dialog.trigger :dialogId="$dialogId" class="hamburger flex min-h-[46px] flex-col gap-y-2 lg:hidden">
+	<span class="size-(--search-trigger-icon-size) flex flex-col justify-center gap-y-2">
+		<span class="block h-0.5 w-8 rounded-full bg-black transition-all duration-300 ease-in-out"></span>
+		<span class="block h-0.5 w-6 rounded-full bg-black transition-all duration-300 ease-in-out"></span>
+		<span class="block h-0.5 w-4 rounded-full bg-black transition-all duration-300 ease-in-out"></span>
+	</span>
 	<span class="mt-auto text-xs leading-none">{{ $label }}</span>
 </x-brave::dialog.trigger>
 
