@@ -1,6 +1,6 @@
 # 005 — Give the three dialogs a drawer curve and narrow `transition-all`
 
-- **Status**: TODO
+- **Status**: DONE
 - **Commit**: 8cd4c76
 - **Severity**: MEDIUM
 - **Category**: Easing & duration / Performance

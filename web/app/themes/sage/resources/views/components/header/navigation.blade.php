@@ -24,8 +24,8 @@
 						@endif
 
 						<span @class([
-							'bg-primary ease-base absolute bottom-0 w-full left-0 h-1 duration-300 invisible scale-0 group-hover:visible group-hover:scale-100',
-							'visible scale-100' => $item->active || $item->activeParent,
+							'bg-primary ease-out absolute bottom-0 w-full left-0 h-1 transition-[scale,visibility] duration-200 invisible scale-x-0 group-hover:visible group-hover:scale-x-100',
+							'visible scale-x-100' => $item->active || $item->activeParent,
 						]) aria-hidden="true"></span>
 					</x-brave::nav.link>
 

@@ -1,6 +1,6 @@
 # 004 — Make the hide/show header respond faster
 
-- **Status**: TODO
+- **Status**: DONE
 - **Commit**: 8cd4c76
 - **Severity**: MEDIUM
 - **Category**: Easing & duration

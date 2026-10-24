@@ -116,21 +116,8 @@ details:focus {
 	outline-width: 0;
 
 	.js-user-is-tabbing & {
-		animation: focus 0.1s linear both;
-		outline-color: -webkit-focus-ring-color;
-		outline-style: auto;
-	}
-}
-
-@keyframes focus {
-	0% {
-		outline-offset: 16px;
-		outline-style: auto;
-		outline-width: 0px;
-	}
-
-	100% {
 		z-index: 9999;
+		outline-color: -webkit-focus-ring-color;
 		outline-offset: 4px;
 		outline-style: auto;
 		outline-width: 2px;
