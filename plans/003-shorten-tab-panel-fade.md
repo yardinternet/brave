@@ -1,6 +1,6 @@
 # 003 — Shorten the tab panel fade from 700ms to 200ms
 
-- **Status**: TODO
+- **Status**: OBSOLETE (core tabs in `ca80d74` have no panel fade)
 - **Commit**: 8cd4c76
 - **Severity**: HIGH
 - **Category**: Easing & duration

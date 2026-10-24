@@ -1,6 +1,6 @@
 # 002 — Stop animating the keyboard focus ring
 
-- **Status**: TODO
+- **Status**: DONE
 - **Commit**: 8cd4c76
 - **Severity**: HIGH
 - **Category**: Purpose & frequency

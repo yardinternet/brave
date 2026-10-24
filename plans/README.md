@@ -4,12 +4,12 @@ Audit of the Sage theme's motion (`web/app/themes/sage/resources`) at commit `8c
 
 | # | Plan | Severity | Status |
 | --- | --- | --- | --- |
-| 001 | [Add strong easing tokens](001-add-motion-easing-tokens.md) | LOW (prereq) | TODO |
-| 002 | [Stop animating the keyboard focus ring](002-remove-focus-ring-animation.md) | HIGH | TODO |
-| 003 | [Shorten tab panel fade to 200ms](003-shorten-tab-panel-fade.md) | HIGH | TODO |
-| 004 | [Faster hide/show header](004-faster-headroom-header.md) | MEDIUM | TODO |
-| 005 | [Drawer curve for the three dialogs](005-dialog-drawer-easing.md) | MEDIUM | TODO |
-| 006 | [Desktop nav dropdowns and underline](006-desktop-nav-dropdown-motion.md) | MEDIUM | TODO |
+| 001 | [Add strong easing tokens](001-add-motion-easing-tokens.md) | LOW (prereq) | DONE |
+| 002 | [Stop animating the keyboard focus ring](002-remove-focus-ring-animation.md) | HIGH | DONE |
+| 003 | [Shorten tab panel fade to 200ms](003-shorten-tab-panel-fade.md) | HIGH | OBSOLETE |
+| 004 | [Faster hide/show header](004-faster-headroom-header.md) | MEDIUM | DONE |
+| 005 | [Drawer curve for the three dialogs](005-dialog-drawer-easing.md) | MEDIUM | DONE |
+| 006 | [Desktop nav dropdowns and underline](006-desktop-nav-dropdown-motion.md) | MEDIUM | DONE |
 
 ## Execution order
 

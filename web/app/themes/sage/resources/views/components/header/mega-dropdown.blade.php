@@ -2,7 +2,7 @@
 
 <x-brave::nav.dropdown mode="hover"
 	{{ $attributes->class([
-	    'ease-base invisible fixed left-1/2 z-10 w-(--container-width) -translate-x-1/2 -translate-y-6 columns-3 gap-x-6 bg-white p-8 leading-snug opacity-0 shadow-lg transition-all duration-300',
+	    'ease-out invisible fixed left-1/2 z-10 w-(--container-width) -translate-x-1/2 -translate-y-6 columns-3 gap-x-6 bg-white p-8 leading-snug opacity-0 shadow-lg transition-[translate,opacity,visibility] duration-200',
 	    'group-has-aria-expanded:visible group-has-aria-expanded:translate-y-0 group-has-aria-expanded:opacity-100',
 	]) }}>
 	@foreach ($item->children as $child)

@@ -1,6 +1,6 @@
 # 001 — Add strong easing tokens to the Tailwind theme
 
-- **Status**: TODO
+- **Status**: DONE
 - **Commit**: 8cd4c76
 - **Severity**: LOW (prerequisite for 003–006)
 - **Category**: Cohesion & tokens

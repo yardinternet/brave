@@ -10,8 +10,8 @@
 </x-brave::dialog.trigger>
 
 <x-brave-dialog :id="$dialogId" :ariaLabel="$label" @class([
-	'transition-discrete z-1 max-h-3/4 mt-auto h-fit w-full max-w-full transform-[translateY(100%)] rounded-t-lg bg-white opacity-0 transition-all duration-500',
-	'backdrop:transition-discrete backdrop:pointer-events-none backdrop:bg-black/0 backdrop:transition-all backdrop:duration-500',
+	'transition-discrete z-1 max-h-3/4 mt-auto h-fit w-full max-w-full transform-[translateY(100%)] rounded-t-lg bg-white opacity-0 transition-[transform,opacity,display,overlay] duration-400 ease-drawer',
+	'backdrop:transition-discrete backdrop:pointer-events-none backdrop:bg-black/0 backdrop:transition-[background-color,display,overlay] backdrop:duration-400 backdrop:ease-drawer',
 	'starting:open:transform-[translateY(100%)] starting:open:opacity-0 starting:open:backdrop:bg-black/0',
 	'open:transform-[translateY(0)] open:opacity-100 open:backdrop:bg-black/50',
 ])>

@@ -78,6 +78,8 @@
 
 	/* Transitions */
 	--ease-base: cubic-bezier( 0.25, 0.1, 0.25, 1 );
+	--ease-out: cubic-bezier( 0.23, 1, 0.32, 1 );
+	--ease-drawer: cubic-bezier( 0.32, 0.72, 0, 1 );
 
 	/* Spacing */
 	--spacing-section: var( --spacing-size-7 );

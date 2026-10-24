@@ -1,6 +1,6 @@
 # 006 — Desktop navigation: ease-out dropdowns, horizontal underline
 
-- **Status**: TODO
+- **Status**: DONE
 - **Commit**: 8cd4c76
 - **Severity**: MEDIUM
 - **Category**: Easing & duration / Physicality

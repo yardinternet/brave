@@ -22,8 +22,8 @@
 </x-brave::dialog.trigger>
 
 <x-brave-dialog :id="$dialogId" :ariaLabel="$label" @class([
-	'mobile-menu transition-discrete top-0 bottom-0 left-10 right-0 h-full max-h-full w-auto max-w-full transform-[translateX(100%)] bg-white opacity-0 transition-all duration-500',
-	'backdrop:transition-discrete backdrop:pointer-events-none backdrop:bg-black/0 backdrop:transition-all backdrop:duration-500',
+	'mobile-menu transition-discrete top-0 bottom-0 left-10 right-0 h-full max-h-full w-auto max-w-full transform-[translateX(100%)] bg-white opacity-0 transition-[transform,opacity,display,overlay] duration-400 ease-drawer',
+	'backdrop:transition-discrete backdrop:pointer-events-none backdrop:bg-black/0 backdrop:transition-[background-color,display,overlay] backdrop:duration-400 backdrop:ease-drawer',
 	'starting:open:transform-[translateX(100%)] starting:open:opacity-0 starting:open:backdrop:bg-black/0',
 	'open:transform-[translateX(0)] open:opacity-100 open:backdrop:bg-black/50',
 ])>
