@@ -49,7 +49,10 @@
 								@endif
 							</x-brave::nav.link>
 							@if ($item->children)
-								<x-brave::nav.dropdown @class(['mb-2 hidden px-3', 'group-has-aria-expanded:block'])>
+								<x-brave::nav.dropdown @class([
+									'mb-2 hidden px-3 transition-[opacity,translate] duration-200 ease-out starting:-translate-y-1 starting:opacity-0',
+									'group-has-aria-expanded:block',
+								])>
 									@foreach ($item->children as $child)
 										<x-brave::nav.item>
 											<x-brave::nav.link :item="$child" class="block py-2 text-gray-700 no-underline"
