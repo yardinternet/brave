@@ -6,7 +6,7 @@ namespace Deployer;
 
 use Yard\Deployer\Host;
 use Yard\Deployer\Loader;
-use Yard\Deployer\Stage;
+use function Yard\Deployer\shockServer;
 use function Yard\Deployer\wp;
 
 require_once __DIR__ . '/vendor/sourcebroker/deployer-loader/autoload.php';
@@ -24,7 +24,7 @@ add('writable_dirs', []);
 after('deploy:vendors', function () {
 	$alias = currentHost()->getAlias();
 
-	if ('brave.wpacc01.yard.nl' === $alias) {
+	if ('accept' === $alias) {
 		within('{{release_or_current_path}}', function () {
 			run('{{bin/composer}} private-packages');
 			run('{{bin/composer}} require yard/brave-scaffold --dev');
@@ -34,8 +34,9 @@ after('deploy:vendors', function () {
 		});
 	}
 
-	if ('gemeente.wpacc01.yard.nl' === $alias) {
+	if ('gemeente-accept' === $alias) {
 		within('{{release_or_current_path}}', function () {
+			run('{{bin/composer}} private-packages');
 			run('{{bin/composer}} gemeente-packages');
 		});
 	}
@@ -43,12 +44,6 @@ after('deploy:vendors', function () {
 //////////
 
 // Hosts.
-host('brave.wpacc01.yard.nl')
-	->setHostname(Host::WPACC01)
-	->setDeployPath('/data/www/accept-sites/yard/brave')
-	->setLabels(['stage' => Stage::ACCEPT]);
+shockServer(Host::SHOCK_STAGING_1);
 
-host('gemeente.wpacc01.yard.nl')
-	->setHostname(Host::WPACC01)
-	->setDeployPath('/data/www/accept-sites/yard/gemeente')
-	->setLabels(['stage' => Stage::ACCEPT]);
+shockServer(Host::SHOCK_STAGING_1, ['gemeente']);
