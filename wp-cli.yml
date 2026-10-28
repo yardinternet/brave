@@ -1,3 +1,16 @@
 path: web/wp
 server:
   docroot: web
+
+# Remote aliases for the Shockmedia staging server (see deploy.php).
+# Usage: ./vendor/bin/wp @accept plugin list
+@accept:
+  ssh: yardsites@staging1.yard.cloud.shockmedia.host/home/yardsites/domains/brave-accept/current
+
+@gemeente-accept:
+  ssh: yardsites@staging1.yard.cloud.shockmedia.host/home/yardsites/domains/brave-gemeente-accept/current
+
+# The remote shell has no global wp, so run the release's own vendor/bin/wp.
+# WP-CLI < 2.13 ignores an `env:` block, so set the variable from PHP instead.
+exec:
+  - putenv('WP_CLI_SSH_BINARY=vendor/bin/wp');
