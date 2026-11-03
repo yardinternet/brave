@@ -25,7 +25,6 @@ Config::define('DISALLOW_FILE_MODS', false);
 Config::define('DISABLED_PLUGINS', [
 	'sites-monitor/sites-monitor.php',
 	'stream/stream.php',
-	'wordfence/wordfence.php',
 ]);
 
 /**

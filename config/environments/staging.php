@@ -20,5 +20,4 @@ Config::define('DISALLOW_INDEXING', true);
 Config::define('DISABLED_PLUGINS', [
 	'sites-monitor/sites-monitor.php',
 	'stream/stream.php',
-	'wordfence/wordfence.php',
 ]);
