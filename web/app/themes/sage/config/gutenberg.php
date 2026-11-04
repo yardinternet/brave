@@ -78,6 +78,7 @@ return [
 			'core/list-item',
 			'core/list',
 			'core/paragraph',
+			'core/quote',
 			'yard/icon',
 			'yard/iconlist-item',
 			'yard/iconlist',
