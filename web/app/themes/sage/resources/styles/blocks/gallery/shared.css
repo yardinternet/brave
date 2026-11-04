@@ -1,4 +1,14 @@
+:root {
+	--gallery-block-spacing: 1.5rem;
+
+	@variant md {
+		--gallery-block-spacing: 2rem;
+	}
+}
+
 .wp-block-gallery {
+	@apply not-first:mt-(--gallery-block-spacing) not-last:mb-(--gallery-block-spacing);
+
 	/* Not cropped usually means images like logo's */
 	&:not( .is-cropped ) figure.wp-block-image {
 		@apply mt-auto! items-center;

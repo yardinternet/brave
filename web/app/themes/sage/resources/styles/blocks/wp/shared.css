@@ -6,7 +6,6 @@
 /* Block styling which doesn't need their own CSS file */
 .wp-block-cover,
 .wp-block-embed,
-.wp-block-gallery,
 .wp-block-image,
 .wp-block-post-featured-image {
 	@apply mb-6 md:mb-8;
