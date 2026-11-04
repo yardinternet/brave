@@ -17,7 +17,3 @@
 		}
 	}
 }
-
-.wp-block-theme-banner + .wp-block-theme-section.has-background {
-	@apply mt-0;
-}
