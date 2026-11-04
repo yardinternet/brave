@@ -256,3 +256,7 @@ dialog .facetwp-type-date_range {
 		}
 	}
 }
+
+.fdate-grid .selected {
+	@apply bg-primary-50!;
+}
