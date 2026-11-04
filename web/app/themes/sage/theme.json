@@ -112,23 +112,6 @@
 			"core/group": {
 				"spacing": {
 					"margin": true
-				},
-				"color": {
-					"text": false,
-					"heading": false,
-					"button": false,
-					"palette": [
-						{
-							"slug": "primary",
-							"color": "var(--color-primary)",
-							"name": "Primair"
-						},
-						{
-							"slug": "white",
-							"color": "var(--color-white)",
-							"name": "Wit"
-						}
-					]
 				}
 			},
 			"core/media-text": {

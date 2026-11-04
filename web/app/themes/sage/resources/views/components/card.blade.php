@@ -1,5 +1,5 @@
 <div @class([
-	$attributes['class'] => isset($attributes['class']),
+	$attributes->get('class', ''),
 	'group relative m-0 flex h-full max-w-full rounded-(--card-radius) border-none bg-(--card-bg-color) p-0 shadow-(--card-shadow) transition-all',
 	$cardClass(),
 	'card-column flex-col' => $direction->isColumn(),
@@ -38,7 +38,7 @@
 		@endif
 
 		@if ($displayDate && $dateTime && $dateString)
-			<time class="card-date -order-1 mb-2! text-sm leading-none text-gray-500" datetime="{{ $dateTime }}">
+			<time class="card-date mb-2! -order-1 text-sm leading-none text-gray-500" datetime="{{ $dateTime }}">
 				{{ $dateString }}
 			</time>
 		@endif

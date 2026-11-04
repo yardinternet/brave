@@ -54,7 +54,7 @@
 			&.is-image-fill-element {
 				.wp-block-media-text__media {
 					&:has( img ) {
-						@apply aspect-video;
+						@apply aspect-video min-h-0 max-w-full;
 					}
 
 					img {

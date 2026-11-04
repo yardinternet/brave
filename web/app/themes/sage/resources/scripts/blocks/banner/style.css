@@ -37,3 +37,11 @@
 .wp-block-theme-banner__image {
 	@apply aspect-(--banner-image-ratio) w-(--banner-image-width) max-w-none object-cover md:absolute md:top-0 md:bottom-0 md:left-0 md:h-full! md:min-h-0;
 }
+
+.wp-block-theme-banner:has( + .wp-block-theme-section.has-background ) {
+	@apply mb-0;
+
+	+ .wp-block-theme-section.has-background {
+		@apply mt-0;
+	}
+}

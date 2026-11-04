@@ -13,9 +13,9 @@
 <x-brave::dialog.trigger :dialogId="$dialogId" class="hamburger flex min-h-[46px] flex-col gap-y-2 lg:hidden">
 	<span class="size-(--search-bar-trigger-icon-size) flex items-center justify-center">
 		<span class="flex w-8 flex-col gap-y-2">
-			<span class="block h-0.5 w-8 rounded-full bg-black transition-all duration-300 ease-in-out"></span>
-			<span class="block h-0.5 w-6 rounded-full bg-black transition-all duration-300 ease-in-out"></span>
-			<span class="block h-0.5 w-4 rounded-full bg-black transition-all duration-300 ease-in-out"></span>
+			<span class="block h-0.5 w-8 rounded-full bg-black"></span>
+			<span class="block h-0.5 w-6 rounded-full bg-black"></span>
+			<span class="block h-0.5 w-4 rounded-full bg-black"></span>
 		</span>
 	</span>
 	<span class="mt-auto text-center text-xs leading-none">{{ $label }}</span>
@@ -29,8 +29,9 @@
 ])>
 	<div class="flex h-full flex-col">
 		<div class="z-1 sticky top-0 flex items-center justify-between gap-2 border-b border-gray-100 bg-white px-6 py-4">
-			<h2 class="mb-0 is-body-text">{{ $label }}</h2>
-			<x-brave::dialog.trigger :dialogId="$dialogId" class="leading-0 size-11.5 -m-2 flex items-center justify-center text-2xl">
+			<h2 class="is-body-text mb-0">{{ $label }}</h2>
+			<x-brave::dialog.trigger :dialogId="$dialogId"
+				class="leading-0 size-11.5 -m-2 flex items-center justify-center text-2xl">
 				<i class="fa-light fa-xmark" aria-hidden="true"></i>
 				<span class="sr-only">Sluit menu</span>
 			</x-brave::dialog.trigger>
@@ -41,7 +42,8 @@
 				<x-brave::nav.list class="mb-6">
 					@foreach ($primaryNavigation->all() as $item)
 						<x-brave::nav.item class="group">
-							<x-brave::nav.link :item="$item" class="block py-3 text-lg text-(--body-text-color) no-underline focus:text-inherit"
+							<x-brave::nav.link :item="$item"
+								class="text-(--body-text-color) block py-3 text-lg no-underline focus:text-inherit"
 								activeClass="text-primary font-bold">
 								{!! $item->label !!}
 								@if ($item->children)
