@@ -7,7 +7,7 @@
 	--input-border-width: 2px;
 	--input-box-shadow: var( --shadow-sm );
 	--input-font-size: 1rem;
-	--input-color: var( --color-body-text );
+	--input-color: var( --body-text-color );
 	--input-padding: 0.75em 1em;
 	--input-radius: var( --radius-theme );
 
