@@ -7,6 +7,7 @@
 	--input-border-width: 2px;
 	--input-box-shadow: var( --shadow-sm );
 	--input-font-size: 1rem;
+	--input-color: var( --color-body-text );
 	--input-padding: 0.75em 1em;
 	--input-radius: var( --radius-theme );
 
@@ -15,6 +16,7 @@
 	--select-border-color: var( --input-border-color );
 	--select-border-width: 1px;
 	--select-box-shadow: var( --input-box-shadow );
+	--select-color: var( --input-color );
 	--select-font-size: var( --input-font-size );
 	--select-padding: var( --input-padding );
 	--select-radius: var( --input-radius );

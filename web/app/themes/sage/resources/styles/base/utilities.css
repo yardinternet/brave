@@ -188,7 +188,7 @@
 }
 
 @utility is-text-input {
-	@apply rounded-(--input-radius) border-0 border-b-(length:--input-border-width) border-(--input-border-color) bg-(--input-bg-color) p-(--input-padding) text-(length:--input-font-size) leading-snug shadow-(--input-box-shadow);
+	@apply rounded-(--input-radius) border-0 border-b-(length:--input-border-width) border-(--input-border-color) bg-(--input-bg-color) p-(--input-padding) text-(length:--input-font-size) leading-snug text-(--input-color) shadow-(--input-box-shadow);
 
 	&:focus {
 		@apply outline-none;
@@ -218,7 +218,7 @@
 }
 
 @utility is-select {
-	@apply cursor-pointer rounded-(--select-radius) border-(length:--select-border-width) border-(--select-border-color) bg-(--select-bg-color) p-(--select-padding) text-(length:--select-font-size) leading-snug shadow-(--select-box-shadow) transition-all;
+	@apply cursor-pointer rounded-(--select-radius) border-(length:--select-border-width) border-(--select-border-color) bg-(--select-bg-color) p-(--select-padding) text-(length:--select-font-size) leading-snug text-(--select-color) shadow-(--select-box-shadow) transition-all;
 	appearance: base-select;
 
 	&::picker-icon {
