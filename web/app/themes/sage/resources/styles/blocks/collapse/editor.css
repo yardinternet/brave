@@ -24,5 +24,5 @@
 }
 
 .wp-block-yard-collapse-item__header-toggle-button {
-	@apply flex aspect-square size-(--collapse-button-icon-size) items-center justify-center rounded-(--collapse-radius)! bg-(--collapse-button-icon-bg-color)! p-0 text-[length:inherit] leading-[inherit] text-(--collapse-button-icon-color)!;
+	@apply flex aspect-square size-(--collapse-button-icon-size) items-center justify-center rounded-(--collapse-button-icon-radius)! bg-(--collapse-button-icon-bg-color)! p-0 text-[length:inherit] leading-[inherit] text-(--collapse-button-icon-color)!;
 }
