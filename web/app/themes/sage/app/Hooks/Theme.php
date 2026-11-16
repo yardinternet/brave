@@ -53,6 +53,8 @@ class Theme extends \Yard\Brave\Hooks\Theme
 	{
 		$blocksToAdd = [
 			'core/media-text',
+			'theme/banner',
+			'theme/section',
 		];
 
 		return array_merge($blocks, $blocksToAdd);
