@@ -3,8 +3,7 @@ version: 2
 multi-ecosystem-groups:
     all:
         schedule:
-            interval: 'weekly'
-            day: 'monday'
+            interval: 'daily'
             time: '09:00'
             timezone: 'Europe/Amsterdam'
         commit-message:
@@ -17,10 +16,23 @@ updates:
       directory: '/'
       patterns: ['*']
       versioning-strategy: lockfile-only
-
+      groups:
+          version-updates:
+              patterns: ['*']
+              applies-to: version-updates
+          security-updates:
+              patterns: ['*']
+              applies-to: security-updates
     - package-ecosystem: 'composer'
       multi-ecosystem-group: 'all'
       registries: '*'
       directory: '/'
       patterns: ['*']
       versioning-strategy: lockfile-only
+      groups:
+          version-updates:
+              patterns: ['*']
+              applies-to: version-updates
+          security-updates:
+              patterns: ['*']
+              applies-to: security-updates
