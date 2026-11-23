@@ -5,3 +5,12 @@ publicHoistPattern:
   - stylelint-config-recommended
   - stylelint-config-idiomatic-order
   - '@babel/preset-react'
+
+minimumReleaseAge: 10080
+minimumReleaseAgeExclude:
+  - '@yardinternet/*'
+
+allowBuilds:
+  '@parcel/watcher': false
+  core-js-pure: false
+  esbuild: false
