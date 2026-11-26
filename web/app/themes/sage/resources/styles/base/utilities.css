@@ -139,7 +139,7 @@
 		--fa-icon: '\f061';
 	}
 
-	&[href^='#']::after {
+	&[href^='#']:not([href='#'])::after {
 		--fa-icon: '\f063';
 	}
 
