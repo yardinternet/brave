@@ -3,7 +3,7 @@ version: 2
 multi-ecosystem-groups:
     all:
         schedule:
-            interval: 'daily'
+            interval: daily
             time: '09:00'
             timezone: 'Europe/Amsterdam'
         commit-message:
